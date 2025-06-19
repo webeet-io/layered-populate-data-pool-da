@@ -38,7 +38,6 @@ UTM zone 33N system, used in Germany for cadastral and precise measurements.)
 1. Parse date fields (`f_gybl_dat`, `f_in_kraft`, `ae_gvbldat`) to ISO date format
 2. Validate and clean geometries
 3. Reproject geometries to EPSG:4326 for compatibility (EPSG:4326 is latitude/longitude in degrees (geographic coordinates, used in Google Maps, OpenStreetMap, etc.)
-4. Export data to `milieuschutzgebiete.geojson` inside `/sources`
 
 ## Intended Usage
 - Spatial join with `neighborhoods` using `ST_Intersects`
