@@ -1,79 +1,143 @@
+# 🚊 Berlin Public Transport Data Project
 
-# Berlin Public Transport Data Project 
-
-## Data Source Discovery
+## ✅ 1.1 Data Source Discovery
 
 This section outlines the discovery and documentation of datasets used to enrich the Berlin public transport project.
 
-### Source 1: U-Bahn Stations Dataset
-- **Name:** Berlin U-Bahn Stations  
-- **Source & URL:** Extracted by Clifford Anderson from Wikidata via SPARQL query — [GitHub Gist](https://gist.github.com/CliffordAnderson/7fb7473af31f9343f8a55518545480a0)  
-- **Type:** Open Data (SPARQL Query)  
-- **Update Frequency:** Dynamic (real-time via Wikidata)  
-- **Data Type:** Static (as used in this project snapshot)  
-- **Key Fields:** station name, latitude, longitude  
-- **Example Entry:** `U-Bahnhof Möckernbrücke, 52.4961, 13.3834`  
-- **Notes:** Location data derived from coordinate properties on Wikidata. Precision and coverage may vary.
+### 🔹 Combined Sources
 
-### Source 2: U-Bahn Connections Dataset
-- **Name:** Berlin U-Bahn Line Connections  
-- **Source & URL:** Extracted from Wikipedia by Clifford Anderson, shared via [GitHub Gist](https://gist.github.com/CliffordAnderson/7fb7473af31f9343f8a55518545480a0)  
-- **Type:** Open Data / Scraper  
-- **Update Frequency:** Static (manually exported from Wikipedia)  
-- **Data Type:** Static  
-- **Key Fields:** point1, line, point2 (station names and lines they connect)  
-- **Example Entry:** `U-Bahnhof Hallesches Tor, U1, U-Bahnhof Möckernbrücke`  
-- **Notes:** Cleaned version (`08-connections-no-dupes.csv`) includes deduplicated records.
+| Source Name                    | Description                                                                                                           | Type    | Update Frequency       | Format      | Origin                                                                                                         |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------- | ------- | ---------------------- | ----------- | -------------------------------------------------------------------------------------------------------------- |
+| VBB GTFS Feed                  | Public transport network data for Berlin and Brandenburg (routes, stops, timetables). Includes BVG buses and ferries. | Static  | 2x weekly              | GTFS (.zip) | [vbb.de](https://www.vbb.de/search/gtfs)                                                                       |
+| GTFS.de                        | Aggregates static GTFS feeds for all of Germany.                                                                      | Static  | Daily                  | GTFS        | [gtfs.de](https://gtfs.de/de/feeds/)                                                                           |
+| BVG API                        | Real-time API for buses, U-Bahn, trams, and ferries in Berlin                                                         | Dynamic | Real-time              | API (JSON)  | [bvg.de](https://www.bvg.de/)                                                                                  |
+| OpenStreetMap                  | Geospatial public transport nodes, lines, and POIs                                                                    | Dynamic | Community-driven       | GeoJSON/XML | [openstreetmap.org](https://www.openstreetmap.org)                                                             |
+| Berlin Open Data Portal        | Government-published data on urban infrastructure, traffic, and neighborhoods                                         | Static  | Monthly                | CSV/GeoJSON | [daten.berlin.de](https://daten.berlin.de)                                                                     |
+| Google Drive CSV Upload        | Final merged GTFS dataset with buses and ferries in Berlin                                                            | Static  | One-time               | CSV         | [Google Drive Folder](https://drive.google.com/drive/folders/19t58Fiz2AOSAnEYl_InCq86jjWVmnnV-?usp=share_link) |
+| Berlin U-Bahn Stations         | Berlin U-Bahn stop coordinates from Wikidata via SPARQL (by Clifford Anderson)                                        | Static  | Real-time (via SPARQL) | CSV         | [GitHub Gist](https://gist.github.com/CliffordAnderson/7fb7473af31f9343f8a55518545480a0)                       |
+| Berlin U-Bahn Line Connections | Station-to-station U-Bahn line connections scraped from Wikipedia                                                     | Static  | Manual updates         | CSV         | [GitHub Gist](https://gist.github.com/CliffordAnderson/7fb7473af31f9343f8a55518545480a0)                       |
 
 ---
 
-##  Modelling & Planning
+## ✅ 1.2 Modelling & Planning
 
-### Selected Columns from Raw Data
+### 🔸 GTFS Key Parameters
 
-**From `03-stations.csv`:**
-- `station`: Station name (original)  
-- `lat`: Latitude  
-- `lng`: Longitude  
+* `route_id`, `route_type`, `route_long_name`
+* `trip_id`, `shape_id`, `service_id`
+* `stop_id`, `stop_name`, `stop_lat`, `stop_lon`
+* `arrival_time`, `departure_time`, `stop_sequence`
+* `agency_id`, `agency_name`
 
-**From `08-connections-no-dupes.csv`:**
-- `point1`: Starting station  
-- `line`: U-Bahn line  
-- `point2`: Ending station  
+### 🔸 U-Bahn CSV Columns
 
-### Data Linkage Plan
-- **Link Key:** Cleaned station names (removing “U-Bahnhof” prefix and trimming spaces)  
-- **Joining Logic:** Match `point1_clean` and `point2_clean` with cleaned `station` column from the stations dataset.
+From `03-stations.csv`:
 
-### Planned Table Schema (Merged)
+* `station`: Station name (original)
+* `lat`: Latitude
+* `lng`: Longitude
 
-| point1 | line | point2 | postcode_point1 | lat_point1 | lng_point1 | postcode_point2 | lat_point2 | lng_point2 |
-|--------|------|--------|------------------|-------------|-------------|------------------|-------------|-------------|
+From `08-connections-no-dupes.csv`:
 
-### Known Data Issues
-- Inconsistent station naming (e.g. extra spaces, “U-Bahnhof” prefixes)  
-- Missing coordinates or postcodes for some stations  
-- Some stations in connections not present in stations list  
-- Postcode field may include trailing `.0` if not properly typed  
+* `point1`: Starting station
+* `line`: U-Bahn line
+* `point2`: Ending station
 
-### Transformation Plan
+### 🔗 Data Linkage Plan
 
-1. **Cleaning**  
-   - Remove “U-Bahnhof” prefix and strip whitespace from all station names  
-   - Convert postcode to nullable integer type  
+| Target Table       | Link Type         | Key Columns                    |
+| ------------------ | ----------------- | ------------------------------ |
+| neighborhoods      | Spatial join      | `stop_lat`, `stop_lon`         |
+| listings           | Proximity mapping | `stop_id` → closest lat/lon    |
+| ubahn\_connections | Name matching     | `point1`, `point2` ↔ `station` |
 
-2. **Normalization**  
-   - Ensure coordinates are properly typed as float  
-   - Rename and align columns for merging  
+### 📑 Planned Table Schemas
 
-3. **Join Process**  
-   - Merge `point1_clean` with station data to get `lat`, `lng`, `postcode` for point1  
-   - Merge `point2_clean` similarly for point2  
+#### public\_transport\_data
 
+| Column          | Type    | Description                      |
+| --------------- | ------- | -------------------------------- |
+| route\_id       | STRING  | Transit route ID                 |
+| route\_type     | STRING  | 'bus' or 'ferry'                 |
+| trip\_id        | STRING  | GTFS trip ID                     |
+| stop\_id        | STRING  | GTFS stop ID                     |
+| stop\_name      | STRING  | Lowercase, cleaned stop name     |
+| stop\_lat       | FLOAT   | Latitude                         |
+| stop\_lon       | FLOAT   | Longitude                        |
+| arrival\_time   | TIME    | Scheduled time of arrival        |
+| departure\_time | TIME    | Scheduled time of departure      |
+| stop\_sequence  | INTEGER | Order of stop in the trip        |
+| agency\_id      | STRING  | Operator ID                      |
+| agency\_name    | STRING  | Normalized agency name (cleaned) |
+
+#### ubahn\_connections\_merged
+
+\| point1 | line | point2 | postcode\_point1 | lat\_point1 | lng\_point1 | postcode\_point2 | lat\_point2 | lng\_point2 |
+
+### ⚠️ Known Issues or Inconsistencies
+
+* GTFS: Some trips lack shape data (no geometries)
+* GTFS: Stop names have inconsistent formatting or character encoding
+* GTFS: Legacy or region-specific `route_type` codes
+* GTFS: Spatial drift of stops near ferries/water
+* U-Bahn: Inconsistent naming with "U-Bahnhof" prefix
+* U-Bahn: Missing coordinates for a few connections
+
+### 🔄 Transformation Plan
+
+**GTFS Workflow:**
+
+1. Load CSVs from GTFS exports
+2. Filter `route_type` for 3 (bus) and 4 (ferry)
+3. Normalize: lowercase, replace spaces with `_`, trim
+4. Join: `routes` + `agency` → `trips` → `stop_times` → `stops`
+5. Drop duplicates, validate foreign keys
+6. Output: `public_bus_ferry_data_merged.csv`
+
+**U-Bahn Workflow:**
+
+1. Clean station names (remove "U-Bahnhof", trim)
+2. Normalize coordinate and postcode types
+3. Merge station info to both `point1` and `point2`
+4. Create merged connection table for analysis or routing
 
 ---
 
+## 🗂 1.3 /sources Directory Plan
 
-### Files Added to `/sources` Folder
-- `03-stations.csv` – Raw dataset containing Berlin U-Bahn stations and their lat/lng  
-- `08-connections-no-dupes.csv` – Cleaned connections data between U-Bahn stations  
+### 📁 Folder Structure
+
+```
+/sources/
+├── cleaned_routes.csv
+├── cleaned_agency.csv
+├── cleaned_stop_times.csv
+├── cleaned_stops.csv
+├── public_bus_ferry_data_merged.csv
+├── public_bus_data_cleaned.csv
+├── 03-stations.csv
+├── 08-connections-no-dupes.csv
+└── README.md
+```
+
+### `/sources/README.md`
+
+```markdown
+# 🗂 Data Sources: Public Transport Berlin
+
+## Contents
+- `cleaned_routes.csv`: GTFS routes filtered to bus and ferry
+- `cleaned_agency.csv`: Transit operators
+- `cleaned_stop_times.csv`: Arrival and departure times per stop
+- `cleaned_stops.csv`: Stops with lat/lon
+- `public_bus_ferry_data_merged.csv`: Full GTFS join output
+- `public_bus_data_cleaned.csv`: Duplicate-free, no empty-column version
+- `03-stations.csv`: U-Bahn stations (name, lat/lon)
+- `08-connections-no-dupes.csv`: U-Bahn station-to-station links
+
+## Transformation Summary
+1. Clean & normalize all GTFS and U-Bahn string fields
+2. Join GTFS tables into one consolidated transport table
+3. Spatially align stops with neighborhoods (optional)
+4. Export for use in dashboards, APIs, and spatial tools
+```
