@@ -56,4 +56,16 @@
 
 - **Data Issues**: The datasets contain some missing or incomplete data points, which affect certain years and districts unevenly. Additionally, there are occasional inconsistencies in values that may arise from changes in data collection methods or reporting standards over time. Users should be aware of these limitations when analyzing trends across multiple years or comparing districts.
 
-- **Transformation Plan**:
+- **Data Transformation Plan**: The dataset will undergo several transformations to ensure consistency, clarity, and readiness for analysis
+    1. **Column Standardization**: Unify column names (e.g., rename district to neighbourhood), apply consistent formatting (e.g., lowercase, snake_case).
+    2. **Data Type Consistency**: Ensure all columns have appropriate data types (e.g., dates, numbers, strings).
+    3. **Missing Data Handling**: Fill missing values using suitable methods (e.g., mean, forward-fill) or remove if necessary.
+    4. **Value Cleaning**: Normalize formatting (e.g., trim whitespace, unify label casing, map inconsistent entries).
+    5. **Derived Columns & Calculations**: Create new columns to support analysis.
+        * Possible calculations:
+            - Annual change in median and median rent, land value, population and housing development trends.
+            - Ratios and density metrics in rent per inhabitant, land value per residence, living space per district.
+            - Land use insights on share of developed vs. undeveloped land, percentage share of each land type.
+            - Urbanization indicators by Floor space ratio vs. population density, residential units per hectare
+            - Affordability index, rent vs. land value correlation.
+    6. **Validation**: Check ranges, formats, and logical consistency post-transformation.
