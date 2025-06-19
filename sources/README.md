@@ -15,17 +15,18 @@
 - **Static** — not dynamically updated via API or automated schedule
 
 ## Fields Used
-| Column         | Description                                          |
-|----------------|------------------------------------------------------|
-| `id`           | Unique identifier of the preservation zone           |
-| `schluessel`   | Administrative code                                  |
-| `bezirk`       | Berlin district name                                 |
-| `gebietsname`  | Name of the preservation zone                        |
-| `f_gybl_dat`   | Date of publication in the official gazette          |
-| `f_in_kraft`   | Date the regulation came into force                  |
-| `ae_gvbldat`   | (Optional) alternate publication date (often null)   |
-| `fl_in_ha`     | Area size in hectares                                |
-| `geometry`     | Multipolygon geometry in EPSG:25833 (meters)         |
+| Column                 | Description                                          |
+|------------------------|------------------------------------------------------|
+| `id`                   | Unique identifier of the preservation zone           |
+| `code`                 | Administrative code                                  |
+| `district`             | Berlin district name                                 |
+| `zone_name`            | Name of the preservation zone                        |
+| `publication_date`     | Date of publication in the official gazette          |
+| `effective_date`       | Date the regulation came into force                  |
+| `alt_publication_date` | (Optional) alternate publication date (often null)   |
+| `alt_effective_date`   | (Optional) alternate effective date (often null)     |
+| `area_ha`              | Area size in hectares                                |
+| `geometry`             | Multipolygon geometry in EPSG:25833 (meters)         |
 
 ## Coordinate Reference System (CRS)
 - Current CRS: **EPSG:25833** — UTM Zone 33N (used in Germany) (EPSG:25833 — these are projected coordinates (in meters),
