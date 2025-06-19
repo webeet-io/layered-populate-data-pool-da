@@ -1,0 +1,16 @@
+
+Berlin Crime Atlas Data Download Instructions
+===========================================
+
+Automatic download failed. Please manually download from:
+https://daten.berlin.de/datensaetze/kriminalitatsatlas-berlin
+
+Steps:
+1. Visit the URL above
+2. Look for the download link for the Excel/XLSX file
+3. Save as: kriminalitaetsatlas_2014-2023.xlsx
+4. Place in this directory (sources/crime_atlas/)
+
+Alternative sources:
+- Direct portal: https://www.kriminalitaetsatlas.berlin.de/
+- Historical data: Check archive sections for previous years
