@@ -85,14 +85,14 @@ Enhance Berlin neighborhood and listing data with relevant features from **recre
 
 ### 🌳 **Public Parks**
 
-| Column (German)             | Proposed Name       | Description                                      |
-|-----------------------------|---------------------|--------------------------------------------------|
-| Name                        | `park_name`         | Name of the green space                          |
-| Art der Grünanlage          | `park_type`         | Type of green area (Volkspark, Landschaftspark)  |
-| Bezirk                      | `district`          | Berlin district name                             |
-| Ortsteil                    | `locality`          | Neighborhood/locality                            |
-| Fläche in m²                | `area_sqm`          | Size of the park in square meters                |
-| Planungsraum                | `planning_area`     | Urban planning division (for spatial hierarchy)  |
+| Column (German)             | Proposed Name           | Description                                      |
+|-----------------------------|-------------------------|--------------------------------------------------|
+| Name                        | `park_name`             | Name of the green space                          |
+| Art der Grünanlage          | `park_type`             | Type of green area (Volkspark, Landschaftspark)  |
+| Bezirk                      | `neighborhood`          | Berlin district name                             |
+| Ortsteil                    | `locality`              | Neighborhood/locality                            |
+| Fläche in m²                | `area_sqm`              | Size of the park in square meters                |
+| Planungsraum                | `planning_area`         | Urban planning division (for spatial hierarchy)  |
 | Koordinaten (Lat/Lon)       | `latitude`, `longitude` | Geospatial location                           |
 
 ---
@@ -104,7 +104,7 @@ Enhance Berlin neighborhood and listing data with relevant features from **recre
 | Name des Spielplatzes             | `playground_name`       | Name of the playground                             |
 | Namenszusatz des Spielplatzes     | `playground_suffix`     | Extra naming detail or location note               |
 | Art der Grünanlage                | `playground_type`       | Playground category or structure                   |
-| Bezirk                            | `district`              | Berlin district name                               |
+| Bezirk                            | `neighborhood`          | Berlin district name                               |
 | Ortsteil                          | `locality`              | Neighborhood/locality                              |
 | Baujahr                           | `year_built`            | Construction year                                  |
 | letztes Sanierungsjahr            | `last_renovation_year`  | Last renovation date                               |
@@ -124,26 +124,6 @@ Enhance Berlin neighborhood and listing data with relevant features from **recre
 
 - **Spatial Join Strategy**:
   - Parks/playgrounds will be mapped to the nearest or containing **neighborhood polygon** using spatial lookup (e.g., via GeoPandas or PostGIS).
-
----
-
-## 🗃️ Proposed Schema: `recreational_zones`
-
-| Column Name            | Data Type   | Description                                  |
-|------------------------|-------------|----------------------------------------------|
-| `zone_id`              | UUID        | Unique identifier                            |
-| `zone_type`            | TEXT        | "park" or "playground"                       |
-| `name`                 | TEXT        | Name of the zone                             |
-| `suffix`               | TEXT        | Additional name info (if any)                |
-| `district`             | TEXT        | Administrative district                      |
-| `locality`             | TEXT        | Neighborhood or locality                     |
-| `planning_area`        | TEXT        | Urban planning unit                          |
-| `area_sqm`             | FLOAT       | Total area in square meters                  |
-| `net_play_area_sqm`    | FLOAT       | Net play area (playgrounds only)             |
-| `year_built`           | INT         | Year of construction                         |
-| `last_renovation_year` | INT         | Year of last renovation                      |
-| `latitude`             | FLOAT       | Latitude coordinate                          |
-| `longitude`            | FLOAT       | Longitude coordinate                         |
 
 ---
 
