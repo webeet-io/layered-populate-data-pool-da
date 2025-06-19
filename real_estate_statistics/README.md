@@ -51,6 +51,8 @@
     - If available, `district_id` may also be present for reference or indexing
 
 - **Schema**:
+    ![Raw Schema](raw_datasets/raw_schema.png)
+
 
 - **Data Issues**: The datasets contain some missing or incomplete data points, which affect certain years and districts unevenly. Additionally, there are occasional inconsistencies in values that may arise from changes in data collection methods or reporting standards over time. Users should be aware of these limitations when analyzing trends across multiple years or comparing districts.
 
