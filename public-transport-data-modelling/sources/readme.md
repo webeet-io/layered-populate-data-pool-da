@@ -43,6 +43,13 @@ From `08-connections-no-dupes.csv`:
 * `line`: U-Bahn line
 * `point2`: Ending station
 
+From GTFS `stop.txt` (available in the shared Google Drive folder):
+
+* `stop_name`: Name of the stop (e.g., "U Wilmersdorfer Straße")  
+* `stop_desc`: Additional stop description  
+* `stop_lat`: Latitude  
+* `stop_lon`: Longitude  
+
 ### 🔗 Data Linkage Plan
 
 | Target Table       | Link Type         | Key Columns                    |
@@ -101,6 +108,10 @@ From `08-connections-no-dupes.csv`:
 3. Assign  neighborhood name using coordinates or postcode (reverse geocoding or lookup table)
 4. Merge station info to both `point1` and `point2`
 5. Create merged connection table for analysis or routing
+6. Filter `stops.csv` from the shared Google Drive folder to isolate U-Bahn stations:
+   - Use `stop_name` values that start with "U" or "S+U"
+   - This idea was added late to enrich the dataset
+   - Reverse geocode coordinates to get postcodes per stop
 
 ---
 
@@ -131,7 +142,8 @@ From `08-connections-no-dupes.csv`:
 - `public_bus_ferry_data_merged.csv`: Full GTFS join output  
 - `public_bus_data_cleaned.csv`: Duplicate-free, no empty-column version  
 - `03-stations.csv`: U-Bahn stations (name, lat/lon)  
-- `08-connections-no-dupes.csv`: U-Bahn station–to–station links  
+- `08-connections-no-dupes.csv`: U-Bahn station–to–station links
+-  [`Google Drive Folder →`](Google-Drive-Link.url): Contains raw transit data snapshots.
 
 ## Transformation Summary
 1. Clean & normalize all GTFS and U–Bahn string fields  
