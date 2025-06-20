@@ -96,10 +96,11 @@ From `08-connections-no-dupes.csv`:
 
 **U-Bahn Workflow:**
 
-1. Clean station names (remove "U-Bahnhof", trim)
+1. Clean station names (remove "U–Bahnhof", trim)
 2. Normalize coordinate and postcode types
-3. Merge station info to both `point1` and `point2`
-4. Create merged connection table for analysis or routing
+3. Assign  neighborhood name using coordinates or postcode (reverse geocoding or lookup table)
+4. Merge station info to both `point1` and `point2`
+5. Create merged connection table for analysis or routing
 
 ---
 
