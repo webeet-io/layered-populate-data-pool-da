@@ -77,9 +77,7 @@ From GTFS `stop.txt` (available in the shared Google Drive folder):
 | agency\_id      | STRING  | Operator ID                      |
 | agency\_name    | STRING  | Normalized agency name (cleaned) |
 
-#### ubahn\_connections\_merged
 
-\| point1 | line | point2 | postcode\_point1 | lat\_point1 | lng\_point1 | postcode\_point2 | lat\_point2 | lng\_point2 |
 
 ### ⚠️ Known Issues or Inconsistencies
 
