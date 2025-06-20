@@ -1,21 +1,29 @@
-pandas==2.2.2
-numpy==1.26.4
-xgboost==2.0.3
-scikit-learn==1.4.2
-statsmodels==0.14.1
-scipy==1.13.0
-seaborn==0.13.2
-nbformat==5.10.4
-matplotlib==3.8.4
-plotly==5.21.0
-altair==5.2.0
-rich==13.7.1
-requests==2.31.0
-tensorflow-macos==2.15.0
-nltk==3.8.1
-python-dotenv==1.0.1
-wordcloud==1.9.3
-psycopg2-binary==2.9.9
-sqlalchemy==2.0.30
+pandas==2.2.2 # for data manipulation and analysis 
+numpy==1.26.4 # for numerical computing and data manipulation 
+xgboost==2.0.3 # for gradient boosting algorithms 
+scikit-learn==1.4.2 # for machine learning algorithms 
+statsmodels==0.14.1 # for statistical modeling 
+scipy==1.13.0 # for scientific computing and technical computing 
+seaborn==0.13.2 # for statistical data visualization 
+nbformat==5.10.4 # for Jupyter notebook format handling 
+matplotlib==3.8.4 # for plotting and visualization 
+plotly==5.21.0 # for interactive plotting 
+altair==5.2.0 # for interactive visualizations 
+rich==13.7.1 # for rich text and beautiful formatting in the terminal 
+requests==2.31.0 # for making HTTP requests 
+tensorflow-macos==2.15.0 # for machine learning and deep learning 
+nltk==3.8.1 # for natural language processing 
+python-dotenv==1.0.1 # for environment variable management 
+wordcloud==1.9.3 # for generating word clouds 
+psycopg2-binary==2.9.9 # for PostgreSQL database interactions 
+sqlalchemy==2.0.30 # for database interactions 
 owslib==0.24.0 # for working with OGC web services 
 geopandas==0.14.0 # for geospatial data handling  
+beautifulsoup4==4.12.2 # for web scraping
+lxml==4.9.3 # for parsing HTML and XML documents
+pyproj==3.6.0 # for cartographic projections and coordinate transformations
+shapely==2.0.1 # for geometric operations
+fiona==1.9.4 # for reading and writing vector data
+pyarrow==12.0.0 # for columnar data formats
+tabula==2.10.0 # for reading tables from PDFs
+jpype1==1.4.0 # for Java integration in Python  
