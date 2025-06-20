@@ -119,15 +119,15 @@ From GTFS `stop.txt` (available in the shared Google Drive folder):
 
 ```
 /sources/
-├── cleaned_routes.csv
-├── cleaned_agency.csv
-├── cleaned_stop_times.csv
-├── cleaned_stops.csv
-├── public_bus_ferry_data_merged.csv
-├── public_bus_data_cleaned.csv
 ├── 03-stations.csv
 ├── 08-connections-no-dupes.csv
-└── README.md
+├── Google-Drive-Link.url
+├── cleaned_agency.csv
+├── cleaned_routes-2.csv
+├── cleaned_stops.csv
+├── public_bus_data_cleaned.csv
+├── public_bus_ferry_data_merged.csv
+├── readme.md
 ```
 
 ### `/sources/README.md`
