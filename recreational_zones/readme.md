@@ -156,7 +156,6 @@ Enhance Berlin neighborhood and listing data with relevant features from **recre
    - Run spatial joins with neighborhood shapefiles.
 
 4. **Structure & Store**:
-   - Create a unified `recreational_zones` table.
    - Tag each row with `zone_type`: `"park"` or `"playground"`.
 
 5. **Export or Integrate**:
