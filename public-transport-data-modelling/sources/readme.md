@@ -123,20 +123,18 @@ From `08-connections-no-dupes.csv`:
 
 ### `/sources/README.md`
 
-```markdown
 # Data Sources: Public Transport Berlin
 - `cleaned_routes.csv`: GTFS routes filtered to bus and ferry  
 - `cleaned_agency.csv`: Transit operators  
-- [`cleaned_stop_times.csv`](https://drive.google.com/file/d/1r8LSmX2BZqrDyeQ3Z0SoBhmHM_4IveDE/view?usp=share_link): Arrival and departure times per stop  
+- [cleaned_stop_times.csv](https://drive.google.com/file/d/1r8LSmX2BZqrDyeQ3Z0SoBhmHM_4IveDE/view?usp=share_link): Arrival and departure times per stop  
 - `cleaned_stops.csv`: Stops with lat/lon  
 - `public_bus_ferry_data_merged.csv`: Full GTFS join output  
 - `public_bus_data_cleaned.csv`: Duplicate-free, no empty-column version  
 - `03-stations.csv`: U-Bahn stations (name, lat/lon)  
-- `08-connections-no-dupes.csv`: U-Bahn station-to-station links
+- `08-connections-no-dupes.csv`: U-Bahn station–to–station links  
 
 ## Transformation Summary
-1. Clean & normalize all GTFS and U-Bahn string fields
-2. Join GTFS tables into one consolidated transport table
-3. Spatially align stops with neighborhoods (optional)
-4. Export for use in dashboards, APIs, and spatial tools
-```
+1. Clean & normalize all GTFS and U–Bahn string fields  
+2. Join GTFS tables into one consolidated transport table  
+3. Spatially align stops with neighborhoods (optional)  
+4. Export for use in dashboards, APIs, and spatial tools  
