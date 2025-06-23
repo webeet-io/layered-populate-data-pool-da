@@ -54,23 +54,35 @@ From `08-connections-no-dupes.csv`:
 
 ---
 
+### 🧠 Planned Transformations
+
+- **Normalize** and **clean station names** (remove `"U-Bahnhof"` and trim whitespace).
+- **Join** geographic coordinates from `03-stations.csv` to both `point1` and `point2`.
+- Use **reverse geocoding** to assign `postcode` to both endpoints based on their latitude and longitude.
+- Use a **PLZ-to-neighborhood lookup** (or similar dataset) to assign a **neighborhood name** to each point based on postcode.
+- **Deduplicate** any redundant or mirrored connections (`A → B` and `B → A`).
+- **Export** final enriched connection data as `merged_ubahn_connections.csv`.
+
+---
+
 ### 🔗 Data Linking Strategy
 
-- **Join Key:** Cleaned station names, normalized by removing "U-Bahnhof" prefix and trimming whitespace.
+- **Join Key:** Cleaned station names, normalized by removing `"U-Bahnhof"` prefix and trimming whitespace.
 - **Join Logic:**
-  - Match `point1` and `point2` (after cleaning) with `station` (after cleaning).
-  - Join `lat` and `lng` coordinates from station dataset to each connection.
+  - Match `point1` and `point2` (after cleaning) with `station` in the coordinates dataset.
+  - Join `lat` and `lng` values from `03-stations.csv` to each connection.
+  - Apply **reverse geocoding** on `lat/lng` to retrieve `postcode`.
+  - Map `postcode` to neighborhood using a lookup table.
 
 ---
 
 ### 🧱 Planned Schema for Merged Output
 
-| point1               | line | point2                | lat_point1 | lng_point1 | lat_point2 | lng_point2 | postcode_point1 | postcode_point2 |
-|----------------------|------|------------------------|-------------|-------------|-------------|-------------|------------------|------------------|
-| U-Bahnhof Zoo        | U9   | U-Bahnhof Hansaplatz   | 52.505      | 13.332      | 52.517      | 13.343      | 10787            | 10557            |
+| point1             | line | point2               | lat_point1 | lng_point1 | lat_point2 | lng_point2 | postcode_point1 | postcode_point2 | neighborhood_point1 | neighborhood_point2 |
+|--------------------|------|----------------------|-------------|-------------|-------------|-------------|------------------|------------------|-----------------------|-----------------------|
+| U-Bahnhof Zoo      | U9   | U-Bahnhof Hansaplatz | 52.505      | 13.332      | 52.517      | 13.343      | 10787            | 10557            | Tiergarten            | Moabit                |
 
 ---
-
 ### ⚠️ Known Data Issues
 
 - Inconsistent station names (e.g. “U-Bahnhof” prefix, spacing)
