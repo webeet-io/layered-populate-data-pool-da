@@ -33,12 +33,14 @@
 ## 1.2 Project Steps Overview
 
 1. **Loading** raw source files from `/sources/03-stations.csv` and `/sources/08-connections-no-dupes.csv`
-2. **Cleaning** all station names (removing `"U-Bahnhof"`, trimming whitespace)
-3. **Merging** station and connection datasets using cleaned station names with SQLite
+2. **Cleaning** all station names (removing prefixes like `"U-Bahnhof"`, `"S-Bahnhof"`, `"Bahnhof Berlin"`, etc.)
+3. **Merging** station and connection datasets using cleaned station names via SQLite and pandas
 4. **Adding** missing coordinates manually after the merge for ~12 stations with no `lat/lon` in the original dataset  
-   → Coordinates will be sourced from Wikipedia, OpenStreetMap, and official BVG sources  
-5. **Applying** reverse geocoding using the Nominatim API (`geopy`) to derive the `stadtteil` (district name)
-6. **Exporting** final enriched station–line data to `ubahn_with_stadtteil.csv` for downstream use
+   → Coordinates sourced from Wikipedia, OpenStreetMap, and official BVG documentation
+5. **Applying** reverse geocoding using the Nominatim API (`geopy`) to derive the **Stadtteil** (sub-neighborhood)
+6. **Then extracting** the **Bezirk** (official district, 1 of Berlin's 12) using the same lat/lon via reverse geocoding  
+   → The resulting column is named `neighborhood`
+7. **Exporting** final enriched station–line data to `ubahn_with_neighborhood.csv` 
 
 ---
 
@@ -48,17 +50,19 @@
 - **Joining** `latitude` and `longitude` from the station dataset to each station in the line table
 - **Adding** missing coordinates manually post-merge for stations such as:  
   *Friedrichstraße, Zoologischer Garten, Südkreuz, Hackescher Markt, Fehrbelliner Platz*, etc.  
-- **Applying** reverse geocoding (via `geopy`) to assign each station to its respective `stadtteil`
+- **Reverse geocoding** (via `geopy`) to assign:
+  - each station to its **Stadtteil** (sub-district, when available)
+  - each station to its **Bezirk** (official Berlin district, always prioritized)
 - **Casting** postal code values back to `Int64` to fix float artifacts (e.g., `10787.0` → `10787`)
 
 ---
 
-## 1.4 Output Schema (planned: `ubahn_with_stadtteil.csv`)
+## 1.4 Output Schema (`ubahn_with_stadtteil.csv`)
 
-| station             | line | latitude | longitude | postcode | stadtteil      |
-|---------------------|------|----------|-----------|----------|----------------|
-| Zoologischer Garten | U9   | 52.5075  | 13.33417  | 10787    | Charlottenburg |
-| Südkreuz            | U6   | 52.4750  | 13.36500  | 10829    | Schöneberg     |
+| station             | line | latitude | longitude | postcode | stadtteil          | neighborhood           |
+|---------------------|------|----------|-----------|----------|---------------------|-------------------------|
+| Zoologischer Garten | U9   | 52.5075  | 13.33417  | 10787    | Tiergarten          | Charlottenburg-Wilmersdorf |
+| Südkreuz            | U6   | 52.4750  | 13.36500  | 10829    | Schöneberg          | Tempelhof-Schöneberg   |
 
 ---
 
@@ -69,15 +73,15 @@
 - `08-connections-no-dupes.csv` – Unique U-Bahn connections between stations (directional deduped)
 
 ### 🔍 Notes
-- Final enriched station file (with manually patched coordinates and reverse-geocoded district) is **not part of the public repo**
+- Final enriched station file (with manually patched coordinates and reverse-geocoded **Bezirke**) is **not part of the public repo**
 - All coordinate patches and reverse geocoding are applied in local scripts during transformation
 
 ---
 
-## 📦 Final Outputs (Planned)
+## 📦 Final Outputs
 
-- `merged_ubahn_line.csv` – Station–line relationships + lat/lon + postcode (includes manual patches)
-- `ubahn_with_stadtteil.csv` – Final enriched table with `stadtteil` added (for analysis and mapping)
+- `merged_ubahn_line.csv` – Station–line relationships + lat/lon + postcode
+- `ubahn_with_stadtteil.csv` – Final enriched table with **Stadtteil** and **Bezirk (neighborhood)**
 
 ---
 
