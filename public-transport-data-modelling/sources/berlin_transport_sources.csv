@@ -1,0 +1,6 @@
+Data Source,URL / Access,Data Type,Update Frequency,Use Case
+VBB GTFS,https://www.vbb.de/search/gtfs/,Static (GTFS) + Dynamic (GTFS‑RT),GTFS: 2x/week; GTFS‑RT: real-time,"Schedules, routes, stops, real-time vehicle positions"
+BVG / VBB Fahrinfo API,https://v5.bvg.transport.rest/,"Dynamic (REST API, JSON)",Real-time,"Departures, vehicle tracking, delays, trip planning"
+VBB Station Access Points,https://daten.berlin.de/datensaetze/vbb-haltestellen-mit-zug%C3%A4ngen,Static (CSV),Last updated: 2021,Entrance coordinates for stations; connects to neighborhoods
+Berlin Linien (Berlin Open Data),https://daten.berlin.de/datensaetze/berliner-linien-und-haltestellen-gtfs,Static (GeoJSON / CSV),Twice weekly,Geometry of tram/S-Bahn lines; spatial mapping
+OpenStreetMap (Overpass API),https://overpass-turbo.eu/,Static/Dynamic (JSON/XML),Depends on OSM updates,"Detailed metadata: accessibility, shelter, infrastructure"
