@@ -34,13 +34,13 @@ This issue outlines the process for integrating a new data layer on topic Milieu
 ## Data Transformation Plan
 
 **1. Key Parameters/Columns:**
-- Select columns such as street name, district (Bezirk), area name (Gebietsname), and any unique identifiers relevant to the use case.
+- Select columns such as street name, neigborhoods (Bezirk), area name (Gebietsname), and any unique identifiers relevant to the use case.
 
 **2. Data Connections:**
 - Link data to existing tables using coordinates, district names, or neighborhood codes to enable spatial joins and enrich analysis.
 
 **3. Planned Schema:**
-- Draft a new table schema with fields: `id`, `street_name`, `district`, `area_name`, `coordinates`, and any additional attributes needed for the project.
+- Draft a new table schema with fields: `id`, `street_name`, `neigborhoods`, `area_name`, `coordinates`, and any additional attributes needed for the project.
 
 **4. Known Data Issues:**
 - Possible inconsistencies in street naming conventions
