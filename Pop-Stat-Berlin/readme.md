@@ -33,7 +33,7 @@ File: SB_A01-05-00_2024h02_BE.xlsx (Population by age groups, neighbourhood and 
 
  
 * Neighbourhood
-* Postcode
+* Maritalstatus
 * Gender (M, F)
 * Age_Groups (0–5, 6–10, ..., 80+)
 * nationality
@@ -54,8 +54,8 @@ File: SB_A01-05-00_2024h02_BE.xlsx (Population by age groups, neighbourhood and 
 |------------------------|-----------|-----------------------------------------------------|
 | `neighbourhood`                   | STRING      | District name (Bezirk)         |
 | `2024`                 | INTEGER      | Number of residents in the year 2024                                |
-| `male`             | INTEGER     | Gender identifier                               |
-| `female`            | INTEGER      | Gender identifier                      |
+| `male`             | INTEGER     | Number of male residents                               |
+| `female`            | INTEGER      | Number of female residents                      |
 | `germans`     | INTEGER      | Number of german residents    |
 | `foreigners`       | INTEGER      | Number of foreign residents           |
 | `single` | INTEGER      | Number of residents who are single   |
