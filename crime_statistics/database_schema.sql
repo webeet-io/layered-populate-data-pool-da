@@ -17,7 +17,7 @@ CREATE TABLE crime_statistics (
     area_name VARCHAR(255) NOT NULL,                 -- Human readable name (e.g., "Alexanderplatzviertel")
     area_type VARCHAR(50) NOT NULL,                  -- 'district', 'district_region', 'planning_area'
     bezirk_id VARCHAR(10),                          -- District ID (1-12)
-    bezirk_name VARCHAR(100),                       -- District name (e.g., "Mitte")
+    neighborhood VARCHAR(100),                       -- District name (e.g., "Mitte")
     coordinates GEOMETRY(POINT, 4326),             -- Geographic center of area (WGS84)
     area_km2 FLOAT,                                -- Area size in square kilometers
     
@@ -56,7 +56,7 @@ CREATE TABLE area_hierarchy (
     area_type VARCHAR(50) NOT NULL,                -- Geographic level
     parent_area_id VARCHAR(20),                    -- Parent area (for hierarchy)
     bezirk_id VARCHAR(10),                        -- District ID
-    bezirk_name VARCHAR(100),                     -- District name
+    neighborhood VARCHAR(100),                     -- District name
     coordinates GEOMETRY(POINT, 4326),            -- Area centroid
     boundary_geom GEOMETRY(MULTIPOLYGON, 4326),   -- Area boundary (optional)
     area_km2 FLOAT,                               -- Area size
@@ -144,7 +144,7 @@ FOREIGN KEY (area_id) REFERENCES area_hierarchy(area_id);
 -- District-level safety summary
 CREATE OR REPLACE VIEW district_safety_summary AS
 SELECT 
-    cs.bezirk_name,
+    cs.neighborhood,
     cs.year,
     COUNT(DISTINCT cs.crime_type) as crime_types_reported,
     SUM(cs.absolute_cases) as total_crimes,
@@ -155,8 +155,8 @@ SELECT
 FROM crime_statistics cs
 LEFT JOIN area_hierarchy ah ON cs.bezirk_id = ah.area_id
 WHERE cs.area_type = 'district'
-GROUP BY cs.bezirk_name, cs.year, ah.population_2023, ah.area_km2
-ORDER BY cs.bezirk_name, cs.year;
+GROUP BY cs.neighborhood, cs.year, ah.population_2023, ah.area_km2
+ORDER BY cs.neighborhood, cs.year;
 
 -- Crime type analysis across all areas
 CREATE OR REPLACE VIEW crime_type_analysis AS
@@ -179,7 +179,7 @@ CREATE OR REPLACE VIEW area_safety_rankings AS
 SELECT 
     cs.area_id,
     cs.area_name,
-    cs.bezirk_name,
+    cs.neighborhood,
     cs.year,
     SUM(cs.absolute_cases) as total_crimes,
     ROUND(AVG(cs.frequency_per_100k), 2) as avg_frequency_per_100k,
@@ -193,7 +193,7 @@ SELECT
     END as risk_category
 FROM crime_statistics cs
 WHERE cs.area_type = 'district_region'
-GROUP BY cs.area_id, cs.area_name, cs.bezirk_name, cs.year
+GROUP BY cs.area_id, cs.area_name, cs.neighborhood, cs.year
 ORDER BY cs.year DESC, safety_rank ASC;
 
 -- =============================================================================
@@ -267,14 +267,14 @@ $$ LANGUAGE plpgsql;
 /*
 -- Get crime statistics for a specific district in the latest year
 SELECT * FROM crime_statistics 
-WHERE bezirk_name = 'Mitte' AND year = 2023 
+WHERE neighborhood = 'Mitte' AND year = 2023 
 ORDER BY frequency_per_100k DESC;
 
 -- Find safest areas by crime frequency
-SELECT area_name, bezirk_name, AVG(frequency_per_100k) as avg_frequency
+SELECT area_name, neighborhood, AVG(frequency_per_100k) as avg_frequency
 FROM crime_statistics 
 WHERE year = 2023 
-GROUP BY area_id, area_name, bezirk_name
+GROUP BY area_id, area_name, neighborhood
 ORDER BY avg_frequency ASC 
 LIMIT 10;
 
@@ -286,13 +286,13 @@ GROUP BY year
 ORDER BY year;
 
 -- Areas within 1km of a specific location with safety scores
-SELECT cs.area_name, cs.bezirk_name, 
+SELECT cs.area_name, cs.neighborhood, 
        calculate_safety_score(cs.area_id, 2023) as safety_score,
        ST_Distance(cs.coordinates, ST_GeomFromText('POINT(13.4050 52.5200)', 4326)) as distance_meters
 FROM crime_statistics cs
 WHERE ST_DWithin(cs.coordinates, ST_GeomFromText('POINT(13.4050 52.5200)', 4326), 1000)
 AND year = 2023
-GROUP BY cs.area_id, cs.area_name, cs.bezirk_name, cs.coordinates
+GROUP BY cs.area_id, cs.area_name, cs.neighborhood, cs.coordinates
 ORDER BY safety_score DESC;
 */
 
