@@ -80,8 +80,9 @@ This was necessary because:
 - Some stations appeared **multiple times**, each correctly associated with different U-Bahn lines (e.g. U2, U6).
 - However, a few of these stations had **extra duplicate rows** with no line info, which added noise and redundancy.
 - Meanwhile, stations that appeared **only once**, even if their `line` was missing, were **retained** — since they might still be valid standalone entries.
+- I also ensured that only entries with valid line formats (like `U1`, `U6`) were kept. Any rows where the `line` field contained unrelated railway names (e.g. “Berliner Stadtbahn”) or was completely missing were dropped.
 
-I also ensured that only entries with valid line formats (like `U1`, `U6`) were kept. Any rows where the `line` field contained unrelated railway names (e.g. “Berliner Stadtbahn”) or was completely missing were dropped.
+Finally, I manually inserted missing line values for three unique stations — Elsterwerdaer Platz (U5), Grenzallee (U7), and Weinmeisterstraße (U8) — based on verified information from the official BVG website, ensuring no remaining null entries in the `line` column.
 
 This step ensures a final, clean dataset of Berlin U-Bahn stations with reliable geographic and line information 
 
