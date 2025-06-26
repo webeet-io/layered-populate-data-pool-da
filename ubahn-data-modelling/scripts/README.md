@@ -66,5 +66,21 @@ In this step:
 - The postcode column remained consistently formatted throughout.
 
 ---
+### 2.5 Final Clean-Up: Remove Invalid Duplicates with Missing Lines
 
+**Script:** `cleaned_ubah.ipynb`  
+**Input:** `ubahn_with_neighborhoods.csv`  
+**Output:** `ubahn.csv`
+
+In this last step, I refined the data by removing redundant station entries that had **no line information** (`line = null`) **only when duplicates existed** for the same station.
+
+This was necessary because:
+
+- Some stations appeared **multiple times**, each correctly associated with a different transit line.
+- However, some of these had **duplicate rows with no line**, which were unnecessary.
+- At the same time, stations that appeared **only once**, even if their `line` was missing, were **retained** since they may still represent valid data points.
+
+To solve this, I grouped stations and removed the unhelpful null-line rows *only when other valid line entries existed*. This leaves a cleaned dataset of Berlin U-Bahn stations that contains only meaningful and consistent line data — ready for downstream analysis.
+
+---
 This sequential process ensures accurate geographic enrichment of Berlin U-Bahn station data with postal codes, neighborhoods, and district-level details.
