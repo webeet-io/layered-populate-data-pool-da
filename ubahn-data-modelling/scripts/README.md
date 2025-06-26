@@ -66,21 +66,24 @@ In this step:
 - The postcode column remained consistently formatted throughout.
 
 ---
-### 2.5 Final Clean-Up: Remove Invalid Duplicates with Missing Lines
+---
 
-**Script:** `cleaned_ubah.ipynb`  
+### 🧹 2.5 Final Clean-Up: Remove Invalid Duplicates with Missing Lines
+
+**Script:** `cleaned_ubahn.ipynb`  
 **Input:** `ubahn_with_neighborhoods.csv`  
 **Output:** `ubahn.csv`
 
-In this last step, I refined the data by removing redundant station entries that had **no line information** (`line = null`) **only when duplicates existed** for the same station.
+In this last step, I refined the data by removing redundant station entries that had **no line information** (`line = null`) — but **only when** duplicates existed for the same station.
 
 This was necessary because:
+- Some stations appeared **multiple times**, each correctly associated with different U-Bahn lines (e.g. U2, U6).
+- However, a few of these stations had **extra duplicate rows** with no line info, which added noise and redundancy.
+- Meanwhile, stations that appeared **only once**, even if their `line` was missing, were **retained** — since they might still be valid standalone entries.
 
-- Some stations appeared **multiple times**, each correctly associated with a different transit line.
-- However, some of these had **duplicate rows with no line**, which were unnecessary.
-- At the same time, stations that appeared **only once**, even if their `line` was missing, were **retained** since they may still represent valid data points.
+I also ensured that only entries with valid line formats (like `U1`, `U6`) were kept. Any rows where the `line` field contained unrelated railway names (e.g. “Berliner Stadtbahn”) or was completely missing were dropped.
 
-To solve this, I grouped stations and removed the unhelpful null-line rows *only when other valid line entries existed*. This leaves a cleaned dataset of Berlin U-Bahn stations that contains only meaningful and consistent line data — ready for downstream analysis.
+This step ensures a final, clean dataset of Berlin U-Bahn stations with reliable geographic and line information 
 
 ---
 This sequential process ensures accurate geographic enrichment of Berlin U-Bahn station data with postal codes, neighborhoods, and district-level details.
