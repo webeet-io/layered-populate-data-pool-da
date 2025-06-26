@@ -4,7 +4,7 @@ This directory contains the Jupyter notebook used to download, clean, and transf
 
 ## 📄 Notebook
 
-- `01_download_and_clean_milieuschutz_data.ipynb`  
+- `Downloading_and_transformatio_data.ipynb`  
   This notebook performs the following steps:
   
   1. Downloads Milieuschutzgebiete data from GDI Berlin WFS service
