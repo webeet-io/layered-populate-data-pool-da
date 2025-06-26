@@ -44,7 +44,7 @@ File: SB_A01-05-00_2024h02_BE.xlsx (Population by age groups, neighbourhood and 
 🧩 How This Data Connects to Existing Tables
 
 
-*  Primary Join Field: Neighbourhood(matching neighborhood or district name in listings dataset) and postcode.
+*  Primary Join Field: Neighborhood(matching neighborhood or district name in listings dataset) and postcode.
 
 
 🗂️ Planned Schema for Population_stats
@@ -53,7 +53,6 @@ File: SB_A01-05-00_2024h02_BE.xlsx (Population by age groups, neighbourhood and 
 | Column                 | Type      | Description                                         |
 |------------------------|-----------|-----------------------------------------------------|
 | `neighborhood`                   | STRING      | District name (Bezirk)         |
-| `2024`                 | INTEGER      | Number of residents in the year 2024                                |
 | `male`             | INTEGER     | Number of male residents                               |
 | `female`            | INTEGER      | Number of female residents                      |
 | `germans`     | INTEGER      | Number of german residents    |
