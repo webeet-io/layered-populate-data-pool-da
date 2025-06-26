@@ -36,7 +36,7 @@ python add_postcode2.py
 In this step:
 - I cleaned and normalized station names, removing common prefixes like "U-Bahnhof", "S-Bahnhof", etc.
 - I removed any placeholder or irrelevant rows (e.g., those starting with "Q*").
-- I ensured the postcode column was correctly formatted as an integer (nullable Int64).
+- I transformed the postcode column to string format to ensure consistent formatting and avoid issues caused by floating-point values ending in .0.
 - I joined the two cleaned datasets using SQLite to unify geographic coordinates and postcodes.
 - After the join, I manually added latitude/longitude values for specific stations (12 stations) to avoid null values in the next steps.
 
