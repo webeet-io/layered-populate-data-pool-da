@@ -1,0 +1,11 @@
+trip_id,route_id,service_id,direction_id,agency_id,route_short_name,route_type,agency_name,agency_url,stop_lat,stop_lon,zone_id,neighborhood
+262718858,15068_3,274,0,32,848,bus,oberhavel_verkehrsgesellschaft_mbh,https://www.ovg-online.de,53.186056,13.140349,"4052_fürstenberg_(havel),_bahnhof",Oberhavel
+262718858,15068_3,274,0,32,848,bus,oberhavel_verkehrsgesellschaft_mbh,https://www.ovg-online.de,53.18523,13.144512,"4052_fürstenberg_(havel),_markt",Oberhavel
+262718858,15068_3,274,0,32,848,bus,oberhavel_verkehrsgesellschaft_mbh,https://www.ovg-online.de,53.191016,13.141724,"4052_fürstenberg_(havel),_tunnel",Oberhavel
+262718858,15068_3,274,0,32,848,bus,oberhavel_verkehrsgesellschaft_mbh,https://www.ovg-online.de,53.190993,13.128139,"4052_fürstenberg_(havel),_röblinsee_nord",Oberhavel
+262718858,15068_3,274,0,32,848,bus,oberhavel_verkehrsgesellschaft_mbh,https://www.ovg-online.de,53.193811,13.106253,"4051_fürstenberg_(havel),_steinhavelmühle",Oberhavel
+262718858,15068_3,274,0,32,848,bus,oberhavel_verkehrsgesellschaft_mbh,https://www.ovg-online.de,53.187947,13.090547,"4051_steinförde,_brücke",Oberhavel
+262718858,15068_3,274,0,32,848,bus,oberhavel_verkehrsgesellschaft_mbh,https://www.ovg-online.de,53.194556,13.043504,"4051_steinförde,_großmenow",Oberhavel
+262718852,15068_3,1132,0,32,848,bus,oberhavel_verkehrsgesellschaft_mbh,https://www.ovg-online.de,53.186056,13.140349,"4052_fürstenberg_(havel),_bahnhof",Oberhavel
+262718852,15068_3,1132,0,32,848,bus,oberhavel_verkehrsgesellschaft_mbh,https://www.ovg-online.de,53.18523,13.144512,"4052_fürstenberg_(havel),_markt",Oberhavel
+262718852,15068_3,1132,0,32,848,bus,oberhavel_verkehrsgesellschaft_mbh,https://www.ovg-online.de,53.191016,13.141724,"4052_fürstenberg_(havel),_tunnel",Oberhavel
