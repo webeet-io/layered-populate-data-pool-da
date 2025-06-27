@@ -29,14 +29,14 @@ Process for data collection and cleaning:
    4. Then I cleaned the Distance column by using Text to column fuction.
    5. And removed the decimal from the rest numerical columns.
 
-      hospitals_in_berlin	
-name	object
-address	object
-post_code 	int64
-coordinates	object
-distance	float64
-beds	int64
-cases	int64
+| hospitals_in_berlin	|
+| name | object |
+| address	| object |
+| post_code 	  | int64 |
+| coordinates	| object |
+| distance	| float64 |
+| beds | int64 |
+| cases	| int64 |
    
 * Where ever the cases is 0 the hospital's data was not updated by the last quality report.
 
