@@ -31,3 +31,30 @@ Process for data collection and cleaning:
    
 * Where ever the cases is 0 the hospital's data was not updated by the last quality report.
 
+🛠 Step 2: Data Transformation
+
+Write transformation logic using Python/SQL.
+
+Ensure data is clean, normalized, and matches the model defined in Step 1.
+
+Do not insert into the DB yet — this step is focused purely on transformation.
+
+Place scripts in the /scripts folder.
+
+Test transformation outputs locally.
+
+Submit the second PR.
+
+🧩 Step 3: Populate Database
+
+Use the approved script to insert transformed data into the database.
+
+Create new tables or update existing ones based on schema.
+
+Establish keys, references, and relationships between the new table and listings/neighborhoods.
+
+Verify data is inserted and properly linked.
+
+(Optional) Set up scheduled GitHub Actions workflows for ongoing updates (for dynamic layers).
+
+Submit the third and final PR.
