@@ -29,14 +29,30 @@ Process for data collection and cleaning:
    4. Then I cleaned the Distance column by using Text to column fuction.
    5. And removed the decimal from the rest numerical columns.
 
-| hospitals_in_berlin	|
-| name | object |
-| address	| object |
-| post_code 	  | int64 |
-| coordinates	| object |
-| distance	| float64 |
-| beds | int64 |
-| cases	| int64 |
+| column 	 | dtype  |
+|------------|--------|
+| name       | object |
+| address	 | object |
+| post_code  | int64  |
+| coordinates| object |
+| distance	 | float64|
+| beds       | int64  |
+| cases      | int64  |
+
+| Column          | Type    | Description                      |
+| --------------- | ------- | -------------------------------- |
+| route\_id       | STRING  | Transit route ID                 |
+| route\_type     | STRING  | 'bus' or 'ferry'                 |
+| trip\_id        | STRING  | GTFS trip ID                     |
+| stop\_id        | STRING  | GTFS stop ID                     |
+| stop\_name      | STRING  | Lowercase, cleaned stop name     |
+| stop\_lat       | FLOAT   | Latitude                         |
+| stop\_lon       | FLOAT   | Longitude                        |
+| arrival\_time   | TIME    | Scheduled time of arrival        |
+| departure\_time | TIME    | Scheduled time of departure      |
+| stop\_sequence  | INTEGER | Order of stop in the trip        |
+| agency\_id      | STRING  | Operator ID                      |
+| agency\_name    | STRING  | Normalized agency name (cleaned) |
    
 * Where ever the cases is 0 the hospital's data was not updated by the last quality report.
 
