@@ -32,8 +32,8 @@ File: SB_A01-05-00_2024h02_BE.xlsx (Population by age groups, neighbourhood and 
  Relevant Columns:
 
  
-* Neighbourhood
-* Postcode
+* Neighborhood
+* Maritalstatus
 * Gender (M, F)
 * Age_Groups (0–5, 6–10, ..., 80+)
 * nationality
@@ -44,7 +44,7 @@ File: SB_A01-05-00_2024h02_BE.xlsx (Population by age groups, neighbourhood and 
 🧩 How This Data Connects to Existing Tables
 
 
-*  Primary Join Field: Neighbourhood(matching neighborhood or district name in listings dataset) and postcode.
+*  Primary Join Field: Neighborhood(matching neighborhood or district name in listings dataset) and postcode.
 
 
 🗂️ Planned Schema for Population_stats
@@ -52,15 +52,27 @@ File: SB_A01-05-00_2024h02_BE.xlsx (Population by age groups, neighbourhood and 
 
 | Column                 | Type      | Description                                         |
 |------------------------|-----------|-----------------------------------------------------|
-| `neighbourhood`                   | STRING      | District name (Bezirk)         |
-| `postcode`                 | STRING      | Postal code                                |
-| `gender`             | STRING      | "M" / "F"                               |
-| `age_group`            | STRING      | Age range (e.g., "0-5", "60+")                      |
-| `nationality`     | STRING      | Nationality group if applicable    |
-| `population_count`       | INTEGER      | Count of people           |
-| `last_updated_date` | DATE      | Date of data file(e.g., 2024-07-01 for H2 2024)   |
-
----
+| `neighborhood`                   | STRING      | District name (Bezirk)         |
+| `male`             | INTEGER     | Number of male residents                               |
+| `female`            | INTEGER      | Number of female residents                      |
+| `germans`     | INTEGER      | Number of german residents    |
+| `foreigners`       | INTEGER      | Number of foreign residents           |
+| `single` | INTEGER      | Number of residents who are single   |
+| `married` | INTEGER      | Number of residents who are married   |
+| `widowed` | INTEGER      | Number of residents who are widowed   |
+| `divorced` | INTEGER      | Number of residents who are divorced   |
+| `civil_partnership` | INTEGER      | Number of residents in a civil partnership   |
+| `evangelische_kirchen` | INTEGER      | Number of residents affiliated with the Evangelical Church   |
+| `römisch_katholische_kirche` | INTEGER      | Number of residents affiliated with the Roman Catholic Church   |
+| `religion_other_or_none` | INTEGER      | Number of residents with other or no religious affiliation   |
+| `0-6` | INTEGER      | Number of residents aged 0–6   |
+| `6-15` | INTEGER      | Number of residents aged 6–15   |
+| `15-18` | INTEGER      | Number of residents aged 15–18   |
+| `18-27` | INTEGER     | Number of residents aged 18–27   |
+| `27-45` | INTEGER      | Number of residents aged 27–45   |
+| `45-55` | INTEGER      | Number of residents aged 45–55   |
+| `55-65` | INTEGER      | Number of residents aged 55–65   |
+| `65+` | INTEGER      | Number of residents aged 65 and above   |
 
 
 ⚠️ Known Data Issues or Inconsistencies
