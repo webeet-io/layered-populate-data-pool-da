@@ -1,4 +1,4 @@
-# Milieuschutzgebiete (Preservation Areas) – Berlin
+# 🛡️ Milieuschutzgebiete (Preservation Areas) – Berlin
 
 ## 🗂 Source Overview
 
@@ -11,79 +11,82 @@
 - **License:** [dl-zero-de/2.0](https://www.govdata.de/dl-de/zero-2-0)
 - **Published:** 17.06.2024
 - **Update Frequency:** Unknown (assumed to be static — one-time import recommended)
-- **Data Type:** Static
+- **Data Type:** Static (not dynamically updated via API)
 
 ---
 
-## 🧱 Data Schema
+## 🧱 Data Schema (Joined with Adressen Berlin)
 
 ### Selected Fields
 
-| Column                 | Type      | Description                                         |
-|------------------------|-----------|-----------------------------------------------------|
-| `id`                   | TEXT      | Unique identifier of the preservation zone         |
-| `code`                 | TEXT      | Administrative code                                |
-| `district`             | TEXT      | Berlin district name                               |
-| `zone_name`            | TEXT      | Name of the preservation zone                      |
-| `publication_date`     | DATE      | Date published in official gazette (f_gybl_dat)    |
-| `effective_date`       | DATE      | Date regulation took effect (f_in_kraft)           |
-| `alt_publication_date` | DATE      | Optional alternative publication date (nullable)   |
-| `alt_effective_date`   | DATE      | Optional alternative effective date (nullable)     |
-| `area_ha`              | NUMERIC   | Area in hectares                                   |
-| `geometry`             | GEOMETRY  | Multipolygon geometry in EPSG:25833 (meters)       |
+| Column                 | Type     | Description                                             |
+|------------------------|----------|---------------------------------------------------------|
+| `address_id`           | TEXT     | Unique address identifier                               |
+| `house_number`         | TEXT     | House number                                            |
+| `house_number_extra`   | TEXT     | Additional house number info (e.g. A, B) (nullable)     |
+| `street_name`          | TEXT     | Street name                                             |
+| `postal_code`          | INTEGER  | Postal code                                             |
+| `zone_code`            | TEXT     | Code of the preservation zone                           |
+| `neighborhood`         | TEXT     | Berlin district name                                    |
+| `zone_name`            | TEXT     | Name of the preservation zone                           |
+| `publication_date`     | DATE     | Official gazette publication date                       |
+| `effective_date`       | DATE     | Date the regulation came into force                     |
+| `area_ha`              | FLOAT    | Area size in hectares                                   |
 
 ---
 
 ## 🌐 Coordinate Reference System (CRS)
 
-- **Current CRS:** `EPSG:25833` — UTM Zone 33N (used in Germany)
-- **Note:** This is a projected coordinate system in meters.  
-  It differs from the global latitude/longitude standard `EPSG:4326`,  
-  so reprojecting may be needed for web maps and PostGIS compatibility.
+- **Original CRS:** `EPSG:25833` – UTM Zone 33N (meters, projected)
+- **Target CRS (optional):** `EPSG:4326` – WGS84 (lat/lon in degrees)
+- ⚠️ CRS must be declared when importing into PostGIS or transformed for web mapping.
 
 ---
 
 ## 🔗 Relationships & Integration
 
-- Will be joined with the `neighborhoods` table using **spatial join** (`ST_Intersects`) based on geometry.
-- No explicit foreign keys. Spatial overlap will determine the relationship between preservation zones and neighborhoods.
+- Will be joined with `neighborhoods` using **spatial join** via `ST_Intersects`.
+- This allows analysis of which buildings fall within which preservation areas.
+- No foreign key – geometry-based relationships only.
 
 ---
 
 ## ⚠️ Known Data Issues
 
-- `alt_publication_date` and `alt_effective_date` are often `null`.
-- Some `zone_name` values include line breaks or inconsistent casing.
-- Geometry is valid but in a projected CRS (EPSG:25833) and must be handled accordingly.
+- `house_number_extra` is often `null`
+- Geometry not stored in final CSV export – used only during spatial join
+- Data assumed to be static; no dynamic updates planned
+- Geometry uses projected CRS (EPSG:25833), not compatible with web maps unless reprojected
 
 ---
 
 ## 🔄 Transformation Plan
 
-1. Rename German columns to English equivalents
-2. Parse `*_date` fields into ISO `YYYY-MM-DD` format
-3. Clean `zone_name` for whitespace and formatting
-4. Validate geometry (repair invalid shapes if needed)
-5. Reproject geometries from `EPSG:25833` → `EPSG:4326` for compatibility
-6. Export results to:
-   - `GeoJSON`: `milieuschutz_areas.geojson`
-   - `CSV with WKT geometry`: `milieuschutz_areas_with_geom.csv`
-   - (Optional) Excel backup: `milieuschutz_areas.xlsx`
+1. Download preservation zones from WFS as GeoJSON
+2. Download address dataset (`adressen_berlin`) from WFS
+3. Reproject geometries to match (EPSG:25833)
+4. Spatial join: match addresses to preservation zones via `intersects`
+5. Rename German column names to English
+6. Normalize data types (dates, IDs, etc.)
+7. Export cleaned results to:
+   - `cleaned_houses_in_zones.csv`
 
 ---
-
+  
 ## 📁 Files in `/sources`
 
-- `milieuschutz_areas.geojson` – clean GeoJSON with original EPSG:25833
-- `milieuschutz_areas_with_geom.csv` – tabular version with WKT geometry
-- `milieuschutz_areas.xlsx` – Excel version with same structure
+- `milieuschutzgebiete.geojson` – raw GeoJSON with original geometry
+- `milieuschutz_areas_with_geom.csv` – CSV version including WKT geometry
+- `cleaned_houses_in_zones.csv` – final cleaned CSV (without geometry)
+- houses_in_milieuschutz.csv - Raw result of spatial join: addresses matched to preservation zones
 - `README.md` – this file
 
+---
 ---
 
 ## ✅ Status
 
-- ✅ Step 1.1: Source fully documented  
-- ✅ Step 1.2: Schema, relations, and transformation plan defined  
-- ✅ Step 1.3: Sources prepared  
-- 🟢 Ready to proceed with Step 2: Data Transformation
+- ✅ Step 1.1: Data source identified and documented
+- ✅ Step 1.2: Schema, structure, and transformation plan defined
+- ✅ Step 1.3: Raw and cleaned data saved to `/sources`
+- ✅ Step 1.4: Ready for Step 2 (Data Transformation)
