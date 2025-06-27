@@ -1,0 +1,75 @@
+# 🚍 Step 2: Berlin Public Bus Data Transformation
+
+**Branch:** `public-transport-data-transformation`  
+**Focus:** Clean, normalize, and structure Berlin public bus stop data to match the model defined in Step 1.  
+**Note:** No postcode or reverse geocoding was included in this version.
+
+---
+
+## ✅ Transformation Summary
+
+The transformation process closely follows the U-Bahn data processing structure. It focuses on creating a unified and structured dataset of bus stop information, preparing it for later enrichment and DB population.
+
+---
+
+### 2.1 Clean and Normalize Raw Bus Stop Data
+
+**Script:** `transform_bus_data.py`  
+**Input:** `public_bus_data_cleaned.csv`  
+**Output:** `transformed_bus_data.csv`
+
+This script performs the following steps:
+
+- Loads the raw bus stop data
+- Normalizes column names to lowercase with underscores
+- Converts `latitude` and `longitude` to numeric
+- Drops any exact duplicate rows
+- Removes rows with invalid coordinate data
+- Saves the cleaned result to `transformed_bus_data.csv`
+
+#### ✅ Run locally with:
+```bash
+python scripts/transform_bus_data.py
+```
+
+---
+
+## ✅ Output Snapshot
+
+**Output file:** `transformed_bus_data.csv`  
+**Example columns:**
+
+| stop_name | line_name | latitude | longitude | operator | stop_type |
+|-----------|-----------|----------|-----------|----------|-----------|
+| Alexanderplatz | M48 | 52.521 | 13.412 | BVG | Bus Stop |
+
+This structure aligns with the schema defined in Step 1 and will support later integration with district-level and geospatial data in Step 3.
+
+---
+
+## ❌ What Was Not Included
+
+- No postcode enrichment (no API or geopy used)
+- No reverse geocoding for neighborhoods (Bezirk)
+- No DB inserts or schema enforcement yet
+
+---
+
+## 🧪 Testing
+
+- Script was run and tested locally on a sample and full dataset
+- Output file manually validated for column consistency and content quality
+- Transformation logic passed schema checks based on the defined model
+
+---
+
+## 📁 Files in This PR
+
+```
+/scripts/
+    transform_bus_data.py
+
+/data/
+    public_bus_data_cleaned.csv
+    transformed_bus_data.csv
+```
