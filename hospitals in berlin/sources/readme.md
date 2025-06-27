@@ -1,13 +1,11 @@
-Hospitals in Berlin
+🏥 Hospitals in Berlin
 
-For datasets and statistics in Germany
+🧪 Step 1: Research & Data Modelling
+
+For datasets and statistics in Germany I went throught the wesites below and I couldn't find the approprite dataset for Hospitals in Berlin
 https://www.destatis.de/EN/Home/_node.html
 https://www-genesis.destatis.de/datenbank/online
 https://daten.berlin.de/datensaetze
-
-I got the data for Hospitals in Berlin from DKV website:
-
-https://www.deutsches-krankenhaus-verzeichnis.de/app/suche/ergebnis
 
 As per Berlin Health Excellence there are:
  More than 80 hospitals with about 20,000 beds
@@ -15,6 +13,14 @@ As per Berlin Health Excellence there are:
  More than 9,200 outpatient resident physicians
  More than 13,000 enterprises of the healthcare industry
  More than 30 pharmacological enterprises
+
+I got the dataset for Hospitals in Berlin from DKV website:
+
+Source and origin: https://www.deutsches-krankenhaus-verzeichnis.de/app/suche/ergebnis
+
+Update frequency: Annualy 
+
+Data type: static
 
 Process for data collection and cleaning
 1. I copied the data form the DKV website and pasted it in the spreedsheet.
