@@ -25,7 +25,7 @@
   - 🆔 Park ID
   - 🏷️ Name
   - 🏞️ Type of green area
-  - 🏘️ District
+  - 🏘️ Neighborhood
   - 📏 Area in m²
   - 🗺️ Planning area
   - 📜 Designation status
@@ -52,7 +52,7 @@
 
 - **🧾 Key Data Fields**:
   - 🏷️ Playground name
-  - 📍 District & locality
+  - 📍 Neighborhood & locality
   - 🧸 Type of playground
   - 🏗️ Year built / 🛠️ Last renovated
   - 📏 Area (total and net in m²)
