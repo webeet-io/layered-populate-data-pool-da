@@ -1,0 +1,95 @@
+id,schluessel,bezirk,gebietsname,f_gvbl_dat,f_in_kraft,ae_gvbldat,ae_inkraft,fl_in_ha
+erhaltgeb_es.ES0101,ES0101,Mitte,Poststadion,1988-12-30,1988-12-31,,,53.2
+erhaltgeb_es.ES0102,ES0102,Mitte,Spandauer Vorstadt,1993-06-25,1993-06-26,,,109.1
+erhaltgeb_es.ES0103,ES0103,Mitte,Südliche Brunnenstraße Teile der Rosenthaler Vorstadt,1995-12-09,1995-12-10,,,18.8
+erhaltgeb_es.ES0104,ES0104,Mitte,Friedrich-Wilhelm-Stadt,1996-08-31,1996-09-01,,,69.5
+erhaltgeb_es.ES0105,ES0105,Mitte,"Dorotheenstadt, Friedrichstadt",1997-04-10,1997-04-11,,,98.7
+erhaltgeb_es.ES0106,ES0106,Mitte,Karl-Marx-Allee II. Bauabschnitt,2015-11-07,2015-11-08,,,58.7
+erhaltgeb_es.ES0107,ES0107,Mitte,erweitertes Gebiet südliche Brunnenstraße Teile der Rosenthaler Vorstadt,2000-12-14,2000-12-15,,,57.8
+erhaltgeb_es.ES0108,ES0108,Mitte,Heinrich-Heine-Siedlung,2001-01-25,2001-01-26,,,12.6
+erhaltgeb_es.ES0109,ES0109,Mitte,westliches Ergänzungsgebiet südliche Brunnenstraße,2004-02-28,2004-02-29,,,16.8
+erhaltgeb_es.ES0110,ES0110,Mitte,Köllnischer Park mit Umgebung,2006-10-28,2006-10-29,,,22.0
+erhaltgeb_es.ES0111,ES0111,Mitte,Luisenstädtischer Kanal mit Umfeld,2006-10-28,2006-10-29,,,26.3
+erhaltgeb_es.ES0112,ES0112,Mitte,Stephankiez,1991-11-07,1991-11-08,,,30.7
+erhaltgeb_es.ES0113,ES0113,Mitte,Huttenkiez,1993-12-10,1993-12-11,,,4.8
+erhaltgeb_es.ES0115,ES0115,Mitte,Wilhelmstraße,2018-04-19,2018-04-20,,,7.6
+erhaltgeb_es.ES0116,ES0116,Mitte,Nikolaiviertel,2018-06-07,2018-06-08,,,5.1
+erhaltgeb_es.ES0117,ES0117,Mitte,Hansaviertel,2020-01-30,2020-01-31,,,54.3
+erhaltgeb_es.ES0118,ES0118,Mitte,Leipziger Straße,2020-07-24,2020-07-25,2022-01-26,2022-01-27,10.4
+erhaltgeb_es.ES0119,ES0119,Mitte,Erste Erweiterung Friedrichstadt,2022-12-07,2022-12-08,,,2.0
+erhaltgeb_es.ES0203,ES0203,Friedrichshain-Kreuzberg,Urbanhafen / Südstern,2011-02-10,2011-02-11,,,48.5
+erhaltgeb_es.ES0204,ES0204,Friedrichshain-Kreuzberg,Graefestraße,2022-03-18,2022-03-19,,,67.3
+erhaltgeb_es.ES0205,ES0205,Friedrichshain-Kreuzberg,Luisenstadt,2023-07-29,2023-07-30,,,268.8
+erhaltgeb_es.ES0206,ES0206,Friedrichshain-Kreuzberg,Weberwiese,2022-03-18,2022-03-19,,,28.7
+erhaltgeb_es.ES0207,ES0207,Friedrichshain-Kreuzberg,Karl-Marx-Allee/Frankfurter Allee (ehemals Stalinallee) und deren flankierende Bereiche,2021-02-27,2021-02-28,,,121.8
+erhaltgeb_es.ES0208,ES0208,Friedrichshain-Kreuzberg,IBA 87 - Südliche Friedrichstadt,2022-03-18,2022-03-19,,,69.4
+erhaltgeb_es.ES0301,ES0301,Pankow,Weißenseer Spitze,1996-11-16,1996-11-17,,,28.9
+erhaltgeb_es.ES0302,ES0302,Pankow,Weißensee Süd,1996-11-16,1996-11-17,,,85.1
+erhaltgeb_es.ES0303,ES0303,Pankow,Dorf Blankenfelde,1998-02-25,1998-02-26,,,52.1
+erhaltgeb_es.ES0304,ES0304,Pankow,Stadtrandsiedlung Malchow,1998-07-29,1998-07-30,,,56.9
+erhaltgeb_es.ES0305,ES0305,Pankow,Stadtrandsiedlung Karow / Am Kappgraben,1998-07-29,1998-07-30,,,38.7
+erhaltgeb_es.ES0306,ES0306,Pankow,Teutoburger Platz,2007-04-11,2007-04-12,,,52.7
+erhaltgeb_es.ES0307,ES0307,Pankow,Ostseestraße / Grellstraße,2003-10-08,2003-10-09,,,58.8
+erhaltgeb_es.ES0308,ES0308,Pankow,Humannplatz,2009-09-30,2009-10-01,,,85.0
+erhaltgeb_es.ES0401,ES0401,Charlottenburg-Wilmersdorf,Schmargendorf,1989-10-28,1989-10-29,,,0.4
+erhaltgeb_es.ES0402,ES0402,Charlottenburg-Wilmersdorf,Alt-Charlottenburg,1990-07-05,1990-07-06,,,22.9
+erhaltgeb_es.ES0403,ES0403,Charlottenburg-Wilmersdorf,Klausenerplatz,1996-07-31,1996-08-01,,,78.7
+erhaltgeb_es.ES0404,ES0404,Charlottenburg-Wilmersdorf,Kurfürstendamm,2000-12-23,2000-06-11,,,77.7
+erhaltgeb_es.ES0405,ES0405,Charlottenburg-Wilmersdorf,Westend,2000-12-23,2000-12-24,,,46.1
+erhaltgeb_es.ES0406,ES0406,Charlottenburg-Wilmersdorf,B-Plan IX-153,2000-10-28,2000-10-29,,,0.6
+erhaltgeb_es.ES0407,ES0407,Charlottenburg-Wilmersdorf,B-Plan IX-B10,2000-10-28,2000-10-29,,,2.8
+erhaltgeb_es.ES0408,ES0408,Charlottenburg-Wilmersdorf,B-Plan IX-B11,2000-10-28,2000-10-29,,,1.4
+erhaltgeb_es.ES0409,ES0409,Charlottenburg-Wilmersdorf,B-Plan IX-B12,2000-10-28,2000-10-29,,,6.6
+erhaltgeb_es.ES0502,ES0502,Spandau,Altstadt Spandau,2016-06-15,2016-06-16,,,57.7
+erhaltgeb_es.ES0601,ES0601,Steglitz-Zehlendorf,Lichterfelde-West,1991-11-19,1991-11-20,,,204.9
+erhaltgeb_es.ES0602,ES0602,Steglitz-Zehlendorf,Fichtenberg,1991-11-19,1991-11-20,,,48.4
+erhaltgeb_es.ES0603,ES0603,Steglitz-Zehlendorf,Lichterfelde-Ost,1996-07-20,1996-07-21,,,162.0
+erhaltgeb_es.ES0604,ES0604,Steglitz-Zehlendorf,Siedlung Zinnowweg,2005-05-04,2005-05-05,,,9.8
+erhaltgeb_es.ES0605,ES0605,Steglitz-Zehlendorf,B-Plan X-6-1,1994-06-16,1994-06-17,,,3.8
+erhaltgeb_es.ES0606,ES0606,Steglitz-Zehlendorf,B-Plan X-B 1c,2012-11-10,2012-11-11,,,36.8
+erhaltgeb_es.ES0607,ES0607,Steglitz-Zehlendorf,B-Plan X-B 2c,2016-09-27,2016-09-28,,,41.3
+erhaltgeb_es.ES0608,ES0608,Steglitz-Zehlendorf,B-Plan X-B 2e,2011-12-30,2011-12-31,,,45.8
+erhaltgeb_es.ES0609,ES0609,Steglitz-Zehlendorf,B-Plan X-B 7,2006-07-07,2006-07-08,,,43.5
+erhaltgeb_es.ES0610,ES0610,Steglitz-Zehlendorf,B-Plan X-B 8,2005-07-05,2005-07-06,,,36.8
+erhaltgeb_es.ES0611,ES0611,Steglitz-Zehlendorf,B-Plan X-B 9,2005-12-02,2005-12-03,,,37.0
+erhaltgeb_es.ES0612,ES0612,Steglitz-Zehlendorf,B-Plan X-B 10,2005-12-02,2005-12-03,,,47.1
+erhaltgeb_es.ES0613,ES0613,Steglitz-Zehlendorf,B-Plan X-B 11,2006-07-07,2006-07-08,,,44.7
+erhaltgeb_es.ES0614,ES0614,Steglitz-Zehlendorf,B-Plan X-B 12,2006-07-07,2006-07-08,,,54.3
+erhaltgeb_es.ES0615,ES0615,Steglitz-Zehlendorf,B-Plan X-B 16,2012-03-10,2012-03-11,,,26.9
+erhaltgeb_es.ES0616,ES0616,Steglitz-Zehlendorf,B-Plan X-B 18,2017-11-23,2017-11-24,,,48.5
+erhaltgeb_es.ES0617,ES0617,Steglitz-Zehlendorf,B-Plan X-B 21,2003-10-30,2004-10-31,,,17.3
+erhaltgeb_es.ES0618,ES0618,Steglitz-Zehlendorf,B-Plan 6-34 B,2020-01-30,2020-01-31,,,27.5
+erhaltgeb_es.ES0701,ES0701,Tempelhof-Schöneberg,Friedenau,1986-07-24,1986-07-25,1988-10-06,1988-10-07,51.5
+erhaltgeb_es.ES0702,ES0702,Tempelhof-Schöneberg,Neu-Tempelhof,1991-09-11,1991-09-12,,,99.1
+erhaltgeb_es.ES0703,ES0703,Tempelhof-Schöneberg,Alt-Lichtenrade,1995-07-15,1995-07-16,,,1.4
+erhaltgeb_es.ES0704,ES0704,Tempelhof-Schöneberg,Abendrotsiedlung,1996-11-13,1996-11-14,,,6.4
+erhaltgeb_es.ES0705,ES0705,Tempelhof-Schöneberg,Wolframsiedlung,2000-09-16,2000-09-17,,,6.2
+erhaltgeb_es.ES0706,ES0706,Tempelhof-Schöneberg,"Stadtrandsiedlung Marienfelde I, II und III",2001-06-16,2001-06-17,,,37.4
+erhaltgeb_es.ES0707,ES0707,Tempelhof-Schöneberg,Maaßenstraße,2010-11-06,2010-11-07,,,3.0
+erhaltgeb_es.ES0708,ES0708,Tempelhof-Schöneberg,Alt-Lichtenrade,1981-03-24,1981-03-25,,,3.5
+erhaltgeb_es.ES0801,ES0801,Neukölln,Rixdorf,1986-11-29,1986-11-30,1989-06-15,1989-06-16,8.4
+erhaltgeb_es.ES0802,ES0802,Neukölln,Schillerpromenade,1996-07-09,1996-07-10,2001-10-06,2001-10-07,42.6
+erhaltgeb_es.ES0803,ES0803,Neukölln,Krugpfuhlsiedlung,2008-11-01,2008-11-02,,,15.6
+erhaltgeb_es.ES0804,ES0804,Neukölln,Ortskern Rudow,2008-11-01,2008-11-02,,,15.8
+erhaltgeb_es.ES0901,ES0901,Treptow-Köpenick,Altstadt Köpenick,1993-03-12,1993-03-13,,,18.7
+erhaltgeb_es.ES0902,ES0902,Treptow-Köpenick,Kietz-Vorstadt,1993-03-12,1993-03-13,,,6.4
+erhaltgeb_es.ES0903,ES0903,Treptow-Köpenick,Friedrichshagen,1993-03-12,1993-03-13,,,95.5
+erhaltgeb_es.ES0904,ES0904,Treptow-Köpenick,Oberschöneweide,2004-12-22,2004-12-23,,,89.8
+erhaltgeb_es.ES0905,ES0905,Treptow-Köpenick,Hirschgarten,1999-07-27,1999-07-28,,,14.6
+erhaltgeb_es.ES0906,ES0906,Treptow-Köpenick,Alter Dorfkern Rahnsdorf,2001-01-25,2001-01-26,,,5.8
+erhaltgeb_es.ES0907,ES0907,Treptow-Köpenick,Teilbereich Hessenwinkel,2001-04-21,2001-04-22,,,39.8
+erhaltgeb_es.ES0908,ES0908,Treptow-Köpenick,Wilhelmshagen,2001-04-21,2001-04-22,,,40.8
+erhaltgeb_es.ES0909,ES0909,Treptow-Köpenick,Pflanzgartensiedlung,2004-11-16,2004-11-17,,,14.7
+erhaltgeb_es.ES0910,ES0910,Treptow-Köpenick,Wohnanlage Dammweg,2007-09-20,2007-09-21,,,1.5
+erhaltgeb_es.ES0911,ES0911,Treptow-Köpenick,Dorfkern Alt-Müggelheim,2008-03-06,2008-03-07,,,7.0
+erhaltgeb_es.ES0912,ES0912,Treptow-Köpenick,Mahlsdorfer Straße 54 bis 61 und Genovevastraße 2,2020-12-24,2020-12-25,,,0.9
+erhaltgeb_es.ES1101,ES1101,Lichtenberg,Dorf Malchow,1993-11-09,1993-11-10,2018-11-06,2018-11-07,47.4
+erhaltgeb_es.ES1102,ES1102,Lichtenberg,Dorf Wartenberg,1993-11-09,1993-11-10,,,26.7
+erhaltgeb_es.ES1103,ES1103,Lichtenberg,Dorf Falkenberg,1993-11-09,1993-11-10,,,34.9
+erhaltgeb_es.ES1104,ES1104,Lichtenberg,Kaskelstraße / Viktoriastadt,1997-11-04,1997-11-05,2004-12-22,2004-12-23,28.1
+erhaltgeb_es.ES1105,ES1105,Lichtenberg,Seen- / Prinzenviertel,1999-03-26,1999-03-27,,,34.3
+erhaltgeb_es.ES1106,ES1106,Lichtenberg,Siedlung Paul-Koenig-Straße / Titastraße,2001-06-01,2001-06-02,,,4.5
+erhaltgeb_es.ES1201,ES1201,Reinickendorf,Frohnau,1997-05-17,1997-05-18,,,783.8
+erhaltgeb_es.ES1202,ES1202,Reinickendorf,B-Plan XX-187,2000-11-04,2000-11-05,,,1.1
+erhaltgeb_es.ES1203,ES1203,Reinickendorf,B-Plan XX-247,2001-03-31,2001-04-01,,,1.9
+erhaltgeb_es.ES1204,ES1204,Reinickendorf,B-Plan XX-240a-g,2002-07-04,2002-07-05,,,26.8

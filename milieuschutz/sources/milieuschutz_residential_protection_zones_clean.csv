@@ -1,0 +1,82 @@
+id,schluessel,bezirk,gebietsname,f_gvbl_dat,f_in_kraft,ae_gvbldat,ae_inkraft,fl_in_ha
+erhaltgeb_em.EM0105,EM0105,Mitte,Sparrplatz,2016-05-24,2016-05-25,,,51.3
+erhaltgeb_em.EM0106,EM0106,Mitte,Leopoldplatz,2016-05-24,2016-05-25,,,62.1
+erhaltgeb_em.EM0107,EM0107,Mitte,Waldstraße,2016-05-24,2016-05-25,,,72.6
+erhaltgeb_em.EM0108,EM0108,Mitte,Birkenstraße,2016-05-24,2016-05-25,,,81.6
+erhaltgeb_em.EM0109,EM0109,Mitte,Seestraße,2016-05-24,2016-05-25,,,48.6
+erhaltgeb_em.EM0110,EM0110,Mitte,Kattegatstraße,2018-09-18,2018-09-19,,,14.0
+erhaltgeb_em.EM0111,EM0111,Mitte,Reinickendorfer Straße,2021-10-29,2021-10-30,,,41.0
+erhaltgeb_em.EM0112,EM0112,Mitte,Humboldthain Nord-West,2018-12-15,2018-12-16,2021-10-29,2021-10-30,15.8
+erhaltgeb_em.EM0113,EM0113,Mitte,Soldiner Straße,2018-11-27,2018-11-28,2021-10-29,2021-10-30,54.8
+erhaltgeb_em.EM0114,EM0114,Mitte,Thomasiusstraße,2018-12-15,2018-12-16,,,16.8
+erhaltgeb_em.EM0115,EM0115,Mitte,Tiergarten-Süd,2018-12-15,2018-12-16,,,72.0
+erhaltgeb_em.EM0116,EM0116,Mitte,Alexanderplatzviertel,2019-03-27,2019-03-28,,,21.9
+erhaltgeb_em.EM0117,EM0117,Mitte,Müllerstraße Nord,2022-11-26,2022-11-27,,,85.6
+erhaltgeb_em.EM0118,EM0118,Mitte,Badstraße,2022-11-26,2022-11-27,,,48.5
+erhaltgeb_em.EM0201,EM0201,Friedrichshain-Kreuzberg,Graefestraße,2022-03-18,2022-03-19,,,67.3
+erhaltgeb_em.EM0202,EM0202,Friedrichshain-Kreuzberg,Luisenstadt,2023-07-29,2023-07-30,,,246.9
+erhaltgeb_em.EM0203,EM0203,Friedrichshain-Kreuzberg,Bergmannstraße Nord,2022-03-18,2022-03-19,,,66.6
+erhaltgeb_em.EM0204,EM0204,Friedrichshain-Kreuzberg,Hornstraße,2004-12-14,2004-12-15,,,53.5
+erhaltgeb_em.EM0205,EM0205,Friedrichshain-Kreuzberg,Chamissoplatz,2024-06-12,2024-06-13,,,24.4
+erhaltgeb_em.EM0206,EM0206,Friedrichshain-Kreuzberg,Boxhagener Platz,2021-04-23,2021-04-24,,,142.0
+erhaltgeb_em.EM0207,EM0207,Friedrichshain-Kreuzberg,Petersburger Straße,2013-12-21,2013-12-22,,,86.4
+erhaltgeb_em.EM0208,EM0208,Friedrichshain-Kreuzberg,Weberwiese,2022-03-18,2022-03-19,,,53.5
+erhaltgeb_em.EM0209,EM0209,Friedrichshain-Kreuzberg,Kreuzberg-Nord,2023-07-29,2023-07-30,,,156.4
+erhaltgeb_em.EM0210,EM0210,Friedrichshain-Kreuzberg,Stralauer Kiez,2019-07-09,2019-07-10,,,29.2
+erhaltgeb_em.EM0211,EM0211,Friedrichshain-Kreuzberg,Samariterviertel,2021-02-19,2021-02-20,,,55.1
+erhaltgeb_em.EM0301,EM0301,Pankow,Falkplatz,1997-12-18,1997-03-23,,,28.2
+erhaltgeb_em.EM0308,EM0308,Pankow,Arnimplatz,1999-04-03,1999-04-04,,,50.6
+erhaltgeb_em.EM0309,EM0309,Pankow,Humannplatz,2000-11-04,2000-11-05,2017-11-30,2017-12-01,57.2
+erhaltgeb_em.EM0310,EM0310,Pankow,Ostseestraße / Grellstraße,2003-04-02,2003-04-03,,,63.5
+erhaltgeb_em.EM0312,EM0312,Pankow,Pankow Zentrum,2000-03-16,2000-03-17,2013-10-09,2013-10-10,121.1
+erhaltgeb_em.EM0313,EM0313,Pankow,Teutoburger Platz,2014-07-01,2014-07-02,,,52.0
+erhaltgeb_em.EM0314,EM0314,Pankow,Kollwitzplatz,2014-07-01,2014-07-02,,,74.6
+erhaltgeb_em.EM0315,EM0315,Pankow,Helmholtzplatz,2014-07-01,2014-07-02,,,67.9
+erhaltgeb_em.EM0316,EM0316,Pankow,Bötzowstraße,2014-07-01,2014-07-02,2017-11-30,2017-12-01,53.0
+erhaltgeb_em.EM0317,EM0317,Pankow,Winsstraße,2014-07-01,2014-07-02,,,63.8
+erhaltgeb_em.EM0318,EM0318,Pankow,Pankow-Süd,2017-11-30,2017-12-01,,,30.3
+erhaltgeb_em.EM0319,EM0319,Pankow,Langhansstraße,2017-11-30,2017-12-01,,,109.7
+erhaltgeb_em.EM0320,EM0320,Pankow,Komponistenviertel,2017-11-30,2017-12-01,,,41.3
+erhaltgeb_em.EM0321,EM0321,Pankow,Danziger Straße Ost,2021-07-30,2021-07-31,,,20.0
+erhaltgeb_em.EM0401,EM0401,Charlottenburg-Wilmersdorf,Mierendorff-Insel,2018-08-31,2018-09-01,,,56.8
+erhaltgeb_em.EM0402,EM0402,Charlottenburg-Wilmersdorf,Gierkeplatz,2018-08-31,2018-09-01,,,28.5
+erhaltgeb_em.EM0403,EM0403,Charlottenburg-Wilmersdorf,Klausenerplatz,2020-01-11,2020-01-12,,,54.6
+erhaltgeb_em.EM0404,EM0404,Charlottenburg-Wilmersdorf,Jungfernheide,2021-06-22,2021-06-23,,,49.2
+erhaltgeb_em.EM0405,EM0405,Charlottenburg-Wilmersdorf,Alt-Lietzow,2021-06-22,2021-06-23,,,46.0
+erhaltgeb_em.EM0406,EM0406,Charlottenburg-Wilmersdorf,Richard-Wagner-Straße,2021-06-22,2021-06-23,,,28.1
+erhaltgeb_em.EM0407,EM0407,Charlottenburg-Wilmersdorf,Karl-August-Platz,2021-06-22,2021-06-23,,,55.8
+erhaltgeb_em.EM0408,EM0408,Charlottenburg-Wilmersdorf,Brabanter Platz,2023-03-18,2023-03-19,,,28.1
+erhaltgeb_em.EM0409,EM0409,Charlottenburg-Wilmersdorf,Hochmeisterplatz,2023-03-18,2023-03-19,,,50.1
+erhaltgeb_em.EM0501,EM0501,Spandau,Wilhelmstadt,2020-07-03,2020-07-04,,,118.7
+erhaltgeb_em.EM0502,EM0502,Spandau,Spandauer Neustadt,2020-07-03,2020-07-04,,,86.7
+erhaltgeb_em.EM0601,EM0601,Steglitz-Zehlendorf,Feuerbachstraße,2024-02-09,2024-02-10,,,63.4
+erhaltgeb_em.EM0602,EM0602,Steglitz-Zehlendorf,Gritznerstraße Nord,2024-02-09,2024-02-10,,,23.7
+erhaltgeb_em.EM0603,EM0603,Steglitz-Zehlendorf,Mittelstraße,2024-02-09,2024-02-10,,,34.0
+erhaltgeb_em.EM0701,EM0701,Tempelhof-Schöneberg,Barbarossaplatz / Bayerischer Platz,2014-09-10,2014-09-11,,,72.8
+erhaltgeb_em.EM0702,EM0702,Tempelhof-Schöneberg,Bautzener Straße,2014-09-10,2014-09-11,,,18.5
+erhaltgeb_em.EM0703,EM0703,Tempelhof-Schöneberg,Kaiser-Wilhelm-Platz,2014-09-10,2014-09-11,2016-07-08,2016-07-09,19.8
+erhaltgeb_em.EM0704,EM0704,Tempelhof-Schöneberg,Schöneberger Insel,2015-06-30,2015-07-01,2021-09-24,2021-09-25,38.5
+erhaltgeb_em.EM0705,EM0705,Tempelhof-Schöneberg,Schöneberger Norden,2018-03-10,2018-03-11,2018-10-11,2018-10-12,112.7
+erhaltgeb_em.EM0706,EM0706,Tempelhof-Schöneberg,Schöneberger Süden,2018-03-10,2018-03-11,,,106.4
+erhaltgeb_em.EM0707,EM0707,Tempelhof-Schöneberg,Tempelhof,2018-04-07,2018-04-08,,,154.6
+erhaltgeb_em.EM0708,EM0708,Tempelhof-Schöneberg,Grazer Platz,2018-10-11,2018-10-12,,,48.1
+erhaltgeb_em.EM0709,EM0709,Tempelhof-Schöneberg,Mariendorf,2023-03-18,2023-03-19,,,141.7
+erhaltgeb_em.EM0710,EM0710,Tempelhof-Schöneberg,Wittenbergplatz,2023-03-18,2023-03-19,,,29.3
+erhaltgeb_em.EM0801,EM0801,Neukölln,Schillerpromenade,2016-06-28,2016-06-29,,,92.5
+erhaltgeb_em.EM0802,EM0802,Neukölln,Reuterplatz,2016-06-28,2016-06-29,,,66.0
+erhaltgeb_em.EM0803,EM0803,Neukölln,Flughafenstraße / Donaustraße,2016-07-26,2016-07-27,2019-03-27,2019-03-28,89.4
+erhaltgeb_em.EM0804,EM0804,Neukölln,Rixdorf,2016-07-26,2016-07-27,,,85.9
+erhaltgeb_em.EM0805,EM0805,Neukölln,Körnerpark,2016-07-26,2016-07-27,2019-03-27,2019-03-28,91.3
+erhaltgeb_em.EM0806,EM0806,Neukölln,Silbersteinstraße / Glasower Straße,2017-08-05,2017-08-06,,,73.0
+erhaltgeb_em.EM0807,EM0807,Neukölln,Hertzbergplatz / Treptower Straße,2017-08-05,2017-08-06,,,75.0
+erhaltgeb_em.EM0808,EM0808,Neukölln,Germaniapromenade,2020-03-03,2020-03-04,,,34.8
+erhaltgeb_em.EM0809,EM0809,Neukölln,Britz,2020-03-03,2020-03-04,,,71.8
+erhaltgeb_em.EM0810,EM0810,Neukölln,Gropiusstadt,2020-11-14,2020-11-15,,,160.8
+erhaltgeb_em.EM0902,EM0902,Treptow-Köpenick,Alt-Treptow,2020-05-26,2020-05-27,,,42.7
+erhaltgeb_em.EM0903,EM0903,Treptow-Köpenick,Niederschöneweide,2023-02-25,2023-02-26,,,26.6
+erhaltgeb_em.EM0904,EM0904,Treptow-Köpenick,Oberschöneweide,2023-02-25,2023-02-26,,,51.1
+erhaltgeb_em.EM1101,EM1101,Lichtenberg,Kaskelstraße,2017-07-21,2017-07-22,,,28.2
+erhaltgeb_em.EM1102,EM1102,Lichtenberg,Weitlingstraße,2018-06-21,2018-06-22,,,88.0
+erhaltgeb_em.EM1103,EM1103,Lichtenberg,Fanningerstraße,2021-08-17,2021-08-18,,,30.7
+erhaltgeb_em.EM1201,EM1201,Reinickendorf,Letteplatz,2018-12-29,2018-12-30,,,89.8
+erhaltgeb_em.EM1202,EM1202,Reinickendorf,Scharnweberstraße/Klixstraße,2021-10-29,2021-10-30,,,60.0
