@@ -1,8 +1,8 @@
 - deleted the other stuff as asked
 - `berlin_schools.csv`: reworked CSV version of school points now with extracted added `longitude` and `latitude` columns for two decimals
-- `school_induction_zones.gpkg`: Full polygon layer of school induction zones, provided as GeoPackage
-- `school_zones_shapefile/`: Folder with extracted `.shp`, `.shx`, `.dbf` files from the same zone layer
-- `gopack_schools/`: Bundled geopackage used for QGIS editing and joins i didn't opt for centroid this should be fine.
+- `school_inside_inductions.gpkg`: Full polygon layer of school induction zones, provided as GeoPackage
+- `school_inside_inductions`: Folder with extracted `.shp`, `.shx`, `.dbf` files from the same zone layer
+
 
 ---
 
