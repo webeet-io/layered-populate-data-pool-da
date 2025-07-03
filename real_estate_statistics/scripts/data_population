@@ -16,7 +16,7 @@
   "cells": [
     {
       "cell_type": "code",
-      "execution_count": 3,
+      "execution_count": null,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/",
@@ -242,7 +242,7 @@
       "metadata": {
         "id": "ofRCWCFe1WMi"
       },
-      "execution_count": 4,
+      "execution_count": 314,
       "outputs": []
     },
     {
@@ -257,9 +257,9 @@
           "height": 206
         },
         "id": "o4pw8pwx8kAF",
-        "outputId": "205c0ab4-f0a4-4dce-aae7-3d3b4c1abd58"
+        "outputId": "da303dcc-a279-4f57-cd9c-22f8d1dec339"
       },
-      "execution_count": 5,
+      "execution_count": 315,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -281,7 +281,7 @@
             ],
             "text/html": [
               "\n",
-              "  <div id=\"df-2a84df81-31be-4928-af49-53794fa6a9bb\" class=\"colab-df-container\">\n",
+              "  <div id=\"df-9736367a-d05d-496b-94d8-f7c7c6aa766f\" class=\"colab-df-container\">\n",
               "    <div>\n",
               "<style scoped>\n",
               "    .dataframe tbody tr th:only-of-type {\n",
@@ -360,7 +360,7 @@
               "    <div class=\"colab-df-buttons\">\n",
               "\n",
               "  <div class=\"colab-df-container\">\n",
-              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-2a84df81-31be-4928-af49-53794fa6a9bb')\"\n",
+              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-9736367a-d05d-496b-94d8-f7c7c6aa766f')\"\n",
               "            title=\"Convert this dataframe to an interactive table.\"\n",
               "            style=\"display:none;\">\n",
               "\n",
@@ -412,12 +412,12 @@
               "\n",
               "    <script>\n",
               "      const buttonEl =\n",
-              "        document.querySelector('#df-2a84df81-31be-4928-af49-53794fa6a9bb button.colab-df-convert');\n",
+              "        document.querySelector('#df-9736367a-d05d-496b-94d8-f7c7c6aa766f button.colab-df-convert');\n",
               "      buttonEl.style.display =\n",
               "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "\n",
               "      async function convertToInteractive(key) {\n",
-              "        const element = document.querySelector('#df-2a84df81-31be-4928-af49-53794fa6a9bb');\n",
+              "        const element = document.querySelector('#df-9736367a-d05d-496b-94d8-f7c7c6aa766f');\n",
               "        const dataTable =\n",
               "          await google.colab.kernel.invokeFunction('convertToInteractive',\n",
               "                                                    [key], {});\n",
@@ -437,8 +437,8 @@
               "  </div>\n",
               "\n",
               "\n",
-              "    <div id=\"df-3a38c4b0-95b2-473a-9435-62b47d930852\">\n",
-              "      <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-3a38c4b0-95b2-473a-9435-62b47d930852')\"\n",
+              "    <div id=\"df-1d06532f-5bc0-4d70-8638-b261e7af1722\">\n",
+              "      <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-1d06532f-5bc0-4d70-8638-b261e7af1722')\"\n",
               "                title=\"Suggest charts\"\n",
               "                style=\"display:none;\">\n",
               "\n",
@@ -557,7 +557,7 @@
               "        }\n",
               "        (() => {\n",
               "          let quickchartButtonEl =\n",
-              "            document.querySelector('#df-3a38c4b0-95b2-473a-9435-62b47d930852 button');\n",
+              "            document.querySelector('#df-1d06532f-5bc0-4d70-8638-b261e7af1722 button');\n",
               "          quickchartButtonEl.style.display =\n",
               "            google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "        })();\n",
@@ -574,7 +574,7 @@
             }
           },
           "metadata": {},
-          "execution_count": 5
+          "execution_count": 315
         }
       ]
     },
@@ -588,7 +588,7 @@
       "metadata": {
         "id": "S11anwEZ9mqK"
       },
-      "execution_count": 6,
+      "execution_count": 316,
       "outputs": []
     },
     {
@@ -603,7 +603,7 @@
       "metadata": {
         "id": "17hKjLgj-erg"
       },
-      "execution_count": 7,
+      "execution_count": 317,
       "outputs": []
     },
     {
@@ -617,9 +617,9 @@
           "height": 206
         },
         "id": "wyd7_VM4_QCt",
-        "outputId": "1fd5bc92-de27-4e22-9326-de26e040dae4"
+        "outputId": "7c652e0a-8972-48bd-f1cc-9bdf54f39e4f"
       },
-      "execution_count": 8,
+      "execution_count": 318,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -641,7 +641,7 @@
             ],
             "text/html": [
               "\n",
-              "  <div id=\"df-78269366-51d5-4b06-8f3d-7fc2f9a61642\" class=\"colab-df-container\">\n",
+              "  <div id=\"df-bb6923a4-01bc-4951-a616-5a4857dcc474\" class=\"colab-df-container\">\n",
               "    <div>\n",
               "<style scoped>\n",
               "    .dataframe tbody tr th:only-of-type {\n",
@@ -714,7 +714,7 @@
               "    <div class=\"colab-df-buttons\">\n",
               "\n",
               "  <div class=\"colab-df-container\">\n",
-              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-78269366-51d5-4b06-8f3d-7fc2f9a61642')\"\n",
+              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-bb6923a4-01bc-4951-a616-5a4857dcc474')\"\n",
               "            title=\"Convert this dataframe to an interactive table.\"\n",
               "            style=\"display:none;\">\n",
               "\n",
@@ -766,12 +766,12 @@
               "\n",
               "    <script>\n",
               "      const buttonEl =\n",
-              "        document.querySelector('#df-78269366-51d5-4b06-8f3d-7fc2f9a61642 button.colab-df-convert');\n",
+              "        document.querySelector('#df-bb6923a4-01bc-4951-a616-5a4857dcc474 button.colab-df-convert');\n",
               "      buttonEl.style.display =\n",
               "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "\n",
               "      async function convertToInteractive(key) {\n",
-              "        const element = document.querySelector('#df-78269366-51d5-4b06-8f3d-7fc2f9a61642');\n",
+              "        const element = document.querySelector('#df-bb6923a4-01bc-4951-a616-5a4857dcc474');\n",
               "        const dataTable =\n",
               "          await google.colab.kernel.invokeFunction('convertToInteractive',\n",
               "                                                    [key], {});\n",
@@ -791,8 +791,8 @@
               "  </div>\n",
               "\n",
               "\n",
-              "    <div id=\"df-800331de-3e6b-430b-b5d3-5b62003f6f2e\">\n",
-              "      <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-800331de-3e6b-430b-b5d3-5b62003f6f2e')\"\n",
+              "    <div id=\"df-45988375-9a42-485e-82ea-def3f161abd6\">\n",
+              "      <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-45988375-9a42-485e-82ea-def3f161abd6')\"\n",
               "                title=\"Suggest charts\"\n",
               "                style=\"display:none;\">\n",
               "\n",
@@ -911,7 +911,7 @@
               "        }\n",
               "        (() => {\n",
               "          let quickchartButtonEl =\n",
-              "            document.querySelector('#df-800331de-3e6b-430b-b5d3-5b62003f6f2e button');\n",
+              "            document.querySelector('#df-45988375-9a42-485e-82ea-def3f161abd6 button');\n",
               "          quickchartButtonEl.style.display =\n",
               "            google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "        })();\n",
@@ -928,7 +928,7 @@
             }
           },
           "metadata": {},
-          "execution_count": 8
+          "execution_count": 318
         }
       ]
     },
@@ -943,7 +943,7 @@
       "metadata": {
         "id": "CtGvoVWF_ePh"
       },
-      "execution_count": 9,
+      "execution_count": 319,
       "outputs": []
     },
     {
@@ -959,9 +959,9 @@
           "height": 206
         },
         "id": "_yxAutDxHxeb",
-        "outputId": "9a99f752-73c7-48c2-c98f-56083507fc50"
+        "outputId": "a3bacea5-fcc1-4baa-a9cf-831ce579002d"
       },
-      "execution_count": 10,
+      "execution_count": 320,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -983,7 +983,7 @@
             ],
             "text/html": [
               "\n",
-              "  <div id=\"df-755df59c-d772-40ab-bee5-f087996a8626\" class=\"colab-df-container\">\n",
+              "  <div id=\"df-ad19ba3b-8051-44c3-9a68-750fe0c976ff\" class=\"colab-df-container\">\n",
               "    <div>\n",
               "<style scoped>\n",
               "    .dataframe tbody tr th:only-of-type {\n",
@@ -1056,7 +1056,7 @@
               "    <div class=\"colab-df-buttons\">\n",
               "\n",
               "  <div class=\"colab-df-container\">\n",
-              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-755df59c-d772-40ab-bee5-f087996a8626')\"\n",
+              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-ad19ba3b-8051-44c3-9a68-750fe0c976ff')\"\n",
               "            title=\"Convert this dataframe to an interactive table.\"\n",
               "            style=\"display:none;\">\n",
               "\n",
@@ -1108,12 +1108,12 @@
               "\n",
               "    <script>\n",
               "      const buttonEl =\n",
-              "        document.querySelector('#df-755df59c-d772-40ab-bee5-f087996a8626 button.colab-df-convert');\n",
+              "        document.querySelector('#df-ad19ba3b-8051-44c3-9a68-750fe0c976ff button.colab-df-convert');\n",
               "      buttonEl.style.display =\n",
               "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "\n",
               "      async function convertToInteractive(key) {\n",
-              "        const element = document.querySelector('#df-755df59c-d772-40ab-bee5-f087996a8626');\n",
+              "        const element = document.querySelector('#df-ad19ba3b-8051-44c3-9a68-750fe0c976ff');\n",
               "        const dataTable =\n",
               "          await google.colab.kernel.invokeFunction('convertToInteractive',\n",
               "                                                    [key], {});\n",
@@ -1133,8 +1133,8 @@
               "  </div>\n",
               "\n",
               "\n",
-              "    <div id=\"df-ef4a201b-a853-4c47-b03f-8c65e892d5c6\">\n",
-              "      <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-ef4a201b-a853-4c47-b03f-8c65e892d5c6')\"\n",
+              "    <div id=\"df-83e52379-3a47-42a0-9afc-e0ca3939e15d\">\n",
+              "      <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-83e52379-3a47-42a0-9afc-e0ca3939e15d')\"\n",
               "                title=\"Suggest charts\"\n",
               "                style=\"display:none;\">\n",
               "\n",
@@ -1253,7 +1253,7 @@
               "        }\n",
               "        (() => {\n",
               "          let quickchartButtonEl =\n",
-              "            document.querySelector('#df-ef4a201b-a853-4c47-b03f-8c65e892d5c6 button');\n",
+              "            document.querySelector('#df-83e52379-3a47-42a0-9afc-e0ca3939e15d button');\n",
               "          quickchartButtonEl.style.display =\n",
               "            google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "        })();\n",
@@ -1270,7 +1270,7 @@
             }
           },
           "metadata": {},
-          "execution_count": 10
+          "execution_count": 320
         }
       ]
     },
@@ -1280,23 +1280,10 @@
         "!pip install -q pandasql\n"
       ],
       "metadata": {
-        "id": "Ng90rvaCDsyI",
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "outputId": "8dbe1347-24a7-4f96-e222-c064b768450d"
+        "id": "Ng90rvaCDsyI"
       },
-      "execution_count": 11,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "  Preparing metadata (setup.py) ... \u001b[?25l\u001b[?25hdone\n",
-            "  Building wheel for pandasql (setup.py) ... \u001b[?25l\u001b[?25hdone\n"
-          ]
-        }
-      ]
+      "execution_count": 321,
+      "outputs": []
     },
     {
       "cell_type": "code",
@@ -1307,7 +1294,7 @@
       "metadata": {
         "id": "-2EdaRYeD5HN"
       },
-      "execution_count": 12,
+      "execution_count": 322,
       "outputs": []
     },
     {
@@ -1325,9 +1312,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "bfG2rL5LEGHx",
-        "outputId": "e6ef9c47-ea03-4be3-af1b-c98ce3ad13a1"
+        "outputId": "4621def0-1bec-41fe-9b34-d4d5ba696e5d"
       },
-      "execution_count": 13,
+      "execution_count": 323,
       "outputs": [
         {
           "output_type": "stream",
@@ -1394,9 +1381,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "3QMuU3tuEZH7",
-        "outputId": "866e68e7-cdb0-49b7-9a04-74a1310227ea"
+        "outputId": "dfa7cd26-9854-4efd-a656-bfe4a23ffa95"
       },
-      "execution_count": 14,
+      "execution_count": 324,
       "outputs": [
         {
           "output_type": "stream",
@@ -1432,9 +1419,9 @@
           "height": 206
         },
         "id": "Yrb-1R8YECBx",
-        "outputId": "0d62b306-eace-476e-b145-ea26742b29c6"
+        "outputId": "e92f95a3-fe56-4f65-d22f-2a7369e56a9c"
       },
-      "execution_count": 15,
+      "execution_count": 325,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -1463,7 +1450,7 @@
             ],
             "text/html": [
               "\n",
-              "  <div id=\"df-714806ff-a3fd-401d-9360-a5c80672bbd9\" class=\"colab-df-container\">\n",
+              "  <div id=\"df-c1142e04-c1b1-4866-aa85-e2c6cc6ec6bc\" class=\"colab-df-container\">\n",
               "    <div>\n",
               "<style scoped>\n",
               "    .dataframe tbody tr th:only-of-type {\n",
@@ -1542,7 +1529,7 @@
               "    <div class=\"colab-df-buttons\">\n",
               "\n",
               "  <div class=\"colab-df-container\">\n",
-              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-714806ff-a3fd-401d-9360-a5c80672bbd9')\"\n",
+              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-c1142e04-c1b1-4866-aa85-e2c6cc6ec6bc')\"\n",
               "            title=\"Convert this dataframe to an interactive table.\"\n",
               "            style=\"display:none;\">\n",
               "\n",
@@ -1594,12 +1581,12 @@
               "\n",
               "    <script>\n",
               "      const buttonEl =\n",
-              "        document.querySelector('#df-714806ff-a3fd-401d-9360-a5c80672bbd9 button.colab-df-convert');\n",
+              "        document.querySelector('#df-c1142e04-c1b1-4866-aa85-e2c6cc6ec6bc button.colab-df-convert');\n",
               "      buttonEl.style.display =\n",
               "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "\n",
               "      async function convertToInteractive(key) {\n",
-              "        const element = document.querySelector('#df-714806ff-a3fd-401d-9360-a5c80672bbd9');\n",
+              "        const element = document.querySelector('#df-c1142e04-c1b1-4866-aa85-e2c6cc6ec6bc');\n",
               "        const dataTable =\n",
               "          await google.colab.kernel.invokeFunction('convertToInteractive',\n",
               "                                                    [key], {});\n",
@@ -1619,8 +1606,8 @@
               "  </div>\n",
               "\n",
               "\n",
-              "    <div id=\"df-e325b9f1-9d55-44d3-9aaa-ab0c460e4c65\">\n",
-              "      <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-e325b9f1-9d55-44d3-9aaa-ab0c460e4c65')\"\n",
+              "    <div id=\"df-53bce7e4-ab81-4c76-9228-62ba0372e2b2\">\n",
+              "      <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-53bce7e4-ab81-4c76-9228-62ba0372e2b2')\"\n",
               "                title=\"Suggest charts\"\n",
               "                style=\"display:none;\">\n",
               "\n",
@@ -1739,7 +1726,7 @@
               "        }\n",
               "        (() => {\n",
               "          let quickchartButtonEl =\n",
-              "            document.querySelector('#df-e325b9f1-9d55-44d3-9aaa-ab0c460e4c65 button');\n",
+              "            document.querySelector('#df-53bce7e4-ab81-4c76-9228-62ba0372e2b2 button');\n",
               "          quickchartButtonEl.style.display =\n",
               "            google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "        })();\n",
@@ -1756,7 +1743,7 @@
             }
           },
           "metadata": {},
-          "execution_count": 15
+          "execution_count": 325
         }
       ]
     },
@@ -1771,9 +1758,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "4HqDF9mI_4kc",
-        "outputId": "552310b2-4971-4ef0-8faf-d76195c76d29"
+        "outputId": "4ab7be41-7d5e-435b-8a7a-eeb7a31f9dca"
       },
-      "execution_count": 16,
+      "execution_count": 326,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -1783,7 +1770,7 @@
             ]
           },
           "metadata": {},
-          "execution_count": 16
+          "execution_count": 326
         }
       ]
     },
@@ -1801,9 +1788,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "qSlOteBpAS0-",
-        "outputId": "36f79eee-3171-469f-a3ab-be50070a2cea"
+        "outputId": "89d37d61-a621-4e1a-fcaa-323e0cbfc502"
       },
-      "execution_count": 17,
+      "execution_count": 327,
       "outputs": [
         {
           "output_type": "stream",
@@ -1823,7 +1810,7 @@
       "metadata": {
         "id": "Ib9L8AyCArAO"
       },
-      "execution_count": 18,
+      "execution_count": 328,
       "outputs": []
     },
     {
@@ -1837,9 +1824,9 @@
           "height": 206
         },
         "id": "5Xb5JjfzAzps",
-        "outputId": "77df3438-4253-42b5-c73c-e989ed0f27d2"
+        "outputId": "6fdb106a-0c4f-4abe-c2eb-1f5d8f517d9a"
       },
-      "execution_count": 19,
+      "execution_count": 329,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -1868,7 +1855,7 @@
             ],
             "text/html": [
               "\n",
-              "  <div id=\"df-7ee69a40-ebcc-4d90-8429-4294928b90e3\" class=\"colab-df-container\">\n",
+              "  <div id=\"df-e9bf78d5-b250-4d5d-8b1c-d8cabf528107\" class=\"colab-df-container\">\n",
               "    <div>\n",
               "<style scoped>\n",
               "    .dataframe tbody tr th:only-of-type {\n",
@@ -1947,7 +1934,7 @@
               "    <div class=\"colab-df-buttons\">\n",
               "\n",
               "  <div class=\"colab-df-container\">\n",
-              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-7ee69a40-ebcc-4d90-8429-4294928b90e3')\"\n",
+              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-e9bf78d5-b250-4d5d-8b1c-d8cabf528107')\"\n",
               "            title=\"Convert this dataframe to an interactive table.\"\n",
               "            style=\"display:none;\">\n",
               "\n",
@@ -1999,12 +1986,12 @@
               "\n",
               "    <script>\n",
               "      const buttonEl =\n",
-              "        document.querySelector('#df-7ee69a40-ebcc-4d90-8429-4294928b90e3 button.colab-df-convert');\n",
+              "        document.querySelector('#df-e9bf78d5-b250-4d5d-8b1c-d8cabf528107 button.colab-df-convert');\n",
               "      buttonEl.style.display =\n",
               "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "\n",
               "      async function convertToInteractive(key) {\n",
-              "        const element = document.querySelector('#df-7ee69a40-ebcc-4d90-8429-4294928b90e3');\n",
+              "        const element = document.querySelector('#df-e9bf78d5-b250-4d5d-8b1c-d8cabf528107');\n",
               "        const dataTable =\n",
               "          await google.colab.kernel.invokeFunction('convertToInteractive',\n",
               "                                                    [key], {});\n",
@@ -2024,8 +2011,8 @@
               "  </div>\n",
               "\n",
               "\n",
-              "    <div id=\"df-2cb16704-8d4b-4ba0-b9ab-fd6e72734f01\">\n",
-              "      <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-2cb16704-8d4b-4ba0-b9ab-fd6e72734f01')\"\n",
+              "    <div id=\"df-bb18ed35-f854-4346-9916-c8c60a9d4264\">\n",
+              "      <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-bb18ed35-f854-4346-9916-c8c60a9d4264')\"\n",
               "                title=\"Suggest charts\"\n",
               "                style=\"display:none;\">\n",
               "\n",
@@ -2144,7 +2131,7 @@
               "        }\n",
               "        (() => {\n",
               "          let quickchartButtonEl =\n",
-              "            document.querySelector('#df-2cb16704-8d4b-4ba0-b9ab-fd6e72734f01 button');\n",
+              "            document.querySelector('#df-bb18ed35-f854-4346-9916-c8c60a9d4264 button');\n",
               "          quickchartButtonEl.style.display =\n",
               "            google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "        })();\n",
@@ -2161,7 +2148,7 @@
             }
           },
           "metadata": {},
-          "execution_count": 19
+          "execution_count": 329
         }
       ]
     },
@@ -2183,9 +2170,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "Lprr06vfJOBg",
-        "outputId": "9a901bc0-93ab-4e82-b03d-6fca9763fa83"
+        "outputId": "466d7cef-00af-4091-9d9f-c58b90292417"
       },
-      "execution_count": 20,
+      "execution_count": 331,
       "outputs": [
         {
           "output_type": "stream",
@@ -2217,18 +2204,31 @@
       "metadata": {
         "id": "cuhiJQPJLrSu"
       },
-      "execution_count": 21,
+      "execution_count": 332,
       "outputs": []
     },
     {
       "cell_type": "code",
       "source": [
-        "df['typical_floor_space_ratio'] = df['typical_floor_space_ratio'] / 100"
+        "from decimal import Decimal"
       ],
       "metadata": {
-        "id": "tsl-1RQcKWca"
+        "id": "VCTlaHzKxL2f"
       },
-      "execution_count": 22,
+      "execution_count": 333,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def convert_to_decimal(val):\n",
+        "    return Decimal(val / 100).quantize(Decimal('0.000'))\n",
+        "df['typical_floor_space_ratio'] = df['typical_floor_space_ratio'].apply(convert_to_decimal)"
+      ],
+      "metadata": {
+        "id": "1zPOyGE8xN86"
+      },
+      "execution_count": 334,
       "outputs": []
     },
     {
@@ -2239,7 +2239,7 @@
       "metadata": {
         "id": "7EG8-u1fNrAD"
       },
-      "execution_count": 23,
+      "execution_count": 335,
       "outputs": []
     },
     {
@@ -2250,7 +2250,7 @@
       "metadata": {
         "id": "_FeFDWuRWF2d"
       },
-      "execution_count": 24,
+      "execution_count": 336,
       "outputs": []
     },
     {
@@ -2261,7 +2261,7 @@
       "metadata": {
         "id": "rZHK5LNBMGOD"
       },
-      "execution_count": 25,
+      "execution_count": 337,
       "outputs": []
     },
     {
@@ -2273,7 +2273,7 @@
       "metadata": {
         "id": "qwq74u-iM6FX"
       },
-      "execution_count": null,
+      "execution_count": 338,
       "outputs": []
     },
     {
@@ -2287,9 +2287,9 @@
           "height": 206
         },
         "id": "CpQbZgBaQ9UU",
-        "outputId": "46032c65-e362-4015-8d93-c60f737644a2"
+        "outputId": "9f053741-dd32-4c22-fc76-cae44d1d0d94"
       },
-      "execution_count": 26,
+      "execution_count": 339,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -2302,23 +2302,16 @@
               "3      Tempelhof-Schöneberg                         1300   \n",
               "4                   Spandau                          180   \n",
               "\n",
-              "  typical_land_use_type  typical_floor_space_ratio reference_date  \\\n",
-              "0        W - Wohngebiet                      0.025     2012-01-01   \n",
-              "1      M2 - Mischgebiet                      0.020     2012-01-01   \n",
-              "2      M2 - Mischgebiet                      0.030     2012-01-01   \n",
-              "3      M2 - Mischgebiet                      0.030     2012-01-01   \n",
-              "4           G - Gewerbe                        NaN     2012-01-01   \n",
-              "\n",
-              "  land_use_category  year  \n",
-              "0  Residential Area  2012  \n",
-              "1        Mixed Area  2012  \n",
-              "2        Mixed Area  2012  \n",
-              "3        Mixed Area  2012  \n",
-              "4   Commercial Area  2012  "
+              "  typical_land_use_type typical_floor_space_ratio land_use_category  year  \n",
+              "0        W - Wohngebiet                     0.025  Residential Area  2012  \n",
+              "1      M2 - Mischgebiet                     0.020        Mixed Area  2012  \n",
+              "2      M2 - Mischgebiet                     0.030        Mixed Area  2012  \n",
+              "3      M2 - Mischgebiet                     0.030        Mixed Area  2012  \n",
+              "4           G - Gewerbe                       NaN   Commercial Area  2012  "
             ],
             "text/html": [
               "\n",
-              "  <div id=\"df-896f56b0-a17d-403f-b2cf-89dbbf1b9e77\" class=\"colab-df-container\">\n",
+              "  <div id=\"df-eb40be2e-ff18-4c0b-9e98-1712efc44e61\" class=\"colab-df-container\">\n",
               "    <div>\n",
               "<style scoped>\n",
               "    .dataframe tbody tr th:only-of-type {\n",
@@ -2341,7 +2334,6 @@
               "      <th>standard_land_value_per_sqm</th>\n",
               "      <th>typical_land_use_type</th>\n",
               "      <th>typical_floor_space_ratio</th>\n",
-              "      <th>reference_date</th>\n",
               "      <th>land_use_category</th>\n",
               "      <th>year</th>\n",
               "    </tr>\n",
@@ -2353,7 +2345,6 @@
               "      <td>400</td>\n",
               "      <td>W - Wohngebiet</td>\n",
               "      <td>0.025</td>\n",
-              "      <td>2012-01-01</td>\n",
               "      <td>Residential Area</td>\n",
               "      <td>2012</td>\n",
               "    </tr>\n",
@@ -2363,7 +2354,6 @@
               "      <td>550</td>\n",
               "      <td>M2 - Mischgebiet</td>\n",
               "      <td>0.020</td>\n",
-              "      <td>2012-01-01</td>\n",
               "      <td>Mixed Area</td>\n",
               "      <td>2012</td>\n",
               "    </tr>\n",
@@ -2373,7 +2363,6 @@
               "      <td>650</td>\n",
               "      <td>M2 - Mischgebiet</td>\n",
               "      <td>0.030</td>\n",
-              "      <td>2012-01-01</td>\n",
               "      <td>Mixed Area</td>\n",
               "      <td>2012</td>\n",
               "    </tr>\n",
@@ -2383,7 +2372,6 @@
               "      <td>1300</td>\n",
               "      <td>M2 - Mischgebiet</td>\n",
               "      <td>0.030</td>\n",
-              "      <td>2012-01-01</td>\n",
               "      <td>Mixed Area</td>\n",
               "      <td>2012</td>\n",
               "    </tr>\n",
@@ -2393,7 +2381,6 @@
               "      <td>180</td>\n",
               "      <td>G - Gewerbe</td>\n",
               "      <td>NaN</td>\n",
-              "      <td>2012-01-01</td>\n",
               "      <td>Commercial Area</td>\n",
               "      <td>2012</td>\n",
               "    </tr>\n",
@@ -2403,7 +2390,7 @@
               "    <div class=\"colab-df-buttons\">\n",
               "\n",
               "  <div class=\"colab-df-container\">\n",
-              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-896f56b0-a17d-403f-b2cf-89dbbf1b9e77')\"\n",
+              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-eb40be2e-ff18-4c0b-9e98-1712efc44e61')\"\n",
               "            title=\"Convert this dataframe to an interactive table.\"\n",
               "            style=\"display:none;\">\n",
               "\n",
@@ -2455,12 +2442,12 @@
               "\n",
               "    <script>\n",
               "      const buttonEl =\n",
-              "        document.querySelector('#df-896f56b0-a17d-403f-b2cf-89dbbf1b9e77 button.colab-df-convert');\n",
+              "        document.querySelector('#df-eb40be2e-ff18-4c0b-9e98-1712efc44e61 button.colab-df-convert');\n",
               "      buttonEl.style.display =\n",
               "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "\n",
               "      async function convertToInteractive(key) {\n",
-              "        const element = document.querySelector('#df-896f56b0-a17d-403f-b2cf-89dbbf1b9e77');\n",
+              "        const element = document.querySelector('#df-eb40be2e-ff18-4c0b-9e98-1712efc44e61');\n",
               "        const dataTable =\n",
               "          await google.colab.kernel.invokeFunction('convertToInteractive',\n",
               "                                                    [key], {});\n",
@@ -2480,8 +2467,8 @@
               "  </div>\n",
               "\n",
               "\n",
-              "    <div id=\"df-a767da54-7feb-4a56-92c7-625139c753a4\">\n",
-              "      <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-a767da54-7feb-4a56-92c7-625139c753a4')\"\n",
+              "    <div id=\"df-a21c1e36-e234-40fa-8384-79975654caa5\">\n",
+              "      <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-a21c1e36-e234-40fa-8384-79975654caa5')\"\n",
               "                title=\"Suggest charts\"\n",
               "                style=\"display:none;\">\n",
               "\n",
@@ -2600,7 +2587,7 @@
               "        }\n",
               "        (() => {\n",
               "          let quickchartButtonEl =\n",
-              "            document.querySelector('#df-a767da54-7feb-4a56-92c7-625139c753a4 button');\n",
+              "            document.querySelector('#df-a21c1e36-e234-40fa-8384-79975654caa5 button');\n",
               "          quickchartButtonEl.style.display =\n",
               "            google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "        })();\n",
@@ -2613,11 +2600,11 @@
             "application/vnd.google.colaboratory.intrinsic+json": {
               "type": "dataframe",
               "variable_name": "df",
-              "summary": "{\n  \"name\": \"df\",\n  \"rows\": 16826,\n  \"fields\": [\n    {\n      \"column\": \"neighborhood\",\n      \"properties\": {\n        \"dtype\": \"category\",\n        \"num_unique_values\": 12,\n        \"samples\": [\n          \"Lichtenberg\",\n          \"Neuk\\u00f6lln\",\n          \"Friedrichshain-Kreuzberg\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"standard_land_value_per_sqm\",\n      \"properties\": {\n        \"dtype\": \"number\",\n        \"std\": 2631,\n        \"min\": 0,\n        \"max\": 70000,\n        \"num_unique_values\": 183,\n        \"samples\": [\n          1100,\n          950,\n          6600\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"typical_land_use_type\",\n      \"properties\": {\n        \"dtype\": \"category\",\n        \"num_unique_values\": 35,\n        \"samples\": [\n          \"W-MFH - Wohnbaufl\\u00e4che - Mehrfamilienh\\u00e4user\",\n          \"SF-FH - Sonstige Fl\\u00e4chen - Friedhof\",\n          \"W-EFH - Wohnbaufl\\u00e4che - Ein- und Zweifamilienh\\u00e4user\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"typical_floor_space_ratio\",\n      \"properties\": {\n        \"dtype\": \"number\",\n        \"std\": 0.011269086587881606,\n        \"min\": 0.001,\n        \"max\": 0.045,\n        \"num_unique_values\": 24,\n        \"samples\": [\n          0.004,\n          0.027000000000000003,\n          0.025\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"reference_date\",\n      \"properties\": {\n        \"dtype\": \"date\",\n        \"min\": \"2012-01-01 00:00:00\",\n        \"max\": \"2024-01-01 00:00:00\",\n        \"num_unique_values\": 13,\n        \"samples\": [\n          \"2023-01-01 00:00:00\",\n          \"2021-01-01 00:00:00\",\n          \"2012-01-01 00:00:00\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"land_use_category\",\n      \"properties\": {\n        \"dtype\": \"category\",\n        \"num_unique_values\": 5,\n        \"samples\": [\n          \"Mixed Area\",\n          \"Forest and Agricultural Area\",\n          \"Commercial Area\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"year\",\n      \"properties\": {\n        \"dtype\": \"int32\",\n        \"num_unique_values\": 13,\n        \"samples\": [\n          2023,\n          2021,\n          2012\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    }\n  ]\n}"
+              "summary": "{\n  \"name\": \"df\",\n  \"rows\": 16826,\n  \"fields\": [\n    {\n      \"column\": \"neighborhood\",\n      \"properties\": {\n        \"dtype\": \"category\",\n        \"num_unique_values\": 12,\n        \"samples\": [\n          \"Lichtenberg\",\n          \"Neuk\\u00f6lln\",\n          \"Friedrichshain-Kreuzberg\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"standard_land_value_per_sqm\",\n      \"properties\": {\n        \"dtype\": \"number\",\n        \"std\": 2631,\n        \"min\": 0,\n        \"max\": 70000,\n        \"num_unique_values\": 183,\n        \"samples\": [\n          1100,\n          950,\n          6600\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"typical_land_use_type\",\n      \"properties\": {\n        \"dtype\": \"category\",\n        \"num_unique_values\": 35,\n        \"samples\": [\n          \"W-MFH - Wohnbaufl\\u00e4che - Mehrfamilienh\\u00e4user\",\n          \"SF-FH - Sonstige Fl\\u00e4chen - Friedhof\",\n          \"W-EFH - Wohnbaufl\\u00e4che - Ein- und Zweifamilienh\\u00e4user\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"typical_floor_space_ratio\",\n      \"properties\": {\n        \"dtype\": \"category\",\n        \"num_unique_values\": 24,\n        \"samples\": [\n          \"0.004\",\n          \"0.027\",\n          \"0.025\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"land_use_category\",\n      \"properties\": {\n        \"dtype\": \"category\",\n        \"num_unique_values\": 5,\n        \"samples\": [\n          \"Mixed Area\",\n          \"Forest and Agricultural Area\",\n          \"Commercial Area\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"year\",\n      \"properties\": {\n        \"dtype\": \"int32\",\n        \"num_unique_values\": 13,\n        \"samples\": [\n          2023,\n          2021,\n          2012\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    }\n  ]\n}"
             }
           },
           "metadata": {},
-          "execution_count": 26
+          "execution_count": 339
         }
       ]
     },
@@ -2631,9 +2618,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "JUDkRlj6O_n9",
-        "outputId": "6d03a7cf-4fb0-4db9-bc69-1351a11e38c9"
+        "outputId": "ad1aacf2-ad35-422a-9d75-be459e61be47"
       },
-      "execution_count": 27,
+      "execution_count": 340,
       "outputs": [
         {
           "output_type": "stream",
@@ -2641,18 +2628,17 @@
           "text": [
             "<class 'pandas.core.frame.DataFrame'>\n",
             "RangeIndex: 16826 entries, 0 to 16825\n",
-            "Data columns (total 7 columns):\n",
-            " #   Column                       Non-Null Count  Dtype         \n",
-            "---  ------                       --------------  -----         \n",
-            " 0   neighborhood                 16826 non-null  object        \n",
-            " 1   standard_land_value_per_sqm  16826 non-null  int64         \n",
-            " 2   typical_land_use_type        16826 non-null  object        \n",
-            " 3   typical_floor_space_ratio    11509 non-null  float64       \n",
-            " 4   reference_date               16826 non-null  datetime64[ns]\n",
-            " 5   land_use_category            16826 non-null  object        \n",
-            " 6   year                         16826 non-null  int32         \n",
-            "dtypes: datetime64[ns](1), float64(1), int32(1), int64(1), object(3)\n",
-            "memory usage: 854.6+ KB\n"
+            "Data columns (total 6 columns):\n",
+            " #   Column                       Non-Null Count  Dtype \n",
+            "---  ------                       --------------  ----- \n",
+            " 0   neighborhood                 16826 non-null  object\n",
+            " 1   standard_land_value_per_sqm  16826 non-null  int64 \n",
+            " 2   typical_land_use_type        16826 non-null  object\n",
+            " 3   typical_floor_space_ratio    11509 non-null  object\n",
+            " 4   land_use_category            16826 non-null  object\n",
+            " 5   year                         16826 non-null  int32 \n",
+            "dtypes: int32(1), int64(1), object(4)\n",
+            "memory usage: 723.1+ KB\n"
           ]
         }
       ]
@@ -2752,7 +2738,7 @@
       "metadata": {
         "id": "DF6r2aKtaG8A"
       },
-      "execution_count": 28,
+      "execution_count": 341,
       "outputs": []
     },
     {
@@ -2773,106 +2759,118 @@
       "metadata": {
         "id": "sFvXqIzRaLl8"
       },
-      "execution_count": 29,
+      "execution_count": 342,
       "outputs": []
     },
     {
       "cell_type": "code",
       "source": [
-        "#creating new table\n",
-        "with engine.connect() as conn:\n",
+        "with engine.begin() as conn:  # Use begin() for automatic commit\n",
         "    conn.execute(text(\"\"\"\n",
-        "    CREATE  TABLE  IF NOT EXISTS  test_berlin_data.land_prices (\n",
-        "        neighborhood VARCHAR(32) NOT NULL,\n",
-        "        standard_land_value_per_sqm FLOAT NOT NULL CHECK(standard_land_value_per_sqm>0),\n",
-        "        typical_land_use_type VARCHAR(100) NOT NULL,\n",
-        "        typical_floor_space_ratio DECIMAL(10,2) NOT NULL,\n",
-        "        land_use_category VARCHAR(100) NOT NULL,\n",
-        "         CONSTRAINT neighborhood_fk FOREIGN KEY  (neighborhood) REFERENCES test_berlin_data.neighborhood(neighborhood)\n",
-        "    )\n",
+        "        CREATE TABLE IF NOT EXISTS test_berlin_data.land_prices (\n",
+        "            neighborhood VARCHAR(32) NOT NULL,\n",
+        "            standard_land_value_per_sqm FLOAT ,\n",
+        "            typical_land_use_type VARCHAR(100) NOT NULL,\n",
+        "            typical_floor_space_ratio DECIMAL(10,3),\n",
+        "            land_use_category VARCHAR(100) NOT NULL,\n",
+        "            year INTEGER NOT NULL,\n",
+        "            CONSTRAINT neighborhood_fk FOREIGN KEY (neighborhood)\n",
+        "                REFERENCES test_berlin_data.neighborhood(neighborhood)\n",
+        "        )\n",
         "    \"\"\"))"
       ],
       "metadata": {
-        "id": "gcmnbubXaYq1"
+        "id": "shiznzpyIwtl"
       },
-      "execution_count": 30,
+      "execution_count": 343,
       "outputs": []
     },
     {
       "cell_type": "code",
       "source": [
-        "df.to_sql(name='land_prices',\n",
-        "    con=engine,\n",
-        "    schema='test_berlin_data',\n",
-        "    if_exists='append',\n",
-        "    index=False       )"
+        "with engine.connect() as conn:\n",
+        "    conn.execute(text(\"DROP TABLE IF EXISTS test_berlin_data.land_prices;\"))\n",
+        "    conn.commit()"
       ],
       "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "BvzEjs0Sahcx",
-        "outputId": "703aa14e-364d-41ca-bec6-6d12bc8e6775"
+        "id": "Z_S1XQ61Mhzo"
       },
-      "execution_count": 33,
-      "outputs": [
-        {
-          "output_type": "execute_result",
-          "data": {
-            "text/plain": [
-              "826"
-            ]
-          },
-          "metadata": {},
-          "execution_count": 33
-        }
-      ]
+      "execution_count": 344,
+      "outputs": []
     },
     {
       "cell_type": "code",
       "source": [
-        "query = \"SELECT * FROM test_berlin_data.land_prices LIMIT 5;\"\n",
-        "df = pd.read_sql(query, engine)\n",
-        "df.head()"
+        "with engine.begin() as conn:  # Use begin() for automatic commit\n",
+        "    conn.execute(text(\"\"\"\n",
+        "        CREATE TABLE IF NOT EXISTS test_berlin_data.land_prices (\n",
+        "            neighborhood VARCHAR(32) NOT NULL,\n",
+        "            standard_land_value_per_sqm FLOAT ,\n",
+        "            typical_land_use_type VARCHAR(100) NOT NULL,\n",
+        "            typical_floor_space_ratio DECIMAL(10,3),\n",
+        "            land_use_category VARCHAR(100) NOT NULL,\n",
+        "            year INTEGER NOT NULL,\n",
+        "            CONSTRAINT neighborhood_fk FOREIGN KEY (neighborhood)\n",
+        "                REFERENCES test_berlin_data.neighborhood(neighborhood)\n",
+        "        )\n",
+        "    \"\"\"))"
+      ],
+      "metadata": {
+        "id": "XNL_Qc2KM8Zk"
+      },
+      "execution_count": 345,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "df"
       ],
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/",
-          "height": 206
+          "height": 424
         },
-        "id": "cv3XVSkicq8s",
-        "outputId": "16704aa3-1a6f-484f-a63e-55fbec29940f"
+        "id": "MFAfS07dLAyZ",
+        "outputId": "39782ddd-4d93-40ba-96c5-69f812231ab4"
       },
-      "execution_count": 34,
+      "execution_count": 346,
       "outputs": [
         {
           "output_type": "execute_result",
           "data": {
             "text/plain": [
-              "               neighborhood  standard_land_value_per_sqm  \\\n",
-              "0  Friedrichshain-Kreuzberg                          400   \n",
-              "1             Reinickendorf                          550   \n",
-              "2  Friedrichshain-Kreuzberg                          650   \n",
-              "3      Tempelhof-Schöneberg                         1300   \n",
-              "4                   Spandau                          180   \n",
+              "                   neighborhood  standard_land_value_per_sqm  \\\n",
+              "0      Friedrichshain-Kreuzberg                          400   \n",
+              "1                 Reinickendorf                          550   \n",
+              "2      Friedrichshain-Kreuzberg                          650   \n",
+              "3          Tempelhof-Schöneberg                         1300   \n",
+              "4                       Spandau                          180   \n",
+              "...                         ...                          ...   \n",
+              "16821       Marzahn-Hellersdorf                         1000   \n",
+              "16822                     Mitte                         7000   \n",
+              "16823                     Mitte                         8500   \n",
+              "16824                    Pankow                         5000   \n",
+              "16825                     Mitte                         7000   \n",
               "\n",
-              "  typical_land_use_type  typical_floor_space_ratio reference_date  \\\n",
-              "0        W - Wohngebiet                      0.025     2012-01-01   \n",
-              "1      M2 - Mischgebiet                      0.020     2012-01-01   \n",
-              "2      M2 - Mischgebiet                      0.030     2012-01-01   \n",
-              "3      M2 - Mischgebiet                      0.030     2012-01-01   \n",
-              "4           G - Gewerbe                        NaN     2012-01-01   \n",
+              "      typical_land_use_type typical_floor_space_ratio land_use_category  year  \n",
+              "0            W - Wohngebiet                     0.025  Residential Area  2012  \n",
+              "1          M2 - Mischgebiet                     0.020        Mixed Area  2012  \n",
+              "2          M2 - Mischgebiet                     0.030        Mixed Area  2012  \n",
+              "3          M2 - Mischgebiet                     0.030        Mixed Area  2012  \n",
+              "4               G - Gewerbe                       NaN   Commercial Area  2012  \n",
+              "...                     ...                       ...               ...   ...  \n",
+              "16821      M2 - Mischgebiet                     0.020        Mixed Area  2024  \n",
+              "16822      M2 - Mischgebiet                     0.035        Mixed Area  2024  \n",
+              "16823      M2 - Mischgebiet                     0.035        Mixed Area  2024  \n",
+              "16824      M2 - Mischgebiet                     0.030        Mixed Area  2024  \n",
+              "16825      M2 - Mischgebiet                     0.035        Mixed Area  2024  \n",
               "\n",
-              "  land_use_category  year  \n",
-              "0  Residential Area  2012  \n",
-              "1        Mixed Area  2012  \n",
-              "2        Mixed Area  2012  \n",
-              "3        Mixed Area  2012  \n",
-              "4   Commercial Area  2012  "
+              "[16826 rows x 6 columns]"
             ],
             "text/html": [
               "\n",
-              "  <div id=\"df-b3271fef-d37a-40bf-8114-f25786ca90e5\" class=\"colab-df-container\">\n",
+              "  <div id=\"df-12d0f0ac-921a-46ea-968a-783a3aa2e51e\" class=\"colab-df-container\">\n",
               "    <div>\n",
               "<style scoped>\n",
               "    .dataframe tbody tr th:only-of-type {\n",
@@ -2895,7 +2893,6 @@
               "      <th>standard_land_value_per_sqm</th>\n",
               "      <th>typical_land_use_type</th>\n",
               "      <th>typical_floor_space_ratio</th>\n",
-              "      <th>reference_date</th>\n",
               "      <th>land_use_category</th>\n",
               "      <th>year</th>\n",
               "    </tr>\n",
@@ -2907,7 +2904,6 @@
               "      <td>400</td>\n",
               "      <td>W - Wohngebiet</td>\n",
               "      <td>0.025</td>\n",
-              "      <td>2012-01-01</td>\n",
               "      <td>Residential Area</td>\n",
               "      <td>2012</td>\n",
               "    </tr>\n",
@@ -2917,7 +2913,6 @@
               "      <td>550</td>\n",
               "      <td>M2 - Mischgebiet</td>\n",
               "      <td>0.020</td>\n",
-              "      <td>2012-01-01</td>\n",
               "      <td>Mixed Area</td>\n",
               "      <td>2012</td>\n",
               "    </tr>\n",
@@ -2927,7 +2922,6 @@
               "      <td>650</td>\n",
               "      <td>M2 - Mischgebiet</td>\n",
               "      <td>0.030</td>\n",
-              "      <td>2012-01-01</td>\n",
               "      <td>Mixed Area</td>\n",
               "      <td>2012</td>\n",
               "    </tr>\n",
@@ -2937,7 +2931,6 @@
               "      <td>1300</td>\n",
               "      <td>M2 - Mischgebiet</td>\n",
               "      <td>0.030</td>\n",
-              "      <td>2012-01-01</td>\n",
               "      <td>Mixed Area</td>\n",
               "      <td>2012</td>\n",
               "    </tr>\n",
@@ -2947,17 +2940,71 @@
               "      <td>180</td>\n",
               "      <td>G - Gewerbe</td>\n",
               "      <td>NaN</td>\n",
-              "      <td>2012-01-01</td>\n",
               "      <td>Commercial Area</td>\n",
               "      <td>2012</td>\n",
               "    </tr>\n",
+              "    <tr>\n",
+              "      <th>...</th>\n",
+              "      <td>...</td>\n",
+              "      <td>...</td>\n",
+              "      <td>...</td>\n",
+              "      <td>...</td>\n",
+              "      <td>...</td>\n",
+              "      <td>...</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>16821</th>\n",
+              "      <td>Marzahn-Hellersdorf</td>\n",
+              "      <td>1000</td>\n",
+              "      <td>M2 - Mischgebiet</td>\n",
+              "      <td>0.020</td>\n",
+              "      <td>Mixed Area</td>\n",
+              "      <td>2024</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>16822</th>\n",
+              "      <td>Mitte</td>\n",
+              "      <td>7000</td>\n",
+              "      <td>M2 - Mischgebiet</td>\n",
+              "      <td>0.035</td>\n",
+              "      <td>Mixed Area</td>\n",
+              "      <td>2024</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>16823</th>\n",
+              "      <td>Mitte</td>\n",
+              "      <td>8500</td>\n",
+              "      <td>M2 - Mischgebiet</td>\n",
+              "      <td>0.035</td>\n",
+              "      <td>Mixed Area</td>\n",
+              "      <td>2024</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>16824</th>\n",
+              "      <td>Pankow</td>\n",
+              "      <td>5000</td>\n",
+              "      <td>M2 - Mischgebiet</td>\n",
+              "      <td>0.030</td>\n",
+              "      <td>Mixed Area</td>\n",
+              "      <td>2024</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>16825</th>\n",
+              "      <td>Mitte</td>\n",
+              "      <td>7000</td>\n",
+              "      <td>M2 - Mischgebiet</td>\n",
+              "      <td>0.035</td>\n",
+              "      <td>Mixed Area</td>\n",
+              "      <td>2024</td>\n",
+              "    </tr>\n",
               "  </tbody>\n",
               "</table>\n",
+              "<p>16826 rows × 6 columns</p>\n",
               "</div>\n",
               "    <div class=\"colab-df-buttons\">\n",
               "\n",
               "  <div class=\"colab-df-container\">\n",
-              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-b3271fef-d37a-40bf-8114-f25786ca90e5')\"\n",
+              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-12d0f0ac-921a-46ea-968a-783a3aa2e51e')\"\n",
               "            title=\"Convert this dataframe to an interactive table.\"\n",
               "            style=\"display:none;\">\n",
               "\n",
@@ -3009,12 +3056,12 @@
               "\n",
               "    <script>\n",
               "      const buttonEl =\n",
-              "        document.querySelector('#df-b3271fef-d37a-40bf-8114-f25786ca90e5 button.colab-df-convert');\n",
+              "        document.querySelector('#df-12d0f0ac-921a-46ea-968a-783a3aa2e51e button.colab-df-convert');\n",
               "      buttonEl.style.display =\n",
               "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "\n",
               "      async function convertToInteractive(key) {\n",
-              "        const element = document.querySelector('#df-b3271fef-d37a-40bf-8114-f25786ca90e5');\n",
+              "        const element = document.querySelector('#df-12d0f0ac-921a-46ea-968a-783a3aa2e51e');\n",
               "        const dataTable =\n",
               "          await google.colab.kernel.invokeFunction('convertToInteractive',\n",
               "                                                    [key], {});\n",
@@ -3034,8 +3081,8 @@
               "  </div>\n",
               "\n",
               "\n",
-              "    <div id=\"df-87fbbe0e-a735-400f-8186-b2ad91968772\">\n",
-              "      <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-87fbbe0e-a735-400f-8186-b2ad91968772')\"\n",
+              "    <div id=\"df-6b249405-823d-4951-8f85-35d9de3f075e\">\n",
+              "      <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-6b249405-823d-4951-8f85-35d9de3f075e')\"\n",
               "                title=\"Suggest charts\"\n",
               "                style=\"display:none;\">\n",
               "\n",
@@ -3154,7 +3201,426 @@
               "        }\n",
               "        (() => {\n",
               "          let quickchartButtonEl =\n",
-              "            document.querySelector('#df-87fbbe0e-a735-400f-8186-b2ad91968772 button');\n",
+              "            document.querySelector('#df-6b249405-823d-4951-8f85-35d9de3f075e button');\n",
+              "          quickchartButtonEl.style.display =\n",
+              "            google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
+              "        })();\n",
+              "      </script>\n",
+              "    </div>\n",
+              "\n",
+              "  <div id=\"id_63cc307f-72d7-40c6-a28c-7f9d4852244f\">\n",
+              "    <style>\n",
+              "      .colab-df-generate {\n",
+              "        background-color: #E8F0FE;\n",
+              "        border: none;\n",
+              "        border-radius: 50%;\n",
+              "        cursor: pointer;\n",
+              "        display: none;\n",
+              "        fill: #1967D2;\n",
+              "        height: 32px;\n",
+              "        padding: 0 0 0 0;\n",
+              "        width: 32px;\n",
+              "      }\n",
+              "\n",
+              "      .colab-df-generate:hover {\n",
+              "        background-color: #E2EBFA;\n",
+              "        box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);\n",
+              "        fill: #174EA6;\n",
+              "      }\n",
+              "\n",
+              "      [theme=dark] .colab-df-generate {\n",
+              "        background-color: #3B4455;\n",
+              "        fill: #D2E3FC;\n",
+              "      }\n",
+              "\n",
+              "      [theme=dark] .colab-df-generate:hover {\n",
+              "        background-color: #434B5C;\n",
+              "        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);\n",
+              "        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));\n",
+              "        fill: #FFFFFF;\n",
+              "      }\n",
+              "    </style>\n",
+              "    <button class=\"colab-df-generate\" onclick=\"generateWithVariable('df')\"\n",
+              "            title=\"Generate code using this dataframe.\"\n",
+              "            style=\"display:none;\">\n",
+              "\n",
+              "  <svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\"viewBox=\"0 0 24 24\"\n",
+              "       width=\"24px\">\n",
+              "    <path d=\"M7,19H8.4L18.45,9,17,7.55,7,17.6ZM5,21V16.75L18.45,3.32a2,2,0,0,1,2.83,0l1.4,1.43a1.91,1.91,0,0,1,.58,1.4,1.91,1.91,0,0,1-.58,1.4L9.25,21ZM18.45,9,17,7.55Zm-12,3A5.31,5.31,0,0,0,4.9,8.1,5.31,5.31,0,0,0,1,6.5,5.31,5.31,0,0,0,4.9,4.9,5.31,5.31,0,0,0,6.5,1,5.31,5.31,0,0,0,8.1,4.9,5.31,5.31,0,0,0,12,6.5,5.46,5.46,0,0,0,6.5,12Z\"/>\n",
+              "  </svg>\n",
+              "    </button>\n",
+              "    <script>\n",
+              "      (() => {\n",
+              "      const buttonEl =\n",
+              "        document.querySelector('#id_63cc307f-72d7-40c6-a28c-7f9d4852244f button.colab-df-generate');\n",
+              "      buttonEl.style.display =\n",
+              "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
+              "\n",
+              "      buttonEl.onclick = () => {\n",
+              "        google.colab.notebook.generateWithVariable('df');\n",
+              "      }\n",
+              "      })();\n",
+              "    </script>\n",
+              "  </div>\n",
+              "\n",
+              "    </div>\n",
+              "  </div>\n"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "dataframe",
+              "variable_name": "df",
+              "summary": "{\n  \"name\": \"df\",\n  \"rows\": 16826,\n  \"fields\": [\n    {\n      \"column\": \"neighborhood\",\n      \"properties\": {\n        \"dtype\": \"category\",\n        \"num_unique_values\": 12,\n        \"samples\": [\n          \"Lichtenberg\",\n          \"Neuk\\u00f6lln\",\n          \"Friedrichshain-Kreuzberg\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"standard_land_value_per_sqm\",\n      \"properties\": {\n        \"dtype\": \"number\",\n        \"std\": 2631,\n        \"min\": 0,\n        \"max\": 70000,\n        \"num_unique_values\": 183,\n        \"samples\": [\n          1100,\n          950,\n          6600\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"typical_land_use_type\",\n      \"properties\": {\n        \"dtype\": \"category\",\n        \"num_unique_values\": 35,\n        \"samples\": [\n          \"W-MFH - Wohnbaufl\\u00e4che - Mehrfamilienh\\u00e4user\",\n          \"SF-FH - Sonstige Fl\\u00e4chen - Friedhof\",\n          \"W-EFH - Wohnbaufl\\u00e4che - Ein- und Zweifamilienh\\u00e4user\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"typical_floor_space_ratio\",\n      \"properties\": {\n        \"dtype\": \"category\",\n        \"num_unique_values\": 24,\n        \"samples\": [\n          \"0.004\",\n          \"0.027\",\n          \"0.025\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"land_use_category\",\n      \"properties\": {\n        \"dtype\": \"category\",\n        \"num_unique_values\": 5,\n        \"samples\": [\n          \"Mixed Area\",\n          \"Forest and Agricultural Area\",\n          \"Commercial Area\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"year\",\n      \"properties\": {\n        \"dtype\": \"int32\",\n        \"num_unique_values\": 13,\n        \"samples\": [\n          2023,\n          2021,\n          2012\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    }\n  ]\n}"
+            }
+          },
+          "metadata": {},
+          "execution_count": 346
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "df.to_sql(name='land_prices',\n",
+        "    con=engine,\n",
+        "    schema='test_berlin_data',\n",
+        "    if_exists='append',\n",
+        "    index=False       )"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JPxInTLlLeZI",
+        "outputId": "f3e37b6f-84a6-49ea-9339-7d5f5fffecce"
+      },
+      "execution_count": 347,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "826"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 347
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "query = \"SELECT * FROM test_berlin_data.land_prices LIMIT 5;\"\n",
+        "df = pd.read_sql(query, engine)\n",
+        "df.head()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 206
+        },
+        "id": "cv3XVSkicq8s",
+        "outputId": "2eee97ac-0ce9-41c1-a4af-845a17596ab5"
+      },
+      "execution_count": 348,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "               neighborhood  standard_land_value_per_sqm  \\\n",
+              "0  Friedrichshain-Kreuzberg                        400.0   \n",
+              "1             Reinickendorf                        550.0   \n",
+              "2  Friedrichshain-Kreuzberg                        650.0   \n",
+              "3      Tempelhof-Schöneberg                       1300.0   \n",
+              "4                   Spandau                        180.0   \n",
+              "\n",
+              "  typical_land_use_type  typical_floor_space_ratio land_use_category  year  \n",
+              "0        W - Wohngebiet                      0.025  Residential Area  2012  \n",
+              "1      M2 - Mischgebiet                      0.020        Mixed Area  2012  \n",
+              "2      M2 - Mischgebiet                      0.030        Mixed Area  2012  \n",
+              "3      M2 - Mischgebiet                      0.030        Mixed Area  2012  \n",
+              "4           G - Gewerbe                        NaN   Commercial Area  2012  "
+            ],
+            "text/html": [
+              "\n",
+              "  <div id=\"df-54125bd0-add9-4031-8d7d-9cbe89e7d20f\" class=\"colab-df-container\">\n",
+              "    <div>\n",
+              "<style scoped>\n",
+              "    .dataframe tbody tr th:only-of-type {\n",
+              "        vertical-align: middle;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe tbody tr th {\n",
+              "        vertical-align: top;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe thead th {\n",
+              "        text-align: right;\n",
+              "    }\n",
+              "</style>\n",
+              "<table border=\"1\" class=\"dataframe\">\n",
+              "  <thead>\n",
+              "    <tr style=\"text-align: right;\">\n",
+              "      <th></th>\n",
+              "      <th>neighborhood</th>\n",
+              "      <th>standard_land_value_per_sqm</th>\n",
+              "      <th>typical_land_use_type</th>\n",
+              "      <th>typical_floor_space_ratio</th>\n",
+              "      <th>land_use_category</th>\n",
+              "      <th>year</th>\n",
+              "    </tr>\n",
+              "  </thead>\n",
+              "  <tbody>\n",
+              "    <tr>\n",
+              "      <th>0</th>\n",
+              "      <td>Friedrichshain-Kreuzberg</td>\n",
+              "      <td>400.0</td>\n",
+              "      <td>W - Wohngebiet</td>\n",
+              "      <td>0.025</td>\n",
+              "      <td>Residential Area</td>\n",
+              "      <td>2012</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>1</th>\n",
+              "      <td>Reinickendorf</td>\n",
+              "      <td>550.0</td>\n",
+              "      <td>M2 - Mischgebiet</td>\n",
+              "      <td>0.020</td>\n",
+              "      <td>Mixed Area</td>\n",
+              "      <td>2012</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>2</th>\n",
+              "      <td>Friedrichshain-Kreuzberg</td>\n",
+              "      <td>650.0</td>\n",
+              "      <td>M2 - Mischgebiet</td>\n",
+              "      <td>0.030</td>\n",
+              "      <td>Mixed Area</td>\n",
+              "      <td>2012</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>3</th>\n",
+              "      <td>Tempelhof-Schöneberg</td>\n",
+              "      <td>1300.0</td>\n",
+              "      <td>M2 - Mischgebiet</td>\n",
+              "      <td>0.030</td>\n",
+              "      <td>Mixed Area</td>\n",
+              "      <td>2012</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>4</th>\n",
+              "      <td>Spandau</td>\n",
+              "      <td>180.0</td>\n",
+              "      <td>G - Gewerbe</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>Commercial Area</td>\n",
+              "      <td>2012</td>\n",
+              "    </tr>\n",
+              "  </tbody>\n",
+              "</table>\n",
+              "</div>\n",
+              "    <div class=\"colab-df-buttons\">\n",
+              "\n",
+              "  <div class=\"colab-df-container\">\n",
+              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-54125bd0-add9-4031-8d7d-9cbe89e7d20f')\"\n",
+              "            title=\"Convert this dataframe to an interactive table.\"\n",
+              "            style=\"display:none;\">\n",
+              "\n",
+              "  <svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\" viewBox=\"0 -960 960 960\">\n",
+              "    <path d=\"M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z\"/>\n",
+              "  </svg>\n",
+              "    </button>\n",
+              "\n",
+              "  <style>\n",
+              "    .colab-df-container {\n",
+              "      display:flex;\n",
+              "      gap: 12px;\n",
+              "    }\n",
+              "\n",
+              "    .colab-df-convert {\n",
+              "      background-color: #E8F0FE;\n",
+              "      border: none;\n",
+              "      border-radius: 50%;\n",
+              "      cursor: pointer;\n",
+              "      display: none;\n",
+              "      fill: #1967D2;\n",
+              "      height: 32px;\n",
+              "      padding: 0 0 0 0;\n",
+              "      width: 32px;\n",
+              "    }\n",
+              "\n",
+              "    .colab-df-convert:hover {\n",
+              "      background-color: #E2EBFA;\n",
+              "      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);\n",
+              "      fill: #174EA6;\n",
+              "    }\n",
+              "\n",
+              "    .colab-df-buttons div {\n",
+              "      margin-bottom: 4px;\n",
+              "    }\n",
+              "\n",
+              "    [theme=dark] .colab-df-convert {\n",
+              "      background-color: #3B4455;\n",
+              "      fill: #D2E3FC;\n",
+              "    }\n",
+              "\n",
+              "    [theme=dark] .colab-df-convert:hover {\n",
+              "      background-color: #434B5C;\n",
+              "      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);\n",
+              "      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));\n",
+              "      fill: #FFFFFF;\n",
+              "    }\n",
+              "  </style>\n",
+              "\n",
+              "    <script>\n",
+              "      const buttonEl =\n",
+              "        document.querySelector('#df-54125bd0-add9-4031-8d7d-9cbe89e7d20f button.colab-df-convert');\n",
+              "      buttonEl.style.display =\n",
+              "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
+              "\n",
+              "      async function convertToInteractive(key) {\n",
+              "        const element = document.querySelector('#df-54125bd0-add9-4031-8d7d-9cbe89e7d20f');\n",
+              "        const dataTable =\n",
+              "          await google.colab.kernel.invokeFunction('convertToInteractive',\n",
+              "                                                    [key], {});\n",
+              "        if (!dataTable) return;\n",
+              "\n",
+              "        const docLinkHtml = 'Like what you see? Visit the ' +\n",
+              "          '<a target=\"_blank\" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'\n",
+              "          + ' to learn more about interactive tables.';\n",
+              "        element.innerHTML = '';\n",
+              "        dataTable['output_type'] = 'display_data';\n",
+              "        await google.colab.output.renderOutput(dataTable, element);\n",
+              "        const docLink = document.createElement('div');\n",
+              "        docLink.innerHTML = docLinkHtml;\n",
+              "        element.appendChild(docLink);\n",
+              "      }\n",
+              "    </script>\n",
+              "  </div>\n",
+              "\n",
+              "\n",
+              "    <div id=\"df-57d86f5d-2910-4ba5-a6fe-1ffed66c8ab4\">\n",
+              "      <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-57d86f5d-2910-4ba5-a6fe-1ffed66c8ab4')\"\n",
+              "                title=\"Suggest charts\"\n",
+              "                style=\"display:none;\">\n",
+              "\n",
+              "<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\"viewBox=\"0 0 24 24\"\n",
+              "     width=\"24px\">\n",
+              "    <g>\n",
+              "        <path d=\"M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z\"/>\n",
+              "    </g>\n",
+              "</svg>\n",
+              "      </button>\n",
+              "\n",
+              "<style>\n",
+              "  .colab-df-quickchart {\n",
+              "      --bg-color: #E8F0FE;\n",
+              "      --fill-color: #1967D2;\n",
+              "      --hover-bg-color: #E2EBFA;\n",
+              "      --hover-fill-color: #174EA6;\n",
+              "      --disabled-fill-color: #AAA;\n",
+              "      --disabled-bg-color: #DDD;\n",
+              "  }\n",
+              "\n",
+              "  [theme=dark] .colab-df-quickchart {\n",
+              "      --bg-color: #3B4455;\n",
+              "      --fill-color: #D2E3FC;\n",
+              "      --hover-bg-color: #434B5C;\n",
+              "      --hover-fill-color: #FFFFFF;\n",
+              "      --disabled-bg-color: #3B4455;\n",
+              "      --disabled-fill-color: #666;\n",
+              "  }\n",
+              "\n",
+              "  .colab-df-quickchart {\n",
+              "    background-color: var(--bg-color);\n",
+              "    border: none;\n",
+              "    border-radius: 50%;\n",
+              "    cursor: pointer;\n",
+              "    display: none;\n",
+              "    fill: var(--fill-color);\n",
+              "    height: 32px;\n",
+              "    padding: 0;\n",
+              "    width: 32px;\n",
+              "  }\n",
+              "\n",
+              "  .colab-df-quickchart:hover {\n",
+              "    background-color: var(--hover-bg-color);\n",
+              "    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);\n",
+              "    fill: var(--button-hover-fill-color);\n",
+              "  }\n",
+              "\n",
+              "  .colab-df-quickchart-complete:disabled,\n",
+              "  .colab-df-quickchart-complete:disabled:hover {\n",
+              "    background-color: var(--disabled-bg-color);\n",
+              "    fill: var(--disabled-fill-color);\n",
+              "    box-shadow: none;\n",
+              "  }\n",
+              "\n",
+              "  .colab-df-spinner {\n",
+              "    border: 2px solid var(--fill-color);\n",
+              "    border-color: transparent;\n",
+              "    border-bottom-color: var(--fill-color);\n",
+              "    animation:\n",
+              "      spin 1s steps(1) infinite;\n",
+              "  }\n",
+              "\n",
+              "  @keyframes spin {\n",
+              "    0% {\n",
+              "      border-color: transparent;\n",
+              "      border-bottom-color: var(--fill-color);\n",
+              "      border-left-color: var(--fill-color);\n",
+              "    }\n",
+              "    20% {\n",
+              "      border-color: transparent;\n",
+              "      border-left-color: var(--fill-color);\n",
+              "      border-top-color: var(--fill-color);\n",
+              "    }\n",
+              "    30% {\n",
+              "      border-color: transparent;\n",
+              "      border-left-color: var(--fill-color);\n",
+              "      border-top-color: var(--fill-color);\n",
+              "      border-right-color: var(--fill-color);\n",
+              "    }\n",
+              "    40% {\n",
+              "      border-color: transparent;\n",
+              "      border-right-color: var(--fill-color);\n",
+              "      border-top-color: var(--fill-color);\n",
+              "    }\n",
+              "    60% {\n",
+              "      border-color: transparent;\n",
+              "      border-right-color: var(--fill-color);\n",
+              "    }\n",
+              "    80% {\n",
+              "      border-color: transparent;\n",
+              "      border-right-color: var(--fill-color);\n",
+              "      border-bottom-color: var(--fill-color);\n",
+              "    }\n",
+              "    90% {\n",
+              "      border-color: transparent;\n",
+              "      border-bottom-color: var(--fill-color);\n",
+              "    }\n",
+              "  }\n",
+              "</style>\n",
+              "\n",
+              "      <script>\n",
+              "        async function quickchart(key) {\n",
+              "          const quickchartButtonEl =\n",
+              "            document.querySelector('#' + key + ' button');\n",
+              "          quickchartButtonEl.disabled = true;  // To prevent multiple clicks.\n",
+              "          quickchartButtonEl.classList.add('colab-df-spinner');\n",
+              "          try {\n",
+              "            const charts = await google.colab.kernel.invokeFunction(\n",
+              "                'suggestCharts', [key], {});\n",
+              "          } catch (error) {\n",
+              "            console.error('Error during call to suggestCharts:', error);\n",
+              "          }\n",
+              "          quickchartButtonEl.classList.remove('colab-df-spinner');\n",
+              "          quickchartButtonEl.classList.add('colab-df-quickchart-complete');\n",
+              "        }\n",
+              "        (() => {\n",
+              "          let quickchartButtonEl =\n",
+              "            document.querySelector('#df-57d86f5d-2910-4ba5-a6fe-1ffed66c8ab4 button');\n",
               "          quickchartButtonEl.style.display =\n",
               "            google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "        })();\n",
@@ -3167,11 +3633,11 @@
             "application/vnd.google.colaboratory.intrinsic+json": {
               "type": "dataframe",
               "variable_name": "df",
-              "summary": "{\n  \"name\": \"df\",\n  \"rows\": 5,\n  \"fields\": [\n    {\n      \"column\": \"neighborhood\",\n      \"properties\": {\n        \"dtype\": \"string\",\n        \"num_unique_values\": 4,\n        \"samples\": [\n          \"Reinickendorf\",\n          \"Spandau\",\n          \"Friedrichshain-Kreuzberg\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"standard_land_value_per_sqm\",\n      \"properties\": {\n        \"dtype\": \"number\",\n        \"std\": 421,\n        \"min\": 180,\n        \"max\": 1300,\n        \"num_unique_values\": 5,\n        \"samples\": [\n          550,\n          180,\n          650\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"typical_land_use_type\",\n      \"properties\": {\n        \"dtype\": \"string\",\n        \"num_unique_values\": 3,\n        \"samples\": [\n          \"W - Wohngebiet\",\n          \"M2 - Mischgebiet\",\n          \"G - Gewerbe\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"typical_floor_space_ratio\",\n      \"properties\": {\n        \"dtype\": \"number\",\n        \"std\": 0.00478713553878169,\n        \"min\": 0.02,\n        \"max\": 0.03,\n        \"num_unique_values\": 3,\n        \"samples\": [\n          0.025,\n          0.02,\n          0.03\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"reference_date\",\n      \"properties\": {\n        \"dtype\": \"date\",\n        \"min\": \"2012-01-01 00:00:00\",\n        \"max\": \"2012-01-01 00:00:00\",\n        \"num_unique_values\": 1,\n        \"samples\": [\n          \"2012-01-01 00:00:00\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"land_use_category\",\n      \"properties\": {\n        \"dtype\": \"string\",\n        \"num_unique_values\": 3,\n        \"samples\": [\n          \"Residential Area\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"year\",\n      \"properties\": {\n        \"dtype\": \"number\",\n        \"std\": 0,\n        \"min\": 2012,\n        \"max\": 2012,\n        \"num_unique_values\": 1,\n        \"samples\": [\n          2012\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    }\n  ]\n}"
+              "summary": "{\n  \"name\": \"df\",\n  \"rows\": 5,\n  \"fields\": [\n    {\n      \"column\": \"neighborhood\",\n      \"properties\": {\n        \"dtype\": \"string\",\n        \"num_unique_values\": 4,\n        \"samples\": [\n          \"Reinickendorf\",\n          \"Spandau\",\n          \"Friedrichshain-Kreuzberg\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"standard_land_value_per_sqm\",\n      \"properties\": {\n        \"dtype\": \"number\",\n        \"std\": 421.34309060431974,\n        \"min\": 180.0,\n        \"max\": 1300.0,\n        \"num_unique_values\": 5,\n        \"samples\": [\n          550.0,\n          180.0,\n          650.0\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"typical_land_use_type\",\n      \"properties\": {\n        \"dtype\": \"string\",\n        \"num_unique_values\": 3,\n        \"samples\": [\n          \"W - Wohngebiet\",\n          \"M2 - Mischgebiet\",\n          \"G - Gewerbe\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"typical_floor_space_ratio\",\n      \"properties\": {\n        \"dtype\": \"number\",\n        \"std\": 0.00478713553878169,\n        \"min\": 0.02,\n        \"max\": 0.03,\n        \"num_unique_values\": 3,\n        \"samples\": [\n          0.025,\n          0.02,\n          0.03\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"land_use_category\",\n      \"properties\": {\n        \"dtype\": \"string\",\n        \"num_unique_values\": 3,\n        \"samples\": [\n          \"Residential Area\",\n          \"Mixed Area\",\n          \"Commercial Area\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"year\",\n      \"properties\": {\n        \"dtype\": \"number\",\n        \"std\": 0,\n        \"min\": 2012,\n        \"max\": 2012,\n        \"num_unique_values\": 1,\n        \"samples\": [\n          2012\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    }\n  ]\n}"
             }
           },
           "metadata": {},
-          "execution_count": 34
+          "execution_count": 348
         }
       ]
     }
