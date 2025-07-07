@@ -26,7 +26,7 @@ Process for data collection and cleaning:
    1. I copied the data form the DKV website and pasted it in the spreedsheet.
    2. Through REGEXEXTRACT I extracted post code from the name.
    3. By clicking on the hyperlink I got the address and location for the google maps.
-   4. Then I cleaned the Distance column by using Text to column fuction.
+   4. Then I cleaned the Distance column by using Text to column function.
    5. And removed the decimal from the rest numerical columns.
 
 | column 	 | dtype  |
@@ -42,30 +42,35 @@ Process for data collection and cleaning:
    
 * Where ever the cases is 0 the hospital's data was not updated by the last quality report.
 
+
+
 🛠 Step 2: Data Transformation
 
-Write transformation logic using Python/SQL.
+   1. The coordinates column was split into latitude and longitude respectively.
+   2. With GeoJSON file spatial data was loaded and locality and neighborhood was merged in dataframe.
+   3. To visualize the data folium library was used and the neighborhood and hospitals were mapped.
+   4. The columns were renamed and rearranged as follows for ERD process.
 
-Ensure data is clean, normalized, and matches the model defined in Step 1.
+| column 	   | dtype        |
+|--------------|--------------|
+| name         | VARCHAR(200) |
+| address	   | VARCHAR(200) |
+| coordinates  | VARCHAR(100) |
+| latitude     | DECIMAL(9,6) |
+| longitude    | DECIMAL(9,6) |
+| locality     | VARCHAR(100) |
+| neighborhood | VARCHAR(100) |
+| distance	   | DECIMAL(10,2)|
+| beds         | INT          |
+| cases        | INT          |
 
-Do not insert into the DB yet — this step is focused purely on transformation.
 
-Place scripts in the /scripts folder.
-
-Test transformation outputs locally.
-
-Submit the second PR.
 
 🧩 Step 3: Populate Database
 
-Use the approved script to insert transformed data into the database.
+   1. As per the script provided the hospitals table was created. (
+   2. With the DB url the engine was created and connection was established.
+   3. And with CREATE TABLE statement a table with column name, data type and constraints was created.
+   4. Then with a query the table was verified and accessed.
 
-Create new tables or update existing ones based on schema.
-
-Establish keys, references, and relationships between the new table and listings/neighborhoods.
-
-Verify data is inserted and properly linked.
-
-(Optional) Set up scheduled GitHub Actions workflows for ongoing updates (for dynamic layers).
-
-Submit the third and final PR.
+Author: Mehul
