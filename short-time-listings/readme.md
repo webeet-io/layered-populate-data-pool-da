@@ -5,7 +5,7 @@
 ## 🔍 1. Data Source Discovery
 
 ### 📂 Data Source
-The data is obtained from **Inside Airbnb**  [Inside Airbnb](https://insideairbnb.com/get-the-data/), which provides publicly available datasets collected through web scraping Airbnb listings worldwide, including Berlin.
+The data is obtained from [Inside Airbnb](https://insideairbnb.com/get-the-data/), which provides publicly available datasets collected through web scraping Airbnb listings worldwide, including Berlin.
 
 ### 🌐 Source & Origin
 - Public dataset available as downloadable CSV files.
@@ -96,35 +96,27 @@ The schema captures core listing information, normalized host data, and neighbor
 
 ---
 
-🧹 5. Data Cleaning and Transformation
-Prices cleaned by removing currency symbols and commas, then converted to float.
+## 🧹 5. Data Cleaning and Transformation
 
+- Prices cleaned by removing currency symbols and commas, then converted to float.
 
-Host-related columns normalized (e.g., converted host_is_superhost and host_identity_verified to boolean).
+- Host-related columns normalized (e.g., converted host_is_superhost and host_identity_verified to boolean).
 
+- Date columns converted to datetime (host_since) for easier time-based analysis.
 
-Date columns converted to datetime (host_since) for easier time-based analysis.
+- Text columns cleaned for consistent capitalization and removal of special characters.
 
+- Amenities remain as raw strings and can be parsed into lists for detailed feature analysis.
 
-Text columns cleaned for consistent capitalization and removal of special characters.
+- Missing values handled contextually using techniques like median imputation or left as nulls where appropriate.
 
+- Standardized neighbourhood_group_cleansed:
 
-Amenities remain as raw strings and can be parsed into lists for detailed feature analysis.
+    - Stripped extra white spaces to ensure clean matching.
 
+    - Applied a mapping dictionary to rename values to human-readable and standardized district names (e.g., 'Charlottenburg-Wilm.' → 'Charlottenburg-Wilmersdorf').
 
-Missing values handled contextually using techniques like median imputation or left as nulls where appropriate.
-
-
-Standardized neighbourhood_group_cleansed:
-
-
-Stripped extra white spaces to ensure clean matching.
-
-
-Applied a mapping dictionary to rename values to human-readable and standardized district names (e.g., 'Charlottenburg-Wilm.' → 'Charlottenburg-Wilmersdorf').
-
-
-Renamed the column to neighborhood for simplicity and clarity.
+    - Renamed the column to neighborhood for simplicity and clarity.
 
 
 
