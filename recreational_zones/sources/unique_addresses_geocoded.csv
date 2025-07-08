@@ -1,4 +1,4 @@
-Address1,Latitude,Longitude
+address1,latitude,longitude
 "Im Fischgrund, ""Rosenanger"", Berlin, Germany",,
 "Klötzbecken bis Zabel-Krüger-Damm, Berlin, Germany",,
 "Heidenheimer Str. (ab Friedrichsthaler Weg), Wanderweg am Wald, Berlin, Germany",,
@@ -68,7 +68,7 @@ Address1,Latitude,Longitude
 "Jugendplatz, Berlin, Germany",52.5381258,13.2699479
 "Aalemannufer bis Rustweg-Grünflächenverbindung, Berlin, Germany",,
 "Imchenallee Ecke Sakrower Kirchweg, Berlin, Germany",,
-"Friedrichstraße, Berlin, Germany",52.5107966,13.3898851
+"Friedrichstraße, Berlin, Germany",52.5257569,13.3872444
 "Wanderweg an der Malche, Berlin, Germany",,
 "Oranienburger Str. bis Fräsersteig (Grünzug), Berlin, Germany",,
 "Ludwig-Lesser-Park, Berlin, Germany",52.6399801,13.2892865
@@ -173,7 +173,7 @@ Address1,Latitude,Longitude
 "Marzahner Ch./an KGA ""Akazienwäldchen/GA, Berlin, Germany",,
 "Frieda-Arnheim-Promenade-GA, Berlin, Germany",52.5471114,13.2123269
 "Gutspark Falkenberg / Große Weite, Berlin, Germany",,
-"Rummelsburger Str. 71-73, Berlin, Germany",52.4715194,13.511396
+"Rummelsburger Str. 71-73, Berlin, Germany",52.5012806,13.5073131
 "Erieseering/ Promenade, Berlin, Germany",,
 "Sewanstr. / Schwimmhalle, Berlin, Germany",52.4957536,13.5160289
 "Rummelsburger Bucht / Interimslösung, Berlin, Germany",,
@@ -321,7 +321,7 @@ Address1,Latitude,Longitude
 "Alexandrinenstr./ Stallschreiberstr., Berlin, Germany",,
 "Am Gutshof Wartenberg, Berlin, Germany",52.5730132,13.5148527
 "Malchower See Park / Flächen um den See herum, Berlin, Germany",,
-"Siemensstr. 27, Berlin, Germany",52.4428957,13.3330079
+"Siemensstr. 27, Berlin, Germany",52.5338932,13.3365293
 "Spreekanalpromenade Fischerinsel 6, Berlin, Germany",,
 "Rüdickenstr. / Arminstr. / Graben 81, Berlin, Germany",,
 "Sewanstr. 44-54 / Michiganseestr. 1-5, Berlin, Germany",,
@@ -415,6 +415,7 @@ Address1,Latitude,Longitude
 "Malchow Dorfstr. 48-51, Berlin, Germany",,
 "Gensinger Str. 56/hinter Sporthalle/GA, Berlin, Germany",,
 "Neustrelitzer Str. 8-22 / Zechliner Str. 8-18, Berlin, Germany",,
+"Rathauspark, Berlin, Germany",52.5148183,13.4796411
 "Wilhelm-Guddorf-Str. 20-32, Berlin, Germany",52.5092826,13.4783969
 "Salzmannstr. / östl., Berlin, Germany",,
 "Erich-Kurz-Str. 2-4/Grün am Tränkegraben, Berlin, Germany",,
@@ -483,7 +484,7 @@ Address1,Latitude,Longitude
 "Grünzug Alfred-Döblin-Str. zur L.-Renn-Str., Berlin, Germany",,
 "Kienberg, Berlin, Germany",52.5286152,13.5906369
 "Havelspitze-Uferpromenade-GA, Berlin, Germany",,
-"Trusetaler Straße 15 - 55, Berlin, Germany",52.5601079,13.5620182
+"Trusetaler Straße 15 - 55, Berlin, Germany",52.5577086,13.5667599
 "Murtzaner Ring 2 - 28, Berlin, Germany",52.5307315,13.544133
 "Eberbacher Str. - Mittelpromenade -GA, Berlin, Germany",,
 "Rudolf-Leonhard-Straße zum Grohsteig 23, Berlin, Germany",,
@@ -522,6 +523,7 @@ Address1,Latitude,Longitude
 "Südlich der U-Bahn-Trasse, Berlin, Germany",,
 "Grünfläche Ulmenstraße, Berlin, Germany",,
 "Kurt-Julius-Goldstein-Park, Berlin, Germany",52.5361823,13.6073048
+"Nauener Platz, Berlin, Germany",52.5514056,13.3671696
 "Barnimplatz und Weg entlang Straßenbahn, Berlin, Germany",,
 "Rudolstädter Str. 70 / Berliner Str. - GA, Berlin, Germany",,
 "Tegeler Weg - Hundeauslauf - GA, Berlin, Germany",,
@@ -560,10 +562,10 @@ Address1,Latitude,Longitude
 "Wuhlewanderweg, Berlin, Germany",,
 "Clara-Zetkin-Platz - Stadtplatz, Berlin, Germany",,
 "Öst.der Wuhle KNII, Berlin, Germany",,
-"Ludwig-Renn-Straße 67/ 69,, Berlin, Germany",52.5503994,13.5566815
+"Ludwig-Renn-Straße 67/ 69,, Berlin, Germany",52.5493255,13.5536857
 "Grünzug Anger, ab AdK/Bärensteinstr., Berlin, Germany",,
 "Langhoffstr. 2 -26/ Murtzaner Ring 34-68, Berlin, Germany",,
-"Schwarzburger Str. 15 - 23 , Berlin, Germany",52.557305,13.5683254
+"Schwarzburger Str. 15 - 23 , Berlin, Germany",52.5581592,13.569948
 "Östlich der Wuhle KN I, Berlin, Germany",,
 "GSG-Weg in südlicher Verlängerung zw., Berlin, Germany",,
 "Theodor-Heuss-Platz - Grünanlage, Berlin, Germany",,
@@ -588,9 +590,9 @@ Address1,Latitude,Longitude
 "Pappelplatz, Berlin, Germany",52.5326357,13.3951646
 "Köbisstr. , Berlin, Germany",52.5080219,13.353531
 "Freifläche Oschatzer Ring, Berlin, Germany",,
-"Marchwitzastraße 51/ 53, Berlin, Germany",52.5217708,13.5463562
+"Marchwitzastraße 51/ 53, Berlin, Germany",52.522935,13.5460571
 "Grünfläche  Jänschwalder Str., Berlin, Germany",,
-"Nordpromenade,, Berlin, Germany",52.5123229,13.5565094
+"Nordpromenade,, Berlin, Germany",52.5124332,13.555077
 "Seestr. 131 Tiergarten, Berlin, Germany",,
 "Karl-Holtz-Platz, Berlin, Germany",52.5531749,13.5691083
 "Max-Herrmann-Straße - Ringkolonnaden, Berlin, Germany",,
@@ -601,15 +603,15 @@ Address1,Latitude,Longitude
 "Nordpark auf dem Friedrichswerder , Berlin, Germany",,
 """Wuhlegarten"",, Berlin, Germany",52.4559197,13.5695249
 "Ringkolonnaden - DEGEWO-Fläche, Berlin, Germany",,
-"Landsberger Chaussee, 186, Berlin, Germany",52.5316124,13.4694802
+"Landsberger Chaussee, 186, Berlin, Germany",52.5330758,13.4761515
 "Seelgraben Marzahn/ Westpark, Berlin, Germany",,
 "Alfred-Döblin-Straße 33 B im Grünzug, Berlin, Germany",,
 "Siemensdamm/Letterhausweg - GA, Berlin, Germany",,
 "Platz am Wilden Eber - Grünanlage, Berlin, Germany",,
 "Spreekanalpromenade zw. Schleusenbrücke u. Sperlingsgasse, Berlin, Germany",,
 "Windschutzstreifen, Berlin, Germany",,
-"Lea-Grundig-Str. 2 - 18, Berlin, Germany",52.5530922,13.5656157
-"Quitzowstr. 109, Berlin, Germany",52.5344587,13.3438931
+"Lea-Grundig-Str. 2 - 18, Berlin, Germany",52.5548085,13.5673008
+"Quitzowstr. 109, Berlin, Germany",52.5354819,13.3530133
 "Grünanlage Gehrenseestraße, Berlin, Germany",,
 "Paradiessiedlung Grünanlage, Berlin, Germany",,
 "Eugen-Roth-Weg, Berlin, Germany",52.5202246,13.5463733
@@ -620,9 +622,9 @@ Address1,Latitude,Longitude
 "Schirwindter Allee - Wäldchen - GA, Berlin, Germany",,
 "Barnimhang- öff. Durchwegung, Berlin, Germany",,
 "Eosanderstr. 20c - Grünanlage, Berlin, Germany",,
-"Gipsstr. 29 - 30, Berlin, Germany",52.5270441,13.4001524
-"Pekrunstraße 51 - 69, Berlin, Germany",52.5387123,13.5503195
-"Hellersdorfer Weg, Berlin, Germany",52.562736,13.5545858
+"Gipsstr. 29 - 30, Berlin, Germany",52.5264501,13.4023188
+"Pekrunstraße 51 - 69, Berlin, Germany",52.5395697,13.5479543
+"Hellersdorfer Weg, Berlin, Germany",52.5627583,13.5545319
 "Geraer Ring - Lärmschutzwall am Grünzug, Berlin, Germany",,
 "Kiebitzgrund, an der Landsberger Allee, Berlin, Germany",,
 "Steinplatz - Grünanlage, Berlin, Germany",,
@@ -632,7 +634,7 @@ Address1,Latitude,Longitude
 "Stuttgarter Platz - Grünanlage, Berlin, Germany",,
 "Koenigsallee 75a - Grünanlage, Berlin, Germany",,
 "Stresemannstr. zw. 38-44, Berlin, Germany",,
-"Tunnelstr. 40, Berlin, Germany",52.4918834,13.4787528
+"Tunnelstr. 40, Berlin, Germany",52.4908954,13.4801636
 "südlich Alt Biesdorf bis Heerstraße, Berlin, Germany",,
 "Dorf Marzahn, Lesegarten, südlich Dorf, Berlin, Germany",,
 "Erholungsfläche Hermsdorfer Straße, Berlin, Germany",,
@@ -641,7 +643,7 @@ Address1,Latitude,Longitude
 "Altlandsberger Platz- Landsberger Tor, Berlin, Germany",52.5426615,13.573541
 "Informations- und Erinnerungsort, Berlin, Germany",,
 "Hochzeitspark Marzahn Teil 1, Berlin, Germany",,
-"Klandorfer Straße 34/36, Berlin, Germany",52.5733323,13.5724233
+"Klandorfer Straße 34/36, Berlin, Germany",52.571223,13.5698154
 "Landsberger Allee 565, Berlin, Germany",52.5493146,13.5822476
 "Paul-Schwenk-Straße Wohnhof, Berlin, Germany",,
 "Südlich Cecilienstraße/ Blumberger Damm, Berlin, Germany",,
@@ -650,8 +652,8 @@ Address1,Latitude,Longitude
 "Freifläche an der Frohburger Str., Berlin, Germany",,
 "Gleisschleife Ahrensfelde, und am Dorf, Berlin, Germany",,
 "Warschauer Straße, Grünanl., Berlin, Germany",,
-"Kohlfurter Str. 38, Berlin, Germany",52.4976771,13.4147684
-"Herkulesufer, Berlin, Germany",52.5062552,13.3545721
+"Kohlfurter Str. 38, Berlin, Germany",52.4977312,13.4145681
+"Herkulesufer, Berlin, Germany",52.5068965,13.3566076
 "Hellersdorfer Graben, 1247, Berlin, Germany",,
 "Wuhle Eisenacher u.Feld.Ring, Berlin, Germany",,
 "Durlacher Platz, Berlin, Germany",52.4882355,13.602022
@@ -686,21 +688,21 @@ Address1,Latitude,Longitude
 "Wiesenburger Weg, Grünanl.hinter Friedh., Berlin, Germany",,
 "Biesdorfer Promenade/ Wasserweg, Berlin, Germany",52.5185843,13.555692
 "Brodowiner Ring/Hohensaatener Str., Berlin, Germany",,
-"Mehrower Allee 86/ 88,, Berlin, Germany",52.5572725,13.5562504
+"Mehrower Allee 86/ 88,, Berlin, Germany",52.5575273,13.5550825
 "Ullrichplatz - Teil 1, Berlin, Germany",,
 "Stadtgarten Biesdorf-Süd, Berlin, Germany",,
 "Grünfläche  ""Hellersdorfer Graben"", Berlin, Germany",,
 "Poelchaustraße - nördlich, Berlin, Germany",,
 "Grünanlage Oschatzer Ring , Berlin, Germany",,
-"Biesdorfer Promenade, Biesdorf/ Nord, Berlin, Germany",52.5180539,13.5577368
+"Biesdorfer Promenade, Biesdorf/ Nord, Berlin, Germany",52.5210356,13.5481672
 "Wolfener/Leunaer/Schkopauer/Nordring, Berlin, Germany",,
 "Um Ahrensfelder Berge, Berlin, Germany",,
 "Grünanlage Waldheimer Str., Berlin, Germany",,
 "Ringkolonnaden Erweiterung Max-Herrmann-Str. 6, Berlin, Germany",,
-"Fichtelbergstraße 18/28, Berlin, Germany",52.5359471,13.5528016
+"Fichtelbergstraße 18/28, Berlin, Germany",,
 "Lehnitzplatz, Berlin, Germany",52.4826604,13.6114625
 "Marchwitzastr./ Allee d.Kosmonauten, Berlin, Germany",,
-"Spreewiesen - GA, Berlin, Germany",52.5291616,13.2787118
+"Spreewiesen - GA, Berlin, Germany",,
 """Wiesenpark"" Landsberger Tor, 295, Berlin, Germany",,
 "Spreeuferweg / Tiefer Grund - GA, Berlin, Germany",,
 "Gervinusstr. 28 - Grünanlage, Berlin, Germany",,
@@ -746,10 +748,10 @@ Address1,Latitude,Longitude
 "Spandauer Damm 168a - Grünanlage, Berlin, Germany",,
 "Wallotstr. 17a/19 / Erbacher Str. 7 - GA, Berlin, Germany",,
 "Friedrich-Olbricht-Damm/Kol. Heideschl - GA, Berlin, Germany",,
-"Skalitzer Str. 108, Berlin, Germany",52.4993633,13.4303324
+"Skalitzer Str. 108, Berlin, Germany",52.5010407,13.4413498
 "Grünfließer Gang/ LSG Erpetal Fr GA, Berlin, Germany",,
 "Schleiermacherstr./ Baerwaldstr., Berlin, Germany",,
-"Simplonstr. 58-62, Berlin, Germany",52.506088,13.4632261
+"Simplonstr. 58-62, Berlin, Germany",52.5081603,13.4593282
 "Köpenicker Landstraße/ Minna-Todenhagen-Straße Nie GA, Berlin, Germany",,
 "Wendenschloßstraße 35/ vor dem Seniorenheim Köp GA, Berlin, Germany",,
 "An der Wuhlheide 161/ FEZ südlich Eichgestell Ob GA, Berlin, Germany",,
@@ -780,13 +782,13 @@ Address1,Latitude,Longitude
 "Dahlwitzer Landstraße/ Hinter dem Kurpark II Fr GA, Berlin, Germany",,
 "Vetschauer Allee/ Dorfanger Sch GA, Berlin, Germany",,
 "Bucher Str. nördl. I, Berlin, Germany",,
-"Am Tegeler Fließ, Berlin, Germany",52.6038572,13.2899497
+"Am Tegeler Fließ, Berlin, Germany",52.6033816,13.2895813
 "Höhensteig/ Grünzug Falkenberg Bo GA, Berlin, Germany",,
 "Odernheimer Straße 13 Mü GA, Berlin, Germany",,
 "Müggelheimer Straße/ Schloßinsel Köp GA, Berlin, Germany",,
 "Lohmühlenstraße/ Görlitzer Bahndamm AT GA, Berlin, Germany",,
 "Willi-Sänger-Straße Pl GA, Berlin, Germany",,
-"Prenzlauer Allee/ Danziger Str., Berlin, Germany",52.5393225,13.4230723
+"Prenzlauer Allee/ Danziger Str., Berlin, Germany",52.5399219,13.4245951
 "Walter-Friedrich-Str. vor 39-57, Berlin, Germany",,
 "Kirchstraße/ Laurentiuskirchplatz Köp GA, Berlin, Germany",,
 "Chorweiler Straße/ Coloniapark Ag GA, Berlin, Germany",,
@@ -914,10 +916,10 @@ Address1,Latitude,Longitude
 "Gutspark Britz Rosarium , Berlin, Germany",,
 "neben Str. 40/ Upstallgraben, Berlin, Germany",,
 "Storkower Str. hinter 26-90, Berlin, Germany",,
-"Karower Str., Berlin, Germany",52.6333998,13.5000609
+"Karower Str., Berlin, Germany",52.6340288,13.4997761
 "Greifswalder Str. vor 118-121, Berlin, Germany",,
 "Upstallgraben, Berlin, Germany",52.6082041,13.4777129
-"Hauptstr. 34-38, Berlin, Germany",52.4763059,13.3412799
+"Hauptstr. 34-38, Berlin, Germany",52.4766483,13.3414895
 "Kastanienallee hinter 26-29, Berlin, Germany",,
 "Hochspannungsweg-Grünanlage, Berlin, Germany",,
 "Nordpark-Grünanlage, Berlin, Germany",,
@@ -930,8 +932,8 @@ Address1,Latitude,Longitude
 "Ernst-Ludwig-Heim-Str., Berlin, Germany",52.6263922,13.499033
 "Kreuzstr./ Wollankstr., Berlin, Germany",,
 "NME-Grünanlage, Berlin, Germany",,
-"Berliner Allee 215, Berlin, Germany",52.5621938,13.4685137
-"Hänselstrasse, Berlin, Germany",52.4688019,13.4778757
+"Berliner Allee 215, Berlin, Germany",52.55202,13.4657955
+"Hänselstrasse, Berlin, Germany",52.4693414,13.4788823
 "Britzer Zweigkanal, Berlin, Germany",,
 "Akazienwäldchen-Grünanlage, Berlin, Germany",,
 "Thomashöhe-Grünanlage, Berlin, Germany",,
@@ -1076,7 +1078,7 @@ Address1,Latitude,Longitude
 "Perelsplatz - Gartendenkmal, Berlin, Germany",,
 "Dechertstr. 20/ Karower Str.23, Berlin, Germany",,
 "Grünzug von S-Bhf. Greifsw. Str. nach, Berlin, Germany",,
-"Michelangelostr. 59 - 63, Berlin, Germany",52.5423268,13.4529467
+"Michelangelostr. 59 - 63, Berlin, Germany",52.5425965,13.4525982
 "Alt-Lichtenrade Dorfteich - Grünanlage, Berlin, Germany",,
 "Tauernallee/Ankogelweg - Promenade, Berlin, Germany",,
 "Dora-Duncker-Park, Berlin, Germany",52.4898771,13.3733697
@@ -1108,7 +1110,7 @@ Address1,Latitude,Longitude
 "Lessingplatz - Grünfläche, Berlin, Germany",,
 "Mahlower Seegraben, Berlin, Germany",52.3801152,13.3941717
 "Nord-Süd-Grünzug / Mezitli-Park, Berlin, Germany",52.4881571,13.3712126
-"Parkgraben, Berlin, Germany",52.5956799,13.3239402
+"Parkgraben, Berlin, Germany",52.6041109,13.4381115
 "Reißeckstr. - Grünzug, Berlin, Germany",,
 "Wehnertstr. ggü 36, Berlin, Germany",,
 "Eupener Str. verlängert, Berlin, Germany",,
@@ -1138,7 +1140,7 @@ Address1,Latitude,Longitude
 "Matthäuskirche WG, Berlin, Germany",,
 "Mörchinger Straße WG, Berlin, Germany",,
 "Vierling WG, Berlin, Germany",,
-"Frankfurter Allee 1-27, Berlin, Germany",52.5157798,13.454806
+"Frankfurter Allee 1-27, Berlin, Germany",52.5148464,13.4640938
 "Ringelsteinweg WG, Berlin, Germany",,
 "Sandmeyerplatz WG, Berlin, Germany",,
 "Zinnowweg WG, Berlin, Germany",,
@@ -1152,11 +1154,11 @@ Address1,Latitude,Longitude
 "Gustav-Mahler-Platz WG, Berlin, Germany",,
 "Thielpark und Triestpark Teil 2/2, Berlin, Germany",,
 "Thielpark und Triestpark Teil 1/2, Berlin, Germany",,
-"Mollstraße 20-29, Berlin, Germany",52.526345,13.4165187
+"Mollstraße 20-29, Berlin, Germany",52.5232453,13.4259212
 "Bernkastler Platz WG, Berlin, Germany",,
 "Rathaus Lichterfelde Ost WG, Berlin, Germany",,
 "Am Steinberg - Grünanlage am Teich, Berlin, Germany",52.5624794,13.4408263
-"Lobeckstr./ Alexandrinenstr., Berlin, Germany",52.5017723,13.4042742
+"Lobeckstr./ Alexandrinenstr., Berlin, Germany",,
 "Schilfluch- / Moorgraben WG, Berlin, Germany",,
 "Krahmerstraße WG-1/2, Berlin, Germany",,
 "Pasewalker Str./Schmöckpfuhlgraben, Berlin, Germany",,
@@ -1168,7 +1170,7 @@ Address1,Latitude,Longitude
 "Breitensteinweg WG, Berlin, Germany",,
 "An der Laake 2, Berlin, Germany",52.6096416,13.4933001
 "Johann-Baptist-Gradl-Grünanlage WG, Berlin, Germany",,
-"Rehwiese N, Berlin, Germany",52.4255821,13.2005217
+"Rehwiese N, Berlin, Germany",52.4280892,13.1980059
 "Schwatlograben WG, Berlin, Germany",,
 "Krahmerstraße WG-2/2, Berlin, Germany",,
 "Kuckhoffstr. 36/ Rapoport-Park, Berlin, Germany",,
@@ -1183,14 +1185,14 @@ Address1,Latitude,Longitude
 "Sundgauer Straße WG, Berlin, Germany",,
 "Gemeindepark Lankwitz - Teil 1/2, Berlin, Germany",,
 "Eduard-Spranger-Promenade - Teil 1/2, Berlin, Germany",,
-"Fritz-Reuter-Str. 29-30, Berlin, Germany",52.4808887,13.3496633
+"Fritz-Reuter-Str. 29-30, Berlin, Germany",52.5109789,13.6137399
 """Bornholm I"" - Randgrün, Berlin, Germany",,
 "Lasdehner Straße 13, 15, Berlin, Germany",,
-"Stralauer Platz 33-34, Berlin, Germany",52.5102736,13.430784
+"Stralauer Platz 33-34, Berlin, Germany",52.5086151,13.4342597
 "Weidenweg ggü. 5, Berlin, Germany",,
 "Krumme Lanke N-1/2, Berlin, Germany",,
 "Chamissoplatz, Berlin, Germany",52.4879935,13.3911041
-"Pettenkoferstr. 5, Berlin, Germany",52.5165797,13.4722201
+"Pettenkoferstr. 5, Berlin, Germany",52.5177813,13.4713288
 "Wilhelmstr. vor 15, Hedemannstr. 10, Berlin, Germany",,
 "Dreipfuhlpark WG, Berlin, Germany",,
 "Platz der Vereinten Nationen 1-2, Berlin, Germany",52.5230434,13.4270735
@@ -1204,14 +1206,14 @@ Address1,Latitude,Longitude
 "Am Erlenbusch WG, Berlin, Germany",,
 "Clayallee WG, Berlin, Germany",,
 "Oberbaumstr. 4, Berlin, Germany",52.5009758,13.4431385
-"Singerstr. 23-28, Berlin, Germany",52.5165692,13.4239254
-"Friedenstraße, Berlin, Germany",52.5279139,13.4251403
-"Am Oberbaum, Berlin, Germany",52.5023966,13.4463516
+"Singerstr. 23-28, Berlin, Germany",52.5173659,13.4214122
+"Friedenstraße, Berlin, Germany",52.5245737,13.4310974
+"Am Oberbaum, Berlin, Germany",52.5024993,13.4466388
 "Kynaststr. 4, 5, Berlin, Germany",,
 "Messelpark WG, Berlin, Germany",,
 "Gemeindewäldchen WG-2/2, Berlin, Germany",,
 "Dampferanlegestelle Wannsee N, Berlin, Germany",,
-"Karl-Marx-Allee 70A-I, Berlin, Germany",52.5195872,13.4241492
+"Karl-Marx-Allee 70A-I, Berlin, Germany",52.5191016,13.4257498
 "Teltowkanalpromenade - Teil 2/3, Berlin, Germany",,
 "Wilskistraße WG, Berlin, Germany",,
 "Schweizerhof Park, Berlin, Germany",,
@@ -1343,7 +1345,7 @@ Address1,Latitude,Longitude
 "Grimnitzseepark-incl Birkenwäldchen, Berlin, Germany",,
 "Pulvermühlenweg- Grünanlage, Berlin, Germany",,
 "Uferpark Südspitze, Berlin, Germany",,
-"Burgwall-GA, Berlin, Germany",52.5958898,13.4455074
+"Burgwall-GA, Berlin, Germany",52.5976859,13.4469299
 "Aalemann2-ab Aalemannkanalbrücke, Berlin, Germany",,
 "Gürtelstr. östlich Nr. 25, Berlin, Germany",,
 "Hohenzollernring-Grüngürtel 1, Berlin, Germany",,
@@ -1366,7 +1368,7 @@ Address1,Latitude,Longitude
 "Burgwall-Tankerhafen, Berlin, Germany",,
 "Syringenweg/ Maiglöckchenstr., Berlin, Germany",,
 "Burgwallgraben-Promenade, Berlin, Germany",,
-"Radelandstraße 202-204, Berlin, Germany",52.5632958,13.1643993
+"Radelandstraße 202-204, Berlin, Germany",52.5632077,13.1646706
 "Bötzowbahntrasse V parallel-westl. , Berlin, Germany",,
 "Straße 269 Ecke Triftweg-Grünfläche, Berlin, Germany",,
 "Am Friedrichshain 16-18, Berlin, Germany",52.5280298,13.4244279
@@ -1378,8 +1380,8 @@ Address1,Latitude,Longitude
 "Heidelake-Ungewitterweg, Berlin, Germany",,
 "Koeltzepark, Berlin, Germany",52.5462144,13.2049526
 "Staaken West-Freizeit und Erholungszentrum , Berlin, Germany",,
-"Paula-Hirschfeld Steig-GA, Berlin, Germany",52.5455182,13.2097946
-"Krienickesteig-GA, Berlin, Germany",52.5453518,13.2096924
+"Paula-Hirschfeld Steig-GA, Berlin, Germany",52.5455222,13.2097748
+"Krienickesteig-GA, Berlin, Germany",52.5452251,13.2096088
 "Rhenaniastraße-Biotop, Berlin, Germany",,
 "Egelpfuhlgraben-Grünzug, Berlin, Germany",52.5229439,13.1806733
 "Ufergrünzug Ziegelhof bis Dischinger Brücke, Berlin, Germany",,
@@ -1396,7 +1398,7 @@ Address1,Latitude,Longitude
 "Tiefwerder-Margareteninsel, Berlin, Germany",,
 "Behnitz-Vorplatz Kirche, Berlin, Germany",,
 "Baumschule-Rahmengrün, Berlin, Germany",,
-"Romy-Schneider-Str., Berlin, Germany",52.5468857,13.2256462
+"Romy-Schneider-Str., Berlin, Germany",52.5468599,13.225633
 "Promenade Berlin-Spandauer-Schifffahrtskanal zw. Kieler Brücke und Kieler Str., Berlin, Germany",,
 "Wröhmännerpark I u II, Berlin, Germany",,
 "Ufergrünzug West-Wasserstadt, Berlin, Germany",,
@@ -1420,30 +1422,30 @@ Address1,Latitude,Longitude
 "Spektegrünzug D-nördl Teil, Berlin, Germany",,
 "Bergstraße-Grünanlage, Berlin, Germany",,
 "Oranienburger Tor, Berlin, Germany",52.5255998,13.3873583
-"Spandauer Havelpromenade, Berlin, Germany",52.5574876,13.2245893
+"Spandauer Havelpromenade, Berlin, Germany",52.557357,13.2245428
 "Schifffahrtsufer, Berlin, Germany",52.528163,13.2004551
 "Windmühlenberg mit Bockwindmühle, Berlin, Germany",,
 "Anschützweg-Mareyzeile, Berlin, Germany",,
 "Bullengrabengrünzug I, Berlin, Germany",,
 "Jonny K.- Aktivpark-Egelpfuhlpark, Berlin, Germany",52.5258625,13.1717984
-"Am Juliusturm, Berlin, Germany",52.5384317,13.2103043
+"Am Juliusturm, Berlin, Germany",52.5384096,13.2094797
 "Egelpfuhlwiesen-Grünzug, Berlin, Germany",,
 "Groß-Glienicker See-GA sog Halbinsel, Berlin, Germany",,
 "Wäldchen am Rohrdamm, Berlin, Germany",,
 "Zamenhofpark - Rosenfelder Platz, Berlin, Germany",,
 "Ufergrünzug Dischinger Brücke bis DB-Brücke, Berlin, Germany",,
 "Ruhlebener Str-Grunewaldstraße-GA, Berlin, Germany",,
-"Straße 264, Berlin, Germany",52.4826196,13.1763764
+"Straße 264, Berlin, Germany",52.4825711,13.176802
 "Spektegrünzug A, Berlin, Germany",,
 "Ruhlebener Str Ecke Tiefwerderweg , Berlin, Germany",,
 "Rothenbücherweg-Dr. Kleusberg-Promenade, Berlin, Germany",,
-"Lützowstr. 25-29, Berlin, Germany",52.3810956,13.4101741
+"Lützowstr. 25-29, Berlin, Germany",52.5020326,13.3701952
 "Am Forstacker sog U-Bahn-Trasse, Berlin, Germany",,
 "Földerichplatz, Berlin, Germany",52.5202085,13.1932887
 "Windmühlenberg, Berlin, Germany",52.4858785,13.1776227
 "Groß-Glienicker See-GA sog Pferdekoppel, Berlin, Germany",,
 "Haveldüne, Berlin, Germany",52.5042426,13.1829553
-"Hannah-Höch-Weg, Berlin, Germany",52.4768855,13.3352262
+"Hannah-Höch-Weg, Berlin, Germany",52.4768879,13.3340438
 "Freiheitswiesen, Berlin, Germany",52.5277309,13.2166412
 "Ufergrünzug Salzhof, Berlin, Germany",,
 "Fuchsbergeweg-Grünzug, Berlin, Germany",,
@@ -1488,7 +1490,7 @@ Address1,Latitude,Longitude
 "Westl. Str. von Malchow nach Lindenberg, Berlin, Germany",,
 "Abendruh (ehem. Gärtnerei) - Grünanlage, Berlin, Germany",,
 "Ruhwaldpark, Berlin, Germany",52.523986,13.2605795
-"Bundesforum, Berlin, Germany",52.5609191,13.3719019
+"Bundesforum, Berlin, Germany",52.560748,13.3720257
 "Charlottenburg Nord - Grünzug Heilmannring, Berlin, Germany",,
 "Galvanistr. - Grünanlage, Berlin, Germany",,
 "Fließwiese Ruhleben - NSG, Berlin, Germany",,
@@ -1534,7 +1536,7 @@ Address1,Latitude,Longitude
 "Spreebogen - Grünanlage, Berlin, Germany",,
 "Preußenpark - Park Café, Berlin, Germany",,
 "Messelpark, Berlin, Germany",52.4682876,13.2872664
-"Hempelsteig - GA, Berlin, Germany",52.5249063,13.243263
+"Hempelsteig - GA, Berlin, Germany",52.5256807,13.2404047
 "Havelchaussee 148 - Stößenseebrücke - GA, Berlin, Germany",,
 "Goebelplatz - Grünanlage, Berlin, Germany",,
 "Jungfernheide - Volkspark (extensiv), Berlin, Germany",,
@@ -1573,8 +1575,8 @@ Address1,Latitude,Longitude
 "Waldschulallee/Bhf. Eichkamp - GA, Berlin, Germany",,
 "Goslarer Platz - Grünanlage, Berlin, Germany",,
 "Olivaer Platz - Grünanlage, Berlin, Germany",,
-"Lindenberger Weg II, Berlin, Germany",52.6290247,13.506322
-"Prenzlauer Allee/ Ostseestr., Berlin, Germany",52.5505456,13.429959
+"Lindenberger Weg II, Berlin, Germany",52.6300007,13.5047671
+"Prenzlauer Allee/ Ostseestr., Berlin, Germany",52.550568,13.4298477
 "Pankower Str.14, Berlin, Germany",52.5854068,13.4253637
 "Schlosspark Buch, Berlin, Germany",52.6375546,13.4959124
 "Kniprodestr./ Werneuchener Wiese, Berlin, Germany",,
@@ -1582,7 +1584,7 @@ Address1,Latitude,Longitude
 "Einsteinstr. vor 16A - 16D/ Kniprodestr., Berlin, Germany",,
 "Park am Faulen See, Berlin, Germany",,
 "Mörderberg, Berlin, Germany",52.5821543,13.4653798
-"Hansastr., Berlin, Germany",52.5547581,13.4835186
+"Hansastr., Berlin, Germany",52.5587761,13.4927576
 "Grabens. Hlgs., Heiligenseegraben, Berlin, Germany",,
 "Schönholzer Heide, Berlin, Germany",52.5811485,13.3732526
 "Bucher Chaussee/ Siedlungsring, Berlin, Germany",,
@@ -1597,7 +1599,7 @@ Address1,Latitude,Longitude
 "Schillingweg, Berlin, Germany",52.6197921,13.419097
 "Malchower Aue, Berlin, Germany",52.5759951,13.4713905
 "Am Teichberg / Str. 42, Berlin, Germany",,
-"Bahnhofstr., Berlin, Germany",52.4531496,13.5746031
+"Bahnhofstr., Berlin, Germany",52.4533533,13.5749789
 "Alt-Karow 30, Berlin, Germany",52.6156458,13.4858561
 "Cardinalplatz 1C Wuhlegarten Köp GA, Berlin, Germany",,
 "Arnimplatz, Berlin, Germany",52.5517551,13.4094494
@@ -1612,7 +1614,7 @@ Address1,Latitude,Longitude
 "Arnswalder Platz, Berlin, Germany",52.5330863,13.4372299
 "Schlosspark Schönhausen, Berlin, Germany",52.5778996,13.4069519
 "Am Rübländer Graben, Berlin, Germany",52.6201158,13.4697578
-"Seehausener Str. 34-44, Berlin, Germany",52.5619765,13.5219288
+"Seehausener Str. 34-44, Berlin, Germany",52.5624723,13.5249762
 "Schmöckpfuhlgrabengrünzug, Berlin, Germany",,
 "Kollwitzstr. 67/ Wörther Str. 34, Berlin, Germany",,
 "Schräger Weg ggü. 44, Berlin, Germany",,
@@ -1625,7 +1627,7 @@ Address1,Latitude,Longitude
 "Teutoburger Platz, Berlin, Germany",52.5320755,13.4089061
 "Ossietzkystr. 12-26, Berlin, Germany",52.5748995,13.4070242
 "Thomas-Mann-Str. 31-35, Berlin, Germany",52.5415109,13.4480104
-"Hanns-Eisler-Str. 2-4, Berlin, Germany",52.5434607,13.4476568
+"Hanns-Eisler-Str. 2-4, Berlin, Germany",52.540008,13.4513183
 "Falkplatz, Berlin, Germany",52.5458619,13.4037019
 "Am Graben, Berlin, Germany",52.5738211,13.4666023
 "Dietzgenstr. bis Waldowstr., Berlin, Germany",,
@@ -1642,8 +1644,8 @@ Address1,Latitude,Longitude
 "Alt-Stralau 55, Berlin, Germany",52.496558,13.4665394
 "Heinrich-Mann-Platz, Berlin, Germany",52.5734975,13.3932525
 "Parkstr. 24,26,28/ Eddastr., Berlin, Germany",,
-"Lindenberger Weg I, Berlin, Germany",52.6319334,13.5017181
-"Theodor-Brugsch-Str., Berlin, Germany",52.630426,13.5003229
+"Lindenberger Weg I, Berlin, Germany",52.6300007,13.5047671
+"Theodor-Brugsch-Str., Berlin, Germany",52.6297876,13.5028072
 "Kollwitzplatz, Berlin, Germany",52.5360538,13.4170422
 "Parkanlage am Ilsenburggraben, Berlin, Germany",,
 "Hauptstr. 64A, Berlin, Germany",52.4819997,13.8485143
@@ -1696,7 +1698,7 @@ Address1,Latitude,Longitude
 "Zingergrabenniederung I, Berlin, Germany",,
 "Blankenburger Pflasterweg nördlich, Berlin, Germany",,
 "Pestalozzistr. 9 - 11, Berlin, Germany",52.5714863,13.4056848
-"Mendelssohnstr., Berlin, Germany",52.5264264,13.4183115
+"Mendelssohnstr., Berlin, Germany",52.5268935,13.419999
 "Mönchmühler Straße III, Berlin, Germany",,
 "Buschallee 87, Berlin, Germany",52.554301,13.4760947
 "Bedeweg / Achillesstr. / Ingwäonenweg, Berlin, Germany",,
@@ -1816,11 +1818,11 @@ Address1,Latitude,Longitude
 "Weidenweg ggü. 17-27, Berlin, Germany",,
 "Gitschiner Str. 2-6, Berlin, Germany",52.4983935,13.3978626
 "Sellerpark, Berlin, Germany",52.5370587,13.3664805
-"Alt-Stralau 20-29, Berlin, Germany",52.496558,13.4665394
+"Alt-Stralau 20-29, Berlin, Germany",52.4972142,13.4652591
 "Charlottenstr. 98, Berlin, Germany",52.5169961,13.2874904
 "Elise-Tilse-Park, Berlin, Germany",52.5018419,13.38022
 "Petersburger Platz, Grünanl., Berlin, Germany",,
-"Annenstr. 20-34, Berlin, Germany",52.5080459,13.4165707
+"Annenstr. 20-34, Berlin, Germany",52.5318939,13.5569975
 "Forckenbeckplatz, Berlin, Germany",52.5196363,13.460275
 "Friedenstraße 83, Pacht, Berlin, Germany",,
 "Carl-Herz-Ufer, Grünanl., Berlin, Germany",,
@@ -1831,7 +1833,7 @@ Address1,Latitude,Longitude
 "Geschichtspark , Berlin, Germany",52.5269608,13.3662112
 "Sebastianstr. - Jacobstr. - Annenstr., Berlin, Germany",,
 "Pekinger Platz, Berlin, Germany",52.5401117,13.3544186
-"Heinrich-Heine-Str. 2 - 16, Berlin, Germany",52.5082196,13.4143096
+"Heinrich-Heine-Str. 2 - 16, Berlin, Germany",52.5070508,13.4134006
 "Schmidstr. 1 - 2, Annenstr. 3 - 5, Michaelkirchplatz 23 - 24, Berlin, Germany",,
 "Spreeuferpromenade Märkisches Ufer, Berlin, Germany",,
 "Turmstr. 79, Ottopark, Berlin, Germany",,
@@ -1855,6 +1857,7 @@ Address1,Latitude,Longitude
 "Bundesratufer /  Bochumer Str., Berlin, Germany",,
 "Allee du Stade / Quartier Napoleon, Berlin, Germany",,
 "Papenpfuhl-Grünanlage, Berlin, Germany",,
+"Spreeuferpromenade Holsteiner Ufer, Berlin, Germany",,
 "Boyenstr. am  Erika-Heß-Eisstadion, Berlin, Germany",,
 "Promenade Berlin-Spandauer-Schifffahrtskanal Scharnhorststr. 28-29 , Berlin, Germany",,
 "Luisenstädtischer Kanal  Waldpflanzengarten, Berlin, Germany",52.5055457,13.425184
@@ -1871,7 +1874,8 @@ Address1,Latitude,Longitude
 "Fernsehturmanlage, Berlin, Germany",52.5201723,13.4074855
 "Invalidenpark, Berlin, Germany",52.5294948,13.3761275
 "Alter Wiesenweg, Erholungsfläche, Berlin, Germany",,
-"Hanseatenweg, Berlin, Germany",52.5185168,13.3448065
+"Leopoldplatz, Berlin, Germany",52.5463833,13.3591672
+"Hanseatenweg, Berlin, Germany",52.5186183,13.3460951
 "Allee du Stade / am Berlin-Spandauer-Schiffffahrtskanal, Berlin, Germany",,
 "Alte Stadtmauer zw. Littenstr. u. Waisenstr., Berlin, Germany",,
 "Invalidenfriedhof, Berlin, Germany",,
@@ -1879,7 +1883,7 @@ Address1,Latitude,Longitude
 "Gartenufer, Berlin, Germany",,
 "Lützowplatz, Berlin, Germany",52.5047608,13.3525466
 "Lichtensteinallee, Berlin, Germany",52.5105961,13.3451688
-"Bachstr., Berlin, Germany",52.3954498,13.5830143
+"Bachstr., Berlin, Germany",52.3964246,13.5872476
 "Neudeckerweg-Grünanlage, Berlin, Germany",,
 "Zentraler Festplatz , Berlin, Germany",52.550012,13.3072489
 "Agnes-Sorma-Park Reinhardtstr., Berlin, Germany",,
@@ -1888,12 +1892,12 @@ Address1,Latitude,Longitude
 "Luisenstädtischer Kanal  Immergrüner Garten, Berlin, Germany",52.5056112,13.420644
 "Kleiner Tiergarten Ost, Berlin, Germany",,
 "Nordhafenpark West, Berlin, Germany",52.5367021,13.3617638
-"Ackerstr. 158 - 160, Berlin, Germany",52.5330118,13.3950638
+"Ackerstr. 158 - 160, Berlin, Germany",52.5295832,13.3974794
 "Tilla-Durieux-Park, Berlin, Germany",52.5061216,13.3749616
 "Monbijou Park, Berlin, Germany",,
 "Promenade Berlin-Spandauer-Schifffahrtskanal Kieler Str. WSA, Berlin, Germany",,
 "Goethepark, Berlin, Germany",52.5461325,13.3378369
-"Holzmarktstr. 56 - 65, Berlin, Germany",52.5111626,13.4285024
+"Holzmarktstr. 56 - 65, Berlin, Germany",52.5113674,13.4275229
 "Grüntaler Straße - Weiße Bude, Berlin, Germany",,
 "Großer Tiergarten - Altonaer  Str. 3 - 9, Berlin, Germany",,
 "Köllnischer Park, Berlin, Germany",52.5130928,13.4144401
@@ -1913,7 +1917,7 @@ Address1,Latitude,Longitude
 "Magdeburger Platz, Berlin, Germany",52.5035943,13.3605025
 "Panke Grünzug Nord , Berlin, Germany",52.5632931,13.386563
 "Park am Moabiter Werder, Berlin, Germany",,
-"Holzmarktstr. 73 - 75, Berlin, Germany",52.5111626,13.4285024
+"Holzmarktstr. 73 - 75, Berlin, Germany",52.5113674,13.4275229
 "Fischerinsel 1 - 2, Berlin, Germany",52.5134456,13.4073396
 "Max-Josef-Metzger-Platz, Berlin, Germany",52.5441182,13.3642319
 "Am Dachsbau/Im Erpelgrund, Berlin, Germany",,
@@ -1925,7 +1929,7 @@ Address1,Latitude,Longitude
 "Fernradwanderweg-Berlin-Kopenhagen südl. Festplatz, Berlin, Germany",,
 "Großer Tiergarten - Steppengarten, Berlin, Germany",,
 "Michaelkirchplatz 7-10, Berlin, Germany",52.5071216,13.4192456
-"Neues Ufer Sportpark, Berlin, Germany",52.524012,13.3178441
+"Neues Ufer Sportpark, Berlin, Germany",52.5240168,13.3178526
 "Louise-Schroeder-Platz Westhälfte, Berlin, Germany",,
 "Gropiusstr., Berlin, Germany",52.5525079,13.3768146
 "Biotopfläche Allee du Stade, Berlin, Germany",,
@@ -1934,36 +1938,40 @@ Address1,Latitude,Longitude
 "Ruheplatzstr. 3, Berlin, Germany",52.5462899,13.3634883
 "Zionskirchplatz, Berlin, Germany",52.5346033,13.4037973
 "Marx-Engels-Forum, Berlin, Germany",52.5185014,13.4047672
-"Großer Tiergarten, Berlin, Germany",52.5163027,13.3618189
+"Großer Tiergarten, Berlin, Germany",52.5163027,13.3618184
 "James-Simon-Park, Berlin, Germany",52.5218188,13.3994019
+"Sellerpark, Berlin, Germany",52.5370587,13.3664805
 "Kleiner Tiergarten - Ottopark, Berlin, Germany",,
 "Rummelsburger Str. 3 / Gesundheitszentrum, Berlin, Germany",,
 "Fritz-Schloß-Park, Berlin, Germany",52.5288241,13.3563322
 "Schillerhöhe, Berlin, Germany",52.5601797,13.3608499
-"Grüntaler Str. 78-85, Berlin, Germany",52.5581247,13.3966867
+"Grüntaler Str. 78-85, Berlin, Germany",52.5507213,13.3847541
 "Grüntaler Str. 77 / Bellermannstr. 81, Berlin, Germany",,
 "Park auf dem Nordbahnhof, Berlin, Germany",,
 "Eckernförder Platz, Berlin, Germany",52.5407662,13.3370471
 "Michaelkirchplatz, Berlin, Germany",52.5071216,13.4192456
-"Neue Blumenstr. 11-13, Berlin, Germany",52.518546,13.422914
-"Märkisches Ufer , Berlin, Germany",52.5134439,13.4116523
+"Neue Blumenstr. 11-13, Berlin, Germany",52.518881,13.4239686
+"Märkisches Ufer , Berlin, Germany",52.5139784,13.4171634
 "Hansaplatz Süd, Berlin, Germany",,
 "Panke Grünzug Mittelabschnitt, Berlin, Germany",,
 "Großer Tiergarten - Rosengarten, Berlin, Germany",,
+"Kleiner Tiergarten - Ottopark, Berlin, Germany",,
 "Platz der Republik, Berlin, Germany",52.5186753,13.3731249
+"Fritz-Schloß-Park, Berlin, Germany",52.5288241,13.3563322
 "Bartningallee hintere Erschließung, Berlin, Germany",,
 "Schillerpark, Berlin, Germany",52.5584433,13.3474967
 "Sprengelpark, Berlin, Germany",52.5408168,13.3532566
 "Brunnenplatz, Berlin, Germany",52.5501989,13.3766244
 "Gartenplatz, Berlin, Germany",52.5377654,13.3829617
-"Bartningallee, Berlin, Germany",52.5190666,13.3447628
+"Bartningallee, Berlin, Germany",52.5186849,13.3431772
 "Neue Jakobstr. - Heinrich-Heine-Str., Berlin, Germany",,
 "Park am Plötzensee, Berlin, Germany",52.5456786,13.3263602
 "Lustgarten, Berlin, Germany",52.5185383,13.3993963
 "Paulstr. 20 A, Berlin, Germany",52.5186356,13.3549521
-"Singerstr. 109 - 117, Berlin, Germany",52.5173659,13.4214122
+"Singerstr. 109 - 117, Berlin, Germany",52.5165692,13.4239254
 "Katharina-Heinroth-Ufer, Berlin, Germany",52.5077269,13.3459487
 "Spreeuferpromenade Bundesratufer, Berlin, Germany",,
+"Volkspark am Weinbergsweg, Berlin, Germany",52.5323732,13.4012824
 "Großer Tiergarten - Venusbecken, Berlin, Germany",,
 "Großer Tiergarten Formalgarten, Berlin, Germany",,
 "Sparrplatz, Berlin, Germany",52.5418709,13.3605284
@@ -1972,11 +1980,14 @@ Address1,Latitude,Longitude
 "Großer Tiergarten Nordwest, Berlin, Germany",,
 "Volkspark Rehberge, Berlin, Germany",52.5533825,13.3325894
 "Park an der Südpanke, Berlin, Germany",,
-"Neue Blumenstr. 19 - 21, Berlin, Germany",52.518546,13.422914
+"Neue Blumenstr. 19 - 21, Berlin, Germany",52.518881,13.4239686
+"Platz der Republik, Berlin, Germany",52.5186753,13.3731249
 "Köpenicker Chaussee 20 südlich, Berlin, Germany",,
-"Vera-Brittain-Ufer, Berlin, Germany",52.5205825,13.4009909
+"Schillerpark, Berlin, Germany",52.5584433,13.3474967
+"Vera-Brittain-Ufer, Berlin, Germany",52.5191921,13.4023096
 "Oranienburger Str. 18, Berlin, Germany",52.5240834,13.3971151
 "Bremer Str. 48, Berlin, Germany",52.5313954,13.338673
+"Goethepark, Berlin, Germany",52.5461325,13.3378369
 "Garnisonfriedhof, Berlin, Germany",52.5284446,13.4040346
 "Arkonaplatz, Berlin, Germany",52.5371979,13.4020563
 "Promenade Berlin-Spandauer-Schifffahrtskanal zw. Sandkrugbrücke u. Invalidenfriedhof, Berlin, Germany",,
@@ -1985,17 +1996,17 @@ Address1,Latitude,Longitude
 "Gemeindewäldchen WG-1/2, Berlin, Germany",,
 "GA Herzberge / südl. Museum Kesselhaus, Berlin, Germany",,
 "Harry-Bresslau-Park WG, Berlin, Germany",,
-"Fürstendamm 57-58, Berlin, Germany",52.6313913,13.3019848
-"Schorfheidestr. - Dannenwalder Weg, Berlin, Germany",52.5917494,13.345667
+"Fürstendamm 57-58, Berlin, Germany",52.6310009,13.3097752
+"Schorfheidestr. - Dannenwalder Weg, Berlin, Germany",52.5913769,13.3466368
 "Fürstendamm/Dinkelsbühler Steig, R.A.B., Berlin, Germany",,
 "Karmeliterweg 23/25 - Welfenallee, R.A.B., Berlin, Germany",,
 "Mehringer Str./Zeltinger Str., R.A.B., Berlin, Germany",,
 "Remstaler Str./Gutshofstr., Berlin, Germany",,
 "Wanderweg Bruchstücken/neben Quickborner Str. 105, Berlin, Germany",,
-"Roedernallee/Alt-Wittenau, Berlin, Germany",52.5890369,13.3393133
+"Roedernallee/Alt-Wittenau, Berlin, Germany",52.5889209,13.3394002
 "Berenhorstbecken, Berlin, Germany",,
 "Tramper Weg, Grünanlage am Wanderweg (neben Nordgraben), Berlin, Germany",,
-"Maximiliankorso/Sigismundkorso, Berlin, Germany",52.6319939,13.2713107
+"Maximiliankorso/Sigismundkorso, Berlin, Germany",52.6316806,13.2703383
 "Brandtstr., Innenkreis, Berlin, Germany",,
 "Neubrücker Str. zw. Nr. 53 u. 57, R.A.B., Berlin, Germany",,
 "Waidmannsluster Damm/Dianastr., Berlin, Germany",,
@@ -2003,7 +2014,7 @@ Address1,Latitude,Longitude
 "Waidmannsluster D./Buddestr.,Grünanlage, Berlin, Germany",,
 "Bernhard-Lichtenberg-Platz, Berlin, Germany",52.5758766,13.2942793
 "Gerlindeweg/Friederikestr., Berlin, Germany",52.5758893,13.2287878
-"Kesselpfuhlgraben, Berlin, Germany",52.5897101,13.3125139
+"Kesselpfuhlgraben, Berlin, Germany",52.5897947,13.3147554
 "Schluchseestr. 56, Erholungsfläche, Berlin, Germany",,
 "Humboldtstr./Brusebergstr., Berlin, Germany",,
 "Schloßstr. 33/37 - Wachsmuthstr., Berlin, Germany",,
@@ -2029,7 +2040,7 @@ Address1,Latitude,Longitude
 "Greenwichpromenade hochwertig, Berlin, Germany",,
 "Karolinenstr. 19 ggü, Durchgang Schloßstr., Berlin, Germany",,
 "Kurt-Schumacher-Damm 42, Berlin, Germany",52.5615489,13.320222
-"An der Buche 17-23, Berlin, Germany",52.6302222,13.2856727
+"An der Buche 17-23, Berlin, Germany",52.6299271,13.2879829
 "Max-Beckmann-Platz, Berlin, Germany",52.6180715,13.3062544
 "Neubrücker Str./Am Eichenhain, R.A.B., Berlin, Germany",,
 "Lienemannstr. (Sackgasse), Berlin, Germany",,
@@ -2050,34 +2061,34 @@ Address1,Latitude,Longitude
 "Illerzeile, Berlin, Germany",52.5881255,13.2921139
 "Wilhelmsruher Damm - Quickborner Str., hinter Kol. Fechner, Berlin, Germany",,
 "Küstriner Straße 11-14 / Ehrenmal, Berlin, Germany",,
-"Hausotterplatz, Berlin, Germany",,
+"Hausotterplatz, Berlin, Germany",52.5693658,13.3754325
 "Burgfrauenstr./Im Fischgrund, Berlin, Germany",,
 "Seebadstr. 36a, ehem. Tongruben, Berlin, Germany",,
-"Konzer Platz, Berlin, Germany",,
+"Konzer Platz, Berlin, Germany",52.6386771,13.2986529
 "Friedhof Am Fließtal, Entwidmungsfläche, Berlin, Germany",,
-"Deilingeweg, Berlin, Germany",,
+"Deilingeweg, Berlin, Germany",52.6201372,13.3444081
 "Wanderweg am Hohenzollernkanal, Berlin, Germany",,
 "Borsigdamm, am Borsighafen, Berlin, Germany",,
 "Bahnhofstr. / Grünzug, Berlin, Germany",,
 "Strausberger Platz / Grünanlage, Berlin, Germany",,
 "Konrad-Wolf-Str.21-22 / Manetstr. 84-86, Berlin, Germany",,
-"Lincolnstr. 25-27, Berlin, Germany",,
-"Wartiner Str. 40-50, Berlin, Germany",,
+"Lincolnstr. 25-27, Berlin, Germany",52.5048871,13.5035783
+"Wartiner Str. 40-50, Berlin, Germany",52.5675527,13.5321235
 "Strausberger Str. / Reichenberger Str, Berlin, Germany",,
 "Falkenberger Chaussee. / Egon-Erwin-Kisch Str., Berlin, Germany",,
 "verlängerte Gudrunstr. zw. KGA Bielefeld u.KGA Friedrichsfelde Nord, Berlin, Germany",,
-"Sewanstr. 233-241, Berlin, Germany",,
-"Münsterlandplatz, Berlin, Germany",,
-"Sewanstr. 257, Berlin, Germany",,
+"Sewanstr. 233-241, Berlin, Germany",52.4938425,13.5186872
+"Münsterlandplatz, Berlin, Germany",52.5038615,13.4956599
+"Sewanstr. 257, Berlin, Germany",52.4938425,13.5186872
 "Volkradstr. 22-32 / Passage / üblich, Berlin, Germany",,
 "Gehrenseestr. / zw. S-Bhf und P.-Picasso-Str., Berlin, Germany",,
 "Ingelheimer Str. Stadtplatz, Berlin, Germany",,
-"Roderichplatz, Berlin, Germany",,
+"Roderichplatz, Berlin, Germany",52.5523813,13.5212726
 "Traberweg zw. Lehndorffstr. u. Eginhardstr., Berlin, Germany",,
 "Sewanstr. 124-130 / Dolgenseestr., Berlin, Germany",,
 "Volkradstr. / Rummelsburger Str. / Hügelbeet, Berlin, Germany",,
 "Ilsestr. / Grünfläche an KGA ""Gute Hoffnung"", Berlin, Germany",,
-"Sewanstr. 240-254, Berlin, Germany",,
+"Sewanstr. 240-254, Berlin, Germany",52.4938425,13.5186872
 "Nöldnerstr. / Ehrenmal, Berlin, Germany",,
 "Grünfläche an KGA Stallwiese, Berlin, Germany",,
 "Priesterkuten / Wartenberger Feldmark, Berlin, Germany",,
@@ -2086,20 +2097,20 @@ Address1,Latitude,Longitude
 "Blankenburger Pflasterweg / Grünanlage, Berlin, Germany",,
 "Traberweg / Lehndorffstr. / Liepnitzstr., Berlin, Germany",,
 "Stadthausstr. / Türrschmidtstr., Berlin, Germany",,
-"Biesenhorster Sand, Berlin, Germany",,
+"Biesenhorster Sand, Berlin, Germany",52.4862379,13.5480877
 "Türrschmidtstr. / Spittastr., Kernhofer Str., Berlin, Germany",,
 "Walkürenstr. 3 / Odinstr. 14, Berlin, Germany",,
-"Tierpark Friedrichsfelde, Berlin, Germany",,
+"Tierpark Friedrichsfelde, Berlin, Germany",52.4977241,13.5229595
 "Str.142 Nr. 24 / am Teich KGALand in Sonne, Berlin, Germany",,
-"Konrad-Wolf-Str. 92, Berlin, Germany",,
-"John-Sieg-Str. 12-16, Berlin, Germany",,
+"Konrad-Wolf-Str. 92, Berlin, Germany",52.540377,13.4857592
+"John-Sieg-Str. 12-16, Berlin, Germany",52.5103686,13.4803189
 "Schulze-Boysen-Str. / Stadtplatz, Berlin, Germany",,
 "Schulze-Boysen-Str. / Brunnenanlage, Berlin, Germany",,
 "Stegeweg / Fläche für Naturschutzfachl. Kompensationsmaßnahmen, Berlin, Germany",,
 "Weideflächen zw. Siegfriedstraße 60 & Herzbergstr. 77, Berlin, Germany",,
 "Weideflächen Biesenhorster Sand , Berlin, Germany",,
 "Degner Platz, Berlin, Germany",,
-"Otto-Marquardt-Str. 6-8, Berlin, Germany",,
+"Otto-Marquardt-Str. 6-8, Berlin, Germany",52.5323775,13.4714554
 "Einbecker Str.113 (Hof), Berlin, Germany",,
 "Rummelsburger Bucht / G.-Holzmann-Str., Berlin, Germany",,
 "Gedenkstelen / Am Tierpark 135, Berlin, Germany",,
@@ -2114,7 +2125,7 @@ Address1,Latitude,Longitude
 "Treskowallee / Wandlitzstr. /, Berlin, Germany",,
 "Wartenberger Weg südlich Hechtgraben, Berlin, Germany",,
 "Rahmengrün an KGA ""Paradies"", Berlin, Germany",,
-"Lückstr. 52-53, Berlin, Germany",,
+"Lückstr. 52-53, Berlin, Germany",52.501069,13.4924919
 "Am Dorfteich Wartenberg / Grünanlage, Berlin, Germany",,
 "GA um Kleinen Herzbergteich, Berlin, Germany",,
 "Wartenberger Str. Wegeverbindung, Berlin, Germany",,
@@ -2131,7 +2142,7 @@ Address1,Latitude,Longitude
 "Traberweg / Lehndorffstr., Berlin, Germany",,
 "Rudolf-Seiffert-Str. Hof 6-24, Berlin, Germany",,
 "Gotlindestr. 80 / Staudengarten, Berlin, Germany",,
-"Wilhelm-Guddorf-Str. 10-18, Berlin, Germany",,
+"Wilhelm-Guddorf-Str. 10-18, Berlin, Germany",52.5087342,13.4798197
 "Leuenberger Str. ggü. 4-10, Berlin, Germany",,
 "Arendsweg 1, Berlin, Germany",52.5354503,13.5050623
 "Bernhard-Bästlein-Str.5, Berlin, Germany",52.5282306,13.4812606
@@ -2165,11 +2176,11 @@ Address1,Latitude,Longitude
 "Schwarzwurzelstraße/Dessauer Straße, Berlin, Germany",,
 "Altentreptower Str.- südlich bis Bahn, Berlin, Germany",,
 "Kokoschkaplatz, Berlin, Germany",52.5379694,13.6062389
-"Blumberger Damm 31/ 35, Berlin, Germany",52.5340493,13.5661185
+"Blumberger Damm 31/ 35, Berlin, Germany",52.5136143,13.5628124
 "Gerdaplatz - öff. Platz, Berlin, Germany",,
 "Pyramidenring - südlich, Berlin, Germany",,
 "Semmelweisstraße 34-36 Ag GA, Berlin, Germany",,
-"Schönagelstraße/ Blumberger Damm, Berlin, Germany",52.549555,13.5717126
+"Schönagelstraße/ Blumberger Damm, Berlin, Germany",52.5485302,13.571236
 "Öffentliche Grünverbindung Hönower Straße, Berlin, Germany",,
 "Stadtplatz Paul_Levi-Platz, Berlin, Germany",,
 "Gründurchwegung Gut Hellersdorf, Berlin, Germany",,
@@ -2209,9 +2220,11 @@ Address1,Latitude,Longitude
 "Wendenschloßstraße/ Möllhausenufer Köp GA, Berlin, Germany",,
 "Malvenweg/ Kleiner Mohnweg (Gabione) Ag GA, Berlin, Germany",,
 "Friedrichsfelde/Nord, an der KGA, Berlin, Germany",,
+"Öffentliche Grünanlage, Berlin, Germany",,
 "Schwabenplatz, Berlin, Germany",52.489864,13.5635953
 "Graffplatz , Berlin, Germany",52.5225752,13.6425651
 "Park am Weidengrund, Berlin, Germany",52.5597597,13.5769696
+"Kienberg/Wuhletal, Berlin, Germany",,
 "Grünanlage Am Lupinenfeld, Berlin, Germany",,
 "Busbahnhof Biesdorf, Wuhlegartenweg, Berlin, Germany",,
 "Allee der Kosmonauten, am Siedlungsgeb., Berlin, Germany",,
@@ -2294,6 +2307,7 @@ Address1,Latitude,Longitude
 "Platz am Kaisersteg 1 Ob (Pacht), Berlin, Germany",,
 "Spitzwegerichweg Fr GA, Berlin, Germany",,
 "In den Gärten-Grünanlage, Berlin, Germany",,
+"Erpetal/ Neuhagener Mühlenfließ Fr GA, Berlin, Germany",,
 "Hämmerlingstraße/ Wuhlewanderweg Köp GA, Berlin, Germany",,
 "Mahlsdorfer Straße/ Gehsener Straße Köp GA, Berlin, Germany",,
 "Böhmische Strasse, Berlin, Germany",52.4738127,13.4492286
@@ -2309,6 +2323,7 @@ Address1,Latitude,Longitude
 "Helga-Hahnemann-Straße Nie GA, Berlin, Germany",,
 "Buckower Felder-Mauerweg, Berlin, Germany",52.4133423,13.4344468
 "Park am Buschkrug-Kiosk, Berlin, Germany",,
+"Am Neuhagener Mühlenfließ Fr GA, Berlin, Germany",,
 "Mahlower Straße Vollkropfwiesen Gr GA, Berlin, Germany",,
 "Ottomar-Geschke-Straße/ Freifläche vor Nr. 15 Köp GA, Berlin, Germany",,
 "Bruno-Wille-Straße/ Müggelseedamm Fr GA, Berlin, Germany",,
@@ -2418,7 +2433,7 @@ Address1,Latitude,Longitude
 "Landschaftspark Glienicke N - Teil 1/2, Berlin, Germany",,
 "Pfaueninsel, Berlin, Germany",52.4351385,13.1302736
 "Asternplatz WG, Berlin, Germany",,
-"Waldsee N, Berlin, Germany",52.6188812,13.3083199
+"Waldsee N, Berlin, Germany",52.6202997,13.3107895
 "Neue Filandastraße WG, Berlin, Germany",,
 "Döhlauer Pfad WG - Teil 2/2, Berlin, Germany",,
 "Althoffplatz WG, Berlin, Germany",,
@@ -2440,25 +2455,25 @@ Address1,Latitude,Longitude
 "Bröndbystraße 40B, Berlin, Germany",52.4197755,13.2974989
 "Karl-Marx-Allee 70C-F, Berlin, Germany",,
 "Schönerlinder Str. östl. III, Berlin, Germany",,
-"Mollstr., Berlin, Germany",52.526345,13.4165187
+"Mollstr., Berlin, Germany",52.52337,13.4247532
 "Am Posseberg I, Berlin, Germany",52.6333405,13.4364686
 "Topsstr., Berlin, Germany",52.542337,13.4099053
-"Flaischlenstr., Berlin, Germany",52.6047604,13.4496791
+"Flaischlenstr., Berlin, Germany",52.606252,13.4510248
 "Moorlinse, Berlin, Germany",52.6335303,13.486101
 "Gitschiner Straße, an  Zossener Brücke, Berlin, Germany",,
-"Am Brendegraben, Berlin, Germany",52.6117207,13.4482009
-"Schliemannstr. 42/43, Berlin, Germany",52.5416781,13.4175871
+"Am Brendegraben, Berlin, Germany",52.610802,13.4496106
+"Schliemannstr. 42/43, Berlin, Germany",52.5405647,13.4164601
 "Koppenstr., Grünanl., Berlin, Germany",,
 "Lindenstr. 76, Markgrafenstraße, Berlin, Germany",,
 "Cuvrystr. 13-15/ Falckensteinstr. 39-40, Berlin, Germany",,
-"Oranienstr. 59-62, Berlin, Germany",52.5034788,13.4112938
+"Oranienstr. 59-62, Berlin, Germany",52.5021561,13.4156806
 "Andreasstr. 21-22, Berlin, Germany",52.5154109,13.4320662
 "Frankfurter Allee 6A,14A, Berlin, Germany",,
-"Krautstraße 1-4, Berlin, Germany",52.5120862,13.427179
+"Krautstraße 1-4, Berlin, Germany",52.5118635,13.4271106
 "Platz der Vereinten Nationen vor 3-12, Berlin, Germany",,
 "Warschauer Str./ Mühlenstr., Berlin, Germany",52.5032008,13.4456129
 "Möckernstr. 131/ Kleinbeerenstr., Berlin, Germany",,
-"Skalitzer Str. 121, Berlin, Germany",52.5010407,13.4413498
+"Skalitzer Str. 121, Berlin, Germany",52.4992588,13.4315443
 "Am Ostbahnhof/ Andreasstr., Berlin, Germany",,
 "Hermann-Stöhr-Platz, Grünanl., Berlin, Germany",,
 "Otto-Braun-Str., Grünanl., Berlin, Germany",,
@@ -2466,7 +2481,7 @@ Address1,Latitude,Longitude
 "Wühlischplatz, Berlin, Germany",52.507419,13.4646769
 "Viktoriapark, Wolfsschlucht, Berlin, Germany",,
 "Wilhelmstr. vor 20-24, Berlin, Germany",,
-"Frankfurter Allee 106-106A, Berlin, Germany",52.5157798,13.454806
+"Frankfurter Allee 106-106A, Berlin, Germany",52.5148464,13.4640938
 "Drontheimer Str. 10 / Koloniestr. 132/3, Berlin, Germany",,
 "Spittelkolonnaden, Berlin, Germany",52.5106685,13.3991425
 "Müller-Breslau-Str. Ufer, Berlin, Germany",,
@@ -2476,32 +2491,35 @@ Address1,Latitude,Longitude
 "Spreeuferpromenade Rahel-Hirsch-Str. , Berlin, Germany",,
 "Rolandufer-Littenstr.-Stralauer Str., Berlin, Germany",,
 "Jacob-Teitel-Park, ""Gormanndreieck"", Berlin, Germany",,
-"Friedrich-Krause-Ufer , Berlin, Germany",52.5375587,13.3594751
-"Lehrter Str. 5a-d,, Berlin, Germany",52.5297923,13.3626716
+"Friedrich-Krause-Ufer , Berlin, Germany",52.5384188,13.3508955
+"Lehrter Str. 5a-d,, Berlin, Germany",52.5318734,13.3609163
 "Heinrich-Heine-Str. / Schmidstr., Berlin, Germany",,
 "Corneliusufer, Berlin, Germany",,
-"Schillingstr. 24 - 26, Berlin, Germany",52.5196909,13.4220398
+"Schillingstr. 24 - 26, Berlin, Germany",52.5183595,13.4209243
 "Grüntaler Str., Promenade, Berlin, Germany",,
 "Geschichtspark Vorflächen, Berlin, Germany",,
+"Döberitzer Grünzug Süd, Berlin, Germany",,
 "Prinzessinnengarten, Berlin, Germany",52.5030158,13.411087
 "Mollstr. 12-14 / Berolinastr. 25-32, Berlin, Germany",,
 "Zoologischer Garten, Berlin, Germany",52.5071378,13.331868
 "Spreeuferpromenade Schiffbauerdamm zw. Marschalbrücke und MEL-Haus, Berlin, Germany",,
 "Koloniestr. 130, Berlin, Germany",52.5586224,13.3787265
+"Siemensstr. 27, Berlin, Germany",52.5338932,13.3365293
 "Klosterkirche  Freifläche um Ruine, Berlin, Germany",,
 "Bremer Str. Ecke Bugenhagenstr., Berlin, Germany",,
 "Moabiter Werder Bundeskanzleramt, Berlin, Germany",,
-"Berolinastr. 5 - 21, Berlin, Germany",52.5216908,13.4227844
+"Berolinastr. 5 - 21, Berlin, Germany",52.5211729,13.4241231
 "Potsdamer Platzareal Urbane Gewässer, Berlin, Germany",,
+"Park an der Südpanke, Berlin, Germany",,
 "Guineastr. / Kongostr.  , Berlin, Germany",,
-"Osloer Str. 107-108, Berlin, Germany",52.5564984,13.3745403
-"Berolinastr.12 - 17, Berlin, Germany",52.5216908,13.4227844
+"Osloer Str. 107-108, Berlin, Germany",52.55684,13.3739837
+"Berolinastr.12 - 17, Berlin, Germany",52.5211729,13.4241231
 "Stephanplatz , Berlin, Germany",52.5330535,13.3463887
 "Scheringstr 1, Berlin, Germany",52.5413511,13.3823155
 "Ostender Str. 46 / Genter Str., Berlin, Germany",,
 "Louise-Schroeder-Platz Osthälfte, Berlin, Germany",,
 "Erna-Samuel-Str.. Biotop, Berlin, Germany",,
-"Invalidenstr. 55 a-b, Berlin, Germany",52.5281056,13.3745797
+"Invalidenstr. 55 a-b, Berlin, Germany",52.5316629,13.3889
 "Am Hansaplatz Ost, Berlin, Germany",,
 "Volkspark Humboldthain, Bahnfläche, Berlin, Germany",,
 "Kurt-Schumacher-Damm / Charles-Corcelle-Ring, Berlin, Germany",,
@@ -2533,6 +2551,7 @@ Address1,Latitude,Longitude
 "Schönholzer Str.- Ruppiner Str., Berlin, Germany",,
 "Weddingplatz, Berlin, Germany",52.5408013,13.3697597
 "Essener Park, Berlin, Germany",52.5247296,13.3409899
+"Nauener Platz, Berlin, Germany",52.5514056,13.3671696
 "Leopoldplatz an der Alten Nazarethkirche, Berlin, Germany",,
-"Mollstr. 15-18, Berlin, Germany",52.526345,13.4165187
+"Mollstr. 15-18, Berlin, Germany",52.52337,13.4247532
 "Seestraße südlich am Westhafenkanal, Berlin, Germany",,
