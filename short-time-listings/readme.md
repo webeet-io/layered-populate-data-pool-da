@@ -52,8 +52,6 @@ The schema is designed to:
 |----------------------------|-----------|-----------------------------------------------------------------------------------------------|
 | `id`                       |int64      | Unique identifier for each listing.                                                           |
 | `host_id`                  |int64      | Unique identifier for the host.                                                               |
-| `host_listings_count`      |Int64      | Number of listings currently managed by the host.                                            |
-| `host_total_listings_count`|Int64      | Total number of listings ever managed by the host (including inactive).                       |
 | `neighborhood`             |object     | Name of the neighborhood where the listing is located.                                       |
 | `district`                 |string     | Larger administrative area or district containing the neighborhood.                          |
 | `latitude`                 |float64    | Latitude coordinate of the listing.                                                          |
@@ -85,6 +83,9 @@ The schema is designed to:
 ## ⚠️ 4. Known Issues
 
 - Missing or inconsistent data in review scores and price fields.
+  
+- bathrooms_text values like 'Half-bath' or 'Shared half-bath' required manual conversion, which assumes all such entries equal 0.5 — this may oversimplify nuanced cases.
+
 
 ---
 
@@ -96,8 +97,20 @@ The schema is designed to:
 
 - Amenities remain as raw strings and can be parsed into lists for detailed feature analysis.
 
-- Missing values handled contextually using techniques like median imputation or left as nulls where appropriate.
+- Bathroom information cleaned by extracting numeric values from the bathrooms_text column:
 
+    - Parsed values like '2.5 baths' into 2.5.
+
+    - Detected case-insensitive 'half' (e.g., 'Half-bath', 'Shared half-bath') and mapped them to 0.5.
+
+    - Converted the result to a numeric bathrooms column and dropped the original bathrooms_text.
+      
+    - Created a new 'is_shared' column to indicate shared bathrooms:
+
+    - Applied a case-insensitive search for the word 'shared' in bathrooms_text.
+
+    - Assigned 1 if shared, 0 if private, and pd.NA if the data was missing or not a string.
+      
 - Standardized `neighbourhood_group_cleansed`:
 
     - Stripped extra white spaces to ensure clean matching.
@@ -105,3 +118,24 @@ The schema is designed to:
     - Applied a mapping dictionary to rename values to human-readable and standardized district names (e.g., 'Charlottenburg-Wilm.' → 'Charlottenburg-Wilmersdorf').
 
     - Renamed the column to `district` for simplicity and clarity.
+
+---
+
+## 🛠️ 6. Database Integration
+
+### 📥 Populate Database
+
+- Used the approved SQL script to insert the transformed dataset into the database.
+  
+- Created new tables or updated existing ones according to the defined schema.
+  
+- Established primary keys, foreign keys, and relationships between:
+  
+   - Listings and neighborhoods via the `neighborhood` column.
+     
+   - Listings and districts via the `district` column.
+  
+- Verified data integrity through test queries and cross-referenced values.
+  
+
+---
