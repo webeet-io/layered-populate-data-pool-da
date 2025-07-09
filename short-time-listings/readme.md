@@ -24,14 +24,12 @@ The data is obtained from [Inside Airbnb](https://insideairbnb.com/get-the-data/
 ### 📌 Key Parameters Selected
 We focused on columns related to:
 - Listing details (price, availability, room type)
-- Host information
 - Neighborhood details
 - Reviews and ratings
 - Location coordinates
 
 ### 🔗 Data Relationships
 - Listings are connected with neighborhoods.
-- Hosts identified by `host_id`.
 - Geospatial linkage through `latitude` and `longitude`.
 
 ### 📝 Planned Schema
@@ -44,15 +42,7 @@ The schema captures core listing information, normalized host data, and neighbor
 | Column Name                | Data Type           | Description                                                                                   |
 |----------------------------|---------------------|-----------------------------------------------------------------------------------------------|
 | `id`                       | int64               | Unique identifier for each listing                                                           |
-| `name`                     | object (string)     | Listing title/name                                                                           |
 | `description`              | object (string)     | Description text of the listing                                                              |
-| `host_id`                  | int64               | Unique identifier for the host                                                               |
-| `host_name`                | object (string)     | Host's name (cleaned and normalized)                                                         |
-| `host_since`               | datetime64[ns]      | Date when the host joined Airbnb                                                             |
-| `host_is_superhost`        | boolean             | Whether the host is a superhost (True/False)                                                 |
-| `host_listings_count`      | float64             | Number of listings managed by the host                                                       |
-| `host_total_listings_count`| float64             | Total number of listings managed by the host (including inactive)                            |
-| `host_identity_verified`   | boolean             | Whether the host identity is verified                                                        |
 | `neighbourhood_cleansed`   | object (string)     | Cleaned neighborhood name                                                                     |
 | `neighborhood`| object (string) | Higher-level neighborhood grouping (e.g., district)                                          |
 | `latitude`                 | float64             | Latitude coordinate of the listing                                                           |
@@ -92,7 +82,6 @@ The schema captures core listing information, normalized host data, and neighbor
 ## ⚠️ 4. Known Issues
 
 - Missing or inconsistent data in review scores and price fields.
-- Some host names contain special characters or multiple hosts listed.
 
 ---
 
@@ -100,15 +89,15 @@ The schema captures core listing information, normalized host data, and neighbor
 
 - Prices cleaned by removing currency symbols and commas, then converted to float.
 
-- Host-related columns normalized (e.g., converted host_is_superhost and host_identity_verified to boolean).
+- Bathroom information cleaned by extracting numeric values from the bathrooms_text column:
 
-- Date columns converted to datetime (host_since) for easier time-based analysis.
-
+    - Parsed values like '2.5 baths' into 2.5.
+  
+    - Detected case-insensitive 'half' (e.g., 'Half-bath', 'Shared half-bath') and mapped them to 0.5.
+  
+    - Converted the result to a numeric bathrooms column and dropped the original bathrooms_text.
+   
 - Text columns cleaned for consistent capitalization and removal of special characters.
-
-- Amenities remain as raw strings and can be parsed into lists for detailed feature analysis.
-
-- Missing values handled contextually using techniques like median imputation or left as nulls where appropriate.
 
 - Standardized neighbourhood_group_cleansed:
 
