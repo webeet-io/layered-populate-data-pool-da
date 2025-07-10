@@ -1,52 +1,7 @@
-BERLIN GEOGRAPHIC DATA - SUMMARY REPORT
-==================================================
-Generated: 2025-07-09 13:52:30
-Student Project: Districts & Neighborhoods Database Population
+Berlin Geographic Data Summary
+Generated: 2025-07-10 13:19:10
 
-📊 DATASET OVERVIEW:
---------------------
 Districts: 12 records
 Neighborhoods: 96 records
-Coordinate System: EPSG:4326 (WGS84)
-Geometry Format: WKT (Well-Known Text)
-
-🏢 DISTRICTS:
-------------
- 1. Charlottenburg-Wilmersdorf
- 2. Friedrichshain-Kreuzberg
- 3. Lichtenberg
- 4. Marzahn-Hellersdorf
- 5. Mitte
- 6. Neukölln
- 7. Pankow
- 8. Reinickendorf
- 9. Spandau
-10. Steglitz-Zehlendorf
-11. Tempelhof-Schöneberg
-12. Treptow-Köpenick
-
-🏘️ NEIGHBORHOODS PER DISTRICT:
-------------------------------
-Charlottenburg-Wilmersdorf: 7 neighborhoods
-Friedrichshain-Kreuzberg: 2 neighborhoods
-Lichtenberg: 10 neighborhoods
-Marzahn-Hellersdorf: 5 neighborhoods
-Mitte: 6 neighborhoods
-Neukölln: 5 neighborhoods
-Pankow: 13 neighborhoods
-Reinickendorf: 11 neighborhoods
-Spandau: 9 neighborhoods
-Steglitz-Zehlendorf: 7 neighborhoods
-Tempelhof-Schöneberg: 6 neighborhoods
-Treptow-Köpenick: 15 neighborhoods
-
-📋 FILE STRUCTURE:
------------------
-districts_cleaned.csv:
-  - district_name (TEXT)
-  - geometry_wkt (WKT)
-
-neighborhoods_cleaned.csv:
-  - neighborhood_name (TEXT)
-  - district_name (TEXT)
-  - geometry_wkt (WKT)
+Coordinate System: EPSG:4326
+Geometry Format: WKT
