@@ -2855,23 +2855,6 @@ area_id,locality,neighborhood,year,crime_type_german,crime_type_english,category
 999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2015,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,372.0,,,2.5
 999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2015,Straftaten -insgesamt-,Total Crimes,Overall,59169.0,,,1.0
 999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2015,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,43.0,,,3.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2015,Brand- stiftung,Arson,Property Crime,841.0,25.0,,4.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2015,Branddelikte -insgesamt-,Arson Total,Property Crime,2120.0,62.0,,4.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2015,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,40675.0,1195.0,,3.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2015,Fahrrad- diebstahl,Bicycle Theft,Property Crime,32244.0,947.0,,1.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2015,"Freiheits-beraubung, Nötigung, Bedrohung, Nachstellung",Coercion and Threats,Violent Crime,13937.0,409.0,,3.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2015,Rauschgift-delikte,Drug Crimes,Drug Offense,15753.0,463.0,,2.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2015,Sach-beschädigung durch Graffiti,Graffiti Vandalism,Property Crime,9894.0,291.0,,1.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2015,Kieztaten,Neighborhood Crimes,Public Order,102589.0,3013.0,,2.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2015,Sach-beschädigung -insgesamt-,Property Damage Total,Property Crime,41954.0,1232.0,,1.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2015,Wohnraum- einbruch,Residential Burglary,Property Crime,11815.0,347.0,,3.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2015,Raub,Robbery,Violent Crime,5407.0,159.0,,4.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2015,Gefährl. und schwere Körper-verletzung,Serious Assault,Violent Crime,10029.0,295.0,,4.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2015,"Straßenraub, Handtaschen-raub",Street Robbery,Violent Crime,2951.0,87.0,,4.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2015,Diebstahl -insgesamt-,Theft Total,Property Crime,267123.0,7846.0,,2.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2015,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,35113.0,1031.0,,2.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2015,Straftaten -insgesamt-,Total Crimes,Overall,569549.0,15926.0,,1.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2015,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,6692.0,197.0,,3.0
 10000.0,Mitte,Marzahn-Hellersdorf,2016,Brand- stiftung,Arson,Property Crime,112.0,30.0,,4.5
 10000.0,Mitte,Marzahn-Hellersdorf,2016,Branddelikte -insgesamt-,Arson Total,Property Crime,309.0,84.0,,4.0
 10000.0,Mitte,Marzahn-Hellersdorf,2016,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,7446.0,2012.0,,3.5
@@ -5728,23 +5711,6 @@ area_id,locality,neighborhood,year,crime_type_german,crime_type_english,category
 999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2016,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,347.0,,,2.5
 999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2016,Straftaten -insgesamt-,Total Crimes,Overall,55826.0,,,1.0
 999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2016,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,44.0,,,3.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2016,Brand- stiftung,Arson,Property Crime,1039.0,28.0,,4.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2016,Branddelikte -insgesamt-,Arson Total,Property Crime,2542.0,70.0,,4.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2016,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,42847.0,1173.0,,3.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2016,Fahrrad- diebstahl,Bicycle Theft,Property Crime,34418.0,942.0,,1.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2016,"Freiheits-beraubung, Nötigung, Bedrohung, Nachstellung",Coercion and Threats,Violent Crime,14352.0,393.0,,3.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2016,Rauschgift-delikte,Drug Crimes,Drug Offense,14880.0,407.0,,2.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2016,Sach-beschädigung durch Graffiti,Graffiti Vandalism,Property Crime,10501.0,287.0,,1.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2016,Kieztaten,Neighborhood Crimes,Public Order,102793.0,2814.0,,2.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2016,Sach-beschädigung -insgesamt-,Property Damage Total,Property Crime,44066.0,1206.0,,1.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2016,Wohnraum- einbruch,Residential Burglary,Property Crime,11507.0,315.0,,3.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2016,Raub,Robbery,Violent Crime,5156.0,141.0,,4.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2016,Gefährl. und schwere Körper-verletzung,Serious Assault,Violent Crime,10456.0,286.0,,4.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2016,"Straßenraub, Handtaschen-raub",Street Robbery,Violent Crime,3015.0,83.0,,4.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2016,Diebstahl -insgesamt-,Theft Total,Property Crime,270880.0,7415.0,,2.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2016,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,34862.0,954.0,,2.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2016,Straftaten -insgesamt-,Total Crimes,Overall,568860.0,15573.0,,1.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2016,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,7349.0,201.0,,3.0
 10000.0,Mitte,Marzahn-Hellersdorf,2017,Brand- stiftung,Arson,Property Crime,113.0,30.0,,4.5
 10000.0,Mitte,Marzahn-Hellersdorf,2017,Branddelikte -insgesamt-,Arson Total,Property Crime,287.0,77.0,,4.0
 10000.0,Mitte,Marzahn-Hellersdorf,2017,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,7856.0,2101.0,,3.5
@@ -8601,23 +8567,6 @@ area_id,locality,neighborhood,year,crime_type_german,crime_type_english,category
 999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2017,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,432.0,,,2.5
 999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2017,Straftaten -insgesamt-,Total Crimes,Overall,38438.0,,,1.0
 999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2017,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,24.0,,,3.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2017,Brand- stiftung,Arson,Property Crime,874.0,24.0,,4.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2017,Branddelikte -insgesamt-,Arson Total,Property Crime,2215.0,60.0,,4.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2017,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,42742.0,1159.0,,3.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2017,Fahrrad- diebstahl,Bicycle Theft,Property Crime,30325.0,822.0,,1.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2017,"Freiheits-beraubung, Nötigung, Bedrohung, Nachstellung",Coercion and Threats,Violent Crime,14167.0,384.0,,3.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2017,Rauschgift-delikte,Drug Crimes,Drug Offense,16077.0,436.0,,2.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2017,Sach-beschädigung durch Graffiti,Graffiti Vandalism,Property Crime,10913.0,296.0,,1.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2017,Kieztaten,Neighborhood Crimes,Public Order,96416.0,2614.0,,2.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2017,Sach-beschädigung -insgesamt-,Property Damage Total,Property Crime,41804.0,1133.0,,1.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2017,Wohnraum- einbruch,Residential Burglary,Property Crime,8580.0,233.0,,3.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2017,Raub,Robbery,Violent Crime,4242.0,115.0,,4.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2017,Gefährl. und schwere Körper-verletzung,Serious Assault,Violent Crime,10741.0,291.0,,4.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2017,"Straßenraub, Handtaschen-raub",Street Robbery,Violent Crime,2354.0,64.0,,4.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2017,Diebstahl -insgesamt-,Theft Total,Property Crime,228072.0,6183.0,,2.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2017,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,32740.0,888.0,,2.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2017,Straftaten -insgesamt-,Total Crimes,Overall,520437.0,14108.0,,1.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2017,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,6666.0,181.0,,3.0
 10000.0,Mitte,Marzahn-Hellersdorf,2018,Brand- stiftung,Arson,Property Crime,75.0,20.0,,4.5
 10000.0,Mitte,Marzahn-Hellersdorf,2018,Branddelikte -insgesamt-,Arson Total,Property Crime,245.0,65.0,,4.0
 10000.0,Mitte,Marzahn-Hellersdorf,2018,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,7450.0,1963.0,,3.5
@@ -11474,23 +11423,6 @@ area_id,locality,neighborhood,year,crime_type_german,crime_type_english,category
 999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2018,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,403.0,,,2.5
 999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2018,Straftaten -insgesamt-,Total Crimes,Overall,46075.0,,,1.0
 999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2018,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,28.0,,,3.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2018,Brand- stiftung,Arson,Property Crime,889.0,24.0,,4.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2018,Branddelikte -insgesamt-,Arson Total,Property Crime,2338.0,63.0,,4.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2018,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,43340.0,1164.0,,3.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2018,Fahrrad- diebstahl,Bicycle Theft,Property Crime,30235.0,812.0,,1.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2018,"Freiheits-beraubung, Nötigung, Bedrohung, Nachstellung",Coercion and Threats,Violent Crime,14659.0,394.0,,3.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2018,Rauschgift-delikte,Drug Crimes,Drug Offense,17266.0,464.0,,2.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2018,Sach-beschädigung durch Graffiti,Graffiti Vandalism,Property Crime,9505.0,255.0,,1.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2018,Kieztaten,Neighborhood Crimes,Public Order,99162.0,2663.0,,2.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2018,Sach-beschädigung -insgesamt-,Property Damage Total,Property Crime,40734.0,1094.0,,1.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2018,Wohnraum- einbruch,Residential Burglary,Property Crime,7574.0,203.0,,3.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2018,Raub,Robbery,Violent Crime,4267.0,115.0,,4.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2018,Gefährl. und schwere Körper-verletzung,Serious Assault,Violent Crime,10813.0,290.0,,4.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2018,"Straßenraub, Handtaschen-raub",Street Robbery,Violent Crime,2449.0,66.0,,4.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2018,Diebstahl -insgesamt-,Theft Total,Property Crime,217148.0,5831.0,,2.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2018,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,29080.0,781.0,,2.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2018,Straftaten -insgesamt-,Total Crimes,Overall,511677.0,13740.0,,1.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2018,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,5699.0,153.0,,3.0
 10000.0,Mitte,Marzahn-Hellersdorf,2019,Brand- stiftung,Arson,Property Crime,104.0,27.0,,4.5
 10000.0,Mitte,Marzahn-Hellersdorf,2019,Branddelikte -insgesamt-,Arson Total,Property Crime,291.0,76.0,,4.0
 10000.0,Mitte,Marzahn-Hellersdorf,2019,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,7595.0,1977.0,,3.5
@@ -14347,23 +14279,6 @@ area_id,locality,neighborhood,year,crime_type_german,crime_type_english,category
 999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2019,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,393.0,,,2.5
 999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2019,Straftaten -insgesamt-,Total Crimes,Overall,46705.0,,,1.0
 999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2019,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,24.0,,,3.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2019,Brand- stiftung,Arson,Property Crime,1131.0,30.0,,4.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2019,Branddelikte -insgesamt-,Arson Total,Property Crime,2624.0,70.0,,4.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2019,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,43485.0,1158.0,,3.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2019,Fahrrad- diebstahl,Bicycle Theft,Property Crime,28711.0,765.0,,1.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2019,"Freiheits-beraubung, Nötigung, Bedrohung, Nachstellung",Coercion and Threats,Violent Crime,15364.0,409.0,,3.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2019,Rauschgift-delikte,Drug Crimes,Drug Offense,18950.0,505.0,,2.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2019,Sach-beschädigung durch Graffiti,Graffiti Vandalism,Property Crime,10051.0,268.0,,1.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2019,Kieztaten,Neighborhood Crimes,Public Order,102998.0,2743.0,,2.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2019,Sach-beschädigung -insgesamt-,Property Damage Total,Property Crime,43935.0,1170.0,,1.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2019,Wohnraum- einbruch,Residential Burglary,Property Crime,7965.0,212.0,,3.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2019,Raub,Robbery,Violent Crime,4473.0,119.0,,4.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2019,Gefährl. und schwere Körper-verletzung,Serious Assault,Violent Crime,10894.0,290.0,,4.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2019,"Straßenraub, Handtaschen-raub",Street Robbery,Violent Crime,2668.0,71.0,,4.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2019,Diebstahl -insgesamt-,Theft Total,Property Crime,207106.0,5516.0,,2.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2019,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,26295.0,700.0,,2.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2019,Straftaten -insgesamt-,Total Crimes,Overall,513426.0,13675.0,,1.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2019,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,5775.0,154.0,,3.0
 10000.0,Mitte,Marzahn-Hellersdorf,2020,Brand- stiftung,Arson,Property Crime,118.0,31.0,,4.5
 10000.0,Mitte,Marzahn-Hellersdorf,2020,Branddelikte -insgesamt-,Arson Total,Property Crime,364.0,96.0,,4.0
 10000.0,Mitte,Marzahn-Hellersdorf,2020,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,7319.0,1921.0,,3.5
@@ -17220,23 +17135,6 @@ area_id,locality,neighborhood,year,crime_type_german,crime_type_english,category
 999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2020,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,378.0,,,2.5
 999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2020,Straftaten -insgesamt-,Total Crimes,Overall,50525.0,,,1.0
 999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2020,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,23.0,,,3.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2020,Brand- stiftung,Arson,Property Crime,1039.0,28.0,,4.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2020,Branddelikte -insgesamt-,Arson Total,Property Crime,2743.0,73.0,,4.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2020,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,43225.0,1149.0,,3.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2020,Fahrrad- diebstahl,Bicycle Theft,Property Crime,27588.0,733.0,,1.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2020,"Freiheits-beraubung, Nötigung, Bedrohung, Nachstellung",Coercion and Threats,Violent Crime,16265.0,432.0,,3.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2020,Rauschgift-delikte,Drug Crimes,Drug Offense,20906.0,556.0,,2.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2020,Sach-beschädigung durch Graffiti,Graffiti Vandalism,Property Crime,10768.0,286.0,,1.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2020,Kieztaten,Neighborhood Crimes,Public Order,105587.0,2806.0,,2.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2020,Sach-beschädigung -insgesamt-,Property Damage Total,Property Crime,46710.0,1241.0,,1.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2020,Wohnraum- einbruch,Residential Burglary,Property Crime,7070.0,188.0,,3.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2020,Raub,Robbery,Violent Crime,4362.0,116.0,,4.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2020,Gefährl. und schwere Körper-verletzung,Serious Assault,Violent Crime,10935.0,291.0,,4.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2020,"Straßenraub, Handtaschen-raub",Street Robbery,Violent Crime,2555.0,68.0,,4.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2020,Diebstahl -insgesamt-,Theft Total,Property Crime,198962.0,5288.0,,2.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2020,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,28105.0,747.0,,2.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2020,Straftaten -insgesamt-,Total Crimes,Overall,504142.0,13399.0,,1.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2020,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,4399.0,117.0,,3.0
 10000.0,Mitte,Marzahn-Hellersdorf,2021,Brand- stiftung,Arson,Property Crime,108.0,28.0,,4.5
 10000.0,Mitte,Marzahn-Hellersdorf,2021,Branddelikte -insgesamt-,Arson Total,Property Crime,354.0,92.0,,4.0
 10000.0,Mitte,Marzahn-Hellersdorf,2021,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,6730.0,1752.0,,3.5
@@ -20093,23 +19991,6 @@ area_id,locality,neighborhood,year,crime_type_german,crime_type_english,category
 999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2021,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,371.0,,,2.5
 999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2021,Straftaten -insgesamt-,Total Crimes,Overall,49170.0,,,1.0
 999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2021,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,21.0,,,3.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2021,Brand- stiftung,Arson,Property Crime,1040.0,27.614905888931787,,4.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2021,Branddelikte -insgesamt-,Arson Total,Property Crime,2764.0,73.39192295866101,,4.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2021,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,39318.0,1044.0027593663654,,3.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2021,Fahrrad- diebstahl,Bicycle Theft,Property Crime,25438.0,675.4499769256219,,1.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2021,"Freiheits-beraubung, Nötigung, Bedrohung, Nachstellung",Coercion and Threats,Violent Crime,17880.0,474.76395893663494,,3.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2021,Rauschgift-delikte,Drug Crimes,Drug Offense,18820.0,499.7235854131694,,2.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2021,Sach-beschädigung durch Graffiti,Graffiti Vandalism,Property Crime,9344.0,248.1093082944025,,1.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2021,Kieztaten,Neighborhood Crimes,Public Order,99546.0,2643.2244438650036,,2.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2021,Sach-beschädigung -insgesamt-,Property Damage Total,Property Crime,45254.0,1201.6201452862683,,1.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2021,Wohnraum- einbruch,Residential Burglary,Property Crime,4984.0,132.3391259138808,,3.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2021,Raub,Robbery,Violent Crime,4072.0,108.12297767281753,,4.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2021,Gefährl. und schwere Körper-verletzung,Serious Assault,Violent Crime,10390.0,275.88353094807815,,4.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2021,"Straßenraub, Handtaschen-raub",Street Robbery,Violent Crime,2420.0,64.25776178001435,,4.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2021,Diebstahl -insgesamt-,Theft Total,Property Crime,179455.0,4765.031669517552,,2.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2021,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,31534.0,837.3158099053605,,2.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2021,Straftaten -insgesamt-,Total Crimes,Overall,482127.0,12801.81897260867,,1.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2021,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,4273.0,113.46008929173608,,3.0
 10000.0,Mitte,Marzahn-Hellersdorf,2022,Brand- stiftung,Arson,Property Crime,112.0,28.5837516684489,,4.5
 10000.0,Mitte,Marzahn-Hellersdorf,2022,Branddelikte -insgesamt-,Arson Total,Property Crime,390.0,99.53270670263456,,4.0
 10000.0,Mitte,Marzahn-Hellersdorf,2022,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,7717.0,1969.4715323698229,,3.5
@@ -22966,23 +22847,6 @@ area_id,locality,neighborhood,year,crime_type_german,crime_type_english,category
 999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2022,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,422.0,,,2.5
 999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2022,Straftaten -insgesamt-,Total Crimes,Overall,52375.0,,,1.0
 999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2022,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,29.0,,,3.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2022,Brand- stiftung,Arson,Property Crime,1052.0,27.525713123982666,,4.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2022,Branddelikte -insgesamt-,Arson Total,Property Crime,3106.0,81.2688830447625,,4.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2022,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,44425.0,1162.385746704306,,3.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2022,Fahrrad- diebstahl,Bicycle Theft,Property Crime,28801.0,753.5818095853847,,1.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2022,"Freiheits-beraubung, Nötigung, Bedrohung, Nachstellung",Coercion and Threats,Violent Crime,20672.0,540.8854959115681,,3.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2022,Rauschgift-delikte,Drug Crimes,Drug Offense,17062.0,446.4293890887759,,2.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2022,Sach-beschädigung durch Graffiti,Graffiti Vandalism,Property Crime,8773.0,229.5466551679657,,1.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2022,Kieztaten,Neighborhood Crimes,Public Order,112803.0,2951.504769510092,,2.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2022,Sach-beschädigung -insgesamt-,Property Damage Total,Property Crime,44837.0,1173.1657788403145,,1.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2022,Wohnraum- einbruch,Residential Burglary,Property Crime,6155.0,161.04635387653357,,3.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2022,Raub,Robbery,Violent Crime,5016.0,131.24427474324816,,4.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2022,Gefährl. und schwere Körper-verletzung,Serious Assault,Violent Crime,11834.0,309.6381075182613,,4.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2022,"Straßenraub, Handtaschen-raub",Street Robbery,Violent Crime,3284.0,85.92627556954285,,4.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2022,Diebstahl -insgesamt-,Theft Total,Property Crime,213803.0,5594.182550424777,,2.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2022,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,33432.0,874.7525106093046,,2.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2022,Straftaten -insgesamt-,Total Crimes,Overall,519827.0,13601.339235837013,,1.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2022,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,5581.0,146.02757124044416,,3.0
 10000.0,Mitte,Marzahn-Hellersdorf,2023,Brand- stiftung,Arson,Property Crime,137.0,34.0,,4.5
 10000.0,Mitte,Marzahn-Hellersdorf,2023,Branddelikte -insgesamt-,Arson Total,Property Crime,420.0,106.0,,4.0
 10000.0,Mitte,Marzahn-Hellersdorf,2023,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,8144.0,2050.0,,3.5
@@ -25839,23 +25703,6 @@ area_id,locality,neighborhood,year,crime_type_german,crime_type_english,category
 999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2023,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,504.0,,,2.5
 999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2023,Straftaten -insgesamt-,Total Crimes,Overall,56425.0,,,1.0
 999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2023,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,38.0,,,3.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2023,Brand- stiftung,Arson,Property Crime,1125.0,,,4.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2023,Branddelikte -insgesamt-,Arson Total,Property Crime,3286.0,,,4.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2023,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,48254.0,,,3.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2023,Fahrrad- diebstahl,Bicycle Theft,Property Crime,28754.0,,,1.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2023,"Freiheits-beraubung, Nötigung, Bedrohung, Nachstellung",Coercion and Threats,Violent Crime,23989.0,,,3.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2023,Rauschgift-delikte,Drug Crimes,Drug Offense,17502.0,,,2.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2023,Sach-beschädigung durch Graffiti,Graffiti Vandalism,Property Crime,7448.0,,,1.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2023,Kieztaten,Neighborhood Crimes,Public Order,119737.0,,,2.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2023,Sach-beschädigung -insgesamt-,Property Damage Total,Property Crime,45434.0,,,1.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2023,Wohnraum- einbruch,Residential Burglary,Property Crime,8323.0,,,3.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2023,Raub,Robbery,Violent Crime,5389.0,,,4.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2023,Gefährl. und schwere Körper-verletzung,Serious Assault,Violent Crime,12610.0,,,4.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2023,"Straßenraub, Handtaschen-raub",Street Robbery,Violent Crime,3333.0,,,4.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2023,Diebstahl -insgesamt-,Theft Total,Property Crime,226393.0,,,2.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2023,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,38994.0,,,2.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2023,Straftaten -insgesamt-,Total Crimes,Overall,536695.0,,,1.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2023,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,7781.0,,,3.0
 10000.0,Mitte,Marzahn-Hellersdorf,2024,Brand- stiftung,Arson,Property Crime,150.0,37.77062653915303,,4.5
 10000.0,Mitte,Marzahn-Hellersdorf,2024,Branddelikte -insgesamt-,Arson Total,Property Crime,473.0,119.10337568679589,,4.0
 10000.0,Mitte,Marzahn-Hellersdorf,2024,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,8885.0,2237.280112002498,,3.5
@@ -28712,20 +28559,3 @@ area_id,locality,neighborhood,year,crime_type_german,crime_type_english,category
 999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2024,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,497.0,,,2.5
 999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2024,Straftaten -insgesamt-,Total Crimes,Overall,65970.0,,,1.0
 999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2024,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,42.0,,,3.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2024,Brand- stiftung,Arson,Property Crime,1007.0,25.96632371522137,,4.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2024,Branddelikte -insgesamt-,Arson Total,Property Crime,3175.0,81.8699878806632,,4.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2024,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,50638.0,1305.742502771976,,3.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2024,Fahrrad- diebstahl,Bicycle Theft,Property Crime,27099.0,698.7700162450684,,1.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2024,"Freiheits-beraubung, Nötigung, Bedrohung, Nachstellung",Coercion and Threats,Violent Crime,25390.0,654.7020448157602,,3.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2024,Rauschgift-delikte,Drug Crimes,Drug Offense,14446.0,372.50199840127897,,2.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2024,Sach-beschädigung durch Graffiti,Graffiti Vandalism,Property Crime,7866.0,202.83128336040843,,1.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2024,Kieztaten,Neighborhood Crimes,Public Order,128873.0,3323.096361620381,,2.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2024,Sach-beschädigung -insgesamt-,Property Damage Total,Property Crime,47040.0,1212.9651117815424,,1.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2024,Wohnraum- einbruch,Residential Burglary,Property Crime,8529.0,219.9272839792682,,3.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2024,Raub,Robbery,Violent Crime,5121.0,132.04919935019726,,4.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2024,Gefährl. und schwere Körper-verletzung,Serious Assault,Violent Crime,13847.0,357.05629045150977,,4.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2024,"Straßenraub, Handtaschen-raub",Street Robbery,Violent Crime,3136.0,80.86434078543617,,4.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2024,Diebstahl -insgesamt-,Theft Total,Property Crime,223586.0,5765.34901111369,,2.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2024,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,36841.0,949.9755034681932,,2.5
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2024,Straftaten -insgesamt-,Total Crimes,Overall,539049.0,13899.822077821613,,1.0
-999999.0,Berlin (PKS gesamt),Treptow-Köpenick,2024,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,7574.0,195.30182305768287,,3.0
