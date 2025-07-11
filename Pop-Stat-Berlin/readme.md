@@ -32,7 +32,7 @@ File: SB_A01-05-00_2024h02_BE.xlsx (Population by age groups, neighbourhood and 
  Relevant Columns:
 
  
-* Neighborhood
+* District
 * Maritalstatus
 * Gender (M, F)
 * Age_Groups (0–5, 6–10, ..., 80+)
@@ -52,7 +52,7 @@ File: SB_A01-05-00_2024h02_BE.xlsx (Population by age groups, neighbourhood and 
 
 | Column                 | Type      | Description                                         |
 |------------------------|-----------|-----------------------------------------------------|
-| `neighborhood`                   | STRING      | District name (Bezirk)         |
+| `district`                   | STRING      | District name (Bezirk)         |
 | `male`             | INTEGER     | Number of male residents                               |
 | `female`            | INTEGER      | Number of female residents                      |
 | `germans`     | INTEGER      | Number of german residents    |
