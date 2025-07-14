@@ -2838,23 +2838,6 @@ area_id,locality,neighborhood,year,crime_type_german,crime_type_english,category
 129900.0,"Bezirk (Rd), nicht zuzuordnen",Reinickendorf,2015,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,149.0,,,2.5
 129900.0,"Bezirk (Rd), nicht zuzuordnen",Reinickendorf,2015,Straftaten -insgesamt-,Total Crimes,Overall,201.0,,,1.0
 129900.0,"Bezirk (Rd), nicht zuzuordnen",Reinickendorf,2015,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,20.0,,,3.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2015,Brand- stiftung,Arson,Property Crime,7.0,,,4.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2015,Branddelikte -insgesamt-,Arson Total,Property Crime,15.0,,,4.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2015,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,1323.0,,,3.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2015,Fahrrad- diebstahl,Bicycle Theft,Property Crime,307.0,,,1.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2015,"Freiheits-beraubung, Nötigung, Bedrohung, Nachstellung",Coercion and Threats,Violent Crime,677.0,,,3.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2015,Rauschgift-delikte,Drug Crimes,Drug Offense,577.0,,,2.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2015,Sach-beschädigung durch Graffiti,Graffiti Vandalism,Property Crime,649.0,,,1.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2015,Kieztaten,Neighborhood Crimes,Public Order,2369.0,,,2.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2015,Sach-beschädigung -insgesamt-,Property Damage Total,Property Crime,1691.0,,,1.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2015,Wohnraum- einbruch,Residential Burglary,Property Crime,10.0,,,3.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2015,Raub,Robbery,Violent Crime,89.0,,,4.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2015,Gefährl. und schwere Körper-verletzung,Serious Assault,Violent Crime,362.0,,,4.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2015,"Straßenraub, Handtaschen-raub",Street Robbery,Violent Crime,37.0,,,4.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2015,Diebstahl -insgesamt-,Theft Total,Property Crime,15757.0,,,2.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2015,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,372.0,,,2.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2015,Straftaten -insgesamt-,Total Crimes,Overall,59169.0,,,1.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2015,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,43.0,,,3.0
 10000.0,Mitte,Marzahn-Hellersdorf,2016,Brand- stiftung,Arson,Property Crime,112.0,30.0,,4.5
 10000.0,Mitte,Marzahn-Hellersdorf,2016,Branddelikte -insgesamt-,Arson Total,Property Crime,309.0,84.0,,4.0
 10000.0,Mitte,Marzahn-Hellersdorf,2016,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,7446.0,2012.0,,3.5
@@ -5694,23 +5677,6 @@ area_id,locality,neighborhood,year,crime_type_german,crime_type_english,category
 129900.0,"Bezirk (Rd), nicht zuzuordnen",Reinickendorf,2016,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,210.0,,,2.5
 129900.0,"Bezirk (Rd), nicht zuzuordnen",Reinickendorf,2016,Straftaten -insgesamt-,Total Crimes,Overall,0.0,,,1.0
 129900.0,"Bezirk (Rd), nicht zuzuordnen",Reinickendorf,2016,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,17.0,,,3.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2016,Brand- stiftung,Arson,Property Crime,5.0,,,4.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2016,Branddelikte -insgesamt-,Arson Total,Property Crime,13.0,,,4.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2016,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,1378.0,,,3.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2016,Fahrrad- diebstahl,Bicycle Theft,Property Crime,282.0,,,1.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2016,"Freiheits-beraubung, Nötigung, Bedrohung, Nachstellung",Coercion and Threats,Violent Crime,795.0,,,3.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2016,Rauschgift-delikte,Drug Crimes,Drug Offense,473.0,,,2.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2016,Sach-beschädigung durch Graffiti,Graffiti Vandalism,Property Crime,551.0,,,1.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2016,Kieztaten,Neighborhood Crimes,Public Order,2720.0,,,2.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2016,Sach-beschädigung -insgesamt-,Property Damage Total,Property Crime,1750.0,,,1.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2016,Wohnraum- einbruch,Residential Burglary,Property Crime,19.0,,,3.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2016,Raub,Robbery,Violent Crime,110.0,,,4.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2016,Gefährl. und schwere Körper-verletzung,Serious Assault,Violent Crime,403.0,,,4.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2016,"Straßenraub, Handtaschen-raub",Street Robbery,Violent Crime,53.0,,,4.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2016,Diebstahl -insgesamt-,Theft Total,Property Crime,18554.0,,,2.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2016,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,347.0,,,2.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2016,Straftaten -insgesamt-,Total Crimes,Overall,55826.0,,,1.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2016,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,44.0,,,3.0
 10000.0,Mitte,Marzahn-Hellersdorf,2017,Brand- stiftung,Arson,Property Crime,113.0,30.0,,4.5
 10000.0,Mitte,Marzahn-Hellersdorf,2017,Branddelikte -insgesamt-,Arson Total,Property Crime,287.0,77.0,,4.0
 10000.0,Mitte,Marzahn-Hellersdorf,2017,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,7856.0,2101.0,,3.5
@@ -8550,23 +8516,6 @@ area_id,locality,neighborhood,year,crime_type_german,crime_type_english,category
 129900.0,"Bezirk (Rd), nicht zuzuordnen",Reinickendorf,2017,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,174.0,,,2.5
 129900.0,"Bezirk (Rd), nicht zuzuordnen",Reinickendorf,2017,Straftaten -insgesamt-,Total Crimes,Overall,1606.0,,,1.0
 129900.0,"Bezirk (Rd), nicht zuzuordnen",Reinickendorf,2017,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,30.0,,,3.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2017,Brand- stiftung,Arson,Property Crime,2.0,,,4.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2017,Branddelikte -insgesamt-,Arson Total,Property Crime,5.0,,,4.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2017,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,459.0,,,3.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2017,Fahrrad- diebstahl,Bicycle Theft,Property Crime,243.0,,,1.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2017,"Freiheits-beraubung, Nötigung, Bedrohung, Nachstellung",Coercion and Threats,Violent Crime,715.0,,,3.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2017,Rauschgift-delikte,Drug Crimes,Drug Offense,574.0,,,2.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2017,Sach-beschädigung durch Graffiti,Graffiti Vandalism,Property Crime,485.0,,,1.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2017,Kieztaten,Neighborhood Crimes,Public Order,1389.0,,,2.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2017,Sach-beschädigung -insgesamt-,Property Damage Total,Property Crime,819.0,,,1.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2017,Wohnraum- einbruch,Residential Burglary,Property Crime,8.0,,,3.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2017,Raub,Robbery,Violent Crime,77.0,,,4.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2017,Gefährl. und schwere Körper-verletzung,Serious Assault,Violent Crime,133.0,,,4.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2017,"Straßenraub, Handtaschen-raub",Street Robbery,Violent Crime,30.0,,,4.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2017,Diebstahl -insgesamt-,Theft Total,Property Crime,7852.0,,,2.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2017,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,432.0,,,2.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2017,Straftaten -insgesamt-,Total Crimes,Overall,38438.0,,,1.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2017,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,24.0,,,3.0
 10000.0,Mitte,Marzahn-Hellersdorf,2018,Brand- stiftung,Arson,Property Crime,75.0,20.0,,4.5
 10000.0,Mitte,Marzahn-Hellersdorf,2018,Branddelikte -insgesamt-,Arson Total,Property Crime,245.0,65.0,,4.0
 10000.0,Mitte,Marzahn-Hellersdorf,2018,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,7450.0,1963.0,,3.5
@@ -11406,23 +11355,6 @@ area_id,locality,neighborhood,year,crime_type_german,crime_type_english,category
 129900.0,"Bezirk (Rd), nicht zuzuordnen",Reinickendorf,2018,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,137.0,,,2.5
 129900.0,"Bezirk (Rd), nicht zuzuordnen",Reinickendorf,2018,Straftaten -insgesamt-,Total Crimes,Overall,1516.0,,,1.0
 129900.0,"Bezirk (Rd), nicht zuzuordnen",Reinickendorf,2018,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,12.0,,,3.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2018,Brand- stiftung,Arson,Property Crime,3.0,,,4.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2018,Branddelikte -insgesamt-,Arson Total,Property Crime,4.0,,,4.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2018,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,512.0,,,3.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2018,Fahrrad- diebstahl,Bicycle Theft,Property Crime,257.0,,,1.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2018,"Freiheits-beraubung, Nötigung, Bedrohung, Nachstellung",Coercion and Threats,Violent Crime,694.0,,,3.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2018,Rauschgift-delikte,Drug Crimes,Drug Offense,566.0,,,2.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2018,Sach-beschädigung durch Graffiti,Graffiti Vandalism,Property Crime,386.0,,,1.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2018,Kieztaten,Neighborhood Crimes,Public Order,1399.0,,,2.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2018,Sach-beschädigung -insgesamt-,Property Damage Total,Property Crime,851.0,,,1.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2018,Wohnraum- einbruch,Residential Burglary,Property Crime,6.0,,,3.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2018,Raub,Robbery,Violent Crime,65.0,,,4.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2018,Gefährl. und schwere Körper-verletzung,Serious Assault,Violent Crime,157.0,,,4.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2018,"Straßenraub, Handtaschen-raub",Street Robbery,Violent Crime,32.0,,,4.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2018,Diebstahl -insgesamt-,Theft Total,Property Crime,7191.0,,,2.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2018,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,403.0,,,2.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2018,Straftaten -insgesamt-,Total Crimes,Overall,46075.0,,,1.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2018,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,28.0,,,3.0
 10000.0,Mitte,Marzahn-Hellersdorf,2019,Brand- stiftung,Arson,Property Crime,104.0,27.0,,4.5
 10000.0,Mitte,Marzahn-Hellersdorf,2019,Branddelikte -insgesamt-,Arson Total,Property Crime,291.0,76.0,,4.0
 10000.0,Mitte,Marzahn-Hellersdorf,2019,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,7595.0,1977.0,,3.5
@@ -14262,23 +14194,6 @@ area_id,locality,neighborhood,year,crime_type_german,crime_type_english,category
 129900.0,"Bezirk (Rd), nicht zuzuordnen",Reinickendorf,2019,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,103.0,,,2.5
 129900.0,"Bezirk (Rd), nicht zuzuordnen",Reinickendorf,2019,Straftaten -insgesamt-,Total Crimes,Overall,1750.0,,,1.0
 129900.0,"Bezirk (Rd), nicht zuzuordnen",Reinickendorf,2019,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,10.0,,,3.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2019,Brand- stiftung,Arson,Property Crime,1.0,,,4.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2019,Branddelikte -insgesamt-,Arson Total,Property Crime,8.0,,,4.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2019,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,450.0,,,3.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2019,Fahrrad- diebstahl,Bicycle Theft,Property Crime,255.0,,,1.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2019,"Freiheits-beraubung, Nötigung, Bedrohung, Nachstellung",Coercion and Threats,Violent Crime,760.0,,,3.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2019,Rauschgift-delikte,Drug Crimes,Drug Offense,616.0,,,2.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2019,Sach-beschädigung durch Graffiti,Graffiti Vandalism,Property Crime,416.0,,,1.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2019,Kieztaten,Neighborhood Crimes,Public Order,1417.0,,,2.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2019,Sach-beschädigung -insgesamt-,Property Damage Total,Property Crime,949.0,,,1.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2019,Wohnraum- einbruch,Residential Burglary,Property Crime,7.0,,,3.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2019,Raub,Robbery,Violent Crime,78.0,,,4.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2019,Gefährl. und schwere Körper-verletzung,Serious Assault,Violent Crime,140.0,,,4.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2019,"Straßenraub, Handtaschen-raub",Street Robbery,Violent Crime,41.0,,,4.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2019,Diebstahl -insgesamt-,Theft Total,Property Crime,6784.0,,,2.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2019,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,393.0,,,2.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2019,Straftaten -insgesamt-,Total Crimes,Overall,46705.0,,,1.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2019,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,24.0,,,3.0
 10000.0,Mitte,Marzahn-Hellersdorf,2020,Brand- stiftung,Arson,Property Crime,118.0,31.0,,4.5
 10000.0,Mitte,Marzahn-Hellersdorf,2020,Branddelikte -insgesamt-,Arson Total,Property Crime,364.0,96.0,,4.0
 10000.0,Mitte,Marzahn-Hellersdorf,2020,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,7319.0,1921.0,,3.5
@@ -17118,23 +17033,6 @@ area_id,locality,neighborhood,year,crime_type_german,crime_type_english,category
 129900.0,"Bezirk (Rd), nicht zuzuordnen",Reinickendorf,2020,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,97.0,,,2.5
 129900.0,"Bezirk (Rd), nicht zuzuordnen",Reinickendorf,2020,Straftaten -insgesamt-,Total Crimes,Overall,903.0,,,1.0
 129900.0,"Bezirk (Rd), nicht zuzuordnen",Reinickendorf,2020,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,10.0,,,3.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2020,Brand- stiftung,Arson,Property Crime,2.0,,,4.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2020,Branddelikte -insgesamt-,Arson Total,Property Crime,7.0,,,4.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2020,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,504.0,,,3.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2020,Fahrrad- diebstahl,Bicycle Theft,Property Crime,222.0,,,1.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2020,"Freiheits-beraubung, Nötigung, Bedrohung, Nachstellung",Coercion and Threats,Violent Crime,898.0,,,3.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2020,Rauschgift-delikte,Drug Crimes,Drug Offense,641.0,,,2.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2020,Sach-beschädigung durch Graffiti,Graffiti Vandalism,Property Crime,545.0,,,1.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2020,Kieztaten,Neighborhood Crimes,Public Order,1595.0,,,2.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2020,Sach-beschädigung -insgesamt-,Property Damage Total,Property Crime,1329.0,,,1.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2020,Wohnraum- einbruch,Residential Burglary,Property Crime,6.0,,,3.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2020,Raub,Robbery,Violent Crime,63.0,,,4.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2020,Gefährl. und schwere Körper-verletzung,Serious Assault,Violent Crime,147.0,,,4.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2020,"Straßenraub, Handtaschen-raub",Street Robbery,Violent Crime,23.0,,,4.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2020,Diebstahl -insgesamt-,Theft Total,Property Crime,5660.0,,,2.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2020,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,378.0,,,2.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2020,Straftaten -insgesamt-,Total Crimes,Overall,50525.0,,,1.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2020,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,23.0,,,3.0
 10000.0,Mitte,Marzahn-Hellersdorf,2021,Brand- stiftung,Arson,Property Crime,108.0,28.0,,4.5
 10000.0,Mitte,Marzahn-Hellersdorf,2021,Branddelikte -insgesamt-,Arson Total,Property Crime,354.0,92.0,,4.0
 10000.0,Mitte,Marzahn-Hellersdorf,2021,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,6730.0,1752.0,,3.5
@@ -19974,23 +19872,6 @@ area_id,locality,neighborhood,year,crime_type_german,crime_type_english,category
 129900.0,"Bezirk (Rd), nicht zuzuordnen",Reinickendorf,2021,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,63.0,,,2.5
 129900.0,"Bezirk (Rd), nicht zuzuordnen",Reinickendorf,2021,Straftaten -insgesamt-,Total Crimes,Overall,573.0,,,1.0
 129900.0,"Bezirk (Rd), nicht zuzuordnen",Reinickendorf,2021,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,5.0,,,3.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2021,Brand- stiftung,Arson,Property Crime,2.0,,,4.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2021,Branddelikte -insgesamt-,Arson Total,Property Crime,4.0,,,4.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2021,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,453.0,,,3.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2021,Fahrrad- diebstahl,Bicycle Theft,Property Crime,251.0,,,1.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2021,"Freiheits-beraubung, Nötigung, Bedrohung, Nachstellung",Coercion and Threats,Violent Crime,1020.0,,,3.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2021,Rauschgift-delikte,Drug Crimes,Drug Offense,751.0,,,2.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2021,Sach-beschädigung durch Graffiti,Graffiti Vandalism,Property Crime,402.0,,,1.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2021,Kieztaten,Neighborhood Crimes,Public Order,1703.0,,,2.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2021,Sach-beschädigung -insgesamt-,Property Damage Total,Property Crime,1546.0,,,1.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2021,Wohnraum- einbruch,Residential Burglary,Property Crime,9.0,,,3.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2021,Raub,Robbery,Violent Crime,65.0,,,4.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2021,Gefährl. und schwere Körper-verletzung,Serious Assault,Violent Crime,115.0,,,4.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2021,"Straßenraub, Handtaschen-raub",Street Robbery,Violent Crime,37.0,,,4.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2021,Diebstahl -insgesamt-,Theft Total,Property Crime,5171.0,,,2.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2021,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,371.0,,,2.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2021,Straftaten -insgesamt-,Total Crimes,Overall,49170.0,,,1.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2021,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,21.0,,,3.0
 10000.0,Mitte,Marzahn-Hellersdorf,2022,Brand- stiftung,Arson,Property Crime,112.0,28.5837516684489,,4.5
 10000.0,Mitte,Marzahn-Hellersdorf,2022,Branddelikte -insgesamt-,Arson Total,Property Crime,390.0,99.53270670263456,,4.0
 10000.0,Mitte,Marzahn-Hellersdorf,2022,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,7717.0,1969.4715323698229,,3.5
@@ -22830,23 +22711,6 @@ area_id,locality,neighborhood,year,crime_type_german,crime_type_english,category
 129900.0,"Bezirk (Rd), nicht zuzuordnen",Reinickendorf,2022,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,76.0,,,2.5
 129900.0,"Bezirk (Rd), nicht zuzuordnen",Reinickendorf,2022,Straftaten -insgesamt-,Total Crimes,Overall,691.0,,,1.0
 129900.0,"Bezirk (Rd), nicht zuzuordnen",Reinickendorf,2022,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,16.0,,,3.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2022,Brand- stiftung,Arson,Property Crime,5.0,,,4.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2022,Branddelikte -insgesamt-,Arson Total,Property Crime,10.0,,,4.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2022,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,539.0,,,3.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2022,Fahrrad- diebstahl,Bicycle Theft,Property Crime,221.0,,,1.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2022,"Freiheits-beraubung, Nötigung, Bedrohung, Nachstellung",Coercion and Threats,Violent Crime,1285.0,,,3.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2022,Rauschgift-delikte,Drug Crimes,Drug Offense,715.0,,,2.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2022,Sach-beschädigung durch Graffiti,Graffiti Vandalism,Property Crime,556.0,,,1.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2022,Kieztaten,Neighborhood Crimes,Public Order,2115.0,,,2.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2022,Sach-beschädigung -insgesamt-,Property Damage Total,Property Crime,1203.0,,,1.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2022,Wohnraum- einbruch,Residential Burglary,Property Crime,1.0,,,3.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2022,Raub,Robbery,Violent Crime,89.0,,,4.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2022,Gefährl. und schwere Körper-verletzung,Serious Assault,Violent Crime,155.0,,,4.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2022,"Straßenraub, Handtaschen-raub",Street Robbery,Violent Crime,49.0,,,4.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2022,Diebstahl -insgesamt-,Theft Total,Property Crime,6413.0,,,2.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2022,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,422.0,,,2.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2022,Straftaten -insgesamt-,Total Crimes,Overall,52375.0,,,1.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2022,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,29.0,,,3.0
 10000.0,Mitte,Marzahn-Hellersdorf,2023,Brand- stiftung,Arson,Property Crime,137.0,34.0,,4.5
 10000.0,Mitte,Marzahn-Hellersdorf,2023,Branddelikte -insgesamt-,Arson Total,Property Crime,420.0,106.0,,4.0
 10000.0,Mitte,Marzahn-Hellersdorf,2023,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,8144.0,2050.0,,3.5
@@ -25686,23 +25550,6 @@ area_id,locality,neighborhood,year,crime_type_german,crime_type_english,category
 129900.0,"Bezirk (Rd), nicht zuzuordnen",Reinickendorf,2023,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,92.0,,,2.5
 129900.0,"Bezirk (Rd), nicht zuzuordnen",Reinickendorf,2023,Straftaten -insgesamt-,Total Crimes,Overall,741.0,,,1.0
 129900.0,"Bezirk (Rd), nicht zuzuordnen",Reinickendorf,2023,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,18.0,,,3.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2023,Brand- stiftung,Arson,Property Crime,3.0,,,4.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2023,Branddelikte -insgesamt-,Arson Total,Property Crime,8.0,,,4.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2023,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,627.0,,,3.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2023,Fahrrad- diebstahl,Bicycle Theft,Property Crime,391.0,,,1.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2023,"Freiheits-beraubung, Nötigung, Bedrohung, Nachstellung",Coercion and Threats,Violent Crime,1688.0,,,3.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2023,Rauschgift-delikte,Drug Crimes,Drug Offense,734.0,,,2.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2023,Sach-beschädigung durch Graffiti,Graffiti Vandalism,Property Crime,490.0,,,1.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2023,Kieztaten,Neighborhood Crimes,Public Order,2558.0,,,2.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2023,Sach-beschädigung -insgesamt-,Property Damage Total,Property Crime,1065.0,,,1.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2023,Wohnraum- einbruch,Residential Burglary,Property Crime,6.0,,,3.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2023,Raub,Robbery,Violent Crime,98.0,,,4.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2023,Gefährl. und schwere Körper-verletzung,Serious Assault,Violent Crime,189.0,,,4.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2023,"Straßenraub, Handtaschen-raub",Street Robbery,Violent Crime,47.0,,,4.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2023,Diebstahl -insgesamt-,Theft Total,Property Crime,7787.0,,,2.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2023,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,504.0,,,2.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2023,Straftaten -insgesamt-,Total Crimes,Overall,56425.0,,,1.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2023,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,38.0,,,3.0
 10000.0,Mitte,Marzahn-Hellersdorf,2024,Brand- stiftung,Arson,Property Crime,150.0,37.77062653915303,,4.5
 10000.0,Mitte,Marzahn-Hellersdorf,2024,Branddelikte -insgesamt-,Arson Total,Property Crime,473.0,119.10337568679589,,4.0
 10000.0,Mitte,Marzahn-Hellersdorf,2024,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,8885.0,2237.280112002498,,3.5
@@ -28542,20 +28389,3 @@ area_id,locality,neighborhood,year,crime_type_german,crime_type_english,category
 129900.0,"Bezirk (Rd), nicht zuzuordnen",Reinickendorf,2024,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,68.0,,,2.5
 129900.0,"Bezirk (Rd), nicht zuzuordnen",Reinickendorf,2024,Straftaten -insgesamt-,Total Crimes,Overall,668.0,,,1.0
 129900.0,"Bezirk (Rd), nicht zuzuordnen",Reinickendorf,2024,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,13.0,,,3.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2024,Brand- stiftung,Arson,Property Crime,2.0,,,4.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2024,Branddelikte -insgesamt-,Arson Total,Property Crime,3.0,,,4.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2024,Körper-verletzungen -insgesamt-,Assault Total,Violent Crime,646.0,,,3.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2024,Fahrrad- diebstahl,Bicycle Theft,Property Crime,341.0,,,1.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2024,"Freiheits-beraubung, Nötigung, Bedrohung, Nachstellung",Coercion and Threats,Violent Crime,2235.0,,,3.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2024,Rauschgift-delikte,Drug Crimes,Drug Offense,811.0,,,2.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2024,Sach-beschädigung durch Graffiti,Graffiti Vandalism,Property Crime,468.0,,,1.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2024,Kieztaten,Neighborhood Crimes,Public Order,3198.0,,,2.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2024,Sach-beschädigung -insgesamt-,Property Damage Total,Property Crime,1023.0,,,1.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2024,Wohnraum- einbruch,Residential Burglary,Property Crime,6.0,,,3.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2024,Raub,Robbery,Violent Crime,127.0,,,4.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2024,Gefährl. und schwere Körper-verletzung,Serious Assault,Violent Crime,189.0,,,4.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2024,"Straßenraub, Handtaschen-raub",Street Robbery,Violent Crime,69.0,,,4.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2024,Diebstahl -insgesamt-,Theft Total,Property Crime,8488.0,,,2.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2024,Diebstahl an/aus Kfz,Theft from Vehicles,Property Crime,497.0,,,2.5
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2024,Straftaten -insgesamt-,Total Crimes,Overall,65970.0,,,1.0
-999900.0,"Stadtgebiet Berlin, nicht zuzuordnen",Berlin Unassigned,2024,Diebstahl von Kraftwagen,Vehicle Theft,Property Crime,42.0,,,3.0
