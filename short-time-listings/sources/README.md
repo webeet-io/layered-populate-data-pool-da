@@ -53,7 +53,7 @@ The schema is designed to:
 | `id`                       |int64      | Unique identifier for each listing.                                                           |
 | `host_id`                  |int64      | Unique identifier for the host.                                                               |
 | `neighborhood`             |object     | Name of the neighborhood where the listing is located.                                       |
-| `district`                 |string     | Larger administrative area or district containing the neighborhood.                          |
+| `district_id`                 |string     | Two-character string ("01" to "12") representing one of the 12 administrative districts (Bezirke) of Berlin.                          |
 | `latitude`                 |float64    | Latitude coordinate of the listing.                                                          |
 | `longitude`                |float64    | Longitude coordinate of the listing.                                                         |
 | `property_type`            |string     | Type of property (e.g., apartment, house).                                                   |
@@ -118,7 +118,8 @@ The schema is designed to:
     - Applied a mapping dictionary to rename values to human-readable and standardized district names (e.g., 'Charlottenburg-Wilm.' → 'Charlottenburg-Wilmersdorf').
 
     - Renamed the column to `district` for simplicity and clarity.
-
+    
+    - Added `district_id` column (Foreign Key) 
 ---
 
 ## 🛠️ 6. Database Integration
@@ -133,9 +134,6 @@ The schema is designed to:
   
    - Listings and neighborhoods via the `neighborhood` column.
      
-   - Listings and districts via the `district` column.
+   - Listings and districts via the `district_id` column.
   
 - Verified data integrity through test queries and cross-referenced values.
-  
-
----
