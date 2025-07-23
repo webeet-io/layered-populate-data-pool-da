@@ -86,30 +86,31 @@ WHERE table_schema = 'berlin_data';
 To inspect the constraints (like primary keys, foreign keys, unique constraints) on a specific table (e.g., employees in the berlin_data schema), you can use either a SQL query or a psql meta-command.
 
 Option 1: Using a SQL Query
-SELECT\
+SELECT  
 
-    tc.constraint_name,\
+    tc.constraint_name,  
     
-    tc.constraint_type,\
+    tc.constraint_type,  
     
-    kcu.column_name\
+    kcu.column_name  
     
-FROM\
+FROM  
 
-    information_schema.table_constraints AS tc\
+    information_schema.table_constraints AS tc  
     
-JOIN\
+JOIN  
 
-    information_schema.key_column_usage AS kcu
-ON\
-
-    tc.constraint_name = kcu.constraint_name\
+    information_schema.key_column_usage AS kcu  
     
-AND\
+ON  
 
-    tc.table_schema = kcu.table_schema\
+    tc.constraint_name = kcu.constraint_name  
     
-WHERE\
+AND  
+
+    tc.table_schema = kcu.table_schem  
+    
+WHERE  
 
     tc.table_schema = 'berlin_data' AND tc.table_name = 'employees';
 
