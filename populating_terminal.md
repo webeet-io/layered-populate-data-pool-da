@@ -1,5 +1,6 @@
 - host: psql -h layered-data-warehouse.cdg2ok68acsn.eu-central-1.rds.amazonaws.com -p 5432 -U postgres -d berlin_project_db -W
 - password: b319nnlsekSOfIiVDpRC
+- set defauls schema: SET search_path TO berlin_data, public;
 - checking the tables in schema:
   
   SELECT table_name
