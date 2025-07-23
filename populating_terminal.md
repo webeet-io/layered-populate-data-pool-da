@@ -35,11 +35,16 @@ To create a new table in your database, you use the CREATE TABLE SQL command. Yo
 
 Here's a general syntax and an example:
 
-CREATE TABLE your_schema_name.your_table_name (
-    column1_name data_type [CONSTRAINT],
-    column2_name data_type [CONSTRAINT],
-    -- Add more columns as needed
-    PRIMARY KEY (column1_name) -- Example of a primary key constraint
+CREATE TABLE your_schema_name.your_table_name (  
+
+    column1_name data_type [CONSTRAINT],  
+    
+    column2_name data_type [CONSTRAINT],  
+    
+    -- Add more columns as needed  
+    
+    PRIMARY KEY (column1_name) -- Example of a primary key constraint  
+    
 );
 
 Example: Creating an employees table in the berlin_data schema
