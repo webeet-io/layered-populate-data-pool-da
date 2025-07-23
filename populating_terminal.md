@@ -49,12 +49,18 @@ CREATE TABLE your_schema_name.your_table_name (
 
 Example: Creating an employees table in the berlin_data schema
 
-CREATE TABLE berlin_data.employees (
-    id SERIAL PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    email VARCHAR(255) UNIQUE,
-    hire_date DATE DEFAULT CURRENT_DATE,
-    salary DECIMAL(10, 2)
+CREATE TABLE berlin_data.employees ( 
+
+    id SERIAL PRIMARY KEY, 
+    
+    name VARCHAR(255) NOT NULL, 
+    
+    email VARCHAR(255) UNIQUE, 
+    
+    hire_date DATE DEFAULT CURRENT_DATE, 
+    
+    salary DECIMAL(10, 2) 
+    
 );
 
 id SERIAL PRIMARY KEY: Creates an auto-incrementing integer column id that serves as the primary key for the table.
