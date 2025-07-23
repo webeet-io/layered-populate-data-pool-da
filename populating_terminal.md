@@ -76,33 +76,47 @@ salary DECIMAL(10, 2): Creates a decimal number column salary that can store up 
 ## Checking Tables in a Schema
 To list all tables within a specific schema (e.g., berlin_data), use the following query:
 
-SELECT table_name
-FROM information_schema.tables
+SELECT table_name\
+
+FROM information_schema.tables\
+
 WHERE table_schema = 'berlin_data';
 
 ## Checking Constraints in a Table
 To inspect the constraints (like primary keys, foreign keys, unique constraints) on a specific table (e.g., employees in the berlin_data schema), you can use either a SQL query or a psql meta-command.
 
 Option 1: Using a SQL Query
-SELECT
-    tc.constraint_name,
-    tc.constraint_type,
-    kcu.column_name
-FROM
-    information_schema.table_constraints AS tc
-JOIN
+SELECT\
+
+    tc.constraint_name,\
+    
+    tc.constraint_type,\
+    
+    kcu.column_name\
+    
+FROM\
+
+    information_schema.table_constraints AS tc\
+    
+JOIN\
+
     information_schema.key_column_usage AS kcu
-ON
-    tc.constraint_name = kcu.constraint_name
-AND
-    tc.table_schema = kcu.table_schema
-WHERE
+ON\
+
+    tc.constraint_name = kcu.constraint_name\
+    
+AND\
+
+    tc.table_schema = kcu.table_schema\
+    
+WHERE\
+
     tc.table_schema = 'berlin_data' AND tc.table_name = 'employees';
 
 Option 2: Using psql Meta-Command (Easier)
 While connected to psql, you can use the \d+ command followed by the table name:
 
-\d+ berlin_data.employees
+**\d+ berlin_data.employees**
 
 This command provides a detailed description of the table, including columns, types, and constraints.
 
@@ -110,7 +124,7 @@ This command provides a detailed description of the table, including columns, ty
 To import data from a CSV file into a table, use the \copy command within the psql terminal. This command is executed on the client-side (your local machine), so the CSV file path should be accessible from where you run psql.
 
 Example:
-\copy berlin_data.employees (id, name) FROM '/path/to/your/employees.csv' DELIMITER ',' CSV HEADER;
+**\copy berlin_data.employees (id, name) FROM '/path/to/your/employees.csv' DELIMITER ',' CSV HEADER;**
 
 berlin_data.employees: The target table to insert data into.
 
