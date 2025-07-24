@@ -1,5 +1,5 @@
 Berlin Geographic Data Summary
-Generated: 2025-07-14 10:29:12
+Generated: 2025-07-23 14:20:36
 
 Districts: 12 records
 Neighborhoods: 96 records
