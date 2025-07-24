@@ -50,33 +50,34 @@ The schema is designed to:
 
 | Column Name                | Data Type | Description                                                                                   |
 |----------------------------|-----------|-----------------------------------------------------------------------------------------------|
-| `id`                       |int64      | Unique identifier for each listing.                                                           |
-| `host_id`                  |int64      | Unique identifier for the host.                                                               |
-| `neighborhood`             |object     | Name of the neighborhood where the listing is located.                                       |
-| `district_id`                 |string     | Two-character string ("01" to "12") representing one of the 12 administrative districts (Bezirke) of Berlin.                          |
-| `latitude`                 |float64    | Latitude coordinate of the listing.                                                          |
-| `longitude`                |float64    | Longitude coordinate of the listing.                                                         |
-| `property_type`            |string     | Type of property (e.g., apartment, house).                                                   |
-| `room_type`                |string     | Room type offered (e.g., entire home/apt, private room, shared room).                         |
-| `accommodates`             |int64      | Maximum number of guests the listing can accommodate.                                        |
-| `bedrooms`                 |Int64      | Number of bedrooms in the listing.                                                           |
-| `beds`                     |Int64      | Number of beds available in the listing.                                                     |
-| `amenities`                |string     | List of amenities offered (raw string with multiple items).                                  |
-| `price`                    |float64    | Price per night for the listing (cleaned of symbols and commas) in USD ($)                   |
-| `minimum_nights`           |int64      | Minimum number of nights required for booking.                                              |
-| `maximum_nights`           |int64      | Maximum number of nights allowed for booking.                                               |
-| `number_of_reviews`        |int64      | Total number of reviews received by the listing.                                            |
-| `review_scores_rating`     |float64    | Overall rating score given by reviewers.                                                    |
-| `review_scores_accuracy`   |float64    | Rating score for accuracy of the listing description.                                       |
-| `review_scores_cleanliness`|float64    | Rating score for cleanliness.                                                               |
-| `review_scores_checkin`    |float64    | Rating score for the check-in experience.                                                   |
-| `review_scores_communication`|float64  | Rating score for communication with the host.                                               |
-| `review_scores_location`   |float64    | Rating score for the location of the listing.                                              |
-| `review_scores_value`      |float64    | Rating score for value for money.                                                           |
-| `reviews_per_month`        |float64    | Average number of reviews the listing receives per month.                                   |
-| `bathrooms`                |float64    | Number of bathrooms (can be fractional, e.g., 1.5).                                         |
-| `is_shared`                |Int64      | Boolean indicating if the bathroom is shared (1 for shared, 0 for private).                 |
-| `geometry`                 |geometry   | Geospatial data representing the exact location and shape of the listing (point coordinates).|
+| `id`                       | int64     | Unique identifier for each listing.                                                           |
+| `host_id`                  | int64     | Unique identifier for the host.                                                               |
+| `neighborhood`             | object    | Name of the neighborhood where the listing is located.                                        |
+| `district_id`              | string    | Two-character string ("01" to "12") representing one of the 12 administrative districts (Bezirke) of Berlin. |
+| `district`                 | string    | Name of the district corresponding to the `district_id`. Lowercased for consistency.          |
+| `latitude`                 | float64   | Latitude coordinate of the listing.                                                           |
+| `longitude`                | float64   | Longitude coordinate of the listing.                                                          |
+| `property_type`            | string    | Type of property (e.g., apartment, house).                                                    |
+| `room_type`                | string    | Room type offered (e.g., entire home/apt, private room, shared room).                         |
+| `accommodates`             | int64     | Maximum number of guests the listing can accommodate.                                         |
+| `bedrooms`                 | Int64     | Number of bedrooms in the listing.                                                            |
+| `beds`                     | Int64     | Number of beds available in the listing.                                                      |
+| `amenities`                | string    | List of amenities offered (raw string with multiple items).                                   |
+| `price`                    | float64   | Price per night for the listing (cleaned of symbols and commas) in USD ($).                   |
+| `minimum_nights`           | int64     | Minimum number of nights required for booking.                                                |
+| `maximum_nights`           | int64     | Maximum number of nights allowed for booking.                                                 |
+| `number_of_reviews`        | int64     | Total number of reviews received by the listing.                                              |
+| `review_scores_rating`     | float64   | Overall rating score given by reviewers.                                                      |
+| `review_scores_accuracy`   | float64   | Rating score for accuracy of the listing description.                                         |
+| `review_scores_cleanliness`| float64   | Rating score for cleanliness.                                                                 |
+| `review_scores_checkin`    | float64   | Rating score for the check-in experience.                                                     |
+| `review_scores_communication`| float64 | Rating score for communication with the host.                                                 |
+| `review_scores_location`   | float64   | Rating score for the location of the listing.                                                 |
+| `review_scores_value`      | float64   | Rating score for value for money.                                                             |
+| `reviews_per_month`        | float64   | Average number of reviews the listing receives per month.                                     |
+| `bathrooms`                | float64   | Number of bathrooms (can be fractional, e.g., 1.5).                                            |
+| `is_shared`                | Int64     | Boolean indicating if the bathroom is shared (1 for shared, 0 for private).                   |
+| `geometry`                 | geometry  | Geospatial data representing the exact location and shape of the listing (point coordinates). |
 
 ---
 
