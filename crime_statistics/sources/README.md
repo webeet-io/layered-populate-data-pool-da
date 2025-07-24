@@ -2,14 +2,14 @@
 
 [![Data Source](https://img.shields.io/badge/Source-Berlin%20Police-blue.svg)](https://www.kriminalitaetsatlas.berlin.de/)
 [![Data Period](https://img.shields.io/badge/Period-2015--2024-green.svg)](https://daten.berlin.de/datensaetze/kriminalitatsatlas-berlin)
-[![Coverage](https://img.shields.io/badge/Coverage-166%20Localities-orange.svg)](https://daten.berlin.de)
+[![Coverage](https://img.shields.io/badge/Coverage-166%20Neighborhoods-orange.svg)](https://daten.berlin.de)
 [![Districts](https://img.shields.io/badge/Districts-12%20Official-blue.svg)](https://github.com)
 [![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen.svg)](https://github.com)
 [![Database](https://img.shields.io/badge/Database-PostgreSQL-blue.svg)](https://neon.tech)
 
 ## 📋 Overview
 
-Complete crime statistics data layer for Berlin, providing comprehensive crime and safety metrics for property analysis. **All three steps successfully implemented with mentor requirements**: Data Modeling, Data Transformation, and Database Population with full referential integrity for official Berlin administrative districts.
+Complete crime statistics data layer for Berlin, providing comprehensive crime and safety metrics for property analysis. **All three steps successfully implemented with mentor requirements**: Data Modeling, Data Transformation, and Database Population with new unified database schema.
 
 ## 🎯 Data Source
 
@@ -22,16 +22,17 @@ Complete crime statistics data layer for Berlin, providing comprehensive crime a
 - **Update Frequency**: Biennial (every 2 years)
 - **File**: `kriminalitaetsatlas_2015-2024.xlsx` (603KB)
 
-## 🗃️ Database Schema - Production Ready
+## 🗃️ Database Schema - New Unified Database
 
-### **PostgreSQL Table: `test_berlin_data.crime_statistics`**
+### **PostgreSQL Table: `crime_statistics`**
 
 | Column Name | Data Type | Constraints | Description |
 |-------------|-----------|-------------|-------------|
 | `id` | SERIAL | PRIMARY KEY | Auto-incrementing unique identifier |
 | `area_id` | VARCHAR(10) | NOT NULL | LOR area identifier |
-| `locality` | VARCHAR(100) | NOT NULL | Specific area name |
-| `neighborhood` | VARCHAR(100) | NOT NULL, FK | Berlin district (12 official districts) |
+| `neighborhood` | VARCHAR(100) | NOT NULL | Specific area name (formerly locality) |
+| `district` | VARCHAR(100) | NOT NULL, FK | Berlin district name (12 official districts) |
+| `district_id` | VARCHAR(2) | NOT NULL | District ID ('01', '02'...'12') |
 | `year` | INTEGER | NOT NULL, CHECK(2015-2024) | Data year range validation |
 | `crime_type_german` | VARCHAR(200) | NOT NULL | Original German crime type |
 | `crime_type_english` | VARCHAR(200) | NOT NULL | English translation |
@@ -43,206 +44,90 @@ Complete crime statistics data layer for Berlin, providing comprehensive crime a
 | `created_at` | TIMESTAMP | DEFAULT NOW() | Record creation timestamp |
 | `updated_at` | TIMESTAMP | DEFAULT NOW() | Last update timestamp |
 
+### 🆕 **New Unified Database Schema**
+- **district_id**: String IDs ('01'-'12') for standardized district referencing
+- **neighborhood**: Specific areas (formerly called 'locality') 
+- **district**: Official Berlin administrative districts
+- **Unified structure**: Compatible with all team datasets for integrated analysis
+
 ### 📊 Database Constraints & Relationships
 - **Primary Key**: `id` (auto-incrementing SERIAL)
-- **Foreign Key**: `neighborhood` → `test_berlin_data.neighborhood(neighborhood)` 
+- **Foreign Key**: `district` → unified district reference table
 - **Check Constraints**: 
   - Year validation: 2015-2024 range
   - Non-negative cases: total_number_cases ≥ 0
   - Severity bounds: 1.0 ≤ severity_weight ≤ 5.0
-  - Frequency validation: frequency_100k ≥ 0
-- **Data Integrity**: Comprehensive validation with existing neighborhood table integration
+  - District ID format: '01' through '12'
+- **Data Integrity**: Comprehensive validation with unified database structure
 
 ### 🏛️ Official District Coverage (12 Districts)
 
-| District | Area Codes | Population Coverage |
-|----------|------------|-------------------|
-| **Mitte** | 01xxx | Central Berlin |
-| **Friedrichshain-Kreuzberg** | 02xxx | Eastern central |
-| **Pankow** | 03xxx | Northern district |
-| **Charlottenburg-Wilmersdorf** | 04xxx | Western district |
-| **Spandau** | 05xxx | Northwestern |
-| **Steglitz-Zehlendorf** | 06xxx | Southwestern |
-| **Tempelhof-Schöneberg** | 07xxx | Southern |
-| **Neukölln** | 08xxx | Southeastern |
-| **Treptow-Köpenick** | 09xxx | Eastern |
-| **Marzahn-Hellersdorf** | 10xxx | Eastern outer |
-| **Lichtenberg** | 11xxx | Eastern |
-| **Reinickendorf** | 12xxx | Northern |
+| District | District ID | Area Codes | Population Coverage |
+|----------|-------------|------------|-------------------|
+| **Mitte** | 01 | 01xxx | Central Berlin |
+| **Friedrichshain-Kreuzberg** | 02 | 02xxx | Eastern central |
+| **Pankow** | 03 | 03xxx | Northern district |
+| **Charlottenburg-Wilmersdorf** | 04 | 04xxx | Western district |
+| **Spandau** | 05 | 05xxx | Northwestern |
+| **Steglitz-Zehlendorf** | 06 | 06xxx | Southwestern |
+| **Tempelhof-Schöneberg** | 07 | 07xxx | Southern |
+| **Neukölln** | 08 | 08xxx | Southeastern |
+| **Treptow-Köpenick** | 09 | 09xxx | Eastern |
+| **Marzahn-Hellersdorf** | 10 | 10xxx | Eastern outer |
+| **Lichtenberg** | 11 | 11xxx | Eastern |
+| **Reinickendorf** | 12 | 12xxx | Northern |
 
 ## 📈 Final Dataset Overview
 
 - **Records**: **28,390** total crime statistics (48% reduction from 54,740 intermediate records)
 - **Coverage**: 2015-2024 (10 years of complete data)
-- **Geographic**: **166 localities** across **12 Berlin districts** (official administrative districts)
+- **Geographic**: **166 neighborhoods** across **12 Berlin districts** (official administrative districts)
 - **Crime Types**: 17 categories with comprehensive German-English translations
-- **Structure**: One row per locality-year-crime combination (cases and frequency consolidated)
-- **Data Quality**: Official districts only - summary and unassigned records filtered for geographic precision
+- **Structure**: One row per neighborhood-year-crime combination (cases and frequency consolidated)
+- **Schema**: New unified database structure with district_id standardization
 
-## 🔧 Mentor Requirements Implementation
+## 🆕 New Database Schema Implementation
 
-### **Critical Issues Resolved**
-1. **Missing Districts**: Added 3 missing districts with official administrative boundaries (9 → 12 districts)
-2. **Data Loss Prevention**: Changed from INNER to OUTER join (preserved all location-based records)
-3. **Variable Consistency**: Fixed `processed_years` vs `years_processed` throughout codebase
-4. **Column Naming**: Implemented `absolute_cases` → `total_number_cases` requirement
-5. **Area Code Precision**: Identified inappropriate data categories and filtered them out
-6. **Geographic Accuracy**: Filtered out summary records (999999) and unassigned records (999900) for location-focused analysis
-7. **Official District Focus**: Clean implementation with 12 official Berlin administrative districts
-8. **Schema Alignment**: Perfect ERD compliance with all constraints
+### **Schema Transformation Completed**
+1. **Added district_id column**: String format ('01'-'12') for standardized referencing
+2. **Renamed locality → neighborhood**: Specific areas now called 'neighborhood'
+3. **Renamed neighborhood → district**: District names now called 'district'
+4. **Unified structure**: Compatible with team database integration
+5. **Enhanced validation**: Complete format and completeness checking
 
-### **Technical Challenges Overcome**
-- **Existing Neighborhood Table Integration**: 
-  - Worked with existing geometry-enabled table structure without modification
-  - Maintained referential integrity with existing database infrastructure
-  - Professional approach to shared database resources
-- **Foreign Key Constraint Implementation**:
-  - Maintained referential integrity with existing database
-  - Professional transaction handling and rollback management
-  - Explicit commit strategies for data consistency
-- **Data Classification Accuracy**:
-  - Precise area code targeting to eliminate inappropriate categories
-  - Eliminated summary data contamination for clean geographic analysis
-  - Ensured official district boundaries with geographic precision
-
-## 🚨 Crime Categories
-
-| Category | Types | Example Crimes | Severity Weight |
-|----------|-------|----------------|-----------------|
-| **Violent Crime** | 5 types | Robbery, Assault, Threats | 3.0-4.5 |
-| **Property Crime** | 9 types | Theft, Burglary, Vandalism | 1.0-4.5 |
-| **Drug Offense** | 1 type | Drug crimes | 2.5 |
-| **Public Order** | 1 type | Neighborhood crimes | 2.0 |
-| **Overall** | 1 type | Total crimes | 1.0 |
-
-## 🏗️ Implementation Steps - Complete
-
-### ✅ **Step 1: Data Modeling** 
-- ERD design with proper relationships
-- Database schema planning with constraints
-- Constraint specification and validation rules
-
-### ✅ **Step 2: Data Transformation**
-- Excel → CSV conversion (54,740 → 28,390 records)
-- German-English crime type translations (17 types)
-- **Official district mapping implementation** (12 administrative districts)
-- **Area code precision** (identified and filtered inappropriate data categories)
-- **Geographic data cleaning** (filtered out 493 summary and unassigned records)
-- **Mentor feedback integration** (100% requirements addressed)
-- **Join strategy optimization** (INNER → OUTER for data preservation)
-- Data consolidation and quality validation
-
-### ✅ **Step 3: Database Population**
-- PostgreSQL table creation with full constraint implementation
-- **Foreign key integration** with existing neighborhood table
-- **Geometry handling** for spatial database compatibility
-- Data insertion with **28,390 verified records**
-- Production testing in `test_berlin_data` schema
-- **Transaction management** and duplicate prevention
-
-## 📋 Data Quality Metrics
-
-- **Completeness**: 100% coverage for core fields (28,390 records)
-- **Consistency**: All crime types translated and categorized
-- **Accuracy**: Official Berlin Police data source validation
-- **Temporal**: Complete 10-year time series (2015-2024)
-- **Spatial**: **Official Berlin coverage** with 12 districts and 166 localities
-- **Geographic Precision**: Summary and unassigned records filtered for location-based analysis only
-- **Administrative Boundaries**: Only official Berlin administrative districts included
-- **Integrity**: Database constraints ensure data validity with FK relationships
-
-## 🎯 Integration Capabilities
-
-### **Database Features**
-- ✅ Production PostgreSQL table with **full constraint implementation**
-- ✅ **Foreign key relationships** with existing neighborhood geometry table
-- ✅ **Spatial compatibility** ready for geographic queries
-- ✅ **Automated timestamps** for comprehensive audit trails
-- ✅ **Transaction management** with rollback and recovery capabilities
-
-### **Analysis Ready**
-- ✅ **Official district-level** crime comparison queries (12 districts)
-- ✅ Year-over-year trend analysis with decade coverage
-- ✅ Crime category breakdowns and advanced filtering
-- ✅ Safety score calculations with severity weights
-- ✅ Geographic joins with neighborhood, property, and geometry data
-
-### **API Integration**
-- ✅ RESTful API endpoints ready for production
-- ✅ Property listing enrichment with crime statistics
-- ✅ Real-time safety score calculations
-- ✅ **Official district profiles** with all 12 administrative districts
-- ✅ **Geospatial queries** with geometry integration
+### **Migration Benefits**
+- **Standardized IDs**: All teams use same district_id format
+- **Clear hierarchy**: neighborhood (specific) → district (administrative)
+- **Database compatibility**: Ready for unified database population
+- **Professional structure**: Enterprise-grade database design
 
 ## 🚀 Production Status
 
-**🎉 FULLY IMPLEMENTED - ALL MENTOR REQUIREMENTS SATISFIED**
+**🎉 NEW UNIFIED DATABASE SCHEMA - READY FOR POPULATION**
 
-### **Database Location**
-- **Host**: NeonDB PostgreSQL (production-ready)
-- **Schema**: `test_berlin_data`
-- **Table**: `crime_statistics`
-- **Records**: **28,390 verified insertions**
-- **Districts**: **12 official administrative districts**
-- **Localities**: **166 total coverage**
+### **Schema Readiness**
+- **Records**: **28,390 verified with new schema**
+- **Districts**: **12 official with district_id mapping**
+- **Neighborhoods**: **166 total coverage**
+- **Format**: Unified database structure implemented
+- **Validation**: Complete schema compliance verified
 
-### **Quality Assurance**
-- ✅ **Complete data validation** passed (all 28,390 records)
-- ✅ **Constraint verification** successful (CHECK, FK, NOT NULL)
-- ✅ **Sample data inspection** completed with mentor review
-- ✅ **Perfect ERD alignment** confirmed and documented
-- ✅ **Foreign key relationships** established and tested
-- ✅ **Geographic integration** with existing spatial infrastructure
-
-### **Technical Excellence**
-- ✅ **Professional error handling** with transaction management
-- ✅ **Duplicate prevention** with cleanup capabilities
-- ✅ **Comprehensive logging** and progress reporting
-- ✅ **Production-ready code** with mentor approval
-- ✅ **Existing database integration** (no infrastructure disruption)
-
-### **Ready For:**
-- ✅ **Advanced property analysis** with official district coverage
-- ✅ **Geospatial API endpoints** with geometry integration
-- ✅ **Frontend dashboard implementation** with real-time data
-- ✅ **Machine learning models** with comprehensive feature set
-- ✅ **Multi-layer data integration** (ready for additional datasets)
+### **Next Steps**
+- ✅ **Schema transformation complete** - All mentor requirements satisfied
+- ✅ **Data validation passed** - 28,390 records ready
+- ⏳ **Awaiting database credentials** - New unified database access
+- ⏳ **Sequential population** - After Zarko's completion
 
 ---
 
-## 🔄 Data Processing Pipeline
-
-### **Transformation Process**
-1. **Raw Excel Processing**: 20 sheets → standardized structure
-2. **District Mapping**: Area codes → 12 official administrative districts
-3. **Area Code Precision**: Identified and filtered inappropriate data categories
-4. **Geographic Cleaning**: Summary records (999999) and unassigned records (999900) filtered for location accuracy
-5. **Language Translation**: German crime types → English equivalents  
-6. **Data Consolidation**: Cases + frequency → single row structure
-7. **Quality Validation**: Constraint checking and data integrity
-8. **Database Population**: PostgreSQL insertion with FK validation
-
-### **Mentor Feedback Integration**
-- **District Coverage**: Fixed missing 3 districts with official administrative boundaries (9 → 12)
-- **Data Preservation**: OUTER join prevents record loss (final 28,390 location-based records)
-- **Area Code Precision**: Identified specific codes and filtered inappropriate categories
-- **Geographic Accuracy**: Removed 493 summary (999999) and unassigned (999900) records
-- **Official District Focus**: Clean implementation with 12 official Berlin administrative districts
-- **Professional Integration**: Worked with existing database constraints without modification
-- **Variable Consistency**: Standardized naming throughout pipeline
-- **Schema Compliance**: Perfect ERD alignment with documentation
-
----
-
-**📊 Data Quality**: Production Ready with Full Validation  
-**🎯 Implementation Status**: Complete (Steps 1, 2, 3) with Mentor Approval  
-**🗃️ Database**: Populated, Verified, and Constraint-Compliant  
-**🏛️ Coverage**: Official Berlin (12 Districts, 166 Localities)  
+**📊 Data Quality**: Production Ready with New Schema  
+**🎯 Implementation Status**: Schema Migration Complete  
+**🗃️ Database**: Ready for Unified Database Population  
+**🏛️ Coverage**: Official Berlin (12 Districts, 166 Neighborhoods)  
 **🕐 Last Updated**: 2025-07-14  
-**📈 Status**: Ready for Production Integration
+**📈 Status**: Awaiting New Database Credentials
 
-**🏆 Project Achievement**: Exceptional delivery of complete crime statistics data layer with professional database implementation, comprehensive mentor feedback integration, and production-ready infrastructure focused on official Berlin administrative districts.**
-
+**🏆 Project Achievement**: Successfully implemented new unified database schema with district_id standardization, ready for team integration and production deployment.**
 
 
 
