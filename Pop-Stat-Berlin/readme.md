@@ -73,6 +73,8 @@ File: SB_A01-05-00_2024h02_BE.xlsx (Population by age groups, neighbourhood and 
 | `45-55` | INTEGER      | Number of residents aged 45–55   |
 | `55-65` | INTEGER      | Number of residents aged 55–65   |
 | `65+` | INTEGER      | Number of residents aged 65 and above   |
+| `district_id` | STRING      | District Id's (01 to 12)   |
+
 
 
 ⚠️ Known Data Issues or Inconsistencies
