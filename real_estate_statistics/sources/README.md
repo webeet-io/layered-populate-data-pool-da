@@ -25,8 +25,8 @@
 ## Modelling & Planning
 
 - **Key Parameters Selected**: From the gathered data, the following columns were selected as most relevant:
-    - `neighborhood_id`: Unique identifier for the district (1-12) (currently known as `district_id`)
-    - `neighborhood`: Name of the district (e.g., Mitte, Spandau, etc.) ((currently known as `district_name`))
+    - `district_id`: Unique identifier for the district (01-12)
+    - `district`: Name of the district (e.g., Mitte, Spandau, etc.) ((currently known as `district_name`))
     - `street_name`: Name of the street (e.g., Bremer Straße, Neu Westend, etc.)
     - `median_net_rent`: Median net cold rent in euros per square meter per month
     - `number_of_cases`: Number of rental listings (cases) used for calculating statistics
@@ -46,10 +46,10 @@
     - `number_of_residences`: Number of residential units or dwellings
     - `living_space_per_resident_m2`: Living area per resident in square meters
 
-- **Data Relationships**: All datasets in this project are connected using the `district_name` (will be renamed into `neighborhood`) field as the primary key for joins and integration.
+- **Data Relationships**: All datasets in this project are connected using the `district_id` field as the primary key for joins and integration.
 
-    - `neighborhood` (currently known as `district_name`): The standardized name of a Berlin administrative district (e.g., "Friedrichshain-Kreuzberg"). This field is used consistently across all data sources to enable merging and comparison.
-    - If available, `neighborhood_id` (currently known as `district_id`) may also be present for reference or indexing
+    - `district` (currently known as `district_name`): The standardized name of a Berlin administrative district (e.g., "Friedrichshain-Kreuzberg"). This field is used consistently across all data sources to enable merging and comparison.
+    - If available, `district_id` may also be present for reference or indexing
 
 - **Schema**:
     ![Raw Schema](sources_schema.png)
@@ -58,7 +58,7 @@
 - **Data Issues**: The datasets contain some missing or incomplete data points, which affect certain years and districts unevenly. Additionally, there are occasional inconsistencies in values that may arise from changes in data collection methods or reporting standards over time. Users should be aware of these limitations when analyzing trends across multiple years or comparing districts.
 
 - **Data Transformation Plan**: The dataset will undergo several transformations to ensure consistency, clarity, and readiness for analysis
-    - **Column Standardization**: Unify column names (e.g., rename district to neighborhood), apply consistent formatting (e.g., lowercase, snake_case).
+    - **Column Standardization**: Unify column names (e.g., rename district_name to district), apply consistent formatting (e.g., lowercase, snake_case).
     - **Data Type Consistency**: Ensure all columns have appropriate data types (e.g., dates, numbers, strings).
     - **Missing Data Handling**: Fill missing values using suitable methods (e.g., mean, forward-fill) or remove if necessary.
     - **Value Cleaning**: Normalize formatting (e.g., trim whitespace, unify label casing, map inconsistent entries).
