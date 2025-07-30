@@ -1,0 +1,151 @@
+district_id,district,name,address,post_code,distance,beds,cases,latitude,longitude
+01,Mitte,St. Hedwig-Krankenhaus Berlin,"Große Hamburger Straße 5-11
+10115 Berlin",10115,0.8,427,64515,52.52582662684028,13.396515830691005
+01,Mitte,Charité - Universitätsmedizin Berlin,"Charitéplatz 1
+10117 Berlin",10117,2.2,3011,1891343,52.52662465412624,13.376658301525385
+02,Friedrichshain-Kreuzberg,Vivantes Klinikum im Friedrichshain,"Landsberger Allee 49
+10249 Berlin",10249,2.4,956,111119,52.52476641204036,13.43904818247062
+03,Pankow,Psychiatrisch-Psychotherapeutische Tagesklinik St. Martha Prenzlauer Berg,"Diesterwegstr. 32
+10405 Berlin",10405,2.7,21,2004,52.5413743809574,13.430949
+02,Friedrichshain-Kreuzberg,Vivantes Klinikum Am Urban,"Dieffenbachstraße 1
+10967 Berlin",10967,2.9,607,65066,52.494275898889505,13.40892918516296
+01,Mitte,Bundeswehrkrankenhaus Berlin,"Scharnhosrtstraße 13
+10115 Berlin",10115,2.9,367,11522,52.535402359877416,13.370445000000002
+01,Mitte,Evangelische Elisabeth Klinik,"Lützowstraße 24-26
+10785 Berlin",10785,3.3,145,40651,52.5038038841173,13.364952542327249
+02,Friedrichshain-Kreuzberg,Entgiftungskrankenhaus Count Down,"Frankfurter Allee 40
+10247 Berlin",10247,3.9,12,359,52.51487928580479,13.462392084654498
+01,Mitte,Deutsches Herzzentrum der Charité (DHZC) ,"Augustenburger Platz 1
+13353 Berlin",13353,4.3,473,0,52.542487124999056,13.347066370325916
+01,Mitte,Franziskus-Krankenhaus Berlin,"Budapester Str. 15-19
+10787 Berlin",10787,4.3,185,25698,52.50637062379895,13.34512454232725
+08,Neukölln,"Vivantes Klinikum Neukölln, Psychosomatische Tagesklinik Sonnenallee","Sonnenallee 47
+12045 Berlin",12045,4.3,22,160,52.485818870542296,13.432526915345502
+01,Mitte,Jüdisches Krankenhaus Berlin - Stiftung des bürgerlichen Rechts,"Heinz-Galinski-Straße 1
+13347 Berlin",13347,4.6,384,40607,52.55570649087277,13.370581542327248
+01,Mitte,DRK Kliniken Berlin Mitte,"Drontheimer Straße 39-40
+13359 Berlin",13359,4.6,260,23437,52.55754666146648,13.376381626981745
+01,Mitte,Evangelisches Geriatriezentrum Berlin gGmbH (EGZB),"Reinickendorfer Straße 61
+13347 Berlin",13347,4.7,192,3332,52.554722031188575,13.363412486688343
+07,Tempelhof-Schöneberg,Klinik Schöneberg GmbH,"Fuggerstraße 23
+10777 Berlin",10777,4.7,34,2936,52.49879772845986,13.34462345767275
+02,Friedrichshain-Kreuzberg,Augenklinik im Ring-Center GmbH,"Frankfurter Allee 111
+10247 Berlin",10247,4.7,17,6549,52.514456520970285,13.47390945767275
+03,Pankow,Park-Klinik Weißensee,"Schönstraße 80
+13086 Berlin",13086,5.0,370,32805,52.55562086077847,13.451278357164291
+11,Lichtenberg,Ev. Krankenhaus Königin Elisabeth Herzberge - Tagesklinik City Point Center für Psychische Gesundheit,"Weißenseer Weg (Roederplatz) 111
+10369 Berlin",10369,5.0,64,527,52.527366617457034,13.478810373018252
+07,Tempelhof-Schöneberg,St.Joseph Krankenhaus,"Wüsthoffstraße 15
+12101 Berlin",12101,5.1,506,80714,52.478615776342544,13.372421
+03,Pankow,Alexianer St. Joseph-Krankenhaus Berlin-Weißensee,"Gartenstr. 1
+13088 Berlin",13088,5.5,323,17473,52.551043378153665,13.468248288363757
+01,Mitte,Alexianer - Müllerstraße,"Müllerstraße 56-58
+13349 Berlin",13349,5.5,18,159,52.55438754582734,13.346307830691007
+07,Tempelhof-Schöneberg,"Vivantes Auguste-Viktoria-Klinikum, Tagesklinik Psychosenpsychotherapie/ CBASP (Dominicusstraße)","Dominicusstraße 5-9
+10823 Berlin",10823,5.6,20,103,52.48421208246301,13.346080626981747
+03,Pankow,Caritas-Klinik Maria Heimsuchung Berlin-Pankow,"Breite Straße 46/47
+13187 Berlin",13187,5.8,245,43519,52.572035303936545,13.414034
+11,Lichtenberg,Ev. Krankenhaus Königin Elisabeth Herzberge - Tagesklinik Hohenschönhausen,"Reichenberger Straße 3
+13055 Berlin",13055,6.0,24,181,52.54075328307837,13.486921084654497
+08,Neukölln,"Vivantes Klinikum Neukölln, Tagesklinik Emser Straße","Emser Straße 31
+12051 Berlin",12051,6.0,20,142,52.46913782842139,13.43265145767275
+11,Lichtenberg,Sana Klinikum Lichtenberg,"Fanningerstraße 32
+10365 Berlin",10365,6.1,672,67218,52.51444787135124,13.49431145767275
+04,Charlottenburg-Wilmersdorf,Friedrich von Bodelschwingh-Klinik,"Landhausstrasse 33-35
+10717 Berlin",10717,6.1,163,5,52.48994871406238,13.328943626981744
+04,Charlottenburg-Wilmersdorf,"Friedrich von Bodelschwingh Klinik Bethel, Psychosomatische Tagesklinik für Trauma, Angst und Zwang (TAZ)","Uhlandstrasse 97
+10717 Berlin",10717,6.1,14,0,52.486271400554045,13.32148
+07,Tempelhof-Schöneberg,Vivantes Wenckebach-Klinikum,"Wenckebachstraße 23
+12099 Berlin",12099,6.9,308,5981,52.45943880698719,13.388170915345501
+11,Lichtenberg,Ev. Krankenhaus Königin Elisabeth Herzberge,"Herzbergstr. 79
+10365 Berlin",10365,7.1,698,50891,52.52725261707894,13.509349200561054
+04,Charlottenburg-Wilmersdorf,Sankt Gertrauden-Krankenhaus GmbH,"Paretzer Straße 12
+10713 Berlin",10713,7.4,384,64037,52.48106103614076,13.31715537301825
+07,Tempelhof-Schöneberg,Vivantes Auguste-Viktoria-Klinikum,"Rubensstraße 125
+12157 Berlin",12157,7.6,742,65235,52.46313171417537,13.346381373018254
+08,Neukölln,"Vivantes Klinikum Neukölln, Tagesklinik Riesestraße","Riesestraße 1
+12347 Berlin",12347,7.7,20,100,52.45494290640635,13.44469554232725
+04,Charlottenburg-Wilmersdorf,Schlosspark-Klinik GmbH,"Heubnerweg 2
+14059 Berlin",14059,7.8,340,22975,52.522632702259266,13.288980915345503
+12,Reinickendorf,"Vivantes Humboldt-Klinikum, Ambulatorium Seelische Gesundheit","Waldstraße 86-90
+13403 Berlin",13403,8.1,60,618,52.57573240301,13.326422373018254
+04,Charlottenburg-Wilmersdorf,"Martin Luther Krankenhaus, Berlin","Caspar-Theyß-Straße 27-31
+14193 Berlin",14193,8.4,275,43828,52.49118348613914,13.291586575381348
+04,Charlottenburg-Wilmersdorf,DRK Kliniken Berlin Westend,"Spandauer Damm 130
+14050 Berlin",14050,8.7,590,101702,52.51916383841576,13.277075830691007
+04,Charlottenburg-Wilmersdorf,DRK Kliniken Berlin Wiegmann Klinik,"Spandauer Damm 130
+14050 Berlin",14050,8.7,59,450,52.519111610751644,13.277054373018256
+09,Treptow-Köpenick,"Alexianer Krankenhaus Hedwigshöhe, Tageskliniken St. Helena und St. Christophorus Edisonstraße","Edisonstraße 15
+12459 Berlin",12459,9.7,30,216,52.46389571043177,13.5141119153455
+08,Neukölln,Vivantes Klinikum Neukölln,"Rudower Straße 48
+12351 Berlin",12351,9.8,1377,123736,52.437654189682384,13.457690282979083
+12,Reinickendorf,Vitanas Klinik & Tagesklinik für Geriatrie,"Senftenberger Ring 51
+13435 Berlin",13435,10.0,105,1600,52.605170048923924,13.356406915345502
+06,Steglitz-Zehlendorf,Tagesklinik Lankwitz,"Kamenzer Damm 1 E
+12249 Berlin",12249,10.1,20,539,52.434483511644515,13.356393084654497
+12,Reinickendorf,Vivantes Humboldt-Klinikum,"Am Nordgraben 2
+13509 Berlin",13509,10.2,788,74175,52.58995476905729,13.309339783129113
+08,Neukölln,Vivantes Ida-Wolff-Krankenhaus GmbH,"Zadekstraße 46
+12351 Berlin",12351,10.2,148,2337,52.4340872133279,13.458067864793462
+04,Charlottenburg-Wilmersdorf,Caritas-Klinik St. Anna (vormals Malteser-Krankenhaus Berlin-Charlottenburg),"Pillkaller Allee 1
+14055 Berlin",14055,10.5,113,2228,52.508945182694745,13.25182208220017
+10,Marzahn-Hellersdorf,ARONA Klinik für Altersmedizin Berlin-Marzahn & Tagesklinik für Geriatrie,"Blumberger Damm 2G
+12683 Berlin",12683,10.8,70,1638,52.51527257230003,13.563734436702791
+10,Marzahn-Hellersdorf,BG Klinikum Unfallkrankenhaus Berlin gGmbH,"Warener Straße 7
+12683 Berlin",12683,11.0,588,100282,52.5198160051329,13.566416657344003
+06,Steglitz-Zehlendorf,Krankenhaus Bethel Berlin,"Promenadenstrasse 3 - 5
+12207 Berlin",12207,11.1,255,15549,52.43245899612219,13.326039235016838
+10,Marzahn-Hellersdorf,Augenklinik Berlin-Marzahn GmbH,"Brebacher Weg 15
+12683 Berlin",12683,11.1,51,30560,52.517334043273976,13.569157169958448
+10,Marzahn-Hellersdorf,Heiligenfeld Kliniken GmbH Berlin,"Brebacher Weg 15 Haus 19
+12683 Berlin",12683,11.1,36,319,52.51787838534588,13.569348739307259
+06,Steglitz-Zehlendorf,St. Marien-Krankenhaus Berlin,"Gallwitzallee 123-143
+12249 Berlin",12249,11.3,274,19701,52.42392225264264,13.350825581302997
+04,Charlottenburg-Wilmersdorf,Sana Paulinenkrankenhaus gGmbH,"Dickensweg 25 - 39
+14055 Berlin",14055,11.7,148,1974,52.50785209177709,13.23367280520838
+06,Steglitz-Zehlendorf,Westklinik Dahlem Betriebsgesellschaft mbH,"Clayallee 225B
+14195 Berlin",14195,12.1,30,3006,52.44970859647065,13.268703254830095
+09,Treptow-Köpenick,"Vivantes Klinikum Neukölln, Tagesklinik für Jugendliche (Wuhlheide)","An der Wuhlheide 232A
+12459 Berlin",12459,12.2,20,101,52.45560317432736,13.55266573576392
+10,Marzahn-Hellersdorf,Vivantes Klinikum Kaulsdorf,"Myslowitzer Straße 45
+12621 Berlin",12621,12.7,477,36007,52.50664331847309,13.593855103200799
+10,Marzahn-Hellersdorf,"Vivantes Klinikum Kaulsdorf, Tagesklinikzentrum Helle Mitte","Janusz-Korczak-Straße 4
+12627 Berlin",12627,13.5,52,293,52.536856524145975,13.602236318718894
+10,Marzahn-Hellersdorf,"Klinik ""Helle Mitte"" GmbH","Alice-Salomon-Platz 2
+12627 Berlin",12627,13.6,10,731,52.5374073189294,13.603482747368844
+05,Spandau,Vivantes Klinikum Spandau,"Neue Bergstraße 6
+13585 Berlin",13585,13.7,708,52047,52.549710005048674,13.207067932696198
+12,Reinickendorf,Caritas-Klinik Dominikus,"Kurhausstraße 30
+13467 Berlin",13467,13.8,240,23744,52.62377460160639,13.295172794770508
+06,Steglitz-Zehlendorf,Krankenhaus Waldfriede e.V.,"Argentinische Allee 40
+14163 Berlin",14163,14.0,175,54547,52.44428655466081,13.239910037065027
+03,Pankow,Evangelische Lungenklinik,"Lindenberger Weg 27
+13125 Berlin",13125,14.2,161,15204,52.63200388669401,13.505141410110861
+03,Pankow,Immanuel Krankenhaus Berlin - Standort Buch,"Lindenberger Weg 19
+13125 Berlin",13125,14.2,85,19897,52.63311085724858,13.503660830691008
+03,Pankow,Helios Klinikum Berlin-Buch,"Schwanebecker Chaussee 50
+13125 Berlin",13125,14.3,1223,155940,52.63150597350734,13.511232997307662
+06,Steglitz-Zehlendorf,HELIOS Klinikum Emil von Behring GmbH,"Walterhöferstraße 11
+14165 Berlin",14165,14.9,507,77580,52.42317790674119,13.253161878252898
+05,Spandau,Wichernkrankenhaus gGmbH,"Schönwalder Allee 26, Haus 51
+13587 Berlin",13587,15.1,99,2110,52.569389094459666,13.192070812116736
+05,Spandau,Havelklinik GmbH & Co. KG,"Gatower Str. 191
+13595 Berlin",13595,15.3,91,5272,52.50290121027668,13.180175
+09,Treptow-Köpenick,DRK Kliniken Berlin Köpenick,"Salvador-Allende-Straße 2 - 8
+12559 Berlin",12559,15.7,564,103600,52.44016913070111,13.595439576727514
+06,Steglitz-Zehlendorf,Evangelisches Krankenhaus Hubertus Krankenhausbetriebs gGmbH,"Spanische Allee 10-14
+14129 Berlin",14129,16.0,207,19751,52.43152861016556,13.219140843852632
+06,Steglitz-Zehlendorf,Klinik für MIC,"Kurstraße 11
+14129 Berlin",14129,16.0,64,7744,52.431259036489244,13.218495
+09,Treptow-Köpenick,Krankenhaus Hedwigshöhe,"Höhensteig 1
+12526 Berlin",12526,16.9,456,47997,52.406345625747,13.56925245767275
+06,Steglitz-Zehlendorf,Kliniken im Theodor-Wenzel-Werk,"Potsdamer Chaussee 69
+14129 Berlin",14129,17.3,335,6765,52.42317751331279,13.205861907349076
+05,Spandau,Evangelisches Waldkrankenhaus Spandau,"Stadtrandstraße 555
+13589 Berlin",13589,17.4,514,96256,52.56496347506942,13.156077626981746
+05,Spandau,MEDIAN Klinik Berlin Kladow Fachkrankenhaus für Neurologische Frührehabilitation,"Kladower Damm 223
+14089 Berlin",14089,17.6,35,103,52.46258606091385,13.161695133614485
+05,Spandau,Gemeinschaftskrankenhaus Havelhöhe,"Kladower Damm 221
+14089 Berlin",14089,17.8,400,22660,52.46146749258415,13.159668084007798
+06,Steglitz-Zehlendorf,Immanuel Krankenhaus Berlin - Standort Wannsee,"Königstraße 63
+14109 Berlin",14109,19.8,190,12371,52.41933176828232,13.16445038400092
