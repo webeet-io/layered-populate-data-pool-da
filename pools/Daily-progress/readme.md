@@ -12,9 +12,9 @@ Baederleben.de
 
 67 operated as pool facilities:
 
-38 indoor swimming halls
+  - 38 indoor swimming halls
 
-29 outdoor/summer pools
+  - 29 outdoor/summer pools
 
 Remaining sites are open water swimming locations (Badestellen)
 
