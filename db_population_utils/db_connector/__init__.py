@@ -42,7 +42,7 @@ from .db_connector import (
 
 # Package metadata
 __version__ = "0.1.0"
-__author__ = "Your Team"
+__author__ = "Svitlana Kovalivska"
 __description__ = "Comprehensive database population utilities"
 
 # Public API - what gets imported with "from db_population_utils import *"

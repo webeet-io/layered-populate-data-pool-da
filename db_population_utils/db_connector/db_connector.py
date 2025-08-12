@@ -1,5 +1,64 @@
 # db_population_utils/db_connector.py
 
+"""
+DBConnector Module - Advanced Database Connection Management
+
+This module provides comprehensive database connection management with intelligent
+pooling, monitoring, and multi-environment support for data engineering workflows.
+
+Key Design Philosophy:
+    - **Centralized Configuration**: Single point of control for multiple database targets
+    - **Production Ready**: Built-in monitoring, health checks, and error recovery
+    - **Memory Efficient**: Smart connection pooling and resource management
+    - **Multi-Environment**: Support for separate 'ingestion' and 'app' database targets
+    - **Integration Friendly**: Designed to work seamlessly with DataLoader and other components
+
+Architecture Overview:
+    ┌─────────────────┐    ┌──────────────────┐    ┌────────────────────┐
+    │   Application   │────│   DBConnector    │────│  Database Engines  │
+    │                 │    │                  │    │                    │
+    │ • DataLoader    │    │ • Configuration  │    │ • Ingestion DB     │
+    │ • DBPopulator   │    │ • Connection     │    │ • Application DB   │
+    │ • Analytics     │    │   Pooling        │    │ • Connection Pools │
+    └─────────────────┘    │ • Health Checks  │    └────────────────────┘
+                           │ • Monitoring     │
+                           └──────────────────┘
+
+Target Use Cases:
+    1. **Data Ingestion Pipeline**: Load raw data from DataLoader into staging/ingestion DB
+    2. **Application Database**: Serve processed data to applications from app DB
+    3. **ETL Operations**: Move and transform data between different database environments
+    4. **Monitoring & Analytics**: Track database performance and connection health
+    5. **Development Workflows**: Switch between dev/staging/prod environments seamlessly
+
+Enhanced Features vs Original Design:
+    ✓ Multi-cloud database support (RDS, Cloud SQL, etc.)
+    ✓ Advanced connection pooling with auto-scaling
+    ✓ Comprehensive monitoring and alerting
+    ✓ Schema management and migration support
+    ✓ Backup and recovery utilities
+    ✓ Integration with modern data formats (Parquet, Delta Lake)
+    ✓ Batch operations for high-throughput scenarios
+    ✓ Error recovery and fallback strategies
+
+Example Usage Patterns:
+    # Basic setup with environment variables
+    connector = DBConnector.from_env()
+    
+    # Production setup with comprehensive monitoring
+    connector = DBConnector(
+        config_file="prod_config.yaml",
+        monitoring_enabled=True,
+        pool_size=20,
+        health_check_interval=30
+    )
+    
+    # Integration with DataLoader
+    loader = DataLoader()
+    df = loader.load("data.csv")
+    connector.to_sql(df, "raw_data", target="ingestion")
+"""
+
 from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Optional, Dict, Any, Iterator, Literal, List, Union
