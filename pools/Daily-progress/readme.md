@@ -1,18 +1,31 @@
 
-## What you did yesterday;
-The day was all about searching for the pools in Berlin data for the data modeling process
+## What I Did Yesterday
+Focused on sourcing datasets for pools in Berlin to support the data modeling process.
 
-## Success;
-I manage to have some datasets on pools in Berlin,  I went through the websites below and the following information were gathered for the data in Berlin: 
-https://baederleben.de/abfragen/baeder-suche.php
+## Successes
+Collected multiple datasets on Berlin’s pools from various sources, including:
+Baederleben.de
 
-- The dataset contains about 144 pools or swimming places in Berlin
-- About 67 of them are operated in pool facilities;
-     . 38 indoor swimming halls
-     . 29 outdoor/summer pools
-- The rest are the open swimming places in berlin 
+## Key findings from the compiled data:
 
-Update frequency: Annualy
+144 total pools/swimming locations in Berlin
 
-Data type: static
+67 operated as pool facilities:
+
+38 indoor swimming halls
+
+29 outdoor/summer pools
+
+Remaining sites are open water swimming locations (Badestellen)
+
+Update frequency: Annually
+
+Data type: Static
+
+## Blockers
+Difficulty obtaining open-source data in a downloadable format
+
+## What I’m Working On Today
+Continue with data processing and begin the modeling phase.
+
 
