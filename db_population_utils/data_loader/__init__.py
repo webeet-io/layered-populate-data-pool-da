@@ -1,33 +1,39 @@
 # db_population_utils/data_loader/__init__.py
 
 """
-DataLoader Module - Advanced Data Loading Utilities
+DataLoader Module - Pure Data Loading Utilities
 
 This module provides comprehensive data loading capabilities with intelligent 
-format detection, validation, and preprocessing for multiple data sources.
+format detection and quality assessment for multiple file formats.
 
 Main Components:
-- DataLoader: Core data loading class with format detection and preprocessing
-- Configuration classes for fine-grained control (CsvParams, LoadOptions, etc.)
-- Report classes for comprehensive loading analysis
+- DataLoader: Core data loading class focused on loading files as-is
+- Configuration classes for fine-grained control (CsvParams, LoadOptions, etc.)  
+- Report classes for comprehensive quality analysis and loading metrics
 - Custom exceptions for robust error handling
 
+Philosophy:
+DataLoader is focused on PURE LOADING - getting data from files into pandas 
+DataFrames as-is, with quality assessment and reporting. All data transformations
+and preprocessing are handled by the separate DataProcessor class.
+
 Usage Examples:
-    # Basic usage
+    # Basic usage - load file as-is
     from db_population_utils.data_loader import DataLoader, LoadOptions
     loader = DataLoader(verbose=True, cache_enabled=True)
-    df = loader.load("data.csv")
+    df = loader.load("data.csv")  # Raw data, no transformations
     
-    # Advanced usage with options
-    options = LoadOptions(clean_headers=True, validation_level=ValidationLevel.STRICT)
+    # Advanced usage with quality assessment
+    options = LoadOptions(validation_level=ValidationLevel.COMPREHENSIVE)
     df = loader.load("data.xlsx", options=options)
     
-    # Quick loading with defaults
+    # Quick loading with quality profiling
     from db_population_utils.data_loader import quick_load
-    df, report = quick_load("data.csv", clean_headers=True)
+    df, report = quick_load("data.csv", validation_level=ValidationLevel.BASIC)
+    print(f"Quality Score: {report.data_quality.quality_score}/100")
 """
 
-# Enhanced data loading components
+# Enhanced data loading components  
 from .data_loader import (
     # Core classes
     DataLoader,
@@ -65,7 +71,7 @@ from .data_loader import (
 
 # Module metadata
 __version__ = "0.2.0"
-__author__ = "Svitlana Kovalivska"
+__author__ = "Your Team"
 __description__ = "Advanced data loading utilities with intelligent format detection"
 
 # Public API - only DataLoader related components
@@ -78,7 +84,7 @@ __all__ = [
     "ExcelParams", 
     "JsonParams",
     "LoadOptions",
-    "PreprocessingStep",
+    "PreprocessingStep",  # Still used for configuration, but processing happens in DataProcessor
     
     # Report classes
     "LoadReport",
@@ -166,8 +172,7 @@ def quick_load(
     Example:
         df, report = quick_load(
             "data.csv", 
-            clean_headers=True,
-            validation_level=ValidationLevel.BASIC
+            validation_level=ValidationLevel.COMPREHENSIVE
         )
     """
     # Extract loader options vs load options
@@ -251,10 +256,6 @@ _OPTIONAL_DATA_DEPENDENCIES = {
     'xlrd': "pip install xlrd  # For legacy Excel support", 
     'pyarrow': "pip install pyarrow  # For Parquet support",
     'fastparquet': "pip install fastparquet  # Alternative Parquet support",
-    'boto3': "pip install boto3  # For AWS S3 support",
-    'google-cloud-storage': "pip install google-cloud-storage  # For GCS support",
-    'azure-storage-blob': "pip install azure-storage-blob  # For Azure support",
-    'lxml': "pip install lxml  # For XML support", 
     'chardet': "pip install chardet  # For encoding detection",
     'python-magic': "pip install python-magic  # For file type detection",
     'jsonpath-ng': "pip install jsonpath-ng  # For JSONPath support"
@@ -284,11 +285,10 @@ __all__.append("check_optional_dependency")
 
 # DataLoader-specific performance tips
 """
-DataLoader Performance Tips:
+DataLoader Performance Tips (Pure Loading Focus):
     - Enable caching for repeated operations: DataLoader(cache_enabled=True)
     - Use chunked loading for large files: load(options=LoadOptions(chunksize=10000))
-    - Leverage parallel processing: DataLoader(parallel_processing=True)
-    - Optimize data types: LoadOptions(auto_preprocessing=True)
+    - Leverage parallel processing: DataLoader(parallel_processing=True)  
     - Use appropriate load strategy: LoadStrategy.MEMORY_EFFICIENT for large datasets
     
 Memory Management:
@@ -296,15 +296,29 @@ Memory Management:
     - Use streaming for very large files: loader.load_streaming(source)
     - Monitor memory usage: report.memory_usage_mb
     
-Data Quality:
-    - Enable validation: LoadOptions(validation_level=ValidationLevel.COMPREHENSIVE)
-    - Use preprocessing: LoadOptions(auto_preprocessing=True)
-    - Review quality reports: loader.analyze_data_quality(df)
+Data Quality Assessment:
+    - Enable comprehensive validation: LoadOptions(validation_level=ValidationLevel.COMPREHENSIVE)
+    - Review quality reports: loader.analyze_data_quality(df)  
+    - Use profiling: load_with_profile() function
+    - Quality scores help decide if data needs processing
 
-Format Support:
+Format Support (6 Core Formats):
     - CSV/TSV: Automatic delimiter and encoding detection
     - Excel: Smart sheet selection and merged cell handling  
     - JSON: Nested structure flattening with JSONPath
+    - JSON Lines: Streaming support for large log files
     - Parquet: Column selection and predicate pushdown
-    - Cloud Storage: S3, GCS, Azure Blob with authentication
+    - Google Sheets: Direct loading from share URLs
+
+Integration with DataProcessor:
+    DataLoader focuses on LOADING, DataProcessor handles TRANSFORMATIONS:
+    
+    loader = DataLoader()           # Pure loading
+    processor = DataProcessor()     # Pure processing  
+    
+    df_raw = loader.load("data.csv")                    # Load as-is
+    quality = loader.analyze_data_quality(df_raw)       # Assess quality
+    
+    if quality.quality_score > 70:
+        df_clean = processor.clean_data(df_raw)          # Transform in separate class
 """

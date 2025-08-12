@@ -10,7 +10,7 @@ Key Design Philosophy:
     - **Intelligence First**: Automatic detection of formats, encodings, and structures
     - **Quality Focused**: Built-in data validation, profiling, and quality assessment
     - **Performance Aware**: Memory-efficient processing with multiple loading strategies
-    - **Source Agnostic**: Unified interface for files, URLs, databases, and cloud storage
+    - **Source Agnostic**: Unified interface for various file formats and sources
     - **Integration Ready**: Seamless integration with DBConnector and data pipelines
 
 Architecture Overview:
@@ -18,11 +18,14 @@ Architecture Overview:
     │   Data Sources   │────│    DataLoader       │────│   Processed Data     │
     │                  │    │                     │    │                      │
     │ • Files (CSV,    │    │ • Format Detection  │    │ • Clean DataFrames   │
-    │   Excel, JSON)   │    │ • Parameter Sniffing│    │ • Quality Reports    │
-    │ • Cloud Storage  │    │ • Validation        │    │ • Ready for DB       │
-    │   (S3, GCS)      │    │ • Preprocessing     │    │   or Analysis        │
-    │ • URLs & APIs    │    │ • Memory Mgmt       │    │                      │
-    │ • Databases      │    │ • Error Recovery    │    │                      │
+    │   Excel, JSON,   │    │ • Parameter Sniffing│    │ • Quality Reports    │
+    │   JSON Lines,    │    │ • Validation        │    │ • Ready for DB       │
+    │   Parquet)       │    │ • Preprocessing     │    │   or Analysis        │
+    │ • Google Sheets  │    │ • Memory Mgmt       │    │                      │
+    │ • Compressed     │    │ • Error Recovery    │    │                      │
+    │   Archives       │    │                     │    │                      │
+    └──────────────────┘    │ • Error Recovery    │    │                      │
+                            └─────────────────────┘    └──────────────────────┘
     └──────────────────┘    └─────────────────────┘    └──────────────────────┘
                                        │
                             ┌─────────────────────┐
@@ -40,48 +43,48 @@ Problem Solving Focus:
        → Automatic detection with confidence scoring
     
     2. **Data Quality Issues**: Missing values, inconsistent types, encoding errors
-       → Comprehensive validation and cleaning pipelines
+       → Quality assessment and reporting (processing handled by DataProcessor)
        
     3. **Memory Constraints**: Large files that don't fit in memory
        → Chunking, streaming, and memory estimation strategies
        
-    4. **Integration Complexity**: Multiple data sources with different APIs
-       → Unified interface with source-specific optimizations
+    4. **Integration Complexity**: Multiple file formats with different parsing requirements
+       → Unified interface with format-specific optimizations
        
     5. **Production Reliability**: Files fail to load, corrupt data, schema changes
        → Error recovery, fallback strategies, and detailed reporting
 
-Enhanced Features vs Traditional pandas.read_*():
+    Enhanced Features vs Traditional pandas.read_*():
     ✓ **Smart Detection**: Auto-detect format, encoding, delimiter, headers
-    ✓ **Quality Assurance**: Data validation, profiling, outlier detection
+    ✓ **Quality Assessment**: Data validation, profiling, quality reporting (no transformation)
     ✓ **Memory Intelligence**: Automatic chunking and memory optimization
-    ✓ **Cloud Integration**: Native S3, GCS, Azure support with credentials
+    ✓ **Google Sheets**: Direct loading from Google Sheets URLs with sheet selection
     ✓ **Error Recovery**: Fallback strategies and partial loading capabilities
     ✓ **Performance Tuning**: Multiple loading strategies for different scenarios
     ✓ **Rich Reporting**: Comprehensive load reports with metrics and recommendations
-    ✓ **Preprocessing Pipeline**: Configurable data cleaning and transformation
 
 Target Use Cases:
     1. **Data Ingestion**: Load raw data from various sources for processing
-    2. **ETL Pipelines**: Extract data as first step in transformation workflows
-    3. **Data Analysis**: Load data for exploratory analysis with quality checks
-    4. **API Integration**: Load data from REST APIs and web services
-    5. **Cloud Migration**: Move data between different cloud storage systems
-    6. **Data Validation**: Verify data quality before database insertion
-    7. **Batch Processing**: Handle large datasets with memory-efficient strategies
+    2. **ETL Pipelines**: Extract data from files as first step in transformation workflows
+    3. **Data Analysis**: Load files for exploratory analysis with quality checks
+    4. **Data Validation**: Verify file data quality before database insertion
+    5. **Data Migration**: Move data between different file formats and systems
+    6. **Batch Processing**: Handle large files with memory-efficient strategies
 
-Integration with DBConnector:
+    Integration with DataProcessor & DBConnector:
     ```python
     # Complete data pipeline
     loader = DataLoader(validation_level=ValidationLevel.COMPREHENSIVE)
+    processor = DataProcessor()  # Separate class for transformations
     connector = DBConnector(config_file="db_config.yaml")
     
-    # Load, validate, and insert
-    df = loader.load("raw_data.csv", options=LoadOptions(clean_headers=True))
+    # Load, process, and insert
+    df_raw = loader.load("raw_data.csv")
     report = loader.build_report()
     
     if report.data_quality.quality_score > 80:
-        connector.to_sql(df, "clean_data", target="ingestion")
+        df_clean = processor.clean_data(df_raw)  # Processing in separate class
+        connector.to_sql(df_clean, "clean_data", target="ingestion")
     ```
 
 Load Strategy Examples:
@@ -90,15 +93,15 @@ Load Strategy Examples:
     • **ROBUST**: Maximum error recovery and validation
     • **STREAMING**: Continuous processing of data streams
 
-Format Support Matrix:
-    Format     │ Detection │ Streaming │ Cloud │ Schema │ Validation
-    ───────────┼───────────┼───────────┼───────┼────────┼───────────
-    CSV/TSV    │    ✓      │     ✓     │   ✓   │   ✓    │     ✓
-    Excel      │    ✓      │     ✗     │   ✓   │   ✓    │     ✓
-    JSON       │    ✓      │     ✓     │   ✓   │   ✓    │     ✓
-    Parquet    │    ✓      │     ✓     │   ✓   │   ✓    │     ✓
-    XML        │    ✓      │     ✓     │   ✓   │   ✓    │     ✓
-    Database   │    N/A    │     ✓     │   ✓   │   ✓    │     ✓
+    Format Support Matrix:
+    Format     │ Detection │ Streaming │ Compression │ Schema │ Validation │ Usage
+    ───────────┼───────────┼───────────┼─────────────┼────────┼────────────┼───────
+    CSV/TSV    │    ✓      │     ✓     │      ✓      │   ✓    │     ✓      │ 95%
+    Excel      │    ✓      │     ✗     │      ✓      │   ✓    │     ✓      │ 80%
+    JSON       │    ✓      │     ✓     │      ✓      │   ✓    │     ✓      │ 70%
+    JSON Lines │    ✓      │     ✓     │      ✓      │   ✓    │     ✓      │ 20%
+    Parquet    │    ✓      │     ✓     │      ✓      │   ✓    │     ✓      │ 35%
+    G. Sheets  │    ✓      │     ✗     │      N/A    │   ✓    │     ✓      │ 40%
 
 Example Workflows:
     # Quick and simple
@@ -109,18 +112,18 @@ Example Workflows:
         load_strategy=LoadStrategy.ROBUST,
         validation_level=ValidationLevel.COMPREHENSIVE
     )
-    df = loader.load("production_data.xlsx", 
-                    options=LoadOptions(clean_headers=True))
+    df = loader.load("production_data.xlsx")
     
     # Memory-efficient large file processing
     for chunk in loader.load_streaming("huge_file.csv", chunk_size=10000):
         process_chunk(chunk)
     
-    # Multi-source batch loading
+    # Multi-source batch loading (6 supported formats)
     dfs = loader.load_batch([
         "source1.csv", 
-        "s3://bucket/source2.json",
-        "https://api.example.com/data.xml"
+        "data/source2.json",
+        "data.parquet",
+        "https://docs.google.com/spreadsheets/d/abc123/edit"
     ])
 """
 
@@ -142,8 +145,7 @@ if TYPE_CHECKING:
 PathLike = Union[str, Path]
 SourceLike = Union[PathLike, "IOBase", str]  # file path/URL or open file-like object
 Kind = Literal[
-    "auto", "csv", "tsv", "excel", "json", "jsonl", "parquet", 
-    "avro", "orc", "xml", "yaml", "hdf5", "fixed_width"
+    "auto", "csv", "tsv", "excel", "json", "jsonl", "parquet", "google_sheets"
 ]
 PreprocessingStrategy = Literal["auto", "skip", "clean", "normalize", "validate"]
 CompressionType = Literal["infer", "gzip", "bz2", "zip", "xz", None]
@@ -272,10 +274,8 @@ class LoadOptions:
     json_path: Optional[str] = None
     max_nesting_level: int = 10
     
-    # Advanced format options
-    fixed_width_colspecs: Optional[List[Tuple[int, int]]] = None
-    xml_xpath: Optional[str] = None
-    xml_namespaces: Optional[Dict[str, str]] = None
+    # Advanced format options (for specific formats that support them)
+    fixed_width_colspecs: Optional[List[Tuple[int, int]]] = None  # Only for fixed-width files if added later
     
     # Datetime handling
     date_columns: Optional[List[str]] = None
@@ -286,17 +286,11 @@ class LoadOptions:
     infer_datetime_format: bool = True
     custom_date_parser: Optional[Callable] = None
     
-    # Data quality and validation
+    # Data quality and validation (assessment only, no transformation)
     validation_level: ValidationLevel = ValidationLevel.BASIC
     schema: Optional[Dict[str, Any]] = None
-    clean_headers: bool = True
-    normalize_whitespace: bool = True
     drop_empty_rows: bool = True
     drop_empty_columns: bool = False
-    
-    # Preprocessing pipeline
-    preprocessing_steps: List[PreprocessingStep] = field(default_factory=list)
-    auto_preprocessing: bool = True
     
     # Error handling
     on_bad_lines: str = "error"  # "error", "warn", "skip"
@@ -377,9 +371,6 @@ class LoadReport:
     rows_processed: int = 0
     processing_speed_rows_per_sec: float = 0.0
     
-    # Preprocessing applied
-    preprocessing_applied: List[str] = field(default_factory=list)
-    
     # Issues and notes
     warnings: List[str] = field(default_factory=list)
     errors: List[str] = field(default_factory=list)
@@ -441,12 +432,11 @@ class DataLoader:
         - Error recovery and fallback strategies
 
     Features:
-      - Support for 10+ file formats (CSV, Excel, JSON, Parquet, etc.)
-      - Cloud storage integration (S3, GCS, Azure)
+      - Support for 6 key file formats (CSV, Excel, JSON, JSON Lines, Parquet, Google Sheets)
+      - Intelligent format detection and parameter sniffing
       - Advanced datetime handling with timezone support
-      - Data quality assessment and validation
+      - Data quality assessment and validation (no transformation)
       - Memory optimization and streaming capabilities
-      - Preprocessing pipeline with configurable steps
       - Comprehensive reporting and monitoring
     """
 
@@ -462,7 +452,6 @@ class DataLoader:
         parallel_processing: bool = True,
         max_workers: Optional[int] = None,
         logger: Optional[logging.Logger] = None,
-        preprocessing_pipeline: Optional[List[PreprocessingStep]] = None,
         load_strategy: LoadStrategy = LoadStrategy.PERFORMANCE,
         validation_level: ValidationLevel = ValidationLevel.BASIC,
     ):
@@ -479,7 +468,6 @@ class DataLoader:
             parallel_processing: Enable parallel processing
             max_workers: Maximum worker threads
             logger: Custom logger instance
-            preprocessing_pipeline: Default preprocessing steps
             load_strategy: Default loading strategy
             validation_level: Default validation level
         """
@@ -602,7 +590,7 @@ class DataLoader:
         raise NotImplementedError
 
     # -----------------------
-    # Enhanced Format-specific loaders
+    # Format-specific loaders (6 core formats)
     # -----------------------
     def load_csv(
         self,
@@ -638,17 +626,6 @@ class DataLoader:
         """Enhanced JSON loader with advanced flattening and path extraction."""
         raise NotImplementedError
 
-    def load_parquet(
-        self,
-        source: SourceLike,
-        *,
-        columns: Optional[List[str]] = None,
-        filters: Optional[List] = None,
-        engine: str = "auto",
-    ) -> "pd.DataFrame":
-        """Load Parquet files with column selection and filtering."""
-        raise NotImplementedError
-
     def load_jsonl(
         self,
         source: SourceLike,
@@ -656,58 +633,61 @@ class DataLoader:
         chunksize: Optional[int] = None,
         dtype_overrides: Optional[Dict[str, Any]] = None,
     ) -> Union["pd.DataFrame", Iterator["pd.DataFrame"]]:
-        """Load JSON Lines format files."""
+        """Load JSON Lines format files with streaming support."""
         raise NotImplementedError
 
-    def load_fixed_width(
+    def load_parquet(
         self,
         source: SourceLike,
         *,
-        colspecs: List[Tuple[int, int]],
-        names: Optional[List[str]] = None,
+        columns: Optional[List[str]] = None,
+        filters: Optional[List] = None,
+        engine: str = "auto",
         dtype_overrides: Optional[Dict[str, Any]] = None,
     ) -> "pd.DataFrame":
-        """Load fixed-width formatted files."""
+        """Load Parquet files with column selection and filtering."""
         raise NotImplementedError
 
-    def load_xml(
+    def load_google_sheets(
         self,
-        source: SourceLike,
+        url: str,
         *,
-        xpath: Optional[str] = None,
-        namespaces: Optional[Dict[str, str]] = None,
+        sheet_id: Optional[Union[str, int]] = None,
+        format: Literal["csv", "xlsx"] = "csv",
         dtype_overrides: Optional[Dict[str, Any]] = None,
     ) -> "pd.DataFrame":
-        """Load and parse XML files to DataFrame."""
+        """
+        Load data from Google Sheets URL.
+        
+        Args:
+            url: Google Sheets URL (edit or view link)
+            sheet_id: Specific sheet ID/name (gid parameter)
+            format: Export format - 'csv' or 'xlsx'
+            dtype_overrides: Custom data types for columns
+            
+        Returns:
+            Loaded DataFrame
+            
+        Example:
+            # Full spreadsheet URL
+            df = loader.load_google_sheets(
+                "https://docs.google.com/spreadsheets/d/abc123/edit"
+            )
+            
+            # Specific sheet by gid
+            df = loader.load_google_sheets(
+                "https://docs.google.com/spreadsheets/d/abc123/edit",
+                sheet_id="123456789"
+            )
+            
+            # Export as Excel format
+            df = loader.load_google_sheets(url, format="xlsx")
+        """
         raise NotImplementedError
 
     # -----------------------
-    # Cloud Storage Integration
+    # URL & Database Integration
     # -----------------------
-    def load_from_s3(
-        self,
-        bucket: str,
-        key: str,
-        *,
-        aws_config: Optional[Dict[str, Any]] = None,
-        kind: Kind = "auto",
-        options: Optional[LoadOptions] = None,
-    ) -> "pd.DataFrame":
-        """Load data from AWS S3."""
-        raise NotImplementedError
-
-    def load_from_gcs(
-        self,
-        bucket: str,
-        blob: str,
-        *,
-        credentials: Optional[Dict[str, Any]] = None,
-        kind: Kind = "auto",
-        options: Optional[LoadOptions] = None,
-    ) -> "pd.DataFrame":
-        """Load data from Google Cloud Storage."""
-        raise NotImplementedError
-
     def load_from_url(
         self,
         url: str,
@@ -732,7 +712,7 @@ class DataLoader:
         raise NotImplementedError
 
     # -----------------------
-    # Data Quality & Validation
+    # Data Quality & Validation (Assessment Only - No Transformation)
     # -----------------------
     def validate_data(
         self,
@@ -753,17 +733,6 @@ class DataLoader:
         """Analyze data quality and provide recommendations."""
         raise NotImplementedError
 
-    def detect_outliers(
-        self,
-        df: "pd.DataFrame",
-        *,
-        columns: Optional[List[str]] = None,
-        method: str = "iqr",
-        threshold: float = 1.5,
-    ) -> Dict[str, List[int]]:
-        """Detect outliers in numeric columns."""
-        raise NotImplementedError
-
     def profile_dataset(
         self,
         df: "pd.DataFrame",
@@ -772,48 +741,6 @@ class DataLoader:
         sample_size: Optional[int] = None,
     ) -> Dict[str, Any]:
         """Generate comprehensive dataset profile."""
-        raise NotImplementedError
-
-    # -----------------------
-    # Preprocessing Pipeline
-    # -----------------------
-    def apply_preprocessing(
-        self,
-        df: "pd.DataFrame",
-        *,
-        steps: Optional[List[PreprocessingStep]] = None,
-    ) -> "pd.DataFrame":
-        """Apply preprocessing pipeline to DataFrame."""
-        raise NotImplementedError
-
-    def clean_headers(
-        self,
-        df: "pd.DataFrame",
-        *,
-        strategy: str = "auto",
-        custom_mapping: Optional[Dict[str, str]] = None,
-    ) -> "pd.DataFrame":
-        """Clean and normalize column headers."""
-        raise NotImplementedError
-
-    def normalize_dtypes(
-        self,
-        df: "pd.DataFrame",
-        *,
-        aggressive: bool = False,
-        preserve_precision: bool = True,
-    ) -> "pd.DataFrame":
-        """Optimize DataFrame data types for memory efficiency."""
-        raise NotImplementedError
-
-    def handle_missing_data(
-        self,
-        df: "pd.DataFrame",
-        *,
-        strategy: str = "auto",
-        fill_values: Optional[Dict[str, Any]] = None,
-    ) -> "pd.DataFrame":
-        """Handle missing data using various strategies."""
         raise NotImplementedError
 
     # -----------------------
@@ -951,7 +878,15 @@ class DataLoader:
     # Private/Internal Methods
     # -----------------------
     def _detect_file_format(self, source: SourceLike) -> Kind:
-        """Internal format detection logic."""
+        """
+        Internal format detection logic for 6 supported formats.
+        
+        Detection priority:
+        1. Google Sheets URLs (by URL pattern)
+        2. File extension (.csv, .xlsx, .json, .jsonl, .parquet)
+        3. Content sniffing (for ambiguous cases)
+        4. Magic bytes detection
+        """
         raise NotImplementedError
 
     def _validate_source(self, source: SourceLike) -> bool:
@@ -964,6 +899,14 @@ class DataLoader:
         options: LoadOptions
     ) -> LoadOptions:
         """Internal optimization of loading parameters."""
+        raise NotImplementedError
+
+    def _update_report(self, **kwargs) -> None:
+        """Internal method to update loading report."""
+        raise NotImplementedError
+
+    def _detect_google_sheets_url(self, source: SourceLike) -> bool:
+        """Internal method to detect if source is a Google Sheets URL."""
         raise NotImplementedError
 
     def _handle_loading_error(
