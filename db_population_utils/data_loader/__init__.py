@@ -1,279 +1,461 @@
 # db_population_utils/data_loader/__init__.py
 
 """
-DataLoader Module - Pure Data Loading Utilities
+DataLoader Module - Essential Data Loading Utilities (Manager Requirements)
 
-This module provides comprehensive data loading capabilities with intelligent 
-format detection and quality assessment for multiple file formats.
+This module provides essential data loading capabilities with intelligent 
+format detection and quality assessment for core file formats based on manager priorities.
 
 Main Components:
-- DataLoader: Core data loading class focused on loading files as-is
-- Configuration classes for fine-grained control (CsvParams, LoadOptions, etc.)  
+- DataLoader: Core data loading class focused on 3 formats (CSV 95%, Excel 80%, JSON 70%)
+- Configuration classes for fine-grained control (CsvParams, ExcelParams, JsonParams)  
 - Report classes for comprehensive quality analysis and loading metrics
 - Custom exceptions for robust error handling
 
-Philosophy:
-DataLoader is focused on PURE LOADING - getting data from files into pandas 
-DataFrames as-is, with quality assessment and reporting. All data transformations
-and preprocessing are handled by the separate DataProcessor class.
+Manager Requirements Philosophy:
+DataLoader implements exactly 10 core methods focusing on:
+- Loading Functions (5): load(), load_csv(), load_excel(), load_json(), parse_datetimes()
+- Detection Functions (3): detect_format(), detect_encoding(), sniff_csv_params()
+- Performance (1): estimate_memory_usage()
+- Reporting & Error Handling (2): build_report(), detect_time_columns()
+
+Plus 3 comprehensive single-call operations for common workflows.
+
+Supported Formats (Manager Priority Only):
+- CSV/TSV: 95% usage (CRITICAL) - Full parameter detection and encoding handling
+- Excel: 80% usage (HIGH) - Sheet detection and selection
+- JSON: 70% usage (MEDIUM) - Structure flattening
+
+Excluded Formats (Not in Manager Requirements):
+❌ Parquet - Not mentioned in manager priority list
+❌ JSON Lines - Not mentioned in manager priority list  
+❌ Google Sheets - Not mentioned in manager priority list
+❌ URLs - Not mentioned in manager requirements
+❌ Compressed archives - Not mentioned in manager requirements
 
 Usage Examples:
-    # Basic usage - load file as-is
-    from db_population_utils.data_loader import DataLoader, LoadOptions
-    loader = DataLoader(verbose=True, cache_enabled=True)
+    # Basic usage - load file as-is (Manager approved workflow)
+    from db_population_utils.data_loader import DataLoader
+    loader = DataLoader(verbose=True)
     df = loader.load("data.csv")  # Raw data, no transformations
     
-    # Advanced usage with quality assessment
-    options = LoadOptions(validation_level=ValidationLevel.COMPREHENSIVE)
-    df = loader.load("data.xlsx", options=options)
+    # Critical datetime parsing (Manager priority)
+    df_with_dates = loader.parse_datetimes(df)
     
-    # Quick loading with quality profiling
-    from db_population_utils.data_loader import quick_load
-    df, report = quick_load("data.csv", validation_level=ValidationLevel.BASIC)
+    # Comprehensive loading with full reporting
+    df, report = loader.load_with_comprehensive_report("data.xlsx")
     print(f"Quality Score: {report.data_quality.quality_score}/100")
+    
+    # CSV with smart detection (95% usage priority)
+    df, details = loader.load_csv_with_smart_detection("messy_data.csv")
 """
 
-# Enhanced data loading components  
+# Essential data loading components (Manager Requirements Only)
 from .data_loader import (
-    # Core classes
+    # Core class (Manager Requirements)
     DataLoader,
     
-    # Configuration classes
+    # Configuration classes (3 formats only)
     CsvParams,
     ExcelParams,
     JsonParams,
     LoadOptions,
-    PreprocessingStep,
     
     # Report classes
     LoadReport,
     DataQualityReport,
-    ValidationReport,
     MemoryEstimate,
-    StreamingResult,
     
-    # Type definitions and enums
-    Kind,
+    # Type definitions and enums (Manager Requirements)
+    Kind,  # Only: "auto", "csv", "tsv", "excel", "json"
     LoadStrategy,
-    ValidationLevel,
     SourceLike,
     PathLike,
-    PreprocessingStrategy,
     CompressionType,
     
     # Custom exceptions
     DataLoaderError,
     DetectionError,
-    ValidationError as DataValidationError,  # Renamed to avoid conflict
     UnsupportedFormatError,
-    MemoryError as DataMemoryError,  # Renamed to avoid conflict with builtin
+    LoadingMemoryError,
 )
 
 # Module metadata
-__version__ = "0.2.0"
-__author__ = "Your Team"
-__description__ = "Advanced data loading utilities with intelligent format detection"
+__version__ = "0.3.0"
+__author__ = "Data Engineering Team"
+__description__ = "Essential data loading utilities - Manager Requirements Implementation"
 
-# Public API - only DataLoader related components
+# Public API - Manager Requirements Only
 __all__ = [
     # Core class
     "DataLoader",
     
-    # Configuration classes
+    # Configuration classes (3 formats only)
     "CsvParams",
     "ExcelParams", 
     "JsonParams",
     "LoadOptions",
-    "PreprocessingStep",  # Still used for configuration, but processing happens in DataProcessor
     
     # Report classes
     "LoadReport",
     "DataQualityReport",
-    "ValidationReport",
     "MemoryEstimate",
-    "StreamingResult",
     
-    # Type definitions
+    # Type definitions (Manager Requirements)
     "Kind",
-    "LoadStrategy",
-    "ValidationLevel",
+    "LoadStrategy", 
     "SourceLike",
     "PathLike",
-    "PreprocessingStrategy", 
     "CompressionType",
     
-    # Data loading exceptions
+    # Exceptions
     "DataLoaderError",
     "DetectionError",
-    "DataValidationError",
     "UnsupportedFormatError",
-    "DataMemoryError",
+    "LoadingMemoryError",
     
     # Module info
     "__version__",
     
-    # Convenience functions (defined below)
-    "create_loader_with_defaults",
-    "quick_load",
-    "load_with_profile",
+    # Convenience functions (Manager workflow focused)
+    "create_essential_loader",
+    "quick_csv_load",
+    "load_with_datetime_parsing",
 ]
 
-# DataLoader-specific convenience functions
-def create_loader_with_defaults(
+# Manager Requirements Convenience Functions
+def create_essential_loader(
     load_strategy: LoadStrategy = LoadStrategy.PERFORMANCE,
-    validation_level: ValidationLevel = ValidationLevel.BASIC,
-    enable_caching: bool = True,
     max_memory_gb: float = 4.0,
+    verbose: bool = True,
     **kwargs
 ) -> DataLoader:
     """
-    Create DataLoader with sensible defaults for common use cases.
+    Create DataLoader with manager-approved defaults for essential formats.
+    
+    Focuses on the 3 core formats: CSV (95%), Excel (80%), JSON (70%)
     
     Args:
         load_strategy: Default loading strategy
-        validation_level: Default validation level
-        enable_caching: Enable detection result caching
         max_memory_gb: Maximum memory usage
+        verbose: Enable detailed logging
         **kwargs: Additional DataLoader arguments
         
     Returns:
-        Configured DataLoader instance
+        Configured DataLoader instance optimized for manager requirements
         
     Example:
-        loader = create_loader_with_defaults(
-            load_strategy=LoadStrategy.MEMORY_EFFICIENT,
-            validation_level=ValidationLevel.STRICT
+        # Standard setup for manager requirements
+        loader = create_essential_loader(
+            load_strategy=LoadStrategy.ROBUST,
+            max_memory_gb=8.0
         )
+        
+        # Use with priority formats
+        df_csv = loader.load_csv("critical_data.csv")  # 95% priority
+        df_excel = loader.load_excel("reports.xlsx")   # 80% priority
+        df_json = loader.load_json("api_data.json")    # 70% priority
     """
     return DataLoader(
-        verbose=True,
-        cache_enabled=enable_caching,
+        verbose=verbose,
         max_memory_usage_gb=max_memory_gb,
         load_strategy=load_strategy,
-        validation_level=validation_level,
         **kwargs
     )
 
 
-def quick_load(
+def quick_csv_load(
     source: SourceLike,
-    **load_options
-) -> tuple["pd.DataFrame", LoadReport]:
+    auto_detect_encoding: bool = True,
+    auto_detect_params: bool = True,
+    parse_dates: bool = True,
+    **options
+) -> tuple["pd.DataFrame", dict]:
     """
-    Quick data loading utility with automatic optimization.
+    Quick CSV loading utility optimized for 95% usage priority format.
+    
+    Manager Priority: CSV is CRITICAL format requiring special attention to encoding
+    and parameter detection.
     
     Args:
-        source: Data source (file path, URL, etc.)
-        **load_options: Options passed to DataLoader and load method
+        source: CSV file path or file-like object
+        auto_detect_encoding: Use critical encoding detection
+        auto_detect_params: Use CSV parameter sniffing
+        parse_dates: Automatically detect and parse datetime columns
+        **options: Additional options for CSV loading
         
     Returns:
-        Tuple of (DataFrame, LoadReport)
+        Tuple of (DataFrame, detection_summary)
         
     Example:
-        df, report = quick_load(
-            "data.csv", 
-            validation_level=ValidationLevel.COMPREHENSIVE
-        )
+        # Manager workflow for CSV (95% usage)
+        df, summary = quick_csv_load("important_data.csv")
+        
+        print(f"📄 Encoding: {summary['encoding']}")
+        print(f"📝 Delimiter: '{summary['delimiter']}'")
+        print(f"🕒 Date columns: {summary['date_columns']}")
+        print(f"📊 Quality: {summary['quality_score']}/100")
     """
-    # Extract loader options vs load options
-    loader_options = {k: v for k, v in load_options.items() 
-                     if k in ['verbose', 'cache_enabled', 'max_memory_usage_gb', 
-                             'load_strategy', 'validation_level']}
+    # Create loader optimized for CSV
+    loader = create_essential_loader(verbose=False)
     
-    load_method_options = {k: v for k, v in load_options.items() 
-                          if k not in loader_options}
-    
-    # Create loader
-    loader = create_loader_with_defaults(**loader_options)
-    
-    # Create load options if any specific options provided
-    options = LoadOptions(**load_method_options) if load_method_options else None
-    
-    # Load data
-    df = loader.load(source, options=options)
-    report = loader.build_report()
-    
-    return df, report
+    try:
+        # Step 1: Critical encoding detection (manager priority)
+        encoding, enc_confidence = loader.detect_encoding(source) if auto_detect_encoding else (None, 0.0)
+        
+        # Step 2: CSV parameter sniffing
+        csv_params = loader.sniff_csv_params(source) if auto_detect_params else None
+        
+        # Step 3: Load CSV with detected parameters
+        load_options = {
+            'encoding': encoding,
+            'params': csv_params,
+            **options
+        }
+        df = loader.load_csv(source, **{k: v for k, v in load_options.items() if v is not None})
+        
+        # Step 4: Parse datetime columns (manager priority)
+        date_columns = []
+        if parse_dates and not df.empty:
+            date_columns = loader.detect_time_columns(df)
+            if date_columns:
+                df = loader.parse_datetimes(df, date_columns)
+        
+        # Step 5: Quick quality assessment
+        quality_report = loader._analyze_data_quality(df) if hasattr(loader, '_analyze_data_quality') else None
+        
+        # Summary for manager workflow
+        summary = {
+            'encoding': encoding,
+            'encoding_confidence': enc_confidence,
+            'delimiter': csv_params.delimiter if csv_params else 'unknown',
+            'delimiter_confidence': csv_params.delimiter_confidence if csv_params else 0.0,
+            'date_columns': date_columns,
+            'rows_loaded': len(df),
+            'columns_loaded': len(df.columns),
+            'quality_score': quality_report.quality_score if quality_report else 0,
+            'status': 'success'
+        }
+        
+        return df, summary
+        
+    except Exception as e:
+        # Error summary
+        error_summary = {
+            'status': 'failed',
+            'error': str(e),
+            'encoding': 'detection_failed',
+            'delimiter': 'detection_failed',
+            'date_columns': [],
+            'rows_loaded': 0,
+            'columns_loaded': 0,
+            'quality_score': 0
+        }
+        raise DataLoaderError(f"Quick CSV load failed: {str(e)}") from e
 
 
-def load_with_profile(
+def load_with_datetime_parsing(
     source: SourceLike,
-    include_quality_analysis: bool = True,
+    datetime_columns: Optional[List[str]] = None,
+    auto_detect_datetime: bool = True,
     **load_options
-) -> tuple["pd.DataFrame", LoadReport, "DataQualityReport"]:
+) -> tuple["pd.DataFrame", dict]:
     """
-    Load data with comprehensive profiling and quality analysis.
+    Load data with emphasis on datetime parsing (Manager priority).
+    
+    Manager Note: "parse_datetimes() - can cause lots of troubles and can be pretty common"
     
     Args:
-        source: Data source
-        include_quality_analysis: Include data quality analysis
+        source: File path or file-like object
+        datetime_columns: Specific columns to parse as datetime
+        auto_detect_datetime: Automatically detect datetime columns
         **load_options: Options for loading
         
     Returns:
-        Tuple of (DataFrame, LoadReport, DataQualityReport)
+        Tuple of (DataFrame with parsed dates, datetime_parsing_report)
         
     Example:
-        df, load_report, quality_report = load_with_profile(
-            "data.csv",
-            validation_level=ValidationLevel.COMPREHENSIVE
-        )
+        # Manager workflow for datetime handling
+        df, dt_report = load_with_datetime_parsing("time_series.csv")
+        
+        print(f"🕒 Detected columns: {dt_report['detected_columns']}")
+        print(f"✅ Successfully parsed: {dt_report['successful_columns']}")
+        print(f"❌ Failed to parse: {dt_report['failed_columns']}")
+        print(f"📊 Success rate: {dt_report['overall_success_rate']:.1f}%")
     """
-    # Create loader with profiling enabled
-    loader = create_loader_with_defaults(
-        validation_level=ValidationLevel.COMPREHENSIVE,
-        **load_options
-    )
+    # Create loader
+    loader = create_essential_loader()
     
-    # Load data
-    df = loader.load(source)
-    load_report = loader.build_report()
-    
-    # Generate quality analysis
-    quality_report = None
-    if include_quality_analysis:
-        quality_report = loader.analyze_data_quality(df, include_profiling=True)
-    
-    return df, load_report, quality_report
+    try:
+        # Step 1: Load data (auto-detect format)
+        df = loader.load(source, **load_options)
+        
+        if df.empty:
+            return df, {'status': 'empty_dataframe', 'detected_columns': [], 'successful_columns': [], 'failed_columns': []}
+        
+        # Step 2: Detect datetime columns (if auto-detect enabled)
+        detected_columns = []
+        if auto_detect_datetime:
+            detected_columns = loader.detect_time_columns(df)
+        
+        # Step 3: Combine specified and detected columns
+        columns_to_parse = []
+        if datetime_columns:
+            columns_to_parse.extend(datetime_columns)
+        if detected_columns:
+            columns_to_parse.extend([col for col in detected_columns if col not in columns_to_parse])
+        
+        # Step 4: Parse datetime columns
+        successful_columns = []
+        failed_columns = []
+        
+        if columns_to_parse:
+            try:
+                df_parsed = loader.parse_datetimes(df, columns_to_parse)
+                
+                # Check which columns were successfully parsed
+                for col in columns_to_parse:
+                    if col in df_parsed.columns:
+                        if df_parsed[col].dtype.name.startswith('datetime'):
+                            successful_columns.append(col)
+                        else:
+                            failed_columns.append(col)
+                    else:
+                        failed_columns.append(col)
+                
+                df = df_parsed
+                
+            except Exception as e:
+                # Partial parsing - try individual columns
+                for col in columns_to_parse:
+                    try:
+                        df = loader.parse_datetimes(df, [col])
+                        successful_columns.append(col)
+                    except:
+                        failed_columns.append(col)
+        
+        # Step 5: Generate datetime parsing report
+        total_columns = len(columns_to_parse) if columns_to_parse else 0
+        success_rate = (len(successful_columns) / total_columns * 100) if total_columns > 0 else 0
+        
+        datetime_report = {
+            'status': 'success',
+            'detected_columns': detected_columns,
+            'specified_columns': datetime_columns or [],
+            'columns_attempted': columns_to_parse,
+            'successful_columns': successful_columns,
+            'failed_columns': failed_columns,
+            'overall_success_rate': success_rate,
+            'total_datetime_columns': len(successful_columns)
+        }
+        
+        return df, datetime_report
+        
+    except Exception as e:
+        error_report = {
+            'status': 'failed',
+            'error': str(e),
+            'detected_columns': [],
+            'successful_columns': [],
+            'failed_columns': datetime_columns or [],
+            'overall_success_rate': 0.0
+        }
+        raise DataLoaderError(f"Datetime parsing load failed: {str(e)}") from e
 
 
 # Optional: Add logging configuration
 import logging
 import sys
 import warnings
+from typing import List, Optional
 
 # Set up module logger
 logger = logging.getLogger(__name__)
 logger.addHandler(logging.NullHandler())
 
-# Check for required dependencies for DataLoader
-_DATA_LOADER_DEPENDENCIES = {
+# Check for required dependencies (Manager Requirements)
+_ESSENTIAL_DEPENDENCIES = {
     'pandas': "pip install pandas>=1.3.0", 
     'numpy': "pip install numpy>=1.20.0"
 }
 
-_OPTIONAL_DATA_DEPENDENCIES = {
-    'openpyxl': "pip install openpyxl  # For Excel support",
-    'xlrd': "pip install xlrd  # For legacy Excel support", 
-    'pyarrow': "pip install pyarrow  # For Parquet support",
-    'fastparquet': "pip install fastparquet  # Alternative Parquet support",
-    'chardet': "pip install chardet  # For encoding detection",
-    'python-magic': "pip install python-magic  # For file type detection",
-    'jsonpath-ng': "pip install jsonpath-ng  # For JSONPath support"
+_FORMAT_SPECIFIC_DEPENDENCIES = {
+    # CSV (95% priority - CRITICAL)
+    'chardet': "pip install chardet  # CRITICAL: For encoding detection in CSV files",
+    
+    # Excel (80% priority - HIGH)  
+    'openpyxl': "pip install openpyxl  # HIGH: For Excel (.xlsx) support",
+    'xlrd': "pip install xlrd  # For legacy Excel (.xls) support", 
+    
+    # JSON (70% priority - MEDIUM)
+    # JSON is handled by built-in json module, no extra dependencies needed
 }
 
-# Check required dependencies
-for dep, install_cmd in _DATA_LOADER_DEPENDENCIES.items():
+# Check essential dependencies
+for dep, install_cmd in _ESSENTIAL_DEPENDENCIES.items():
     try:
         __import__(dep)
     except ImportError:
         warnings.warn(
-            f"Required dependency '{dep}' not found. Install with: {install_cmd}",
+            f"CRITICAL: Required dependency '{dep}' not found. Install with: {install_cmd}",
             ImportWarning,
             stacklevel=2
         )
 
-def check_optional_dependency(dep_name: str) -> bool:
-    """Check if optional dependency is available."""
+def check_format_support() -> dict:
+    """
+    Check which of the 3 manager-required formats are fully supported.
+    
+    Returns:
+        Dictionary with format support status
+        
+    Example:
+        support = check_format_support()
+        print(f"CSV support: {support['csv']['status']}")
+        print(f"Excel support: {support['excel']['status']}")
+        print(f"JSON support: {support['json']['status']}")
+    """
+    support_status = {
+        'csv': {
+            'status': 'full',  # pandas built-in support
+            'priority': '95% (CRITICAL)',
+            'encoding_detection': _check_dependency('chardet'),
+            'missing_deps': []
+        },
+        'excel': {
+            'status': 'partial',
+            'priority': '80% (HIGH)', 
+            'xlsx_support': _check_dependency('openpyxl'),
+            'xls_support': _check_dependency('xlrd'),
+            'missing_deps': []
+        },
+        'json': {
+            'status': 'full',  # Built-in json module
+            'priority': '70% (MEDIUM)',
+            'missing_deps': []
+        }
+    }
+    
+    # Check Excel dependencies
+    if not support_status['excel']['xlsx_support']:
+        support_status['excel']['missing_deps'].append('openpyxl')
+    if not support_status['excel']['xls_support']:
+        support_status['excel']['missing_deps'].append('xlrd')
+    
+    if support_status['excel']['missing_deps']:
+        support_status['excel']['status'] = 'limited'
+    else:
+        support_status['excel']['status'] = 'full'
+    
+    # Check CSV encoding detection
+    if not support_status['csv']['encoding_detection']:
+        support_status['csv']['missing_deps'].append('chardet')
+        support_status['csv']['status'] = 'limited'  # Still works but without encoding detection
+    
+    return support_status
+
+def _check_dependency(dep_name: str) -> bool:
+    """Check if dependency is available."""
     try:
         __import__(dep_name)
         return True
@@ -281,44 +463,41 @@ def check_optional_dependency(dep_name: str) -> bool:
         return False
 
 # Export dependency checker
-__all__.append("check_optional_dependency")
+__all__.extend(["check_format_support"])
 
-# DataLoader-specific performance tips
+# Manager Requirements Summary
 """
-DataLoader Performance Tips (Pure Loading Focus):
-    - Enable caching for repeated operations: DataLoader(cache_enabled=True)
-    - Use chunked loading for large files: load(options=LoadOptions(chunksize=10000))
-    - Leverage parallel processing: DataLoader(parallel_processing=True)  
-    - Use appropriate load strategy: LoadStrategy.MEMORY_EFFICIENT for large datasets
-    
-Memory Management:
-    - Set memory limits: DataLoader(max_memory_usage_gb=8.0)
-    - Use streaming for very large files: loader.load_streaming(source)
-    - Monitor memory usage: report.memory_usage_mb
-    
-Data Quality Assessment:
-    - Enable comprehensive validation: LoadOptions(validation_level=ValidationLevel.COMPREHENSIVE)
-    - Review quality reports: loader.analyze_data_quality(df)  
-    - Use profiling: load_with_profile() function
-    - Quality scores help decide if data needs processing
+DataLoader - Manager Requirements Implementation
 
-Format Support (6 Core Formats):
-    - CSV/TSV: Automatic delimiter and encoding detection
-    - Excel: Smart sheet selection and merged cell handling  
-    - JSON: Nested structure flattening with JSONPath
-    - JSON Lines: Streaming support for large log files
-    - Parquet: Column selection and predicate pushdown
-    - Google Sheets: Direct loading from share URLs
+Core Methods (10 total):
+✓ Loading Functions (5): load(), load_csv(), load_excel(), load_json(), parse_datetimes()
+✓ Detection Functions (3): detect_format(), detect_encoding(), sniff_csv_params()  
+✓ Performance (1): estimate_memory_usage()
+✓ Reporting & Error Handling (2): build_report(), detect_time_columns()
 
-Integration with DataProcessor:
-    DataLoader focuses on LOADING, DataProcessor handles TRANSFORMATIONS:
+Format Priorities (Manager Specified):
+✓ CSV/TSV: 95% usage (CRITICAL) - Full parameter and encoding detection
+✓ Excel: 80% usage (HIGH) - Sheet detection and selection
+✓ JSON: 70% usage (MEDIUM) - Structure flattening
+
+Critical Features (Manager Emphasized):
+✓ detect_encoding(): "encoding might cause nasty problems, so we definitely should have it"
+✓ parse_datetimes(): "can cause lots of troubles and can be pretty common"
+
+Integration with DataProcessor & DBConnector:
+DataLoader → DataProcessor → DBConnector ← DBPopulator
+
+Manager Workflow:
+    loader = DataLoader()
+    df_raw, report = loader.load_with_comprehensive_report("data.csv")
     
-    loader = DataLoader()           # Pure loading
-    processor = DataProcessor()     # Pure processing  
-    
-    df_raw = loader.load("data.csv")                    # Load as-is
-    quality = loader.analyze_data_quality(df_raw)       # Assess quality
-    
-    if quality.quality_score > 70:
-        df_clean = processor.clean_data(df_raw)          # Transform in separate class
+    if report.data_quality.quality_score > 80:
+        processor = DataProcessor()
+        df_clean = processor.clean_data(df_raw)
+        
+        connector = DBConnector()
+        success, db_report = connector.insert_dataframe_with_report(df_clean, "table")
+
+Excluded (Not in Manager Requirements):
+❌ Parquet, JSON Lines, Google Sheets, URLs, Compressed archives
 """
