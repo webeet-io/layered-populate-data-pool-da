@@ -78,13 +78,22 @@ Format Support (Manager Priority Only):
     Excel      │    ✓      │     ✓      │    ✓     │ 80% (HIGH)     │ REQUIRED  
     JSON       │    ✓      │     ✓      │    ✓     │ 70% (MEDIUM)   │ REQUIRED
 
-Excluded Formats (Not in Manager Requirements):
-    ❌ Parquet - Not mentioned in manager priority list
-    ❌ JSON Lines - Not mentioned in manager priority list
-    ❌ Google Sheets - Not mentioned in manager priority list
+Excluded Formats (Not in Requirements):
+    ❌ Parquet -
+    ❌ JSON Lines - 
+    ❌ Google Sheets - 
     ❌ Database connections - Handled by DBConnector
-    ❌ URL loading - Not mentioned in manager requirements
-    ❌ Compressed archives - Not mentioned in manager requirements
+    ❌ URL loading - 
+    ❌ Compressed archives - 
+    ❌ XML/HTML -
+    ❌ Custom formats -
+    ❌ DataFrame to SQL - Handled by DBConnector
+    ❌ DataFrame to JSON - Handled by DataProcessor 
+    ❌ DataFrame to Excel - Handled by DataProcessor
+    ❌ DataFrame to CSV - Handled by DataProcessor
+    ❌ DataFrame to Parquet - Handled by DataProcessor
+    ❌ DataFrame to other formats - Handled by DataProcessor    
+    
 """
 
 from __future__ import annotations
