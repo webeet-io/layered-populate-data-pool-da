@@ -1,0 +1,98 @@
+Step 2 — Data Transformation Plan
+PR Branch: kindergartens-data-transformation
+
+Objective
+Transform raw Berlin Kindergarten datasets into a clean, normalized format that matches the schema from Step 1 and is ready for database insertion in Step 3.
+No database updates are made at this stage.
+
+Source Files
+Located in /sources/raw/:
+
+berlin_kitas_raw.csv — Official Berlin kindergarten list from the Berlin Open Data portal (converted from .xlsx original).
+
+osm_kitas.json — OpenStreetMap kindergarten dataset retrieved via Overpass API.
+
+Transformation Steps
+1. Load Raw Data
+Berlin Gov CSV: Read with correct delimiter and UTF-8 encoding.
+
+OSM JSON: Parse JSON structure and extract relevant fields.
+
+2. Column Selection & Renaming
+Berlin Gov Columns:
+
+Einrichtungsbezirk → district
+
+Einrichtungsname → name
+
+Straße + Hausnummer → combined into address
+
+PLZ → postal_code
+
+Einrichtungstyp → type
+
+Trägername → provider
+
+Erlaubte Plätze (BE) → capacity
+
+ETRS_YKOORDINATE & ETRS_XKOORDINATE → to be converted to latitude / longitude
+
+OSM Columns:
+
+tags.name → name
+
+tags.operator → provider
+
+tags.capacity → capacity
+
+lat, lon → latitude, longitude
+
+3. Coordinate Conversion
+Convert Berlin Gov coordinates from ETRS89 / GK4 (EPSG:3068) to WGS84 (EPSG:4326) using pyproj.
+
+4. Data Cleaning
+Trim whitespace from all string columns.
+
+Ensure proper data types:
+
+Numeric for capacity, latitude, longitude
+
+String for name, address, provider, district
+
+Remove rows without name or valid coordinates.
+
+Standardize coordinate precision to 6 decimal places.
+
+5. Merge Datasets
+Add a source column (BerlinGov or OSM).
+
+Concatenate datasets.
+
+Remove duplicates based on (name, latitude, longitude).
+
+6. Output
+Save cleaned datasets to /data/processed/:
+
+kindergartens_clean.csv — flat table for relational DB use.
+
+kindergartens_clean.geojson — geospatial file for mapping.
+
+Known Issues
+Some Berlin Gov entries may lack coordinates — handled by dropping or geocoding in later enhancements.
+
+OSM names may differ slightly from Berlin Gov — partial deduplication applied.
+
+Capacity values may be missing for some OSM entries.
+
+Testing
+Transformation logic stored in /scripts/transform_kindergartens.py.
+
+Verified that:
+
+All rows have valid coordinates and names.
+
+Column names match the Step 1 schema.
+
+File encodings are UTF-8.
+
+Output CSV and GeoJSON open without errors.
