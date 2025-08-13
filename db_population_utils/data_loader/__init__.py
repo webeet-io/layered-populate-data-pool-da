@@ -1,7 +1,7 @@
 # db_population_utils/data_loader/__init__.py
 
 """
-DataLoader Module - Essential Data Loading Utilities (Manager Requirements)
+DataLoader Module - Essential Data Loading Utilities
 
 This module provides essential data loading capabilities with intelligent 
 format detection and quality assessment for core file formats based on manager priorities.
@@ -12,7 +12,7 @@ Main Components:
 - Report classes for comprehensive quality analysis and loading metrics
 - Custom exceptions for robust error handling
 
-Manager Requirements Philosophy:
+Requirements Philosophy:
 DataLoader implements exactly 10 core methods focusing on:
 - Loading Functions (5): load(), load_csv(), load_excel(), load_json(), parse_datetimes()
 - Detection Functions (3): detect_format(), detect_encoding(), sniff_csv_params()
@@ -21,25 +21,19 @@ DataLoader implements exactly 10 core methods focusing on:
 
 Plus 3 comprehensive single-call operations for common workflows.
 
-Supported Formats (Manager Priority Only):
+Supported Formats:
 - CSV/TSV: 95% usage (CRITICAL) - Full parameter detection and encoding handling
 - Excel: 80% usage (HIGH) - Sheet detection and selection
 - JSON: 70% usage (MEDIUM) - Structure flattening
 
-Excluded Formats (Not in Manager Requirements):
-❌ Parquet - Not mentioned in manager priority list
-❌ JSON Lines - Not mentioned in manager priority list  
-❌ Google Sheets - Not mentioned in manager priority list
-❌ URLs - Not mentioned in manager requirements
-❌ Compressed archives - Not mentioned in manager requirements
 
 Usage Examples:
-    # Basic usage - load file as-is (Manager approved workflow)
+    # Basic usage - load file as-is 
     from db_population_utils.data_loader import DataLoader
     loader = DataLoader(verbose=True)
     df = loader.load("data.csv")  # Raw data, no transformations
     
-    # Critical datetime parsing (Manager priority)
+    # Critical datetime parsing
     df_with_dates = loader.parse_datetimes(df)
     
     # Comprehensive loading with full reporting
@@ -131,7 +125,7 @@ def create_essential_loader(
     **kwargs
 ) -> DataLoader:
     """
-    Create DataLoader with manager-approved defaults for essential formats.
+    Create DataLoader with  defaults for essential formats.
     
     Focuses on the 3 core formats: CSV (95%), Excel (80%), JSON (70%)
     
@@ -142,10 +136,10 @@ def create_essential_loader(
         **kwargs: Additional DataLoader arguments
         
     Returns:
-        Configured DataLoader instance optimized for manager requirements
+        Configured DataLoader instance optimized for requirements
         
     Example:
-        # Standard setup for manager requirements
+        # Standard setup for requirements
         loader = create_essential_loader(
             load_strategy=LoadStrategy.ROBUST,
             max_memory_gb=8.0
@@ -174,7 +168,7 @@ def quick_csv_load(
     """
     Quick CSV loading utility optimized for 95% usage priority format.
     
-    Manager Priority: CSV is CRITICAL format requiring special attention to encoding
+    Priority: CSV is CRITICAL format requiring special attention to encoding
     and parameter detection.
     
     Args:
@@ -188,7 +182,7 @@ def quick_csv_load(
         Tuple of (DataFrame, detection_summary)
         
     Example:
-        # Manager workflow for CSV (95% usage)
+        # Workflow for CSV (95% usage)
         df, summary = quick_csv_load("important_data.csv")
         
         print(f"📄 Encoding: {summary['encoding']}")
@@ -261,9 +255,7 @@ def load_with_datetime_parsing(
     **load_options
 ) -> tuple["pd.DataFrame", dict]:
     """
-    Load data with emphasis on datetime parsing (Manager priority).
-    
-    Manager Note: "parse_datetimes() - can cause lots of troubles and can be pretty common"
+    Load data with emphasis on datetime parsing.
     
     Args:
         source: File path or file-like object
@@ -275,7 +267,7 @@ def load_with_datetime_parsing(
         Tuple of (DataFrame with parsed dates, datetime_parsing_report)
         
     Example:
-        # Manager workflow for datetime handling
+        # Workflow for datetime handling
         df, dt_report = load_with_datetime_parsing("time_series.csv")
         
         print(f"🕒 Detected columns: {dt_report['detected_columns']}")
@@ -404,7 +396,7 @@ for dep, install_cmd in _ESSENTIAL_DEPENDENCIES.items():
 
 def check_format_support() -> dict:
     """
-    Check which of the 3 manager-required formats are fully supported.
+    Check which of the 3  formats are fully supported.
     
     Returns:
         Dictionary with format support status
@@ -467,7 +459,7 @@ __all__.extend(["check_format_support"])
 
 # Manager Requirements Summary
 """
-DataLoader - Manager Requirements Implementation
+DataLoader -Requirements Implementation
 
 Core Methods (10 total):
 ✓ Loading Functions (5): load(), load_csv(), load_excel(), load_json(), parse_datetimes()
@@ -475,19 +467,19 @@ Core Methods (10 total):
 ✓ Performance (1): estimate_memory_usage()
 ✓ Reporting & Error Handling (2): build_report(), detect_time_columns()
 
-Format Priorities (Manager Specified):
+Format Priorities:
 ✓ CSV/TSV: 95% usage (CRITICAL) - Full parameter and encoding detection
 ✓ Excel: 80% usage (HIGH) - Sheet detection and selection
 ✓ JSON: 70% usage (MEDIUM) - Structure flattening
 
-Critical Features (Manager Emphasized):
+Critical Features:
 ✓ detect_encoding(): "encoding might cause nasty problems, so we definitely should have it"
 ✓ parse_datetimes(): "can cause lots of troubles and can be pretty common"
 
 Integration with DataProcessor & DBConnector:
 DataLoader → DataProcessor → DBConnector ← DBPopulator
 
-Manager Workflow:
+Workflow:
     loader = DataLoader()
     df_raw, report = loader.load_with_comprehensive_report("data.csv")
     
@@ -498,6 +490,5 @@ Manager Workflow:
         connector = DBConnector()
         success, db_report = connector.insert_dataframe_with_report(df_clean, "table")
 
-Excluded (Not in Manager Requirements):
-❌ Parquet, JSON Lines, Google Sheets, URLs, Compressed archives
+
 """

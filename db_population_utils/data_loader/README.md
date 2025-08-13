@@ -21,14 +21,12 @@ Essential data loading module implementing **exactly 10 core methods** based on 
 | Excel   | 80% HIGH      | ✅ Full   | Weekly | Sheet selection, detection  |
 | JSON    | 70% MEDIUM    | ✅ Full   | Common | Structure flattening        |
 
-**Excluded Formats** (Not in manager requirements):
-❌ Parquet, JSON Lines, Google Sheets, URLs, Compressed archives
 
 ## Key Features
 
-🎯 **Manager Priorities:**
-- **Critical Encoding Detection**: "encoding might cause nasty problems, so we definitely should have it, great job."
-- **DateTime Parsing**: "can cause lots of troubles and can be pretty common"
+🎯 **Priorities:**
+- **Critical Encoding Detection**
+- **DateTime Parsing** 
 - **CSV Focus**: 95% usage priority with advanced parameter detection
 - **Quality Assessment**: Built-in data quality scoring and reporting
 
@@ -53,7 +51,7 @@ pip install xlrd         # For legacy Excel (.xls) support
 
 ## Quick Start
 
-### Basic Usage (Manager Workflow)
+### Basic Usage
 
 ```python
 from db_population_utils.data_loader import DataLoader
@@ -99,7 +97,7 @@ print(f"✅ Successfully parsed: {dt_report['successful_columns']}")
 print(f"📊 Success rate: {dt_report['overall_success_rate']:.1f}%")
 ```
 
-## Core Methods (Manager Requirements)
+## Core Methods
 
 ### Loading Functions (5 methods)
 
@@ -582,18 +580,9 @@ pip install python-magic  # Enhanced file type detection
 
 MIT License
 
-## Contributing
 
-1. Follow manager requirements: exactly 10 core methods
-2. Maintain focus on 3 priority formats: CSV (95%), Excel (80%), JSON (70%)
-3. Emphasize encoding detection and datetime parsing
-4. Include comprehensive error handling and reporting
-5. Write tests for all core functionality
-6. Update documentation for any API changes
 
----
-
-**Manager Requirements Summary:**
+**Requirements Summary:**
 - ✅ **10 Core Methods**: Exactly as specified in requirements
 - ✅ **3 Priority Formats**: CSV (95%), Excel (80%), JSON (70%)
 - ✅ **Critical Features**: Encoding detection, datetime parsing

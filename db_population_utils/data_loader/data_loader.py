@@ -4,12 +4,12 @@
 DataLoader Module - Essential Data Loading with Quality Assessment
 
 This module provides essential data loading capabilities with intelligent format
-detection and quality assessment for core file formats based on manager requirements.
+detection and quality assessment for core file formats based on requirements.
 
 Key Design Philosophy:
     - **Intelligence First**: Automatic detection of formats, encodings, and structures
     - **Quality Focused**: Built-in data validation, profiling, and quality assessment (no transformation)
-    - **Manager Requirements**: Exactly 10 methods focusing on critical functionality
+    - **Requirements**: Exactly 10 methods focusing on critical functionality
     - **Core Formats**: Only 3 essential file formats (CSV 95%, Excel 80%, JSON 70%)
     - **Integration Ready**: Seamless integration with DataProcessor and DBConnector
     - **Comprehensive Operations**: Single-call methods combining detection, loading, and reporting
@@ -35,7 +35,7 @@ Architecture Overview:
                             │ • Error Recovery    │
                             └─────────────────────┘
 
-Manager Requirements Implementation:
+Requirements Implementation:
     ✓ Loading Functions (5): load(), load_csv(), load_excel(), load_json(), parse_datetimes()
     ✓ Detection Functions (3): detect_format(), detect_encoding(), sniff_csv_params()
     ✓ Performance (1): estimate_memory_usage()
@@ -58,7 +58,7 @@ Target Use Cases:
 
     Integration with DataProcessor & DBConnector:
     ```python
-    # Complete data pipeline (Manager approved workflow)
+    # Complete data pipeline
     loader = DataLoader()
     processor = DataProcessor()  # Separate class for transformations
     connector = DBConnector()
@@ -78,22 +78,7 @@ Format Support (Manager Priority Only):
     Excel      │    ✓      │     ✓      │    ✓     │ 80% (HIGH)     │ REQUIRED  
     JSON       │    ✓      │     ✓      │    ✓     │ 70% (MEDIUM)   │ REQUIRED
 
-Excluded Formats (Not in Requirements):
-    ❌ Parquet -
-    ❌ JSON Lines - 
-    ❌ Google Sheets - 
-    ❌ Database connections - Handled by DBConnector
-    ❌ URL loading - 
-    ❌ Compressed archives - 
-    ❌ XML/HTML -
-    ❌ Custom formats -
-    ❌ DataFrame to SQL - Handled by DBConnector
-    ❌ DataFrame to JSON - Handled by DataProcessor 
-    ❌ DataFrame to Excel - Handled by DataProcessor
-    ❌ DataFrame to CSV - Handled by DataProcessor
-    ❌ DataFrame to Parquet - Handled by DataProcessor
-    ❌ DataFrame to other formats - Handled by DataProcessor    
-    
+
 """
 
 from __future__ import annotations
@@ -306,13 +291,13 @@ class DataLoader:
         - Memory-efficient processing
         - Comprehensive error handling and reporting
 
-    Manager Requirements Implementation (10 Core Methods):
+    Requirements Implementation (10 Core Methods):
       ✓ Loading Functions (5): load(), load_csv(), load_excel(), load_json(), parse_datetimes()
       ✓ Detection Functions (3): detect_format(), detect_encoding(), sniff_csv_params()
       ✓ Performance (1): estimate_memory_usage()
       ✓ Reporting & Error Handling (2): build_report(), detect_time_columns()
 
-    Supported Formats (Manager Priority):
+    Supported Formats:
       - CSV/TSV: 95% usage (CRITICAL) - Full parameter detection
       - Excel: 80% usage (HIGH) - Sheet detection and selection  
       - JSON: 70% usage (MEDIUM) - Structure flattening
@@ -347,7 +332,7 @@ class DataLoader:
         self._start_time = None
         
         if self.verbose:
-            self.logger.info("DataLoader initialized - Manager Requirements Mode")
+            self.logger.info("DataLoader initialized with settings: ")
 
     # -----------------------
     # LOADING FUNCTIONS (5 methods - Manager Requirements)
@@ -393,7 +378,7 @@ class DataLoader:
         """
         CSV/TSV loader with advanced parameter detection.
         
-        Manager Priority: 95% usage (CRITICAL) - Most important format.
+
         
         Args:
             source: CSV file path or file-like object
@@ -419,7 +404,6 @@ class DataLoader:
         """
         Excel loader with intelligent sheet selection.
         
-        Manager Priority: 80% usage (HIGH) - Second most important format.
         
         Args:
             source: Excel file path (.xlsx, .xls)
@@ -441,7 +425,6 @@ class DataLoader:
         """
         JSON loader with advanced flattening.
         
-        Manager Priority: 70% usage (MEDIUM) - Third priority format.
         
         Args:
             source: JSON file path or file-like object
@@ -466,7 +449,7 @@ class DataLoader:
         """
         Parse datetime columns with intelligent detection and error handling.
         
-        Manager Priority: CRITICAL - "can cause lots of troubles and can be pretty common"
+        Priority: CRITICAL - "can cause lots of troubles and can be pretty common"
         
         Args:
             df: DataFrame with columns to parse
@@ -499,7 +482,6 @@ class DataLoader:
         """
         Auto-detect file format with confidence score.
         
-        Manager Priority: Essential for auto-loading functionality.
         
         Args:
             source: File path or file-like object
@@ -524,7 +506,7 @@ class DataLoader:
         """
         Critical encoding detection with confidence score.
         
-        Manager Priority: CRITICAL - "encoding might cause nasty problems, based on our experience, 
+        Priority: CRITICAL - "encoding might cause nasty problems, based on our experience, 
         so we definitely should have it, great job."
         
         Args:
@@ -551,7 +533,7 @@ class DataLoader:
         """
         Auto-detect CSV parameters with advanced sniffing.
         
-        Manager Priority: Essential for 95% usage CSV format.
+    
         
         Args:
             source: CSV file path or file-like object
@@ -581,7 +563,7 @@ class DataLoader:
         """
         Estimate memory requirements for loading large files.
         
-        Manager Priority: Essential for large file handling.
+        Priority: Essential for large file handling.
         
         Args:
             source: File path or file-like object
@@ -605,7 +587,7 @@ class DataLoader:
         """
         Generate comprehensive load reports.
         
-        Manager Priority: Essential for monitoring and debugging.
+        Priority: Essential for monitoring and debugging.
         
         Returns:
             LoadReport with comprehensive loading metrics and analysis
@@ -629,7 +611,7 @@ class DataLoader:
         """
         Datetime detection - identify potential datetime columns.
         
-        Manager Priority: Essential for parse_datetimes() functionality.
+       Priority: Essential for parse_datetimes() functionality.
         
         Args:
             df: DataFrame to analyze
