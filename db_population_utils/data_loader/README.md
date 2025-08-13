@@ -1,378 +1,590 @@
-# DataLoader Class Design - Focused & Practical
+# DataLoader - Essential Data Loading (Manager Requirements)
 
 ## Overview
-`DataLoader` (core, reusable)
 
-**Responsibility**: Robust, schema-agnostic loading of tabular data from files with intelligent detection, validation, and preprocessing capabilities.
+Essential data loading module implementing **exactly 10 core methods** based on manager requirements. Focuses on 3 critical file formats with intelligent detection and quality assessment.
 
-## Core Methods (Original Design)
+## Manager Requirements Implementation
 
-### Initialization
-* `__init__(verbose: bool = True)` - Initialize loader with logging preferences
-
-### Main Loading Interface
-* `load(source, kind='auto', options: LoadOptions|dict|None=None) -> pd.DataFrame` - Universal data loading interface with auto-detection
-
-### Format Detection & Analysis
-* `detect_encoding(source, sample_size=20000) -> str` - Detect file encoding with confidence scoring
-* `sniff_csv_params(source, sample_size=20000) -> CsvParams` - Auto-detect CSV parameters
-* `detect_time_columns(df, hints=None, min_parse_rate=0.8) -> list[str]` - Identify datetime columns
-
-### Format-Specific Loading
-* `load_csv(source, params: CsvParams|dict|None=None, dtype_overrides=None, date_columns=None, chunksize=None) -> pd.DataFrame | Iterator[pd.DataFrame]` - Load CSV/TSV files
-* `load_excel(source, sheet='auto', engine=None, decimal=',') -> pd.DataFrame` - Load Excel files with sheet auto-selection
-* `load_json(source, record_path=None, meta=None, flatten=True, json_path=None) -> pd.DataFrame` - Load and normalize JSON data
-
-### Data Processing
-* `flatten_json(obj, record_path=None, meta=None) -> pd.DataFrame` - Flatten nested JSON structures
-* `parse_datetimes(df, cols, tz_source=None, tz_target='UTC', dayfirst=False, infer=True) -> pd.DataFrame` - Parse and normalize datetime columns
-
-### Reporting
-* `build_report() -> LoadReport` - Generate comprehensive loading report
-
-## Enhanced Methods (Extensions)
-
-### Core Format Support (6 Formats)
-* `load_csv(source, params: CsvParams|dict|None=None, dtype_overrides=None, date_columns=None, chunksize=None) -> pd.DataFrame | Iterator[pd.DataFrame]` - Enhanced CSV/TSV loader with advanced parameter detection
-* `load_excel(source, sheet='auto', engine=None, decimal=',') -> pd.DataFrame` - Excel loader with intelligent sheet selection
-* `load_json(source, record_path=None, meta=None, flatten=True, json_path=None) -> pd.DataFrame` - JSON loader with advanced flattening
-* `load_jsonl(source, chunksize: int = None, **kwargs) -> pd.DataFrame | Iterator[pd.DataFrame]` - JSON Lines format with streaming support
-* `load_parquet(source, columns: list = None, filters: list = None, **kwargs) -> pd.DataFrame` - Parquet files with column selection and filtering
-* `load_google_sheets(url: str, sheet_id: str = None, format: str = 'csv', **kwargs) -> pd.DataFrame` - Direct Google Sheets loading
-
-### Advanced CSV/Text Processing
-* `detect_delimiter_advanced(source, sample_size: int = 50000) -> DelimiterInfo` - Advanced delimiter detection with confidence scores
-* `detect_quote_char(source, delimiter: str, sample_size: int = 20000) -> str` - Detect quote character
-* `detect_null_patterns(source, sample_size: int = 20000) -> list[str]` - Identify null value patterns
-* `detect_multiline_records(source, sample_size: int = 10000) -> bool` - Detect multi-line CSV records
-
-### Data Quality & Validation
-* `validate_schema(df: pd.DataFrame, schema: dict, strict: bool = False) -> ValidationReport` - Validate DataFrame against schema
-* `detect_data_types(df: pd.DataFrame, sample_ratio: float = 0.1) -> dict` - Intelligent data type detection
-
-### Memory & Performance Optimization
-* `estimate_memory_usage(source, sample_ratio: float = 0.01) -> MemoryEstimate` - Estimate memory requirements
-* `load_in_chunks(source, chunksize: int = 10000, **kwargs) -> Iterator[pd.DataFrame]` - Memory-efficient chunked loading
-* `parallel_load(sources: list, max_workers: int = None, **kwargs) -> list[pd.DataFrame]` - Parallel loading of multiple sources
-* `stream_load(source, batch_size: int = 1000, **kwargs) -> Iterator[pd.DataFrame]` - Streaming data loader
-
-### Advanced Excel Processing
-* `list_excel_sheets(source) -> list[str]` - List all sheets in Excel file
-* `detect_excel_structure(source, sheet: str = None) -> ExcelStructure` - Analyze Excel file structure
-* `load_excel_range(source, sheet: str, cell_range: str, **kwargs) -> pd.DataFrame` - Load specific cell range
-* `merge_excel_sheets(source, sheets: list = None, merge_strategy: str = 'concat') -> pd.DataFrame` - Combine multiple sheets
-
-### JSON Processing Enhancements
-* `detect_json_structure(source, sample_size: int = 1000) -> JsonStructure` - Analyze JSON structure
-* `extract_json_schema(source) -> dict` - Extract JSON schema
-* `normalize_nested_json(obj, max_level: int = 10) -> pd.DataFrame` - Advanced nested JSON normalization
-
-### Time Series & DateTime Processing
-* `detect_time_patterns(df: pd.DataFrame, columns: list = None) -> TimePatternReport` - Identify time series patterns
-* `standardize_timezones(df: pd.DataFrame, tz_columns: list, target_tz: str = 'UTC') -> pd.DataFrame` - Standardize timezone handling
-* `parse_custom_datetime(df: pd.DataFrame, column: str, format_pattern: str) -> pd.DataFrame` - Parse custom datetime formats
-* `detect_time_frequency(df: pd.DataFrame, datetime_col: str) -> FrequencyInfo` - Detect time series frequency
-
-### Configuration & Caching
-* `save_load_config(path: str, config: LoadOptions) -> None` - Save loading configuration
-* `load_config_from_file(path: str) -> LoadOptions` - Load configuration from file
-* `cache_detection_results(enabled: bool = True, cache_dir: str = None) -> None` - Cache detection results for performance
-* `clear_cache() -> None` - Clear detection cache
-* `get_cached_params(source) -> dict` - Get cached detection parameters
-
-### Error Handling & Recovery
-* `load_with_fallback(source, fallback_options: list[LoadOptions]) -> LoadResult` - Load with fallback strategies
-* `recover_corrupted_data(source, recovery_strategy: str = 'skip_bad_lines') -> pd.DataFrame` - Recover from corrupted files
-* `partial_load_on_error(source, error_threshold: float = 0.1, **kwargs) -> PartialLoadResult` - Partial loading with error tolerance
-* `validate_before_load(source, quick_check: bool = True) -> ValidationResult` - Pre-load validation
-
-### Metadata & Profiling
-* `profile_dataset(df: pd.DataFrame, include_correlations: bool = False) -> DataProfile` - Comprehensive data profiling
-* `extract_metadata(source) -> FileMetadata` - Extract file metadata
-* `generate_data_dictionary(df: pd.DataFrame, include_stats: bool = True) -> dict` - Generate data dictionary
-* `compare_datasets(df1: pd.DataFrame, df2: pd.DataFrame) -> ComparisonReport` - Compare two datasets
-
-## Enhanced Support Types (Dataclasses)
-
-### Core Configuration Classes
-```python
-@dataclass
-class CsvParams:
-    delimiter: str = ','
-    decimal: str = '.'
-    header: Union[int, list, None] = 'infer'
-    encoding: str = 'utf-8'
-    quote_char: str = '"'
-    escape_char: str = None
-    null_values: list[str] = field(default_factory=list)
-    skip_rows: int = 0
-    comment_char: str = None
+```
+✓ Loading Functions (5): load(), load_csv(), load_excel(), load_json(), parse_datetimes()
+✓ Detection Functions (3): detect_format(), detect_encoding(), sniff_csv_params()
+✓ Performance (1): estimate_memory_usage()
+✓ Reporting & Error Handling (2): build_report(), detect_time_columns()
 ```
 
-```python
-@dataclass
-class LoadOptions:
-    # Format options
-    kind: str = 'auto'  # csv, excel, json, jsonl, parquet, google_sheets
-    delimiter: str = None
-    encoding: str = None
-    sheet: str = 'auto'
-    compression: str = 'infer'  # gzip, bz2, zip, xz
-    
-    # Data processing options
-    date_columns: list[str] = None
-    tz_source: str = None
-    tz_target: str = 'UTC'
-    dtype_overrides: dict = None
-    
-    # Performance options
-    chunksize: int = None
-    nrows: int = None
-    skiprows: int = None
-    load_strategy: str = 'performance'  # performance, memory_efficient, robust, streaming
-    
-    # Quality options
-    validation_level: str = 'basic'  # none, basic, strict, comprehensive
-    detect_types: bool = True
-    drop_empty_rows: bool = True
+## Supported Formats (Manager Priority)
+
+| Format  | Priority       | Status    | Usage  | Critical Features           |
+|---------|---------------|-----------|--------|-----------------------------|
+| CSV/TSV | 95% CRITICAL  | ✅ Full   | Daily  | Encoding detection, params  |
+| Excel   | 80% HIGH      | ✅ Full   | Weekly | Sheet selection, detection  |
+| JSON    | 70% MEDIUM    | ✅ Full   | Common | Structure flattening        |
+
+
+## Key Features
+
+🎯 **Priorities:**
+- **Critical Encoding Detection**
+- **DateTime Parsing** 
+- **CSV Focus**: 95% usage priority with advanced parameter detection
+- **Quality Assessment**: Built-in data quality scoring and reporting
+
+✅ **Core Functionality:**
+- Intelligent format detection and parameter sniffing
+- Memory-efficient processing with estimation
+- Comprehensive error handling and recovery
+- Quality assessment (no transformation)
+- Single-call comprehensive operations
+
+## Installation
+
+```bash
+# Essential dependencies
+pip install pandas numpy
+
+# Format-specific dependencies
+pip install chardet      # CRITICAL: For CSV encoding detection
+pip install openpyxl     # HIGH: For Excel (.xlsx) support
+pip install xlrd         # For legacy Excel (.xls) support
 ```
 
-### Enhanced Report Classes
-```python
-@dataclass
-class LoadReport:
-    source: str
-    kind: str  # Detected format
-    load_strategy: str
-    
-    # Detection results
-    encoding: str = None
-    compression_detected: str = None
-    csv_params: CsvParams = None
-    excel_params: ExcelParams = None
-    json_params: JsonParams = None
-    
-    # Data characteristics
-    shape: tuple[int, int] = None
-    columns_detected: list[str] = None
-    date_columns_found: list[str] = None
-    data_types: dict = None
-    
-    # Quality metrics
-    data_quality: DataQualityReport = None
-    validation_result: ValidationReport = None
-    missing_data_summary: dict = None
-    duplicate_count: int = None
-    outlier_summary: dict = None
-    
-    # Performance metrics
-    load_time_seconds: float = None
-    memory_usage_mb: float = None
-    rows_processed: int = None
-    processing_speed_rows_per_sec: float = None
-    
-    # Issues and notes
-    warnings: list[str] = field(default_factory=list)
-    errors: list[str] = field(default_factory=list)
-    notes: list[str] = field(default_factory=list)
-    
-    # Source metadata
-    file_size_bytes: int = None
-    file_modified_time: str = None
-    source_accessible: bool = True
-```
-
-### Specialized Report Classes
-```python
-@dataclass
-class ValidationReport:
-    is_valid: bool
-    validation_errors: list[str]
-    field_validation: dict[str, bool]
-    suggestions: list[str]
-    validation_time: float = 0.0
-
-@dataclass
-class MemoryEstimate:
-    estimated_memory_mb: float
-    recommended_chunksize: int
-    can_load_in_memory: bool
-    memory_per_row_bytes: float = 0.0
-    
-@dataclass
-class DataQualityReport:
-    missing_data_ratio: float = 0.0
-    duplicate_rows: int = 0
-    unique_values_per_column: dict[str, int] = field(default_factory=dict)
-    data_types_detected: dict[str, str] = field(default_factory=dict)
-    outlier_count: dict[str, int] = field(default_factory=dict)
-    quality_score: float = 0.0  # 0-100
-    recommendations: list[str] = field(default_factory=list)
-    
-@dataclass
-class ExcelStructure:
-    sheets: list[str]
-    recommended_sheet: str
-    sheet_shapes: dict[str, tuple]
-    has_merged_cells: bool
-    
-@dataclass
-class JsonStructure:
-    max_nesting_level: int
-    record_count_estimate: int
-    field_types: dict
-    recommended_record_path: str
-    structure_type: str = "unknown"  # flat, nested, array_of_objects
-```
-
-## Enhanced Initialization
-
-```python
-def __init__(
-    self,
-    verbose: bool = True,
-    cache_enabled: bool = True,
-    cache_dir: str = None,
-    max_memory_usage_gb: float = 4.0,
-    default_encoding: str = 'utf-8',
-    chunk_size_auto: bool = True,
-    parallel_processing: bool = True,
-    max_workers: int = None,
-    logger: logging.Logger = None,
-    load_strategy: str = 'performance',
-    validation_level: str = 'basic'
-):
-    """
-    Initialize DataLoader with enhanced configuration options.
-    
-    Args:
-        verbose: Enable detailed logging
-        cache_enabled: Enable detection result caching
-        cache_dir: Directory for cache files
-        max_memory_usage_gb: Maximum memory usage limit
-        default_encoding: Default encoding for text files
-        chunk_size_auto: Automatically determine optimal chunk size
-        parallel_processing: Enable parallel processing
-        max_workers: Maximum worker threads for parallel processing
-        logger: Custom logger instance
-        load_strategy: Default loading strategy (performance, memory_efficient, robust, streaming)
-        validation_level: Default validation level (none, basic, strict, comprehensive)
-    """
-```
-
-## Supported Formats & Usage Statistics
-
-### Format Support Matrix
-| Format | Detection | Streaming | Compression | Schema | Validation | Usage |
-|--------|-----------|-----------|-------------|--------|------------|-------|
-| CSV/TSV | ✓ | ✓ | ✓ | ✓ | ✓ | 95% |
-| Excel | ✓ | ✗ | ✓ | ✓ | ✓ | 80% |
-| JSON | ✓ | ✓ | ✓ | ✓ | ✓ | 70% |
-| JSON Lines | ✓ | ✓ | ✓ | ✓ | ✓ | 20% |
-| Parquet | ✓ | ✓ | ✓ | ✓ | ✓ | 35% |
-| Google Sheets | ✓ | ✗ | N/A | ✓ | ✓ | 40% |
-
-### Loading Strategies
-- **PERFORMANCE**: Fast loading for known-good data, default choice
-- **MEMORY_EFFICIENT**: Chunked processing for large files, automatic memory management
-- **ROBUST**: Maximum error recovery and validation, comprehensive quality checks
-- **STREAMING**: Continuous processing of data streams, minimal memory footprint
-
-## Usage Examples
+## Quick Start
 
 ### Basic Usage
-```python
-# Initialize with enhanced options
-loader = DataLoader(
-    verbose=True,
-    cache_enabled=True,
-    max_memory_usage_gb=8.0
-)
 
-# Universal loading with auto-detection
+```python
+from db_population_utils.data_loader import DataLoader
+
+# Initialize with manager-approved defaults
+loader = DataLoader(verbose=True)
+
+# Auto-detect and load (works with all 3 formats)
+df = loader.load("data.csv")     # CSV - 95% priority
+df = loader.load("report.xlsx")  # Excel - 80% priority  
+df = loader.load("api_data.json") # JSON - 70% priority
+```
+
+### Critical CSV Loading (95% Usage Priority)
+
+```python
+# Smart CSV detection with issue fixing
+df, details = loader.load_csv_with_smart_detection("messy_data.csv")
+
+print(f"📄 Detected delimiter: '{details['csv_params']['delimiter']}'")
+print(f"📝 Detected encoding: {details['encoding']['detected']}")
+print(f"🔧 Issues fixed: {details['issues_fixed']}")
+
+# Quick CSV with encoding detection (manager priority)
+from db_population_utils.data_loader import quick_csv_load
+
+df, summary = quick_csv_load("important_data.csv")
+print(f"📊 Quality: {summary['quality_score']}/100")
+```
+
+### DateTime Parsing (Manager Priority)
+
+```python
+# Auto-detect and parse datetime columns
+df_with_dates = loader.parse_datetimes(df)
+
+# Comprehensive datetime handling
+from db_population_utils.data_loader import load_with_datetime_parsing
+
+df, dt_report = load_with_datetime_parsing("time_series.csv")
+print(f"🕒 Detected columns: {dt_report['detected_columns']}")
+print(f"✅ Successfully parsed: {dt_report['successful_columns']}")
+print(f"📊 Success rate: {dt_report['overall_success_rate']:.1f}%")
+```
+
+## Core Methods
+
+### Loading Functions (5 methods)
+
+#### 1. load() - Universal Loading
+```python
+# Main loading method with auto-detection
+df = loader.load("data.csv", kind="auto")
+
+# With options
+from db_population_utils.data_loader import LoadOptions
+options = LoadOptions(encoding="utf-8", nrows=1000)
+df = loader.load("data.xlsx", options=options)
+```
+
+#### 2. load_csv() - CSV/TSV (95% Priority)
+```python
+# Auto-detection (recommended)
+df = loader.load_csv("data.csv")
+
+# Custom parameters
+from db_population_utils.data_loader import CsvParams
+params = CsvParams(delimiter=";", encoding="latin1")
+df = loader.load_csv("data.csv", params=params)
+
+# Chunked loading for large files
+for chunk in loader.load_csv("large.csv", chunksize=10000):
+    process_chunk(chunk)
+```
+
+#### 3. load_excel() - Excel (80% Priority)
+```python
+# Auto sheet selection
+df = loader.load_excel("report.xlsx")
+
+# Specific sheet
+from db_population_utils.data_loader import ExcelParams
+params = ExcelParams(sheet="Summary")
+df = loader.load_excel("report.xlsx", params=params)
+```
+
+#### 4. load_json() - JSON (70% Priority)
+```python
+# Simple JSON
+df = loader.load_json("data.json")
+
+# Nested JSON with flattening
+from db_population_utils.data_loader import JsonParams
+params = JsonParams(record_path=["data", "records"])
+df = loader.load_json("nested.json", params=params)
+```
+
+#### 5. parse_datetimes() - Critical DateTime Handling
+```python
+# Auto-detect datetime columns
+df_parsed = loader.parse_datetimes(df)
+
+# Specific columns
+df_parsed = loader.parse_datetimes(df, cols=['created_at', 'updated_at'])
+
+# Custom format with error handling
+df_parsed = loader.parse_datetimes(
+    df, 
+    cols=['date'], 
+    format='%Y-%m-%d',
+    errors='coerce'  # Handle parsing errors gracefully
+)
+```
+
+### Detection Functions (3 methods)
+
+#### 1. detect_format() - Format Detection
+```python
+# Auto-detect file format
+format_type, confidence = loader.detect_format("unknown_file.dat")
+print(f"Detected: {format_type} (confidence: {confidence:.2f})")
+```
+
+#### 2. detect_encoding() - Critical Encoding Detection
+```python
+# Critical for CSV files (manager priority)
+encoding, confidence = loader.detect_encoding("data.csv")
+print(f"Encoding: {encoding} (confidence: {confidence:.2f})")
+
+# With custom sample size
+encoding, confidence = loader.detect_encoding("large.csv", sample_size=50000)
+```
+
+#### 3. sniff_csv_params() - CSV Parameter Detection
+```python
+# Auto-detect CSV parameters
+params = loader.sniff_csv_params("data.csv")
+print(f"Delimiter: '{params.delimiter}'")
+print(f"Quote char: '{params.quote_char}'")
+print(f"Header row: {params.header}")
+print(f"Confidence: {params.delimiter_confidence:.2f}")
+```
+
+### Performance (1 method)
+
+#### estimate_memory_usage() - Memory Estimation
+```python
+# Estimate memory requirements
+memory_estimate = loader.estimate_memory_usage("large_file.csv")
+
+print(f"Estimated memory: {memory_estimate.estimated_memory_mb:.1f}MB")
+print(f"Can load in memory: {memory_estimate.can_load_in_memory}")
+
+if memory_estimate.recommended_chunksize:
+    print(f"Recommended chunk size: {memory_estimate.recommended_chunksize}")
+```
+
+### Reporting & Error Handling (2 methods)
+
+#### 1. build_report() - Comprehensive Reporting
+```python
+# Generate detailed report
 df = loader.load("data.csv")
-
-# Advanced loading with options
-options = LoadOptions(
-    validation_level='comprehensive',
-    detect_types=True
-)
-df = loader.load("complex_data.xlsx", options=options)
-```
-
-### Format-Specific Loading
-```python
-# CSV with advanced detection
-df = loader.load_csv("data.csv")  # Auto-detects delimiter, encoding, etc.
-
-# Excel with sheet selection
-df = loader.load_excel("report.xlsx", sheet="Summary")
-
-# JSON with flattening
-df = loader.load_json("nested.json", record_path=['data', 'records'])
-
-# JSON Lines streaming
-for chunk in loader.load_jsonl("logs.jsonl", chunksize=1000):
-    process_chunk(chunk)
-
-# Parquet with column selection
-df = loader.load_parquet("data.parquet", columns=['id', 'name', 'value'])
-
-# Google Sheets direct loading
-df = loader.load_google_sheets(
-    "https://docs.google.com/spreadsheets/d/abc123/edit",
-    sheet_id="123456789"
-)
-```
-
-### Advanced Features
-```python
-# Memory-efficient processing
-for chunk in loader.load_in_chunks("large_file.csv", chunksize=10000):
-    process_chunk(chunk)
-
-# Parallel batch loading
-dfs = loader.parallel_load([
-    "file1.csv", "file2.json", "file3.parquet"
-], max_workers=4)
-
-# Data quality analysis
-profile = loader.profile_dataset(df, include_correlations=True)
-validation = loader.validate_schema(df, schema_dict)
-
-# Get comprehensive report
 report = loader.build_report()
-print(f"Quality Score: {report.data_quality.quality_score}/100")
-print(f"Load Time: {report.load_time_seconds:.2f}s")
-print(f"Memory Usage: {report.memory_usage_mb:.1f}MB")
+
+print(f"📊 Quality Score: {report.data_quality.quality_score}/100")
+print(f"⏱️  Load Time: {report.load_time_seconds:.2f}s")
+print(f"💾 Memory Usage: {report.memory_usage_mb:.1f}MB")
+print(f"🔍 Detected encoding: {report.encoding}")
+
+if report.warnings:
+    print(f"⚠️  Warnings: {report.warnings}")
 ```
 
-### Error Handling & Recovery
+#### 2. detect_time_columns() - DateTime Column Detection
 ```python
-# Load with fallback strategies
-df, report = loader.load_with_fallback(
-    "problematic_file.csv",
-    fallback_options=[
-        LoadOptions(encoding='utf-8', delimiter=','),
-        LoadOptions(encoding='latin-1', delimiter=';'),
-        LoadOptions(encoding='utf-8', on_bad_lines='skip')
-    ]
-)
+# Detect potential datetime columns
+time_columns = loader.detect_time_columns(df)
+print(f"🕒 Potential datetime columns: {time_columns}")
 
-# Partial loading with error tolerance
-df, errors = loader.recover_corrupted_data(
-    "corrupted.csv", 
-    recovery_strategy='skip_bad_lines'
+# With hints and custom settings
+time_columns = loader.detect_time_columns(
+    df,
+    hints=['date', 'created', 'timestamp'],
+    min_parse_rate=0.9
 )
 ```
 
-## Integration Points
+## Comprehensive Operations
 
-This focused `DataLoader` class provides:
-- **Pure data loading** focused on getting data into pandas DataFrames as-is
-- **Intelligent detection** with confidence scoring and fallback strategies  
-- **Quality assessment** and validation capabilities for data profiling
-- **Performance optimization** for large datasets with multiple loading strategies
-- **Google Sheets integration** for collaborative workflows
-- **Comprehensive reporting** for load monitoring and data quality insights
-- **Seamless integration** with DataProcessor (for transformations) and DBConnector (for database operations)
+### 1. Complete Loading with Full Reporting
+```python
+# Single call: detection + loading + quality analysis + reporting
+df, report = loader.load_with_comprehensive_report(
+    "data.csv",
+    include_quality_analysis=True,
+    include_datetime_detection=True
+)
+
+print(f"✅ Loaded {report.shape[0]} rows, {report.shape[1]} columns")
+print(f"📊 Quality Score: {report.data_quality.quality_score}/100")
+print(f"🕒 Datetime Columns: {report.detected_time_cols}")
+print(f"⏱️  Load Time: {report.load_time_seconds:.2f}s")
+```
+
+### 2. CSV with Smart Detection and Issue Fixing
+```python
+# Comprehensive CSV handling with automatic issue resolution
+df, details = loader.load_csv_with_smart_detection(
+    "problematic_data.csv",
+    auto_fix_common_issues=True
+)
+
+print(f"📄 Delimiter: '{details['csv_params']['delimiter']}'")
+print(f"📝 Encoding: {details['encoding']['detected']}")
+print(f"🔧 Issues fixed: {details['issues_fixed']}")
+print(f"⚠️  Issues remaining: {details['issues_remaining']}")
+```
+
+### 3. Fallback Loading with Error Recovery
+```python
+# Multiple fallback strategies for problematic files
+df, recovery = loader.load_with_fallback_strategies(
+    "difficult_file.csv",
+    max_attempts=3,
+    enable_error_recovery=True
+)
+
+print(f"📊 Final result: {recovery['final_status']}")
+print(f"🔄 Attempts made: {recovery['attempts_made']}")
+print(f"💾 Data recovered: {recovery['recovery_percentage']:.1f}%")
+```
+
+## Configuration and Options
+
+### LoadOptions Configuration
+```python
+from db_population_utils.data_loader import LoadOptions, LoadStrategy
+
+options = LoadOptions(
+    # Format detection
+    kind="auto",  # or "csv", "excel", "json"
+    encoding="utf-8",
+    compression="infer",
+    
+    # Performance
+    nrows=10000,
+    low_memory=True,
+    load_strategy=LoadStrategy.MEMORY_EFFICIENT,
+    
+    # CSV specific
+    delimiter=",",
+    header=0,
+    
+    # Excel specific  
+    sheet="auto",
+    
+    # JSON specific
+    flatten_json=True,
+    
+    # DateTime handling (manager priority)
+    detect_time_columns=True,
+    infer_datetime_format=True,
+    
+    # Error handling
+    on_bad_lines="error",  # or "warn", "skip"
+    error_tolerance=0.0
+)
+
+df = loader.load("data.csv", options=options)
+```
+
+### Format-Specific Parameters
+```python
+# CSV Parameters
+from db_population_utils.data_loader import CsvParams
+
+csv_params = CsvParams(
+    delimiter=",",
+    encoding="utf-8", 
+    header=0,
+    quote_char='"',
+    null_values=['', 'NULL', 'na']
+)
+
+# Excel Parameters
+from db_population_utils.data_loader import ExcelParams
+
+excel_params = ExcelParams(
+    sheet="Summary",
+    header=0,
+    engine="openpyxl"
+)
+
+# JSON Parameters
+from db_population_utils.data_loader import JsonParams
+
+json_params = JsonParams(
+    record_path=["data", "records"],
+    orient="records"
+)
+```
+
+## Error Handling
+
+### Common Error Scenarios
+```python
+from db_population_utils.data_loader import (
+    DataLoaderError, 
+    DetectionError, 
+    UnsupportedFormatError,
+    LoadingMemoryError
+)
+
+try:
+    df = loader.load("problematic_file.csv")
+except DetectionError as e:
+    print(f"Detection failed: {e}")
+    # Try manual parameters
+    
+except UnsupportedFormatError as e:
+    print(f"Unsupported format: {e}")
+    
+except LoadingMemoryError as e:
+    print(f"Memory issue: {e}")
+    # Try chunked loading
+    
+except DataLoaderError as e:
+    print(f"General loading error: {e}")
+```
+
+### Graceful Error Recovery
+```python
+# Load with error tolerance
+try:
+    df, recovery_info = loader.load_with_fallback_strategies(
+        "problematic_file.csv",
+        enable_error_recovery=True
+    )
+    
+    if recovery_info['final_status'] == 'partial_success':
+        print(f"⚠️  Partial load: {recovery_info['recovery_percentage']:.1f}%")
+    
+except DataLoaderError:
+    print("❌ Complete failure - file may be corrupted")
+```
+
+## Integration with Data Pipeline
+
+### Complete Manager Workflow
+```python
+from db_population_utils.data_loader import DataLoader
+from db_population_utils import DataProcessor, DBConnector
+
+# Step 1: Load with quality assessment
+loader = DataLoader(verbose=True)
+df_raw, report = loader.load_with_comprehensive_report("data.csv")
+
+print(f"📊 Data Quality: {report.data_quality.quality_score}/100")
+
+# Step 2: Process only if quality is acceptable
+if report.data_quality.quality_score > 80:
+    # DataProcessor handles transformations (separate class)
+    processor = DataProcessor()
+    df_clean = processor.clean_data(df_raw)
+    
+    # Step 3: Store in database
+    connector = DBConnector()
+    success, db_report = connector.insert_dataframe_with_report(
+        df_clean, "processed_data", target="ingestion"
+    )
+    
+    if success:
+        print(f"✅ Pipeline completed: {db_report.rows_inserted} rows inserted")
+    else:
+        print(f"❌ Database insertion failed: {db_report.errors}")
+else:
+    print(f"⚠️  Data quality too low ({report.data_quality.quality_score}/100)")
+    print(f"Recommendations: {report.data_quality.recommendations}")
+```
+
+### Datetime Processing Pipeline
+```python
+# Critical datetime handling (manager priority)
+df, dt_report = load_with_datetime_parsing("time_series.csv")
+
+if dt_report['overall_success_rate'] > 80:
+    print(f"✅ DateTime parsing successful: {dt_report['successful_columns']}")
+    
+    # Continue with time series processing
+    processor = DataProcessor()
+    df_processed = processor.process_time_series(df)
+else:
+    print(f"⚠️  DateTime parsing issues: {dt_report['failed_columns']}")
+    # Manual datetime handling may be required
+```
+
+## Performance Tips
+
+### Memory Management
+```python
+# Check memory requirements first
+memory_est = loader.estimate_memory_usage("large_file.csv")
+
+if not memory_est.can_load_in_memory:
+    # Use chunked processing
+    for chunk in loader.load_csv("large_file.csv", chunksize=10000):
+        process_chunk(chunk)
+else:
+    # Load normally
+    df = loader.load_csv("large_file.csv")
+```
+
+### CSV Optimization (95% Priority)
+```python
+# Enable caching for repeated CSV operations
+loader = DataLoader(cache_enabled=True)
+
+# Pre-detect parameters for batch processing
+csv_params = loader.sniff_csv_params("template.csv")
+
+# Reuse parameters for similar files
+for file in similar_csv_files:
+    df = loader.load_csv(file, params=csv_params)
+    process_file(df)
+```
+
+## Convenience Functions
+
+```python
+from db_population_utils.data_loader import (
+    create_essential_loader,
+    quick_csv_load,
+    load_with_datetime_parsing,
+    check_format_support
+)
+
+# Quick setup
+loader = create_essential_loader(verbose=True, max_memory_gb=8.0)
+
+# Quick CSV (95% priority format)
+df, summary = quick_csv_load("data.csv", auto_detect_encoding=True)
+
+# DateTime focus
+df, dt_report = load_with_datetime_parsing("time_data.csv")
+
+# Check what's supported
+support = check_format_support()
+print(f"CSV support: {support['csv']['status']}")
+print(f"Excel support: {support['excel']['status']}")
+print(f"JSON support: {support['json']['status']}")
+```
+
+## Troubleshooting
+
+### Common Issues
+
+**1. Encoding Problems (Manager Priority)**
+```python
+# Encoding detection failing
+encoding, confidence = loader.detect_encoding("problematic.csv")
+if confidence < 0.8:
+    # Try common encodings manually
+    for enc in ['utf-8', 'latin1', 'cp1252']:
+        try:
+            df = loader.load_csv("problematic.csv", encoding=enc)
+            break
+        except UnicodeDecodeError:
+            continue
+```
+
+**2. DateTime Parsing Issues (Manager Priority)**
+```python
+# Auto-detection failing
+time_cols = loader.detect_time_columns(df)
+if not time_cols:
+    # Manual hints
+    time_cols = loader.detect_time_columns(
+        df, 
+        hints=['date', 'created', 'timestamp', 'time']
+    )
+
+# Custom parsing for difficult formats
+df_parsed = loader.parse_datetimes(
+    df, 
+    cols=time_cols,
+    errors='coerce',  # Handle errors gracefully
+    dayfirst=True     # European date format
+)
+```
+
+**3. Large File Handling**
+```python
+# Memory estimation first
+memory_est = loader.estimate_memory_usage("huge_file.csv")
+if memory_est.recommended_chunksize:
+    # Use recommended chunk size
+    chunks = loader.load_csv(
+        "huge_file.csv", 
+        chunksize=memory_est.recommended_chunksize
+    )
+    for chunk in chunks:
+        process_chunk(chunk)
+```
+
+## Dependencies
+
+**Required:**
+```bash
+pip install pandas>=1.3.0 numpy>=1.20.0
+```
+
+**Format-Specific:**
+```bash
+pip install chardet      # CRITICAL: CSV encoding detection
+pip install openpyxl     # HIGH: Excel (.xlsx) support  
+pip install xlrd         # For legacy Excel (.xls)
+```
+
+**Optional:**
+```bash
+pip install python-magic  # Enhanced file type detection
+```
+
+## License
+
+MIT License
+
+
+
+**Requirements Summary:**
+- ✅ **10 Core Methods**: Exactly as specified in requirements
+- ✅ **3 Priority Formats**: CSV (95%), Excel (80%), JSON (70%)
+- ✅ **Critical Features**: Encoding detection, datetime parsing
+- ✅ **Quality Focus**: Assessment without transformation
+- ✅ **Integration Ready**: Works with DataProcessor and DBConnector
