@@ -1,0 +1,327 @@
+name,latitude,longitude,venue_type,cuisine_type,address,contact_info,opening_hours,rating,source
+Beast Berlin,52.52429,13.4118534,restaurant,steak_house,Karl-Liebknecht-Straße,,,,OpenStreetMap
+Aapka - Restaurant Alexanderplatz,52.5235991,13.4109696,restaurant,indian,Karl-Liebknecht-Straße,,,,OpenStreetMap
+Der Alte Fritz,52.5214304,13.4092065,restaurant,german,Panoramastraße,+49 30 96200600,,,OpenStreetMap
+Carambar,52.5203514,13.4122196,restaurant,,Rathausstraße,,,,OpenStreetMap
+Matzbach,52.5202106,13.4118079,restaurant,,,,,,OpenStreetMap
+Segafredo,52.5195321,13.4103508,cafe,coffee_shop,,,,,OpenStreetMap
+Azem,52.5180123,13.4071626,restaurant,turkish,,,,,OpenStreetMap
+Mutter Hoppe,52.5175872,13.4058989,restaurant,german,Rathausstraße,,,,OpenStreetMap
+Julchen Hoppe,52.5172681,13.4050245,restaurant,regional,Rathausstraße,,,,OpenStreetMap
+Shezan,52.512146,13.4081288,restaurant,indian,Neue Roßstraße,,,,OpenStreetMap
+Eden,52.5219316,13.4047999,restaurant,asian,Rosenstraße,,,,OpenStreetMap
+The Coffee Shop,52.5152592,13.3983179,cafe,coffee_shop,Werderscher Markt,,,,OpenStreetMap
+Café im Alten Museum,52.5191167,13.3985266,cafe,,,,,,OpenStreetMap
+Tudo,52.5213767,13.4096608,cafe,bubble_tea,,03027592932,,,OpenStreetMap
+Billardsalon Köh,52.5252025,13.4018544,bar,,Sophienstraße,,,,OpenStreetMap
+Atame,52.5235718,13.4068594,restaurant,spanish,Dircksenstraße,+49 30 98390591,,,OpenStreetMap
+Zur Letzten Instanz,52.5174527,13.4137758,restaurant,regional,Waisenstraße,,,,OpenStreetMap
+Spoonful,52.527189,13.3969021,cafe,ice_cream,Auguststraße,+4915124237879,,,OpenStreetMap
+Piazza Rossa,52.5190043,13.409291,restaurant,italian,Rathausstraße,,,,OpenStreetMap
+Blixen,52.5190506,13.4102575,cafe,,,,,,OpenStreetMap
+Palm Beach,52.5205872,13.404595,bar,,,,,,OpenStreetMap
+BLOCK HOUSE,52.5205315,13.4051631,restaurant,steak_house,Karl-Liebknecht-Straße,,,,OpenStreetMap
+Kartoffelhaus,52.5211493,13.4062159,restaurant,german,Karl-Liebknecht-Straße,,,,OpenStreetMap
+Schlögl's Altberliner Gaststätte,52.5213454,13.4059828,restaurant,german;regional,Karl-Liebknecht-Straße,+49 30 2411221,,,OpenStreetMap
+Marinehaus,52.5140771,13.4158409,restaurant,,Märkisches Ufer,+49302793246,,,OpenStreetMap
+Kuchi,52.527223,13.3992573,restaurant,sushi,Gipsstraße,+49 30 28386622,,,OpenStreetMap
+Ciccia,52.5202562,13.4016458,restaurant,italian,Anna-Louisa-Karsch-Straße,,,,OpenStreetMap
+James Simon Bar,52.5222074,13.398306,restaurant,,,,,,OpenStreetMap
+Bio Company,52.523162,13.4041367,cafe,,Dircksenstraße,,,,OpenStreetMap
+Monsieur Vuong,52.5266247,13.4078977,restaurant,vietnamese,Alte Schönhauser Straße,,,,OpenStreetMap
+Brauhaus Georgbräu,52.5165146,13.4053974,restaurant,regional,Spreeufer,,,,OpenStreetMap
+Das Lemke,52.5232744,13.4046561,restaurant,german;burger,Dircksenstraße,+49-30-24728727,,,OpenStreetMap
+Sixties,52.5237519,13.3994449,restaurant,american,Oranienburger Straße,+49 30 28599041,,,OpenStreetMap
+Sisal,52.527846,13.4034219,restaurant,italian,,,,,OpenStreetMap
+Röststätte,52.5241937,13.4022118,cafe,coffee_shop,Rosenthaler Straße,,,,OpenStreetMap
+Hackescher Hof,52.5239323,13.4024078,restaurant,german,Rosenthaler Straße,,,,OpenStreetMap
+Oxymoron,52.5241587,13.4018084,restaurant,,Rosenthaler Straße,+49 30 28391886,,,OpenStreetMap
+Goodtime,52.51271,13.397045,restaurant,asian,Hausvogteiplatz,+49 30 20074870,,,OpenStreetMap
+Strandbad-Mitte,52.5273327,13.3966319,restaurant,fish;pasta,Kleine Hamburger Straße,+49 30 24628963,,,OpenStreetMap
+ALEX,52.5211058,13.4083713,restaurant,breakfast;burger;international;steak_house,Panoramastraße,,,,OpenStreetMap
+12 Apostoli,52.5205024,13.3939538,restaurant,italian,,+49 30 23362404,,,OpenStreetMap
+Ni's Restaurant,52.5228088,13.4003145,restaurant,asian,Kleine Präsidentenstraße,+49 30 69001518,,,OpenStreetMap
+Fuki Sushi,52.5275895,13.4034466,restaurant,sushi,Rosenthaler Straße,,,,OpenStreetMap
+Sisaket,52.5235156,13.404871,restaurant,thai,Dircksenstraße,,,,OpenStreetMap
+Altes Europa,52.526693,13.401068,restaurant,,Gipsstraße,+49 30 28093840,,,OpenStreetMap
+Shi-Mai,52.5197018,13.4031586,restaurant,vietnamese,Karl-Liebknecht-Straße,,,,OpenStreetMap
+Andy's Diner & Bar,52.5199406,13.4029466,restaurant,american,Karl-Liebknecht-Straße,,,,OpenStreetMap
+Ännchen von Tharau,52.5153653,13.4165702,restaurant,german,Rolandufer,,,,OpenStreetMap
+Café Neundrei,52.5230254,13.399815,cafe,,Monbijouplatz,,,,OpenStreetMap
+Unknown,52.5250687,13.4025511,cafe,,Sophienstraße,,,,OpenStreetMap
+The No Name,52.5249384,13.3936795,restaurant,,,,,,OpenStreetMap
+Espresso House,52.5208397,13.4101065,cafe,coffee_shop,Panoramastraße,,,,OpenStreetMap
+TIM’s Bakery & Deli,52.5163595,13.3929727,cafe,,Bebelplatz,,,,OpenStreetMap
+Cum Laude,52.5186076,13.3944256,restaurant,german,Unter den Linden,,,,OpenStreetMap
+BBQ Kitchen,52.522822,13.4032024,restaurant,barbecue,Am Zwirngraben,+49 30 27909816,,,OpenStreetMap
+Buddha,52.5244375,13.3922437,restaurant,indian,,,,,OpenStreetMap
+Eschschloraque Rümschrümp,52.5244696,13.4017208,bar,,Rosenthaler Straße,,,,OpenStreetMap
+OLLA Grill & Orient Lounge,52.5222705,13.3992261,restaurant,oriental;pizza,,,,,OpenStreetMap
+LePopulaire,52.5169402,13.3962176,cafe,,Unter den Linden,,,,OpenStreetMap
+Viadukt Bistro,52.522594,13.4003855,cafe,,,,,,OpenStreetMap
+Starbucks,52.5231934,13.4020866,cafe,coffee_shop,Neue Promenade,,,,OpenStreetMap
+a posto,52.5226711,13.3999181,restaurant,italian,Monbijouplatz,+49 30 27595559,,,OpenStreetMap
+Weihenstephaner,52.5229726,13.4017099,restaurant,german,Neue Promenade,,,,OpenStreetMap
+DaVinci,52.5201096,13.3912976,restaurant,italian,Georgenstraße,,,,OpenStreetMap
+Pure Origins,52.5200936,13.3911123,cafe,coffee_shop,Georgenstraße,,,,OpenStreetMap
+Hackbarths,52.5278237,13.4007418,bar,,Auguststraße,,,,OpenStreetMap
+Supra,52.5228343,13.4028901,restaurant,georgian,Am Zwirngraben,+49 30 24638606,,,OpenStreetMap
+Spreeblick,52.516169,13.4058173,restaurant,german,Propststraße,+49 30 24 25 247,,,OpenStreetMap
+Zille-Destille,52.5163539,13.4060676,restaurant,german,Propststraße,,,,OpenStreetMap
+Zum Paddenwirt,52.516679,13.4080964,restaurant,german,Nikolaikirchplatz,+49 30 28444689,,,OpenStreetMap
+Kaffeestube,52.5163897,13.4076097,restaurant,german,Poststraße,,,,OpenStreetMap
+Zur Gerichtslaube,52.5170641,13.406241,restaurant,regional,,,,,OpenStreetMap
+Bei Lydia,52.5124788,13.4117007,restaurant,georgian,Inselstraße,,,,OpenStreetMap
+Mammam,52.5125703,13.411537,restaurant,asian,Inselstraße,,,,OpenStreetMap
+Kantine,52.5182828,13.4192379,restaurant,,Magazinstraße,,,,OpenStreetMap
+Spitteleck,52.5111321,13.4026843,restaurant,burger;german;grill,Seydelstraße,+49 30 80492910,,,OpenStreetMap
+Transit,52.5286295,13.4022809,restaurant,asian,Rosenthaler Straße,,,,OpenStreetMap
+Muret La Barba,52.5274951,13.4034676,restaurant,italian,Rosenthaler Straße,,,,OpenStreetMap
+YamYam,52.527551,13.408267,restaurant,korean,Alte Schönhauser Straße,,,,OpenStreetMap
+Cana,52.5123059,13.4087464,restaurant,oriental,Neue Roßstraße,,,,OpenStreetMap
+Ephraim's,52.5156403,13.4069525,restaurant,,Spreeufer,,,,OpenStreetMap
+weingrün,52.5126599,13.4029766,restaurant,german,Gertraudenstraße,,,,OpenStreetMap
+Chén Ché,52.5273747,13.4023822,restaurant,vietnamese,Rosenthaler Straße,,,,OpenStreetMap
+Betty F***,52.5275404,13.4052143,bar,,Mulackstraße,,,,OpenStreetMap
+Vivolo Ole,52.5226782,13.4021224,restaurant,,Am Zwirngraben,+4930 246 319 33,,,OpenStreetMap
+Volksbar,52.5266813,13.4107359,bar,,Rosa-Luxemburg-Straße,,,,OpenStreetMap
+Rivabar,52.5233005,13.4047128,bar,,Dircksenstraße,,,,OpenStreetMap
+Cancún,52.5190761,13.4094442,restaurant,mexican,Rathausstraße,,,,OpenStreetMap
+Enzian Bayrisches Wirtshaus,52.5201139,13.3954523,restaurant,german,Am Kupfergraben,+49 30 220 02553,,,OpenStreetMap
+Café Cinema,52.5241901,13.4026549,cafe,,Rosenthaler Straße,,,,OpenStreetMap
+Bandy Brooks,52.519203,13.402645,cafe,ice_cream,Karl-Liebknecht-Straße,+49 30 27908551,,,OpenStreetMap
+Food Lounge Berlin,52.5202185,13.4027007,cafe,burger;german;pizza;sausage,St. Wolfgang-Straße,+491633328671,,,OpenStreetMap
+Café & Restaurant am Petriplatz,52.5129204,13.4032613,restaurant,german,,,,,OpenStreetMap
+Kochbox,52.5183372,13.4153449,restaurant,,Dircksenstraße,,,,OpenStreetMap
+Viet Street,52.5181204,13.415415,restaurant,vietnamese,Dircksenstraße,,,,OpenStreetMap
+BoBo Q,52.5219699,13.4115003,cafe,bubble_tea,,,,,OpenStreetMap
+Lee,52.5241181,13.3992934,restaurant,vietnamese,Große Hamburger Straße,,,,OpenStreetMap
+Shiso Burger,52.5272403,13.398714,restaurant,burger,Auguststraße,+49 30 88944687,,,OpenStreetMap
+Bijou Bar,52.5229828,13.3999603,bar,,Monbijouplatz,,,,OpenStreetMap
+Coffee Lab,52.5125866,13.411279,cafe,coffee_shop,,,,,OpenStreetMap
+Kaffeeserie,52.5199838,13.3922192,cafe,,,,,,OpenStreetMap
+Pizza-Scheune,52.5280496,13.4099813,restaurant,italian;pizza,Rosa-Luxemburg-Straße,,,,OpenStreetMap
+Noumi,52.5143727,13.3976164,restaurant,vietnamese,Jägerstraße,,,,OpenStreetMap
+Kiva Han,52.5263723,13.4085057,restaurant,turkish breakfast,Max-Beer-Straße,,,,OpenStreetMap
+Green Tea Café Mamecha,52.5272205,13.4062986,cafe,japanese;bento,Mulackstraße,,,,OpenStreetMap
+Avocado Club,52.5235463,13.4051151,restaurant,breakfast,Dircksenstraße,,,,OpenStreetMap
+handmade Berlin,52.522842,13.398625,cafe,,,,,,OpenStreetMap
+Cent'Anni,52.522285,13.3998676,cafe,,,,,,OpenStreetMap
+CôWei,52.5222784,13.3996752,restaurant,vietnamese;sushi,,,,,OpenStreetMap
+Palladium Berlin,52.5222496,13.398825,bar,,,+49 30 25765511,,,OpenStreetMap
+Espresso House,52.5196945,13.4036191,cafe,coffee_shop,,,,,OpenStreetMap
+Boltes Steakhaus,52.5172376,13.4073497,restaurant,german,Propststraße,,,,OpenStreetMap
+Zum Nußbaum,52.5171542,13.4071,restaurant,german,Am Nußbaum,,,,OpenStreetMap
+Coffeebar,52.5203576,13.3904824,cafe,coffee_shop;sandwich;ice_cream,Geschwister-Scholl-Straße,,,,OpenStreetMap
+Barist,52.5226353,13.401906,restaurant,,Am Zwirngraben,,,,OpenStreetMap
+Restauration 1840,52.522783,13.4026273,restaurant,regional,Am Zwirngraben,+49 30 24727401,,,OpenStreetMap
+Jolly,52.5206683,13.3947157,restaurant,asian,Am Kupfergraben,+49 30 200 59500,,,OpenStreetMap
+Le Jardin,52.5225271,13.4000208,bar,,Kleine Präsidentenstraße,,,,OpenStreetMap
+La Siesta,52.5219314,13.4017393,cafe,coffee_shop,Garnisonkirchplatz,+49-30-89379966,,,OpenStreetMap
+Dinea,52.5222549,13.4118276,restaurant,,,+49 30 24743748,,,OpenStreetMap
+Spreegold,52.5229802,13.4091644,restaurant,,Rosa-Luxemburg-Straße,,,,OpenStreetMap
+Que Pasa,52.5246191,13.3949139,restaurant,mexican,Oranienburger Straße,,,,OpenStreetMap
+Supreme Burger Grill & Bar,52.5245121,13.3953134,restaurant,burger,Oranienburger Straße,+49 30 27874714,,,OpenStreetMap
+Kan'Koa,52.523965,13.3974459,restaurant,asian,Oranienburger Straße,+49 30 28384898,,,OpenStreetMap
+Suppeto,52.5253125,13.398383,restaurant,,Krausnickstraße,,,,OpenStreetMap
+beets&roots,52.52665,13.3985154,restaurant,bowl,Große Hamburger Straße,,,,OpenStreetMap
+Breggs,52.5235834,13.3994669,cafe,,Oranienburger Straße,,,,OpenStreetMap
+Pinci,52.5270962,13.3983394,restaurant,italian,Große Hamburger Straße,,,,OpenStreetMap
+Comebuy,52.5235963,13.3992021,cafe,bubble_tea,Oranienburger Straße,,,,OpenStreetMap
+Saveur de Bánh Mì,52.5235794,13.399975,restaurant,vietnamese,Oranienburger Straße,,,,OpenStreetMap
+Quy Nguyen Vegan Living,52.5237141,13.4004769,restaurant,vietnamese,Oranienburger Straße,+49 30 2828995,,,OpenStreetMap
+Café Re,52.513121,13.4109299,cafe,german,Märkisches Ufer,+49 30 2785189,,,OpenStreetMap
+Bonne Vie Berlin,52.517285,13.407669,cafe,,Propststraße,,,,OpenStreetMap
+SBZ Krähenfuß,52.5190904,13.3943048,cafe,,Dorotheenstraße,,,,OpenStreetMap
+Braufactum Berlin,52.5133633,13.3959964,restaurant,german,Hausvogteiplatz,+49 30 55872562,,,OpenStreetMap
+Sushi Miyabi,52.5200705,13.3907181,restaurant,,Georgenstraße,,,,OpenStreetMap
+"""You are welcome""",52.5249129,13.3989764,cafe,,Große Hamburger Straße,+49 30 2827657,,,OpenStreetMap
+Al Contadino,52.5276643,13.4008352,restaurant,italian,Auguststraße,+49 30 97894140,,,OpenStreetMap
+Bardele,52.5277352,13.401361,restaurant,italian,Auguststraße,,,,OpenStreetMap
+mittendrin,52.5256767,13.4009335,restaurant,,Sophienstraße,,,,OpenStreetMap
+Coffeebar c.t.,52.5189879,13.3925988,cafe,,Universitätsstraße,,,,OpenStreetMap
+Zille Stube,52.5160831,13.4058398,restaurant,german,Spreeufer,,,,OpenStreetMap
+the coffee shop,52.5130194,13.3973586,cafe,,,,,,OpenStreetMap
+Dae Mon,52.5227782,13.3993746,restaurant,korean,Monbijouplatz,+49 30 26304811,,,OpenStreetMap
+Via Nova II,52.5196349,13.392287,restaurant,italian,,,,,OpenStreetMap
+Restauration Sophien 11,52.52503,13.4027669,restaurant,german,Sophienstraße,+49 30 28 32 136,,,OpenStreetMap
+Kantine im Roten Rathaus,52.5188297,13.4087007,restaurant,canteen,,,,,OpenStreetMap
+Cocolo Ramen,52.5272051,13.3993159,restaurant,ramen,Gipsstraße,,,,OpenStreetMap
+Da Bäckerei und Café,52.5128261,13.4111961,cafe,,,+49 177 669 72 02,,,OpenStreetMap
+King King,52.5251696,13.4103076,restaurant,asian;sushi,Rosa-Luxemburg-Straße,,,,OpenStreetMap
+Bar Internazionale,52.5261337,13.4109593,restaurant,italian,Rosa-Luxemburg-Straße,,,,OpenStreetMap
+Five Elephant,52.5267285,13.4076235,cafe,,Alte Schönhauser Straße,,,,OpenStreetMap
+Yosoy,52.5243521,13.402778,restaurant,spanish,Rosenthaler Straße,+493028391213,,,OpenStreetMap
+Barachel Café,52.5255231,13.4037406,cafe,coffee_shop,Rosenthaler Straße,,,,OpenStreetMap
+Hasir,52.5238191,13.4011026,restaurant,turkish,Oranienburger Straße,,,,OpenStreetMap
+Mädchenitaliener,52.5269301,13.4077863,restaurant,italian,Alte Schönhauser Straße,,,,OpenStreetMap
+Funk You,52.5263436,13.4034291,cafe,sandwich;salad;cake;breakfast,Rosenthaler Straße,,,,OpenStreetMap
+Lois,52.5288123,13.4053958,cafe,,Linienstraße,,,,OpenStreetMap
+Ristorante Pizzeria Garda,52.5258949,13.3942487,restaurant,pizza,Oranienburger Straße,,,,OpenStreetMap
+Coffee Fellows,52.5227223,13.4096521,cafe,coffee_shop,Karl-Liebknecht-Straße,,,,OpenStreetMap
+Budapest Calling,52.5193782,13.3945743,restaurant,regional,,,,,OpenStreetMap
+Al Contadino,52.5276155,13.4048044,bar,,,,,,OpenStreetMap
+District Một,52.5277092,13.4034228,restaurant,vietnamese,Rosenthaler Straße,,,,OpenStreetMap
+Kaffeemitte,52.5251621,13.406038,cafe,coffee_shop;sandwich;juice;cake;dessert,Weinmeisterstraße,,,,OpenStreetMap
+Manngo,52.5273466,13.405597,restaurant,vietnamese,Mulackstraße,,,,OpenStreetMap
+Bar Steinkeller,52.5273496,13.4039576,bar,,Steinstraße,,,,OpenStreetMap
+Life Among People,52.5276447,13.4034299,cafe,coffee_shop,Rosenthaler Straße,,,,OpenStreetMap
+Oliv,52.5243115,13.408829,cafe,,Münzstraße,+49-30-8206540,,,OpenStreetMap
+Wine & Coffee House,52.5208464,13.4057651,cafe,,Karl-Liebknecht-Straße,,,,OpenStreetMap
+Alto,52.522075,13.404253,restaurant,breakfast,An der Spandauer Brücke,+49302096980,,,OpenStreetMap
+Factory Girl,52.527267,13.3989126,cafe,cake,Auguststraße,,,,OpenStreetMap
+Kaschk by Brlo,52.5284199,13.4099389,bar,,Linienstraße,,,,OpenStreetMap
+Ho Vang,52.5250423,13.4102171,restaurant,asian,Rosa-Luxemburg-Straße,,,,OpenStreetMap
+Cocktailgarten & Kaffeekaschemme,52.52446,13.4018019,cafe,,,,,,OpenStreetMap
+Bell’ Chicco,52.5247545,13.4103867,cafe,italian,Rosa-Luxemburg-Straße,,,,OpenStreetMap
+Kiraku,52.5218041,13.4035735,restaurant,sushi,Litfaß-Platz,,,,OpenStreetMap
+MIO Restaurant unterm Fernsehturm,52.5202088,13.4096443,restaurant,italian,Panoramastraße,+49 30 84712758,,,OpenStreetMap
+Foreign Affairs,52.5148567,13.3980296,restaurant,international,Werderscher Markt,,,,OpenStreetMap
+Town Bar,52.5150859,13.3978884,bar,,Werderscher Markt,,,,OpenStreetMap
+Good Morning Vietnam,52.5284227,13.4093485,restaurant,vietnamese,Alte Schönhauser Straße,,,,OpenStreetMap
+Daisies,52.5177858,13.4072054,cafe,,Am Nußbaum,,,,OpenStreetMap
+Wilde Matilde,52.517437,13.4053296,restaurant,,Rathausstraße,+49 30 54083422,,,OpenStreetMap
+The Barn,52.5274504,13.3981267,cafe,coffee_shop,Auguststraße,,,,OpenStreetMap
+Father Carpenter Coffee Brewers,52.5244438,13.4065961,cafe,coffee_shop;breakfast,Münzstraße,,,,OpenStreetMap
+Back all in,52.5124933,13.4068346,cafe,,,,,,OpenStreetMap
+The Pub,52.5230968,13.4072315,restaurant,burger,Rochstraße,+49 30 25762201,,,OpenStreetMap
+Belushi's Berlin,52.5268736,13.4106518,bar,,Rosa-Luxemburg-Straße,,,,OpenStreetMap
+Madami (papa),52.5232426,13.4083586,restaurant,vietnamese,Dircksenstraße,,,,OpenStreetMap
+MOM's vegan cooking,52.5233173,13.4081119,restaurant,,Dircksenstraße,,,,OpenStreetMap
+Koro Café,52.5239479,13.4093818,cafe,,Rosa-Luxemburg-Straße,,,,OpenStreetMap
+Kotobuki-Sushi,52.5226494,13.4111269,restaurant,sushi,,,,,OpenStreetMap
+Sapori Italiani,52.5228253,13.411396,restaurant,italian,,,,,OpenStreetMap
+Milchhalle,52.5277703,13.4005346,cafe,,Auguststraße,,,,OpenStreetMap
+Simon,52.5275432,13.399275,restaurant,italian,Auguststraße,,,,OpenStreetMap
+Edelmond,52.5248662,13.3951822,cafe,,,,,,OpenStreetMap
+Tadshikische Teestube,52.5250846,13.3950698,cafe,russian,Oranienburger Straße,+49 30 204 1112,,,OpenStreetMap
+Canal III,52.525315,13.401667,cafe,,Sophienstraße,+49 1796928037,,,OpenStreetMap
+Starbucks,52.5195867,13.4152257,cafe,coffee_shop,,,,,OpenStreetMap
+Madami (mama),52.523391,13.4089464,restaurant,vietnamese,Rosa-Luxemburg-Straße,,,,OpenStreetMap
+Vapiano,52.5207437,13.4104934,restaurant,italian,Rathausstraße,,,,OpenStreetMap
+Heimwerk,52.5227979,13.4014167,restaurant,german,Neue Promenade,,,,OpenStreetMap
+ZOE Bar,52.5230679,13.4008415,bar,,Große Präsidentenstraße,,,,OpenStreetMap
+Julian & Elisa,52.5148587,13.393238,restaurant,pizza;ice_cream;italian;coffee_shop,Markgrafenstraße,+49 30 30648746,,,OpenStreetMap
+Einstein Kaffee,52.5211518,13.4149628,cafe,coffee_shop,,,,,OpenStreetMap
+La Luna,52.5203994,13.410896,cafe,,,,,,OpenStreetMap
+Prince,52.5244929,13.4097372,restaurant,asian,Rosa-Luxemburg-Straße,+49 30 70 09 39 67,,,OpenStreetMap
+Starbucks,52.5212498,13.4115986,cafe,coffee_shop,,,,,OpenStreetMap
+Lebensmittel in Mitte,52.5241565,13.4074731,restaurant,german,Rochstraße,,,,OpenStreetMap
+scent,52.5116329,13.401428,restaurant,regional,,,,,OpenStreetMap
+Ristorante Verona,52.5127103,13.4083696,restaurant,italian,,,,,OpenStreetMap
+Tuans Hütte,52.5235504,13.407066,restaurant,sushi,Dircksenstraße,+49 30 283 69 40,,,OpenStreetMap
+Hummus & Friends,52.5245825,13.3950575,restaurant,,Oranienburger Straße,+49 30 55471454,,,OpenStreetMap
+Soy,52.5260245,13.411493,restaurant,vietnamese,Rosa-Luxemburg-Straße,,,,OpenStreetMap
+Esra,52.5236434,13.409154,restaurant,arab,Rosa-Luxemburg-Straße,,,,OpenStreetMap
+Clärchens Ballhaus,52.526614,13.3968635,restaurant,german,Auguststraße,+49 30 2829295,,,OpenStreetMap
+Café Wilhelm,52.520454,13.3950002,cafe,,,,,,OpenStreetMap
+Café CoCo,52.5131581,13.40932,cafe,regional,Fischerinsel,,,,OpenStreetMap
+Chopstix,52.5228395,13.4094331,restaurant,asian;japanese;sushi;vietnamese,,,,,OpenStreetMap
+Sphere Tim Raue,52.5208928,13.4094282,restaurant,regional,Panoramastraße,,,,OpenStreetMap
+MUG+SPOON CAFÉ,52.5287531,13.4018659,cafe,,Rosenthaler Straße,,,,OpenStreetMap
+Kantine,52.5264395,13.4134042,restaurant,,Weydingerstraße,,,,OpenStreetMap
+Kantine Volksbühne,52.527423,13.4122038,restaurant,regional,Linienstraße,,,,OpenStreetMap
+The Grand,52.5255332,13.4124862,restaurant,,Hirtenstraße,,,,OpenStreetMap
+Café Latrio Bistro,52.5233023,13.3991175,cafe,,Monbijouplatz,,,,OpenStreetMap
+Meine Bar Ici,52.5272149,13.3974755,bar,,Auguststraße,,,,OpenStreetMap
+Bibliotheks-Café,52.5157744,13.4041102,cafe,,,,,,OpenStreetMap
+203 Bar im Fernsehturm,52.5208599,13.4093633,bar,,Panoramastraße,,,,OpenStreetMap
+Petit Bijou,52.5226674,13.3934847,cafe,,Monbijoustraße,+49 30 308820,,,OpenStreetMap
+Café zur Alten Zicke,52.5177268,13.4071636,cafe,,Am Nußbaum,,,,OpenStreetMap
+Le Cafe LACOSTE,52.5247328,13.4041136,cafe,,Neue Schönhauser Straße,,,,OpenStreetMap
+Ben Rahim,52.5249782,13.4018807,cafe,,Sophienstraße,,,,OpenStreetMap
+Lawrence,52.5248669,13.3926197,restaurant,arab;mediterranean;breakfast;oriental,Oranienburger Straße,+493055104430,,,OpenStreetMap
+Grand Bar,52.5250417,13.3933348,bar,,Oranienburger Straße,+49 30 240 20 912,,,OpenStreetMap
+Banh Mi Stable,52.5268592,13.4085795,restaurant,vietnamese,Schendelgasse,,,,OpenStreetMap
+What do you fancy love?,52.5283396,13.4095797,cafe,,Linienstraße,,,,OpenStreetMap
+Little Green Rabbit,52.5140282,13.3957076,restaurant,,Jägerstraße,,,,OpenStreetMap
+Da Piadina,52.5278487,13.4009116,restaurant,italian,,,,,OpenStreetMap
+Lunchtime,52.5142513,13.3971703,restaurant,,Jägerstraße,,,,OpenStreetMap
+Cafe im Neuen Museum,52.5198075,13.3980659,cafe,,,,,,OpenStreetMap
+Chipperfield Kantine,52.528181,13.4005219,restaurant,,Joachimstraße,,,,OpenStreetMap
+Lux 11,52.5247036,13.4099587,bar,,Rosa-Luxemburg-Straße,,,,OpenStreetMap
+Pulcinella,52.5241939,13.3992695,restaurant,italian,Große Hamburger Straße,+49 30 40551919,,,OpenStreetMap
+Creasian,52.5242768,13.3992434,restaurant,asian,Große Hamburger Straße,,,,OpenStreetMap
+Beyond Ramen,52.5235734,13.4091132,restaurant,japanese,Rosa-Luxemburg-Straße,,,,OpenStreetMap
+Creperie im Nikolaiviertel,52.5169452,13.4068574,cafe,crepe,Propststraße,,,,OpenStreetMap
+Cinamood,52.5237116,13.4002504,cafe,cake;dessert;coffee_shop,Oranienburger Straße,,,,OpenStreetMap
+Always Together,52.5239553,13.3996161,cafe,coffee_shop;ice_cream;asian,Große Hamburger Straße,,,,OpenStreetMap
+L'Osteria,52.5237679,13.4102103,restaurant,italian,Memhardstraße,+49 30 28043240,,,OpenStreetMap
+The Barn,52.5245299,13.4041265,cafe,coffee_shop,Neue Schönhauser Straße,,,,OpenStreetMap
+Mama Vân,52.5229753,13.4100471,restaurant,vietnamese;sandwich,Karl-Liebknecht-Straße,,,,OpenStreetMap
+Trattoria Peretti,52.5201674,13.4031215,restaurant,italian,Karl-Liebknecht-Straße,,,,OpenStreetMap
+Berlin Icebar - Polar Expedition,52.5212657,13.4036317,bar,waffle;ice_cream,Spandauer Straße,+49 30 23497028,,,OpenStreetMap
+Capvin,52.524694,13.4020731,restaurant,italian;pizza,Rosenthaler Straße,,,,OpenStreetMap
+Vino e basilico,52.525368,13.3932509,restaurant,italian,,,,,OpenStreetMap
+Antikriegscafé COOP,52.5240121,13.4072985,bar,,Rochstraße,,,,OpenStreetMap
+19grams Alex,52.5227551,13.4074446,cafe,coffee_shop,Rochstraße,,,,OpenStreetMap
+Indian Village,52.5181787,13.4153916,restaurant,indian,Dircksenstraße,,,,OpenStreetMap
+Mr. Susan,52.5244238,13.3956778,bar,,Krausnickstraße,,,,OpenStreetMap
+Cuccis,52.5219579,13.4147971,cafe,coffee_shop,,,,,OpenStreetMap
+Exclusive Coffee,52.5209651,13.4111708,cafe,,Gontardstraße,,,,OpenStreetMap
+Shiori,52.5255024,13.4081148,restaurant,japanese,Max-Beer-Straße,,,,OpenStreetMap
+Iimori Ramen,52.5273307,13.4057043,restaurant,ramen,Mulackstraße,+49 30 33905188,,,OpenStreetMap
+Unknown,52.5278511,13.4029746,restaurant,,Rosenthaler Straße,,,,OpenStreetMap
+Ngon,52.5173379,13.4052915,restaurant,vietnamese,Rathausstraße,,,,OpenStreetMap
+Unknown,52.5213789,13.4117396,cafe,coffee_shop,,,,,OpenStreetMap
+Kaibar,52.5257146,13.3988543,restaurant,,Große Hamburger Straße,,,,OpenStreetMap
+Kebap with Attitude,52.5272448,13.3991334,restaurant,kebab,Gipsstraße,,,,OpenStreetMap
+The blnd,52.5153721,13.396898,cafe,,,,,,OpenStreetMap
+Remi,52.5283411,13.4104587,restaurant,,Torstraße,+493027593090,,,OpenStreetMap
+Cu29,52.5200808,13.3967763,restaurant,,Bodestraße,,,,OpenStreetMap
+Pao Pao,52.5284432,13.4024425,cafe,bubble_tea,Rosenthaler Straße,,,,OpenStreetMap
+Bubble Bär,52.5208444,13.4113176,cafe,,Gontardstraße,,,,OpenStreetMap
+The Greens,52.5152631,13.4090693,cafe,coffee_shop;cake;sandwich;juice,Am Krögel,,,,OpenStreetMap
+Peter Pane,52.5230924,13.4019398,restaurant,burger,Neue Promenade,,,,OpenStreetMap
+Vedang,52.5199561,13.414566,restaurant,burger,Grunerstraße,,,,OpenStreetMap
+Bistro Lebenswelten,52.5173981,13.4015454,restaurant,,,,,,OpenStreetMap
+Kin Za,52.5249117,13.3958377,restaurant,georgian,Krausnickstraße,,,,OpenStreetMap
+Coffee Circle,52.5253298,13.4104329,cafe,coffee_shop;cake,Rosa-Luxemburg-Straße,,,,OpenStreetMap
+YUNA,52.5243024,13.3960858,cafe,,Oranienburger Straße,,,,OpenStreetMap
+The Alley Mitte,52.5248449,13.4055296,cafe,bubble_tea,Neue Schönhauser Straße,+49 30 28047960,,,OpenStreetMap
+CHIARO,52.5158147,13.3939157,restaurant,italian,Behrenstraße,,,,OpenStreetMap
+Forum Café,52.5172015,13.4011771,cafe,cake,Schloßplatz,+49 30 555 705 884,,,OpenStreetMap
+Baret,52.5174248,13.4008935,restaurant,regional,Schloßplatz,,,,OpenStreetMap
+Café im Bode-Museum,52.5216583,13.3945684,cafe,,,,,,OpenStreetMap
+Hai Coffee,52.5111836,13.4032313,restaurant,sushi;asian,Wallstraße,+49 30 32593243,,,OpenStreetMap
+Phở Cở,52.5252358,13.4107648,restaurant,vietnamese,,,,,OpenStreetMap
+Bonanza Coffee Roasters,52.5266022,13.4075153,cafe,,Alte Schönhauser Straße,,,,OpenStreetMap
+Pomodori,52.5182405,13.4157809,restaurant,italian,,,,,OpenStreetMap
+Knutschfleck,52.5212261,13.4096113,bar,,Panoramastraße,+493054083422,,,OpenStreetMap
+Go Cha,52.5206963,13.4043897,cafe,bubble_tea,,,,,OpenStreetMap
+BITE by RitterRichard,52.5242675,13.4027156,restaurant,,Rosenthaler Straße,,,,OpenStreetMap
+Dieselhaus,52.5241854,13.3934646,restaurant,,,,,,OpenStreetMap
+Mumbai Local,52.5193411,13.4099222,restaurant,indian,Rathausstraße,+49 30 50959406,,,OpenStreetMap
+Com Nam,52.5229774,13.4006563,restaurant,asian,Große Präsidentenstraße,+49 30 54716529,,,OpenStreetMap
+The Klub Kitchen,52.5249038,13.4090232,restaurant,,Almstadtstraße,,,,OpenStreetMap
+Starbucks,52.5208209,13.4142012,cafe,coffee_shop,,,,,OpenStreetMap
+Wilhelm,52.5178944,13.4019325,restaurant,,,,,,OpenStreetMap
+Deli Alexander,52.5177898,13.4024502,restaurant,,,,,,OpenStreetMap
+Spreedeck,52.5136927,13.4117569,restaurant,,,,,,OpenStreetMap
+L’oui,52.5246872,13.3932556,cafe,,,,,,OpenStreetMap
+Art.City.People,52.5257118,13.3943331,cafe,,Oranienburger Straße,,,,OpenStreetMap
+Beef Grill Club,52.5149034,13.3944371,restaurant,steak_house,Französische Straße,,,,OpenStreetMap
+Moneta,52.5152245,13.4093327,restaurant,,,+49 15165473929,,,OpenStreetMap
+738 Krema,52.5279709,13.4015522,cafe,coffee_shop,Auguststraße,,,,OpenStreetMap
+Knutschfleck,52.5211981,13.4087233,bar,,Panoramastraße,+49 30 54083422,,,OpenStreetMap
+Hier wo du strahlst,52.5251715,13.4107281,bar,,Rosa-Luxemburg-Straße,,,,OpenStreetMap
+Café Camaleon,52.5258489,13.4039008,restaurant,tapas,,,,,OpenStreetMap
+Friendly Fish,52.523716,13.4008246,restaurant,sushi,Oranienburger Straße,,,,OpenStreetMap
+Bata Bar & Billiards am Alex,52.5226556,13.4079224,bar,,,+4930200065900,,,OpenStreetMap
+Lieschen Mueller,52.5207396,13.4085082,bar,,Panoramastraße,+49 030 54 08 34 22,,,OpenStreetMap
+Dom Café,52.5188704,13.4018349,cafe,,Am Lustgarten,,,,OpenStreetMap
+Café Felix,52.5178761,13.3917981,cafe,,,,,,OpenStreetMap
+Coffee Fellows,52.5216737,13.4099982,cafe,coffee_shop,,,,,OpenStreetMap
+The Crazy Little Greek,52.5275065,13.3980924,restaurant,,,,,,OpenStreetMap
+The Noodle Town Mitte,52.5239329,13.3996615,restaurant,noodle;chinese,,,,,OpenStreetMap
+Barcomi's,52.5262906,13.4009462,cafe,sandwich;cake;breakfast;coffee_shop,Sophienstraße,,,,OpenStreetMap
+Schinkel Bar,52.5149553,13.3943706,bar,,,+493020143700,,,OpenStreetMap
+Coffee Fellows,52.5203883,13.4109964,cafe,coffee_shop,,,,,OpenStreetMap
+SammyS Berliner Donuts,52.5286704,13.4019004,cafe,donut,Rosenthaler Straße,,,,OpenStreetMap
+Bar Basta,52.5257546,13.403995,restaurant,,Rosenthaler Straße,,,,OpenStreetMap
+Japan Plaza,52.5227208,13.4082447,restaurant,japanese,Rochstraße,,,,OpenStreetMap
+Müsterek meyhane,52.5124859,13.4109876,restaurant,turkish,,,,,OpenStreetMap
+Dump Ling,52.5264365,13.4077671,restaurant,,Alte Schönhauser Str. 44,03071093400,,,OpenStreetMap
+Spree Fumee,52.5134037,13.4110629,restaurant,,Märkisches Ufer,,,,OpenStreetMap
+The Base,52.52371,13.4006134,restaurant,vietnamese,,,,,OpenStreetMap
+The Commons,52.5165975,13.4177268,restaurant,,Alexanderstraße,,,,OpenStreetMap
