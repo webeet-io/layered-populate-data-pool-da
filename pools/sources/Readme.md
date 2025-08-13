@@ -1,5 +1,4 @@
-# Pools in Beerlin:
-Bäderleben Schwimmbäder (Swimming Pools) Dataset
+# Pools in Beerlin: Bäderleben Schwimmbäder (Swimming Pools) Dataset
 
 ## Source and Origin:
 Bäderleben.de Schwimmbäder Abfrage
@@ -79,36 +78,4 @@ Dynamic (requires ongoing updates through user submissions and administrative re
 
 
 These fields provide comprehensive information about each swimming pool, including location, facilities, ownership, and accessibility features, making it a valuable resource for mapping and analyzing swimming pools in Berlin.
-
-2. Bäderleben Becken (Pool Basins) Dataset
-Source and Origin: Bäderleben.de Becken Abfrage
-
-Update Frequency: Similar to the Schwimmbäder dataset, updates are made periodically through user contributions and official updates.
-
-Data Type: Dynamic.
-
-Relevant Data Fields:
-
-Becken-ID: Unique identifier for each pool basin.
-
-Bad-ID: Identifier linking the basin to a specific pool.
-
-Name: Name of the pool basin.
-
-Beckenart: Type of basin (e.g., Schwimmerbecken, Nichtschwimmerbecken, Kinderbecken).
-
-Länge: Length of the basin in meters.
-
-Breite: Width of the basin in meters.
-
-Tiefe: Depth of the basin in meters.
-
-Wassertemperatur: Water temperature in degrees Celsius.
-
-Beckenform: Shape of the basin (e.g., rechteckig, oval).
-
-Beckenstatus: Current status of the basin (e.g., in Betrieb, außer Betrieb).
-
-This dataset provides detailed information about the individual basins within each swimming pool, 
-which is essential for understanding the specific facilities available at each location.
 
