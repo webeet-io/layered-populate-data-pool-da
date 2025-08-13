@@ -1,1 +1,1 @@
-
+This notebook retrieves geographic data with "name", "category", "cuisine", "address", "lat", "lon", "website", "phone", "opening_hours", "takeaway", and "wheelchair" as columns. It's from the Overpass Open API, loads additional place data from a CSV file, processes it with pandas, and creates interactive maps with Folium to visualize locations in Berlin.
