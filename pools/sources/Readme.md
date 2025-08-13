@@ -2,6 +2,7 @@
 
 ## Source and Origin:
 Bäderleben.de Schwimmbäder Abfrage
+https://baederleben.de/abfragen/baeder-suche.php
 
 ## Update Frequency: 
 Data is updated periodically through user contributions and official updates. 
