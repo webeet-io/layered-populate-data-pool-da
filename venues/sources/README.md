@@ -1,71 +1,86 @@
-This notebook (venue_scraper.ipynb) collects restaurants, cafes, and bars using OpenStreetMap Overpass API and can optionally enrich ratings from Foursquare Places (free tier). It saves timestamped JSON and CSV files to output/.
+# Research: Open API — Katia Micello
 
-1) Prerequisites
-Python 3.10+
+This repository contains the Jupyter Notebook **`research-open-API-katia-micello.ipynb`**, which documents and demonstrates the research process for interacting with an open API (exact API and research goals to be filled in based on notebook contents).
 
-The project’s virtualenv is activated (.venv)
+---
 
-Dependencies from requirements.txt are installed
+## 📄 Overview
 
-One extra package for notebooks:
+The notebook aims to:
+1. Explore the selected Open API’s capabilities and endpoints.
+2. Document authentication requirements (if any).
+3. Test API calls and review their responses.
+4. Outline potential data points for integration into the main project.
 
-bash
-Copy
-Edit
+> **Note:** Replace this section with a specific description once the exact API and scope from the notebook are confirmed.
+
+---
+
+## ⚙️ Prerequisites
+
+- Python 3.10+
+- Virtual environment activated (optional but recommended).
+- Required packages installed (see below).
+
+### Install Jupyter Notebook
+```bash
 pip install notebook
-Optional for ratings enrichment:
+```
 
-Set FSQ_API_KEY in a .env file at the repo root
+### Install Other Dependencies
+If the notebook includes a `requirements.txt`, install dependencies via:
+```bash
+pip install -r requirements.txt
+```
 
-ini
-Copy
-Edit
-FSQ_API_KEY=YOUR_FSQ_KEY_HERE
-2) Open the Notebook
-Open venue_scraper.ipynb in VS Code and select your .venv interpreter if prompted.
+Otherwise, install libraries as needed. For typical API research, common packages include:
+```bash
+pip install requests pandas
+```
 
-3) What’s in the Notebook
-Cell 1: Imports + Venue schema (Pydantic)
+---
 
-Cell 2: Config (logging, OUTPUT_DIR, endpoints, env vars)
+## ▶️ How to Use
 
-Cell 3: fetch_osm() — pulls OSM venues via Overpass (with retries)
+1. Open the notebook in VS Code or Jupyter Lab:
+   - In VS Code: double-click `research-open-API-katia-micello.ipynb`.
+   - Or in terminal:
+     ```bash
+     jupyter notebook research-open-API-katia-micello.ipynb
+     ```
+2. Select the correct Python interpreter (your virtual environment).
+3. Run cells in order from top to bottom.
 
-Cell 4: Foursquare helpers (fsq_find_id, fsq_get_rating) — optional
+---
 
-Cell 5: Save helpers (save_json, save_csv)
+## 🧩 Notebook Structure
 
-Cell 6: Run section
+While details will depend on the notebook contents, a typical flow includes:
+1. **Introduction & Goals** — Context for the API being researched.
+2. **Authentication Setup** — How to obtain and use an API key (if applicable).
+3. **Test Requests** — Making example API calls.
+4. **Data Exploration** — Reviewing JSON responses and extracting fields of interest.
+5. **Next Steps** — Notes on potential uses for the data.
 
-Set city, lat, lon, radius, max_enrich
+---
 
-Runs OSM fetch, optional FSQ ratings enrichment, saves JSON/CSV
+## 📂 Output
 
-4) Run
-Execute the cells top to bottom. When Cell 6 finishes, you’ll see files like:
+Depending on implementation, the notebook may produce:
+- JSON response samples
+- CSV/Excel datasets
+- Documentation snippets for the API
 
-lua
-Copy
-Edit
-output/
-  berlin_venues_YYYYMMDD_HHMMSS.json
-  berlin_venues_YYYYMMDD_HHMMSS.csv
-Changing the City
-Edit the variables at the top of Cell 6:
+Check the notebook cells for file-save locations.
 
-python
-Copy
-Edit
-city = "Berlin"
-lat = 52.5200
-lon = 13.4050
-radius = 1000
-max_enrich = 50  # reduce or increase based on free tier comfort
-5) Ratings (No Cost Path)
-Ratings are pulled from Foursquare only if FSQ_API_KEY is present.
+---
 
-The code limits enrichment via max_enrich and sleeps briefly between calls to stay within free limits.
+## 📌 Next Steps
 
-If no key is set, the notebook still runs and saves venues; rating remains null.
+- Finalize this README with **specific API name**, **purpose**, and **key findings** from the notebook.
+- Decide whether to adapt API queries into production scrapers or keep as reference.
 
+---
 
+**Author:** Katia Micello  
+**File:** `research-open-API-katia-micello.ipynb`
