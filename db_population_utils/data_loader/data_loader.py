@@ -1,31 +1,29 @@
 # db_population_utils/data_loader.py
 
 """
-DataLoader Module - Intelligent Data Loading and Processing
+DataLoader Module - Pure Data Loading with Quality Assessment
 
 This module provides comprehensive data loading capabilities with intelligent format
-detection, validation, preprocessing, and integration across multiple data sources.
+detection and quality assessment for multiple file formats.
 
 Key Design Philosophy:
     - **Intelligence First**: Automatic detection of formats, encodings, and structures
-    - **Quality Focused**: Built-in data validation, profiling, and quality assessment
+    - **Quality Focused**: Built-in data validation, profiling, and quality assessment (no transformation)
     - **Performance Aware**: Memory-efficient processing with multiple loading strategies
-    - **Source Agnostic**: Unified interface for various file formats and sources
-    - **Integration Ready**: Seamless integration with DBConnector and data pipelines
+    - **Format Focused**: Unified interface for 6 core file formats
+    - **Integration Ready**: Seamless integration with DataProcessor and DBConnector
 
 Architecture Overview:
     ┌──────────────────┐    ┌─────────────────────┐    ┌──────────────────────┐
-    │   Data Sources   │────│    DataLoader       │────│   Processed Data     │
+    │   Data Sources   │────│    DataLoader       │────│   Raw DataFrames     │
     │                  │    │                     │    │                      │
-    │ • Files (CSV,    │    │ • Format Detection  │    │ • Clean DataFrames   │
+    │ • Files (CSV,    │    │ • Format Detection  │    │ • Data as-is         │
     │   Excel, JSON,   │    │ • Parameter Sniffing│    │ • Quality Reports    │
-    │   JSON Lines,    │    │ • Validation        │    │ • Ready for DB       │
-    │   Parquet)       │    │ • Preprocessing     │    │   or Analysis        │
-    │ • Google Sheets  │    │ • Memory Mgmt       │    │                      │
+    │   JSON Lines,    │    │ • Validation        │    │ • Ready for          │
+    │   Parquet)       │    │ • Quality Assessment│    │   DataProcessor      │
+    │ • Google Sheets  │    │ • Memory Mgmt       │    │   or Analysis        │
     │ • Compressed     │    │ • Error Recovery    │    │                      │
     │   Archives       │    │                     │    │                      │
-    └──────────────────┘    │ • Error Recovery    │    │                      │
-                            └─────────────────────┘    └──────────────────────┘
     └──────────────────┘    └─────────────────────┘    └──────────────────────┘
                                        │
                             ┌─────────────────────┐
@@ -419,15 +417,14 @@ class MemoryError(DataLoaderError):
 # -----------------------
 class DataLoader:
     """
-    Enhanced DataLoader — comprehensive data loading with intelligence and robustness.
+    DataLoader — Pure data loading with intelligent detection and quality assessment.
 
     Purpose:
-      Robustly load tabular data from multiple formats and sources with:
+      Robustly load tabular data from 6 file formats with:
         - Advanced format detection and parameter sniffing
-        - Comprehensive data quality analysis and validation
+        - Comprehensive data quality analysis and assessment (no transformation)
         - Memory-efficient processing with multiple loading strategies
-        - Extensible preprocessing pipeline
-        - Cloud storage and database integration
+        - Google Sheets integration for collaborative workflows
         - Comprehensive monitoring and reporting
         - Error recovery and fallback strategies
 
@@ -491,8 +488,8 @@ class DataLoader:
             kind: Format type or 'auto' for detection
             options: Loading configuration options
             
-        Returns:
-            Loaded and processed DataFrame
+                    Returns:
+            Raw DataFrame loaded as-is (no transformations applied)
             
         Raises:
             DataLoaderError: On loading failures
@@ -819,7 +816,7 @@ class DataLoader:
         raise NotImplementedError
 
     def clear_cache(self) -> None:
-        """Clear detection and processing cache."""
+        """Clear detection cache (not processing cache - DataLoader doesn't process)."""
         raise NotImplementedError
 
     def get_cache_stats(self) -> Dict[str, Any]:
@@ -830,7 +827,7 @@ class DataLoader:
     # Enhanced Reporting
     # -----------------------
     def build_report(self) -> LoadReport:
-        """Build comprehensive loading and processing report."""
+        """Build comprehensive loading and quality assessment report."""
         raise NotImplementedError
 
     def export_report(
