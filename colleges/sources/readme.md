@@ -1,1 +1,4 @@
-
+I did not compare three documents, as i found first document of all universities on wikipedia, which is nice, but unfortunately does not contain any university ratings. So i decide not to use data from Wikipedia. 
+Current data souce which was used located here:
+https://edurank.org/geo/de-berlin/
+This data was last updated on March 02, 2025 and updated at least once yearly, as it takes into account all scientific ratings/citation/quotation of all universities in Europe, including Germany. Even this page is static somehow, it is most reliable and objective resource in my opinion. For the creation of this datasource, I did not include ratings of Berlin universities in Europe, as they are not good enough, comparing with other universities within Germany as LMU München or TU München for example. Feel free to add European ratings, if you think, it will be helpful for potential clients.
