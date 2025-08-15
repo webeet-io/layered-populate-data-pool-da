@@ -1,66 +1,54 @@
 # Berlin Kindergartens Data Pipeline
 
-This repository contains scripts to extract, transform, and analyze kindergarten data in Berlin, Germany from multiple sources.
+This repository contains scripts to extract and transform kindergarten data in Berlin, Germany.
 
-## Data Sources
+## Current Data Sources
 
-### 1. OpenStreetMap (Primary Source)
+### 1. OpenStreetMap (Implemented)
 
-- **Format:** CSV (`kindergartens_berlin_raw_osm.csv`)
-- **API:** Overpass API
-- **Update Frequency:** Real-time (OSM is continuously updated)
-- **Fields:** 
+- **Source**: [OpenStreetMap Overpass API](https://wiki.openstreetmap.org/wiki/Overpass_API)
+- **Format**: CSV (`kindergartens_berlin_raw_osm.csv`)
+- **Update Frequency**: Real-time (OSM is continuously updated)
+- **Fields Extracted**: 
   - `id`: OSM element ID
   - `name`: Kindergarten name
   - `address`: Combined street address
-  - `latitude`: Geographic coordinates
-  - `longitude`: Geographic coordinates
+  - `latitude`, `longitude`: Geographic coordinates
   - `postcode`: ZIP code
   - `city`: District/city name
   - `operator`: Operating organization
 
-### 2. SenBJF Kitas List (Potential Future Source)
+## Potential Future Sources
 
-- **Format:** Excel (`berlin_kitas_raw.xlsx`)
-- **Update Frequency:** Annual
-- **Fields:** 
+### 2. Senatsverwaltung für Bildung, Jugend und Familie (SenBJF)
+
+- **Official Source**: [Berlin.de Kitadaten](https://www.berlin.de/sen/jugend/familie-und-kinder/kindertagesbetreuung/kitas/)
+- **Direct Data Link**: [Kita-Finder Berlin](https://www.berlin.de/sen/jugend/familie-und-kinder/kindertagesbetreuung/kitas/liste-der-kitas/)
+- **Format**: Excel (`berlin_kitas_raw.xlsx`)
+- **Update Frequency**: Annual (typically released each summer)
+- **Key Fields**:
   - `name`: Kindergarten name
-  - `address`: Full address
+  - `address`: Full address with street and number
   - `capacity`: Number of available spots
   - `provider`: Operating organization
-  - `coordinates`: Geographic location
+  - `district`: Official Berlin district
+  - `contact`: Phone/email
+  - `concept`: Educational approach
 
-### 3. Berlin District Boundaries (Potential Future Source)
+### 3. Berlin District Boundaries
 
-- **Format:** GeoJSON
-- **Use Case:** 
-  - Map kindergartens to neighborhoods
-  - Spatial analysis by district
-  - Visualization boundaries
+- **Source**: [Berlin Open Data](https://daten.berlin.de/)
+- **Direct Download**: [Bezirksgrenzen GeoJSON](https://fbinter.stadt-berlin.de/fb/berlin/service_intern.jsp?id=s_lor_bezirksgrenzen@senstadt&type=FEED)
+- **Format**: GeoJSON
+- **Use Case**: Spatial analysis and district mapping
 
-## Data Pipeline
+## Implementation Roadmap
 
-1. **Extraction**:
-   - `extract_kindergartens_osm.py`: Queries OSM data using bounding box for Berlin
-   - Saves raw data to `/sources/kindergartens_berlin_raw_osm.csv`
+### Current Implementation
 
-2. **Transformation**:
-   - `transform_kindergartens.py`: Cleans and standardizes the OSM data
-   - Outputs to `/data/kindergartens_berlin_cleaned.csv`
-   - Handles:
-     - Address concatenation
-     - Missing values
-     - Schema standardization
-
-3. **Enrichment** (Future):
-   - District mapping using GeoJSON boundaries
-   - Amenity proximity analysis from OSM
-
-## Usage
-
-1. Run extraction:
+1. **OSM Extraction**:
    ```bash
-   python scripts/extract_kindergartens_osm.
+   python scripts/extract_kindergartens_osm.py
 
 
 kindergartens-data-modelling
