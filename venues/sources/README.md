@@ -243,10 +243,10 @@ print(opening_hours_library.get('Example Café'))
 ## Project Structure
 
 ```
-berlin-venues-layer/
-├── berlin_venues_extractor.py    # Main extraction script
-├── berlin_places.csv             # Generated venue data
-├── requirements.txt              # Python dependencies
+venues/sources/
+├── openstreetmap_api_venues.ipynb    # Main extraction script
+├── berlin_venues.csv             # Generated venue data
+├── data_cleaning.ipynb             # Cleaning script from raw scraped data
 └── README.md                     # This file
 ```
 
