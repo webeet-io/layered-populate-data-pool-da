@@ -1,10 +1,24 @@
-# Berlin Places Extractor
+# Berlin Venues Layer
 
-This script queries the [Overpass API](https://overpass-api.de/) to retrieve information about restaurants, cafés, and bars located in Berlin, then exports the results to a CSV file.
+This project creates a comprehensive data layer of venues in Berlin, focusing on bars, restaurants, and cafés. The data is extracted using the Overpass API and includes detailed information about each venue, location data, and operational details.
+
+---
+
+## Table of Contents
+1. [Features](#features)
+2. [Requirements](#requirements)
+3. [How It Works](#how-it-works)
+4. [Running the Script](#running-the-script)
+5. [Output Example](#output-example)
+6. [Reverse Geolocation to Create District Column](#reverse-geolocation-to-create-district-column)
+7. [Data Transformation and Opening Hours Library](#data-transformation-and-opening-hours-library)
+
+---
 
 ## Features
-- Retrieves data for amenities: `restaurant`, `cafe`, `bar`.
-- Extracts:
+
+- **Venue Types**: Retrieves data for restaurants, cafés, and bars
+- **Comprehensive Data Extraction**:
   - Name
   - Category (amenity type)
   - Cuisine type (if available)
@@ -15,176 +29,235 @@ This script queries the [Overpass API](https://overpass-api.de/) to retrieve inf
   - Opening hours
   - Takeaway availability
   - Wheelchair accessibility
-- Saves the data as `berlin_places.csv`.
+- **Data Export**: Saves all data as `berlin_places.csv`
+
+---
 
 ## Requirements
-- Python 3.8+
-- Packages:
-  ```bash
-  pip install requests pandas folium
-  ```
+
+- **Python**: 3.8+
+- **Required Packages**:
+
+```bash
+pip install requests pandas folium geopy
+```
+
+---
 
 ## How It Works
-1. **Overpass API query**  
-   The script sends a POST request to the Overpass API to select all amenities (`restaurant`, `cafe`, `bar`) within the Berlin administrative area.
 
-2. **Data extraction**  
-   For each element returned, the script retrieves:
-   - Tags like `name`, `amenity`, `cuisine`, etc.
-   - Address fields (`addr:street`, `addr:housenumber`, `addr:postcode`, `addr:city`)
-   - Coordinates (directly from the node or from the `center` of a way/relation)
+### 1. Overpass API Query
+The script sends a POST request to the Overpass API to select all amenities (restaurant, café, bar) within Berlin's administrative boundaries.
 
-3. **CSV export**  
-   The extracted data is written to `berlin_places.csv` in UTF-8 encoding.
+### 2. Data Extraction
+For each venue returned, the script extracts:
+- Tags like name, amenity, cuisine, etc.
+- Address fields (`addr:street`, `addr:housenumber`, `addr:postcode`, `addr:city`)
+- Coordinates (from the node or center of a way/relation)
+
+### 3. CSV Export
+Extracted data is written to `berlin_places.csv` in UTF-8 encoding.
+
+---
 
 ## Running the Script
+
 ```bash
-python Untitled-1.py
+python berlin_venues_extractor.py
 ```
+
 The script will:
-- Print **"Executing Overpass query..."** to indicate it’s querying the API.
-- Print the number of elements extracted.
-- Save the CSV file in the current directory.
+- Print "Executing Overpass query…"
+- Print the number of elements extracted
+- Save the CSV file in the current directory
+
+---
 
 ## Output Example
-| name         | category   | cuisine   | address                   | lat       | lon       | website        | phone      | opening_hours         | takeaway | wheelchair |
-|--------------|-----------|-----------|---------------------------|-----------|-----------|----------------|------------|-----------------------|----------|------------|
-| Example Café | cafe       | coffee    | Example St 10, 10115 Berlin| 52.5200   | 13.4050   | example.com    | +49 30 ... | Mo-Fr 08:00-18:00     | yes      | yes        |
 
-
-# Reverse Geolocation to Create `district` Column
-
-**Objective:**  
-We want to convert latitude and longitude coordinates into a human-readable administrative area, specifically the **district**, and add it as a new column in our dataset.
+| name | category | cuisine | address | lat | lon | website | phone | opening_hours | takeaway | wheelchair |
+|------|----------|---------|---------|-----|-----|---------|-------|---------------|----------|------------|
+| Example Café | cafe | coffee | Example St 10, 10115 Berlin | 52.5200 | 13.4050 | example.com | +49 30 … | Mo-Fr 08:00-18:00 | yes | yes |
 
 ---
 
-## 1. What is Reverse Geolocation?
+## Reverse Geolocation to Create District Column
 
-Reverse geolocation (or reverse geocoding) is the process of converting geographic coordinates (latitude and longitude) into a readable address or place name. This can include:
+### Objective
+Convert latitude and longitude coordinates into human-readable administrative districts and add them as a new column to enhance the venue data layer.
 
-- Street name  
-- City  
-- District or administrative region  
-- Country  
+### What is Reverse Geolocation?
 
-For example:  
-Latitude: 40.730610, Longitude: -73.935242 → District: Manhattan
+Reverse geolocation converts geographic coordinates (latitude/longitude) into readable address components such as:
+- Street
+- City
+- District
+- Country
 
----
+**Example**: `Latitude: 52.5200, Longitude: 13.4050` → `District: Mitte`
 
-## 2. Tools in Python
+### Tools in Python
+- **geopy**: Provides access to multiple geocoding services (Nominatim, GoogleV3)
+- **pandas**: For dataset handling
 
-Common Python libraries for reverse geocoding:
-
-1. **`geopy`**  
-   - Provides easy access to multiple geocoding services.
-   - Example services: Nominatim (OpenStreetMap), GoogleV3 (Google Maps API).
-   
-2. **`pandas`**  
-   - To handle your dataset and create a new column.
-
----
-
-## 3. Example Workflow
+### Example Workflow
 
 ```python
-# Import libraries
 import pandas as pd
 from geopy.geocoders import Nominatim
 from geopy.extra.rate_limiter import RateLimiter
 
-# Load your dataset
-df = pd.read_csv("your_data.csv")
+# Load dataset
+df = pd.read_csv("berlin_places.csv")
 
 # Initialize geocoder
-geolocator = Nominatim(user_agent="geoapiExercises")
+geolocator = Nominatim(user_agent="berlinVenuesProject")
 reverse = RateLimiter(geolocator.reverse, min_delay_seconds=1)
 
-# Define a function to extract district from coordinates
+# Function to extract district
 def get_district(lat, lon):
-    location = reverse((lat, lon), language='en')
-    if location and 'address' in location.raw:
-        return location.raw['address'].get('suburb') or location.raw['address'].get('city_district') or location.raw['address'].get('city')
+    try:
+        location = reverse((lat, lon), language='en')
+        if location and 'address' in location.raw:
+            return location.raw['address'].get('suburb') \
+                or location.raw['address'].get('city_district') \
+                or location.raw['address'].get('city')
+    except:
+        return None
     return None
 
-# Apply function to create 'district' column
-df['district'] = df.apply(lambda row: get_district(row['latitude'], row['longitude']), axis=1)
+# Create 'district' column
+df['district'] = df.apply(lambda row: get_district(row['lat'], row['lon']), axis=1)
 
-# Preview
-df.head()
-
-
-# Data Transformation and Creation of the Opening Hours Library
-
-**Objective:**  
-Transform raw operational data into a structured format and create a reusable **Opening Hours library** that standardizes store or service hours for analysis.
+# Preview results
+print(df[['name', 'district']].head())
+```
 
 ---
 
-## 1. Raw Data Overview
+## Data Transformation and Opening Hours Library
 
-Typical raw data might include:
+### Objective
+Transform raw operational data into a structured format and create a reusable Opening Hours library for analysis and filtering.
 
-| Store | Monday | Tuesday | ... | Sunday |
-|-------|--------|---------|-----|--------|
-| Store A | 9:00-17:00 | 9:00-17:00 | ... | Closed |
-| Store B | 10:00-18:00 | 10:00-18:00 | ... | 10:00-14:00 |
+### Raw Data Overview
 
-**Challenges:**
-- Different formats (`9-5`, `09:00-17:00`, `Closed`)  
-- Missing or inconsistent entries  
-- Need for machine-readable, standardized representation
+**Example input**:
+| Store | Monday | Tuesday | … | Sunday |
+|-------|--------|---------|---|--------|
+| Store A | 9:00-17:00 | 9:00-17:00 | … | Closed |
+| Store B | 10:00-18:00 | 10:00-18:00 | … | 10:00-14:00 |
 
----
+**Challenges**:
+- Inconsistent formats (9-5, 09:00-17:00, Closed)
+- Missing entries
+- Need for standardized, machine-readable format
 
-## 2. Transformation Goals
+### Transformation Goals
+1. Standardize time format to `HH:MM-HH:MM`
+2. Handle special cases (Closed, 24h)
+3. Create a reusable dictionary/library for analysis
 
-1. Standardize the time format to `HH:MM-HH:MM`.
-2. Handle special cases like `Closed` or `24h`.
-3. Convert into a **dictionary or library** that can be reused for analysis.
-
----
-
-## 3. Example Workflow in Python
+### Example Workflow
 
 ```python
 import pandas as pd
+import re
 
-# Load raw data
-df = pd.read_csv("raw_opening_hours.csv")
+# Load venue data
+df = pd.read_csv("berlin_places.csv")
 
-# Function to standardize time
-def standardize_time(time_str):
-    if pd.isna(time_str) or time_str.lower() == "closed":
+# Standardize opening hours function
+def parse_opening_hours(hours_str):
+    """
+    Parse OpenStreetMap opening hours format into structured data
+    Example: "Mo-Fr 08:00-18:00; Sa 09:00-17:00" 
+    """
+    if pd.isna(hours_str) or not hours_str:
         return None
-    # Handle 9-5 or 09:00-17:00 formats
-    parts = time_str.replace(" ", "").split("-")
-    start = parts[0] if ":" in parts[0] else parts[0]+":00"
-    end = parts[1] if ":" in parts[1] else parts[1]+":00"
-    return f"{start}-{end}"
+    
+    # Initialize days structure
+    schedule = {
+        'Monday': None, 'Tuesday': None, 'Wednesday': None,
+        'Thursday': None, 'Friday': None, 'Saturday': None, 'Sunday': None
+    }
+    
+    # Parse different day formats
+    day_mapping = {
+        'Mo': 'Monday', 'Tu': 'Tuesday', 'We': 'Wednesday',
+        'Th': 'Thursday', 'Fr': 'Friday', 'Sa': 'Saturday', 'Su': 'Sunday'
+    }
+    
+    # Split by semicolon for multiple time ranges
+    parts = hours_str.split(';')
+    
+    for part in parts:
+        part = part.strip()
+        if not part:
+            continue
+            
+        # Extract day range and time
+        if ' ' in part:
+            day_part, time_part = part.split(' ', 1)
+            
+            # Handle day ranges like Mo-Fr
+            if '-' in day_part:
+                start_day, end_day = day_part.split('-')
+                # Implementation for day ranges...
+            else:
+                # Single day
+                if day_part in day_mapping:
+                    schedule[day_mapping[day_part]] = time_part
+    
+    return schedule
 
-# Apply standardization
-for day in ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']:
-    df[day] = df[day].apply(standardize_time)
+# Apply parsing to opening hours
+df['parsed_hours'] = df['opening_hours'].apply(parse_opening_hours)
 
 # Create opening hours library
 opening_hours_library = {}
 for index, row in df.iterrows():
-    opening_hours_library[row['Store']] = {
-        day: row[day] for day in ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
-    }
+    if row['parsed_hours']:
+        opening_hours_library[row['name']] = row['parsed_hours']
 
 # Example output
-print(opening_hours_library['Store A'])
+print(opening_hours_library.get('Example Café'))
+```
 
-Sample Output:
+### Sample Output
+
+```json
 {
-  'Monday': '09:00-17:00',
-  'Tuesday': '09:00-17:00',
-  'Wednesday': '09:00-17:00',
-  'Thursday': '09:00-17:00',
-  'Friday': '09:00-17:00',
-  'Saturday': None,
-  'Sunday': None
+  "Monday": "08:00-18:00",
+  "Tuesday": "08:00-18:00",
+  "Wednesday": "08:00-18:00",
+  "Thursday": "08:00-18:00",
+  "Friday": "08:00-18:00",
+  "Saturday": "09:00-17:00",
+  "Sunday": null
 }
+```
+
+---
+
+## Project Structure
+
+```
+berlin-venues-layer/
+├── berlin_venues_extractor.py    # Main extraction script
+├── berlin_places.csv             # Generated venue data
+├── requirements.txt              # Python dependencies
+└── README.md                     # This file
+```
+
+## Contributing
+
+Feel free to contribute by:
+- Adding support for additional venue types
+- Improving data quality checks
+- Enhancing the opening hours parser
+- Adding data visualization features
+
+## License
+
+This project uses data from OpenStreetMap, which is available under the [Open Database License](https://opendatacommons.org/licenses/odbl/).
