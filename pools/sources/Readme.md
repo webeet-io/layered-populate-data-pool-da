@@ -1,4 +1,4 @@
-## Berlin Pools Data Analysis
+## Berlin Pools Data Integration
 
 ### Objective:
 The goal of this analysis is to create a clean, geocoded, and analysis-ready dataset of public pools in Berlin, 
