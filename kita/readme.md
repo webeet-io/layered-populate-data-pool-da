@@ -1,3 +1,68 @@
+# Berlin Kindergartens Data Pipeline
+
+This repository contains scripts to extract, transform, and analyze kindergarten data in Berlin, Germany from multiple sources.
+
+## Data Sources
+
+### 1. OpenStreetMap (Primary Source)
+
+- **Format:** CSV (`kindergartens_berlin_raw_osm.csv`)
+- **API:** Overpass API
+- **Update Frequency:** Real-time (OSM is continuously updated)
+- **Fields:** 
+  - `id`: OSM element ID
+  - `name`: Kindergarten name
+  - `address`: Combined street address
+  - `latitude`: Geographic coordinates
+  - `longitude`: Geographic coordinates
+  - `postcode`: ZIP code
+  - `city`: District/city name
+  - `operator`: Operating organization
+
+### 2. SenBJF Kitas List (Potential Future Source)
+
+- **Format:** Excel (`berlin_kitas_raw.xlsx`)
+- **Update Frequency:** Annual
+- **Fields:** 
+  - `name`: Kindergarten name
+  - `address`: Full address
+  - `capacity`: Number of available spots
+  - `provider`: Operating organization
+  - `coordinates`: Geographic location
+
+### 3. Berlin District Boundaries (Potential Future Source)
+
+- **Format:** GeoJSON
+- **Use Case:** 
+  - Map kindergartens to neighborhoods
+  - Spatial analysis by district
+  - Visualization boundaries
+
+## Data Pipeline
+
+1. **Extraction**:
+   - `extract_kindergartens_osm.py`: Queries OSM data using bounding box for Berlin
+   - Saves raw data to `/sources/kindergartens_berlin_raw_osm.csv`
+
+2. **Transformation**:
+   - `transform_kindergartens.py`: Cleans and standardizes the OSM data
+   - Outputs to `/data/kindergartens_berlin_cleaned.csv`
+   - Handles:
+     - Address concatenation
+     - Missing values
+     - Schema standardization
+
+3. **Enrichment** (Future):
+   - District mapping using GeoJSON boundaries
+   - Amenity proximity analysis from OSM
+
+## Usage
+
+1. Run extraction:
+   ```bash
+   python scripts/extract_kindergartens_osm.
+
+
 kindergartens-data-modelling
 
 This step details the research and planning for integrating Berlin kindergarten data. The primary data source is OpenStreetMap (OSM) via the Overpass API, chosen for its reliability and accessibility after initial attempts with the Berlin Open Data WFS failed.
