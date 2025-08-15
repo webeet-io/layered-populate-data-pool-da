@@ -1,9 +1,9 @@
 """db_population_utils — design stubs (Step 1)."""
 
 from .db_connector.db_connector import DBSettings, DBConnector
-from .data_loader.data_loader import DataLoader, CsvParams, LoadOptions, LoadReport
+from .data_loader.test.design.data_loader_stub import DataLoader, CsvParams, LoadOptions, LoadReport
 from .data_processor.data_processor import DataProcessor
-from .db_populater.db_populater import DBPopulater
+from .data_populator.enhanced_db_populator_design import DBPopulator
 from .schema_tools.schema_tools import (
     infer_sql_types,
     generate_create_table_sql,
@@ -20,7 +20,7 @@ __all__ = [
     "LoadOptions",
     "LoadReport",
     "DataProcessor",
-    "DBPopulater",
+    "DBPopulator",
     "infer_sql_types",
     "generate_create_table_sql",
     "write_schema_markdown",

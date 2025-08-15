@@ -1,65 +1,44 @@
 """
-Data Loader Module - Simple & Smart Data Loading
+DataLoader Package - Smart Data Loading with Format Detection
 
- Philosophy: "Simple things should be simple!"
+This package provides intelligent data loading capabilities for CSV, Excel, and JSON files
+with automatic format detection, encoding detection, and comprehensive error handling.
 
-This module provides SmartAutoDataLoader - an intelligent data loader that:
-- Automatically detects file format, encoding, delimiters
-- Finds and parses datetime columns automatically  
-- Provides comprehensive reporting and error handling
-- Works with just one line of code: loader.load("file.csv")
+Main Classes:
+- SmartAutoDataLoader: Full implementation with all features
+- SmartAutoDataLoader (from stub): Skeleton version for development
 
-Example:
-    >>> from db_population_utils.data_loader import SmartAutoDataLoader
-    >>> loader = SmartAutoDataLoader(verbose=True)
-    >>> df = loader.load("data.csv")  # Everything automatic!
+Features:
+- Universal loading with auto-format detection
+- CSV: 95% priority (CRITICAL) - encoding/delimiter detection
+- Excel: 80% priority (HIGH) - sheet detection and selection  
+- JSON: 70% priority (MEDIUM) - structure flattening and relational extraction
+- Automatic datetime parsing across all formats
+- Performance monitoring and comprehensive reporting
+- Enhanced JSON handling with relational table extraction
 """
 
-__version__ = "1.0.0"
-__author__ = "Data Pool Team"
+from .smart_auto_data_loader import SmartAutoDataLoader, LoadReport
 
-# Core imports
-try:
-    from .smart_auto_data_loader import SmartAutoDataLoader, LoadReport
-    
-    # Backward compatibility with old complex API
-    DataLoader = SmartAutoDataLoader  # For legacy code
-    
-    # Export the main classes
-    __all__ = [
-        "SmartAutoDataLoader",  # Primary class
-        "LoadReport",           # Result reporting
-        "DataLoader",           # Legacy compatibility
-    ]
-    
-except ImportError as e:
-    # Graceful fallback if dependencies missing
-    print(f"Warning: Could not import SmartAutoDataLoader: {e}")
-    __all__ = []
+__version__ = "1.1.0"
+__all__ = ["SmartAutoDataLoader", "LoadReport"]
 
-# Module metadata
-__doc__ = """
-Simple Smart Data Loading
+# Quick usage examples
+__doc__ += """
 
-The SmartAutoDataLoader automatically handles:
-✅ Format detection (CSV, Excel, JSON)
-✅ Encoding detection (UTF-8, Latin-1, etc.)  
-✅ Delimiter detection (comma, semicolon, tab)
-✅ DateTime parsing and conversion
-✅ Comprehensive error handling and reporting
-
-Key Features:
-- One-line loading: loader.load("file.csv")
-- Full automation: no manual configuration needed
-- Intelligent detection: finds dates, encodings, formats
-- Detailed reporting: knows what it did and why
-- Error recovery: handles problematic files gracefully
-
-Usage:
+Quick Usage:
     from db_population_utils.data_loader import SmartAutoDataLoader
     
+    # Basic loading
     loader = SmartAutoDataLoader(verbose=True)
-    df = loader.load("your_data.csv")
+    df = loader.load("data.csv")  # Auto-detects format
     
-That's it! Everything else happens automatically.
+    # JSON with relational extraction
+    tables = loader.load_json_as_tables("complex_data.json")
+    for table_name, df in tables.items():
+        print(f"{table_name}: {df.shape}")
+    
+    # Comprehensive reporting
+    report = loader.build_report("data.xlsx")
+    print(f"Quality score: {report.quality_score}")
 """
