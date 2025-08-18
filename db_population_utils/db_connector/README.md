@@ -1,140 +1,466 @@
-# DBConnector Class Design
+# Database Population Utilities (db_population_utils)
 
 ## Overview
-`DBConnector` (core, required now)
 
-**Responsibility**: Centralize DB configuration and pooled connections for multiple environments (e.g., `ingestion`, `app`).
+Comprehensive database infrastructure package for data engineering workflows with advanced connection management, comprehensive reporting, and seamless integration support.
 
-## Core Methods (Original Design)
+## Architecture
 
-### Initialization
-* `__init__(ingestion: Optional[DBSettings], app: Optional[DBSettings], echo: bool=False)` - Initialize connector with database settings
-
-### Connection Management
-* `get_engine(target: Literal["ingestion","app"]) -> Engine` - Get SQLAlchemy engine for specified target
-* `connect(target="ingestion") -> contextmanager[Connection]` - Get connection context manager
-* `transaction(target="ingestion") -> contextmanager[Connection]` - Get transaction context manager
-* `test_connection(target="ingestion") -> dict` - Test connection and return status info
-
-### Query Execution
-* `execute(sql: str, params: dict|None=None, target="ingestion") -> int` - Execute SQL statement and return affected rows
-* `fetch_df(sql: str, params: dict|None=None, target="ingestion") -> pd.DataFrame` - Execute query and return DataFrame *(optional but very handy)*
-
-### Data Operations
-* `to_sql(df: pd.DataFrame, table: str, schema: str|None=None, if_exists="append", target="ingestion") -> None` - Write DataFrame to database table
-
-### Cleanup
-* `dispose_engine(target)` - Dispose specific engine and its connection pool
-* `dispose_all()` - Dispose all engines and connection pools
-
-## Enhanced Methods (Extensions)
-
-### Configuration Management
-* `load_config_from_file(path: str) -> None` - Load database configuration from YAML/JSON file
-* `load_config_from_env() -> None` - Load configuration from environment variables
-* `validate_config() -> dict` - Validate database connection settings
-* `get_connection_info(target: str) -> dict` - Get connection info without sensitive data (passwords)
-
-### Schema Management
-* `get_table_schema(table: str, schema: str = None, target="ingestion") -> dict` - Retrieve table schema information
-* `table_exists(table: str, schema: str = None, target="ingestion") -> bool` - Check if table exists
-* `create_schema(schema: str, target="ingestion") -> bool` - Create database schema
-* `drop_table(table: str, schema: str = None, target="ingestion") -> bool` - Drop table if exists
-* `get_table_columns(table: str, schema: str = None, target="ingestion") -> list` - Get list of table columns
-
-### Batch Operations & Performance
-* `execute_batch(statements: list[str], target="ingestion") -> list[int]` - Execute multiple SQL statements in batch
-* `bulk_insert(data: list[dict], table: str, schema: str = None, batch_size=1000, target="ingestion") -> None` - Bulk insert data with batching
-* `copy_table(source_table: str, dest_table: str, source_target="app", dest_target="ingestion") -> int` - Copy table between databases
-
-### Monitoring & Logging
-* `get_connection_status(target: str = None) -> dict` - Get status of connections (all or specific target)
-* `get_pool_stats(target: str) -> dict` - Get connection pool statistics
-* `log_query_performance(enabled: bool = True) -> None` - Enable/disable query performance logging
-
-### Migration & Backup Support
-* `backup_table(table: str, backup_path: str, target="ingestion") -> bool` - Backup table to file
-* `restore_table(table: str, backup_path: str, target="ingestion") -> bool` - Restore table from backup file
-* `run_migration_script(script_path: str, target="ingestion") -> bool` - Execute migration script from file
-
-### Enhanced Error Handling
-* `retry_connection(target: str, max_retries=3) -> bool` - Retry connection with exponential backoff
-* `health_check(target: str = None) -> dict` - Comprehensive health check of connections
-* `get_last_error(target: str) -> str` - Get last error message for target
-
-### Integration Support
-* `register_processor(processor: 'DataProcessor') -> None` - Register DataProcessor instance for integration
-* `register_populater(populater: 'DBPopulater') -> None` - Register DBPopulater instance for integration
-* `get_table_for_processing(table: str, target="ingestion") -> pd.DataFrame` - Retrieve table data for processing
-
-### Utility Methods
-* `close_idle_connections(target: str = None, idle_timeout=300) -> int` - Close idle connections older than timeout
-* `vacuum_table(table: str, target="ingestion") -> None` - Run VACUUM on table (PostgreSQL specific)
-* `analyze_table(table: str, target="ingestion") -> dict` - Get table statistics and analysis
-* `estimate_table_size(table: str, target="ingestion") -> dict` - Estimate table size and row count
-
-### Advanced Context Managers
-* `batch_transaction(target="ingestion") -> contextmanager` - Context manager for batch operations with transaction
-* `read_only_connection(target="app") -> contextmanager` - Context manager for read-only operations
-* `with_timeout(seconds: int, target="ingestion") -> contextmanager` - Context manager with query timeout
-
-## Enhanced Initialization
-
-```python
-def __init__(
-    self,
-    ingestion: Optional[DBSettings] = None,
-    app: Optional[DBSettings] = None,
-    echo: bool = False,
-    pool_size: int = 5,              # Connection pool size
-    max_overflow: int = 10,          # Maximum pool overflow
-    pool_timeout: int = 30,          # Pool checkout timeout
-    pool_recycle: int = 3600,        # Connection recycle time
-    config_file: Optional[str] = None,  # Path to configuration file
-    auto_load_env: bool = True       # Automatically load from environment
-)
+```
+DataLoader → DataProcessor → DBConnector ← DBPopulator
 ```
 
-## Usage Examples
+**Sequential Flow (→):**
+- **DataLoader**: Load raw files with quality assessment
+- **DataProcessor**: Transform and clean data  
+- **DBConnector**: Essential database infrastructure operations
+
+**Infrastructure Usage (←):**
+- **DBPopulator**: Uses DBConnector for complex business logic and relationships
+
+## Key Features
+
+✅ **Multi-Environment Support**: Separate `ingestion` and `app` database targets  
+✅ **Connection Pooling**: Advanced pooling with health monitoring  
+✅ **Comprehensive Reporting**: Detailed reports for all database operations  
+✅ **Single-Call Operations**: Execute, report, and handle errors in one call  
+✅ **Built-in Error Handling**: Automatic recovery and detailed error reporting  
+✅ **Infrastructure Layer**: Designed to be used by other data processing components  
+✅ **Production Ready**: Health checks, performance metrics, and monitoring built-in  
+
+## Installation
+
+```bash
+pip install sqlalchemy pandas psycopg2-binary
+# or
+pip install sqlalchemy pandas psycopg
+```
+
+## Quick Start
+
+### Environment Setup
+
+Set environment variables:
+
+```bash
+# Ingestion Database
+export INGESTION_DB_HOST=localhost
+export INGESTION_DB_PORT=5432
+export INGESTION_DB_USER=ingestion_user
+export INGESTION_DB_PASSWORD=secret
+export INGESTION_DB_DATABASE=ingestion_db
+
+# App Database  
+export APP_DB_URL=postgresql://app_user:secret@localhost:5432/app_db
+```
 
 ### Basic Usage
+
 ```python
-# Initialize with enhanced configuration
-db = DBConnector(
-    config_file="db_config.yaml",
-    echo=True,
-    pool_size=10
+from db_population_utils import create_connector_from_env
+
+# Quick setup
+connector = create_connector_from_env(echo=True)
+
+# Basic operations
+df = connector.fetch_df("SELECT * FROM users")
+connector.to_sql(df, "processed_users")
+health = connector.test_connection()
+```
+
+## Core Methods
+
+### Connection Management
+```python
+# Get engine for target
+engine = connector.get_engine("ingestion")
+
+# Context managers
+with connector.connect("ingestion") as conn:
+    result = conn.execute(text("SELECT 1"))
+
+with connector.transaction("app") as conn:
+    conn.execute(text("INSERT INTO logs VALUES (...)"))
+```
+
+### Essential Operations
+```python
+# Execute SQL
+rows_affected = connector.execute(
+    "UPDATE users SET status = %(status)s", 
+    params={"status": "active"}
 )
 
-# Health check
-health_status = db.health_check()
+# Query to DataFrame
+df = connector.fetch_df(
+    "SELECT * FROM sales WHERE date > %(date)s",
+    params={"date": "2024-01-01"}
+)
 
-# Schema operations
-if not db.table_exists("users", "public"):
-    db.create_schema("public")
+# Insert DataFrame
+connector.to_sql(df, "sales_processed", schema="staging")
 ```
 
-### Batch Operations
+### Health & Schema Management
 ```python
-# Batch processing with transaction
-with db.batch_transaction("ingestion") as conn:
-    db.bulk_insert(data, "staging_table", batch_size=5000)
-    db.execute("CALL process_staging_data()")
+# Test connection
+status = connector.test_connection("ingestion")
+# Returns: {"target": "ingestion", "ok": True, "elapsed_sec": 0.012, "version": "..."}
+
+# Check table existence
+exists = connector.table_exists("users", schema="public")
+
+# Create schema
+created = connector.create_schema("staging")
+
+# Get table info
+schema_info = connector.get_table_schema("users", schema="public")
 ```
 
-### Monitoring
+## Comprehensive Operations (Single-Call)
+
+### Execute with Full Reporting
 ```python
-# Get pool statistics
-stats = db.get_pool_stats("ingestion")
+rows_affected, report = connector.execute_with_full_report(
+    "UPDATE users SET status = %(status)s WHERE active = false",
+    params={"status": "inactive"}
+)
 
-# Performance monitoring
-db.log_query_performance(True)
+print(f"Success: {report.success}")
+print(f"Rows affected: {report.rows_affected}")
+print(f"Execution time: {report.execution_time_seconds:.2f}s")
+print(f"Connection healthy: {report.connection_healthy}")
+if report.errors:
+    print(f"Errors: {report.errors}")
 ```
 
-## Integration Points
+### Insert DataFrame with Comprehensive Reporting
+```python
+success, report = connector.insert_dataframe_with_report(
+    df, 
+    table="user_data",
+    schema="staging", 
+    if_exists="append"
+)
 
-This enhanced `DBConnector` class serves as the foundation for:
-- `DataProcessor` class integration for data preprocessing
-- `DBPopulater` class integration for data insertion
-- Configuration management across the entire data pipeline
-- Monitoring and logging capabilities for production environments
+print(f"Success: {report.success}")
+print(f"Rows inserted: {report.rows_inserted}")
+print(f"Schema created: {report.schema_created}")
+print(f"Table created: {report.table_created}")
+print(f"Pre-check results: {report.pre_check_results}")
+```
+
+### Query with Data Profiling and Reporting
+```python
+df, report = connector.query_to_dataframe_with_report(
+    "SELECT * FROM staging.user_data WHERE signup_date > %(date)s",
+    params={"date": "2024-01-01"}
+)
+
+print(f"Success: {report.success}")
+print(f"Rows retrieved: {report.rows_retrieved}")
+print(f"Memory usage: {report.memory_usage_mb:.1f}MB")
+print(f"Data types: {report.data_types}")
+print(f"Execution time: {report.execution_time_seconds:.2f}s")
+```
+
+## Configuration Options
+
+### DBSettings Configuration
+```python
+from db_population_utils import DBSettings, DBConnector
+
+# From environment variables
+settings = DBSettings.from_env("PROD_DB")
+
+# From dictionary
+config = {
+    "host": "localhost",
+    "port": 5432,
+    "user": "dbuser", 
+    "password": "secret",
+    "database": "mydb",
+    "pool_size": 10
+}
+settings = DBSettings.from_dict(config)
+
+# Direct URL
+settings = DBSettings(url="postgresql://user:pass@localhost:5432/db")
+```
+
+### Multi-Environment Setup
+```python
+ingestion_settings = DBSettings.from_env("INGESTION_DB")
+app_settings = DBSettings.from_env("APP_DB")
+
+connector = DBConnector(
+    ingestion=ingestion_settings,
+    app=app_settings,
+    echo=True,            # SQL logging
+    pool_size=10,         # Connection pool size
+    max_overflow=20,      # Max pool overflow
+    pool_timeout=30,      # Pool checkout timeout
+    pool_recycle=3600     # Connection recycle time
+)
+```
+
+## Advanced Usage
+
+### Data Pipeline Integration
+```python
+from db_population_utils import create_connector_from_env
+
+# Setup infrastructure
+connector = create_connector_from_env(echo=True)
+
+# Complete pipeline with comprehensive reporting
+def process_data_pipeline(source_file: str, target_table: str):
+    # Step 1: Load data (DataLoader responsibility)
+    # raw_df = loader.load(source_file)
+    
+    # Step 2: Process data (DataProcessor responsibility)  
+    # clean_df = processor.transform(raw_df)
+    
+    # Step 3: Store with comprehensive reporting
+    success, report = connector.insert_dataframe_with_report(
+        clean_df, 
+        target_table, 
+        schema="staging", 
+        if_exists="replace"
+    )
+    
+    if success:
+        print(f"✅ Pipeline success: {report.rows_inserted} rows inserted")
+        
+        # Step 4: Business logic (DBPopulator responsibility)
+        # populator.establish_relationships(connector, target_table, ["existing_table"])
+        
+    else:
+        print(f"❌ Pipeline failed: {report.errors}")
+        
+    return success, report
+```
+
+### Error Handling and Recovery
+```python
+from db_population_utils import DBConnectionError, DBOperationError
+
+try:
+    rows, report = connector.execute_with_full_report(
+        "COMPLEX SQL OPERATION..."
+    )
+    
+    if not report.success:
+        print(f"Operation failed but handled gracefully: {report.errors}")
+        
+except DBConnectionError as e:
+    print(f"Connection issue - retry logic here: {e}")
+    
+except DBOperationError as e:
+    print(f"SQL operation failed: {e}")
+```
+
+### Performance Monitoring
+```python
+# Query with performance metrics
+df, report = connector.query_to_dataframe_with_report(
+    "SELECT * FROM large_table WHERE date > %(date)s",
+    params={"date": "2024-01-01"}
+)
+
+# Analyze performance
+if report.execution_time_seconds > 5.0:
+    print(f"⚠️  Slow query detected: {report.execution_time_seconds:.2f}s")
+    
+if report.memory_usage_mb > 100:
+    print(f"⚠️  High memory usage: {report.memory_usage_mb:.1f}MB")
+    
+print(f"📊 Performance: {report.rows_retrieved} rows in {report.execution_time_seconds:.2f}s")
+```
+
+## Report Classes
+
+### ExecutionReport
+```python
+@dataclass
+class ExecutionReport:
+    success: bool
+    rows_affected: int = 0
+    execution_time_seconds: float = 0.0
+    connection_healthy: bool = True
+    errors: List[str] = field(default_factory=list)
+    warnings: List[str] = field(default_factory=list)
+    query_info: Dict[str, Any] = field(default_factory=dict)
+```
+
+### InsertionReport
+```python
+@dataclass  
+class InsertionReport:
+    success: bool
+    rows_inserted: int = 0
+    table_created: bool = False
+    schema_created: bool = False
+    execution_time_seconds: float = 0.0
+    connection_healthy: bool = True
+    pre_check_results: Dict[str, Any] = field(default_factory=dict)
+    errors: List[str] = field(default_factory=list)
+    warnings: List[str] = field(default_factory=list)
+```
+
+### QueryReport
+```python
+@dataclass
+class QueryReport:
+    success: bool
+    rows_retrieved: int = 0
+    execution_time_seconds: float = 0.0
+    connection_healthy: bool = True
+    data_types: Dict[str, str] = field(default_factory=dict)
+    memory_usage_mb: float = 0.0
+    errors: List[str] = field(default_factory=list)
+    warnings: List[str] = field(default_factory=list)
+```
+
+## Convenience Functions
+
+```python
+from db_population_utils import (
+    create_connector_from_env,
+    create_connector_from_config, 
+    create_quick_connector,
+    test_connection_quick,
+    configure_logging
+)
+
+# Quick environment setup
+connector = create_connector_from_env(echo=True)
+
+# From config file
+connector = create_connector_from_config("config/db.yaml")
+
+# Single URL setup
+connector = create_quick_connector(
+    "postgresql://user:pass@localhost:5432/db",
+    target="ingestion"
+)
+
+# Test connection quickly
+if test_connection_quick("postgresql://user:pass@localhost:5432/db"):
+    print("Connection works!")
+
+# Configure logging
+configure_logging("DEBUG")
+```
+
+## Integration with Other Components
+
+### With DBPopulator (Business Logic)
+```python
+# DBConnector provides infrastructure
+connector = create_connector_from_env()
+
+# DBPopulator uses DBConnector for complex operations
+class DBPopulator:
+    def __init__(self, connector: DBConnector):
+        self.connector = connector
+    
+    def establish_relationships(self, new_table: str, existing_tables: List[str]):
+        # Use connector for infrastructure operations
+        for existing_table in existing_tables:
+            if self.connector.table_exists(existing_table):
+                # Create foreign key relationships
+                sql = f"ALTER TABLE {new_table} ADD CONSTRAINT..."
+                rows, report = self.connector.execute_with_full_report(sql)
+```
+
+### With DataProcessor (Data Pipeline)
+```python
+# DataProcessor → DBConnector flow
+class DataProcessor:
+    def __init__(self, connector: DBConnector):
+        self.connector = connector
+    
+    def save_processed_data(self, df: pd.DataFrame, table: str):
+        # Use comprehensive operation
+        success, report = self.connector.insert_dataframe_with_report(
+            df, table, schema="processed"
+        )
+        return success, report
+```
+
+## Best Practices
+
+### 1. Use Comprehensive Operations
+```python
+# ✅ Good - Single call with full reporting
+success, report = connector.insert_dataframe_with_report(df, "table")
+
+# ❌ Avoid - Multiple separate calls  
+connector.test_connection()
+connector.create_schema("schema")
+connector.to_sql(df, "table")
+```
+
+### 2. Handle Reports Properly
+```python
+success, report = connector.insert_dataframe_with_report(df, "users")
+
+if success:
+    # Log success metrics
+    logger.info(f"Inserted {report.rows_inserted} rows in {report.execution_time_seconds:.2f}s")
+else:
+    # Handle errors appropriately
+    for error in report.errors:
+        logger.error(f"Insert failed: {error}")
+```
+
+### 3. Use Appropriate Targets
+```python
+# Raw data goes to ingestion
+connector.to_sql(raw_df, "raw_data", target="ingestion")
+
+# Processed data goes to app
+connector.to_sql(processed_df, "clean_data", target="app")
+```
+
+### 4. Monitor Performance
+```python
+df, report = connector.query_to_dataframe_with_report("SELECT ...")
+
+# Set up alerts for slow queries
+if report.execution_time_seconds > SLOW_QUERY_THRESHOLD:
+    send_alert(f"Slow query detected: {report.execution_time_seconds:.2f}s")
+```
+
+## Dependencies
+
+**Required:**
+- `sqlalchemy >= 1.4`
+- `python >= 3.8`
+
+**Optional:**
+- `pandas` - For DataFrame operations
+- `psycopg2` or `psycopg` - For PostgreSQL connections
+
+## License
+
+MIT License
+
+## Contributing
+
+1. Follow the architecture: `DataLoader → DataProcessor → DBConnector ← DBPopulator`
+2. Use comprehensive operations for all database interactions
+3. Include proper error handling and reporting
+4. Write tests for all new functionality
+5. Update documentation for any API changes
+
+---
+
+**Key Benefits of This Architecture:**
+
+🔧 **Infrastructure First**: DBConnector is pure infrastructure without business logic  
+📊 **Comprehensive Reporting**: Every operation returns detailed reports  
+⚡ **Single-Call Operations**: Execute, report, and handle errors in one call  
+🔄 **Reusable**: Can be used independently or as foundation for other components  
+🏗️ **Production Ready**: Built-in health checks, error handling, and monitoring
