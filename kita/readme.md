@@ -89,6 +89,83 @@ Input: The raw CSV file (/sources/kindergartens_berlin_raw_osm.csv).
 
 Output: A cleaned CSV file (/data/kindergartens_berlin_cleaned.csv).
 
+2.2 
+
+Loading Data
+The previously cleaned dataset is loaded into a Pandas DataFrame.
+
+Column Normalization
+
+Column names are standardized (lowercase, underscores).
+
+Leading/trailing spaces are removed.
+
+Handling Missing Values
+
+All missing fields are filled with "Unknown" (or replaced using postal code mapping for districts).
+
+Address & Postal Code Standardization
+
+Postal codes are normalized to 5-digit strings.
+
+Addresses are cleaned (removing redundant "Berlin" suffix).
+
+Coordinate Checks
+
+Ensures latitude and longitude are numeric.
+
+Rows with coordinates outside Berlin boundaries (lat: 52.3–52.7, lon: 13.1–13.7) are flagged.
+
+Neighborhood / District Assignment
+
+Districts (Bezirk) assigned using postal code mapping.
+
+Optional enrichment via reverse geocoding using Nominatim API for missing districts.
+
+Contact Details Normalization
+
+Website, phone, and email fields are stripped of whitespace and standardized.
+
+Final Quality Checks
+
+Duplicate rows removed.
+
+All numeric and string columns validated.
+
+Total row count confirmed.
+
+Timestamps
+
+created_at and updated_at columns added to track the transformation timestamp.
+
+Saving Final Dataset
+
+Final CSV saved as kindergartens_berlin_final.csv.
+
+Assumptions
+Postal codes are assumed to map uniquely to a district; if unknown, district is filled via geocoding.
+
+Missing contact info is filled with "Unknown".
+
+Coordinates outside Berlin are excluded from analysis.
+
+Reverse geocoding uses a 1-second delay per request to avoid API limits.
+
+How to Run
+Ensure all dependencies are installed:
+
+bash
+Copy
+Edit
+pip install pandas geopy
+Place the latest raw data in /kindergartens/sources/.
+
+Open kindergardens_data_transformation.ipynb and run all cells sequentially.
+
+The final dataset will be saved as kindergartens_berlin_final.csv.
+
+
+
 Key Operations:
 
 Reading the raw data.
