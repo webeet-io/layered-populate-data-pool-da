@@ -42,3 +42,19 @@ Our team agreed on the following schema for storing long-term listings
 See [sample.csv](long_term_listing/examples/immowelt_page_1.csv) for a small example of the raw data before cleaning.
 
 
+-------------------------------------------------------------------
+## Data Cleaning
+
+Today, our group began the data cleaning process on the raw dataset. Specifically, we:
+
+ - Applied Python cleaning functions to explore the dataset after transformations.
+
+ - Checked for inconsistencies in formatting (e.g., variations in values across columns).
+
+ - Identified empty and missing values that need to be addressed.
+
+This work gives us a clearer picture of the dataset’s current state and helps define the next steps for standardizing the data.
+
+
+
+
