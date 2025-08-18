@@ -210,13 +210,16 @@ print(opening_hours_library.get('Example Café'))
 ## Project Structure
 
 ```
-venues/sources/
-├── venues_scraper.ipynb    # Main extraction script
-├── scraper_test.csv    # Tests the extraction 
-├── berlin_venues_raw.csv   # File extracted by scraper
-├── berlin_venues.csv             # Generated venue data after cleaning
-├── data_cleaning.ipynb             # Cleaning script from raw scraped data
-└── README.md                     # This file
+venues/
+├── sources/
+│   ├── venues_scraper.ipynb        # Main extraction script (notebook)
+│   ├── scraper_test.csv             # Sample test extraction results
+│   ├── berlin_venues_raw.csv        # File extracted by scraper
+│   ├── berlin_venues_cleaned.csv    # Cleaned & transformed venue data
+│   └── README.md                    # Documentation
+│
+└── scripts/
+    └── venues_data_transformation.ipynb                 # Cleans and transforms the raw data
 ```
 
 ## Contributing
