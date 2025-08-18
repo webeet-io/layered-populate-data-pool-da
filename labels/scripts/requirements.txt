@@ -11,6 +11,7 @@ geoalchemy2
 # Machine Learning
 scikit-learn
 threadpoolctl # Required for scikit-learn
+sentence-transformers
 
 # Geospatial Processing
 geopandas
@@ -23,6 +24,7 @@ matplotlib
 seaborn
 folium
 branca  # Required for folium
+networkx
 
 # Jupyter (optional for exploration)
 jupyter
@@ -37,3 +39,8 @@ pytest
 pytest-cov  # For coverage reports
 # Logging
 logging  # Standard library, no need to install
+
+# AI
+google-generativeai #For Gemini
+
+

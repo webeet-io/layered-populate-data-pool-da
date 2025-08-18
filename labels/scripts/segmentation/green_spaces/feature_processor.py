@@ -7,7 +7,7 @@ class GreenSpacesFeatureProcessor(FeatureProcessor):
     
     def process_features(self, raw_data):
         features = raw_data.copy()
-        
+
         # 1. Calculate core metrics
         features['green_space_per_capita'] = (
             features['total_green_area'] / 
@@ -18,7 +18,7 @@ class GreenSpacesFeatureProcessor(FeatureProcessor):
             10 - features['avg_years_since_renovation'].clip(0, 20) / 2
         )
 
-        features['maintenance_score'].fillna(0, inplace=True)
-        features['green_space_per_capita'].fillna(1, inplace=True)
+        features['maintenance_score'] =  features['maintenance_score'].fillna(0)
+        features['green_space_per_capita'] = features['green_space_per_capita'].fillna(1)
         return features
         

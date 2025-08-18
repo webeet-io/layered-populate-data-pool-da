@@ -3,7 +3,7 @@ from segmentation.orchestrator import SegmentationOrchestrator
 import logging
 import os
 from dotenv import load_dotenv
-
+import json
 # Load .env file from current directory
 load_dotenv()
 
@@ -22,22 +22,39 @@ def get_db_config():
         )
     return db_url
 
+def get_segment_config():
+    """Get segmentation configuration"""
+    config_path = os.getenv("SEGMENT_CONFIG", "config/segment_config.json")
+    if not os.path.isfile(config_path):
+        raise FileNotFoundError(f"Segment configuration file not found: {config_path}")
+    return config_path
+
 def main():
     try:
         logging.info("Starting neighborhood analysis pipeline")
         
         # Get validated DB config
         db_url = get_db_config()
+
+        # Load config
+        segment_config = get_segment_config()
+        with open(segment_config, "r") as f:
+            config = json.load(f)
+
         
         # Initialize orchestrator
         orchestrator = SegmentationOrchestrator(db_url)
-        orchestrator.add("green_spaces")
-        
+
+        for table_name, methods in config["tables"].items():
+            orchestrator.add(table_name, methods)
+
         # Run pipeline
-        results = orchestrator.run_pipeline()        
-        
+        results = orchestrator.run_pipeline()
+        logging.info("Segmentation pipeline completed successfully")
+        logging.info(f"Results: {results}")
+
         # Generate visualizations
-        orchestrator.visualize_results(results)
+        orchestrator.visualize_results(results, "viz")
         
         logging.info("Analysis pipeline completed successfully")
         

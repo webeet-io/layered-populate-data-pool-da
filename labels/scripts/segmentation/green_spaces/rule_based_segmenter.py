@@ -16,26 +16,26 @@ class GreenSpacesRuleBasedSegmenter(SegmentationStrategy):
         median_parks = features['num_green_spaces'].median()
 
         # 4. Create labels
-        features['#well_maintained'] = features['maintenance_score'] > median_maintenance
-        features['#needs_attention'] = features['maintenance_score'] < (median_maintenance * 0.7)
-        features['#large_park'] = features['avg_park_size'] > median_size
+        features['#well-maintained'] = features['maintenance_score'] > median_maintenance
+        features['#needs-attention'] = features['maintenance_score'] < (median_maintenance * 0.7)
+        features['#large-park'] = features['avg_park_size'] > median_size
         features['#spacious'] = features['green_space_per_capita'] > median_per_capita
         features['#crowded'] = features['green_space_per_capita'] < median_per_capita * 0.5
-        features['#many_parks'] = features['num_green_spaces'] > median_parks
+        features['#many-parks'] = features['num_green_spaces'] > median_parks
 
         result_dict = {}
         for _, row in features.iterrows():
             tags = []
-            if row['#well_maintained']:
-                tags.append('#well_maintained')
-            if row['#needs_attention']:
-                tags.append('#needs_attention')
-            if row['#large_park']:
-                tags.append('#large_park')
+            if row['#well-maintained']:
+                tags.append('#well-maintained')
+            if row['#needs-attention']:
+                tags.append('#needs-attention')
+            if row['#large-park']:
+                tags.append('#large-park')
             if row['#spacious']:
                 tags.append('#spacious')
-            if row['#many_parks']:
-                tags.append('#many_parks')
+            if row['#many-parks']:
+                tags.append('#many-parks')
             if row['#crowded']:
                 tags.append('#crowded')
             result_dict[row['neighborhood']] = tags

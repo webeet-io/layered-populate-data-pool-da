@@ -1,5 +1,5 @@
 from .green_spaces import *
-# from .crime_statistics import *
+from .crime_statistics import *
 # from .land_prices import *
 # from .playgrounds import *
 # from .regional_statistics import *

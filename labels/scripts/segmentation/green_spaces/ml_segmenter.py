@@ -4,7 +4,7 @@ from sklearn.preprocessing import StandardScaler
 
 from ..base import SegmentationStrategy
 
-class GreenSpacesMLSegmenter(SegmentationStrategy):
+class GreenSpacesMlSegmenter(SegmentationStrategy):
     """ML-based segmentation for green spaces"""
     
     def __init__(self, n_clusters: int = 3):
@@ -48,23 +48,23 @@ class GreenSpacesMLSegmenter(SegmentationStrategy):
             
             # Maintenance tags
             if row['maintenance_score'] > global_medians['maintenance_score']:
-                tags.append('*well_maintained')
+                tags.append('#well-maintained')
             elif row['maintenance_score'] < global_medians['maintenance_score'] * 0.7:
-                tags.append('*needs_attention')
+                tags.append('#needs-attention')
             
             # Size tags
             if row['avg_park_size'] > global_medians['avg_park_size']:
-                tags.append('*large_park')
+                tags.append('#large-park')
             
             # Spaciousness tags
             if row['green_space_per_capita'] > global_medians['green_space_per_capita']:
-                tags.append('*spacious')
+                tags.append('#spacious')
             elif row['green_space_per_capita'] < global_medians['green_space_per_capita'] * 0.5:
-                tags.append('*crowded')
+                tags.append('#crowded')
             
             # Quantity tags
             if row['num_green_spaces'] > global_medians['num_green_spaces']:
-                tags.append('*many_parks')
+                tags.append('#many-parks')
             
             # Add cluster-based tags (prefix with cluster_)
             #tags.append(f'#cluster_{clusters[idx]}')
