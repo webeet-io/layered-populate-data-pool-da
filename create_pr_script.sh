@@ -1,41 +1,44 @@
 #!/bin/bash
 
-echo "=== Creating Pull Request via GitHub CLI ==="
+echo "=== Push to Design Branch Only ==="
 
-# Проверяем, установлен ли GitHub CLI
-if ! command -v gh &> /dev/null; then
-    echo "GitHub CLI (gh) не установлен"
-    echo "Установите его: brew install gh"
-    echo "Или создайте PR вручную на GitHub.com"
-    exit 1
+# 1. Убедимся что все изменения закоммичены
+echo "Committing any uncommitted changes..."
+git add .
+git commit -m "Final updates before pushing to design branch" || echo "No changes to commit"
+
+# 2. Убедимся что мы на правильной ветке
+echo "Current branch:"
+current_branch=$(git branch --show-current)
+echo "We are on: $current_branch"
+
+# 3. Если мы не на нашей рабочей ветке, переключимся
+if [ "$current_branch" != "db-population-utils-design-svitlana" ]; then
+    echo "Switching to our working branch..."
+    git checkout db-population-utils-design-svitlana
 fi
 
-# 1. Аутентификация (если нужно)
-echo "Checking GitHub authentication..."
-gh auth status || gh auth login
+# 4. Пушим нашу рабочую ветку
+echo "Pushing our working branch..."
+git push --force-with-lease origin db-population-utils-design-svitlana
 
-# 2. Создаем Pull Request
-echo "Creating Pull Request..."
-gh pr create \
-  --title "Complete SmartAutoDataLoader Implementation" \
-  --body "## SmartAutoDataLoader Enhancement
+# 5. Переключаемся на ветку design (НЕ main!)
+echo "Switching to db-population-utils-design branch..."
+git checkout db-population-utils-design
 
-### Features Added:
-- ✅ Smart JSON complexity analysis
-- ✅ Deep flattening for nested JSON structures  
-- ✅ Enhanced datetime detection across all formats
-- ✅ Comprehensive error handling
-- ✅ Fixed import issues in test notebooks
-- ✅ Performance optimizations for large files
+# 6. Принудительно обновляем design ветку нашими изменениями
+echo "Updating design branch with our changes..."
+git reset --hard db-population-utils-design-svitlana
 
-### Testing:
-- All CSV tests passing (95% priority - CRITICAL)
-- All Excel tests passing (80% priority - HIGH)  
-- All JSON tests passing (70% priority - MEDIUM)
-- Smart auto-flattening working with 500+ columns extraction
+# 7. Пушим ТОЛЬКО в design ветку (НЕ в main!)
+echo "Pushing to design branch (NOT main)..."
+git push --force-with-lease origin db-population-utils-design
 
-### Ready for Review and Merge" \
-  --base db-population-utils-design \
-  --head db-population-utils-design-svitlana
+# 8. Возвращаемся на нашу рабочую ветку
+echo "Returning to our working branch..."
+git checkout db-population-utils-design-svitlana
 
-echo "=== Pull Request created! ==="
+echo "=== SUCCESS! ==="
+echo "✅ Changes pushed ONLY to db-population-utils-design branch"
+echo "✅ Main branch was NOT touched"
+echo "Current branch: $(git branch --show-current)"
