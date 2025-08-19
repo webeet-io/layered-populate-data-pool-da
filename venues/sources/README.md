@@ -100,39 +100,6 @@ Reverse geolocation converts geographic coordinates (latitude/longitude) into re
 - **geopy**: Provides access to multiple geocoding services (Nominatim, GoogleV3)
 - **pandas**: For dataset handling
 
-### Example Workflow
-
-```python
-import pandas as pd
-from geopy.geocoders import Nominatim
-from geopy.extra.rate_limiter import RateLimiter
-
-# Load dataset
-df = pd.read_csv("berlin_places.csv")
-
-# Initialize geocoder
-geolocator = Nominatim(user_agent="berlinVenuesProject")
-reverse = RateLimiter(geolocator.reverse, min_delay_seconds=1)
-
-# Function to extract district
-def get_district(lat, lon):
-    try:
-        location = reverse((lat, lon), language='en')
-        if location and 'address' in location.raw:
-            return location.raw['address'].get('suburb') \
-                or location.raw['address'].get('city_district') \
-                or location.raw['address'].get('city')
-    except:
-        return None
-    return None
-
-# Create 'district' column
-df['district'] = df.apply(lambda row: get_district(row['lat'], row['lon']), axis=1)
-
-# Preview results
-print(df[['name', 'district']].head())
-```
-
 ---
 
 ## Data Transformation and Opening Hours Library
@@ -243,11 +210,16 @@ print(opening_hours_library.get('Example Café'))
 ## Project Structure
 
 ```
-venues/sources/
-├── openstreetmap_api_venues.ipynb    # Main extraction script
-├── berlin_venues.csv             # Generated venue data
-├── data_cleaning.ipynb             # Cleaning script from raw scraped data
-└── README.md                     # This file
+venues/
+├── sources/
+│   ├── venues_scraper.ipynb        # Main extraction script (notebook)
+│   ├── scraper_test.csv             # Sample test extraction results
+│   ├── berlin_venues_raw.csv        # File extracted by scraper
+│   ├── berlin_venues_cleaned.csv    # Cleaned & transformed venue data
+│   └── README.md                    # Documentation
+│
+└── scripts/
+    └── venues_data_transformation.ipynb                 # Cleans and transforms the raw data
 ```
 
 ## Contributing
