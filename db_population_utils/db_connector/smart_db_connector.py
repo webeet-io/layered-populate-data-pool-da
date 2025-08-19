@@ -46,92 +46,98 @@ except ImportError as e:
 
 @dataclass
 class SmartReport:
-    """Universal smart report for all database operations."""
-    
-    # Operation details
+    """Comprehensive reporting for database operations."""
     operation: str = ""
-    success: bool = False
-    timestamp: str = field(default_factory=lambda: datetime.now().isoformat())
+    success: bool = True
     execution_time_ms: float = 0.0
-    
-    # Data metrics
-    rows_affected: int = 0
-    rows_retrieved: int = 0
-    columns_count: int = 0
-    data_size_mb: float = 0.0
-    
-    # Connection health
-    connection_healthy: bool = True
-    database_version: str = ""
-    connection_time_ms: float = 0.0
-    
-    # Quality checks
-    data_quality_score: int = 100  # 0-100
-    null_percentage: float = 0.0
-    duplicate_rows: int = 0
-    
-    # Schema information
-    table_exists: bool = False
-    table_created: bool = False
-    schema_created: bool = False
-    primary_keys: List[str] = field(default_factory=list)
-    indexes: List[str] = field(default_factory=list)
+    data_summary: Dict[str, Any] = field(default_factory=dict)
+    performance: Dict[str, Any] = field(default_factory=dict)
     
     # Performance metrics
     memory_usage_mb: float = 0.0
     cpu_time_ms: float = 0.0
     io_operations: int = 0
     
-    # Messages
-    info: List[str] = field(default_factory=list)
-    warnings: List[str] = field(default_factory=list)
-    errors: List[str] = field(default_factory=list)
-    recommendations: List[str] = field(default_factory=list)
+    # Messages - use consistent naming
+    info_messages: List[str] = field(default_factory=list)
+    warning_messages: List[str] = field(default_factory=list)
+    error_messages: List[str] = field(default_factory=list)
+    recommendation_messages: List[str] = field(default_factory=list)
+    
+    # Additional attributes for health check
+    connection_healthy: bool = False
+    database_version: str = ""
+    connection_time_ms: float = 0.0
+    timestamp: str = field(default_factory=lambda: datetime.now().isoformat())
     
     def add_info(self, message: str):
-        """Add informational message."""
-        self.info.append(f"[{datetime.now().strftime('%H:%M:%S')}] {message}")
-    
+        """Add info message."""
+        timestamp = datetime.now().strftime("%H:%M:%S")
+        self.info_messages.append(f"[{timestamp}] {message}")
+
     def add_warning(self, message: str):
         """Add warning message."""
-        self.warnings.append(f"[{datetime.now().strftime('%H:%M:%S')}] {message}")
-        if self.data_quality_score > 70:
-            self.data_quality_score = 70
-    
+        timestamp = datetime.now().strftime("%H:%M:%S")
+        self.warning_messages.append(f"[{timestamp}] {message}")
+
     def add_error(self, message: str):
         """Add error message."""
-        self.errors.append(f"[{datetime.now().strftime('%H:%M:%S')}] {message}")
+        timestamp = datetime.now().strftime("%H:%M:%S")
+        self.error_messages.append(f"[{timestamp}] {message}")
         self.success = False
-        self.data_quality_score = 0
-    
+
     def add_recommendation(self, message: str):
-        """Add performance/optimization recommendation."""
-        self.recommendations.append(message)
+        """Add recommendation message."""
+        timestamp = datetime.now().strftime("%H:%M:%S")
+        self.recommendation_messages.append(f"[{timestamp}] {message}")
     
     def summary(self) -> Dict[str, Any]:
-        """Get comprehensive summary."""
+        """Get comprehensive operation summary."""
         return {
-            "operation": self.operation,
-            "success": self.success,
-            "execution_time_ms": self.execution_time_ms,
-            "data_summary": {
-                "rows": max(self.rows_affected, self.rows_retrieved),
-                "columns": self.columns_count,
-                "size_mb": self.data_size_mb,
-                "quality_score": self.data_quality_score
+            'operation': self.operation,
+            'success': self.success,
+            'execution_time_ms': round(self.execution_time_ms, 2),
+            'data_summary': {
+                'rows': self.data_summary.get('rows', 0),
+                'columns': self.data_summary.get('columns', 0), 
+                'size_mb': round(self.data_summary.get('size_mb', 0.0), 3),
+                'quality_score': self.data_summary.get('quality_score', 0)
             },
-            "performance": {
-                "connection_time_ms": self.connection_time_ms,
-                "memory_mb": self.memory_usage_mb,
-                "io_ops": self.io_operations
+            'performance': {
+                'connection_time_ms': round(self.performance.get('connection_time_ms', 0.0), 2),
+                'memory_mb': round(self.performance.get('memory_mb', 0.0), 2),
+                'io_ops': self.performance.get('io_ops', 0)
             },
-            "status": {
-                "info_count": len(self.info),
-                "warnings": len(self.warnings),
-                "errors": len(self.errors),
-                "recommendations": len(self.recommendations)
+            'status': {
+                'info_count': len(self.info_messages),
+                'warnings': len(self.warning_messages),
+                'errors': len(self.error_messages),
+                'recommendations': len(self.recommendation_messages)
+            },
+            'messages': {
+                'info': self.info_messages,
+                'warnings': self.warning_messages,
+                'errors': self.error_messages,
+                'recommendations': self.recommendation_messages
             }
         }
+
+    # Properties for backward compatibility
+    @property
+    def info(self):
+        return self.info_messages
+    
+    @property
+    def warnings(self):
+        return self.warning_messages
+    
+    @property
+    def errors(self):
+        return self.error_messages
+    
+    @property
+    def recommendations(self):
+        return self.recommendation_messages
 
 
 class db_connector:
@@ -149,16 +155,7 @@ class db_connector:
         auto_optimize: bool = True,
         logger: Optional[logging.Logger] = None
     ):
-        """
-        Initialize db_connector.
-        
-        Args:
-            connection_string: Database URL (e.g., "postgresql://user:pass@host:port/db")
-            pool_size: Connection pool size
-            echo_sql: Log all SQL statements
-            auto_optimize: Automatically apply performance optimizations
-            logger: Custom logger instance
-        """
+        """Initialize db_connector."""
         self.connection_string = connection_string
         self.pool_size = pool_size
         self.echo_sql = echo_sql
@@ -166,19 +163,25 @@ class db_connector:
         self.logger = logger or logging.getLogger(__name__)
         
         # Create engine with smart configuration
-        self.engine = create_engine(
-            connection_string,
-            pool_size=pool_size,
-            max_overflow=pool_size * 2,
-            pool_pre_ping=True,
-            pool_recycle=3600,
-            echo=echo_sql
-        )
+        engine_kwargs = {
+            'echo': echo_sql
+        }
+        
+        # Add pooling parameters only for non-SQLite databases
+        if not connection_string.startswith('sqlite://'):
+            engine_kwargs.update({
+                'pool_size': pool_size,
+                'max_overflow': pool_size * 2,
+                'pool_pre_ping': True,
+                'pool_recycle': 3600
+            })
+        
+        self.engine = create_engine(connection_string, **engine_kwargs)
         
         # Cache for schema information
         self._schema_cache = {}
         self._health_cache = {"last_check": 0, "status": None}
-    
+
     # === MAIN SMART OPERATIONS (3 core methods) ===
     
     def smart_query(
@@ -421,30 +424,32 @@ class db_connector:
     # === INTERNAL SMART AUTOMATION METHODS ===
     
     def _check_connection_health(self, report: SmartReport) -> bool:
-        """Comprehensive connection health check."""
+        """Check if database connection is healthy."""
+        import time
+        from sqlalchemy import text
+        
         try:
-            conn_start = time.time()
+            start_time = time.time()
             
             with self.engine.connect() as conn:
-                # Basic connectivity
-                conn.execute(text("SELECT 1"))
+                # Test basic connectivity
+                result = conn.execute(text("SELECT version()"))
+                version_info = result.fetchone()[0]
                 
-                # Database version
-                try:
-                    version_result = conn.execute(text("SELECT version()"))
-                    report.database_version = version_result.fetchone()[0][:100]
-                except:
-                    report.database_version = "Unknown"
-            
-            report.connection_time_ms = (time.time() - conn_start) * 1000
-            report.connection_healthy = True
-            report.add_info("Connection health check passed")
+                # Set attributes safely
+                report.database_version = version_info
+                report.connection_time_ms = (time.time() - start_time) * 1000
+                if hasattr(report, 'connection_healthy'):
+                    report.connection_healthy = True
+                report.add_info("Connection health check passed")
+                
             return True
             
         except Exception as e:
-            report.connection_healthy = False
-            report.add_error(f"Connection health check failed: {str(e)}")
-            return False
+            if hasattr(report, 'connection_healthy'):
+                report.connection_healthy = False
+            report.add_error(f"Connection health check failed: {e}")
+            return False   
     
     def _execute_query_with_retry(self, sql: str, params: Optional[Dict], report: SmartReport) -> Optional[pd.DataFrame]:
         """Execute query with automatic retries and error handling."""
@@ -705,22 +710,24 @@ class db_connector:
     
     # === UTILITY METHODS ===
     
-    def health_check(self) -> Dict[str, Any]:
+    def health_check(self):
         """Quick health check with summary."""
+        from datetime import datetime
+        
         report = SmartReport(operation="HEALTH_CHECK")
         
         if self._check_connection_health(report):
             return {
                 'status': 'healthy',
-                'database_version': report.database_version,
-                'connection_time_ms': report.connection_time_ms,
-                'timestamp': report.timestamp
+                'database_version': getattr(report, 'database_version', 'Unknown'),
+                'connection_time_ms': getattr(report, 'connection_time_ms', 0.0),
+                'timestamp': datetime.now().isoformat()
             }
         else:
             return {
-                'status': 'unhealthy',
-                'errors': report.errors,
-                'timestamp': report.timestamp
+                'status': 'unhealthy', 
+                'errors': getattr(report, 'error_messages', []),
+                'timestamp': datetime.now().isoformat()
             }
     
     def get_table_info(self, table: str, schema: Optional[str] = None) -> Dict[str, Any]:
@@ -757,29 +764,75 @@ class db_connector:
 
 # === UTILITY FUNCTIONS ===
 
-def create_sample_connector(db_type: str = "sqlite") -> db_connector:
+def create_sample_connector(db_type):
     """Create sample connector for testing."""
     if db_type == "sqlite":
         return db_connector("sqlite:///:memory:")
     elif db_type == "postgresql":
-        return db_connector("postgresql://user:pass@localhost:5432/testdb")
+        # Replace with your actual PostgreSQL connection parameters
+        return db_connector("postgresql://username:password@localhost:5432/database_name")
     else:
-        raise ValueError(f"Unsupported db_type: {db_type}")
+        raise ValueError(f"Unsupported database type: {db_type}")
 
 def run_comprehensive_demo():
-    """Run comprehensive demonstration of all features."""
+    """Run a comprehensive demo showcasing all features."""
     print("🎯 db_connector Demo Starting...")
     
     try:
-        # Create SQLite in-memory connector for demo
-        db = create_sample_connector("sqlite")
+        # Use PostgreSQL instead of SQLite
+        database_url = (
+            "postgresql+psycopg2://neondb_owner:npg_CeS9fJg2azZD"
+            "@ep-falling-glitter-a5m0j5gk-pooler.us-east-2.aws.neon.tech:5432/neondb"
+            "?sslmode=require"
+        )
         
-        # ...existing code...
+        db = db_connector(database_url)
         
-        print("✅ Demo completed successfully")
+        print("✅ Connected to database...")
+        
+        # Test health check
+        health = db.health_check()
+        if health['status'] != 'healthy':
+            print(f"❌ Health check failed: {health}")
+            return
+            
+        print("✅ Health check passed...")
+        
+        # Create demo table with PostgreSQL syntax
+        db.smart_execute("""
+            CREATE TABLE IF NOT EXISTS demo_users (
+                id SERIAL PRIMARY KEY,
+                name VARCHAR(100) NOT NULL,
+                email VARCHAR(100),
+                age INTEGER,
+                active BOOLEAN DEFAULT true,
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            )
+        """)
+        
+        print("✅ Demo table created...")
+        
+        # Insert sample data
+        db.smart_execute("INSERT INTO demo_users (name, email, age, active) VALUES ('Alice', 'alice@example.com', 25, true) ON CONFLICT DO NOTHING")
+        db.smart_execute("INSERT INTO demo_users (name, email, age, active) VALUES ('Bob', 'bob@example.com', 30, false) ON CONFLICT DO NOTHING")
+        
+        print("✅ Sample data inserted...")
+        
+        # Query data
+        result = db.smart_query("SELECT * FROM demo_users LIMIT 5")
+        print(f"✅ Query executed, found {len(result['data'])} rows")
+        
+        print("🎉 Demo completed successfully!")
         
     except Exception as e:
         print(f"❌ Demo failed: {e}")
+    finally:
+        if 'db' in locals():
+            try:
+                db.close()
+                print("✅ Connection closed")
+            except:
+                pass
 
 if __name__ == "__main__":
     run_comprehensive_demo()
