@@ -107,7 +107,7 @@ Integration with Data Pipeline:
         print(f"Insert failed: {report.errors}")
 """
 
-from .db_connector import (
+from .design.db_connector import (
     # Core classes
     DBConnector,
     DBSettings,

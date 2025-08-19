@@ -1,6 +1,6 @@
 """db_population_utils — design stubs (Step 1)."""
 
-from .db_connector.db_connector import DBSettings, DBConnector
+from .db_connector.design.db_connector import DBSettings, DBConnector
 from .data_loader.test.design.data_loader_stub import DataLoader, CsvParams, LoadOptions, LoadReport
 from .data_processor.data_processor import DataProcessor
 from .data_populator.enhanced_db_populator_design import DBPopulator
