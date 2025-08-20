@@ -1,0 +1,2029 @@
+event_timestamp,user_id,item,price,quantity
+8/19/2025 0:02:31,User_265,Strawberry Sorbet,13,4
+8/19/2025 0:00:32,User_44,Vanilla Ice Cream,12,1
+8/19/2025 0:00:32,User_254,Chocolate Sundae,11,3
+8/19/2025 0:02:33,User_227,Strawberry Sorbet,2,3
+8/19/2025 0:00:33,User_948,Chocolate Sundae,9,4
+8/19/2025 0:06:22,User_323,Vanilla Ice Cream,12,3
+8/19/2025 0:07:23,User_525,Vanilla Ice Cream,3,3
+8/19/2025 0:05:23,User_899,Vanilla Ice Cream,9,1
+8/19/2025 0:10:27,User_974,Chocolate Sundae,2,4
+8/19/2025 0:12:28,User_124,Chocolate Sundae,15,2
+8/19/2025 0:12:28,User_810,Vanilla Ice Cream,4,1
+8/19/2025 0:10:28,User_537,Chocolate Sundae,5,4
+8/19/2025 0:11:28,User_28,Mint Gelato,9,1
+8/19/2025 0:08:28,User_60,Chocolate Sundae,11,2
+8/19/2025 0:11:29,User_45,Cookies & Cream,10,2
+8/19/2025 0:08:30,User_587,Chocolate Sundae,13,2
+8/19/2025 0:09:30,User_61,Vanilla Ice Cream,12,4
+8/19/2025 0:09:30,User_33,Vanilla Ice Cream,4,4
+8/19/2025 0:15:22,User_28,Strawberry Sorbet,10,4
+8/19/2025 0:13:22,User_656,Vanilla Ice Cream,12,3
+8/19/2025 0:13:22,User_632,Vanilla Ice Cream,11,4
+8/19/2025 0:16:22,User_159,Strawberry Sorbet,6,1
+8/19/2025 0:13:22,User_547,Strawberry Sorbet,1,4
+8/19/2025 0:15:23,User_376,Chocolate Sundae,7,1
+8/19/2025 0:15:25,User_618,Vanilla Ice Cream,1,4
+8/19/2025 0:14:26,User_52,Cookies & Cream,15,2
+8/19/2025 0:17:27,User_599,Vanilla Ice Cream,1,1
+8/19/2025 0:16:28,User_639,Cookies & Cream,9,4
+8/19/2025 0:22:24,User_690,Strawberry Sorbet,6,1
+8/19/2025 0:19:24,User_20,Mint Gelato,12,3
+8/19/2025 0:21:24,User_687,Cookies & Cream,7,4
+8/19/2025 0:21:25,User_542,Vanilla Ice Cream,9,1
+8/19/2025 0:20:25,User_567,Chocolate Sundae,10,1
+8/19/2025 0:19:26,User_280,Strawberry Sorbet,3,3
+8/19/2025 0:20:28,User_998,Cookies & Cream,15,1
+8/19/2025 0:22:28,User_260,Strawberry Sorbet,13,4
+8/19/2025 0:18:28,User_76,Mint Gelato,6,2
+8/19/2025 0:21:29,User_803,Strawberry Sorbet,7,3
+8/19/2025 0:27:21,User_162,Vanilla Ice Cream,9,4
+8/19/2025 0:23:22,User_138,Cookies & Cream,11,3
+8/19/2025 0:23:22,User_870,Strawberry Sorbet,10,1
+8/19/2025 0:25:22,User_18,Cookies & Cream,2,3
+8/19/2025 0:23:22,User_203,Strawberry Sorbet,11,3
+8/19/2025 0:23:22,User_107,Cookies & Cream,10,1
+8/19/2025 0:23:24,User_330,Mint Gelato,4,4
+8/19/2025 0:25:24,User_719,Mint Gelato,14,1
+8/19/2025 0:27:24,User_803,Cookies & Cream,5,1
+8/19/2025 0:26:25,User_784,Cookies & Cream,8,4
+8/19/2025 0:32:23,User_643,Chocolate Sundae,2,2
+8/19/2025 0:32:23,User_880,Cookies & Cream,2,1
+8/19/2025 0:30:23,User_496,Strawberry Sorbet,4,3
+8/19/2025 0:29:24,User_835,Vanilla Ice Cream,2,4
+8/19/2025 0:29:24,User_693,Vanilla Ice Cream,2,4
+8/19/2025 0:32:24,User_942,Vanilla Ice Cream,2,2
+8/19/2025 0:30:24,User_754,Strawberry Sorbet,10,4
+8/19/2025 0:28:24,User_113,Strawberry Sorbet,13,1
+8/19/2025 0:31:25,User_828,Mint Gelato,15,3
+8/19/2025 0:30:25,User_235,Mint Gelato,9,2
+8/19/2025 0:36:27,User_683,Chocolate Sundae,12,3
+8/19/2025 0:34:28,User_922,Vanilla Ice Cream,14,3
+8/19/2025 0:37:28,User_676,Vanilla Ice Cream,1,1
+8/19/2025 0:37:29,User_291,Mint Gelato,9,2
+8/19/2025 0:33:29,User_119,Cookies & Cream,9,4
+8/19/2025 0:33:29,User_200,Mint Gelato,3,1
+8/19/2025 0:33:29,User_466,Chocolate Sundae,5,4
+8/19/2025 0:35:29,User_970,Vanilla Ice Cream,1,2
+8/19/2025 0:34:30,User_274,Cookies & Cream,14,3
+8/19/2025 0:37:30,User_935,Cookies & Cream,2,3
+8/19/2025 0:40:21,User_49,Mint Gelato,10,1
+8/19/2025 0:40:21,User_538,Chocolate Sundae,6,2
+8/19/2025 0:40:22,User_661,Mint Gelato,11,4
+8/19/2025 0:40:22,User_937,Mint Gelato,10,4
+8/19/2025 0:42:22,User_973,Strawberry Sorbet,1,2
+8/19/2025 0:38:22,User_392,Vanilla Ice Cream,1,3
+8/19/2025 0:39:23,User_334,Mint Gelato,12,2
+8/19/2025 0:42:23,User_968,Mint Gelato,6,3
+8/19/2025 0:38:23,User_778,Cookies & Cream,11,3
+8/19/2025 0:40:24,User_765,Strawberry Sorbet,14,1
+8/19/2025 0:43:22,User_900,Mint Gelato,4,2
+8/19/2025 0:44:22,User_705,Mint Gelato,1,2
+8/19/2025 0:43:23,User_566,Cookies & Cream,8,2
+8/19/2025 0:46:23,User_528,Chocolate Sundae,14,1
+8/19/2025 0:46:23,User_252,Mint Gelato,5,3
+8/19/2025 0:44:23,User_659,Strawberry Sorbet,4,4
+8/19/2025 0:44:23,User_676,Cookies & Cream,12,2
+8/19/2025 0:43:24,User_128,Strawberry Sorbet,8,4
+8/19/2025 0:43:24,User_668,Chocolate Sundae,9,2
+8/19/2025 0:46:24,User_6,Chocolate Sundae,1,3
+8/19/2025 0:48:20,User_890,Vanilla Ice Cream,14,4
+8/19/2025 0:52:20,User_283,Vanilla Ice Cream,4,1
+8/19/2025 0:52:20,User_947,Strawberry Sorbet,3,1
+8/19/2025 0:48:21,User_773,Chocolate Sundae,3,1
+8/19/2025 0:48:21,User_406,Mint Gelato,6,1
+8/19/2025 0:48:21,User_455,Chocolate Sundae,6,2
+8/19/2025 0:52:21,User_861,Mint Gelato,15,2
+8/19/2025 0:50:21,User_522,Cookies & Cream,3,3
+8/19/2025 0:51:21,User_461,Strawberry Sorbet,8,4
+8/19/2025 0:52:22,User_994,Strawberry Sorbet,1,3
+8/19/2025 0:54:22,User_814,Chocolate Sundae,8,3
+8/19/2025 0:56:22,User_884,Strawberry Sorbet,11,1
+8/19/2025 0:53:23,User_315,Strawberry Sorbet,3,4
+8/19/2025 0:54:23,User_684,Strawberry Sorbet,12,3
+8/19/2025 0:54:24,User_194,Mint Gelato,9,3
+8/19/2025 0:57:24,User_36,Chocolate Sundae,4,1
+8/19/2025 0:53:24,User_395,Cookies & Cream,8,1
+8/19/2025 0:56:25,User_981,Chocolate Sundae,8,2
+8/19/2025 0:57:25,User_924,Vanilla Ice Cream,2,3
+8/19/2025 0:55:26,User_312,Chocolate Sundae,10,2
+8/19/2025 1:01:31,User_833,Cookies & Cream,13,3
+8/19/2025 1:00:31,User_408,Cookies & Cream,15,4
+8/19/2025 1:01:31,User_556,Mint Gelato,8,1
+8/19/2025 1:00:32,User_145,Cookies & Cream,6,3
+8/19/2025 1:02:32,User_223,Chocolate Sundae,13,1
+8/19/2025 1:00:32,User_895,Cookies & Cream,6,1
+8/19/2025 0:58:32,User_698,Cookies & Cream,10,4
+8/19/2025 1:02:33,User_260,Chocolate Sundae,12,3
+8/19/2025 0:59:33,User_996,Vanilla Ice Cream,12,2
+8/19/2025 1:02:33,User_956,Cookies & Cream,12,1
+8/19/2025 1:06:24,User_985,Mint Gelato,14,4
+8/19/2025 1:03:25,User_366,Cookies & Cream,2,4
+8/19/2025 1:07:26,User_309,Strawberry Sorbet,3,4
+8/19/2025 1:03:26,User_215,Strawberry Sorbet,12,2
+8/19/2025 1:04:27,User_566,Mint Gelato,8,1
+8/19/2025 1:03:27,User_195,Strawberry Sorbet,8,1
+8/19/2025 1:06:28,User_591,Mint Gelato,9,2
+8/19/2025 1:03:28,User_869,Chocolate Sundae,13,4
+8/19/2025 1:05:28,User_198,Cookies & Cream,14,1
+8/19/2025 1:03:28,User_527,Mint Gelato,8,3
+8/19/2025 1:10:22,User_571,Vanilla Ice Cream,2,1
+8/19/2025 1:12:22,User_776,Strawberry Sorbet,14,1
+8/19/2025 1:12:22,User_850,Mint Gelato,7,3
+8/19/2025 1:11:23,User_791,Chocolate Sundae,10,4
+8/19/2025 1:08:23,User_606,Vanilla Ice Cream,4,2
+8/19/2025 1:12:23,User_627,Chocolate Sundae,4,1
+8/19/2025 1:11:23,User_974,Vanilla Ice Cream,9,1
+8/19/2025 1:08:24,User_921,Mint Gelato,5,3
+8/19/2025 1:11:24,User_922,Cookies & Cream,8,3
+8/19/2025 1:12:24,User_395,Cookies & Cream,14,2
+8/19/2025 1:13:22,User_739,Chocolate Sundae,6,3
+8/19/2025 1:16:22,User_810,Vanilla Ice Cream,11,1
+8/19/2025 1:17:23,User_495,Mint Gelato,7,4
+8/19/2025 1:13:23,User_268,Cookies & Cream,2,4
+8/19/2025 1:15:23,User_125,Vanilla Ice Cream,14,3
+8/19/2025 1:16:24,User_129,Vanilla Ice Cream,2,3
+8/19/2025 1:14:24,User_373,Chocolate Sundae,15,4
+8/19/2025 1:13:24,User_624,Cookies & Cream,6,1
+8/19/2025 1:17:25,User_562,Chocolate Sundae,10,2
+8/19/2025 1:13:25,User_688,Mint Gelato,5,2
+8/19/2025 1:19:28,User_766,Cookies & Cream,14,1
+8/19/2025 1:20:28,User_720,Strawberry Sorbet,6,2
+8/19/2025 1:22:29,User_706,Chocolate Sundae,1,3
+8/19/2025 1:19:29,User_288,Chocolate Sundae,1,4
+8/19/2025 1:19:31,User_27,Strawberry Sorbet,1,3
+8/19/2025 1:19:31,User_576,Strawberry Sorbet,4,1
+8/19/2025 1:20:32,User_612,Chocolate Sundae,9,4
+8/19/2025 1:21:32,User_989,Mint Gelato,11,3
+8/19/2025 1:22:34,User_349,Cookies & Cream,13,2
+8/19/2025 1:22:34,User_793,Strawberry Sorbet,6,1
+8/19/2025 1:24:20,User_350,Strawberry Sorbet,15,1
+8/19/2025 1:26:20,User_280,Chocolate Sundae,9,1
+8/19/2025 1:23:20,User_804,Vanilla Ice Cream,12,3
+8/19/2025 1:23:22,User_430,Chocolate Sundae,12,1
+8/19/2025 1:26:23,User_791,Strawberry Sorbet,10,3
+8/19/2025 1:25:23,User_804,Chocolate Sundae,6,1
+8/19/2025 1:23:23,User_752,Vanilla Ice Cream,14,1
+8/19/2025 1:24:23,User_290,Strawberry Sorbet,5,2
+8/19/2025 1:25:24,User_544,Chocolate Sundae,14,1
+8/19/2025 1:24:24,User_77,Strawberry Sorbet,11,1
+8/19/2025 1:31:27,User_123,Vanilla Ice Cream,1,2
+8/19/2025 1:32:27,User_614,Vanilla Ice Cream,12,4
+8/19/2025 1:28:29,User_594,Mint Gelato,11,2
+8/19/2025 1:31:29,User_470,Mint Gelato,4,1
+8/19/2025 1:29:30,User_554,Strawberry Sorbet,15,4
+8/19/2025 1:29:30,User_519,Cookies & Cream,8,4
+8/19/2025 1:32:30,User_106,Vanilla Ice Cream,7,4
+8/19/2025 1:30:30,User_580,Vanilla Ice Cream,11,4
+8/19/2025 1:29:31,User_266,Cookies & Cream,9,4
+8/19/2025 1:29:31,User_800,Strawberry Sorbet,5,1
+8/19/2025 1:33:24,User_613,Cookies & Cream,1,1
+8/19/2025 1:35:24,User_921,Cookies & Cream,10,1
+8/19/2025 1:35:25,User_8,Chocolate Sundae,15,4
+8/19/2025 1:36:25,User_339,Chocolate Sundae,12,1
+8/19/2025 1:33:25,User_317,Chocolate Sundae,9,4
+8/19/2025 1:34:25,User_146,Vanilla Ice Cream,9,1
+8/19/2025 1:35:25,User_118,Chocolate Sundae,10,1
+8/19/2025 1:37:25,User_670,Mint Gelato,4,3
+8/19/2025 1:34:26,User_426,Chocolate Sundae,15,1
+8/19/2025 1:36:26,User_246,Mint Gelato,11,2
+8/19/2025 1:40:29,User_961,Vanilla Ice Cream,13,3
+8/19/2025 1:40:30,User_23,Cookies & Cream,13,2
+8/19/2025 1:38:30,User_517,Chocolate Sundae,15,1
+8/19/2025 1:42:30,User_281,Chocolate Sundae,12,4
+8/19/2025 1:41:30,User_346,Vanilla Ice Cream,12,2
+8/19/2025 1:38:31,User_107,Cookies & Cream,15,3
+8/19/2025 1:39:32,User_584,Mint Gelato,11,3
+8/19/2025 1:38:32,User_101,Vanilla Ice Cream,15,2
+8/19/2025 1:41:33,User_875,Vanilla Ice Cream,12,4
+8/19/2025 1:41:33,User_117,Chocolate Sundae,3,1
+8/19/2025 1:44:27,User_132,Vanilla Ice Cream,5,3
+8/19/2025 1:44:27,User_352,Strawberry Sorbet,10,2
+8/19/2025 1:45:27,User_509,Chocolate Sundae,11,2
+8/19/2025 1:45:28,User_693,Cookies & Cream,14,2
+8/19/2025 1:46:28,User_18,Mint Gelato,2,3
+8/19/2025 1:44:28,User_628,Cookies & Cream,1,3
+8/19/2025 1:44:28,User_390,Strawberry Sorbet,2,2
+8/19/2025 1:45:28,User_827,Mint Gelato,15,3
+8/19/2025 1:44:28,User_863,Chocolate Sundae,13,2
+8/19/2025 1:47:29,User_761,Vanilla Ice Cream,11,1
+8/19/2025 1:52:28,User_176,Vanilla Ice Cream,11,1
+8/19/2025 1:48:28,User_36,Mint Gelato,2,1
+8/19/2025 1:52:29,User_359,Chocolate Sundae,9,4
+8/19/2025 1:49:29,User_913,Vanilla Ice Cream,8,1
+8/19/2025 1:52:29,User_72,Mint Gelato,14,4
+8/19/2025 1:49:30,User_725,Vanilla Ice Cream,7,3
+8/19/2025 1:50:30,User_507,Cookies & Cream,14,4
+8/19/2025 1:49:30,User_7,Vanilla Ice Cream,11,3
+8/19/2025 1:51:32,User_206,Strawberry Sorbet,3,1
+8/19/2025 1:50:32,User_221,Cookies & Cream,3,2
+8/19/2025 1:56:23,User_767,Cookies & Cream,4,2
+8/19/2025 1:55:23,User_638,Strawberry Sorbet,13,1
+8/19/2025 1:53:23,User_846,Strawberry Sorbet,13,3
+8/19/2025 1:54:23,User_957,Cookies & Cream,12,2
+8/19/2025 1:53:24,User_973,Mint Gelato,2,2
+8/19/2025 1:56:24,User_305,Strawberry Sorbet,1,2
+8/19/2025 1:56:24,User_701,Cookies & Cream,12,3
+8/19/2025 1:54:24,User_833,Mint Gelato,10,1
+8/19/2025 1:55:26,User_161,Strawberry Sorbet,1,3
+8/19/2025 1:54:26,User_880,Strawberry Sorbet,1,3
+8/19/2025 1:58:20,User_113,Chocolate Sundae,11,2
+8/19/2025 2:01:20,User_337,Chocolate Sundae,13,3
+8/19/2025 2:01:21,User_95,Chocolate Sundae,2,3
+8/19/2025 2:02:21,User_199,Chocolate Sundae,2,4
+8/19/2025 2:00:22,User_953,Cookies & Cream,3,1
+8/19/2025 1:58:22,User_993,Vanilla Ice Cream,6,4
+8/19/2025 2:02:22,User_813,Cookies & Cream,9,1
+8/19/2025 2:00:22,User_360,Mint Gelato,10,3
+8/19/2025 2:02:22,User_321,Mint Gelato,12,1
+8/19/2025 2:00:23,User_577,Cookies & Cream,14,4
+8/19/2025 2:06:29,User_673,Chocolate Sundae,2,3
+8/19/2025 2:03:29,User_735,Mint Gelato,7,4
+8/19/2025 2:06:29,User_443,Vanilla Ice Cream,11,4
+8/19/2025 2:05:30,User_704,Vanilla Ice Cream,14,1
+8/19/2025 2:06:31,User_602,Cookies & Cream,4,4
+8/19/2025 2:04:31,User_110,Chocolate Sundae,13,3
+8/19/2025 2:05:31,User_752,Cookies & Cream,11,1
+8/19/2025 2:05:32,User_399,Cookies & Cream,15,1
+8/19/2025 2:03:32,User_163,Mint Gelato,3,1
+8/19/2025 2:07:32,User_513,Chocolate Sundae,3,2
+8/19/2025 2:09:26,User_209,Vanilla Ice Cream,8,1
+8/19/2025 2:11:26,User_251,Strawberry Sorbet,3,4
+8/19/2025 2:08:27,User_813,Vanilla Ice Cream,4,4
+8/19/2025 2:09:27,User_322,Strawberry Sorbet,15,3
+8/19/2025 2:09:28,User_957,Strawberry Sorbet,1,2
+8/19/2025 2:11:29,User_233,Vanilla Ice Cream,13,2
+8/19/2025 2:08:30,User_620,Cookies & Cream,6,3
+8/19/2025 2:08:30,User_97,Cookies & Cream,5,4
+8/19/2025 2:12:30,User_519,Vanilla Ice Cream,7,4
+8/19/2025 2:11:30,User_724,Vanilla Ice Cream,7,2
+8/19/2025 2:16:23,User_286,Strawberry Sorbet,9,2
+8/19/2025 2:14:23,User_799,Chocolate Sundae,5,3
+8/19/2025 2:16:23,User_876,Cookies & Cream,9,1
+8/19/2025 2:17:23,User_775,Vanilla Ice Cream,9,2
+8/19/2025 2:15:24,User_422,Mint Gelato,6,4
+8/19/2025 2:13:24,User_125,Strawberry Sorbet,11,3
+8/19/2025 2:14:24,User_762,Strawberry Sorbet,13,1
+8/19/2025 2:15:24,User_445,Cookies & Cream,14,4
+8/19/2025 2:16:24,User_537,Vanilla Ice Cream,1,4
+8/19/2025 2:13:25,User_801,Chocolate Sundae,8,1
+8/19/2025 2:22:25,User_768,Vanilla Ice Cream,9,4
+8/19/2025 2:19:25,User_548,Mint Gelato,10,1
+8/19/2025 2:19:25,User_119,Vanilla Ice Cream,11,3
+8/19/2025 2:22:26,User_272,Cookies & Cream,6,3
+8/19/2025 2:18:26,User_949,Chocolate Sundae,1,1
+8/19/2025 2:22:26,User_547,Mint Gelato,4,3
+8/19/2025 2:21:27,User_938,Cookies & Cream,6,4
+8/19/2025 2:19:27,User_983,Mint Gelato,6,2
+8/19/2025 2:21:28,User_85,Chocolate Sundae,7,3
+8/19/2025 2:18:28,User_406,Mint Gelato,14,3
+8/19/2025 2:27:21,User_168,Mint Gelato,8,3
+8/19/2025 2:27:21,User_233,Cookies & Cream,4,4
+8/19/2025 2:25:21,User_120,Chocolate Sundae,10,2
+8/19/2025 2:26:21,User_477,Chocolate Sundae,5,4
+8/19/2025 2:24:21,User_43,Strawberry Sorbet,5,3
+8/19/2025 2:25:22,User_164,Chocolate Sundae,7,1
+8/19/2025 2:26:22,User_855,Chocolate Sundae,7,1
+8/19/2025 2:27:23,User_130,Strawberry Sorbet,1,1
+8/19/2025 2:23:24,User_374,Cookies & Cream,6,4
+8/19/2025 2:26:24,User_452,Strawberry Sorbet,8,2
+8/19/2025 2:30:23,User_31,Cookies & Cream,1,4
+8/19/2025 2:29:23,User_958,Vanilla Ice Cream,9,2
+8/19/2025 2:28:24,User_893,Mint Gelato,11,4
+8/19/2025 2:29:24,User_621,Strawberry Sorbet,2,3
+8/19/2025 2:29:24,User_484,Mint Gelato,1,2
+8/19/2025 2:31:25,User_987,Chocolate Sundae,14,2
+8/19/2025 2:30:25,User_129,Strawberry Sorbet,15,3
+8/19/2025 2:31:25,User_662,Chocolate Sundae,11,3
+8/19/2025 2:28:25,User_606,Strawberry Sorbet,4,1
+8/19/2025 2:30:26,User_676,Mint Gelato,14,1
+8/19/2025 2:35:24,User_851,Vanilla Ice Cream,3,2
+8/19/2025 2:37:25,User_290,Strawberry Sorbet,5,2
+8/19/2025 2:34:25,User_635,Mint Gelato,10,4
+8/19/2025 2:35:26,User_610,Vanilla Ice Cream,4,3
+8/19/2025 2:34:27,User_691,Vanilla Ice Cream,14,2
+8/19/2025 2:35:27,User_560,Strawberry Sorbet,2,1
+8/19/2025 2:35:27,User_138,Vanilla Ice Cream,9,2
+8/19/2025 2:36:27,User_81,Cookies & Cream,11,4
+8/19/2025 2:34:28,User_302,Vanilla Ice Cream,5,4
+8/19/2025 2:34:28,User_286,Chocolate Sundae,12,3
+8/19/2025 2:38:25,User_993,Mint Gelato,15,3
+8/19/2025 2:40:26,User_554,Chocolate Sundae,7,3
+8/19/2025 2:39:26,User_698,Vanilla Ice Cream,6,4
+8/19/2025 2:39:26,User_355,Cookies & Cream,3,1
+8/19/2025 2:41:27,User_634,Chocolate Sundae,3,2
+8/19/2025 2:40:28,User_842,Cookies & Cream,6,1
+8/19/2025 2:42:29,User_421,Strawberry Sorbet,7,4
+8/19/2025 2:38:30,User_663,Cookies & Cream,11,3
+8/19/2025 2:42:31,User_996,Strawberry Sorbet,12,3
+8/19/2025 2:40:31,User_913,Chocolate Sundae,12,2
+8/19/2025 2:45:23,User_76,Cookies & Cream,10,2
+8/19/2025 2:46:23,User_744,Mint Gelato,14,2
+8/19/2025 2:44:23,User_398,Mint Gelato,1,3
+8/19/2025 2:46:24,User_539,Vanilla Ice Cream,7,1
+8/19/2025 2:45:24,User_533,Strawberry Sorbet,10,4
+8/19/2025 2:44:24,User_482,Mint Gelato,9,3
+8/19/2025 2:46:24,User_413,Chocolate Sundae,11,3
+8/19/2025 2:44:25,User_834,Mint Gelato,14,3
+8/19/2025 2:45:27,User_702,Strawberry Sorbet,2,2
+8/19/2025 2:44:27,User_883,Strawberry Sorbet,7,3
+8/19/2025 2:49:24,User_506,Cookies & Cream,1,3
+8/19/2025 2:50:24,User_587,Cookies & Cream,11,1
+8/19/2025 2:49:25,User_21,Vanilla Ice Cream,15,1
+8/19/2025 2:52:25,User_107,Mint Gelato,8,4
+8/19/2025 2:51:25,User_50,Cookies & Cream,4,3
+8/19/2025 2:50:26,User_363,Chocolate Sundae,7,4
+8/19/2025 2:52:26,User_824,Vanilla Ice Cream,12,3
+8/19/2025 2:49:26,User_749,Cookies & Cream,14,3
+8/19/2025 2:51:26,User_959,Strawberry Sorbet,3,2
+8/19/2025 2:50:27,User_473,Vanilla Ice Cream,2,2
+8/19/2025 2:56:22,User_276,Strawberry Sorbet,2,4
+8/19/2025 2:54:22,User_279,Strawberry Sorbet,1,4
+8/19/2025 2:53:23,User_606,Strawberry Sorbet,9,3
+8/19/2025 2:56:23,User_293,Chocolate Sundae,7,2
+8/19/2025 2:54:23,User_61,Chocolate Sundae,5,2
+8/19/2025 2:57:23,User_241,Chocolate Sundae,3,2
+8/19/2025 2:57:23,User_525,Cookies & Cream,11,1
+8/19/2025 2:57:24,User_622,Strawberry Sorbet,8,3
+8/19/2025 2:57:24,User_978,Strawberry Sorbet,1,3
+8/19/2025 2:57:24,User_115,Cookies & Cream,7,4
+8/19/2025 2:59:24,User_284,Chocolate Sundae,14,4
+8/19/2025 2:58:24,User_788,Cookies & Cream,11,1
+8/19/2025 2:58:25,User_614,Cookies & Cream,5,2
+8/19/2025 2:58:25,User_11,Strawberry Sorbet,4,4
+8/19/2025 2:59:25,User_684,Cookies & Cream,6,2
+8/19/2025 3:00:25,User_863,Chocolate Sundae,3,4
+8/19/2025 2:58:26,User_559,Mint Gelato,15,2
+8/19/2025 3:01:27,User_50,Mint Gelato,15,1
+8/19/2025 2:58:27,User_246,Strawberry Sorbet,14,4
+8/19/2025 3:00:27,User_21,Mint Gelato,6,3
+8/19/2025 3:04:27,User_655,Chocolate Sundae,1,3
+8/19/2025 3:05:27,User_591,Chocolate Sundae,6,4
+8/19/2025 3:03:28,User_26,Vanilla Ice Cream,5,2
+8/19/2025 3:06:28,User_387,Cookies & Cream,1,3
+8/19/2025 3:03:28,User_104,Chocolate Sundae,5,3
+8/19/2025 3:03:28,User_977,Mint Gelato,10,4
+8/19/2025 3:06:29,User_579,Vanilla Ice Cream,8,3
+8/19/2025 3:06:30,User_490,Mint Gelato,10,2
+8/19/2025 3:04:30,User_618,Vanilla Ice Cream,12,1
+8/19/2025 3:03:30,User_85,Vanilla Ice Cream,12,2
+8/19/2025 3:10:11,User_651,Strawberry Sorbet,10,1
+8/19/2025 3:09:12,User_92,Mint Gelato,13,3
+8/19/2025 3:09:12,User_664,Chocolate Sundae,2,4
+8/19/2025 3:10:12,User_904,Mint Gelato,1,2
+8/19/2025 3:12:12,User_261,Mint Gelato,9,1
+8/19/2025 3:10:13,User_274,Cookies & Cream,8,3
+8/19/2025 3:10:13,User_470,Strawberry Sorbet,15,1
+8/19/2025 3:10:13,User_27,Cookies & Cream,2,2
+8/19/2025 3:11:14,User_286,Chocolate Sundae,5,3
+8/19/2025 3:10:15,User_480,Chocolate Sundae,5,1
+8/19/2025 3:13:24,User_922,Vanilla Ice Cream,14,1
+8/19/2025 3:15:24,User_735,Cookies & Cream,15,3
+8/19/2025 3:16:25,User_831,Cookies & Cream,11,2
+8/19/2025 3:17:25,User_757,Chocolate Sundae,3,1
+8/19/2025 3:16:26,User_657,Vanilla Ice Cream,5,2
+8/19/2025 3:17:26,User_827,Vanilla Ice Cream,8,4
+8/19/2025 3:17:27,User_960,Strawberry Sorbet,3,2
+8/19/2025 3:14:28,User_478,Mint Gelato,2,1
+8/19/2025 3:13:28,User_734,Cookies & Cream,5,4
+8/19/2025 3:16:28,User_965,Vanilla Ice Cream,4,2
+8/19/2025 3:19:26,User_38,Vanilla Ice Cream,12,1
+8/19/2025 3:20:26,User_736,Vanilla Ice Cream,15,3
+8/19/2025 3:18:26,User_843,Chocolate Sundae,15,1
+8/19/2025 3:19:27,User_909,Mint Gelato,11,3
+8/19/2025 3:20:27,User_835,Chocolate Sundae,15,1
+8/19/2025 3:21:27,User_61,Cookies & Cream,3,2
+8/19/2025 3:19:28,User_863,Vanilla Ice Cream,15,3
+8/19/2025 3:19:28,User_49,Cookies & Cream,5,4
+8/19/2025 3:20:28,User_734,Strawberry Sorbet,12,2
+8/19/2025 3:19:28,User_502,Mint Gelato,8,2
+8/19/2025 3:27:25,User_352,Mint Gelato,2,1
+8/19/2025 3:25:25,User_22,Chocolate Sundae,7,3
+8/19/2025 3:24:26,User_89,Cookies & Cream,5,1
+8/19/2025 3:25:26,User_542,Cookies & Cream,9,3
+8/19/2025 3:25:26,User_18,Strawberry Sorbet,7,3
+8/19/2025 3:23:26,User_169,Mint Gelato,8,2
+8/19/2025 3:27:26,User_175,Vanilla Ice Cream,12,3
+8/19/2025 3:24:26,User_870,Mint Gelato,6,1
+8/19/2025 3:23:27,User_487,Strawberry Sorbet,7,4
+8/19/2025 3:27:28,User_737,Vanilla Ice Cream,3,1
+8/19/2025 3:28:24,User_33,Vanilla Ice Cream,9,3
+8/19/2025 3:32:24,User_503,Mint Gelato,2,3
+8/19/2025 3:31:24,User_240,Chocolate Sundae,5,3
+8/19/2025 3:29:24,User_134,Chocolate Sundae,6,1
+8/19/2025 3:29:24,User_590,Strawberry Sorbet,1,2
+8/19/2025 3:29:25,User_729,Mint Gelato,12,2
+8/19/2025 3:31:25,User_399,Cookies & Cream,12,2
+8/19/2025 3:30:25,User_88,Vanilla Ice Cream,8,2
+8/19/2025 3:30:25,User_460,Strawberry Sorbet,13,1
+8/19/2025 3:29:26,User_119,Cookies & Cream,10,2
+8/19/2025 3:33:32,User_843,Chocolate Sundae,15,1
+8/19/2025 3:36:32,User_719,Strawberry Sorbet,13,1
+8/19/2025 3:35:32,User_729,Chocolate Sundae,6,1
+8/19/2025 3:37:32,User_947,Strawberry Sorbet,7,4
+8/19/2025 3:34:33,User_666,Mint Gelato,3,4
+8/19/2025 3:34:33,User_860,Vanilla Ice Cream,13,1
+8/19/2025 3:34:34,User_728,Cookies & Cream,5,4
+8/19/2025 3:36:34,User_415,Mint Gelato,10,2
+8/19/2025 3:34:34,User_239,Mint Gelato,11,4
+8/19/2025 3:33:34,User_181,Chocolate Sundae,5,1
+8/19/2025 3:42:23,User_829,Cookies & Cream,9,1
+8/19/2025 3:41:23,User_868,Cookies & Cream,6,3
+8/19/2025 3:42:24,User_525,Cookies & Cream,4,1
+8/19/2025 3:40:24,User_412,Vanilla Ice Cream,6,3
+8/19/2025 3:38:27,User_272,Strawberry Sorbet,12,3
+8/19/2025 3:41:27,User_824,Strawberry Sorbet,4,2
+8/19/2025 3:41:28,User_156,Vanilla Ice Cream,2,3
+8/19/2025 3:39:30,User_257,Chocolate Sundae,3,2
+8/19/2025 3:38:30,User_331,Vanilla Ice Cream,7,3
+8/19/2025 3:41:30,User_523,Chocolate Sundae,8,3
+8/19/2025 3:46:26,User_373,Chocolate Sundae,8,4
+8/19/2025 3:47:26,User_158,Chocolate Sundae,4,3
+8/19/2025 3:47:27,User_42,Mint Gelato,4,3
+8/19/2025 3:45:28,User_381,Chocolate Sundae,8,1
+8/19/2025 3:45:28,User_389,Chocolate Sundae,6,2
+8/19/2025 3:45:28,User_890,Vanilla Ice Cream,12,2
+8/19/2025 3:43:28,User_883,Chocolate Sundae,14,3
+8/19/2025 3:44:28,User_38,Strawberry Sorbet,8,1
+8/19/2025 3:45:29,User_11,Vanilla Ice Cream,13,4
+8/19/2025 3:46:29,User_675,Vanilla Ice Cream,4,2
+8/19/2025 3:48:23,User_744,Chocolate Sundae,9,1
+8/19/2025 3:49:23,User_377,Mint Gelato,6,2
+8/19/2025 3:52:24,User_12,Cookies & Cream,5,4
+8/19/2025 3:52:24,User_283,Chocolate Sundae,15,2
+8/19/2025 3:49:26,User_420,Vanilla Ice Cream,4,4
+8/19/2025 3:48:26,User_46,Strawberry Sorbet,7,2
+8/19/2025 3:50:26,User_968,Strawberry Sorbet,4,2
+8/19/2025 3:51:27,User_643,Strawberry Sorbet,6,3
+8/19/2025 3:52:27,User_387,Mint Gelato,7,3
+8/19/2025 3:49:27,User_811,Mint Gelato,5,2
+8/19/2025 3:57:25,User_745,Vanilla Ice Cream,1,2
+8/19/2025 3:55:26,User_176,Mint Gelato,11,2
+8/19/2025 3:53:26,User_431,Vanilla Ice Cream,11,4
+8/19/2025 3:56:27,User_540,Mint Gelato,2,1
+8/19/2025 3:57:27,User_203,Strawberry Sorbet,6,4
+8/19/2025 3:54:27,User_458,Vanilla Ice Cream,5,1
+8/19/2025 3:57:27,User_375,Vanilla Ice Cream,10,1
+8/19/2025 3:55:28,User_499,Chocolate Sundae,2,3
+8/19/2025 3:55:28,User_313,Mint Gelato,3,1
+8/19/2025 3:56:28,User_411,Cookies & Cream,10,4
+8/19/2025 4:01:28,User_629,Chocolate Sundae,10,1
+8/19/2025 4:02:28,User_425,Strawberry Sorbet,5,3
+8/19/2025 3:58:29,User_283,Chocolate Sundae,11,4
+8/19/2025 3:58:30,User_919,Cookies & Cream,11,2
+8/19/2025 3:58:31,User_666,Vanilla Ice Cream,4,4
+8/19/2025 4:00:32,User_653,Mint Gelato,8,1
+8/19/2025 3:58:32,User_28,Chocolate Sundae,2,3
+8/19/2025 4:00:32,User_744,Cookies & Cream,14,1
+8/19/2025 4:02:33,User_241,Cookies & Cream,2,4
+8/19/2025 4:00:33,User_614,Cookies & Cream,1,3
+8/19/2025 4:03:25,User_869,Cookies & Cream,9,3
+8/19/2025 4:03:25,User_968,Mint Gelato,12,1
+8/19/2025 4:03:26,User_95,Mint Gelato,12,3
+8/19/2025 4:03:26,User_483,Cookies & Cream,7,4
+8/19/2025 4:07:27,User_777,Mint Gelato,1,1
+8/19/2025 4:04:27,User_277,Cookies & Cream,11,3
+8/19/2025 4:06:27,User_67,Chocolate Sundae,11,4
+8/19/2025 4:04:27,User_772,Mint Gelato,10,4
+8/19/2025 4:03:27,User_308,Mint Gelato,8,4
+8/19/2025 4:06:28,User_244,Strawberry Sorbet,13,2
+8/19/2025 4:10:21,User_708,Strawberry Sorbet,9,2
+8/19/2025 4:08:22,User_644,Cookies & Cream,2,1
+8/19/2025 4:08:22,User_953,Cookies & Cream,3,1
+8/19/2025 4:08:22,User_699,Mint Gelato,14,2
+8/19/2025 4:11:23,User_551,Strawberry Sorbet,5,3
+8/19/2025 4:10:23,User_833,Cookies & Cream,1,3
+8/19/2025 4:08:23,User_667,Mint Gelato,6,2
+8/19/2025 4:12:23,User_183,Cookies & Cream,7,1
+8/19/2025 4:09:24,User_114,Vanilla Ice Cream,13,2
+8/19/2025 4:10:24,User_969,Cookies & Cream,1,4
+8/19/2025 4:17:27,User_856,Vanilla Ice Cream,10,2
+8/19/2025 4:13:27,User_990,Mint Gelato,7,2
+8/19/2025 4:15:28,User_640,Chocolate Sundae,10,4
+8/19/2025 4:14:28,User_427,Vanilla Ice Cream,4,1
+8/19/2025 4:16:28,User_176,Vanilla Ice Cream,15,2
+8/19/2025 4:15:28,User_990,Vanilla Ice Cream,12,3
+8/19/2025 4:16:28,User_462,Mint Gelato,9,1
+8/19/2025 4:16:29,User_734,Mint Gelato,15,4
+8/19/2025 4:16:29,User_391,Vanilla Ice Cream,14,4
+8/19/2025 4:13:30,User_815,Strawberry Sorbet,8,2
+8/19/2025 4:22:22,User_995,Strawberry Sorbet,13,4
+8/19/2025 4:18:22,User_377,Mint Gelato,7,2
+8/19/2025 4:22:23,User_352,Vanilla Ice Cream,1,2
+8/19/2025 4:20:23,User_793,Strawberry Sorbet,1,1
+8/19/2025 4:22:23,User_645,Cookies & Cream,11,3
+8/19/2025 4:22:24,User_679,Chocolate Sundae,6,2
+8/19/2025 4:19:25,User_278,Mint Gelato,7,1
+8/19/2025 4:20:25,User_577,Strawberry Sorbet,15,2
+8/19/2025 4:20:25,User_215,Cookies & Cream,4,2
+8/19/2025 4:19:25,User_974,Vanilla Ice Cream,13,2
+8/19/2025 4:25:23,User_145,Cookies & Cream,13,2
+8/19/2025 4:24:23,User_763,Mint Gelato,11,4
+8/19/2025 4:24:23,User_672,Vanilla Ice Cream,1,2
+8/19/2025 4:26:24,User_502,Vanilla Ice Cream,15,3
+8/19/2025 4:23:24,User_687,Chocolate Sundae,2,1
+8/19/2025 4:26:24,User_397,Vanilla Ice Cream,8,2
+8/19/2025 4:26:24,User_516,Mint Gelato,2,4
+8/19/2025 4:26:25,User_552,Vanilla Ice Cream,15,1
+8/19/2025 4:27:25,User_473,Vanilla Ice Cream,15,4
+8/19/2025 4:25:25,User_618,Cookies & Cream,6,2
+8/19/2025 4:31:32,User_540,Chocolate Sundae,10,2
+8/19/2025 4:30:32,User_610,Cookies & Cream,7,3
+8/19/2025 4:28:33,User_662,Strawberry Sorbet,1,1
+8/19/2025 4:31:33,User_694,Chocolate Sundae,6,4
+8/19/2025 4:30:34,User_967,Strawberry Sorbet,14,2
+8/19/2025 4:32:34,User_141,Cookies & Cream,13,2
+8/19/2025 4:32:35,User_74,Chocolate Sundae,6,1
+8/19/2025 4:29:35,User_712,Vanilla Ice Cream,5,3
+8/19/2025 4:31:35,User_618,Vanilla Ice Cream,1,3
+8/19/2025 4:29:35,User_268,Cookies & Cream,2,4
+8/19/2025 4:34:25,User_697,Mint Gelato,9,2
+8/19/2025 4:33:25,User_722,Chocolate Sundae,11,1
+8/19/2025 4:36:26,User_553,Chocolate Sundae,1,2
+8/19/2025 4:37:26,User_529,Strawberry Sorbet,4,3
+8/19/2025 4:37:26,User_832,Mint Gelato,1,2
+8/19/2025 4:37:27,User_399,Chocolate Sundae,11,3
+8/19/2025 4:33:27,User_762,Mint Gelato,7,4
+8/19/2025 4:37:27,User_744,Cookies & Cream,14,4
+8/19/2025 4:34:27,User_271,Strawberry Sorbet,1,3
+8/19/2025 4:33:27,User_961,Mint Gelato,8,4
+8/19/2025 4:38:29,User_688,Vanilla Ice Cream,7,2
+8/19/2025 4:40:29,User_94,Cookies & Cream,11,1
+8/19/2025 4:38:32,User_590,Vanilla Ice Cream,14,2
+8/19/2025 4:38:33,User_782,Strawberry Sorbet,12,1
+8/19/2025 4:40:33,User_437,Chocolate Sundae,1,1
+8/19/2025 4:42:33,User_928,Cookies & Cream,8,2
+8/19/2025 4:38:33,User_14,Chocolate Sundae,5,4
+8/19/2025 4:39:37,User_216,Strawberry Sorbet,7,3
+8/19/2025 4:38:38,User_462,Strawberry Sorbet,3,4
+8/19/2025 4:38:38,User_850,Chocolate Sundae,13,2
+8/19/2025 4:43:25,User_479,Vanilla Ice Cream,6,1
+8/19/2025 4:43:26,User_945,Cookies & Cream,15,4
+8/19/2025 4:44:27,User_105,Cookies & Cream,10,3
+8/19/2025 4:45:27,User_85,Vanilla Ice Cream,7,2
+8/19/2025 4:43:27,User_322,Mint Gelato,8,2
+8/19/2025 4:45:28,User_284,Mint Gelato,8,4
+8/19/2025 4:45:29,User_992,Chocolate Sundae,3,2
+8/19/2025 4:44:29,User_578,Vanilla Ice Cream,2,3
+8/19/2025 4:44:31,User_726,Cookies & Cream,3,2
+8/19/2025 4:45:31,User_640,Strawberry Sorbet,13,3
+8/19/2025 4:49:25,User_153,Cookies & Cream,10,4
+8/19/2025 4:49:26,User_371,Cookies & Cream,9,4
+8/19/2025 4:51:27,User_422,Mint Gelato,5,2
+8/19/2025 4:48:27,User_733,Chocolate Sundae,6,4
+8/19/2025 4:50:27,User_881,Cookies & Cream,13,2
+8/19/2025 4:49:27,User_979,Chocolate Sundae,5,3
+8/19/2025 4:48:27,User_436,Cookies & Cream,12,3
+8/19/2025 4:50:28,User_601,Chocolate Sundae,8,3
+8/19/2025 4:52:28,User_671,Strawberry Sorbet,2,1
+8/19/2025 4:52:28,User_112,Cookies & Cream,13,4
+8/19/2025 4:56:23,User_120,Cookies & Cream,2,3
+8/19/2025 4:55:24,User_264,Cookies & Cream,12,3
+8/19/2025 4:54:24,User_908,Mint Gelato,14,2
+8/19/2025 4:55:24,User_320,Mint Gelato,11,1
+8/19/2025 4:57:24,User_557,Strawberry Sorbet,3,1
+8/19/2025 4:54:24,User_471,Cookies & Cream,15,3
+8/19/2025 4:53:24,User_458,Mint Gelato,8,1
+8/19/2025 4:53:25,User_733,Mint Gelato,2,2
+8/19/2025 4:54:25,User_210,Cookies & Cream,3,3
+8/19/2025 4:56:25,User_407,Strawberry Sorbet,15,1
+8/19/2025 4:59:22,User_337,Strawberry Sorbet,4,4
+8/19/2025 5:02:23,User_908,Chocolate Sundae,8,1
+8/19/2025 5:00:24,User_323,Cookies & Cream,2,1
+8/19/2025 5:02:24,User_989,Mint Gelato,4,2
+8/19/2025 4:59:24,User_464,Vanilla Ice Cream,12,4
+8/19/2025 5:01:25,User_615,Cookies & Cream,10,3
+8/19/2025 5:01:25,User_860,Vanilla Ice Cream,4,3
+8/19/2025 4:59:25,User_571,Vanilla Ice Cream,10,3
+8/19/2025 5:00:26,User_972,Chocolate Sundae,6,2
+8/19/2025 5:01:26,User_458,Strawberry Sorbet,9,3
+8/19/2025 5:06:28,User_206,Mint Gelato,2,1
+8/19/2025 5:07:28,User_541,Mint Gelato,15,4
+8/19/2025 5:07:28,User_187,Mint Gelato,8,3
+8/19/2025 5:07:29,User_586,Mint Gelato,6,1
+8/19/2025 5:05:29,User_798,Chocolate Sundae,10,1
+8/19/2025 5:03:30,User_791,Mint Gelato,11,4
+8/19/2025 5:07:30,User_70,Chocolate Sundae,3,4
+8/19/2025 5:07:30,User_850,Chocolate Sundae,9,4
+8/19/2025 5:05:31,User_630,Chocolate Sundae,10,2
+8/19/2025 5:03:31,User_439,Vanilla Ice Cream,10,3
+8/19/2025 5:09:22,User_906,Cookies & Cream,11,2
+8/19/2025 5:11:22,User_861,Mint Gelato,14,4
+8/19/2025 5:12:23,User_532,Strawberry Sorbet,7,2
+8/19/2025 5:09:23,User_366,Mint Gelato,3,1
+8/19/2025 5:08:23,User_711,Vanilla Ice Cream,9,1
+8/19/2025 5:08:24,User_779,Chocolate Sundae,8,3
+8/19/2025 5:12:24,User_784,Vanilla Ice Cream,15,4
+8/19/2025 5:08:24,User_609,Chocolate Sundae,2,1
+8/19/2025 5:09:24,User_746,Mint Gelato,12,3
+8/19/2025 5:08:25,User_237,Cookies & Cream,12,4
+8/19/2025 5:13:25,User_449,Chocolate Sundae,11,1
+8/19/2025 5:16:25,User_375,Chocolate Sundae,12,1
+8/19/2025 5:17:25,User_314,Vanilla Ice Cream,6,4
+8/19/2025 5:14:25,User_247,Strawberry Sorbet,3,1
+8/19/2025 5:13:25,User_327,Strawberry Sorbet,12,2
+8/19/2025 5:17:26,User_908,Mint Gelato,8,1
+8/19/2025 5:14:26,User_528,Mint Gelato,3,2
+8/19/2025 5:15:26,User_84,Vanilla Ice Cream,2,2
+8/19/2025 5:16:26,User_953,Cookies & Cream,4,4
+8/19/2025 5:13:27,User_653,Vanilla Ice Cream,1,1
+8/19/2025 5:20:25,User_798,Chocolate Sundae,11,3
+8/19/2025 5:22:25,User_583,Strawberry Sorbet,2,4
+8/19/2025 5:22:26,User_879,Chocolate Sundae,7,3
+8/19/2025 5:18:26,User_273,Vanilla Ice Cream,15,1
+8/19/2025 5:18:26,User_693,Vanilla Ice Cream,8,2
+8/19/2025 5:18:27,User_524,Mint Gelato,2,1
+8/19/2025 5:21:27,User_713,Strawberry Sorbet,1,4
+8/19/2025 5:20:27,User_45,Cookies & Cream,6,3
+8/19/2025 5:21:27,User_963,Cookies & Cream,13,1
+8/19/2025 5:20:27,User_463,Mint Gelato,5,3
+8/19/2025 5:26:22,User_55,Cookies & Cream,6,2
+8/19/2025 5:26:24,User_152,Mint Gelato,13,3
+8/19/2025 5:24:25,User_836,Strawberry Sorbet,10,2
+8/19/2025 5:27:26,User_761,Mint Gelato,10,1
+8/19/2025 5:23:26,User_208,Mint Gelato,12,2
+8/19/2025 5:25:27,User_982,Mint Gelato,6,3
+8/19/2025 5:27:27,User_829,Vanilla Ice Cream,1,2
+8/19/2025 5:25:27,User_22,Mint Gelato,11,2
+8/19/2025 5:24:27,User_36,Cookies & Cream,13,3
+8/19/2025 5:25:28,User_163,Chocolate Sundae,15,1
+8/19/2025 5:28:25,User_198,Chocolate Sundae,3,1
+8/19/2025 5:29:25,User_570,Cookies & Cream,8,3
+8/19/2025 5:28:26,User_835,Mint Gelato,12,4
+8/19/2025 5:28:26,User_248,Strawberry Sorbet,2,3
+8/19/2025 5:28:26,User_577,Strawberry Sorbet,13,3
+8/19/2025 5:29:27,User_564,Chocolate Sundae,14,3
+8/19/2025 5:29:27,User_404,Chocolate Sundae,13,1
+8/19/2025 5:32:27,User_566,Chocolate Sundae,12,3
+8/19/2025 5:29:27,User_54,Strawberry Sorbet,14,1
+8/19/2025 5:29:28,User_931,Mint Gelato,13,4
+8/19/2025 5:36:25,User_718,Mint Gelato,10,2
+8/19/2025 5:34:25,User_762,Strawberry Sorbet,6,1
+8/19/2025 5:35:25,User_925,Vanilla Ice Cream,3,3
+8/19/2025 5:36:25,User_796,Cookies & Cream,14,1
+8/19/2025 5:36:25,User_775,Mint Gelato,11,3
+8/19/2025 5:37:26,User_711,Chocolate Sundae,15,2
+8/19/2025 5:35:26,User_413,Chocolate Sundae,11,4
+8/19/2025 5:37:26,User_848,Cookies & Cream,11,3
+8/19/2025 5:33:27,User_757,Vanilla Ice Cream,14,1
+8/19/2025 5:34:27,User_356,Vanilla Ice Cream,6,4
+8/19/2025 5:40:23,User_386,Strawberry Sorbet,3,2
+8/19/2025 5:40:23,User_446,Vanilla Ice Cream,12,1
+8/19/2025 5:39:24,User_737,Cookies & Cream,13,1
+8/19/2025 5:41:24,User_507,Mint Gelato,7,2
+8/19/2025 5:38:24,User_332,Cookies & Cream,5,2
+8/19/2025 5:38:25,User_508,Vanilla Ice Cream,9,4
+8/19/2025 5:38:25,User_10,Vanilla Ice Cream,15,2
+8/19/2025 5:39:26,User_502,Mint Gelato,12,2
+8/19/2025 5:41:26,User_173,Cookies & Cream,10,4
+8/19/2025 5:39:27,User_823,Strawberry Sorbet,8,1
+8/19/2025 5:44:30,User_752,Strawberry Sorbet,7,4
+8/19/2025 5:47:30,User_115,Cookies & Cream,13,4
+8/19/2025 5:46:31,User_526,Vanilla Ice Cream,1,3
+8/19/2025 5:43:31,User_503,Chocolate Sundae,4,2
+8/19/2025 5:45:32,User_105,Mint Gelato,13,3
+8/19/2025 5:46:33,User_173,Chocolate Sundae,3,2
+8/19/2025 5:43:33,User_447,Strawberry Sorbet,13,4
+8/19/2025 5:43:36,User_831,Mint Gelato,3,2
+8/19/2025 5:45:37,User_655,Strawberry Sorbet,5,3
+8/19/2025 5:46:37,User_16,Strawberry Sorbet,1,1
+8/19/2025 5:51:27,User_765,Strawberry Sorbet,7,2
+8/19/2025 5:50:27,User_275,Strawberry Sorbet,4,4
+8/19/2025 5:51:28,User_818,Mint Gelato,14,3
+8/19/2025 5:48:28,User_488,Strawberry Sorbet,13,3
+8/19/2025 5:52:28,User_989,Chocolate Sundae,4,3
+8/19/2025 5:48:28,User_763,Mint Gelato,13,1
+8/19/2025 5:51:29,User_887,Chocolate Sundae,2,2
+8/19/2025 5:50:30,User_445,Cookies & Cream,8,1
+8/19/2025 5:48:30,User_144,Mint Gelato,9,4
+8/19/2025 5:49:30,User_696,Strawberry Sorbet,10,4
+8/19/2025 5:57:27,User_627,Cookies & Cream,1,2
+8/19/2025 5:56:28,User_326,Vanilla Ice Cream,3,1
+8/19/2025 5:56:28,User_69,Cookies & Cream,9,1
+8/19/2025 5:54:29,User_39,Vanilla Ice Cream,2,1
+8/19/2025 5:55:29,User_830,Chocolate Sundae,14,1
+8/19/2025 5:53:29,User_873,Cookies & Cream,14,4
+8/19/2025 5:57:29,User_891,Mint Gelato,1,4
+8/19/2025 5:54:29,User_677,Chocolate Sundae,14,4
+8/19/2025 5:55:30,User_288,Vanilla Ice Cream,4,2
+8/19/2025 5:56:30,User_680,Cookies & Cream,15,2
+8/19/2025 6:01:24,User_573,Vanilla Ice Cream,12,4
+8/19/2025 6:01:24,User_191,Cookies & Cream,5,2
+8/19/2025 6:01:24,User_368,Mint Gelato,7,2
+8/19/2025 6:00:26,User_645,Cookies & Cream,2,3
+8/19/2025 6:00:27,User_80,Strawberry Sorbet,4,4
+8/19/2025 5:59:27,User_273,Cookies & Cream,3,3
+8/19/2025 6:01:27,User_651,Cookies & Cream,8,2
+8/19/2025 5:59:29,User_943,Strawberry Sorbet,9,3
+8/19/2025 5:58:29,User_892,Chocolate Sundae,13,1
+8/19/2025 6:01:29,User_169,Mint Gelato,6,1
+8/19/2025 6:03:21,User_736,Strawberry Sorbet,4,1
+8/19/2025 6:05:22,User_339,Strawberry Sorbet,12,3
+8/19/2025 6:04:22,User_206,Chocolate Sundae,5,4
+8/19/2025 6:07:22,User_236,Mint Gelato,2,3
+8/19/2025 6:05:22,User_216,Mint Gelato,15,2
+8/19/2025 6:07:22,User_466,Cookies & Cream,12,2
+8/19/2025 6:03:22,User_700,Vanilla Ice Cream,11,2
+8/19/2025 6:04:23,User_752,Mint Gelato,12,2
+8/19/2025 6:03:23,User_259,Mint Gelato,3,1
+8/19/2025 6:07:23,User_912,Vanilla Ice Cream,10,1
+8/19/2025 6:12:24,User_49,Vanilla Ice Cream,4,2
+8/19/2025 6:11:25,User_477,Strawberry Sorbet,5,2
+8/19/2025 6:11:25,User_511,Chocolate Sundae,1,3
+8/19/2025 6:10:25,User_140,Vanilla Ice Cream,4,1
+8/19/2025 6:09:25,User_886,Cookies & Cream,1,3
+8/19/2025 6:09:26,User_771,Strawberry Sorbet,9,1
+8/19/2025 6:12:26,User_57,Mint Gelato,7,2
+8/19/2025 6:12:26,User_661,Chocolate Sundae,9,4
+8/19/2025 6:08:26,User_819,Chocolate Sundae,5,1
+8/19/2025 6:12:26,User_76,Chocolate Sundae,14,2
+8/19/2025 6:14:28,User_93,Mint Gelato,3,1
+8/19/2025 6:15:28,User_580,Chocolate Sundae,12,2
+8/19/2025 6:15:28,User_815,Cookies & Cream,3,3
+8/19/2025 6:13:28,User_160,Vanilla Ice Cream,14,2
+8/19/2025 6:16:28,User_724,Vanilla Ice Cream,2,4
+8/19/2025 6:16:29,User_69,Strawberry Sorbet,13,4
+8/19/2025 6:13:29,User_872,Chocolate Sundae,2,2
+8/19/2025 6:17:29,User_832,Cookies & Cream,14,4
+8/19/2025 6:13:30,User_301,Cookies & Cream,9,1
+8/19/2025 6:17:30,User_406,Vanilla Ice Cream,1,1
+8/19/2025 6:19:27,User_604,Chocolate Sundae,3,2
+8/19/2025 6:22:27,User_710,Cookies & Cream,13,3
+8/19/2025 6:20:28,User_964,Vanilla Ice Cream,8,4
+8/19/2025 6:21:28,User_727,Mint Gelato,5,3
+8/19/2025 6:19:28,User_973,Chocolate Sundae,6,1
+8/19/2025 6:18:28,User_708,Mint Gelato,14,2
+8/19/2025 6:22:29,User_947,Mint Gelato,13,2
+8/19/2025 6:19:29,User_159,Strawberry Sorbet,11,3
+8/19/2025 6:21:30,User_913,Mint Gelato,9,4
+8/19/2025 6:21:30,User_972,Mint Gelato,15,1
+8/19/2025 6:24:26,User_554,Mint Gelato,1,2
+8/19/2025 6:26:27,User_939,Strawberry Sorbet,10,2
+8/19/2025 6:25:27,User_868,Cookies & Cream,6,3
+8/19/2025 6:24:27,User_460,Vanilla Ice Cream,12,1
+8/19/2025 6:23:27,User_951,Mint Gelato,3,2
+8/19/2025 6:26:27,User_942,Vanilla Ice Cream,7,1
+8/19/2025 6:26:27,User_226,Chocolate Sundae,3,4
+8/19/2025 6:26:29,User_23,Strawberry Sorbet,15,1
+8/19/2025 6:24:29,User_931,Strawberry Sorbet,4,1
+8/19/2025 6:26:29,User_542,Mint Gelato,3,3
+8/19/2025 6:29:25,User_967,Mint Gelato,10,1
+8/19/2025 6:31:26,User_855,Vanilla Ice Cream,4,3
+8/19/2025 6:28:26,User_146,Strawberry Sorbet,3,3
+8/19/2025 6:29:26,User_99,Vanilla Ice Cream,10,4
+8/19/2025 6:31:26,User_546,Mint Gelato,2,3
+8/19/2025 6:32:26,User_606,Chocolate Sundae,3,3
+8/19/2025 6:30:27,User_276,Cookies & Cream,1,1
+8/19/2025 6:32:28,User_611,Vanilla Ice Cream,4,4
+8/19/2025 6:31:28,User_12,Chocolate Sundae,9,3
+8/19/2025 6:32:28,User_174,Vanilla Ice Cream,11,3
+8/19/2025 6:36:29,User_51,Chocolate Sundae,12,1
+8/19/2025 6:33:29,User_288,Strawberry Sorbet,7,1
+8/19/2025 6:35:30,User_368,Vanilla Ice Cream,10,3
+8/19/2025 6:36:30,User_557,Chocolate Sundae,14,4
+8/19/2025 6:34:30,User_995,Cookies & Cream,13,3
+8/19/2025 6:36:31,User_678,Vanilla Ice Cream,1,4
+8/19/2025 6:37:31,User_136,Chocolate Sundae,2,4
+8/19/2025 6:35:31,User_8,Chocolate Sundae,8,2
+8/19/2025 6:33:32,User_620,Cookies & Cream,14,4
+8/19/2025 6:34:32,User_527,Mint Gelato,11,2
+8/19/2025 6:40:22,User_232,Vanilla Ice Cream,2,3
+8/19/2025 6:40:22,User_245,Chocolate Sundae,8,1
+8/19/2025 6:41:23,User_985,Vanilla Ice Cream,10,3
+8/19/2025 6:38:24,User_268,Mint Gelato,11,4
+8/19/2025 6:38:24,User_978,Cookies & Cream,12,4
+8/19/2025 6:39:24,User_391,Vanilla Ice Cream,8,2
+8/19/2025 6:39:25,User_403,Mint Gelato,11,2
+8/19/2025 6:40:25,User_161,Chocolate Sundae,3,3
+8/19/2025 6:41:25,User_409,Vanilla Ice Cream,9,1
+8/19/2025 6:38:25,User_130,Cookies & Cream,8,2
+8/19/2025 6:47:24,User_849,Chocolate Sundae,11,4
+8/19/2025 6:47:25,User_866,Chocolate Sundae,7,3
+8/19/2025 6:45:26,User_379,Mint Gelato,4,4
+8/19/2025 6:45:26,User_757,Vanilla Ice Cream,12,4
+8/19/2025 6:45:26,User_994,Mint Gelato,4,1
+8/19/2025 6:45:26,User_272,Vanilla Ice Cream,13,1
+8/19/2025 6:47:26,User_613,Cookies & Cream,5,1
+8/19/2025 6:47:26,User_835,Chocolate Sundae,9,3
+8/19/2025 6:43:27,User_484,Vanilla Ice Cream,2,3
+8/19/2025 6:45:28,User_381,Cookies & Cream,9,3
+8/19/2025 6:49:30,User_688,Mint Gelato,10,1
+8/19/2025 6:49:31,User_530,Cookies & Cream,4,2
+8/19/2025 6:51:32,User_74,Strawberry Sorbet,15,2
+8/19/2025 6:51:32,User_151,Mint Gelato,15,3
+8/19/2025 6:50:32,User_482,Chocolate Sundae,6,4
+8/19/2025 6:50:33,User_898,Strawberry Sorbet,14,4
+8/19/2025 6:48:33,User_938,Cookies & Cream,2,2
+8/19/2025 6:50:34,User_602,Vanilla Ice Cream,6,1
+8/19/2025 6:49:34,User_179,Vanilla Ice Cream,12,3
+8/19/2025 6:48:34,User_784,Cookies & Cream,1,2
+8/19/2025 6:53:24,User_298,Mint Gelato,8,3
+8/19/2025 6:56:24,User_744,Vanilla Ice Cream,14,1
+8/19/2025 6:57:25,User_859,Strawberry Sorbet,8,1
+8/19/2025 6:54:25,User_132,Vanilla Ice Cream,1,2
+8/19/2025 6:55:25,User_415,Strawberry Sorbet,10,3
+8/19/2025 6:55:26,User_698,Vanilla Ice Cream,13,4
+8/19/2025 6:55:26,User_31,Chocolate Sundae,10,2
+8/19/2025 6:57:26,User_589,Vanilla Ice Cream,5,4
+8/19/2025 6:53:27,User_247,Chocolate Sundae,10,3
+8/19/2025 6:53:27,User_37,Strawberry Sorbet,6,2
+8/19/2025 7:02:28,User_153,Cookies & Cream,15,2
+8/19/2025 7:02:29,User_750,Strawberry Sorbet,5,2
+8/19/2025 7:01:29,User_376,Strawberry Sorbet,1,1
+8/19/2025 6:58:29,User_516,Mint Gelato,15,1
+8/19/2025 7:00:29,User_573,Cookies & Cream,5,2
+8/19/2025 6:59:30,User_74,Strawberry Sorbet,15,2
+8/19/2025 6:59:30,User_518,Chocolate Sundae,9,1
+8/19/2025 6:59:30,User_377,Mint Gelato,12,2
+8/19/2025 7:02:30,User_731,Cookies & Cream,6,1
+8/19/2025 7:00:31,User_721,Strawberry Sorbet,13,4
+8/19/2025 7:03:25,User_35,Strawberry Sorbet,3,4
+8/19/2025 7:04:26,User_262,Chocolate Sundae,13,3
+8/19/2025 7:04:26,User_387,Cookies & Cream,1,2
+8/19/2025 7:03:26,User_377,Strawberry Sorbet,2,3
+8/19/2025 7:04:26,User_763,Cookies & Cream,5,2
+8/19/2025 7:05:27,User_891,Chocolate Sundae,11,2
+8/19/2025 7:03:27,User_971,Vanilla Ice Cream,6,4
+8/19/2025 7:05:29,User_505,Vanilla Ice Cream,9,4
+8/19/2025 7:03:30,User_839,Vanilla Ice Cream,13,3
+8/19/2025 7:03:31,User_863,Strawberry Sorbet,3,1
+8/19/2025 7:11:22,User_42,Vanilla Ice Cream,8,1
+8/19/2025 7:11:23,User_576,Vanilla Ice Cream,1,3
+8/19/2025 7:09:24,User_197,Strawberry Sorbet,7,4
+8/19/2025 7:09:24,User_94,Cookies & Cream,5,4
+8/19/2025 7:09:24,User_263,Mint Gelato,4,3
+8/19/2025 7:10:24,User_660,Chocolate Sundae,6,4
+8/19/2025 7:10:24,User_150,Vanilla Ice Cream,8,4
+8/19/2025 7:11:25,User_117,Strawberry Sorbet,8,1
+8/19/2025 7:12:26,User_557,Cookies & Cream,15,1
+8/19/2025 7:10:26,User_665,Chocolate Sundae,7,4
+8/19/2025 7:17:23,User_381,Mint Gelato,15,2
+8/19/2025 7:17:23,User_569,Chocolate Sundae,10,1
+8/19/2025 7:17:24,User_154,Cookies & Cream,7,1
+8/19/2025 7:13:24,User_952,Strawberry Sorbet,13,4
+8/19/2025 7:17:24,User_69,Mint Gelato,13,3
+8/19/2025 7:17:24,User_202,Strawberry Sorbet,12,3
+8/19/2025 7:15:25,User_873,Chocolate Sundae,3,3
+8/19/2025 7:13:25,User_870,Chocolate Sundae,15,4
+8/19/2025 7:14:25,User_874,Chocolate Sundae,10,1
+8/19/2025 7:14:25,User_221,Mint Gelato,7,2
+8/19/2025 7:18:26,User_156,Strawberry Sorbet,4,2
+8/19/2025 7:19:27,User_977,Cookies & Cream,15,2
+8/19/2025 7:20:27,User_25,Vanilla Ice Cream,5,4
+8/19/2025 7:20:27,User_697,Chocolate Sundae,4,2
+8/19/2025 7:20:28,User_718,Chocolate Sundae,3,1
+8/19/2025 7:18:28,User_275,Cookies & Cream,9,1
+8/19/2025 7:19:28,User_607,Mint Gelato,8,1
+8/19/2025 7:21:28,User_533,Chocolate Sundae,10,2
+8/19/2025 7:21:28,User_469,Mint Gelato,7,2
+8/19/2025 7:18:29,User_905,Vanilla Ice Cream,2,3
+8/19/2025 7:25:31,User_903,Cookies & Cream,6,2
+8/19/2025 7:23:31,User_732,Cookies & Cream,6,3
+8/19/2025 7:26:33,User_467,Chocolate Sundae,12,4
+8/19/2025 7:24:34,User_32,Cookies & Cream,8,1
+8/19/2025 7:27:34,User_170,Strawberry Sorbet,13,4
+8/19/2025 7:24:34,User_388,Strawberry Sorbet,5,4
+8/19/2025 7:24:35,User_377,Chocolate Sundae,11,1
+8/19/2025 7:25:35,User_681,Strawberry Sorbet,6,1
+8/19/2025 7:24:35,User_553,Strawberry Sorbet,1,3
+8/19/2025 7:24:35,User_167,Chocolate Sundae,9,3
+8/19/2025 7:29:29,User_677,Strawberry Sorbet,14,1
+8/19/2025 7:31:29,User_78,Cookies & Cream,3,4
+8/19/2025 7:31:29,User_373,Chocolate Sundae,12,1
+8/19/2025 7:31:30,User_395,Vanilla Ice Cream,10,2
+8/19/2025 7:30:30,User_720,Vanilla Ice Cream,4,2
+8/19/2025 7:28:30,User_27,Cookies & Cream,13,1
+8/19/2025 7:32:30,User_877,Strawberry Sorbet,13,2
+8/19/2025 7:30:31,User_516,Mint Gelato,15,1
+8/19/2025 7:28:31,User_974,Mint Gelato,9,1
+8/19/2025 7:32:31,User_330,Strawberry Sorbet,13,1
+8/19/2025 7:37:23,User_242,Mint Gelato,13,3
+8/19/2025 7:34:24,User_978,Cookies & Cream,3,3
+8/19/2025 7:34:25,User_442,Vanilla Ice Cream,2,3
+8/19/2025 7:34:25,User_418,Vanilla Ice Cream,3,1
+8/19/2025 7:34:25,User_890,Strawberry Sorbet,9,2
+8/19/2025 7:34:25,User_697,Strawberry Sorbet,11,1
+8/19/2025 7:35:26,User_899,Strawberry Sorbet,9,3
+8/19/2025 7:37:26,User_63,Vanilla Ice Cream,9,1
+8/19/2025 7:33:26,User_172,Cookies & Cream,9,3
+8/19/2025 7:35:27,User_627,Cookies & Cream,12,4
+8/19/2025 7:42:32,User_841,Strawberry Sorbet,13,2
+8/19/2025 7:38:34,User_502,Strawberry Sorbet,6,4
+8/19/2025 7:41:34,User_158,Mint Gelato,7,1
+8/19/2025 7:42:34,User_411,Cookies & Cream,3,3
+8/19/2025 7:41:35,User_373,Mint Gelato,5,4
+8/19/2025 7:41:35,User_307,Cookies & Cream,9,1
+8/19/2025 7:42:35,User_881,Mint Gelato,15,2
+8/19/2025 7:42:35,User_913,Mint Gelato,8,1
+8/19/2025 7:38:36,User_588,Cookies & Cream,3,2
+8/19/2025 7:41:37,User_494,Cookies & Cream,10,3
+8/19/2025 7:43:29,User_734,Cookies & Cream,14,1
+8/19/2025 7:43:30,User_238,Cookies & Cream,8,1
+8/19/2025 7:43:31,User_471,Vanilla Ice Cream,1,3
+8/19/2025 7:47:32,User_10,Chocolate Sundae,3,2
+8/19/2025 7:45:32,User_807,Strawberry Sorbet,12,1
+8/19/2025 7:47:32,User_63,Chocolate Sundae,11,4
+8/19/2025 7:47:32,User_770,Mint Gelato,13,3
+8/19/2025 7:47:32,User_697,Vanilla Ice Cream,12,2
+8/19/2025 7:44:32,User_697,Strawberry Sorbet,9,4
+8/19/2025 7:45:32,User_245,Chocolate Sundae,3,1
+8/19/2025 7:50:24,User_635,Cookies & Cream,12,1
+8/19/2025 7:52:24,User_746,Strawberry Sorbet,4,3
+8/19/2025 7:49:24,User_484,Chocolate Sundae,13,2
+8/19/2025 7:50:25,User_166,Chocolate Sundae,4,1
+8/19/2025 7:51:25,User_591,Strawberry Sorbet,13,4
+8/19/2025 7:52:25,User_276,Vanilla Ice Cream,15,1
+8/19/2025 7:48:25,User_899,Chocolate Sundae,6,4
+8/19/2025 7:48:25,User_779,Vanilla Ice Cream,4,2
+8/19/2025 7:52:25,User_129,Vanilla Ice Cream,12,2
+8/19/2025 7:52:26,User_605,Mint Gelato,8,4
+8/19/2025 7:57:23,User_787,Mint Gelato,8,3
+8/19/2025 7:54:24,User_128,Chocolate Sundae,6,1
+8/19/2025 7:56:24,User_309,Cookies & Cream,9,3
+8/19/2025 7:56:25,User_462,Mint Gelato,8,1
+8/19/2025 7:53:25,User_157,Chocolate Sundae,11,3
+8/19/2025 7:53:25,User_585,Vanilla Ice Cream,1,4
+8/19/2025 7:55:25,User_250,Chocolate Sundae,13,2
+8/19/2025 7:55:26,User_592,Chocolate Sundae,5,3
+8/19/2025 7:53:26,User_280,Mint Gelato,1,2
+8/19/2025 7:55:26,User_938,Cookies & Cream,5,4
+8/19/2025 8:02:25,User_737,Chocolate Sundae,7,3
+8/19/2025 8:01:25,User_850,Strawberry Sorbet,9,4
+8/19/2025 7:58:25,User_31,Strawberry Sorbet,8,2
+8/19/2025 8:02:26,User_753,Mint Gelato,3,3
+8/19/2025 8:02:27,User_486,Chocolate Sundae,8,4
+8/19/2025 8:00:27,User_490,Strawberry Sorbet,7,3
+8/19/2025 7:58:27,User_288,Mint Gelato,1,1
+8/19/2025 7:59:28,User_75,Strawberry Sorbet,3,4
+8/19/2025 7:59:28,User_958,Chocolate Sundae,15,4
+8/19/2025 8:00:28,User_317,Strawberry Sorbet,1,4
+8/19/2025 8:05:24,User_70,Vanilla Ice Cream,8,4
+8/19/2025 8:06:25,User_122,Cookies & Cream,15,3
+8/19/2025 8:03:35,User_794,Mint Gelato,9,3
+8/19/2025 8:06:36,User_414,Chocolate Sundae,11,4
+8/19/2025 8:07:36,User_87,Vanilla Ice Cream,6,2
+8/19/2025 8:04:36,User_746,Chocolate Sundae,12,4
+8/19/2025 8:04:36,User_100,Strawberry Sorbet,6,1
+8/19/2025 8:05:37,User_111,Vanilla Ice Cream,8,2
+8/19/2025 8:06:37,User_681,Chocolate Sundae,9,4
+8/19/2025 8:03:37,User_474,Chocolate Sundae,4,2
+8/19/2025 8:12:28,User_341,Mint Gelato,5,4
+8/19/2025 8:11:28,User_422,Vanilla Ice Cream,2,1
+8/19/2025 8:09:29,User_465,Mint Gelato,2,3
+8/19/2025 8:12:29,User_579,Vanilla Ice Cream,4,1
+8/19/2025 8:11:29,User_404,Strawberry Sorbet,7,2
+8/19/2025 8:11:29,User_707,Cookies & Cream,14,4
+8/19/2025 8:12:29,User_282,Mint Gelato,1,3
+8/19/2025 8:08:30,User_261,Cookies & Cream,14,3
+8/19/2025 8:10:30,User_824,Chocolate Sundae,1,3
+8/19/2025 8:09:32,User_52,Chocolate Sundae,8,4
+8/19/2025 8:17:26,User_926,Cookies & Cream,12,3
+8/19/2025 8:14:27,User_386,Chocolate Sundae,14,1
+8/19/2025 8:13:28,User_16,Cookies & Cream,6,4
+8/19/2025 8:14:29,User_53,Chocolate Sundae,9,4
+8/19/2025 8:13:30,User_304,Vanilla Ice Cream,7,1
+8/19/2025 8:14:30,User_191,Strawberry Sorbet,9,3
+8/19/2025 8:15:30,User_870,Vanilla Ice Cream,13,1
+8/19/2025 8:13:30,User_337,Cookies & Cream,7,3
+8/19/2025 8:13:30,User_95,Chocolate Sundae,8,4
+8/19/2025 8:13:30,User_129,Chocolate Sundae,3,2
+8/19/2025 8:22:22,User_694,Vanilla Ice Cream,4,3
+8/19/2025 8:18:23,User_569,Chocolate Sundae,14,2
+8/19/2025 8:18:23,User_920,Vanilla Ice Cream,3,4
+8/19/2025 8:20:23,User_925,Mint Gelato,9,2
+8/19/2025 8:22:23,User_746,Mint Gelato,5,3
+8/19/2025 8:22:23,User_124,Chocolate Sundae,10,2
+8/19/2025 8:22:23,User_684,Chocolate Sundae,2,4
+8/19/2025 8:22:23,User_689,Cookies & Cream,2,3
+8/19/2025 8:18:24,User_92,Cookies & Cream,2,1
+8/19/2025 8:22:24,User_479,Cookies & Cream,11,3
+8/19/2025 8:24:23,User_176,Vanilla Ice Cream,1,4
+8/19/2025 8:24:24,User_372,Mint Gelato,12,2
+8/19/2025 8:27:24,User_753,Chocolate Sundae,1,4
+8/19/2025 8:25:25,User_951,Mint Gelato,13,2
+8/19/2025 8:27:25,User_232,Strawberry Sorbet,11,3
+8/19/2025 8:25:25,User_261,Vanilla Ice Cream,12,2
+8/19/2025 8:27:25,User_704,Chocolate Sundae,12,4
+8/19/2025 8:23:25,User_706,Chocolate Sundae,1,3
+8/19/2025 8:26:25,User_3,Mint Gelato,7,1
+8/19/2025 8:27:26,User_243,Cookies & Cream,14,3
+8/19/2025 8:31:25,User_757,Strawberry Sorbet,7,1
+8/19/2025 8:28:25,User_336,Strawberry Sorbet,9,2
+8/19/2025 8:32:25,User_804,Mint Gelato,8,4
+8/19/2025 8:31:26,User_599,Vanilla Ice Cream,9,2
+8/19/2025 8:32:26,User_893,Strawberry Sorbet,12,2
+8/19/2025 8:30:27,User_478,Strawberry Sorbet,14,1
+8/19/2025 8:28:27,User_18,Vanilla Ice Cream,12,3
+8/19/2025 8:29:27,User_743,Cookies & Cream,13,2
+8/19/2025 8:31:27,User_316,Strawberry Sorbet,1,4
+8/19/2025 8:28:28,User_445,Strawberry Sorbet,1,4
+8/19/2025 8:34:29,User_903,Cookies & Cream,4,1
+8/19/2025 8:35:30,User_62,Strawberry Sorbet,1,1
+8/19/2025 8:34:31,User_455,Strawberry Sorbet,15,4
+8/19/2025 8:34:32,User_298,Cookies & Cream,12,1
+8/19/2025 8:35:33,User_340,Strawberry Sorbet,6,3
+8/19/2025 8:35:33,User_450,Strawberry Sorbet,6,3
+8/19/2025 8:37:33,User_102,Vanilla Ice Cream,2,3
+8/19/2025 8:33:34,User_897,Vanilla Ice Cream,1,2
+8/19/2025 8:37:34,User_500,Vanilla Ice Cream,1,4
+8/19/2025 8:36:34,User_952,Chocolate Sundae,11,1
+8/19/2025 8:41:26,User_741,Chocolate Sundae,6,4
+8/19/2025 8:42:27,User_612,Strawberry Sorbet,4,4
+8/19/2025 8:41:27,User_533,Vanilla Ice Cream,12,3
+8/19/2025 8:40:27,User_310,Cookies & Cream,13,3
+8/19/2025 8:42:28,User_453,Strawberry Sorbet,2,1
+8/19/2025 8:42:29,User_729,Chocolate Sundae,1,1
+8/19/2025 8:41:30,User_735,Strawberry Sorbet,13,2
+8/19/2025 8:41:30,User_300,Mint Gelato,1,4
+8/19/2025 8:39:30,User_123,Chocolate Sundae,7,4
+8/19/2025 8:40:31,User_327,Strawberry Sorbet,13,3
+8/19/2025 8:47:32,User_553,Vanilla Ice Cream,13,2
+8/19/2025 8:46:33,User_942,Strawberry Sorbet,6,4
+8/19/2025 8:46:34,User_375,Cookies & Cream,5,3
+8/19/2025 8:44:34,User_1,Cookies & Cream,13,1
+8/19/2025 8:43:35,User_982,Cookies & Cream,9,4
+8/19/2025 8:44:35,User_499,Chocolate Sundae,11,1
+8/19/2025 8:43:35,User_642,Cookies & Cream,2,2
+8/19/2025 8:45:35,User_281,Cookies & Cream,5,2
+8/19/2025 8:47:36,User_170,Cookies & Cream,7,2
+8/19/2025 8:47:36,User_548,Strawberry Sorbet,2,4
+8/19/2025 8:50:24,User_863,Cookies & Cream,10,1
+8/19/2025 8:51:24,User_768,Vanilla Ice Cream,12,1
+8/19/2025 8:52:24,User_931,Strawberry Sorbet,3,4
+8/19/2025 8:48:25,User_621,Strawberry Sorbet,14,3
+8/19/2025 8:51:25,User_344,Cookies & Cream,3,2
+8/19/2025 8:51:25,User_66,Strawberry Sorbet,14,1
+8/19/2025 8:48:25,User_183,Vanilla Ice Cream,12,4
+8/19/2025 8:52:25,User_12,Chocolate Sundae,4,3
+8/19/2025 8:48:26,User_77,Mint Gelato,11,1
+8/19/2025 8:49:27,User_370,Strawberry Sorbet,11,3
+8/19/2025 8:55:28,User_687,Strawberry Sorbet,11,4
+8/19/2025 8:54:29,User_989,Chocolate Sundae,12,1
+8/19/2025 8:53:30,User_334,Cookies & Cream,3,1
+8/19/2025 8:56:30,User_661,Vanilla Ice Cream,14,2
+8/19/2025 8:57:30,User_895,Strawberry Sorbet,3,2
+8/19/2025 8:57:30,User_536,Vanilla Ice Cream,7,4
+8/19/2025 8:54:30,User_747,Vanilla Ice Cream,1,2
+8/19/2025 8:57:30,User_352,Strawberry Sorbet,8,3
+8/19/2025 8:57:31,User_475,Chocolate Sundae,14,4
+8/19/2025 8:56:31,User_62,Vanilla Ice Cream,4,4
+8/19/2025 9:02:25,User_354,Mint Gelato,5,1
+8/19/2025 9:02:25,User_685,Cookies & Cream,13,3
+8/19/2025 8:58:26,User_963,Vanilla Ice Cream,6,2
+8/19/2025 9:00:26,User_162,Mint Gelato,15,4
+8/19/2025 9:01:27,User_714,Strawberry Sorbet,4,3
+8/19/2025 9:02:27,User_159,Mint Gelato,3,3
+8/19/2025 8:58:28,User_373,Mint Gelato,1,1
+8/19/2025 8:58:28,User_16,Vanilla Ice Cream,10,3
+8/19/2025 8:59:28,User_137,Vanilla Ice Cream,10,1
+8/19/2025 9:00:28,User_295,Vanilla Ice Cream,8,1
+8/19/2025 9:03:32,User_349,Mint Gelato,4,4
+8/19/2025 9:04:33,User_606,Mint Gelato,11,3
+8/19/2025 9:05:34,User_782,Strawberry Sorbet,7,3
+8/19/2025 9:06:35,User_226,Cookies & Cream,6,1
+8/19/2025 9:05:36,User_729,Cookies & Cream,13,4
+8/19/2025 9:06:36,User_645,Chocolate Sundae,2,1
+8/19/2025 9:06:36,User_108,Chocolate Sundae,4,4
+8/19/2025 9:06:37,User_984,Mint Gelato,6,3
+8/19/2025 9:03:37,User_945,Cookies & Cream,2,4
+8/19/2025 9:03:37,User_950,Cookies & Cream,1,2
+8/19/2025 9:12:22,User_954,Chocolate Sundae,7,3
+8/19/2025 9:11:26,User_134,Strawberry Sorbet,1,4
+8/19/2025 9:11:26,User_440,Chocolate Sundae,10,2
+8/19/2025 9:10:26,User_256,Cookies & Cream,8,2
+8/19/2025 9:09:27,User_573,Cookies & Cream,10,4
+8/19/2025 9:13:28,User_657,Chocolate Sundae,3,2
+8/19/2025 9:09:29,User_773,Mint Gelato,3,4
+8/19/2025 9:11:29,User_13,Cookies & Cream,11,2
+8/19/2025 9:12:29,User_655,Mint Gelato,13,4
+8/19/2025 9:10:30,User_541,Chocolate Sundae,12,3
+8/19/2025 9:15:33,User_192,Cookies & Cream,3,1
+8/19/2025 9:13:34,User_285,Mint Gelato,8,4
+8/19/2025 9:15:34,User_985,Mint Gelato,9,2
+8/19/2025 9:14:36,User_424,Mint Gelato,5,1
+8/19/2025 9:16:36,User_729,Mint Gelato,7,2
+8/19/2025 9:14:36,User_677,Chocolate Sundae,10,4
+8/19/2025 9:16:37,User_331,Strawberry Sorbet,12,1
+8/19/2025 9:14:37,User_557,Cookies & Cream,8,4
+8/19/2025 9:13:38,User_21,Chocolate Sundae,13,1
+8/19/2025 9:14:38,User_777,Mint Gelato,1,3
+8/19/2025 9:20:26,User_469,Cookies & Cream,2,1
+8/19/2025 9:18:27,User_758,Chocolate Sundae,14,4
+8/19/2025 9:18:27,User_733,Cookies & Cream,7,4
+8/19/2025 9:22:28,User_56,Vanilla Ice Cream,4,1
+8/19/2025 9:21:29,User_678,Chocolate Sundae,5,4
+8/19/2025 9:19:29,User_919,Cookies & Cream,7,4
+8/19/2025 9:19:30,User_174,Cookies & Cream,8,4
+8/19/2025 9:19:30,User_580,Vanilla Ice Cream,7,3
+8/19/2025 9:18:32,User_963,Chocolate Sundae,5,2
+8/19/2025 9:22:32,User_66,Strawberry Sorbet,3,1
+8/19/2025 9:26:28,User_828,Chocolate Sundae,1,4
+8/19/2025 9:27:29,User_817,Vanilla Ice Cream,14,2
+8/19/2025 9:23:30,User_953,Strawberry Sorbet,2,4
+8/19/2025 9:23:31,User_575,Cookies & Cream,6,4
+8/19/2025 9:26:31,User_555,Cookies & Cream,14,1
+8/19/2025 9:24:32,User_506,Chocolate Sundae,9,2
+8/19/2025 9:23:32,User_763,Chocolate Sundae,5,3
+8/19/2025 9:26:32,User_493,Strawberry Sorbet,6,1
+8/19/2025 9:25:33,User_709,Chocolate Sundae,13,2
+8/19/2025 9:24:33,User_504,Mint Gelato,11,3
+8/19/2025 9:31:28,User_275,Mint Gelato,3,4
+8/19/2025 9:28:29,User_209,Vanilla Ice Cream,10,4
+8/19/2025 9:29:29,User_690,Mint Gelato,2,4
+8/19/2025 9:32:29,User_462,Chocolate Sundae,15,3
+8/19/2025 9:32:29,User_84,Cookies & Cream,4,2
+8/19/2025 9:30:30,User_459,Strawberry Sorbet,14,4
+8/19/2025 9:31:30,User_130,Strawberry Sorbet,10,3
+8/19/2025 9:31:30,User_29,Mint Gelato,2,1
+8/19/2025 9:30:30,User_288,Vanilla Ice Cream,12,2
+8/19/2025 9:28:31,User_204,Mint Gelato,12,2
+8/19/2025 9:37:32,User_594,Cookies & Cream,4,2
+8/19/2025 9:37:33,User_589,Strawberry Sorbet,7,3
+8/19/2025 9:34:34,User_654,Strawberry Sorbet,1,3
+8/19/2025 9:35:35,User_145,Chocolate Sundae,10,1
+8/19/2025 9:34:35,User_789,Strawberry Sorbet,8,1
+8/19/2025 9:34:35,User_814,Mint Gelato,9,1
+8/19/2025 9:34:35,User_81,Chocolate Sundae,4,4
+8/19/2025 9:36:36,User_123,Mint Gelato,14,3
+8/19/2025 9:35:36,User_122,Vanilla Ice Cream,11,2
+8/19/2025 9:35:36,User_957,Cookies & Cream,7,1
+8/19/2025 9:39:39,User_799,Cookies & Cream,13,3
+8/19/2025 9:42:42,User_420,Mint Gelato,6,2
+8/19/2025 9:41:42,User_877,Vanilla Ice Cream,10,2
+8/19/2025 9:42:43,User_4,Vanilla Ice Cream,5,3
+8/19/2025 9:40:43,User_302,Strawberry Sorbet,15,1
+8/19/2025 9:41:43,User_179,Mint Gelato,6,2
+8/19/2025 9:42:44,User_983,Strawberry Sorbet,13,2
+8/19/2025 9:38:44,User_343,Vanilla Ice Cream,6,1
+8/19/2025 9:40:44,User_349,Chocolate Sundae,12,1
+8/19/2025 9:41:44,User_293,Strawberry Sorbet,6,2
+8/19/2025 9:45:30,User_666,Chocolate Sundae,12,4
+8/19/2025 9:43:30,User_110,Vanilla Ice Cream,11,2
+8/19/2025 9:44:31,User_312,Mint Gelato,11,2
+8/19/2025 9:44:32,User_54,Mint Gelato,10,1
+8/19/2025 9:45:32,User_533,Chocolate Sundae,14,2
+8/19/2025 9:47:32,User_994,Cookies & Cream,8,3
+8/19/2025 9:45:32,User_921,Mint Gelato,3,1
+8/19/2025 9:44:33,User_599,Mint Gelato,2,1
+8/19/2025 9:45:33,User_958,Cookies & Cream,7,2
+8/19/2025 9:45:33,User_779,Mint Gelato,14,4
+8/19/2025 9:50:33,User_82,Vanilla Ice Cream,10,3
+8/19/2025 9:52:34,User_988,Vanilla Ice Cream,14,4
+8/19/2025 9:51:35,User_25,Vanilla Ice Cream,14,1
+8/19/2025 9:49:35,User_590,Strawberry Sorbet,2,1
+8/19/2025 9:51:36,User_285,Mint Gelato,6,1
+8/19/2025 9:52:36,User_502,Cookies & Cream,15,2
+8/19/2025 9:49:36,User_18,Vanilla Ice Cream,6,4
+8/19/2025 9:50:36,User_218,Mint Gelato,12,2
+8/19/2025 9:52:37,User_378,Mint Gelato,13,2
+8/19/2025 9:50:38,User_449,Mint Gelato,6,2
+8/19/2025 9:53:37,User_315,Cookies & Cream,4,1
+8/19/2025 9:55:37,User_999,Chocolate Sundae,11,2
+8/19/2025 9:54:40,User_900,Vanilla Ice Cream,2,4
+8/19/2025 9:54:40,User_568,Chocolate Sundae,14,4
+8/19/2025 9:55:40,User_309,Cookies & Cream,11,2
+8/19/2025 9:56:40,User_970,Mint Gelato,4,4
+8/19/2025 9:56:41,User_275,Vanilla Ice Cream,6,3
+8/19/2025 9:57:41,User_92,Chocolate Sundae,3,1
+8/19/2025 9:54:41,User_658,Mint Gelato,11,3
+8/19/2025 9:56:41,User_663,Cookies & Cream,2,1
+8/19/2025 10:02:28,User_380,Cookies & Cream,3,1
+8/19/2025 10:00:31,User_668,Vanilla Ice Cream,14,3
+8/19/2025 10:01:31,User_319,Vanilla Ice Cream,9,2
+8/19/2025 10:02:32,User_331,Mint Gelato,1,1
+8/19/2025 10:00:32,User_86,Strawberry Sorbet,4,4
+8/19/2025 9:59:33,User_405,Strawberry Sorbet,11,4
+8/19/2025 10:00:33,User_595,Vanilla Ice Cream,12,1
+8/19/2025 9:59:34,User_67,Vanilla Ice Cream,5,1
+8/19/2025 10:01:34,User_253,Cookies & Cream,8,3
+8/19/2025 10:02:34,User_253,Mint Gelato,11,2
+8/19/2025 10:06:25,User_19,Vanilla Ice Cream,1,3
+8/19/2025 10:04:26,User_444,Vanilla Ice Cream,15,1
+8/19/2025 10:03:27,User_862,Cookies & Cream,15,4
+8/19/2025 10:07:27,User_239,Cookies & Cream,13,1
+8/19/2025 10:05:28,User_642,Vanilla Ice Cream,14,2
+8/19/2025 10:07:28,User_615,Mint Gelato,10,1
+8/19/2025 10:03:29,User_169,Mint Gelato,5,1
+8/19/2025 10:07:29,User_494,Cookies & Cream,15,2
+8/19/2025 10:04:29,User_83,Vanilla Ice Cream,3,4
+8/19/2025 10:07:29,User_904,Vanilla Ice Cream,9,3
+8/19/2025 10:11:29,User_327,Cookies & Cream,15,1
+8/19/2025 10:11:29,User_148,Strawberry Sorbet,8,1
+8/19/2025 10:09:29,User_51,Mint Gelato,8,4
+8/19/2025 10:12:29,User_701,Cookies & Cream,3,1
+8/19/2025 10:11:30,User_117,Strawberry Sorbet,5,3
+8/19/2025 10:11:30,User_782,Strawberry Sorbet,9,3
+8/19/2025 10:08:30,User_813,Cookies & Cream,6,1
+8/19/2025 10:12:30,User_103,Cookies & Cream,1,3
+8/19/2025 10:10:30,User_752,Cookies & Cream,3,2
+8/19/2025 10:08:31,User_839,Vanilla Ice Cream,13,2
+8/19/2025 10:14:50,User_761,Vanilla Ice Cream,3,4
+8/19/2025 10:17:51,User_772,Strawberry Sorbet,8,4
+8/19/2025 10:14:01,User_303,Chocolate Sundae,12,2
+8/19/2025 10:18:01,User_370,Mint Gelato,15,4
+8/19/2025 10:16:01,User_306,Chocolate Sundae,14,3
+8/19/2025 10:14:02,User_62,Strawberry Sorbet,5,4
+8/19/2025 10:16:02,User_234,Cookies & Cream,11,4
+8/19/2025 10:15:02,User_294,Strawberry Sorbet,2,1
+8/19/2025 10:17:02,User_852,Chocolate Sundae,3,1
+8/19/2025 10:17:03,User_536,Mint Gelato,9,3
+8/19/2025 10:22:45,User_627,Mint Gelato,5,2
+8/19/2025 10:19:46,User_418,Vanilla Ice Cream,11,4
+8/19/2025 10:18:47,User_331,Mint Gelato,8,2
+8/19/2025 10:19:47,User_965,Mint Gelato,2,1
+8/19/2025 10:19:47,User_307,Chocolate Sundae,11,1
+8/19/2025 10:22:47,User_347,Strawberry Sorbet,14,3
+8/19/2025 10:18:48,User_169,Strawberry Sorbet,2,1
+8/19/2025 10:19:48,User_789,Mint Gelato,13,4
+8/19/2025 10:20:48,User_339,Mint Gelato,2,2
+8/19/2025 10:21:48,User_216,Vanilla Ice Cream,11,2
+8/19/2025 10:24:33,User_843,Strawberry Sorbet,1,3
+8/19/2025 10:27:34,User_491,Strawberry Sorbet,9,2
+8/19/2025 10:25:44,User_707,Cookies & Cream,15,4
+8/19/2025 10:27:44,User_612,Cookies & Cream,13,1
+8/19/2025 10:26:44,User_386,Mint Gelato,8,1
+8/19/2025 10:23:44,User_327,Vanilla Ice Cream,9,4
+8/19/2025 10:26:44,User_81,Mint Gelato,4,2
+8/19/2025 10:23:45,User_126,Mint Gelato,13,4
+8/19/2025 10:27:45,User_105,Chocolate Sundae,1,3
+8/19/2025 10:23:45,User_770,Strawberry Sorbet,8,2
+8/19/2025 10:31:26,User_708,Cookies & Cream,4,1
+8/19/2025 10:31:27,User_889,Mint Gelato,1,4
+8/19/2025 10:31:27,User_278,Cookies & Cream,15,1
+8/19/2025 10:32:27,User_225,Vanilla Ice Cream,9,3
+8/19/2025 10:29:27,User_731,Cookies & Cream,14,3
+8/19/2025 10:31:27,User_541,Vanilla Ice Cream,5,2
+8/19/2025 10:29:28,User_872,Vanilla Ice Cream,5,1
+8/19/2025 10:32:28,User_578,Chocolate Sundae,5,3
+8/19/2025 10:30:28,User_531,Strawberry Sorbet,11,1
+8/19/2025 10:32:28,User_224,Strawberry Sorbet,2,3
+8/19/2025 10:36:25,User_422,Chocolate Sundae,8,2
+8/19/2025 10:33:26,User_650,Chocolate Sundae,9,4
+8/19/2025 10:36:26,User_829,Strawberry Sorbet,3,4
+8/19/2025 10:37:27,User_245,Chocolate Sundae,12,2
+8/19/2025 10:33:27,User_118,Strawberry Sorbet,4,2
+8/19/2025 10:37:28,User_365,Mint Gelato,7,2
+8/19/2025 10:34:28,User_859,Cookies & Cream,3,3
+8/19/2025 10:34:28,User_622,Strawberry Sorbet,14,1
+8/19/2025 10:35:28,User_922,Strawberry Sorbet,12,3
+8/19/2025 10:34:28,User_983,Vanilla Ice Cream,8,3
+8/19/2025 10:40:26,User_230,Cookies & Cream,6,4
+8/19/2025 10:42:27,User_679,Mint Gelato,1,4
+8/19/2025 10:40:28,User_539,Cookies & Cream,10,1
+8/19/2025 10:41:28,User_986,Mint Gelato,4,1
+8/19/2025 10:39:28,User_318,Strawberry Sorbet,15,1
+8/19/2025 10:39:28,User_766,Vanilla Ice Cream,3,4
+8/19/2025 10:38:29,User_674,Mint Gelato,6,3
+8/19/2025 10:39:29,User_365,Chocolate Sundae,13,2
+8/19/2025 10:39:29,User_96,Chocolate Sundae,1,3
+8/19/2025 10:39:29,User_585,Mint Gelato,8,2
+8/19/2025 10:47:30,User_954,Strawberry Sorbet,13,2
+8/19/2025 10:47:31,User_667,Cookies & Cream,5,4
+8/19/2025 10:43:31,User_543,Chocolate Sundae,2,2
+8/19/2025 10:45:32,User_892,Chocolate Sundae,2,4
+8/19/2025 10:45:32,User_694,Strawberry Sorbet,10,4
+8/19/2025 10:44:32,User_428,Chocolate Sundae,10,4
+8/19/2025 10:46:32,User_394,Chocolate Sundae,12,4
+8/19/2025 10:45:32,User_171,Strawberry Sorbet,10,4
+8/19/2025 10:45:33,User_362,Strawberry Sorbet,9,3
+8/19/2025 10:46:33,User_559,Mint Gelato,7,3
+8/19/2025 10:48:26,User_27,Strawberry Sorbet,9,2
+8/19/2025 10:52:27,User_503,Vanilla Ice Cream,11,1
+8/19/2025 10:49:27,User_953,Chocolate Sundae,13,1
+8/19/2025 10:49:27,User_677,Mint Gelato,15,4
+8/19/2025 10:52:28,User_827,Strawberry Sorbet,13,4
+8/19/2025 10:51:29,User_435,Cookies & Cream,1,2
+8/19/2025 10:48:29,User_382,Vanilla Ice Cream,12,1
+8/19/2025 10:51:30,User_617,Strawberry Sorbet,13,3
+8/19/2025 10:50:30,User_707,Strawberry Sorbet,4,1
+8/19/2025 10:51:30,User_183,Mint Gelato,14,4
+8/19/2025 10:57:30,User_470,Mint Gelato,5,3
+8/19/2025 10:53:31,User_441,Chocolate Sundae,15,1
+8/19/2025 10:53:32,User_579,Cookies & Cream,1,2
+8/19/2025 10:53:32,User_626,Strawberry Sorbet,13,2
+8/19/2025 10:56:32,User_969,Strawberry Sorbet,8,4
+8/19/2025 10:55:33,User_657,Strawberry Sorbet,10,4
+8/19/2025 10:53:33,User_214,Mint Gelato,4,3
+8/19/2025 10:57:33,User_264,Cookies & Cream,5,4
+8/19/2025 10:54:33,User_936,Mint Gelato,10,2
+8/19/2025 10:57:33,User_693,Mint Gelato,10,4
+8/19/2025 11:01:25,User_811,Chocolate Sundae,11,4
+8/19/2025 11:00:25,User_352,Cookies & Cream,3,3
+8/19/2025 11:02:26,User_933,Vanilla Ice Cream,12,1
+8/19/2025 10:58:26,User_139,Chocolate Sundae,5,3
+8/19/2025 11:00:26,User_700,Cookies & Cream,14,1
+8/19/2025 10:58:26,User_565,Mint Gelato,9,4
+8/19/2025 10:59:26,User_531,Chocolate Sundae,14,2
+8/19/2025 11:02:27,User_548,Strawberry Sorbet,5,4
+8/19/2025 10:58:27,User_414,Mint Gelato,5,3
+8/19/2025 10:59:27,User_286,Vanilla Ice Cream,8,4
+8/19/2025 11:04:23,User_52,Chocolate Sundae,7,1
+8/19/2025 11:07:24,User_361,Mint Gelato,11,1
+8/19/2025 11:07:28,User_869,Mint Gelato,7,4
+8/19/2025 11:03:28,User_831,Chocolate Sundae,8,2
+8/19/2025 11:06:29,User_221,Vanilla Ice Cream,8,3
+8/19/2025 11:07:29,User_766,Vanilla Ice Cream,9,1
+8/19/2025 11:03:29,User_640,Cookies & Cream,6,2
+8/19/2025 11:05:30,User_58,Vanilla Ice Cream,7,2
+8/19/2025 11:05:30,User_61,Vanilla Ice Cream,10,1
+8/19/2025 11:07:30,User_742,Strawberry Sorbet,11,1
+8/19/2025 11:12:25,User_265,Chocolate Sundae,12,3
+8/19/2025 11:11:25,User_650,Cookies & Cream,7,4
+8/19/2025 11:12:26,User_678,Mint Gelato,2,1
+8/19/2025 11:10:26,User_362,Chocolate Sundae,1,4
+8/19/2025 11:11:26,User_818,Chocolate Sundae,8,1
+8/19/2025 11:10:27,User_294,Cookies & Cream,14,2
+8/19/2025 11:09:27,User_600,Chocolate Sundae,7,1
+8/19/2025 11:12:27,User_72,Chocolate Sundae,2,4
+8/19/2025 11:11:27,User_484,Mint Gelato,14,1
+8/19/2025 11:10:28,User_194,Vanilla Ice Cream,3,3
+8/19/2025 11:14:30,User_528,Strawberry Sorbet,14,1
+8/19/2025 11:17:30,User_563,Strawberry Sorbet,7,1
+8/19/2025 11:16:31,User_931,Strawberry Sorbet,12,4
+8/19/2025 11:17:31,User_13,Cookies & Cream,10,2
+8/19/2025 11:16:31,User_726,Cookies & Cream,5,1
+8/19/2025 11:15:31,User_504,Vanilla Ice Cream,8,2
+8/19/2025 11:13:31,User_185,Strawberry Sorbet,11,3
+8/19/2025 11:16:31,User_525,Mint Gelato,4,1
+8/19/2025 11:14:32,User_676,Cookies & Cream,7,2
+8/19/2025 11:15:32,User_360,Strawberry Sorbet,11,2
+8/19/2025 11:19:24,User_597,Strawberry Sorbet,7,1
+8/19/2025 11:22:24,User_288,Vanilla Ice Cream,1,1
+8/19/2025 11:19:25,User_692,Vanilla Ice Cream,1,3
+8/19/2025 11:18:25,User_377,Mint Gelato,10,2
+8/19/2025 11:20:25,User_100,Mint Gelato,8,2
+8/19/2025 11:20:25,User_312,Chocolate Sundae,15,2
+8/19/2025 11:19:25,User_210,Chocolate Sundae,4,2
+8/19/2025 11:18:25,User_12,Chocolate Sundae,4,1
+8/19/2025 11:18:25,User_365,Chocolate Sundae,10,3
+8/19/2025 11:20:26,User_203,Chocolate Sundae,14,3
+8/19/2025 11:24:54,User_157,Mint Gelato,6,1
+8/19/2025 11:24:55,User_394,Vanilla Ice Cream,12,3
+8/19/2025 11:23:56,User_482,Vanilla Ice Cream,4,4
+8/19/2025 11:23:56,User_356,Chocolate Sundae,10,2
+8/19/2025 11:25:56,User_414,Cookies & Cream,13,2
+8/19/2025 11:23:57,User_242,Vanilla Ice Cream,14,1
+8/19/2025 11:24:57,User_662,Mint Gelato,3,1
+8/19/2025 11:25:58,User_340,Vanilla Ice Cream,1,4
+8/19/2025 11:27:58,User_881,Strawberry Sorbet,5,4
+8/19/2025 11:23:58,User_916,Mint Gelato,14,3
+8/19/2025 11:30:40,User_919,Strawberry Sorbet,14,3
+8/19/2025 11:31:41,User_687,Chocolate Sundae,6,1
+8/19/2025 11:29:41,User_686,Cookies & Cream,5,2
+8/19/2025 11:32:42,User_863,Chocolate Sundae,4,2
+8/19/2025 11:32:42,User_25,Cookies & Cream,2,2
+8/19/2025 11:29:42,User_72,Cookies & Cream,13,4
+8/19/2025 11:31:42,User_249,Strawberry Sorbet,15,1
+8/19/2025 11:29:42,User_442,Strawberry Sorbet,15,4
+8/19/2025 11:31:42,User_281,Mint Gelato,2,1
+8/19/2025 11:28:43,User_96,Chocolate Sundae,2,1
+8/19/2025 11:33:23,User_505,Mint Gelato,5,2
+8/19/2025 11:33:23,User_315,Chocolate Sundae,7,1
+8/19/2025 11:34:24,User_452,Mint Gelato,8,3
+8/19/2025 11:36:24,User_646,Cookies & Cream,9,4
+8/19/2025 11:33:24,User_465,Cookies & Cream,6,2
+8/19/2025 11:35:25,User_51,Mint Gelato,7,2
+8/19/2025 11:35:25,User_888,Chocolate Sundae,2,2
+8/19/2025 11:37:25,User_788,Mint Gelato,11,1
+8/19/2025 11:37:25,User_559,Vanilla Ice Cream,2,2
+8/19/2025 11:36:25,User_844,Mint Gelato,7,2
+8/19/2025 11:42:31,User_316,Chocolate Sundae,1,2
+8/19/2025 11:41:32,User_731,Vanilla Ice Cream,13,4
+8/19/2025 11:39:32,User_924,Mint Gelato,1,3
+8/19/2025 11:41:32,User_199,Mint Gelato,5,1
+8/19/2025 11:39:33,User_414,Cookies & Cream,13,1
+8/19/2025 11:38:33,User_345,Mint Gelato,14,3
+8/19/2025 11:38:33,User_830,Chocolate Sundae,12,2
+8/19/2025 11:40:33,User_812,Vanilla Ice Cream,1,1
+8/19/2025 11:42:34,User_503,Cookies & Cream,7,4
+8/19/2025 11:41:34,User_496,Chocolate Sundae,9,1
+8/19/2025 11:45:31,User_598,Mint Gelato,12,4
+8/19/2025 11:46:32,User_149,Vanilla Ice Cream,13,2
+8/19/2025 11:46:32,User_812,Mint Gelato,9,4
+8/19/2025 11:47:32,User_149,Strawberry Sorbet,13,4
+8/19/2025 11:47:32,User_474,Strawberry Sorbet,8,4
+8/19/2025 11:44:32,User_354,Cookies & Cream,5,3
+8/19/2025 11:45:33,User_20,Chocolate Sundae,7,2
+8/19/2025 11:46:34,User_651,Cookies & Cream,2,3
+8/19/2025 11:46:34,User_364,Cookies & Cream,3,1
+8/19/2025 11:44:34,User_654,Cookies & Cream,3,4
+8/19/2025 11:50:26,User_925,Mint Gelato,8,1
+8/19/2025 11:49:26,User_770,Mint Gelato,1,2
+8/19/2025 11:52:26,User_449,Strawberry Sorbet,3,2
+8/19/2025 11:48:26,User_321,Strawberry Sorbet,1,4
+8/19/2025 11:51:27,User_264,Mint Gelato,11,2
+8/19/2025 11:51:28,User_553,Vanilla Ice Cream,11,4
+8/19/2025 11:50:28,User_451,Chocolate Sundae,6,4
+8/19/2025 11:49:28,User_819,Chocolate Sundae,2,3
+8/19/2025 11:51:28,User_832,Strawberry Sorbet,1,1
+8/19/2025 11:51:28,User_4,Chocolate Sundae,14,1
+8/19/2025 11:53:28,User_252,Vanilla Ice Cream,5,4
+8/19/2025 11:57:29,User_337,Cookies & Cream,15,1
+8/19/2025 11:55:30,User_295,Cookies & Cream,6,3
+8/19/2025 11:55:30,User_823,Mint Gelato,5,3
+8/19/2025 11:53:30,User_633,Cookies & Cream,15,1
+8/19/2025 11:55:31,User_615,Cookies & Cream,1,3
+8/19/2025 11:54:31,User_116,Chocolate Sundae,11,2
+8/19/2025 11:53:32,User_317,Strawberry Sorbet,2,4
+8/19/2025 11:54:32,User_405,Strawberry Sorbet,8,2
+8/19/2025 11:56:32,User_979,Cookies & Cream,1,3
+8/19/2025 11:59:23,User_671,Mint Gelato,15,2
+8/19/2025 11:58:24,User_995,Chocolate Sundae,3,3
+8/19/2025 11:58:24,User_884,Mint Gelato,5,2
+8/19/2025 12:02:24,User_810,Vanilla Ice Cream,5,1
+8/19/2025 12:02:24,User_770,Vanilla Ice Cream,10,1
+8/19/2025 11:58:25,User_373,Chocolate Sundae,2,3
+8/19/2025 11:58:25,User_593,Vanilla Ice Cream,11,3
+8/19/2025 12:00:25,User_601,Vanilla Ice Cream,7,4
+8/19/2025 12:02:25,User_111,Vanilla Ice Cream,12,3
+8/19/2025 12:00:26,User_415,Mint Gelato,3,1
+8/19/2025 12:07:33,User_209,Vanilla Ice Cream,2,1
+8/19/2025 12:05:33,User_746,Vanilla Ice Cream,1,4
+8/19/2025 12:03:34,User_703,Strawberry Sorbet,1,1
+8/19/2025 12:07:34,User_6,Strawberry Sorbet,14,1
+8/19/2025 12:06:36,User_281,Mint Gelato,11,1
+8/19/2025 12:07:36,User_229,Chocolate Sundae,1,3
+8/19/2025 12:05:36,User_530,Strawberry Sorbet,8,4
+8/19/2025 12:07:36,User_709,Cookies & Cream,12,2
+8/19/2025 12:07:36,User_550,Mint Gelato,10,2
+8/19/2025 12:07:36,User_634,Vanilla Ice Cream,4,4
+8/19/2025 12:10:26,User_477,Vanilla Ice Cream,12,3
+8/19/2025 12:12:26,User_772,Chocolate Sundae,10,3
+8/19/2025 12:12:26,User_857,Vanilla Ice Cream,7,1
+8/19/2025 12:09:27,User_71,Cookies & Cream,12,3
+8/19/2025 12:10:27,User_86,Cookies & Cream,12,2
+8/19/2025 12:09:27,User_779,Chocolate Sundae,10,3
+8/19/2025 12:12:27,User_904,Chocolate Sundae,12,3
+8/19/2025 12:11:29,User_164,Mint Gelato,4,1
+8/19/2025 12:09:29,User_233,Strawberry Sorbet,4,4
+8/19/2025 12:08:30,User_201,Strawberry Sorbet,9,2
+8/19/2025 12:17:35,User_984,Cookies & Cream,11,3
+8/19/2025 12:17:36,User_919,Cookies & Cream,2,4
+8/19/2025 12:15:37,User_734,Cookies & Cream,7,2
+8/19/2025 12:14:37,User_523,Mint Gelato,5,2
+8/19/2025 12:17:37,User_472,Cookies & Cream,12,4
+8/19/2025 12:15:38,User_18,Vanilla Ice Cream,15,2
+8/19/2025 12:17:38,User_904,Vanilla Ice Cream,15,3
+8/19/2025 12:17:38,User_919,Chocolate Sundae,13,3
+8/19/2025 12:14:38,User_810,Strawberry Sorbet,6,3
+8/19/2025 12:14:38,User_436,Vanilla Ice Cream,11,4
+8/19/2025 12:18:28,User_28,Strawberry Sorbet,11,3
+8/19/2025 12:22:28,User_420,Strawberry Sorbet,9,4
+8/19/2025 12:18:29,User_824,Vanilla Ice Cream,5,3
+8/19/2025 12:19:29,User_775,Vanilla Ice Cream,15,1
+8/19/2025 12:22:29,User_873,Cookies & Cream,15,2
+8/19/2025 12:20:29,User_333,Chocolate Sundae,9,4
+8/19/2025 12:20:29,User_215,Cookies & Cream,8,1
+8/19/2025 12:21:30,User_389,Vanilla Ice Cream,13,4
+8/19/2025 12:22:30,User_646,Vanilla Ice Cream,7,4
+8/19/2025 12:18:30,User_876,Mint Gelato,15,4
+8/19/2025 12:26:28,User_819,Strawberry Sorbet,11,3
+8/19/2025 12:24:29,User_991,Vanilla Ice Cream,7,4
+8/19/2025 12:23:39,User_606,Mint Gelato,4,1
+8/19/2025 12:27:39,User_712,Chocolate Sundae,15,2
+8/19/2025 12:24:40,User_418,Mint Gelato,1,1
+8/19/2025 12:27:40,User_65,Vanilla Ice Cream,6,3
+8/19/2025 12:25:40,User_535,Cookies & Cream,5,3
+8/19/2025 12:26:41,User_271,Mint Gelato,5,3
+8/19/2025 12:23:41,User_743,Chocolate Sundae,5,4
+8/19/2025 12:26:41,User_935,Chocolate Sundae,1,2
+8/19/2025 12:30:28,User_440,Strawberry Sorbet,13,3
+8/19/2025 12:28:28,User_366,Vanilla Ice Cream,9,4
+8/19/2025 12:28:28,User_694,Chocolate Sundae,9,1
+8/19/2025 12:30:29,User_339,Cookies & Cream,4,3
+8/19/2025 12:30:29,User_870,Strawberry Sorbet,8,3
+8/19/2025 12:29:29,User_370,Strawberry Sorbet,9,4
+8/19/2025 12:28:29,User_76,Mint Gelato,5,3
+8/19/2025 12:30:31,User_871,Mint Gelato,4,1
+8/19/2025 12:28:31,User_497,Strawberry Sorbet,6,2
+8/19/2025 12:31:31,User_223,Cookies & Cream,8,3
+8/19/2025 12:37:29,User_126,Mint Gelato,13,1
+8/19/2025 12:33:30,User_381,Strawberry Sorbet,13,1
+8/19/2025 12:35:30,User_977,Vanilla Ice Cream,9,1
+8/19/2025 12:36:31,User_802,Vanilla Ice Cream,1,3
+8/19/2025 12:34:31,User_959,Cookies & Cream,10,2
+8/19/2025 12:37:31,User_622,Chocolate Sundae,12,4
+8/19/2025 12:34:31,User_490,Cookies & Cream,7,1
+8/19/2025 12:36:31,User_154,Chocolate Sundae,9,2
+8/19/2025 12:33:31,User_678,Cookies & Cream,14,1
+8/19/2025 12:34:32,User_347,Cookies & Cream,6,2
+8/19/2025 12:40:41,User_141,Mint Gelato,12,2
+8/19/2025 12:41:43,User_373,Chocolate Sundae,1,3
+8/19/2025 12:40:43,User_522,Strawberry Sorbet,2,4
+8/19/2025 12:38:44,User_918,Vanilla Ice Cream,13,1
+8/19/2025 12:40:44,User_650,Vanilla Ice Cream,5,3
+8/19/2025 12:38:44,User_682,Mint Gelato,5,1
+8/19/2025 12:40:44,User_364,Chocolate Sundae,2,1
+8/19/2025 12:41:44,User_764,Chocolate Sundae,10,3
+8/19/2025 12:38:45,User_18,Strawberry Sorbet,12,4
+8/19/2025 12:39:45,User_4,Vanilla Ice Cream,7,2
+8/19/2025 12:47:31,User_185,Mint Gelato,13,2
+8/19/2025 12:47:32,User_646,Cookies & Cream,15,3
+8/19/2025 12:45:33,User_611,Mint Gelato,12,2
+8/19/2025 12:46:33,User_73,Chocolate Sundae,9,1
+8/19/2025 12:45:33,User_507,Mint Gelato,3,1
+8/19/2025 12:45:33,User_453,Strawberry Sorbet,4,3
+8/19/2025 12:43:33,User_293,Cookies & Cream,1,4
+8/19/2025 12:46:34,User_256,Strawberry Sorbet,11,2
+8/19/2025 12:47:34,User_936,Cookies & Cream,9,4
+8/19/2025 12:47:34,User_175,Vanilla Ice Cream,14,1
+8/19/2025 12:50:40,User_218,Vanilla Ice Cream,8,3
+8/19/2025 12:50:41,User_801,Cookies & Cream,5,3
+8/19/2025 12:50:41,User_328,Mint Gelato,3,2
+8/19/2025 12:49:42,User_452,Chocolate Sundae,6,2
+8/19/2025 12:50:42,User_574,Chocolate Sundae,15,3
+8/19/2025 12:48:42,User_22,Strawberry Sorbet,12,4
+8/19/2025 12:48:43,User_93,Strawberry Sorbet,11,2
+8/19/2025 12:50:43,User_183,Vanilla Ice Cream,1,1
+8/19/2025 12:50:44,User_45,Vanilla Ice Cream,14,4
+8/19/2025 12:51:45,User_149,Cookies & Cream,12,3
+8/19/2025 12:56:42,User_430,Chocolate Sundae,5,2
+8/19/2025 12:54:43,User_702,Cookies & Cream,8,1
+8/19/2025 12:57:44,User_856,Strawberry Sorbet,6,4
+8/19/2025 12:57:44,User_224,Strawberry Sorbet,8,2
+8/19/2025 12:57:45,User_755,Cookies & Cream,6,3
+8/19/2025 12:53:45,User_103,Vanilla Ice Cream,6,3
+8/19/2025 12:55:45,User_456,Strawberry Sorbet,1,4
+8/19/2025 12:56:45,User_619,Cookies & Cream,12,2
+8/19/2025 12:57:45,User_723,Vanilla Ice Cream,13,3
+8/19/2025 12:53:46,User_136,Vanilla Ice Cream,6,1
+8/19/2025 12:59:01,User_350,Chocolate Sundae,4,4
+8/19/2025 13:03:02,User_881,Cookies & Cream,10,2
+8/19/2025 13:02:02,User_10,Strawberry Sorbet,7,2
+8/19/2025 13:01:02,User_256,Vanilla Ice Cream,4,4
+8/19/2025 13:01:03,User_574,Mint Gelato,13,4
+8/19/2025 12:59:03,User_322,Cookies & Cream,10,1
+8/19/2025 13:02:03,User_462,Chocolate Sundae,7,4
+8/19/2025 13:03:03,User_879,Cookies & Cream,15,3
+8/19/2025 13:03:04,User_893,Strawberry Sorbet,15,3
+8/19/2025 13:02:05,User_582,Chocolate Sundae,9,1
+8/19/2025 13:03:30,User_421,Strawberry Sorbet,10,2
+8/19/2025 13:06:31,User_919,Vanilla Ice Cream,1,1
+8/19/2025 13:04:33,User_627,Chocolate Sundae,11,4
+8/19/2025 13:06:33,User_69,Chocolate Sundae,10,1
+8/19/2025 13:05:34,User_952,Vanilla Ice Cream,13,3
+8/19/2025 13:05:34,User_615,Chocolate Sundae,9,2
+8/19/2025 13:04:34,User_804,Chocolate Sundae,15,2
+8/19/2025 13:06:34,User_41,Vanilla Ice Cream,5,4
+8/19/2025 13:07:34,User_806,Strawberry Sorbet,15,3
+8/19/2025 13:05:34,User_855,Mint Gelato,12,4
+8/19/2025 13:09:32,User_957,Chocolate Sundae,2,1
+8/19/2025 13:11:33,User_831,Cookies & Cream,3,1
+8/19/2025 13:12:34,User_149,Mint Gelato,15,1
+8/19/2025 13:10:34,User_449,Mint Gelato,14,1
+8/19/2025 13:08:34,User_707,Chocolate Sundae,12,3
+8/19/2025 13:08:34,User_624,Strawberry Sorbet,14,3
+8/19/2025 13:11:35,User_52,Vanilla Ice Cream,5,3
+8/19/2025 13:11:35,User_901,Cookies & Cream,4,3
+8/19/2025 13:11:35,User_187,Vanilla Ice Cream,4,3
+8/19/2025 13:12:35,User_14,Mint Gelato,12,2
+8/19/2025 13:14:34,User_24,Cookies & Cream,3,1
+8/19/2025 13:15:35,User_484,Cookies & Cream,6,1
+8/19/2025 13:15:36,User_310,Strawberry Sorbet,8,2
+8/19/2025 13:14:36,User_4,Cookies & Cream,15,4
+8/19/2025 13:16:36,User_119,Strawberry Sorbet,11,3
+8/19/2025 13:16:37,User_371,Mint Gelato,8,3
+8/19/2025 13:14:37,User_517,Strawberry Sorbet,15,1
+8/19/2025 13:15:37,User_447,Chocolate Sundae,2,4
+8/19/2025 13:17:37,User_583,Mint Gelato,2,1
+8/19/2025 13:17:38,User_598,Chocolate Sundae,6,2
+8/19/2025 13:18:25,User_696,Strawberry Sorbet,2,4
+8/19/2025 13:20:25,User_181,Cookies & Cream,4,3
+8/19/2025 13:18:26,User_97,Vanilla Ice Cream,13,3
+8/19/2025 13:18:26,User_11,Mint Gelato,7,2
+8/19/2025 13:20:26,User_446,Vanilla Ice Cream,12,1
+8/19/2025 13:22:26,User_622,Mint Gelato,2,1
+8/19/2025 13:18:27,User_617,Chocolate Sundae,11,3
+8/19/2025 13:19:27,User_815,Cookies & Cream,6,3
+8/19/2025 13:21:27,User_577,Cookies & Cream,15,3
+8/19/2025 13:18:27,User_296,Mint Gelato,10,2
+8/19/2025 13:26:38,User_751,Strawberry Sorbet,9,1
+8/19/2025 13:25:38,User_424,Chocolate Sundae,10,2
+8/19/2025 13:24:39,User_989,Cookies & Cream,8,4
+8/19/2025 13:24:39,User_230,Chocolate Sundae,1,2
+8/19/2025 13:27:40,User_741,Mint Gelato,7,2
+8/19/2025 13:25:40,User_291,Vanilla Ice Cream,7,2
+8/19/2025 13:24:40,User_855,Cookies & Cream,14,3
+8/19/2025 13:25:40,User_185,Vanilla Ice Cream,10,1
+8/19/2025 13:27:40,User_802,Mint Gelato,2,4
+8/19/2025 13:24:40,User_929,Strawberry Sorbet,6,2
+8/19/2025 13:31:29,User_575,Cookies & Cream,14,4
+8/19/2025 13:28:29,User_674,Chocolate Sundae,1,2
+8/19/2025 13:32:29,User_789,Mint Gelato,1,4
+8/19/2025 13:29:30,User_312,Mint Gelato,7,4
+8/19/2025 13:31:30,User_514,Chocolate Sundae,5,2
+8/19/2025 13:30:30,User_363,Vanilla Ice Cream,9,3
+8/19/2025 13:31:30,User_326,Cookies & Cream,9,4
+8/19/2025 13:31:30,User_847,Mint Gelato,2,4
+8/19/2025 13:31:30,User_265,Vanilla Ice Cream,12,3
+8/19/2025 13:29:31,User_128,Vanilla Ice Cream,9,2
+8/19/2025 13:35:47,User_305,Strawberry Sorbet,1,3
+8/19/2025 13:37:48,User_148,Strawberry Sorbet,4,4
+8/19/2025 13:37:49,User_793,Cookies & Cream,5,2
+8/19/2025 13:33:49,User_227,Cookies & Cream,12,3
+8/19/2025 13:37:49,User_725,Chocolate Sundae,4,3
+8/19/2025 13:37:49,User_669,Cookies & Cream,12,4
+8/19/2025 13:34:50,User_841,Strawberry Sorbet,5,1
+8/19/2025 13:35:50,User_482,Vanilla Ice Cream,12,3
+8/19/2025 13:36:50,User_656,Cookies & Cream,5,1
+8/19/2025 13:33:50,User_762,Cookies & Cream,11,1
+8/19/2025 13:42:38,User_810,Chocolate Sundae,2,1
+8/19/2025 13:38:39,User_926,Mint Gelato,11,1
+8/19/2025 13:42:39,User_50,Vanilla Ice Cream,11,4
+8/19/2025 13:40:39,User_324,Vanilla Ice Cream,14,4
+8/19/2025 13:42:40,User_435,Mint Gelato,6,1
+8/19/2025 13:40:41,User_184,Cookies & Cream,7,1
+8/19/2025 13:42:41,User_450,Strawberry Sorbet,8,3
+8/19/2025 13:41:42,User_396,Chocolate Sundae,3,1
+8/19/2025 13:39:42,User_302,Chocolate Sundae,11,4
+8/19/2025 13:39:42,User_155,Cookies & Cream,3,4
+8/19/2025 13:45:31,User_842,Strawberry Sorbet,6,3
+8/19/2025 13:46:32,User_751,Chocolate Sundae,6,2
+8/19/2025 13:43:33,User_612,Chocolate Sundae,11,2
+8/19/2025 13:46:33,User_757,Vanilla Ice Cream,15,4
+8/19/2025 13:44:33,User_413,Mint Gelato,11,1
+8/19/2025 13:44:33,User_731,Chocolate Sundae,15,2
+8/19/2025 13:46:33,User_246,Vanilla Ice Cream,1,4
+8/19/2025 13:44:34,User_737,Strawberry Sorbet,3,4
+8/19/2025 13:45:34,User_217,Mint Gelato,9,2
+8/19/2025 13:45:34,User_255,Vanilla Ice Cream,4,3
+8/19/2025 13:51:24,User_569,Vanilla Ice Cream,4,1
+8/19/2025 13:48:25,User_107,Vanilla Ice Cream,2,4
+8/19/2025 13:50:25,User_693,Chocolate Sundae,12,1
+8/19/2025 13:51:25,User_21,Vanilla Ice Cream,2,3
+8/19/2025 13:49:26,User_833,Strawberry Sorbet,3,3
+8/19/2025 13:50:27,User_795,Strawberry Sorbet,1,1
+8/19/2025 13:48:28,User_456,Cookies & Cream,9,4
+8/19/2025 13:50:28,User_370,Chocolate Sundae,14,3
+8/19/2025 13:48:28,User_929,Mint Gelato,9,2
+8/19/2025 13:51:28,User_422,Strawberry Sorbet,13,4
+8/19/2025 13:55:28,User_345,Vanilla Ice Cream,13,4
+8/19/2025 13:53:29,User_288,Strawberry Sorbet,8,1
+8/19/2025 13:54:29,User_550,Mint Gelato,5,4
+8/19/2025 13:53:30,User_53,Chocolate Sundae,5,2
+8/19/2025 13:53:30,User_864,Mint Gelato,8,4
+8/19/2025 13:55:30,User_7,Strawberry Sorbet,6,2
+8/19/2025 13:57:30,User_708,Cookies & Cream,12,1
+8/19/2025 13:53:31,User_107,Strawberry Sorbet,6,4
+8/19/2025 13:54:31,User_548,Mint Gelato,11,4
+8/19/2025 13:56:31,User_152,Cookies & Cream,9,3
+8/19/2025 14:01:40,User_503,Chocolate Sundae,7,3
+8/19/2025 14:03:41,User_815,Chocolate Sundae,14,1
+8/19/2025 14:02:42,User_609,Vanilla Ice Cream,2,2
+8/19/2025 14:02:42,User_330,Cookies & Cream,9,4
+8/19/2025 14:02:43,User_551,Strawberry Sorbet,15,2
+8/19/2025 14:02:43,User_44,Mint Gelato,7,4
+8/19/2025 14:00:43,User_347,Chocolate Sundae,2,3
+8/19/2025 14:03:43,User_78,Cookies & Cream,10,2
+8/19/2025 14:04:44,User_935,Strawberry Sorbet,7,3
+8/19/2025 14:03:44,User_724,Strawberry Sorbet,5,3
+8/19/2025 14:03:31,User_728,Mint Gelato,13,2
+8/19/2025 14:03:32,User_189,Mint Gelato,6,1
+8/19/2025 14:07:32,User_860,Vanilla Ice Cream,6,1
+8/19/2025 14:05:32,User_509,Mint Gelato,12,3
+8/19/2025 14:06:33,User_13,Vanilla Ice Cream,10,1
+8/19/2025 14:05:33,User_179,Vanilla Ice Cream,3,2
+8/19/2025 14:05:33,User_608,Cookies & Cream,6,2
+8/19/2025 14:05:33,User_194,Chocolate Sundae,13,3
+8/19/2025 14:07:33,User_386,Cookies & Cream,4,3
+8/19/2025 14:04:34,User_774,Chocolate Sundae,12,4
+8/19/2025 14:12:39,User_574,Cookies & Cream,10,2
+8/19/2025 14:12:39,User_324,Strawberry Sorbet,9,4
+8/19/2025 14:08:40,User_324,Chocolate Sundae,2,2
+8/19/2025 14:12:40,User_53,Chocolate Sundae,15,2
+8/19/2025 14:08:41,User_508,Vanilla Ice Cream,12,1
+8/19/2025 14:10:41,User_41,Cookies & Cream,13,4
+8/19/2025 14:12:41,User_477,Chocolate Sundae,12,4
+8/19/2025 14:08:41,User_910,Mint Gelato,1,4
+8/19/2025 14:09:42,User_948,Vanilla Ice Cream,6,2
+8/19/2025 14:12:42,User_95,Strawberry Sorbet,10,1
+8/19/2025 14:13:44,User_516,Chocolate Sundae,5,1
+8/19/2025 14:15:45,User_854,Strawberry Sorbet,14,2
+8/19/2025 14:16:46,User_87,Mint Gelato,1,3
+8/19/2025 14:15:46,User_85,Vanilla Ice Cream,7,2
+8/19/2025 14:17:46,User_160,Strawberry Sorbet,7,4
+8/19/2025 14:17:46,User_182,Vanilla Ice Cream,15,1
+8/19/2025 14:15:47,User_427,Cookies & Cream,10,3
+8/19/2025 14:17:47,User_938,Chocolate Sundae,10,4
+8/19/2025 14:14:47,User_350,Vanilla Ice Cream,7,1
+8/19/2025 14:13:47,User_235,Chocolate Sundae,8,1
+8/19/2025 14:19:27,User_885,Vanilla Ice Cream,3,2
+8/19/2025 14:22:27,User_748,Mint Gelato,5,3
+8/19/2025 14:21:28,User_766,Chocolate Sundae,10,1
+8/19/2025 14:18:29,User_611,Strawberry Sorbet,13,1
+8/19/2025 14:22:29,User_308,Vanilla Ice Cream,10,4
+8/19/2025 14:22:29,User_40,Vanilla Ice Cream,15,2
+8/19/2025 14:22:29,User_776,Mint Gelato,9,3
+8/19/2025 14:19:29,User_961,Chocolate Sundae,10,1
+8/19/2025 14:20:29,User_64,Strawberry Sorbet,4,4
+8/19/2025 14:18:30,User_582,Mint Gelato,14,3
+8/19/2025 14:24:27,User_520,Mint Gelato,5,4
+8/19/2025 14:27:28,User_876,Chocolate Sundae,10,1
+8/19/2025 14:27:28,User_18,Strawberry Sorbet,6,3
+8/19/2025 14:26:28,User_626,Strawberry Sorbet,12,3
+8/19/2025 14:25:28,User_3,Chocolate Sundae,14,1
+8/19/2025 14:25:28,User_226,Vanilla Ice Cream,14,3
+8/19/2025 14:24:28,User_218,Mint Gelato,5,2
+8/19/2025 14:26:28,User_928,Vanilla Ice Cream,10,3
+8/19/2025 14:26:29,User_122,Cookies & Cream,13,1
+8/19/2025 14:27:29,User_555,Cookies & Cream,10,3
+8/19/2025 14:28:58,User_304,Strawberry Sorbet,14,2
+8/19/2025 14:30:59,User_587,Chocolate Sundae,10,4
+8/19/2025 14:29:00,User_880,Vanilla Ice Cream,14,4
+8/19/2025 14:29:00,User_726,Mint Gelato,11,4
+8/19/2025 14:30:00,User_828,Cookies & Cream,10,3
+8/19/2025 14:30:01,User_137,Cookies & Cream,13,2
+8/19/2025 14:33:01,User_555,Strawberry Sorbet,11,4
+8/19/2025 14:31:02,User_403,Vanilla Ice Cream,4,3
+8/19/2025 14:32:02,User_28,Chocolate Sundae,2,4
+8/19/2025 14:32:02,User_838,Cookies & Cream,13,1
+8/19/2025 14:33:47,User_595,Chocolate Sundae,3,2
+8/19/2025 14:34:48,User_828,Strawberry Sorbet,4,4
+8/19/2025 14:33:48,User_147,Mint Gelato,10,3
+8/19/2025 14:37:49,User_492,Chocolate Sundae,3,1
+8/19/2025 14:35:49,User_320,Chocolate Sundae,5,4
+8/19/2025 14:34:49,User_306,Strawberry Sorbet,6,3
+8/19/2025 14:33:49,User_890,Chocolate Sundae,3,2
+8/19/2025 14:36:49,User_874,Vanilla Ice Cream,14,2
+8/19/2025 14:37:49,User_797,Vanilla Ice Cream,4,3
+8/19/2025 14:33:50,User_196,Strawberry Sorbet,9,2
+8/19/2025 14:38:32,User_208,Cookies & Cream,4,3
+8/19/2025 14:41:32,User_925,Mint Gelato,14,3
+8/19/2025 14:42:33,User_572,Mint Gelato,12,3
+8/19/2025 14:41:34,User_232,Strawberry Sorbet,1,1
+8/19/2025 14:42:34,User_638,Strawberry Sorbet,1,4
+8/19/2025 14:41:34,User_426,Cookies & Cream,4,1
+8/19/2025 14:40:34,User_583,Cookies & Cream,7,1
+8/19/2025 14:38:34,User_786,Strawberry Sorbet,3,4
+8/19/2025 14:42:34,User_881,Strawberry Sorbet,7,3
+8/19/2025 14:40:34,User_516,Mint Gelato,14,1
+8/19/2025 14:45:40,User_390,Cookies & Cream,10,2
+8/19/2025 14:44:41,User_661,Chocolate Sundae,5,1
+8/19/2025 14:43:41,User_671,Cookies & Cream,2,2
+8/19/2025 14:43:41,User_289,Chocolate Sundae,3,3
+8/19/2025 14:47:41,User_111,Cookies & Cream,5,2
+8/19/2025 14:45:42,User_838,Chocolate Sundae,13,2
+8/19/2025 14:45:42,User_285,Mint Gelato,15,2
+8/19/2025 14:46:42,User_119,Vanilla Ice Cream,2,4
+8/19/2025 14:46:42,User_161,Strawberry Sorbet,1,4
+8/19/2025 14:46:42,User_44,Chocolate Sundae,10,1
+8/19/2025 14:52:29,User_809,Vanilla Ice Cream,10,2
+8/19/2025 14:49:30,User_726,Strawberry Sorbet,6,4
+8/19/2025 14:48:31,User_968,Vanilla Ice Cream,8,1
+8/19/2025 14:48:31,User_215,Cookies & Cream,10,4
+8/19/2025 14:51:31,User_444,Strawberry Sorbet,5,2
+8/19/2025 14:51:31,User_28,Vanilla Ice Cream,9,3
+8/19/2025 14:52:31,User_472,Chocolate Sundae,2,3
+8/19/2025 14:49:31,User_743,Mint Gelato,6,3
+8/19/2025 14:50:32,User_202,Cookies & Cream,15,3
+8/19/2025 14:50:32,User_453,Vanilla Ice Cream,2,4
+8/19/2025 14:54:31,User_19,Chocolate Sundae,1,2
+8/19/2025 14:53:32,User_741,Strawberry Sorbet,8,1
+8/19/2025 14:53:32,User_540,Strawberry Sorbet,1,1
+8/19/2025 14:56:32,User_435,Vanilla Ice Cream,4,1
+8/19/2025 14:57:32,User_403,Cookies & Cream,12,4
+8/19/2025 14:54:33,User_107,Strawberry Sorbet,5,1
+8/19/2025 14:53:33,User_458,Vanilla Ice Cream,5,4
+8/19/2025 14:55:33,User_352,Chocolate Sundae,10,1
+8/19/2025 14:54:33,User_132,Vanilla Ice Cream,7,3
+8/19/2025 14:57:34,User_274,Mint Gelato,12,4
+8/19/2025 15:02:47,User_445,Vanilla Ice Cream,8,1
+8/19/2025 15:01:48,User_751,Vanilla Ice Cream,2,4
+8/19/2025 14:59:58,User_782,Chocolate Sundae,13,4
+8/19/2025 15:02:58,User_446,Mint Gelato,1,1
+8/19/2025 15:00:58,User_352,Cookies & Cream,8,1
+8/19/2025 15:00:58,User_344,Vanilla Ice Cream,15,1
+8/19/2025 15:03:00,User_27,Chocolate Sundae,1,3
+8/19/2025 15:02:00,User_549,Chocolate Sundae,10,1
+8/19/2025 15:02:00,User_301,Vanilla Ice Cream,5,2
+8/19/2025 14:59:00,User_522,Mint Gelato,5,3
+8/19/2025 15:06:29,User_383,Chocolate Sundae,5,2
+8/19/2025 15:07:30,User_941,Vanilla Ice Cream,6,1
+8/19/2025 15:07:30,User_190,Chocolate Sundae,12,3
+8/19/2025 15:05:30,User_996,Mint Gelato,13,1
+8/19/2025 15:06:30,User_305,Vanilla Ice Cream,13,3
+8/19/2025 15:07:31,User_624,Cookies & Cream,12,3
+8/19/2025 15:05:31,User_139,Chocolate Sundae,12,2
+8/19/2025 15:06:31,User_211,Mint Gelato,15,1
+8/19/2025 15:03:31,User_201,Vanilla Ice Cream,2,1
+8/19/2025 15:04:32,User_67,Strawberry Sorbet,1,3
+8/19/2025 15:09:04,User_912,Vanilla Ice Cream,2,3
+8/19/2025 15:11:05,User_453,Chocolate Sundae,9,4
+8/19/2025 15:11:06,User_873,Strawberry Sorbet,8,4
+8/19/2025 15:12:07,User_280,Strawberry Sorbet,4,3
+8/19/2025 15:12:08,User_992,Vanilla Ice Cream,14,2
+8/19/2025 15:11:08,User_944,Chocolate Sundae,6,2
+8/19/2025 15:09:08,User_654,Chocolate Sundae,3,2
+8/19/2025 15:12:08,User_131,Chocolate Sundae,5,3
+8/19/2025 15:12:09,User_315,Mint Gelato,12,4
+8/19/2025 15:13:09,User_563,Vanilla Ice Cream,2,4
+8/19/2025 15:15:32,User_962,Strawberry Sorbet,7,4
+8/19/2025 15:16:33,User_288,Chocolate Sundae,9,3
+8/19/2025 15:17:33,User_989,Cookies & Cream,9,2
+8/19/2025 15:17:33,User_724,Chocolate Sundae,10,1
+8/19/2025 15:15:34,User_561,Mint Gelato,14,3
+8/19/2025 15:14:34,User_646,Cookies & Cream,2,2
+8/19/2025 15:15:34,User_902,Vanilla Ice Cream,3,2
+8/19/2025 15:16:35,User_736,Mint Gelato,2,1
+8/19/2025 15:17:35,User_68,Cookies & Cream,13,3
+8/19/2025 15:13:35,User_177,Mint Gelato,3,2
+8/19/2025 15:20:28,User_813,Chocolate Sundae,13,4
+8/19/2025 15:22:29,User_720,Strawberry Sorbet,3,3
+8/19/2025 15:22:30,User_398,Cookies & Cream,11,3
+8/19/2025 15:21:30,User_214,Chocolate Sundae,7,4
+8/19/2025 15:21:31,User_122,Cookies & Cream,12,2
+8/19/2025 15:19:31,User_751,Mint Gelato,13,4
+8/19/2025 15:18:31,User_268,Cookies & Cream,9,4
+8/19/2025 15:21:31,User_373,Vanilla Ice Cream,14,3
+8/19/2025 15:22:31,User_733,Chocolate Sundae,9,4
+8/19/2025 15:21:32,User_843,Mint Gelato,5,3
+8/19/2025 15:27:26,User_918,Cookies & Cream,15,2
+8/19/2025 15:27:26,User_634,Mint Gelato,9,3
+8/19/2025 15:25:26,User_669,Vanilla Ice Cream,5,4
+8/19/2025 15:25:27,User_395,Vanilla Ice Cream,10,4
+8/19/2025 15:25:27,User_925,Strawberry Sorbet,10,1
+8/19/2025 15:25:27,User_861,Vanilla Ice Cream,6,2
+8/19/2025 15:24:27,User_789,Cookies & Cream,11,1
+8/19/2025 15:24:27,User_611,Cookies & Cream,6,1
+8/19/2025 15:26:28,User_823,Vanilla Ice Cream,14,4
+8/19/2025 15:24:28,User_959,Strawberry Sorbet,2,1
+8/19/2025 15:29:54,User_219,Mint Gelato,1,3
+8/19/2025 15:29:55,User_204,Strawberry Sorbet,12,1
+8/19/2025 15:32:57,User_489,Cookies & Cream,5,3
+8/19/2025 15:30:57,User_975,Chocolate Sundae,6,1
+8/19/2025 15:32:58,User_712,Mint Gelato,2,1
+8/19/2025 15:30:58,User_423,Strawberry Sorbet,8,3
+8/19/2025 15:31:58,User_993,Chocolate Sundae,4,1
+8/19/2025 15:32:58,User_341,Mint Gelato,12,1
+8/19/2025 15:32:59,User_7,Mint Gelato,15,3
+8/19/2025 15:29:59,User_245,Vanilla Ice Cream,15,1
+8/19/2025 15:36:46,User_95,Mint Gelato,5,3
+8/19/2025 15:33:47,User_446,Chocolate Sundae,8,3
+8/19/2025 15:35:48,User_611,Strawberry Sorbet,10,1
+8/19/2025 15:36:48,User_477,Strawberry Sorbet,14,1
+8/19/2025 15:37:49,User_471,Strawberry Sorbet,10,3
+8/19/2025 15:36:49,User_428,Mint Gelato,7,2
+8/19/2025 15:33:49,User_371,Mint Gelato,2,1
+8/19/2025 15:36:49,User_705,Strawberry Sorbet,13,3
+8/19/2025 15:35:50,User_100,Strawberry Sorbet,1,4
+8/19/2025 15:37:50,User_713,Mint Gelato,1,1
+8/19/2025 15:39:46,User_224,Chocolate Sundae,10,1
+8/19/2025 15:39:48,User_771,Cookies & Cream,12,1
+8/19/2025 15:42:48,User_774,Mint Gelato,7,2
+8/19/2025 15:40:49,User_857,Cookies & Cream,7,2
+8/19/2025 15:41:49,User_886,Strawberry Sorbet,1,3
+8/19/2025 15:39:49,User_824,Strawberry Sorbet,1,1
+8/19/2025 15:38:49,User_187,Strawberry Sorbet,4,3
+8/19/2025 15:39:49,User_513,Vanilla Ice Cream,5,2
+8/19/2025 15:40:50,User_783,Cookies & Cream,1,4
+8/19/2025 15:42:51,User_84,Chocolate Sundae,8,2
+8/19/2025 15:43:30,User_640,Cookies & Cream,1,2
+8/19/2025 15:46:31,User_524,Mint Gelato,15,4
+8/19/2025 15:45:31,User_944,Mint Gelato,7,1
+8/19/2025 15:45:31,User_510,Cookies & Cream,13,2
+8/19/2025 15:47:32,User_374,Chocolate Sundae,13,1
+8/19/2025 15:47:32,User_583,Chocolate Sundae,10,3
+8/19/2025 15:46:32,User_755,Strawberry Sorbet,6,2
+8/19/2025 15:46:32,User_863,Strawberry Sorbet,8,1
+8/19/2025 15:47:32,User_916,Cookies & Cream,3,4
+8/19/2025 15:44:33,User_294,Chocolate Sundae,3,3
+8/19/2025 15:48:36,User_130,Chocolate Sundae,4,3
+8/19/2025 15:48:37,User_898,Mint Gelato,2,4
+8/19/2025 15:49:38,User_186,Chocolate Sundae,2,3
+8/19/2025 15:49:38,User_262,Chocolate Sundae,7,2
+8/19/2025 15:52:38,User_243,Chocolate Sundae,2,3
+8/19/2025 15:48:38,User_989,Vanilla Ice Cream,15,1
+8/19/2025 15:48:38,User_712,Strawberry Sorbet,14,2
+8/19/2025 15:52:39,User_927,Vanilla Ice Cream,15,3
+8/19/2025 15:48:39,User_119,Strawberry Sorbet,13,1
+8/19/2025 15:50:39,User_806,Chocolate Sundae,1,2
+8/19/2025 15:53:44,User_91,Chocolate Sundae,10,3
+8/19/2025 15:57:44,User_840,Strawberry Sorbet,4,1
+8/19/2025 15:54:45,User_465,Chocolate Sundae,4,4
+8/19/2025 15:53:45,User_170,Vanilla Ice Cream,6,1
+8/19/2025 15:55:45,User_402,Mint Gelato,6,4
+8/19/2025 15:55:46,User_807,Strawberry Sorbet,11,3
+8/19/2025 15:55:46,User_875,Cookies & Cream,13,4
+8/19/2025 15:56:47,User_813,Chocolate Sundae,13,3
+8/19/2025 15:54:48,User_556,Chocolate Sundae,13,2
+8/19/2025 15:54:48,User_80,Vanilla Ice Cream,2,1
+8/19/2025 16:00:31,User_403,Mint Gelato,6,1
+8/19/2025 16:02:32,User_534,Vanilla Ice Cream,8,4
+8/19/2025 15:58:33,User_748,Chocolate Sundae,6,4
+8/19/2025 15:58:33,User_570,Mint Gelato,2,2
+8/19/2025 15:59:34,User_740,Strawberry Sorbet,15,1
+8/19/2025 16:00:34,User_723,Chocolate Sundae,1,2
+8/19/2025 16:01:34,User_422,Vanilla Ice Cream,8,3
+8/19/2025 15:59:34,User_124,Strawberry Sorbet,12,1
+8/19/2025 16:02:34,User_598,Strawberry Sorbet,11,4
+8/19/2025 16:02:34,User_61,Vanilla Ice Cream,6,1
+8/19/2025 16:03:30,User_631,Vanilla Ice Cream,14,4
+8/19/2025 16:05:31,User_83,Strawberry Sorbet,13,2
+8/19/2025 16:03:32,User_51,Mint Gelato,4,1
+8/19/2025 16:03:33,User_767,Cookies & Cream,14,2
+8/19/2025 16:03:33,User_961,Mint Gelato,15,1
+8/19/2025 16:03:33,User_493,Mint Gelato,1,1
+8/19/2025 16:07:33,User_26,Strawberry Sorbet,5,4
+8/19/2025 16:05:34,User_578,Vanilla Ice Cream,3,2
+8/19/2025 16:06:34,User_197,Cookies & Cream,8,3
+8/19/2025 16:05:35,User_916,Chocolate Sundae,15,2
+8/19/2025 16:09:41,User_424,Chocolate Sundae,1,1
+8/19/2025 16:11:43,User_970,Vanilla Ice Cream,4,3
+8/19/2025 16:12:44,User_437,Strawberry Sorbet,14,2
+8/19/2025 16:10:44,User_984,Cookies & Cream,4,3
+8/19/2025 16:12:44,User_105,Cookies & Cream,6,1
+8/19/2025 16:13:45,User_560,Vanilla Ice Cream,6,3
+8/19/2025 16:09:45,User_486,Vanilla Ice Cream,2,3
+8/19/2025 16:12:45,User_375,Mint Gelato,1,4
+8/19/2025 16:11:46,User_420,Vanilla Ice Cream,7,2
+8/19/2025 16:09:46,User_7,Mint Gelato,6,2
+8/19/2025 16:15:33,User_326,Vanilla Ice Cream,11,3
+8/19/2025 16:17:34,User_491,Cookies & Cream,9,3
+8/19/2025 16:16:34,User_833,Chocolate Sundae,15,1
+8/19/2025 16:17:34,User_424,Vanilla Ice Cream,12,2
+8/19/2025 16:14:35,User_315,Chocolate Sundae,11,3
+8/19/2025 16:14:35,User_254,Strawberry Sorbet,2,1
+8/19/2025 16:16:35,User_254,Cookies & Cream,12,1
+8/19/2025 16:14:35,User_981,Chocolate Sundae,8,4
+8/19/2025 16:15:36,User_994,Vanilla Ice Cream,11,3
+8/19/2025 16:16:36,User_672,Chocolate Sundae,2,2
+8/19/2025 16:19:26,User_713,Cookies & Cream,8,4
+8/19/2025 16:18:27,User_446,Vanilla Ice Cream,13,3
+8/19/2025 16:19:27,User_875,Vanilla Ice Cream,2,2
+8/19/2025 16:18:29,User_341,Chocolate Sundae,10,4
+8/19/2025 16:20:29,User_750,Mint Gelato,14,2
+8/19/2025 16:22:29,User_105,Chocolate Sundae,3,3
+8/19/2025 16:20:29,User_689,Vanilla Ice Cream,5,2
+8/19/2025 16:20:30,User_642,Chocolate Sundae,14,2
+8/19/2025 16:20:30,User_442,Strawberry Sorbet,12,3
+8/19/2025 16:20:30,User_816,Cookies & Cream,6,2
+8/19/2025 16:25:36,User_301,Chocolate Sundae,2,4
+8/19/2025 16:26:37,User_659,Strawberry Sorbet,12,4
+8/19/2025 16:25:38,User_18,Cookies & Cream,13,4
+8/19/2025 16:23:38,User_362,Chocolate Sundae,14,4
+8/19/2025 16:24:38,User_431,Strawberry Sorbet,7,4
+8/19/2025 16:26:38,User_604,Strawberry Sorbet,6,4
+8/19/2025 16:24:39,User_804,Strawberry Sorbet,10,3
+8/19/2025 16:23:39,User_632,Strawberry Sorbet,9,3
+8/19/2025 16:24:40,User_517,Mint Gelato,1,4
+8/19/2025 16:26:40,User_50,Strawberry Sorbet,9,3
+8/19/2025 16:32:44,User_909,Strawberry Sorbet,13,2
+8/19/2025 16:30:45,User_714,Cookies & Cream,14,4
+8/19/2025 16:32:45,User_870,Cookies & Cream,3,4
+8/19/2025 16:32:46,User_672,Cookies & Cream,10,2
+8/19/2025 16:29:47,User_852,Cookies & Cream,8,1
+8/19/2025 16:30:47,User_736,Vanilla Ice Cream,15,3
+8/19/2025 16:32:48,User_423,Strawberry Sorbet,8,3
+8/19/2025 16:28:48,User_132,Cookies & Cream,5,3
+8/19/2025 16:31:48,User_810,Cookies & Cream,9,2
+8/19/2025 16:32:49,User_634,Cookies & Cream,10,2
+8/19/2025 16:33:30,User_338,Chocolate Sundae,6,2
+8/19/2025 16:37:31,User_9,Cookies & Cream,3,1
+8/19/2025 16:35:31,User_752,Cookies & Cream,12,1
+8/19/2025 16:35:31,User_213,Cookies & Cream,11,1
+8/19/2025 16:34:31,User_3,Mint Gelato,6,2
+8/19/2025 16:37:31,User_933,Chocolate Sundae,14,3
+8/19/2025 16:33:32,User_564,Chocolate Sundae,6,1
+8/19/2025 16:34:33,User_398,Mint Gelato,8,4
+8/19/2025 16:36:33,User_951,Strawberry Sorbet,1,4
+8/19/2025 16:33:34,User_734,Vanilla Ice Cream,10,1
+8/19/2025 16:41:46,User_158,Vanilla Ice Cream,5,1
+8/19/2025 16:39:47,User_512,Vanilla Ice Cream,5,3
+8/19/2025 16:39:47,User_438,Vanilla Ice Cream,3,3
+8/19/2025 16:39:49,User_170,Mint Gelato,4,3
+8/19/2025 16:41:49,User_670,Chocolate Sundae,8,1
+8/19/2025 16:38:49,User_779,Cookies & Cream,12,3
+8/19/2025 16:40:50,User_264,Vanilla Ice Cream,5,2
+8/19/2025 16:38:51,User_547,Vanilla Ice Cream,3,1
+8/19/2025 16:40:52,User_404,Strawberry Sorbet,11,4
+8/19/2025 16:40:52,User_365,Vanilla Ice Cream,13,3
+8/19/2025 16:45:13,User_312,Mint Gelato,14,4
+8/19/2025 16:46:15,User_687,Strawberry Sorbet,12,2
+8/19/2025 16:48:15,User_286,Vanilla Ice Cream,11,3
+8/19/2025 16:47:15,User_650,Mint Gelato,15,3
+8/19/2025 16:48:16,User_371,Mint Gelato,1,2
+8/19/2025 16:47:16,User_659,Cookies & Cream,9,2
+8/19/2025 16:47:16,User_431,Vanilla Ice Cream,9,4
+8/19/2025 16:48:17,User_508,Strawberry Sorbet,6,2
+8/19/2025 16:47:17,User_559,Chocolate Sundae,12,3
+8/19/2025 16:47:17,User_912,Mint Gelato,5,2
+8/19/2025 16:51:27,User_364,Chocolate Sundae,5,1
+8/19/2025 16:51:28,User_204,Strawberry Sorbet,6,2
+8/19/2025 16:48:29,User_995,Cookies & Cream,12,3
+8/19/2025 16:49:30,User_186,Chocolate Sundae,1,1
+8/19/2025 16:51:31,User_111,Cookies & Cream,13,2
+8/19/2025 16:50:31,User_991,Chocolate Sundae,6,1
+8/19/2025 16:48:31,User_508,Vanilla Ice Cream,10,1
+8/19/2025 16:51:32,User_953,Strawberry Sorbet,15,3
+8/19/2025 16:51:32,User_426,Cookies & Cream,11,4
+8/19/2025 16:49:33,User_875,Chocolate Sundae,13,2
+8/19/2025 16:55:37,User_758,Mint Gelato,1,3
+8/19/2025 16:57:38,User_764,Cookies & Cream,6,1
+8/19/2025 16:57:38,User_722,Strawberry Sorbet,1,2
+8/19/2025 16:56:39,User_525,Chocolate Sundae,15,2
+8/19/2025 16:56:40,User_130,Mint Gelato,8,1
+8/19/2025 16:57:40,User_599,Mint Gelato,12,1
+8/19/2025 16:55:41,User_127,Chocolate Sundae,14,4
+8/19/2025 16:57:41,User_912,Mint Gelato,6,4
+8/19/2025 16:53:41,User_536,Cookies & Cream,8,2
+8/19/2025 16:57:41,User_634,Mint Gelato,10,4
