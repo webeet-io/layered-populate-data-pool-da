@@ -1,82 +1,58 @@
-# Pools in Beerlin: Bäderleben Schwimmbäder (Swimming Pools) Dataset
+## Berlin Pools Data Integration
 
-## Source and Origin:
-Bäderleben.de Schwimmbäder Abfrage
-https://baederleben.de/abfragen/baeder-suche.php
+### Objective:
+The goal of this project is to create a clean, geocoded, and analysis-ready dataset of public pools in Berlin, 
+which can be used for mapping, visualization, accessibility studies, and other geospatial analyses.
 
-## Update Frequency: 
-Data is updated periodically through user contributions and official updates. 
-The website allows users to suggest changes, which are reviewed by "Badpaten" (pool patrons) to maintain data accuracy .
+### Data Sources:
 
-## Data Type: 
-Dynamic (requires ongoing updates through user submissions and administrative reviews).
+Official Berlin Pool Dataset (baederleben_berlin.xlsx): Provides detailed information about public swimming pools, 
+including names, types, addresses, opening hours, and accessibility.
 
-## Relevant Data Fields:
+EU Bathing Water Data: Indicates whether a facility is a designated EU bathing site, supporting water quality analyses.
 
-- Bad-ID: Unique identifier for each pool.
+### Transformation & Cleaning Steps:
+Loading & Initial Filtering:
+The raw dataset is loaded from an Excel file into a pandas DataFrame.
+Only the columns relevant for mapping and analysis are retained. These include:
 
-- Name: Name of the swimming pool.
+Identifiers: Bad-ID (unique pool ID), Name
 
-- Badtyp: Type of pool (e.g., Freibad, Hallenbad, Kombibad).
+Location: Straße, Postleitzahl, Ort, Bezirk, Breitengrad, Längengrad
 
-- Straße: Street address.
+Pool characteristics: Badtyp, eu_badegewaesser, Barrierefreiheit, Wasserqualitaet, Baujahr, Ganzjährig geöffnet
 
-- Postleitzahl: Postal code.
+Discounts: Ermäßigung Kind, Ermäßigung Familie, Ermäßigung Behinderte
 
-- Ort: City or town.
+Operational info: Öffnungsstunden pro Jahr, Name des Eigentümers
 
-- Telefon: Contact phone number.
+### Column Renaming (German → English):
 
-- E-Mail-Adresse: Contact email address.
+Column names are translated into English for consistency and clarity:
 
-- Webseite: Website URL.
+Example: Bad-ID → pool_id, Breitengrad → latitude, Längengrad → longitude.
 
-- Breitengrad and Längengrad: Geographic coordinates (latitude and longitude).
+Boolean Conversion:
+Columns like open_all_year are standardized as Boolean (True/False) for easier analysis, converting from German/English 
+yes/no values.
 
-- Ganzjährig geöffnet: Indicates if the pool is open year-round.
+### Column Selection for Mapping:
 
-- Öffnungsstunden pro Jahr: Number of hours the pool is open per year.
+Only the most important columns for geospatial and analytical purposes are retained:
 
-- Baujahr: Year of construction.
+['pool_id', 'name', 'pool_type', 'street', 'postal_code', 
+ 'city', 'latitude', 'longitude', 'open_all_year']
 
-- Baukosten bei Fertigstellung: Construction costs at completion.
+These columns ensure the dataset is suitable for interactive mapping, location clustering, accessibility studies, and integration with 
+other spatial datasets.
 
-- Währung der Baukosten: Currency of construction costs.
+### Outcome:
+The resulting dataset is a clean, geospatially accurate, and standardized table of Berlin public pools. It can be used to:
 
-- Baukosten heute (Euro): Current construction costs in euros.
+Plot facilities on a city map.
 
-- Eigentümer: Owner of the pool.
+Analyze pool types, availability, and accessibility.
 
-- Name des Eigentümers: Name of the owner.
+Combine with district-level or environmental datasets for deeper insights.
 
-- Betreiber: Operator of the pool.
-
-- Name des Betreibers: Name of the operator.
-
-- Eintritt Erwachsene: Admission fee for adults.
-
-- Ermäßigung Kind: Discount for children.
-
-- Ermäßigung Familie: Family discount.
-
-- Ermäßigung Behinderte: Discount for disabled individuals.
-
-- Ermäßigung Senioren: Discount for seniors.
-
-- Frühtarif: Early bird rate.
-
-- Abendtarif: Evening rate.
-
-- Behinderten Parkplätze: Availability of disabled parking spaces.
-
-- E-Ladestationen: Availability of electric vehicle charging stations.
-
-- WLAN: Availability of Wi-Fi.
-
-- Sanierungen: Information on renovations.
-
-- Förderungen: Information on funding or subsidies.
-
-
-These fields provide comprehensive information about each swimming pool, including location, facilities, ownership, and accessibility features, making it a valuable resource for mapping and analyzing swimming pools in Berlin.
-
+Serve as a foundation for interactive dashboards or location-based applications.
