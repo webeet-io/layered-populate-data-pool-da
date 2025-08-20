@@ -1,0 +1,3831 @@
+{
+	"departures": [
+		{
+			"tripId": "1|62978|1|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100031",
+				"name": "S+U Alexanderplatz Bhf/Memhardstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100031",
+					"latitude": 52.522937,
+					"longitude": 13.410755
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100031"
+			},
+			"when": "2025-07-08T01:35:00+02:00",
+			"plannedWhen": "2025-07-08T01:34:00+02:00",
+			"delay": 60,
+			"platform": "Pos. 26",
+			"plannedPlatform": "Pos. 26",
+			"prognosisType": "prognosed",
+			"direction": "M4,M5 Ersatz Mollstr./Otto-Braun-Str.",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-tram-m4-bus-m4-ev1",
+				"fahrtNr": "123744",
+				"name": "M4",
+				"public": true,
+				"adminCode": "BVB---",
+				"productName": "Bus",
+				"mode": "bus",
+				"product": "bus",
+				"operator": {
+					"type": "operator",
+					"id": "berliner-verkehrsbetriebe",
+					"name": "Berliner Verkehrsbetriebe"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "BVG"
+				},
+				{
+					"id": "267909",
+					"type": "warning",
+					"summary": "Replacement Service",
+					"text": "Tram M4, M5: Replacement service due to construction works between Mollstraße/Otto-Braun-Straße and S Hackescher Markt.",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": false,
+						"bus": true,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-03-03T05:00:00+01:00",
+					"validUntil": "2025-07-28T03:30:00+02:00",
+					"modified": "2025-03-12T09:02:32+01:00"
+				},
+				{
+					"id": "277652",
+					"type": "warning",
+					"summary": "Moved Stop",
+					"text": "Bus M4, M5, N40: The stop S+U Alexanderplatz/Memhardstraße towards S Karlshorst has been moved 20 meters in the driving direction.\n<a href=\"https://fahrinfo.vbb.de/him-uploads/1744873572930_Kartenausschnitt_HackescherMarkt_250416.png\" target=\"_blank\" rel=\"noopener\">[KARTE/MAP]</a> (valid at: S+U Alexanderplatz Bhf/Memhardstr. (Berlin))",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": false,
+						"bus": true,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-04-16T10:47:00+02:00",
+					"validUntil": "2025-08-31T23:59:00+02:00",
+					"modified": "2025-06-17T21:12:07+02:00"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900100040",
+				"name": "Mollstr./Otto-Braun-Str. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100040",
+					"latitude": 52.525185,
+					"longitude": 13.419942
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": true,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100040"
+			},
+			"currentTripPosition": {
+				"type": "location",
+				"latitude": 52.521778,
+				"longitude": 13.408562
+			}
+		},
+		{
+			"tripId": "1|58387|2|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100031",
+				"name": "S+U Alexanderplatz Bhf/Memhardstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100031",
+					"latitude": 52.522937,
+					"longitude": 13.410755
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100031"
+			},
+			"when": "2025-07-08T01:35:00+02:00",
+			"plannedWhen": "2025-07-08T01:35:00+02:00",
+			"delay": null,
+			"platform": null,
+			"plannedPlatform": null,
+			"prognosisType": null,
+			"direction": "Flughafen BER",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-bus-n60",
+				"fahrtNr": "141490",
+				"name": "N60",
+				"public": true,
+				"adminCode": "BVB---",
+				"productName": "Bus",
+				"mode": "bus",
+				"product": "bus",
+				"operator": {
+					"type": "operator",
+					"id": "berliner-verkehrsbetriebe",
+					"name": "Berliner Verkehrsbetriebe"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "BVG"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900260009",
+				"name": "Flughafen BER",
+				"location": {
+					"type": "location",
+					"id": "900260009",
+					"latitude": 52.36461,
+					"longitude": 13.50987
+				},
+				"products": {
+					"suburban": true,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": true,
+					"regional": true
+				},
+				"stationDHID": "de:12061:900260009"
+			}
+		},
+		{
+			"tripId": "1|89651|0|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100003",
+				"name": "S+U Alexanderplatz Bhf (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100003",
+					"latitude": 52.521508,
+					"longitude": 13.411267
+				},
+				"products": {
+					"suburban": true,
+					"subway": true,
+					"tram": false,
+					"bus": false,
+					"ferry": false,
+					"express": false,
+					"regional": true
+				},
+				"stationDHID": "de:11000:900100003"
+			},
+			"when": "2025-07-08T01:36:00+02:00",
+			"plannedWhen": "2025-07-08T01:29:00+02:00",
+			"delay": 420,
+			"platform": "1",
+			"plannedPlatform": "1",
+			"prognosisType": "prognosed",
+			"direction": "S Ostbahnhof (Berlin)",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "odre1-re1",
+				"fahrtNr": "73794",
+				"name": "RE1",
+				"public": true,
+				"adminCode": "ODRE1_",
+				"productName": "RE",
+				"mode": "train",
+				"product": "regional",
+				"operator": {
+					"type": "operator",
+					"id": "odeg-ostdeutsche-eisenbahn-gmbh",
+					"name": "ODEG Ostdeutsche Eisenbahn GmbH"
+				},
+				"color": {
+					"fg": "#fff",
+					"bg": "#ff0000"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "ODEG"
+				},
+				{
+					"type": "hint",
+					"code": "FK",
+					"text": "Bicycle conveyance"
+				},
+				{
+					"type": "hint",
+					"code": "hx",
+					"text": "Fahrradmitnahme leicht gemacht: <a href=\"http://www.vbb.de/radimregio\" target=\"_blank\">www.vbb.de/radimregio</a>"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900120005",
+				"name": "S Ostbahnhof (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900120005",
+					"latitude": 52.510335,
+					"longitude": 13.435089
+				},
+				"products": {
+					"suburban": true,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": true,
+					"regional": true
+				},
+				"stationDHID": "de:11000:900120005"
+			},
+			"currentTripPosition": {
+				"type": "location",
+				"latitude": 52.522515,
+				"longitude": 13.402107
+			}
+		},
+		{
+			"tripId": "1|6196|0|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100003",
+				"name": "S+U Alexanderplatz Bhf (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100003",
+					"latitude": 52.521508,
+					"longitude": 13.411267
+				},
+				"products": {
+					"suburban": true,
+					"subway": true,
+					"tram": false,
+					"bus": false,
+					"ferry": false,
+					"express": false,
+					"regional": true
+				},
+				"stationDHID": "de:11000:900100003"
+			},
+			"when": "2025-07-08T01:39:00+02:00",
+			"plannedWhen": "2025-07-08T01:33:00+02:00",
+			"delay": 360,
+			"platform": "4",
+			"plannedPlatform": "4",
+			"prognosisType": "prognosed",
+			"direction": "S Westkreuz (Berlin)",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-s-bahn-s9",
+				"fahrtNr": "45097",
+				"name": "S9",
+				"public": true,
+				"adminCode": "DBS---",
+				"productName": "S",
+				"mode": "train",
+				"product": "suburban",
+				"operator": {
+					"type": "operator",
+					"id": "s-bahn-berlin-gmbh",
+					"name": "S-Bahn Berlin GmbH"
+				},
+				"color": {
+					"fg": "#fff",
+					"bg": "#992746"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "DBS"
+				},
+				{
+					"type": "hint",
+					"code": "FK",
+					"text": "Bicycle conveyance"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900024102",
+				"name": "S Westkreuz (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900024102",
+					"latitude": 52.501148,
+					"longitude": 13.283036
+				},
+				"products": {
+					"suburban": true,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900024102"
+			},
+			"currentTripPosition": {
+				"type": "location",
+				"latitude": 52.508132,
+				"longitude": 13.441669
+			}
+		},
+		{
+			"tripId": "1|69765|2|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100024",
+				"name": "S+U Alexanderplatz Bhf/Dircksenstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100024",
+					"latitude": 52.521481,
+					"longitude": 13.411924
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": true,
+					"bus": false,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100024"
+			},
+			"when": "2025-07-08T01:39:00+02:00",
+			"plannedWhen": "2025-07-08T01:38:00+02:00",
+			"delay": 60,
+			"platform": "Pos. 13",
+			"plannedPlatform": "Pos. 13",
+			"prognosisType": "prognosed",
+			"direction": "Falkenberg",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-tram-m4",
+				"fahrtNr": "33741",
+				"name": "M4",
+				"public": true,
+				"adminCode": "BVT---",
+				"productName": "Tram",
+				"mode": "train",
+				"product": "tram",
+				"operator": {
+					"type": "operator",
+					"id": "berliner-verkehrsbetriebe",
+					"name": "Berliner Verkehrsbetriebe"
+				},
+				"color": {
+					"fg": "#fff",
+					"bg": "#CA1214"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "BVG"
+				},
+				{
+					"type": "hint",
+					"code": "FK",
+					"text": "Bicycle conveyance"
+				},
+				{
+					"id": "267906",
+					"type": "warning",
+					"summary": "Interruption",
+					"text": "Tram M4: No service due to construction works between U Alexanderplatz and S Hackescher Markt. No stop S+U Alexanderplatz/Gontardstraße. Alternative stop S+U Alexanderplatz/Dircksenstraße.\n<a href=\"https://fahrinfo.vbb.de/him-uploads/1740389896741_TramMetro_Alex_ab_250303_final_4c.png\" target=\"_blank\" rel=\"noopener\">[MAP/KARTE]</a> (S+U Alexanderplatz Bhf/Dircksenstr. (Berlin) - Mollstr./Otto-Braun-Str. (Berlin))",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": true,
+						"bus": false,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-03-12T05:00:00+01:00",
+					"validUntil": "2025-07-28T03:00:00+02:00",
+					"modified": "2025-07-01T13:44:25+02:00"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900152007",
+				"name": "Falkenberg (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900152007",
+					"latitude": 52.570212,
+					"longitude": 13.526815
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": true,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900152007"
+			}
+		},
+		{
+			"tripId": "1|57722|1|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100031",
+				"name": "S+U Alexanderplatz Bhf/Memhardstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100031",
+					"latitude": 52.522937,
+					"longitude": 13.410755
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100031"
+			},
+			"when": "2025-07-08T01:41:00+02:00",
+			"plannedWhen": "2025-07-08T01:38:00+02:00",
+			"delay": 180,
+			"platform": "Pos. 24",
+			"plannedPlatform": "Pos. 24",
+			"prognosisType": "prognosed",
+			"direction": "U Osloer Str.",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-bus-n8",
+				"fahrtNr": "140758",
+				"name": "N8",
+				"public": true,
+				"adminCode": "BVB---",
+				"productName": "Bus",
+				"mode": "bus",
+				"product": "bus",
+				"operator": {
+					"type": "operator",
+					"id": "berliner-verkehrsbetriebe",
+					"name": "Berliner Verkehrsbetriebe"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "BVG"
+				},
+				{
+					"id": "277659",
+					"type": "warning",
+					"summary": "Moved Stop",
+					"text": "Bus N2, N5, N8: The stop S+U Alexanderplatz/Memhardstraße towards Spandauer Straße/Marienkirche has been moved around the corner in the Memhardstraße (vor Karl-Liebknecht-Str.).\n<a href=\"https://fahrinfo.vbb.de/him-uploads/1744873638665_Kartenausschnitt_HackescherMarkt_250416.png\" target=\"_blank\" rel=\"noopener\">[KARTE/MAP]</a> (valid at: S+U Alexanderplatz Bhf/Memhardstr. (Berlin))",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": false,
+						"bus": true,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-04-16T11:38:00+02:00",
+					"validUntil": "2025-08-31T23:59:00+02:00",
+					"modified": "2025-06-17T21:13:10+02:00"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900009202",
+				"name": "U Osloer Str. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900009202",
+					"latitude": 52.557105,
+					"longitude": 13.373279
+				},
+				"products": {
+					"suburban": false,
+					"subway": true,
+					"tram": true,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900009202"
+			},
+			"currentTripPosition": {
+				"type": "location",
+				"latitude": 52.514883,
+				"longitude": 13.418027
+			}
+		},
+		{
+			"tripId": "1|69292|2|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100024",
+				"name": "S+U Alexanderplatz Bhf/Dircksenstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100024",
+					"latitude": 52.521481,
+					"longitude": 13.411924
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": true,
+					"bus": false,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100024"
+			},
+			"when": "2025-07-08T01:41:00+02:00",
+			"plannedWhen": "2025-07-08T01:41:00+02:00",
+			"delay": 0,
+			"platform": "Pos. 14",
+			"plannedPlatform": "Pos. 14",
+			"prognosisType": "prognosed",
+			"direction": "Am Steinberg",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-tram-m2",
+				"fahrtNr": "32101",
+				"name": "M2",
+				"public": true,
+				"adminCode": "BVT---",
+				"productName": "Tram",
+				"mode": "train",
+				"product": "tram",
+				"operator": {
+					"type": "operator",
+					"id": "berliner-verkehrsbetriebe",
+					"name": "Berliner Verkehrsbetriebe"
+				},
+				"color": {
+					"fg": "#fff",
+					"bg": "#7AB929"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "BVG"
+				},
+				{
+					"type": "hint",
+					"code": "FK",
+					"text": "Bicycle conveyance"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900141506",
+				"name": "Am Steinberg (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900141506",
+					"latitude": 52.558382,
+					"longitude": 13.4333
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": true,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900141506"
+			}
+		},
+		{
+			"tripId": "1|62971|2|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100031",
+				"name": "S+U Alexanderplatz Bhf/Memhardstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100031",
+					"latitude": 52.522937,
+					"longitude": 13.410755
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100031"
+			},
+			"when": "2025-07-08T01:42:00+02:00",
+			"plannedWhen": "2025-07-08T01:42:00+02:00",
+			"delay": 0,
+			"platform": null,
+			"plannedPlatform": null,
+			"prognosisType": "prognosed",
+			"direction": "M4,M5 Ersatz Hackescher Markt",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-tram-m4-bus-m4-ev1",
+				"fahrtNr": "155133",
+				"name": "M4",
+				"public": true,
+				"adminCode": "BVB---",
+				"productName": "Bus",
+				"mode": "bus",
+				"product": "bus",
+				"operator": {
+					"type": "operator",
+					"id": "berliner-verkehrsbetriebe",
+					"name": "Berliner Verkehrsbetriebe"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "BVG"
+				},
+				{
+					"id": "267909",
+					"type": "warning",
+					"summary": "Replacement Service",
+					"text": "Tram M4, M5: Replacement service due to construction works between Mollstraße/Otto-Braun-Straße and S Hackescher Markt.",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": false,
+						"bus": true,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-03-03T05:00:00+01:00",
+					"validUntil": "2025-07-28T03:30:00+02:00",
+					"modified": "2025-03-12T09:02:32+01:00"
+				},
+				{
+					"id": "277652",
+					"type": "warning",
+					"summary": "Moved Stop",
+					"text": "Bus M4, M5, N40: The stop S+U Alexanderplatz/Memhardstraße towards S Karlshorst has been moved 20 meters in the driving direction.\n<a href=\"https://fahrinfo.vbb.de/him-uploads/1744873572930_Kartenausschnitt_HackescherMarkt_250416.png\" target=\"_blank\" rel=\"noopener\">[KARTE/MAP]</a> (valid at: S+U Alexanderplatz Bhf/Memhardstr. (Berlin))",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": false,
+						"bus": true,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-04-16T10:47:00+02:00",
+					"validUntil": "2025-08-31T23:59:00+02:00",
+					"modified": "2025-06-17T21:12:07+02:00"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900100002",
+				"name": "S Hackescher Markt (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100002",
+					"latitude": 52.522605,
+					"longitude": 13.402359
+				},
+				"products": {
+					"suburban": true,
+					"subway": false,
+					"tram": true,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100002"
+			}
+		},
+		{
+			"tripId": "1|57524|0|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100031",
+				"name": "S+U Alexanderplatz Bhf/Memhardstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100031",
+					"latitude": 52.522937,
+					"longitude": 13.410755
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100031"
+			},
+			"when": "2025-07-08T01:46:00+02:00",
+			"plannedWhen": "2025-07-08T01:44:00+02:00",
+			"delay": 120,
+			"platform": "Pos. 25",
+			"plannedPlatform": "Pos. 25",
+			"prognosisType": "prognosed",
+			"direction": "S+U Pankow",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-bus-n2",
+				"fahrtNr": "140613",
+				"name": "N2",
+				"public": true,
+				"adminCode": "BVB---",
+				"productName": "Bus",
+				"mode": "bus",
+				"product": "bus",
+				"operator": {
+					"type": "operator",
+					"id": "berliner-verkehrsbetriebe",
+					"name": "Berliner Verkehrsbetriebe"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "BVG"
+				},
+				{
+					"id": "277659",
+					"type": "warning",
+					"summary": "Moved Stop",
+					"text": "Bus N2, N5, N8: The stop S+U Alexanderplatz/Memhardstraße towards Spandauer Straße/Marienkirche has been moved around the corner in the Memhardstraße (vor Karl-Liebknecht-Str.).\n<a href=\"https://fahrinfo.vbb.de/him-uploads/1744873638665_Kartenausschnitt_HackescherMarkt_250416.png\" target=\"_blank\" rel=\"noopener\">[KARTE/MAP]</a> (valid at: S+U Alexanderplatz Bhf/Memhardstr. (Berlin))",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": false,
+						"bus": true,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-04-16T11:38:00+02:00",
+					"validUntil": "2025-08-31T23:59:00+02:00",
+					"modified": "2025-06-17T21:13:10+02:00"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900130005",
+				"name": "Hadlichstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900130005",
+					"latitude": 52.568854,
+					"longitude": 13.414369
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900130005"
+			},
+			"currentTripPosition": {
+				"type": "location",
+				"latitude": 52.510344,
+				"longitude": 13.390529
+			}
+		},
+		{
+			"tripId": "1|58533|2|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100031",
+				"name": "S+U Alexanderplatz Bhf/Memhardstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100031",
+					"latitude": 52.522937,
+					"longitude": 13.410755
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100031"
+			},
+			"when": "2025-07-08T01:46:00+02:00",
+			"plannedWhen": "2025-07-08T01:45:00+02:00",
+			"delay": 60,
+			"platform": null,
+			"plannedPlatform": null,
+			"prognosisType": "prognosed",
+			"direction": "Rahnsdorf/Waldschänke",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-bus-n65",
+				"fahrtNr": "141738",
+				"name": "N65",
+				"public": true,
+				"adminCode": "BVB---",
+				"productName": "Bus",
+				"mode": "bus",
+				"product": "bus",
+				"operator": {
+					"type": "operator",
+					"id": "berliner-verkehrsbetriebe",
+					"name": "Berliner Verkehrsbetriebe"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "BVG"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900183803",
+				"name": "Berlin, Rahnsdorf/Waldschänke [Nachtbus]",
+				"location": {
+					"type": "location",
+					"id": "900183803",
+					"latitude": 52.442017,
+					"longitude": 13.686544
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				}
+			}
+		},
+		{
+			"tripId": "1|57573|1|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100031",
+				"name": "S+U Alexanderplatz Bhf/Memhardstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100031",
+					"latitude": 52.522937,
+					"longitude": 13.410755
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100031"
+			},
+			"when": "2025-07-08T01:47:00+02:00",
+			"plannedWhen": "2025-07-08T01:47:00+02:00",
+			"delay": 0,
+			"platform": "Pos. 24",
+			"plannedPlatform": "Pos. 24",
+			"prognosisType": "prognosed",
+			"direction": "S+U Wuhletal",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-bus-n5",
+				"fahrtNr": "140646",
+				"name": "N5",
+				"public": true,
+				"adminCode": "BVB---",
+				"productName": "Bus",
+				"mode": "bus",
+				"product": "bus",
+				"operator": {
+					"type": "operator",
+					"id": "berliner-verkehrsbetriebe",
+					"name": "Berliner Verkehrsbetriebe"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "BVG"
+				},
+				{
+					"id": "277659",
+					"type": "warning",
+					"summary": "Moved Stop",
+					"text": "Bus N2, N5, N8: The stop S+U Alexanderplatz/Memhardstraße towards Spandauer Straße/Marienkirche has been moved around the corner in the Memhardstraße (vor Karl-Liebknecht-Str.).\n<a href=\"https://fahrinfo.vbb.de/him-uploads/1744873638665_Kartenausschnitt_HackescherMarkt_250416.png\" target=\"_blank\" rel=\"noopener\">[KARTE/MAP]</a> (valid at: S+U Alexanderplatz Bhf/Memhardstr. (Berlin))",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": false,
+						"bus": true,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-04-16T11:38:00+02:00",
+					"validUntil": "2025-08-31T23:59:00+02:00",
+					"modified": "2025-06-17T21:13:10+02:00"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900175001",
+				"name": "S+U Wuhletal (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900175001",
+					"latitude": 52.512726,
+					"longitude": 13.574539
+				},
+				"products": {
+					"suburban": true,
+					"subway": true,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900175001"
+			}
+		},
+		{
+			"tripId": "1|57723|1|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100031",
+				"name": "S+U Alexanderplatz Bhf/Memhardstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100031",
+					"latitude": 52.522937,
+					"longitude": 13.410755
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100031"
+			},
+			"when": "2025-07-08T01:48:00+02:00",
+			"plannedWhen": "2025-07-08T01:48:00+02:00",
+			"delay": null,
+			"platform": "Pos. 24",
+			"plannedPlatform": "Pos. 24",
+			"prognosisType": null,
+			"direction": "U Osloer Str.",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-bus-n8",
+				"fahrtNr": "140759",
+				"name": "N8",
+				"public": true,
+				"adminCode": "BVB---",
+				"productName": "Bus",
+				"mode": "bus",
+				"product": "bus",
+				"operator": {
+					"type": "operator",
+					"id": "berliner-verkehrsbetriebe",
+					"name": "Berliner Verkehrsbetriebe"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "BVG"
+				},
+				{
+					"id": "277659",
+					"type": "warning",
+					"summary": "Moved Stop",
+					"text": "Bus N2, N5, N8: The stop S+U Alexanderplatz/Memhardstraße towards Spandauer Straße/Marienkirche has been moved around the corner in the Memhardstraße (vor Karl-Liebknecht-Str.).\n<a href=\"https://fahrinfo.vbb.de/him-uploads/1744873638665_Kartenausschnitt_HackescherMarkt_250416.png\" target=\"_blank\" rel=\"noopener\">[KARTE/MAP]</a> (valid at: S+U Alexanderplatz Bhf/Memhardstr. (Berlin))",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": false,
+						"bus": true,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-04-16T11:38:00+02:00",
+					"validUntil": "2025-08-31T23:59:00+02:00",
+					"modified": "2025-06-17T21:13:10+02:00"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900009202",
+				"name": "U Osloer Str. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900009202",
+					"latitude": 52.557105,
+					"longitude": 13.373279
+				},
+				"products": {
+					"suburban": false,
+					"subway": true,
+					"tram": true,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900009202"
+			},
+			"currentTripPosition": {
+				"type": "location",
+				"latitude": 52.492581,
+				"longitude": 13.422477
+			}
+		},
+		{
+			"tripId": "1|58171|1|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100031",
+				"name": "S+U Alexanderplatz Bhf/Memhardstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100031",
+					"latitude": 52.522937,
+					"longitude": 13.410755
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100031"
+			},
+			"when": "2025-07-08T01:52:00+02:00",
+			"plannedWhen": "2025-07-08T01:49:00+02:00",
+			"delay": 180,
+			"platform": "Pos. 24",
+			"plannedPlatform": "Pos. 24",
+			"prognosisType": "prognosed",
+			"direction": "S+U Alexanderplatz",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-bus-n42",
+				"fahrtNr": "141266",
+				"name": "N42",
+				"public": true,
+				"adminCode": "BVB---",
+				"productName": "Bus",
+				"mode": "bus",
+				"product": "bus",
+				"operator": {
+					"type": "operator",
+					"id": "berliner-verkehrsbetriebe",
+					"name": "Berliner Verkehrsbetriebe"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "BVG"
+				},
+				{
+					"id": "278829",
+					"type": "warning",
+					"summary": "Moved Stop",
+					"text": "Bus N42: The stop S+U Alexanderplatz/Memhardstraße towards S Südkreuz has been moved around the corner in the Memhardstraße. (valid at: S+U Alexanderplatz Bhf/Memhardstr. (Berlin))",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": false,
+						"bus": true,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-04-16T10:00:00+02:00",
+					"validUntil": "2025-07-31T23:59:00+02:00",
+					"modified": "2025-07-01T14:52:32+02:00"
+				},
+				{
+					"id": "279861",
+					"type": "warning",
+					"summary": "Moved Stop",
+					"text": "Bus N42: The stop S+U Alexanderplatz/Memhardstraße towards S Südkreuz has been moved around the corner in the Memhardstraße (vor Rosa-Luxemburg-Str.).\n<a href=\"https://fahrinfo.vbb.de/him-uploads/1744873638665_Kartenausschnitt_HackescherMarkt_250416.png\" target=\"_blank\" rel=\"noopener\">[KARTE/MAP]</a>",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": false,
+						"bus": true,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-04-16T11:38:00+02:00",
+					"validUntil": "2025-08-31T23:59:00+02:00",
+					"modified": "2025-06-17T21:12:50+02:00"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900100030",
+				"name": "Memhardstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100030",
+					"latitude": 52.523944,
+					"longitude": 13.411501
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100030"
+			},
+			"currentTripPosition": {
+				"type": "location",
+				"latitude": 52.492518,
+				"longitude": 13.38768
+			}
+		},
+		{
+			"tripId": "1|6197|0|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100003",
+				"name": "S+U Alexanderplatz Bhf (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100003",
+					"latitude": 52.521508,
+					"longitude": 13.411267
+				},
+				"products": {
+					"suburban": true,
+					"subway": true,
+					"tram": false,
+					"bus": false,
+					"ferry": false,
+					"express": false,
+					"regional": true
+				},
+				"stationDHID": "de:11000:900100003"
+			},
+			"when": "2025-07-08T01:53:00+02:00",
+			"plannedWhen": "2025-07-08T01:53:00+02:00",
+			"delay": 0,
+			"platform": "4",
+			"plannedPlatform": "4",
+			"prognosisType": "prognosed",
+			"direction": "S+U Friedrichstr. Bhf (Berlin)",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-s-bahn-s9",
+				"fahrtNr": "45096",
+				"name": "S9",
+				"public": true,
+				"adminCode": "DBS---",
+				"productName": "S",
+				"mode": "train",
+				"product": "suburban",
+				"operator": {
+					"type": "operator",
+					"id": "s-bahn-berlin-gmbh",
+					"name": "S-Bahn Berlin GmbH"
+				},
+				"color": {
+					"fg": "#fff",
+					"bg": "#992746"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "DBS"
+				},
+				{
+					"type": "hint",
+					"code": "FK",
+					"text": "Bicycle conveyance"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900100001",
+				"name": "S+U Friedrichstr. Bhf (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100001",
+					"latitude": 52.520519,
+					"longitude": 13.386448
+				},
+				"products": {
+					"suburban": true,
+					"subway": true,
+					"tram": true,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": true
+				},
+				"stationDHID": "de:11000:900100001"
+			},
+			"currentTripPosition": {
+				"type": "location",
+				"latitude": 52.462611,
+				"longitude": 13.497357
+			}
+		},
+		{
+			"tripId": "1|57527|2|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100031",
+				"name": "S+U Alexanderplatz Bhf/Memhardstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100031",
+					"latitude": 52.522937,
+					"longitude": 13.410755
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100031"
+			},
+			"when": "2025-07-08T01:55:00+02:00",
+			"plannedWhen": "2025-07-08T01:55:00+02:00",
+			"delay": null,
+			"platform": "Pos. 25",
+			"plannedPlatform": "Pos. 25",
+			"prognosisType": null,
+			"direction": "Fahrt endet hier",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-bus-n2",
+				"fahrtNr": "140607",
+				"name": "N2",
+				"public": true,
+				"adminCode": "BVB---",
+				"productName": "Bus",
+				"mode": "bus",
+				"product": "bus",
+				"operator": {
+					"type": "operator",
+					"id": "berliner-verkehrsbetriebe",
+					"name": "Berliner Verkehrsbetriebe"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "BVG"
+				},
+				{
+					"id": "277659",
+					"type": "warning",
+					"summary": "Moved Stop",
+					"text": "Bus N2, N5, N8: The stop S+U Alexanderplatz/Memhardstraße towards Spandauer Straße/Marienkirche has been moved around the corner in the Memhardstraße (vor Karl-Liebknecht-Str.).\n<a href=\"https://fahrinfo.vbb.de/him-uploads/1744873638665_Kartenausschnitt_HackescherMarkt_250416.png\" target=\"_blank\" rel=\"noopener\">[KARTE/MAP]</a>",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": false,
+						"bus": true,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-04-16T11:38:00+02:00",
+					"validUntil": "2025-08-31T23:59:00+02:00",
+					"modified": "2025-06-17T21:13:10+02:00"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900100030",
+				"name": "Memhardstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100030",
+					"latitude": 52.523944,
+					"longitude": 13.411501
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100030"
+			},
+			"currentTripPosition": {
+				"type": "location",
+				"latitude": 52.503539,
+				"longitude": 13.337933
+			}
+		},
+		{
+			"tripId": "1|58139|2|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100031",
+				"name": "S+U Alexanderplatz Bhf/Memhardstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100031",
+					"latitude": 52.522937,
+					"longitude": 13.410755
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100031"
+			},
+			"when": "2025-07-08T01:57:00+02:00",
+			"plannedWhen": "2025-07-08T01:58:00+02:00",
+			"delay": -60,
+			"platform": "Pos. 25",
+			"plannedPlatform": "Pos. 25",
+			"prognosisType": "prognosed",
+			"direction": "Perleberger Brücke via S+U Hauptbahnhof",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-bus-n40",
+				"fahrtNr": "141161",
+				"name": "N40",
+				"public": true,
+				"adminCode": "BVB---",
+				"productName": "Bus",
+				"mode": "bus",
+				"product": "bus",
+				"operator": {
+					"type": "operator",
+					"id": "berliner-verkehrsbetriebe",
+					"name": "Berliner Verkehrsbetriebe"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "BVG"
+				},
+				{
+					"id": "277652",
+					"type": "warning",
+					"summary": "Moved Stop",
+					"text": "Bus M4, M5, N40: The stop S+U Alexanderplatz/Memhardstraße towards S Karlshorst has been moved 20 meters in the driving direction.\n<a href=\"https://fahrinfo.vbb.de/him-uploads/1744873572930_Kartenausschnitt_HackescherMarkt_250416.png\" target=\"_blank\" rel=\"noopener\">[KARTE/MAP]</a> (valid at: S+U Alexanderplatz Bhf/Memhardstr. (Berlin))",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": false,
+						"bus": true,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-04-16T10:47:00+02:00",
+					"validUntil": "2025-08-31T23:59:00+02:00",
+					"modified": "2025-06-17T21:12:07+02:00"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900003201",
+				"name": "S+U Berlin Hauptbahnhof",
+				"location": {
+					"type": "location",
+					"id": "900003201",
+					"latitude": 52.525607,
+					"longitude": 13.369072
+				},
+				"products": {
+					"suburban": true,
+					"subway": true,
+					"tram": true,
+					"bus": true,
+					"ferry": false,
+					"express": true,
+					"regional": true
+				},
+				"stationDHID": "de:11000:900003201"
+			},
+			"currentTripPosition": {
+				"type": "location",
+				"latitude": 52.503197,
+				"longitude": 13.473158
+			}
+		},
+		{
+			"tripId": "1|100593|1|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100031",
+				"name": "S+U Alexanderplatz Bhf/Memhardstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100031",
+					"latitude": 52.522937,
+					"longitude": 13.410755
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100031"
+			},
+			"when": "2025-07-08T01:59:00+02:00",
+			"plannedWhen": "2025-07-08T01:58:00+02:00",
+			"delay": 60,
+			"platform": "Pos. 24",
+			"plannedPlatform": "Pos. 24",
+			"prognosisType": "prognosed",
+			"direction": "Märkisches Viertel, Wilhelmsruher Damm",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-bus-n8",
+				"fahrtNr": "1127",
+				"name": "N8",
+				"public": true,
+				"adminCode": "BVB---",
+				"productName": "Bus",
+				"mode": "bus",
+				"product": "bus",
+				"operator": {
+					"type": "operator",
+					"id": "berliner-verkehrsbetriebe",
+					"name": "Berliner Verkehrsbetriebe"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "BVG"
+				},
+				{
+					"id": "277659",
+					"type": "warning",
+					"summary": "Moved Stop",
+					"text": "Bus N2, N5, N8: The stop S+U Alexanderplatz/Memhardstraße towards Spandauer Straße/Marienkirche has been moved around the corner in the Memhardstraße (vor Karl-Liebknecht-Str.).\n<a href=\"https://fahrinfo.vbb.de/him-uploads/1744873638665_Kartenausschnitt_HackescherMarkt_250416.png\" target=\"_blank\" rel=\"noopener\">[KARTE/MAP]</a> (valid at: S+U Alexanderplatz Bhf/Memhardstr. (Berlin))",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": false,
+						"bus": true,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-04-16T11:38:00+02:00",
+					"validUntil": "2025-08-31T23:59:00+02:00",
+					"modified": "2025-06-17T21:13:10+02:00"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900096307",
+				"name": "Wilhelmsruher Damm (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900096307",
+					"latitude": 52.597278,
+					"longitude": 13.366726
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900096307"
+			},
+			"currentTripPosition": {
+				"type": "location",
+				"latitude": 52.470809,
+				"longitude": 13.42957
+			}
+		},
+		{
+			"tripId": "1|57571|2|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100031",
+				"name": "S+U Alexanderplatz Bhf/Memhardstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100031",
+					"latitude": 52.522937,
+					"longitude": 13.410755
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100031"
+			},
+			"when": "2025-07-08T02:00:00+02:00",
+			"plannedWhen": "2025-07-08T02:00:00+02:00",
+			"delay": 0,
+			"platform": "Pos. 24",
+			"plannedPlatform": "Pos. 24",
+			"prognosisType": "prognosed",
+			"direction": "Hellersdorf, Riesaer Str.",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-bus-n5",
+				"fahrtNr": "140653",
+				"name": "N5",
+				"public": true,
+				"adminCode": "BVB---",
+				"productName": "Bus",
+				"mode": "bus",
+				"product": "bus",
+				"operator": {
+					"type": "operator",
+					"id": "berliner-verkehrsbetriebe",
+					"name": "Berliner Verkehrsbetriebe"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "BVG"
+				},
+				{
+					"id": "277659",
+					"type": "warning",
+					"summary": "Moved Stop",
+					"text": "Bus N2, N5, N8: The stop S+U Alexanderplatz/Memhardstraße towards Spandauer Straße/Marienkirche has been moved around the corner in the Memhardstraße (vor Karl-Liebknecht-Str.).\n<a href=\"https://fahrinfo.vbb.de/him-uploads/1744873638665_Kartenausschnitt_HackescherMarkt_250416.png\" target=\"_blank\" rel=\"noopener\">[KARTE/MAP]</a> (valid at: S+U Alexanderplatz Bhf/Memhardstr. (Berlin))",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": false,
+						"bus": true,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-04-16T11:38:00+02:00",
+					"validUntil": "2025-08-31T23:59:00+02:00",
+					"modified": "2025-06-17T21:13:10+02:00"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900175013",
+				"name": "Riesaer Str. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900175013",
+					"latitude": 52.529401,
+					"longitude": 13.624186
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": true,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900175013"
+			}
+		},
+		{
+			"tripId": "1|58125|1|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100031",
+				"name": "S+U Alexanderplatz Bhf/Memhardstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100031",
+					"latitude": 52.522937,
+					"longitude": 13.410755
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100031"
+			},
+			"when": "2025-07-08T02:00:00+02:00",
+			"plannedWhen": "2025-07-08T02:00:00+02:00",
+			"delay": 0,
+			"platform": null,
+			"plannedPlatform": null,
+			"prognosisType": "prognosed",
+			"direction": "S Karlshorst",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-bus-n40",
+				"fahrtNr": "141195",
+				"name": "N40",
+				"public": true,
+				"adminCode": "BVB---",
+				"productName": "Bus",
+				"mode": "bus",
+				"product": "bus",
+				"operator": {
+					"type": "operator",
+					"id": "berliner-verkehrsbetriebe",
+					"name": "Berliner Verkehrsbetriebe"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "BVG"
+				},
+				{
+					"id": "277652",
+					"type": "warning",
+					"summary": "Moved Stop",
+					"text": "Bus M4, M5, N40: The stop S+U Alexanderplatz/Memhardstraße towards S Karlshorst has been moved 20 meters in the driving direction.\n<a href=\"https://fahrinfo.vbb.de/him-uploads/1744873572930_Kartenausschnitt_HackescherMarkt_250416.png\" target=\"_blank\" rel=\"noopener\">[KARTE/MAP]</a> (valid at: S+U Alexanderplatz Bhf/Memhardstr. (Berlin))",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": false,
+						"bus": true,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-04-16T10:47:00+02:00",
+					"validUntil": "2025-08-31T23:59:00+02:00",
+					"modified": "2025-06-17T21:12:07+02:00"
+				},
+				{
+					"type": "status",
+					"code": "text.realtime.journey.partially.cancelled.unspecified",
+					"text": "Cancellation of intermediate stops"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900162001",
+				"name": "S Karlshorst (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900162001",
+					"latitude": 52.481111,
+					"longitude": 13.525853
+				},
+				"products": {
+					"suburban": true,
+					"subway": false,
+					"tram": true,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900162001"
+			}
+		},
+		{
+			"tripId": "1|62978|2|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100031",
+				"name": "S+U Alexanderplatz Bhf/Memhardstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100031",
+					"latitude": 52.522937,
+					"longitude": 13.410755
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100031"
+			},
+			"when": "2025-07-08T02:04:00+02:00",
+			"plannedWhen": "2025-07-08T02:04:00+02:00",
+			"delay": 0,
+			"platform": "Pos. 26",
+			"plannedPlatform": "Pos. 26",
+			"prognosisType": "prognosed",
+			"direction": "M4,M5 Ersatz Mollstr./Otto-Braun-Str.",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-tram-m4-bus-m4-ev1",
+				"fahrtNr": "123733",
+				"name": "M4",
+				"public": true,
+				"adminCode": "BVB---",
+				"productName": "Bus",
+				"mode": "bus",
+				"product": "bus",
+				"operator": {
+					"type": "operator",
+					"id": "berliner-verkehrsbetriebe",
+					"name": "Berliner Verkehrsbetriebe"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "BVG"
+				},
+				{
+					"id": "267909",
+					"type": "warning",
+					"summary": "Replacement Service",
+					"text": "Tram M4, M5: Replacement service due to construction works between Mollstraße/Otto-Braun-Straße and S Hackescher Markt.",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": false,
+						"bus": true,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-03-03T05:00:00+01:00",
+					"validUntil": "2025-07-28T03:30:00+02:00",
+					"modified": "2025-03-12T09:02:32+01:00"
+				},
+				{
+					"id": "277652",
+					"type": "warning",
+					"summary": "Moved Stop",
+					"text": "Bus M4, M5, N40: The stop S+U Alexanderplatz/Memhardstraße towards S Karlshorst has been moved 20 meters in the driving direction.\n<a href=\"https://fahrinfo.vbb.de/him-uploads/1744873572930_Kartenausschnitt_HackescherMarkt_250416.png\" target=\"_blank\" rel=\"noopener\">[KARTE/MAP]</a> (valid at: S+U Alexanderplatz Bhf/Memhardstr. (Berlin))",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": false,
+						"bus": true,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-04-16T10:47:00+02:00",
+					"validUntil": "2025-08-31T23:59:00+02:00",
+					"modified": "2025-06-17T21:12:07+02:00"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900100040",
+				"name": "Mollstr./Otto-Braun-Str. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100040",
+					"latitude": 52.525185,
+					"longitude": 13.419942
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": true,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100040"
+			}
+		},
+		{
+			"tripId": "1|58387|3|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100031",
+				"name": "S+U Alexanderplatz Bhf/Memhardstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100031",
+					"latitude": 52.522937,
+					"longitude": 13.410755
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100031"
+			},
+			"when": "2025-07-08T02:05:00+02:00",
+			"plannedWhen": "2025-07-08T02:05:00+02:00",
+			"delay": 0,
+			"platform": null,
+			"plannedPlatform": null,
+			"prognosisType": "prognosed",
+			"direction": "Flughafen BER",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-bus-n60",
+				"fahrtNr": "141491",
+				"name": "N60",
+				"public": true,
+				"adminCode": "BVB---",
+				"productName": "Bus",
+				"mode": "bus",
+				"product": "bus",
+				"operator": {
+					"type": "operator",
+					"id": "berliner-verkehrsbetriebe",
+					"name": "Berliner Verkehrsbetriebe"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "BVG"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900260009",
+				"name": "Flughafen BER",
+				"location": {
+					"type": "location",
+					"id": "900260009",
+					"latitude": 52.36461,
+					"longitude": 13.50987
+				},
+				"products": {
+					"suburban": true,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": true,
+					"regional": true
+				},
+				"stationDHID": "de:12061:900260009"
+			}
+		},
+		{
+			"tripId": "1|57722|2|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100031",
+				"name": "S+U Alexanderplatz Bhf/Memhardstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100031",
+					"latitude": 52.522937,
+					"longitude": 13.410755
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100031"
+			},
+			"when": "2025-07-08T02:08:00+02:00",
+			"plannedWhen": "2025-07-08T02:08:00+02:00",
+			"delay": 0,
+			"platform": "Pos. 24",
+			"plannedPlatform": "Pos. 24",
+			"prognosisType": "prognosed",
+			"direction": "U Osloer Str.",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-bus-n8",
+				"fahrtNr": "140760",
+				"name": "N8",
+				"public": true,
+				"adminCode": "BVB---",
+				"productName": "Bus",
+				"mode": "bus",
+				"product": "bus",
+				"operator": {
+					"type": "operator",
+					"id": "berliner-verkehrsbetriebe",
+					"name": "Berliner Verkehrsbetriebe"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "BVG"
+				},
+				{
+					"id": "277659",
+					"type": "warning",
+					"summary": "Moved Stop",
+					"text": "Bus N2, N5, N8: The stop S+U Alexanderplatz/Memhardstraße towards Spandauer Straße/Marienkirche has been moved around the corner in the Memhardstraße (vor Karl-Liebknecht-Str.).\n<a href=\"https://fahrinfo.vbb.de/him-uploads/1744873638665_Kartenausschnitt_HackescherMarkt_250416.png\" target=\"_blank\" rel=\"noopener\">[KARTE/MAP]</a> (valid at: S+U Alexanderplatz Bhf/Memhardstr. (Berlin))",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": false,
+						"bus": true,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-04-16T11:38:00+02:00",
+					"validUntil": "2025-08-31T23:59:00+02:00",
+					"modified": "2025-06-17T21:13:10+02:00"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900009202",
+				"name": "U Osloer Str. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900009202",
+					"latitude": 52.557105,
+					"longitude": 13.373279
+				},
+				"products": {
+					"suburban": false,
+					"subway": true,
+					"tram": true,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900009202"
+			}
+		},
+		{
+			"tripId": "1|69765|3|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100024",
+				"name": "S+U Alexanderplatz Bhf/Dircksenstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100024",
+					"latitude": 52.521481,
+					"longitude": 13.411924
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": true,
+					"bus": false,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100024"
+			},
+			"when": "2025-07-08T02:08:00+02:00",
+			"plannedWhen": "2025-07-08T02:08:00+02:00",
+			"delay": 0,
+			"platform": "Pos. 13",
+			"plannedPlatform": "Pos. 13",
+			"prognosisType": "prognosed",
+			"direction": "Falkenberg",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-tram-m4",
+				"fahrtNr": "33742",
+				"name": "M4",
+				"public": true,
+				"adminCode": "BVT---",
+				"productName": "Tram",
+				"mode": "train",
+				"product": "tram",
+				"operator": {
+					"type": "operator",
+					"id": "berliner-verkehrsbetriebe",
+					"name": "Berliner Verkehrsbetriebe"
+				},
+				"color": {
+					"fg": "#fff",
+					"bg": "#CA1214"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "BVG"
+				},
+				{
+					"type": "hint",
+					"code": "FK",
+					"text": "Bicycle conveyance"
+				},
+				{
+					"id": "267906",
+					"type": "warning",
+					"summary": "Interruption",
+					"text": "Tram M4: No service due to construction works between U Alexanderplatz and S Hackescher Markt. No stop S+U Alexanderplatz/Gontardstraße. Alternative stop S+U Alexanderplatz/Dircksenstraße.\n<a href=\"https://fahrinfo.vbb.de/him-uploads/1740389896741_TramMetro_Alex_ab_250303_final_4c.png\" target=\"_blank\" rel=\"noopener\">[MAP/KARTE]</a> (S+U Alexanderplatz Bhf/Dircksenstr. (Berlin) - Mollstr./Otto-Braun-Str. (Berlin))",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": true,
+						"bus": false,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-03-12T05:00:00+01:00",
+					"validUntil": "2025-07-28T03:00:00+02:00",
+					"modified": "2025-07-01T13:44:25+02:00"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900152007",
+				"name": "Falkenberg (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900152007",
+					"latitude": 52.570212,
+					"longitude": 13.526815
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": true,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900152007"
+			}
+		},
+		{
+			"tripId": "1|69292|3|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100024",
+				"name": "S+U Alexanderplatz Bhf/Dircksenstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100024",
+					"latitude": 52.521481,
+					"longitude": 13.411924
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": true,
+					"bus": false,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100024"
+			},
+			"when": "2025-07-08T02:11:00+02:00",
+			"plannedWhen": "2025-07-08T02:11:00+02:00",
+			"delay": 0,
+			"platform": "Pos. 14",
+			"plannedPlatform": "Pos. 14",
+			"prognosisType": "prognosed",
+			"direction": "Am Steinberg",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-tram-m2",
+				"fahrtNr": "32102",
+				"name": "M2",
+				"public": true,
+				"adminCode": "BVT---",
+				"productName": "Tram",
+				"mode": "train",
+				"product": "tram",
+				"operator": {
+					"type": "operator",
+					"id": "berliner-verkehrsbetriebe",
+					"name": "Berliner Verkehrsbetriebe"
+				},
+				"color": {
+					"fg": "#fff",
+					"bg": "#7AB929"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "BVG"
+				},
+				{
+					"type": "hint",
+					"code": "FK",
+					"text": "Bicycle conveyance"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900141506",
+				"name": "Am Steinberg (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900141506",
+					"latitude": 52.558382,
+					"longitude": 13.4333
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": true,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900141506"
+			}
+		},
+		{
+			"tripId": "1|62971|3|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100031",
+				"name": "S+U Alexanderplatz Bhf/Memhardstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100031",
+					"latitude": 52.522937,
+					"longitude": 13.410755
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100031"
+			},
+			"when": "2025-07-08T02:12:00+02:00",
+			"plannedWhen": "2025-07-08T02:12:00+02:00",
+			"delay": 0,
+			"platform": null,
+			"plannedPlatform": null,
+			"prognosisType": "prognosed",
+			"direction": "M4,M5 Ersatz Hackescher Markt",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-tram-m4-bus-m4-ev1",
+				"fahrtNr": "155133",
+				"name": "M4",
+				"public": true,
+				"adminCode": "BVB---",
+				"productName": "Bus",
+				"mode": "bus",
+				"product": "bus",
+				"operator": {
+					"type": "operator",
+					"id": "berliner-verkehrsbetriebe",
+					"name": "Berliner Verkehrsbetriebe"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "BVG"
+				},
+				{
+					"id": "267909",
+					"type": "warning",
+					"summary": "Replacement Service",
+					"text": "Tram M4, M5: Replacement service due to construction works between Mollstraße/Otto-Braun-Straße and S Hackescher Markt.",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": false,
+						"bus": true,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-03-03T05:00:00+01:00",
+					"validUntil": "2025-07-28T03:30:00+02:00",
+					"modified": "2025-03-12T09:02:32+01:00"
+				},
+				{
+					"id": "277652",
+					"type": "warning",
+					"summary": "Moved Stop",
+					"text": "Bus M4, M5, N40: The stop S+U Alexanderplatz/Memhardstraße towards S Karlshorst has been moved 20 meters in the driving direction.\n<a href=\"https://fahrinfo.vbb.de/him-uploads/1744873572930_Kartenausschnitt_HackescherMarkt_250416.png\" target=\"_blank\" rel=\"noopener\">[KARTE/MAP]</a> (valid at: S+U Alexanderplatz Bhf/Memhardstr. (Berlin))",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": false,
+						"bus": true,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-04-16T10:47:00+02:00",
+					"validUntil": "2025-08-31T23:59:00+02:00",
+					"modified": "2025-06-17T21:12:07+02:00"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900100002",
+				"name": "S Hackescher Markt (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100002",
+					"latitude": 52.522605,
+					"longitude": 13.402359
+				},
+				"products": {
+					"suburban": true,
+					"subway": false,
+					"tram": true,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100002"
+			}
+		},
+		{
+			"tripId": "1|57524|1|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100031",
+				"name": "S+U Alexanderplatz Bhf/Memhardstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100031",
+					"latitude": 52.522937,
+					"longitude": 13.410755
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100031"
+			},
+			"when": "2025-07-08T02:14:00+02:00",
+			"plannedWhen": "2025-07-08T02:14:00+02:00",
+			"delay": 0,
+			"platform": "Pos. 25",
+			"plannedPlatform": "Pos. 25",
+			"prognosisType": "prognosed",
+			"direction": "S+U Pankow",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-bus-n2",
+				"fahrtNr": "140614",
+				"name": "N2",
+				"public": true,
+				"adminCode": "BVB---",
+				"productName": "Bus",
+				"mode": "bus",
+				"product": "bus",
+				"operator": {
+					"type": "operator",
+					"id": "berliner-verkehrsbetriebe",
+					"name": "Berliner Verkehrsbetriebe"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "BVG"
+				},
+				{
+					"id": "277659",
+					"type": "warning",
+					"summary": "Moved Stop",
+					"text": "Bus N2, N5, N8: The stop S+U Alexanderplatz/Memhardstraße towards Spandauer Straße/Marienkirche has been moved around the corner in the Memhardstraße (vor Karl-Liebknecht-Str.).\n<a href=\"https://fahrinfo.vbb.de/him-uploads/1744873638665_Kartenausschnitt_HackescherMarkt_250416.png\" target=\"_blank\" rel=\"noopener\">[KARTE/MAP]</a> (valid at: S+U Alexanderplatz Bhf/Memhardstr. (Berlin))",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": false,
+						"bus": true,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-04-16T11:38:00+02:00",
+					"validUntil": "2025-08-31T23:59:00+02:00",
+					"modified": "2025-06-17T21:13:10+02:00"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900130005",
+				"name": "Hadlichstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900130005",
+					"latitude": 52.568854,
+					"longitude": 13.414369
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900130005"
+			},
+			"currentTripPosition": {
+				"type": "location",
+				"latitude": 52.511413,
+				"longitude": 13.305698
+			}
+		},
+		{
+			"tripId": "1|58533|3|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100031",
+				"name": "S+U Alexanderplatz Bhf/Memhardstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100031",
+					"latitude": 52.522937,
+					"longitude": 13.410755
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100031"
+			},
+			"when": "2025-07-08T02:15:00+02:00",
+			"plannedWhen": "2025-07-08T02:15:00+02:00",
+			"delay": 0,
+			"platform": null,
+			"plannedPlatform": null,
+			"prognosisType": "prognosed",
+			"direction": "Rahnsdorf/Waldschänke",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-bus-n65",
+				"fahrtNr": "141739",
+				"name": "N65",
+				"public": true,
+				"adminCode": "BVB---",
+				"productName": "Bus",
+				"mode": "bus",
+				"product": "bus",
+				"operator": {
+					"type": "operator",
+					"id": "berliner-verkehrsbetriebe",
+					"name": "Berliner Verkehrsbetriebe"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "BVG"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900183803",
+				"name": "Berlin, Rahnsdorf/Waldschänke [Nachtbus]",
+				"location": {
+					"type": "location",
+					"id": "900183803",
+					"latitude": 52.442017,
+					"longitude": 13.686544
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				}
+			}
+		},
+		{
+			"tripId": "1|57573|2|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100031",
+				"name": "S+U Alexanderplatz Bhf/Memhardstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100031",
+					"latitude": 52.522937,
+					"longitude": 13.410755
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100031"
+			},
+			"when": "2025-07-08T02:17:00+02:00",
+			"plannedWhen": "2025-07-08T02:17:00+02:00",
+			"delay": null,
+			"platform": "Pos. 24",
+			"plannedPlatform": "Pos. 24",
+			"prognosisType": null,
+			"direction": "S+U Wuhletal",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-bus-n5",
+				"fahrtNr": "140647",
+				"name": "N5",
+				"public": true,
+				"adminCode": "BVB---",
+				"productName": "Bus",
+				"mode": "bus",
+				"product": "bus",
+				"operator": {
+					"type": "operator",
+					"id": "berliner-verkehrsbetriebe",
+					"name": "Berliner Verkehrsbetriebe"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "BVG"
+				},
+				{
+					"id": "277659",
+					"type": "warning",
+					"summary": "Moved Stop",
+					"text": "Bus N2, N5, N8: The stop S+U Alexanderplatz/Memhardstraße towards Spandauer Straße/Marienkirche has been moved around the corner in the Memhardstraße (vor Karl-Liebknecht-Str.).\n<a href=\"https://fahrinfo.vbb.de/him-uploads/1744873638665_Kartenausschnitt_HackescherMarkt_250416.png\" target=\"_blank\" rel=\"noopener\">[KARTE/MAP]</a> (valid at: S+U Alexanderplatz Bhf/Memhardstr. (Berlin))",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": false,
+						"bus": true,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-04-16T11:38:00+02:00",
+					"validUntil": "2025-08-31T23:59:00+02:00",
+					"modified": "2025-06-17T21:13:10+02:00"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900175001",
+				"name": "S+U Wuhletal (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900175001",
+					"latitude": 52.512726,
+					"longitude": 13.574539
+				},
+				"products": {
+					"suburban": true,
+					"subway": true,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900175001"
+			}
+		},
+		{
+			"tripId": "1|57723|2|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100031",
+				"name": "S+U Alexanderplatz Bhf/Memhardstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100031",
+					"latitude": 52.522937,
+					"longitude": 13.410755
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100031"
+			},
+			"when": "2025-07-08T02:18:00+02:00",
+			"plannedWhen": "2025-07-08T02:18:00+02:00",
+			"delay": null,
+			"platform": "Pos. 24",
+			"plannedPlatform": "Pos. 24",
+			"prognosisType": null,
+			"direction": "U Osloer Str.",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-bus-n8",
+				"fahrtNr": "140761",
+				"name": "N8",
+				"public": true,
+				"adminCode": "BVB---",
+				"productName": "Bus",
+				"mode": "bus",
+				"product": "bus",
+				"operator": {
+					"type": "operator",
+					"id": "berliner-verkehrsbetriebe",
+					"name": "Berliner Verkehrsbetriebe"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "BVG"
+				},
+				{
+					"id": "277659",
+					"type": "warning",
+					"summary": "Moved Stop",
+					"text": "Bus N2, N5, N8: The stop S+U Alexanderplatz/Memhardstraße towards Spandauer Straße/Marienkirche has been moved around the corner in the Memhardstraße (vor Karl-Liebknecht-Str.).\n<a href=\"https://fahrinfo.vbb.de/him-uploads/1744873638665_Kartenausschnitt_HackescherMarkt_250416.png\" target=\"_blank\" rel=\"noopener\">[KARTE/MAP]</a> (valid at: S+U Alexanderplatz Bhf/Memhardstr. (Berlin))",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": false,
+						"bus": true,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-04-16T11:38:00+02:00",
+					"validUntil": "2025-08-31T23:59:00+02:00",
+					"modified": "2025-06-17T21:13:10+02:00"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900009202",
+				"name": "U Osloer Str. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900009202",
+					"latitude": 52.557105,
+					"longitude": 13.373279
+				},
+				"products": {
+					"suburban": false,
+					"subway": true,
+					"tram": true,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900009202"
+			}
+		},
+		{
+			"tripId": "1|58171|2|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100031",
+				"name": "S+U Alexanderplatz Bhf/Memhardstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100031",
+					"latitude": 52.522937,
+					"longitude": 13.410755
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100031"
+			},
+			"when": "2025-07-08T02:19:00+02:00",
+			"plannedWhen": "2025-07-08T02:19:00+02:00",
+			"delay": null,
+			"platform": "Pos. 24",
+			"plannedPlatform": "Pos. 24",
+			"prognosisType": null,
+			"direction": "S+U Alexanderplatz",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-bus-n42",
+				"fahrtNr": "141265",
+				"name": "N42",
+				"public": true,
+				"adminCode": "BVB---",
+				"productName": "Bus",
+				"mode": "bus",
+				"product": "bus",
+				"operator": {
+					"type": "operator",
+					"id": "berliner-verkehrsbetriebe",
+					"name": "Berliner Verkehrsbetriebe"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "BVG"
+				},
+				{
+					"id": "278829",
+					"type": "warning",
+					"summary": "Moved Stop",
+					"text": "Bus N42: The stop S+U Alexanderplatz/Memhardstraße towards S Südkreuz has been moved around the corner in the Memhardstraße. (valid at: S+U Alexanderplatz Bhf/Memhardstr. (Berlin))",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": false,
+						"bus": true,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-04-16T10:00:00+02:00",
+					"validUntil": "2025-07-31T23:59:00+02:00",
+					"modified": "2025-07-01T14:52:32+02:00"
+				},
+				{
+					"id": "279861",
+					"type": "warning",
+					"summary": "Moved Stop",
+					"text": "Bus N42: The stop S+U Alexanderplatz/Memhardstraße towards S Südkreuz has been moved around the corner in the Memhardstraße (vor Rosa-Luxemburg-Str.).\n<a href=\"https://fahrinfo.vbb.de/him-uploads/1744873638665_Kartenausschnitt_HackescherMarkt_250416.png\" target=\"_blank\" rel=\"noopener\">[KARTE/MAP]</a>",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": false,
+						"bus": true,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-04-16T11:38:00+02:00",
+					"validUntil": "2025-08-31T23:59:00+02:00",
+					"modified": "2025-06-17T21:12:50+02:00"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900100030",
+				"name": "Memhardstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100030",
+					"latitude": 52.523944,
+					"longitude": 13.411501
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100030"
+			}
+		},
+		{
+			"tripId": "1|57527|3|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100031",
+				"name": "S+U Alexanderplatz Bhf/Memhardstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100031",
+					"latitude": 52.522937,
+					"longitude": 13.410755
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100031"
+			},
+			"when": "2025-07-08T02:25:00+02:00",
+			"plannedWhen": "2025-07-08T02:25:00+02:00",
+			"delay": 0,
+			"platform": "Pos. 25",
+			"plannedPlatform": "Pos. 25",
+			"prognosisType": "prognosed",
+			"direction": "Fahrt endet hier",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-bus-n2",
+				"fahrtNr": "140608",
+				"name": "N2",
+				"public": true,
+				"adminCode": "BVB---",
+				"productName": "Bus",
+				"mode": "bus",
+				"product": "bus",
+				"operator": {
+					"type": "operator",
+					"id": "berliner-verkehrsbetriebe",
+					"name": "Berliner Verkehrsbetriebe"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "BVG"
+				},
+				{
+					"id": "277659",
+					"type": "warning",
+					"summary": "Moved Stop",
+					"text": "Bus N2, N5, N8: The stop S+U Alexanderplatz/Memhardstraße towards Spandauer Straße/Marienkirche has been moved around the corner in the Memhardstraße (vor Karl-Liebknecht-Str.).\n<a href=\"https://fahrinfo.vbb.de/him-uploads/1744873638665_Kartenausschnitt_HackescherMarkt_250416.png\" target=\"_blank\" rel=\"noopener\">[KARTE/MAP]</a>",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": false,
+						"bus": true,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-04-16T11:38:00+02:00",
+					"validUntil": "2025-08-31T23:59:00+02:00",
+					"modified": "2025-06-17T21:13:10+02:00"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900100030",
+				"name": "Memhardstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100030",
+					"latitude": 52.523944,
+					"longitude": 13.411501
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100030"
+			}
+		},
+		{
+			"tripId": "1|58139|3|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100031",
+				"name": "S+U Alexanderplatz Bhf/Memhardstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100031",
+					"latitude": 52.522937,
+					"longitude": 13.410755
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100031"
+			},
+			"when": "2025-07-08T02:28:00+02:00",
+			"plannedWhen": "2025-07-08T02:28:00+02:00",
+			"delay": 0,
+			"platform": "Pos. 25",
+			"plannedPlatform": "Pos. 25",
+			"prognosisType": "prognosed",
+			"direction": "Perleberger Brücke via S+U Hauptbahnhof",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-bus-n40",
+				"fahrtNr": "141162",
+				"name": "N40",
+				"public": true,
+				"adminCode": "BVB---",
+				"productName": "Bus",
+				"mode": "bus",
+				"product": "bus",
+				"operator": {
+					"type": "operator",
+					"id": "berliner-verkehrsbetriebe",
+					"name": "Berliner Verkehrsbetriebe"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "BVG"
+				},
+				{
+					"id": "277652",
+					"type": "warning",
+					"summary": "Moved Stop",
+					"text": "Bus M4, M5, N40: The stop S+U Alexanderplatz/Memhardstraße towards S Karlshorst has been moved 20 meters in the driving direction.\n<a href=\"https://fahrinfo.vbb.de/him-uploads/1744873572930_Kartenausschnitt_HackescherMarkt_250416.png\" target=\"_blank\" rel=\"noopener\">[KARTE/MAP]</a> (valid at: S+U Alexanderplatz Bhf/Memhardstr. (Berlin))",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": false,
+						"bus": true,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-04-16T10:47:00+02:00",
+					"validUntil": "2025-08-31T23:59:00+02:00",
+					"modified": "2025-06-17T21:12:07+02:00"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900003201",
+				"name": "S+U Berlin Hauptbahnhof",
+				"location": {
+					"type": "location",
+					"id": "900003201",
+					"latitude": 52.525607,
+					"longitude": 13.369072
+				},
+				"products": {
+					"suburban": true,
+					"subway": true,
+					"tram": true,
+					"bus": true,
+					"ferry": false,
+					"express": true,
+					"regional": true
+				},
+				"stationDHID": "de:11000:900003201"
+			}
+		},
+		{
+			"tripId": "1|100593|2|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100031",
+				"name": "S+U Alexanderplatz Bhf/Memhardstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100031",
+					"latitude": 52.522937,
+					"longitude": 13.410755
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100031"
+			},
+			"when": "2025-07-08T02:28:00+02:00",
+			"plannedWhen": "2025-07-08T02:28:00+02:00",
+			"delay": null,
+			"platform": "Pos. 24",
+			"plannedPlatform": "Pos. 24",
+			"prognosisType": null,
+			"direction": "Märkisches Viertel, Wilhelmsruher Damm",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-bus-n8",
+				"fahrtNr": "1132",
+				"name": "N8",
+				"public": true,
+				"adminCode": "BVB---",
+				"productName": "Bus",
+				"mode": "bus",
+				"product": "bus",
+				"operator": {
+					"type": "operator",
+					"id": "berliner-verkehrsbetriebe",
+					"name": "Berliner Verkehrsbetriebe"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "BVG"
+				},
+				{
+					"id": "277659",
+					"type": "warning",
+					"summary": "Moved Stop",
+					"text": "Bus N2, N5, N8: The stop S+U Alexanderplatz/Memhardstraße towards Spandauer Straße/Marienkirche has been moved around the corner in the Memhardstraße (vor Karl-Liebknecht-Str.).\n<a href=\"https://fahrinfo.vbb.de/him-uploads/1744873638665_Kartenausschnitt_HackescherMarkt_250416.png\" target=\"_blank\" rel=\"noopener\">[KARTE/MAP]</a> (valid at: S+U Alexanderplatz Bhf/Memhardstr. (Berlin))",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": false,
+						"bus": true,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-04-16T11:38:00+02:00",
+					"validUntil": "2025-08-31T23:59:00+02:00",
+					"modified": "2025-06-17T21:13:10+02:00"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900096307",
+				"name": "Wilhelmsruher Damm (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900096307",
+					"latitude": 52.597278,
+					"longitude": 13.366726
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900096307"
+			}
+		},
+		{
+			"tripId": "1|57571|3|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100031",
+				"name": "S+U Alexanderplatz Bhf/Memhardstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100031",
+					"latitude": 52.522937,
+					"longitude": 13.410755
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100031"
+			},
+			"when": "2025-07-08T02:30:00+02:00",
+			"plannedWhen": "2025-07-08T02:30:00+02:00",
+			"delay": 0,
+			"platform": "Pos. 24",
+			"plannedPlatform": "Pos. 24",
+			"prognosisType": "prognosed",
+			"direction": "Hellersdorf, Riesaer Str.",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-bus-n5",
+				"fahrtNr": "140654",
+				"name": "N5",
+				"public": true,
+				"adminCode": "BVB---",
+				"productName": "Bus",
+				"mode": "bus",
+				"product": "bus",
+				"operator": {
+					"type": "operator",
+					"id": "berliner-verkehrsbetriebe",
+					"name": "Berliner Verkehrsbetriebe"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "BVG"
+				},
+				{
+					"id": "277659",
+					"type": "warning",
+					"summary": "Moved Stop",
+					"text": "Bus N2, N5, N8: The stop S+U Alexanderplatz/Memhardstraße towards Spandauer Straße/Marienkirche has been moved around the corner in the Memhardstraße (vor Karl-Liebknecht-Str.).\n<a href=\"https://fahrinfo.vbb.de/him-uploads/1744873638665_Kartenausschnitt_HackescherMarkt_250416.png\" target=\"_blank\" rel=\"noopener\">[KARTE/MAP]</a> (valid at: S+U Alexanderplatz Bhf/Memhardstr. (Berlin))",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": false,
+						"bus": true,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-04-16T11:38:00+02:00",
+					"validUntil": "2025-08-31T23:59:00+02:00",
+					"modified": "2025-06-17T21:13:10+02:00"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900175013",
+				"name": "Riesaer Str. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900175013",
+					"latitude": 52.529401,
+					"longitude": 13.624186
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": true,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900175013"
+			}
+		},
+		{
+			"tripId": "1|58125|2|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100031",
+				"name": "S+U Alexanderplatz Bhf/Memhardstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100031",
+					"latitude": 52.522937,
+					"longitude": 13.410755
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100031"
+			},
+			"when": "2025-07-08T02:30:00+02:00",
+			"plannedWhen": "2025-07-08T02:30:00+02:00",
+			"delay": 0,
+			"platform": null,
+			"plannedPlatform": null,
+			"prognosisType": "prognosed",
+			"direction": "S Karlshorst",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-bus-n40",
+				"fahrtNr": "141196",
+				"name": "N40",
+				"public": true,
+				"adminCode": "BVB---",
+				"productName": "Bus",
+				"mode": "bus",
+				"product": "bus",
+				"operator": {
+					"type": "operator",
+					"id": "berliner-verkehrsbetriebe",
+					"name": "Berliner Verkehrsbetriebe"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "BVG"
+				},
+				{
+					"id": "277652",
+					"type": "warning",
+					"summary": "Moved Stop",
+					"text": "Bus M4, M5, N40: The stop S+U Alexanderplatz/Memhardstraße towards S Karlshorst has been moved 20 meters in the driving direction.\n<a href=\"https://fahrinfo.vbb.de/him-uploads/1744873572930_Kartenausschnitt_HackescherMarkt_250416.png\" target=\"_blank\" rel=\"noopener\">[KARTE/MAP]</a> (valid at: S+U Alexanderplatz Bhf/Memhardstr. (Berlin))",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": false,
+						"bus": true,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-04-16T10:47:00+02:00",
+					"validUntil": "2025-08-31T23:59:00+02:00",
+					"modified": "2025-06-17T21:12:07+02:00"
+				},
+				{
+					"type": "status",
+					"code": "text.realtime.journey.partially.cancelled.unspecified",
+					"text": "Cancellation of intermediate stops"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900162001",
+				"name": "S Karlshorst (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900162001",
+					"latitude": 52.481111,
+					"longitude": 13.525853
+				},
+				"products": {
+					"suburban": true,
+					"subway": false,
+					"tram": true,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900162001"
+			}
+		},
+		{
+			"tripId": "1|62978|3|86|7072025",
+			"stop": {
+				"type": "stop",
+				"id": "900100031",
+				"name": "S+U Alexanderplatz Bhf/Memhardstr. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100031",
+					"latitude": 52.522937,
+					"longitude": 13.410755
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": false,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100031"
+			},
+			"when": "2025-07-08T02:34:00+02:00",
+			"plannedWhen": "2025-07-08T02:34:00+02:00",
+			"delay": 0,
+			"platform": "Pos. 26",
+			"plannedPlatform": "Pos. 26",
+			"prognosisType": "prognosed",
+			"direction": "M4,M5 Ersatz Mollstr./Otto-Braun-Str.",
+			"provenance": null,
+			"line": {
+				"type": "line",
+				"id": "de-vbb-11000000-tram-m4-bus-m4-ev1",
+				"fahrtNr": "123745",
+				"name": "M4",
+				"public": true,
+				"adminCode": "BVB---",
+				"productName": "Bus",
+				"mode": "bus",
+				"product": "bus",
+				"operator": {
+					"type": "operator",
+					"id": "berliner-verkehrsbetriebe",
+					"name": "Berliner Verkehrsbetriebe"
+				}
+			},
+			"remarks": [
+				{
+					"type": "hint",
+					"code": "OPERATOR",
+					"text": "BVG"
+				},
+				{
+					"id": "267909",
+					"type": "warning",
+					"summary": "Replacement Service",
+					"text": "Tram M4, M5: Replacement service due to construction works between Mollstraße/Otto-Braun-Straße and S Hackescher Markt.",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": false,
+						"bus": true,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-03-03T05:00:00+01:00",
+					"validUntil": "2025-07-28T03:30:00+02:00",
+					"modified": "2025-03-12T09:02:32+01:00"
+				},
+				{
+					"id": "277652",
+					"type": "warning",
+					"summary": "Moved Stop",
+					"text": "Bus M4, M5, N40: The stop S+U Alexanderplatz/Memhardstraße towards S Karlshorst has been moved 20 meters in the driving direction.\n<a href=\"https://fahrinfo.vbb.de/him-uploads/1744873572930_Kartenausschnitt_HackescherMarkt_250416.png\" target=\"_blank\" rel=\"noopener\">[KARTE/MAP]</a> (valid at: S+U Alexanderplatz Bhf/Memhardstr. (Berlin))",
+					"icon": {
+						"type": "HIM1",
+						"title": null
+					},
+					"priority": 100,
+					"products": {
+						"suburban": false,
+						"subway": false,
+						"tram": false,
+						"bus": true,
+						"ferry": false,
+						"express": false,
+						"regional": false
+					},
+					"company": "BVG",
+					"categories": [
+						1
+					],
+					"validFrom": "2025-04-16T10:47:00+02:00",
+					"validUntil": "2025-08-31T23:59:00+02:00",
+					"modified": "2025-06-17T21:12:07+02:00"
+				}
+			],
+			"origin": null,
+			"destination": {
+				"type": "stop",
+				"id": "900100040",
+				"name": "Mollstr./Otto-Braun-Str. (Berlin)",
+				"location": {
+					"type": "location",
+					"id": "900100040",
+					"latitude": 52.525185,
+					"longitude": 13.419942
+				},
+				"products": {
+					"suburban": false,
+					"subway": false,
+					"tram": true,
+					"bus": true,
+					"ferry": false,
+					"express": false,
+					"regional": false
+				},
+				"stationDHID": "de:11000:900100040"
+			}
+		}
+	],
+	"realtimeDataUpdatedAt": 1751931211
+}
