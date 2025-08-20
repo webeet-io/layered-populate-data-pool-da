@@ -1,4 +1,44 @@
-Readme for PR 205
+## Data Transformation & Documentation
+
+### Date: 20/08/2025
+
+## Task Division & Progress
+
+### Sumi – Documentation
+
+- Created and updated the README file.
+
+- Documented workflows, dependencies, and usage instructions.
+
+### Maria – Python Scripts
+
+- Developed and refined Python transformation scripts.
+
+- Automated data cleaning and preparation steps.
+
+### Jyoti – Data Appending
+
+- Integrated processed data into Google Sheets.
+
+- Ensured updates were consistent and accessible for the team.
+
+### Parallel Workflows
+
+- All tasks executed simultaneously to save time and leverage team expertise.
+
+- Dependencies between tasks were clearly identified and managed.
+
+- Collaboration & Alignment
+
+- Regular check-ins to sync progress.
+
+- Smooth handoffs between script outputs (Maria), data appending (Jyoti), and documentation (Sumi).
+
+
+
+
+
+
 
 # 📊 Data Sources for Long-Term Listings in Berlin
 
@@ -54,7 +94,6 @@ Today, our group began the data cleaning process on the raw dataset. Specificall
  - Identified empty and missing values that need to be addressed.
 
 This work gives us a clearer picture of the dataset’s current state and helps define the next steps for standardizing the data.
-
 
 
 
