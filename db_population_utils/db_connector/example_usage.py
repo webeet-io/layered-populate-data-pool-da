@@ -2,7 +2,7 @@
 Example usage of Interactive Smart DB Connector
 """
 
-from smart_db_connector_enhanced import InteractiveDbConnector
+from smart_db_connector_enhanced import db_connector
 
 def main():
     """Example of how to use the interactive connector"""
@@ -11,7 +11,8 @@ def main():
     print("=" * 40)
     
     # Method 1: Simple connection (prompts for credentials if needed)
-    db = InteractiveDbConnector()
+    # If not AWS connection, will fallback to Neon database
+    db = db_connector()
     
     if db.engine:
         print("\n✅ Successfully connected!")
@@ -19,9 +20,16 @@ def main():
         # Show available schemas
         print(f"Available schemas: {db.schemas}")
         
-        # Switch to a specific schema if available
+        # Switch to test_berlin_data schema by default if available
         if db.schemas:
-            target_schema = 'test_berlin_data' if 'test_berlin_data' in db.schemas else db.schemas[0]
+            # Default to test_berlin_data schema
+            if 'test_berlin_data' in db.schemas:
+                target_schema = 'test_berlin_data'
+                print(f"🎯 Using default schema: {target_schema}")
+            else:
+                target_schema = db.schemas[0]
+                print(f"⚠️  test_berlin_data not found, using: {target_schema}")
+            
             db.use(target_schema)
             
             # Show tables in current schema

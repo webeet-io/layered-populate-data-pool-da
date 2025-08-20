@@ -73,6 +73,16 @@ class AWSConnectionManager:
             "database_name": "layereddb"  # Updated to your database name
         }
         
+        # Neon database fallback configuration
+        self.NEON_FALLBACK = {
+            "connection_string": (
+                "postgresql+psycopg2://neondb_owner:npg_CeS9fJg2azZD"
+                "@ep-falling-glitter-a5m0j5gk-pooler.us-east-2.aws.neon.tech:5432/neondb"
+                "?sslmode=require"
+            ),
+            "default_schema": "test_berlin_data"
+        }
+        
     def load_config(self) -> Optional[Dict]:
         """Load AWS tunnel configuration from user's home directory"""
         if self.config_file.exists():
@@ -225,7 +235,9 @@ class AWSConnectionManager:
     def get_connection_string(self) -> Optional[str]:
         """Get appropriate connection string based on configuration"""
         if not self.config:
-            return None
+            # If no AWS config, fallback to Neon database
+            print("🔗 No AWS config found, using Neon database fallback")
+            return self.NEON_FALLBACK["connection_string"]
             
         # Try AWS tunnel first if enabled
         if self.config.get('aws_tunnel', {}).get('enabled'):
@@ -251,13 +263,15 @@ class AWSConnectionManager:
                 print(f"🚇 Using AWS tunnel connection")
                 return connection_string
         
-        # Fall back to direct connection
+        # Fall back to direct connection or Neon
         if self.config.get('direct_connection', {}).get('enabled'):
             direct_config = self.config['direct_connection']
             print(f"🔗 Using direct connection")
             return direct_config['connection_string']
         
-        return None
+        # Final fallback to Neon database
+        print("🔗 Falling back to Neon database")
+        return self.NEON_FALLBACK["connection_string"]
 
 class EnhancedDbConnector:
     """Enhanced Smart Database Connector with AWS tunnel support"""
@@ -653,22 +667,34 @@ class InteractiveDbConnector(EnhancedDbConnector):
         config = self.aws_manager.load_config()
         
         if not config or force_interactive:
-            print("🔐 Setting up database connection...")
-            success = self.aws_manager.create_interactive_config()
-            if not success:
-                print("❌ Failed to set up connection")
-                return
-            config = self.aws_manager.load_config()
+            if not config:
+                print("🔗 No AWS config found, using Neon database")
+                self.connection_string = self.aws_manager.NEON_FALLBACK["connection_string"]
+            else:
+                print("🔐 Setting up database connection...")
+                success = self.aws_manager.create_interactive_config()
+                if not success:
+                    print("❌ Failed to set up connection")
+                    return
+                config = self.aws_manager.load_config()
         
-        if config:
+        if config or self.connection_string:
             print("✅ Configuration loaded successfully")
-            self.connection_string = self.aws_manager.get_connection_string()
+            if not self.connection_string:
+                self.connection_string = self.aws_manager.get_connection_string()
             
             if self.connection_string:
                 # Connect and auto-discover
                 self._connect()
                 if auto_discover:
                     self._discover_schemas()
+                    
+                    # Auto-switch to test_berlin_data if available and using Neon
+                    if ('test_berlin_data' in self.available_schemas and 
+                        'neon' in self.connection_string):
+                        self.current_schema = 'test_berlin_data'
+                        print(f"🎯 Auto-selected default schema: test_berlin_data")
+                    
                     self._show_connection_info()
             else:
                 print("❌ Could not generate connection string")
