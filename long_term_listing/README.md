@@ -1,3 +1,15 @@
+
+## Project Update - Database Table Design
+### Date: 21/08/2025
+
+Today, our group reached key milestones in preparing our property listings database:
+
+- Agreed on table constraints: We defined and approved essential constraints to ensure data integrity in the database.
+- Finalized table structure: The columns and their types are now fixed, aligned with our data needs and analysis plans.
+- Unique identifiers: We established district_id as a foreign key (linking each listing to its district) and listing_id as the primary key for each record, ensuring every          row is uniquely identifiable.
+
+Next steps will focus on implementing these definitions in the database system and preparing our data for import.
+
 ## Data Transformation & Documentation
 
 ### Date: 20/08/2025
