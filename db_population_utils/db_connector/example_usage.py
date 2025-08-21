@@ -2,7 +2,7 @@
 Example usage of Interactive Smart DB Connector
 """
 
-from smart_db_connector_enhanced import db_connector
+from db_connector import db_connector
 
 def main():
     """Example of how to use the interactive connector"""
