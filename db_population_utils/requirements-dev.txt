@@ -1,0 +1,9 @@
+# Basis für Datenverarbeitung
+pandas>=2.0
+
+# Testen
+pytest>=8.0
+pytest-cov>=4.0
+
+# Optional: schöne Farben in pytest-Ausgaben (auf Windows wichtig)
+colorama>=0.4
