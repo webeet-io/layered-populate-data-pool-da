@@ -75,34 +75,39 @@ Established relationships with existing neighborhoods and geospatial tables.
 Verified correctness of inserted data and linkage with neighborhood boundaries.
 
 🗄️ Database Schema
+<details> 
+<summary>Click to expand SQL schema</summary>
 
-The table schema used for storing listings:
 CREATE TABLE IF NOT EXISTS long_term_listings (
-    listing_id VARCHAR PRIMARY KEY,
-    detail_url TEXT,
-    raw_info TEXT,
-    type VARCHAR,
-    first_tenant VARCHAR,
-    price_euro INTEGER,
-    number_of_rooms FLOAT,
-    surface_m2 FLOAT,
-    floor FLOAT,
-    street VARCHAR,
-    house_number VARCHAR,
-    neighborhood VARCHAR,
-    district VARCHAR,
-    postal_code INTEGER,
-    city VARCHAR,
-    address TEXT,
-    latitude FLOAT,
-    longitude FLOAT,
-    geometry TEXT,
-    district_id TEXT,
-    CONSTRAINT district_id_fk FOREIGN KEY (district_id)
-    REFERENCES berlin_source_data.districts(district_id)
-    ON DELETE RESTRICT
-    ON UPDATE CASCADE
+    listing_id VARCHAR PRIMARY KEY,        -- Unique identifier for each listing
+    detail_url TEXT,                       -- Direct URL to the listing
+    raw_info TEXT,                         -- Raw extracted text description
+    type VARCHAR,                          -- Housing type (e.g., Wohnung, Haus)
+    first_tenant VARCHAR,                  -- Boolean flag for first tenant availability
+    price_euro INTEGER,                    -- Price in euros
+    number_of_rooms FLOAT,                 -- Number of rooms
+    surface_m2 FLOAT,                      -- Size in square meters
+    floor FLOAT,                           -- Floor number (Erdgeschoss = 0)
+    street VARCHAR,                        -- Normalized street name
+    house_number VARCHAR,                  -- House number extracted from address
+    neighborhood VARCHAR,                  -- Neighborhood name
+    district VARCHAR,                       -- Berlin district (Bezirk)
+    postal_code INTEGER,                   -- Postal code
+    city VARCHAR,                           -- City (Berlin)
+    address TEXT,                           -- Full cleaned address
+    latitude FLOAT,                         -- Latitude (Nominatim)
+    longitude FLOAT,                        -- Longitude (Nominatim)
+    geometry TEXT,                          -- Geospatial polygon coordinates
+    district_id TEXT,                        -- Foreign key referencing districts table
+    CONSTRAINT district_id_fk 
+        FOREIGN KEY (district_id)
+        REFERENCES berlin_source_data.districts(district_id)
+        ON DELETE RESTRICT
+        ON UPDATE CASCADE
 );
+
+</details>
+
 
 🌍 Geolocation with Nominatim
 
