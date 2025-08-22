@@ -126,4 +126,91 @@ pytest -q
   * Integration example (e2e sample layer).
   * Expanded README and optional CI workflow.
 
+##  **WORKFlow**
 
+**`DataLoader → DataProcessor → DBConnector ← DBPopulator`** is the optimal logic. Here's why:
+
+## 🎯 **Optimal Flow Explanation:**
+
+### **Sequential Data Processing (→):**
+```
+DataLoader → DataProcessor → DBConnector
+```
+
+**Why this direction?**
+- **Data flows forward**: Raw files → Clean DataFrames → Database
+- **Each class has single responsibility**: Loading → Processing → Database Operations
+- **Clear dependencies**: Each step depends on the previous one's output
+
+### **Infrastructure Usage (←):**
+```
+DBConnector ← DBPopulator
+```
+
+**Why this direction?**
+- **DBPopulator uses DBConnector as infrastructure tool**
+- **DBConnector provides low-level operations** (execute, to_sql, create_schema)
+- **DBPopulator provides high-level business logic** (relationships, constraints, complex integrations)
+
+## 🔧 **Why This Architecture is Optimal:**
+
+### **1. Separation of Concerns:**
+- **DataLoader**: Pure file loading + quality assessment
+- **DataProcessor**: Pure data transformation 
+- **DBConnector**: Pure database infrastructure
+- **DBPopulator**: Pure business logic for database population
+
+### **2. Single Responsibility Principle:**
+Each class does **one thing well**:
+- DataLoader ≠ data processing
+- DataProcessor ≠ database operations  
+- DBConnector ≠ business logic
+- DBPopulator ≠ low-level SQL operations
+
+### **3. Reusability:**
+```python
+# DBConnector can be used independently
+connector.execute("SELECT * FROM table")
+connector.to_sql(df, "table")
+
+# DBPopulator uses DBConnector internally
+populator.establish_relationships(connector=connector)
+populator.create_indexes(connector=connector)
+```
+
+### **4. Testability:**
+- Each class can be **unit tested independently**
+- **Mock dependencies easily**: Mock DBConnector in DBPopulator tests
+- **Clear interfaces**: Each class has well-defined inputs/outputs
+
+### **5. Flexibility:**
+- **Use DBConnector without DBPopulator** for simple operations
+- **Use DBPopulator with different DBConnector configurations**
+- **Replace any component** without affecting others
+
+## 📊 **Real-World Workflow:**
+
+```python
+# Step 2: Sequential Processing
+loader = DataLoader()
+processor = DataProcessor()
+
+df_raw = loader.load("boundaries.geojson")      # Raw data
+df_clean = processor.transform(df_raw)          # Clean data
+
+# Step 3: Parallel Infrastructure Usage  
+connector = DBConnector()
+populator = DBPopulator()
+
+# Basic operations through DBConnector
+connector.to_sql(df_clean, "boundaries")
+
+# Complex operations through DBPopulator (using DBConnector)
+populator.create_relationships(
+    connector=connector,
+    new_table="boundaries", 
+    existing_tables=["listings", "neighborhoods"]
+)
+```
+
+This architecture **scales well**, **maintains clean code**, and **follows software engineering best practices**.

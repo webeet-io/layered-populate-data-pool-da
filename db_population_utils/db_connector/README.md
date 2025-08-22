@@ -1,140 +1,361 @@
-# DBConnector Class Design
+# Smart Database Connector V3
 
-## Overview
-`DBConnector` (core, required now)
+Intelligent database connector with automatic switching between NeonDB and AWS LayeredDB. Features enhanced populate functionality with comprehensive reporting, schema management, and robust upsert operations.
 
-**Responsibility**: Centralize DB configuration and pooled connections for multiple environments (e.g., `ingestion`, `app`).
+## Installation
 
-## Core Methods (Original Design)
+```bash
+pip install sqlalchemy pandas psycopg2-binary
+```
 
-### Initialization
-* `__init__(ingestion: Optional[DBSettings], app: Optional[DBSettings], echo: bool=False)` - Initialize connector with database settings
+## Quick Start
 
-### Connection Management
-* `get_engine(target: Literal["ingestion","app"]) -> Engine` - Get SQLAlchemy engine for specified target
-* `connect(target="ingestion") -> contextmanager[Connection]` - Get connection context manager
-* `transaction(target="ingestion") -> contextmanager[Connection]` - Get transaction context manager
-* `test_connection(target="ingestion") -> dict` - Test connection and return status info
-
-### Query Execution
-* `execute(sql: str, params: dict|None=None, target="ingestion") -> int` - Execute SQL statement and return affected rows
-* `fetch_df(sql: str, params: dict|None=None, target="ingestion") -> pd.DataFrame` - Execute query and return DataFrame *(optional but very handy)*
-
-### Data Operations
-* `to_sql(df: pd.DataFrame, table: str, schema: str|None=None, if_exists="append", target="ingestion") -> None` - Write DataFrame to database table
-
-### Cleanup
-* `dispose_engine(target)` - Dispose specific engine and its connection pool
-* `dispose_all()` - Dispose all engines and connection pools
-
-## Enhanced Methods (Extensions)
-
-### Configuration Management
-* `load_config_from_file(path: str) -> None` - Load database configuration from YAML/JSON file
-* `load_config_from_env() -> None` - Load configuration from environment variables
-* `validate_config() -> dict` - Validate database connection settings
-* `get_connection_info(target: str) -> dict` - Get connection info without sensitive data (passwords)
-
-### Schema Management
-* `get_table_schema(table: str, schema: str = None, target="ingestion") -> dict` - Retrieve table schema information
-* `table_exists(table: str, schema: str = None, target="ingestion") -> bool` - Check if table exists
-* `create_schema(schema: str, target="ingestion") -> bool` - Create database schema
-* `drop_table(table: str, schema: str = None, target="ingestion") -> bool` - Drop table if exists
-* `get_table_columns(table: str, schema: str = None, target="ingestion") -> list` - Get list of table columns
-
-### Batch Operations & Performance
-* `execute_batch(statements: list[str], target="ingestion") -> list[int]` - Execute multiple SQL statements in batch
-* `bulk_insert(data: list[dict], table: str, schema: str = None, batch_size=1000, target="ingestion") -> None` - Bulk insert data with batching
-* `copy_table(source_table: str, dest_table: str, source_target="app", dest_target="ingestion") -> int` - Copy table between databases
-
-### Monitoring & Logging
-* `get_connection_status(target: str = None) -> dict` - Get status of connections (all or specific target)
-* `get_pool_stats(target: str) -> dict` - Get connection pool statistics
-* `log_query_performance(enabled: bool = True) -> None` - Enable/disable query performance logging
-
-### Migration & Backup Support
-* `backup_table(table: str, backup_path: str, target="ingestion") -> bool` - Backup table to file
-* `restore_table(table: str, backup_path: str, target="ingestion") -> bool` - Restore table from backup file
-* `run_migration_script(script_path: str, target="ingestion") -> bool` - Execute migration script from file
-
-### Enhanced Error Handling
-* `retry_connection(target: str, max_retries=3) -> bool` - Retry connection with exponential backoff
-* `health_check(target: str = None) -> dict` - Comprehensive health check of connections
-* `get_last_error(target: str) -> str` - Get last error message for target
-
-### Integration Support
-* `register_processor(processor: 'DataProcessor') -> None` - Register DataProcessor instance for integration
-* `register_populater(populater: 'DBPopulater') -> None` - Register DBPopulater instance for integration
-* `get_table_for_processing(table: str, target="ingestion") -> pd.DataFrame` - Retrieve table data for processing
-
-### Utility Methods
-* `close_idle_connections(target: str = None, idle_timeout=300) -> int` - Close idle connections older than timeout
-* `vacuum_table(table: str, target="ingestion") -> None` - Run VACUUM on table (PostgreSQL specific)
-* `analyze_table(table: str, target="ingestion") -> dict` - Get table statistics and analysis
-* `estimate_table_size(table: str, target="ingestion") -> dict` - Estimate table size and row count
-
-### Advanced Context Managers
-* `batch_transaction(target="ingestion") -> contextmanager` - Context manager for batch operations with transaction
-* `read_only_connection(target="app") -> contextmanager` - Context manager for read-only operations
-* `with_timeout(seconds: int, target="ingestion") -> contextmanager` - Context manager with query timeout
-
-## Enhanced Initialization
+### Default NeonDB Connection
 
 ```python
-def __init__(
-    self,
-    ingestion: Optional[DBSettings] = None,
-    app: Optional[DBSettings] = None,
-    echo: bool = False,
-    pool_size: int = 5,              # Connection pool size
-    max_overflow: int = 10,          # Maximum pool overflow
-    pool_timeout: int = 30,          # Pool checkout timeout
-    pool_recycle: int = 3600,        # Connection recycle time
-    config_file: Optional[str] = None,  # Path to configuration file
-    auto_load_env: bool = True       # Automatically load from environment
+from smart_db_connector_enhanced_V3 import db_connector
+
+# Connect to NeonDB (default) - automatically switches to test_berlin_data schema
+db = db_connector()
+
+# Check connection health
+health = db.health_check()
+print(health)  # {'status': 'healthy', 'connection_type': 'NeonDB', 'schemas_available': 4, ...}
+```
+
+### AWS LayeredDB Connection
+
+```python
+# Option 1: With credentials provided
+db = db_connector('layereddb', 'username', 'password')
+
+# Option 2: Interactive credential prompt
+db = db_connector('layereddb')  # Will prompt for username/password
+
+# Option 3: Any database name with credentials triggers AWS connection
+db = db_connector('mydb', 'username', 'password')
+```
+
+## Basic Operations
+
+### 1. Schema and Table Management
+
+```python
+# List available schemas
+print(db.schemas)  # ['dependency_example', 'nyc_schools', 'public', 'test_berlin_data']
+
+# Switch to a specific schema
+db.use('test_berlin_data')
+
+# List tables in current schema
+print(db.tables)  # ['berlin_pools', 'berlin_venues', 'colleges_berlin', ...]
+
+# Get detailed table information
+table_info = db.get_table_info('berlin_pools')
+print(table_info)  # {'schema': 'test_berlin_data', 'columns': [...], ...}
+```
+
+### 2. Query Operations
+
+```python
+# Execute SQL query
+df = db.query("SELECT * FROM berlin_pools LIMIT 5")
+print(df.shape)  # (5, 10)
+
+# Query with specific schema
+df = db.query("SELECT name, address FROM venues", schema='test_berlin_data')
+
+# Query without info output
+df = db.query("SELECT COUNT(*) FROM berlin_venues", show_info=False)
+```
+
+### 3. Enhanced Populate Method
+
+The `populate` method is the core feature of V3 with multiple modes and comprehensive reporting:
+
+#### Replace Mode (Default)
+```python
+import pandas as pd
+
+# Create sample data
+df = pd.DataFrame({
+    'id': [1, 2, 3],
+    'name': ['Pool A', 'Pool B', 'Pool C'],
+    'location': ['Berlin', 'Munich', 'Hamburg']
+})
+
+# Replace all data in table (creates table if not exists)
+result = db.populate(
+    df=df,
+    table_name='my_pools',
+    mode='replace'  # Default mode
+)
+
+print(result)  # {'status': 'success', 'rows_inserted': 3, 'table': 'test_berlin_data.my_pools'}
+```
+
+#### Append Mode
+```python
+# Add more data to existing table
+new_data = pd.DataFrame({
+    'id': [4, 5],
+    'name': ['Pool D', 'Pool E'],
+    'location': ['Cologne', 'Frankfurt']
+})
+
+result = db.populate(
+    df=new_data,
+    table_name='my_pools',
+    mode='append'
+)
+
+print(result)  # {'status': 'success', 'rows_inserted': 2, ...}
+```
+
+#### Upsert Mode (Insert or Update)
+```python
+# Update existing records and insert new ones
+upsert_data = pd.DataFrame({
+    'id': [3, 4, 6],  # 3 exists (update), 4 exists (update), 6 is new (insert)
+    'name': ['Pool C Updated', 'Pool D Updated', 'Pool F'],
+    'location': ['Berlin Updated', 'Cologne Updated', 'Dresden']
+})
+
+result = db.populate(
+    df=upsert_data,
+    table_name='my_pools',
+    mode='upsert',
+    primary_key=['id'],  # Required for upsert
+    create_table=True    # Auto-create with constraints if needed
+)
+
+print(result)  # {'status': 'success', 'rows_upserted': 3, 'primary_key': ['id']}
+```
+
+#### With Interactive Schema Selection
+```python
+# Will prompt for schema and table selection if not provided
+result = db.populate(df)  # Interactive mode
+```
+
+#### With Comprehensive Reporting
+```python
+result = db.populate(
+    df=df,
+    table_name='my_pools',
+    mode='replace',
+    show_report=True  # Shows detailed pre/post population analysis
+)
+# Displays: data analysis, column types, null values, duplicates, performance metrics
+```
+
+### 4. Connection Health and Status
+
+```python
+# Comprehensive health check
+health = db.health_check()
+print(health)
+# {
+#   'status': 'healthy',
+#   'connection_type': 'NeonDB',
+#   'database': 'neondb',
+#   'schemas_available': 4,
+#   'current_schema': 'test_berlin_data',
+#   'tables_in_current_schema': 30,
+#   'connection': 'active'
+# }
+
+# Show connection summary
+db.show_connection_info()
+```
+
+## Advanced Features
+
+### SSH Tunnel Support (AWS LayeredDB)
+
+The connector automatically detects and validates SSH tunnel connections:
+
+```python
+# Requires SSH tunnel running on localhost:5433
+db = db_connector('layereddb', 'username', 'password')
+
+# Will automatically:
+# 1. Check tunnel connectivity on localhost:5433
+# 2. Fall back to NeonDB if tunnel not available
+# 3. Provide troubleshooting guidance
+```
+
+### Automatic Table Creation with Constraints
+
+```python
+# Creates table with optimized data types and primary key constraints
+result = db.populate(
+    df=df,
+    table_name='new_table',
+    mode='upsert',
+    primary_key=['id'],
+    create_table=True  # Auto-creates with constraints
+)
+
+# Generated SQL example:
+# CREATE TABLE test_berlin_data.new_table (
+#     id INTEGER NOT NULL,
+#     name VARCHAR(255),
+#     value DECIMAL(15,6),
+#     active BOOLEAN,
+#     CONSTRAINT pk_new_table PRIMARY KEY (id)
+# );
+```
+
+### Error Handling and Fallbacks
+
+```python
+try:
+    result = db.populate(df, 'table', mode='upsert', primary_key=['id'])
+    if result['status'] == 'error':
+        print(f"Error: {result['error']}")
+        # Automatic fallback to append mode if upsert fails
+except Exception as e:
+    print(f"Population failed: {e}")
+```
+
+## Examples by Use Case
+
+### Data Migration
+```python
+# Migrate data from one schema to another
+source_data = db.query("SELECT * FROM old_schema.users")
+result = db.populate(source_data, 'users', schema='new_schema', mode='replace')
+```
+
+### Data Synchronization
+```python
+# Keep tables in sync with upsert
+latest_data = get_latest_data_from_api()  # Your data source
+result = db.populate(
+    df=latest_data,
+    table_name='sync_table',
+    mode='upsert',
+    primary_key=['id', 'updated_at'],
+    create_table=True
 )
 ```
 
-## Usage Examples
-
-### Basic Usage
+### Batch Processing
 ```python
-# Initialize with enhanced configuration
-db = DBConnector(
-    config_file="db_config.yaml",
-    echo=True,
-    pool_size=10
-)
-
-# Health check
-health_status = db.health_check()
-
-# Schema operations
-if not db.table_exists("users", "public"):
-    db.create_schema("public")
+# Process large datasets in chunks
+for chunk in pd.read_csv('large_file.csv', chunksize=1000):
+    result = db.populate(chunk, 'processing_table', mode='append')
+    if result['status'] != 'success':
+        print(f"Chunk failed: {result['error']}")
+        break
 ```
 
-### Batch Operations
+## Connection Management
+
 ```python
-# Batch processing with transaction
-with db.batch_transaction("ingestion") as conn:
-    db.bulk_insert(data, "staging_table", batch_size=5000)
-    db.execute("CALL process_staging_data()")
+# Close connection properly
+db.close()
+
+# Context manager usage (auto-close)
+from smart_db_connector_enhanced_V3 import db_connector
+
+with db_connector() as db:
+    df = db.query("SELECT * FROM my_table")
+    # Connection automatically closed when exiting context
 ```
 
-### Monitoring
-```python
-# Get pool statistics
-stats = db.get_pool_stats("ingestion")
+## Requirements
 
-# Performance monitoring
-db.log_query_performance(True)
+- **Python 3.8+**
+- **PostgreSQL** databases (NeonDB, AWS RDS)
+- **SSH tunnel** for AWS LayeredDB connections
+
+### Required Dependencies
+```bash
+pip install sqlalchemy>=1.4.0 pandas>=1.3.0 psycopg2-binary>=2.9.0
 ```
 
-## Integration Points
+### AWS LayeredDB Setup
+1. Set up SSH tunnel to AWS RDS:
+   ```bash
+   ./connect-db.sh  # Your SSH tunnel script
+   ```
+2. Verify tunnel is running on `localhost:5433`
+3. Use connector with credentials
 
-This enhanced `DBConnector` class serves as the foundation for:
-- `DataProcessor` class integration for data preprocessing
-- `DBPopulater` class integration for data insertion
-- Configuration management across the entire data pipeline
-- Monitoring and logging capabilities for production environments
+## Troubleshooting
+
+### Common Issues
+
+#### 1. AWS Connection Falls Back to NeonDB
+**Problem**: Connector switches to NeonDB instead of connecting to AWS
+**Solutions**:
+- Check SSH tunnel is running: `netstat -an | grep 5433`
+- Verify tunnel script: `./connect-db.sh`
+- Ensure correct credentials are provided
+- Check tunnel endpoint: `localhost:5433`
+
+#### 2. Upsert Operations Fail
+**Problem**: `psycopg2.errors.InvalidColumnReference` - no unique constraint
+**Solutions**:
+- Use `create_table=True` for new tables
+- Specify `primary_key` parameter for upsert mode
+- Check existing table has primary key constraints
+
+#### 3. Schema Not Found
+**Problem**: `ValueError: Schema 'xyz' not found`
+**Solutions**:
+- Use `db.schemas` to list available schemas
+- Check schema name spelling
+- Use `db.use('schema_name')` to switch schemas
+
+#### 4. Interactive Prompts in Scripts
+**Problem**: `EOFError` when running scripts with interactive prompts
+**Solutions**:
+- Always provide `schema` and `table_name` parameters
+- Use `show_report=False` for automated scripts
+- Set environment variables for non-interactive mode
+
+### Performance Tips
+
+1. **Batch Processing**: Use `chunksize` for large datasets
+2. **Connection Pooling**: Reuse connections for multiple operations
+3. **Upsert vs Replace**: Use upsert for incremental updates
+4. **Schema Specification**: Always specify schema to avoid prompts
+
+### Debugging
+
+Enable detailed logging:
+```python
+import logging
+logging.basicConfig(level=logging.DEBUG)
+
+db = db_connector()  # Will show detailed connection info
+```
+
+Check connection health:
+```python
+health = db.health_check()
+if health['status'] != 'healthy':
+    print(f"Connection issue: {health}")
+```
+
+## Version Information
+
+- **V3**: Current version with enhanced populate, upsert, and production optimizations
+- **V2**: Legacy version with basic populate functionality
+- **Migration**: V2 code is compatible with V3 - just update import statements
+
+### Breaking Changes from V2
+- Main class renamed from `SmartDbConnectorV2` to `db_connector` function
+- Enhanced populate method with new parameters (`mode`, `primary_key`, `create_table`)
+- Improved error handling with custom exception types
+- Performance optimizations and type safety improvements
+
+## Support
+
+For issues, questions, or contributions:
+1. Check this README for common solutions
+2. Review the comprehensive test notebook: `tests/test_smart_db_connector_V3_comprehensive.ipynb`
+3. Run the test script: `python test_v3_functionality.py`
