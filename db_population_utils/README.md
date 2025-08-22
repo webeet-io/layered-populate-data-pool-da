@@ -138,5 +138,5 @@ aws_db = db_connector(database='layereddb', username='USERNAME', password='PASSW
 # ...repeat steps 4-6 with aws_db...
 ```
 
-See [tutorial.ipynb](tutorial.ipynb) for a full workflow and more advanced scenarios.
+See [tutorial.ipynb](examples/tutorial.ipynb) for a full workflow and more advanced scenarios.
 ````
