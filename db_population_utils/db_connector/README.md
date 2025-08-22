@@ -71,52 +71,63 @@ df = db.query("SELECT COUNT(*) FROM berlin_venues", show_info=False)
 
 ### 3. Enhanced Populate Method
 
-The `populate` method is the core feature of V3 with multiple modes and comprehensive reporting:
+The `populate` method is the core feature of V3, offering multiple modes to handle data insertion and comprehensive reporting.
 
-#### Replace Mode (Default)
+#### Working with Constraints: The `append` Mode
+
+To insert data into a table while preserving its existing `PRIMARY KEY` and `FOREIGN KEY` constraints, you **must** use `mode='append'`. This mode inserts new rows without altering the table's structure.
+
+**Workflow:**
+1.  Create the table with all required constraints using SQL.
+2.  Prepare a DataFrame that **exactly** matches the table's structure (column names, order, and data types).
+3.  Use the `populate()` method with `mode='append'` to load data into it.
+
+> If there are mismatches in data types, column names, or order compared to the table, Python will raise an error. If everything matches, the table will be populated correctly, preserving the constraints and references.
+
+**Example:**
+
 ```python
+# Step 1: Create a table with constraints using a SQL command
+# This assumes a 'districts' table already exists.
+create_banks_sql = '''
+CREATE TABLE banks (
+    bank_id VARCHAR(20) PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    district_id VARCHAR(20),
+    CONSTRAINT fk_banks_district
+        FOREIGN KEY (district_id)
+        REFERENCES districts(district_id)
+);
+'''
+db.query(create_banks_sql, show_info=False)
+
+# Step 2: Prepare data and populate using 'append' mode
 import pandas as pd
-
-# Create sample data
-df = pd.DataFrame({
-    'id': [1, 2, 3],
-    'name': ['Pool A', 'Pool B', 'Pool C'],
-    'location': ['Berlin', 'Munich', 'Hamburg']
-})
-
-# Replace all data in table (creates table if not exists)
-result = db.populate(
-    df=df,
-    table_name='my_pools',
-    mode='replace'  # Default mode
-)
-
-print(result)  # {'status': 'success', 'rows_inserted': 3, 'table': 'test_berlin_data.my_pools'}
-```
-
-#### Append Mode
-```python
-# Add more data to existing table
-new_data = pd.DataFrame({
-    'id': [4, 5],
-    'name': ['Pool D', 'Pool E'],
-    'location': ['Cologne', 'Frankfurt']
+banks_df = pd.DataFrame({
+    'bank_id': ['BANK001', 'BANK002'],
+    'name': ['Global Bank', 'Local Trust'],
+    'district_id': ['11001001', '11002002'] # These IDs must exist in the 'districts' table
 })
 
 result = db.populate(
-    df=new_data,
-    table_name='my_pools',
-    mode='append'
+    df=banks_df,
+    table_name='banks',
+    mode='append' # Preserves the table and its constraints
 )
 
-print(result)  # {'status': 'success', 'rows_inserted': 2, ...}
+print(result) # {'status': 'success', 'rows_inserted': 2, ...}
 ```
 
-#### Upsert Mode (Insert or Update)
+---
+
+#### `upsert` Mode: Insert or Update
+
+This mode updates existing records and inserts new ones based on a specified primary key. It is ideal for data synchronization tasks and requires that the target table has a primary key.
+
 ```python
 # Update existing records and insert new ones
 upsert_data = pd.DataFrame({
-    'id': [3, 4, 6],  # 3 exists (update), 4 exists (update), 6 is new (insert)
+    'id': [3, 4, 6],  # 3 & 4 are updated, 6 is inserted
     'name': ['Pool C Updated', 'Pool D Updated', 'Pool F'],
     'location': ['Berlin Updated', 'Cologne Updated', 'Dresden']
 })
@@ -125,26 +136,32 @@ result = db.populate(
     df=upsert_data,
     table_name='my_pools',
     mode='upsert',
-    primary_key=['id'],  # Required for upsert
-    create_table=True    # Auto-create with constraints if needed
+    primary_key=['id'],  # Required for upsert logic
+    create_table=True    # Auto-creates table with a PK if it doesn't exist
 )
 
 print(result)  # {'status': 'success', 'rows_upserted': 3, 'primary_key': ['id']}
 ```
 
-#### With Interactive Schema Selection
-```python
-# Will prompt for schema and table selection if not provided
-result = db.populate(df)  # Interactive mode
-```
+#### `replace` Mode: Use with Extreme Caution
 
-#### With Comprehensive Reporting
+This mode first **drops** the existing table (and all its constraints), then creates a new, empty table and inserts the data.
+
+**⚠️ Warning:** This is a destructive operation. **Do not use `replace`** if you need to preserve the table's constraints, as they will be permanently removed. This mode should only be used for temporary or staging tables where data integrity is not enforced by the database schema.
+
+
+#### Additional Options
+
+-   **Interactive Schema Selection**: `db.populate(df)` will prompt you to select a schema and table if they are not provided.
+-   **Comprehensive Reporting**: `show_report=True` provides a detailed analysis of the data before and after the population, including performance metrics.
+
 ```python
+# Use with a safe mode like 'append' or 'upsert' to see the report
 result = db.populate(
-    df=df,
-    table_name='my_pools',
-    mode='replace',
-    show_report=True  # Shows detailed pre/post population analysis
+    df=banks_df, # using the dataframe from the append example
+    table_name='banks',
+    mode='append',
+    show_report=True
 )
 # Displays: data analysis, column types, null values, duplicates, performance metrics
 ```
