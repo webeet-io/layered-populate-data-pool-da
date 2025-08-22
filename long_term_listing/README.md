@@ -1,111 +1,229 @@
+🏠 Long-Term Listings in Berlin (Immowelt) – Data Integration
 
-## Project Update - Database Table Design
-### Date: 21/08/2025
+This repository documents the process of integrating Long-Term Listings in Berlin from Immowelt into the database. The project involved scraping, cleaning, and enriching rental listings with geolocation data for analysis.
 
-Today, our group reached key milestones in preparing our property listings database:
+📊 Project Overview
 
-- Agreed on table constraints: We defined and approved essential constraints to ensure data integrity in the database.
-- Finalized table structure: The columns and their types are now fixed, aligned with our data needs and analysis plans.
-- Unique identifiers: We established district_id as a foreign key (linking each listing to its district) and listing_id as the primary key for each record, ensuring every          row is uniquely identifiable.
+Data Source: Immowelt (Berlin long-term rental listings)
+Collection Method: Web scraping (no API available)
+Total Listings Collected: 1246
+Listings Dropped: 79 (outside Berlin, from Brandenburg)
+Final Listings Inserted: 1167
+Unique Neighborhoods Identified: 89
 
-Next steps will focus on implementing these definitions in the database system and preparing our data for import.
+Challenges:
 
-## Data Transformation & Documentation
+Immowelt applies privacy & scraping limits (only partial listings extractable per request).
+Raw data had missing/abbreviated addresses and inconsistent formats.
 
-### Date: 20/08/2025
+🧪 Step 1: Research & Data Modelling
 
-## Task Division & Progress
+1.1 Data Source Discovery
+Source: Immowelt website (scraped HTML pages)
+Update Frequency: Static snapshot (one-time scrape)
+Data Type: Static listings dataset
+Additional Enrichment: Used Nominatim (OpenStreetMap) for geolocation to retrieve coordinates based on addresses.
 
-### Sumi – Documentation
+1.2 Modelling & Planning
+Selected key parameters:
+Street & house number
+Type
+Postal code
+District (Bezirk)
+City
+Price
+Size (m²)
+Number of rooms
+Coordinates (lat, lon from Nominatim)
 
-- Created and updated the README file.
+Known Issues:
+Some addresses incomplete or abbreviated (e.g., "Str." vs. "Straße").
+Duplicated entries possible due to multiple appearances of similar ads.
+Not all addresses resolved by Nominatim.
 
-- Documented workflows, dependencies, and usage instructions.
+1.3 Sources Directory
+Raw scraped files stored in /sources.
+/sources/README.md contains documentation of scraping steps and transformation plan.
 
-### Maria – Python Scripts
+🛠 Step 2: Data Transformation
+Implemented transformation logic using Python:
 
-- Developed and refined Python transformation scripts.
+House Type Normalization
+Different types of Häuser (e.g., Reihenhaus, Einfamilienhaus, Doppelhaus) were standardized to house.
+Different types of Wohnungen (e.g., Dachgeschosswohnung, Erdgeschosswohnung, Loft) were standardized to wohnung.
 
-- Automated data cleaning and preparation steps.
+Address Cleaning
+Normalized abbreviations: "Str." → "Straße".
+Separated street names (letters) and house numbers (numeric part).
 
-### Jyoti – Data Appending
+Floor Normalization
+"Erdgeschoss" was standardized to 0.
+Other floors converted to numeric values: 1, 2, 3, 4....
 
-- Integrated processed data into Google Sheets.
+Other Cleaning & Processing
+Extracted postal codes and districts.
+Queried Nominatim for missing coordinates.
+Dropped listings outside Berlin (79 listings from Brandenburg).
+Scripts are located in /scripts.
+Outputs tested locally before database population.
 
-- Ensured updates were consistent and accessible for the team.
+🧩 Step 3: Populate Database
 
-### Parallel Workflows
+Transformed data inserted into the database using SSM tunnel to securely connect to the remote database.
+The table was created with foreign key constraints to link listings to the districts reference table.
+Established relationships with existing neighborhoods and geospatial tables.
+Verified correctness of inserted data and linkage with neighborhood boundaries.
 
-- All tasks executed simultaneously to save time and leverage team expertise.
+🗄️ Database Schema
 
-- Dependencies between tasks were clearly identified and managed.
+The table schema used for storing listings:
+CREATE TABLE IF NOT EXISTS long_term_listings (
+    listing_id VARCHAR PRIMARY KEY,
+    detail_url TEXT,
+    raw_info TEXT,
+    type VARCHAR,
+    first_tenant VARCHAR,
+    price_euro INTEGER,
+    number_of_rooms FLOAT,
+    surface_m2 FLOAT,
+    floor FLOAT,
+    street VARCHAR,
+    house_number VARCHAR,
+    neighborhood VARCHAR,
+    district VARCHAR,
+    postal_code INTEGER,
+    city VARCHAR,
+    address TEXT,
+    latitude FLOAT,
+    longitude FLOAT,
+    geometry TEXT,
+    district_id TEXT,
+    CONSTRAINT district_id_fk FOREIGN KEY (district_id)
+    REFERENCES berlin_source_data.districts(district_id)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE
+);
 
-- Collaboration & Alignment
+🌍 Geolocation with Nominatim
 
-- Regular check-ins to sync progress.
+Geocoding was performed using Nominatim (OpenStreetMap).
+Each cleaned address was passed to Nominatim for latitude/longitude retrieval.
 
-- Smooth handoffs between script outputs (Maria), data appending (Jyoti), and documentation (Sumi).
+Limitations: Some incomplete addresses could not be geocoded.
 
-
-
-
-
-
-
-# 📊 Data Sources for Long-Term Listings in Berlin
-
-This document lists potential datasets for enriching the **Long-Term Listings in Berlin (Immowelt)** layer.  
-Each entry includes the origin, update frequency, data type, and relevant fields.
-
----
-
-## Data Sources
-
-| Source Name | Origin | Update Frequency | Data Type | Relevant Fields | Link |
-|-------------|--------|------------------|-----------|-----------------|------|
-| **Immowelt** | Real estate platform (Germany) | Daily | Dynamic (Scraper) | Listing ID, Title, Price, Size, Location, Amenities | [Website](https://www.immowelt.de/) |
-| **Berlin Open Data Portal** | Government portal | Varies | Static (Download) | Neighborhood boundaries, demographic stats, infrastructure | [Portal](https://daten.berlin.de/) |
-| **OpenStreetMap** | Crowdsourced mapping platform | Weekly | Dynamic (API) | Coordinates, POIs, transport stops, boundaries | [Website](https://www.openstreetmap.org/) |
-| **Destatis – German Federal Statistical Office** | Government statistics agency | Yearly | Static (Download) | Population, income levels, housing statistics | [Website](https://www.destatis.de/EN/Home/_node.html) |
-| **Berlin Apartment Listings (Kaggle)** | Kaggle community dataset | One-time snapshot | Static (Download) | Price, Size, Rooms, District | [Dataset](https://www.kaggle.com/datasets/doubleshield/apartment-berlin) |
-
----
-## Planned Table Schema: `listings`
-
-Our team agreed on the following schema for storing long-term listings
-
-| Column                     | Example Value                                         | SQL Datatype       | Notes |
-|----------------------------|-------------------------------------------------------|--------------------|-------|
-| `link`                     | `https://www.immowelt.de/expose/...`                  | `VARCHAR(500)`     | Full listing URL. |
-| `type`                     | `Wohnung`                                             | `VARCHAR(20)`      | Enum: `Wohnung`, `Studio`, `Haus`, `WG`. |
-| `first_tenant`             | `Erstbezug` / `NULL`                                  | `VARCHAR(20)`      | Optional field, may be null. |
-| `price_euro`               | `1100`                                                | `INTEGER`          | Price without € or separators. |
-| `number_of_rooms`          | `2.5`                                                 | `DECIMAL(3,1)`     | Allows half rooms (e.g., 2.5). |
-| `surface_m2`               | `53.0`                                                | `DECIMAL(6,2)`     | Living area in square meters. |
-| `floor`                    | `1` / `EG`                                            | `VARCHAR(10)`      | Store as integer or string if special values (e.g., "EG"). |
-| `street_and_house_number`  | `Edisonstraße 31A`                                    | `VARCHAR(100)`     | Street name and house number. |
-| `bezirk`                   | `Oberschöneweide` / `Köpenick`                        | `VARCHAR(50)`      | Berlin borough or sub-borough. |
-| `city`                     | `Berlin`                                              | `VARCHAR(50)`      | Usually constant. |
-| `postalcode`               | `12459`                                               | `VARCHAR(10)`      | Keep as string to preserve leading zeros. |
-
-
-## Example Data
-
-See [sample.csv](long_term_listing/examples/immowelt_page_1.csv) for a small example of the raw data before cleaning.
+📐 Data Schema – Before & After Transformation
+Raw Data (Scraped)
+| Column Name  | Example Value          | Issue                  |
+| ------------ | ---------------------- | ---------------------- |
+| `address`    | "Pohleseestr. , 12587" | Abbreviations ("Str.") |
+| `price_info` | "1.200 €"              | Includes symbols       |
+| `size`       | "75 m²"                | Text + unit            |
+| `rooms`      | "3 Zimmer"             | Contains text + number |
 
 
--------------------------------------------------------------------
-## Data Cleaning
+### 📐 Transformed Data (Final Schema)
+| Column Name       | Example Value                                                 | Notes                                  |
+| ----------------- | ------------------------------------------------------------- | -------------------------------------- |
+| `listing_id`      | IMM123456                                                     | Unique identifier (primary key)        |
+| `detail_url`      | [https://www.immowelt.de/ex/](https://www.immowelt.de/ex/)... | Direct listing URL                     |
+| `raw_info`        | Schöne Wohnung in Köpenick                                    | Raw extracted text                     |
+| `type`            | Wohnung                                                       | Normalized housing type (Wohnung/Haus) |
+| `first_tenant`    | TRUE                                                          | Boolean flag                           |
+| `price_euro`      | 1200                                                          | Converted to numeric                   |
+| `number_of_rooms` | 3                                                             | Converted to numeric                   |
+| `surface_m2`      | 75                                                            | Extracted number only                  |
+| `floor`           | 2                                                             | Erdgeschoss → 0, upper floors → 1..n   |
+| `street`          | Pohleseestraße                                                | Normalized full street name            |
+| `street_alt`      | Pohleseestr.                                                  | Original scraped street value          |
+| `house_number`    | 12                                                            | Extracted from address                 |
+| `address`         | Pohleseestraße 12 12587 Berlin                                | Cleaned & standardized full address    |
+| `postal_code`     | 12587                                                         | Extracted with regex                   |
+| `neighborhood`    | Köpenick                                                      | Normalized neighborhood                |
+| `district`        | Treptow-Köpenick                                              | Mapped from postal code                |
+| `city`            | Berlin                                                        | Standardized                           |
+| `latitude`        | 52.4471                                                       | From Nominatim geocoding               |
+| `longitude`       | 13.5742                                                       | From Nominatim geocoding               |
+| `geometry`        | POLYGON(...)                                                  | Geospatial polygon                     |
+| `district_id`     | D\_KEP01                                                      | FK referencing `districts` table       |
 
-Today, our group began the data cleaning process on the raw dataset. Specifically, we:
 
- - Applied Python cleaning functions to explore the dataset after transformations.
+🔄 Workflow Diagram
 
- - Checked for inconsistencies in formatting (e.g., variations in values across columns).
+    A[Scraping Immowelt Listings] --> B[Raw Data Cleaning]
+    B --> C[Address Normalization]
+    C --> D[Geocoding with Nominatim]
+    D --> E[Data Transformation & Filtering]
+    E --> F[Database Population via SSM Tunnel]
+    
+🛠️ Libraries Used
 
- - Identified empty and missing values that need to be addressed.
+Scraping: requests, BeautifulSoup, pandas, re
 
-This work gives us a clearer picture of the dataset’s current state and helps define the next steps for standardizing the data.
+Geocoding: geopy (Nominatim)
+
+Database Transfer: sqlalchemy, psycopg2 via SSM tunnel
+
+✅ Final Notes
+Total Listings Collected: 1246
+
+Dropped (Brandenburg): 79
+
+Final Inserted in DB: 1167
+
+Unique Neighborhoods: 89
+
+Status: Successfully integrated into the database
+
+Limitations: Due to Immowelt’s scraping restrictions, future updates may require additional handling or throttling.
+
+
+📊 Sample SQL Queries
+
+1. Average Rent per District
+
+SELECT 
+    district, 
+    AVG(price_euro) AS avg_rent
+FROM 
+    long_term_listings
+GROUP BY 
+    district
+ORDER BY 
+    avg_rent DESC;
+  
+2. Top 5 Most Expensive Neighborhoods
+ 
+SELECT 
+    neighborhood, 
+    AVG(price_euro) AS avg_rent
+FROM 
+    long_term_listings
+GROUP BY 
+    neighborhood
+ORDER BY 
+    avg_rent DESC
+LIMIT 5;
+
+
+3. Distribution of Apartment Sizes
+   
+SELECT 
+    CASE 
+        WHEN surface_m2 < 40 THEN 'Small (<40 m²)'
+        WHEN surface_m2 BETWEEN 40 AND 80 THEN 'Medium (40–80 m²)'
+        WHEN surface_m2 BETWEEN 80 AND 120 THEN 'Large (80–120 m²)'
+        ELSE 'Extra Large (>120 m²)'
+    END AS size_category,
+    COUNT(*) AS count_listings
+FROM 
+    long_term_listings
+GROUP BY 
+    size_category
+ORDER BY 
+    count_listings DESC;
+
+
+
 
 
 
