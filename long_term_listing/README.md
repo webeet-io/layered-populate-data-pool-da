@@ -127,9 +127,6 @@ All outputs tested locally before DB loading.
 
 ## 🗄️ Database Schema
 
-
-📑 Click to expand SQL schema
-
 ```sql
 CREATE TABLE IF NOT EXISTS {schema}.long_term_listings (
     listing_id VARCHAR PRIMARY KEY,        -- Unique identifier
