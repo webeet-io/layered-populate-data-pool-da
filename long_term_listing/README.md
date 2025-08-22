@@ -49,21 +49,27 @@ Raw scraped files stored in /sources.
 Implemented transformation logic using Python:
 
 House Type Normalization
+
 Different types of Häuser (e.g., Reihenhaus, Einfamilienhaus, Doppelhaus) were standardized to house.
 Different types of Wohnungen (e.g., Dachgeschosswohnung, Erdgeschosswohnung, Loft) were standardized to wohnung.
 
 Address Cleaning
+
 Normalized abbreviations: "Str." → "Straße".
 Separated street names (letters) and house numbers (numeric part).
 
 Floor Normalization
+
 "Erdgeschoss" was standardized to 0.
 Other floors converted to numeric values: 1, 2, 3, 4....
 
 Other Cleaning & Processing
+
 Extracted postal codes and districts.
 Queried Nominatim for missing coordinates.
 Dropped listings outside Berlin (79 listings from Brandenburg).
+Added district_id for each listing to reference the district table.
+Performed further cleaning in spreadsheets for consistency and quality.
 Scripts are located in /scripts.
 Outputs tested locally before database population.
 
