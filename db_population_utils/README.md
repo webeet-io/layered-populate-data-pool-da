@@ -24,7 +24,7 @@ Reusable building blocks for consistent data ingestion across layers (banks, hos
 │   │   ├── __init__.py
 │   │   ├── data_processor.py
 │   │   └── README.md
-│   ├── db_populater/
+│   ├── data_populator/
 │   │   ├── __init__.py
 │   │   ├── db_populater.py
 │   │   └── README.md
