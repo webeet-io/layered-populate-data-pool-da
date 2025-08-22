@@ -184,47 +184,81 @@ Limitations: Due to Immowelt’s scraping restrictions, future updates may requi
 
 📊 Sample SQL Queries
 
+
 1. Average Rent per District
 
 SELECT 
+
     district, 
+    
     AVG(price_euro) AS avg_rent
+    
 FROM 
+
     long_term_listings
+    
 GROUP BY 
+
     district
+    
 ORDER BY 
+
     avg_rent DESC;
+
+
   
 2. Top 5 Most Expensive Neighborhoods
  
 SELECT 
+
     neighborhood, 
+    
     AVG(price_euro) AS avg_rent
+    
 FROM 
+
     long_term_listings
+    
 GROUP BY 
+
     neighborhood
+    
 ORDER BY 
+
     avg_rent DESC
+    
 LIMIT 5;
+
 
 
 3. Distribution of Apartment Sizes
    
 SELECT 
+
     CASE 
+    
         WHEN surface_m2 < 40 THEN 'Small (<40 m²)'
+        
         WHEN surface_m2 BETWEEN 40 AND 80 THEN 'Medium (40–80 m²)'
+        
         WHEN surface_m2 BETWEEN 80 AND 120 THEN 'Large (80–120 m²)'
+        
         ELSE 'Extra Large (>120 m²)'
+        
     END AS size_category,
+    
     COUNT(*) AS count_listings
+    
 FROM 
+
     long_term_listings
+    
 GROUP BY 
+
     size_category
+    
 ORDER BY 
+
     count_listings DESC;
 
 
