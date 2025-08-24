@@ -1,0 +1,5 @@
+CustomerID,First Name,joined_date,City,Has_Subscription,district_id,district
+1,john,2023-04-15,berlin,true,11001001,Berlin-Mitte
+2,Jane,2022-11-20,berlin,FALSE,11002002,Berlin-Friedrichshain-Kreuzberg
+3,Mikey,2024-01-05,berlin,True,11008008,Berlin-Neukölln
+4,SARAH,2023-08-21,berlin,,11004004,Berlin-Charlottenburg-Wilmersdorf
