@@ -1,0 +1,19 @@
+[run]
+omit =
+    # exclude other students' areas / legacy
+    db_population_utils/db_connector/*
+    db_population_utils/data_loader/*
+    db_population_utils/data_processor/berlin_data_validator.py
+    db_population_utils/data_processor/data_processor_stub.py
+    db_population_utils/data_processor/processing_metadata.py
+    db_population_utils/patch_bool_sums.py
+    db_population_utils/utils.py
+
+    # test + env noise
+    */tests/*
+    .venv/*
+
+[report]
+exclude_lines =
+    pragma: no cover
+    if __name__ == .__main__.:

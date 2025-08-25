@@ -1,0 +1,52 @@
+# .vscode/pyproject.toml
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "db-population-utils"               # distribution name (what users pip install)
+version = "0.1.0"
+description = "Utilities to clean/prepare Berlin data with an orchestrated processor."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Your Name", email = "you@example.com" }]
+
+# Keep deps minimal; adjust to your real needs
+dependencies = [
+  "pandas>=1.5",
+  "numpy>=1.23",
+  "scikit-learn>=1.2"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "pytest-cov>=4"]
+
+# If you later want a CLI, uncomment and point to your entry function:
+# [project.scripts]
+# db-utils = "db_population_utils.cli:main"
+
+[tool.setuptools]
+# Use automatic package discovery from the repo root (no src/ layout needed)
+packages = { find = { include = ["db_population_utils*"] } }
+
+# Include non-code files if you add any package data later
+# [tool.setuptools.package-data]
+# "db_population_utils" = ["py.typed", "data/*.csv"]
+
+[tool.pytest.ini_options]
+# python -m pytest db_population_utils\tests --cov=db_population_utils/data_processor --cov-branch --cov-report=term-missing --ignore=db_population_utils/db_connector --cov-config=.coveragerc -q
+addopts = [
+    "-q",
+    "--cov=db_population_utils/data_processor",
+    "--cov-report=term-missing",
+    "--no-cov-on-fail",
+    "--cov-config=.coveragerc",
+    "--ignore=db_population_utils/db_connector"
+]
+testpaths = ["db_population_utils/tests"]
+norecursedirs = [".venv","build","dist","db_population_utils/db_connector"]
+python_files = "test_*.py"
+minversion = "7.0"
+filterwarnings = ["ignore::UserWarning"]
+
