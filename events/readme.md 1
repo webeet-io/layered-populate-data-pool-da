@@ -1,0 +1,114 @@
+This Python script collects event data from all repositories associated with a GitHub user account using the GitHub API. It extracts various event types (pushes, pull requests, issues, etc.), processes the data, and saves it to both CSV and JSON formats for analysis.
+
+Prerequisites
+Python 3.6+
+
+GitHub Personal Access Token (PAT) with appropriate permissions
+
+Required Python packages:
+
+pandas
+
+PyGithub
+
+Installation
+Install required packages:
+
+bash
+pip install pandas PyGithub
+Set up GitHub Personal Access Token:
+
+Usage
+Run the script directly:
+
+
+The script will:
+
+Authenticate with GitHub using your PAT
+
+Fetch all repositories associated with your account
+
+Collect events from each repository
+
+Process and structure the event data
+
+Save the data to timestamped CSV and JSON files
+
+Display a summary of collected data
+
+Data Collected
+The script extracts the following information from GitHub events:
+
+Event metadata: ID, type, and timestamp
+
+Repository information: Name and full name
+
+User information: ID, username, and type
+
+Payload details:
+
+Action type (for PRs, issues, etc.)
+
+Commit count and messages (truncated to 100 characters)
+
+Reference information (branches, tags)
+
+Pull request titles and IDs
+
+Size information
+
+Fork details
+
+Release names
+
+Comment bodies
+
+Output Files
+The script generates two output files with timestamps in the filename:
+
+CSV file: github_events_YYYYMMDD_HHMMSS.csv
+
+JSON file: github_events_YYYYMMDD_HHMMSS.json
+
+Rate Limiting
+The script includes a small delay (0.1 seconds) between repository requests to respect GitHub's API rate limits and avoid being throttled.
+
+Error Handling
+The script includes comprehensive error handling for:
+
+Authentication failures
+
+Repository access issues
+
+Individual event processing errors
+
+Example Output
+After running, the script will display:
+
+Total events collected
+
+Number of repositories processed
+
+Unique event types found
+
+A sample of the collected data
+
+Use Cases
+This data can be used for:
+
+Analyzing development activity patterns
+
+Monitoring repository engagement
+
+Tracking contribution metrics
+
+Auditing and compliance reporting
+
+Visualizing project activity over time
+
+Limitations
+The GitHub API only returns events from the past 90 days
+
+Rate limits may affect data collection for accounts with many repositories
+
+Some event types may have varying payload structures
