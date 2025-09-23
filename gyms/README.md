@@ -8,8 +8,14 @@ By adding the "gyms" layer, we can analyze and visualize fitness offerings in Be
 
 ## Layer Structure
 - gyms/
-  - sources/      # Documentation and storage of raw data sources
-  - scripts/      # Scripts for data transformation and database import
+  - sources/      # Storage and documentation of raw data sources
+  - scripts/      # Scripts for data collection, transformation and database import
+
+## Data Update Strategy
+- Data is collected using the [OpenStreetMap Overpass API](https://overpass-api.de/api/interpreter).
+- The script `gyms/scripts/get_osm_gyms.py` can be run at any time to fetch and export the latest gym data as CSV.
+- We recommend regular updates (e.g., monthly) to keep the data fresh. Automation (e.g., via cron or CI) is possible for production use.
 
 ## Status
-Research phase – identification and evaluation of potential data sources.
+Research and data acquisition phase completed – initial data export and documentation in place.
+Next step: data transformation and mapping to the database schema.

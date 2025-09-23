@@ -1,36 +1,30 @@
 # Data Sources for Fitness Studios (Gyms) in Berlin
 
-## 1. OpenStreetMap (OSM)
-- **URL:** https://www.openstreetmap.org
-- **API:** https://wiki.openstreetmap.org/wiki/OpenStreetMap_API
-- **Update frequency:** Continuously updated (community-driven)
-- **Data type:** API (e.g., Overpass API, GeoJSON/CSV export possible)
-- **Relevant fields:** 
-    - name
-    - leisure (e.g., fitness_centre, sports_centre)
-    - sport (e.g., fitness, yoga, gymnastics)
-    - addr:street
-    - addr:housenumber
-    - addr:postcode
-    - addr:city
-    - opening_hours
-    - phone
-    - website
-    - wheelchair
-    - lat
-    - lon
-- **Example Overpass Turbo query:**  
-  [Fitness studios in Berlin via Overpass Turbo](https://overpass-turbo.eu/s/1qbb)
+## 1. OpenStreetMap (OSM) via Overpass API
 
-## 2. Other potential sources (to review)
-- [daten.berlin.de](https://daten.berlin.de/) – Berlin Open Data Portal
-- Google Places API (limited, for comparison)
-- Websites of sports clubs, associations, district offices
-- Lists from major fitness chains (e.g., McFit, Urban Sports Club) – if available as open data
+- **URL:** https://overpass-api.de/api/interpreter
+- **Query:** Fetches all nodes/ways/relations in Berlin tagged as `leisure=fitness_centre` or `sport=yoga`.
+- **Data fields collected:** name, leisure, sport, address (street, housenumber, postcode, city), opening_hours, phone, website, wheelchair, latitude, longitude, osm_id, osm_type.
+- **Script:** The data can be fetched using the provided Python script: `../scripts/get_osm_gyms.py`
+- **Export format:** CSV (example: `gyms_osm_berlin_YYYY-MM-DD.csv`)
+- **Update frequency:** Manual or scheduled (recommended: monthly)
+- **Data type:** Dynamic (ongoing via API/script)
 
----
+## How to update OSM gym data
 
-## Next steps (planned)
-- Download and store an OSM export (GeoJSON/CSV)
-- Evaluate and compare data sources
-- Match available fields with the planned database table structure
+1. Run the script to fetch the latest data:
+    ```bash
+    cd gyms/scripts
+    python3 get_osm_gyms.py
+    ```
+2. The resulting CSV will be saved in `gyms/sources/` with the current date.
+
+## Planned Transformation Steps
+
+- Map relevant OSM fields to the database schema for gyms.
+- Normalize and clean data (e.g. standardize missing values, unify address formats).
+- Link gym entries to `districts` or `neighborhoods` tables using location data.
+- Document any data issues or inconsistencies.
+- Prepare data for import into the database.
+
+*For details on the transformation and schema mapping, see upcoming scripts and documentation in the `/scripts` directory.*
