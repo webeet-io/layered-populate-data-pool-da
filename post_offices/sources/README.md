@@ -14,6 +14,25 @@ The server's response was a structured JSON file, which serves as the raw data f
 * The name and type of the location.
 * Detailed opening hours and other services stored in nested objects.
 
+### Update Frequency
+
+* The live data on the Deutsche Post server is updated **continuously** as locations are added, removed, or their details change. It is not on a fixed hourly or daily schedule.
+* Our captured file (`raw_post.json`) represents a **snapshot** of the data at the moment it was downloaded and will not update on its own.
+
+### Data Type
+
+* **Source:** The source is **dynamic**. To get the most current data, the capture process must be repeated.
+* **Our File:** Our `raw_post.json` is a **static, one-time import**.
+
+### Relevant Data Fields
+
+The raw JSON contains numerous fields. The most relevant for this project are:
+* `zipCode`, `city`, `district`, `street`, `houseNo`: Full address components.
+* `locationName`: The name of the service point.
+* `keyWord`: The primary type of the location (e.g., *Postfiliale*).
+* `geoPosition`: A nested object containing `latitude` and `longitude`.
+* `pfTimeinfos`: A nested list of objects containing detailed opening hours for each day of the week.
+
 ## Data Transformation and Cleaning
 
 The raw JSON data was not suitable for direct analysis due to its nested structure. A data processing pipeline was executed using **Python** and the **pandas** library to clean and transform the data into a usable, flat format.
