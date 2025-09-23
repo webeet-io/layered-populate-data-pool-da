@@ -1,4 +1,4 @@
-🧪 Step 1: Research & Data Modelling  
+### 🧪 Step 1: Research & Data Modelling  
 PR Branch Name: clubs-data-modelling  
 
 This notebook documents the process for Step 1 of the "Clubs & Social Activities in Berlin" project:  
