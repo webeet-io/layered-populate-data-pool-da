@@ -85,3 +85,20 @@ CREATE TABLE berlin_clubs (
     wheelchair TEXT
    
 );
+
+---
+
+## 1.3 Prepare the /sources Directory
+
+
+### Raw Data Files
+- **clubs_raw.geojson** — includes geometry (coordinates, polygons)
+- **clubs_raw.csv** — tabular data only, no geometry
+
+### Scripts
+- **clubs-data-transforming.ipynb** — notebook for cleaning, normalizing, and preparing clubs data (located in `clubs/skripts`)
+
+### Notes
+- The `/sources/README.md` will describe:
+  - The origin of each raw data file
+  - Steps planned for transformation before database population
