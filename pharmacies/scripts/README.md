@@ -1,5 +1,5 @@
 ## Files in ⁠ /scripts ⁠ 
-•⁠  ⁠*pharmacies_data_transformation.jpynb* — jupyter notebook
+•⁠  ⁠*pharmacy_data_transformation.jpynb* — jupyter notebook
 
 This jupyter notebook contains three parts:
 
