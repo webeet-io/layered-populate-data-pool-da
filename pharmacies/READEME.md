@@ -63,7 +63,7 @@
 ---
 
 ## G. Files in `/scripts` 
-- **pharmacies_data_transformation.jpynb** — jupyter notebook
+- **pharmacy_data_transformation.jpynb** — jupyter notebook
 
 ---
 
