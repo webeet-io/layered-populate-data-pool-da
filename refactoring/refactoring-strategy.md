@@ -74,19 +74,48 @@ geometry contains information about longitude and latitude of an object and is p
 All columns shown in the table above should be added to all layers, independently if they are available in the legacy database or not.
 In addition to these OSM or non-OSM columns have to be added according to legacy database.
 
-| Layer Name  | Current Data Source | Can OSM Replace? | Tag in OSM  | Replacement Scope (Full/Partial) | additional new Columns in OSM | Columns Missing from OSM | Notes/Matching Stragegy |
-| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |  ----------- |  ----------- |
+| Layer Name  | Current Data Source | Can OSM Replace? | Tag in OSM  | Replacement Scope (Full/Partial) | Columns in OSM in addition to those under 1 | proposed additional Columns in OSM | Columns Missing from OSM | Notes/Matching Stragegy |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |  ----------- |  ----------- |  ----------- |
 | banks | OSM  |  |  |   |  |   |  |
-| boundary / mileuschutz | gdi.berlin.de/ ../erhaltungs verordnungsgebiete | no well-established OSM tag/schema |  |  |   |   |  |
-| colleges | edurank.org | yes | amenity, university | partial |  | university_id |  |
-| | | | | |  | rank_in_berlin_brandenburg |  |
-| | | | | |  | rank_in_germany |  |
-| | | | | |  | enrollment |  |
-| | | | | |  | founded |  |
+| boundary / mileuschutz | gdi.berlin.de/ ../erhaltungs verordnungsgebiete | no well-established OSM tag/schema |  |  |  | |   |  |
+| colleges | edurank.org | yes | amenity, university | partial |  | | university_id |  |
+| | | | | |  | | rank_in_berlin_brandenburg |  |
+| | | | | |  | | rank_in_germany |  |
+| | | | | |  | | enrollment |  |
+| | | | | |  | | founded |  |
 | crime_statistics | Publisher: Berlin Police Department | no |  |   |   |  |  |
 | dental_offices | OSM |  |  |   |   |  |  |
 |  | Berlin Open Data Portal |  |  |   |   |  |  |
-| gym | OSM |  |  |   |   |  |  |
-| hospitals | deutsches-krankenhaus-verzeichnis.de | yes | amenity, hospital | partial | emergency (whether emergeny care is available): yes, no, designated | cases |  |
-|  |  |  |  |   |   |  |  |
-|  |  |  |  |   |   |  |  |
+| gym | OSM |  |  |   |   |  |  |  |
+| hospitals | deutsches-krankenhaus-verzeichnis.de | yes | amenity, hospital | partial | beds (many missings in OSM) | emergency (whether emergeny care is available): yes, no, designated | cases |it may be possible to add parking information from amenity=parking |
+|  |  |  |  |   |  |  healthcare:speciality: e.g. cardiolog, oncolog, psychiatry |  | amubulance information from emergency=ambulance_station or emergeny=access_point |
+|  |  |  |  |   |  |  health_specialty:ophthalmology |  |  |
+|  |  |  |  |   |  |  health_specialty:optometry  |  |  |
+|  |  |  |  |   |  |  health_specialty:geriatrics |  |  |
+|  |  |  |  |   |  |  health_specialty:occupational_therapy |  |  |
+|  |  |  |  |   |  |  health_specialty:phoniatrics |  |  |
+|  |  |  |  |   |  |  health_specialty:physiotherapy |  |  |
+| pools | baederleben.de | yes | leisure, swimming_pool | full | pool_type (e.g.indoor, outdoor)  | access (public, private, members) | pool_id |  | 
+|  |  |  | leisure, bathing_place (n=1) |   |   | depth | open_all_year |  |
+|  |  |  | leisure, swimming_area |   |   | length |  |  |
+|  |  |  | sport, swimming |   |   | heated |  |  |
+|  |  |  | |   |   | fee |  |  |
+| population_statistics | statistik-berlin-brandenburg.de | no | |   |   | |  |  |
+| post_offices | Deutsche Post | yes | amenity, post_office | partial |   | | additionalInfo | consider to use operating_hours instead Monday, Tuesday, ... Sunday |
+| | | | |  |   | | format1 | consider to map pfServicetype from map from service:copy, service: print,  post_office:letter_from, post_office:parcel_from, post_office:parcel_pickup |
+| | | | |  |   | | format2 | |
+| | | | |  |   | | keyWord | |
+| | | | |  |   | | locationTyp | |
+| | | | |  |   | | locationName | |
+| | | | |  |   | | primaryKeyDeliverySystem| |
+| | | | |  |   | | primaryKeyZipRegion | |
+| | | | |  |   | | systemID | |
+| | | | |  |   | | primaryKeyPF | |
+| | | | |  |   | | pfAccessibilitytypes | |
+| | | | |  |   | | pfClosureperiods | |
+
+
+
+
+
+
