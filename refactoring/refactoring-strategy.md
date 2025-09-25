@@ -68,17 +68,25 @@ geometry contains information about longitude and latitude of an object and is p
 | wheelchair_toilets |toilets accessible for wheelchairs | toilets:wheelchair | 1:1 | yes/no |
 | opening_hours |opening hours of object in a standard machine-readable syntax| opening_hours | 1:1 | Mo-Su 08:00-20:00 |
 
-## 1.1: in addition district and district_id shouild be added to all layers
+## 1.1: in addition **district and district_id** shouild be added to all layers
 
 # 2 Layer-by-Layer Review of Existing Data Sources
 All columns shown in the table above should be added to all layers, independently if they are available in the legacy database or not.
 In addition to these OSM or non-OSM columns have to be added according to legacy database.
 
-| Layer Name  | Current Data Source | Can OSM Replace? | Tag in OSM  | Replacement Scope (Full/Partial) | additional Columns in OSM | Columns Missing from OSM | Notes/Matching Stragegy |
+| Layer Name  | Current Data Source | Can OSM Replace? | Tag in OSM  | Replacement Scope (Full/Partial) | additional new Columns in OSM | Columns Missing from OSM | Notes/Matching Stragegy |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |  ----------- |  ----------- |
 | banks | OSM  |  |  |   |  |   |  |
-| boundary / mileuschutz | gdi.berlin.de/ ../erhaltungsverordnungsgebiete | no well-established OSM tag/schema |  |  |   |   |  |
-| colleges | edurank.org | yes | amenity, university | partial replacement |  - university_id - rank_in_berlin_brandenburg - rank_in_germany - enrollment - founded - district - district_id |   |  |
-|  |  |  |  |   |   |  |
-|  |  |  |  |   |   |  |
-|  |  |  |  |   |   |  |
+| boundary / mileuschutz | gdi.berlin.de/ ../erhaltungs verordnungsgebiete | no well-established OSM tag/schema |  |  |   |   |  |
+| colleges | edurank.org | yes | amenity, university | partial |  | university_id |  |
+| | | | | |  | rank_in_berlin_brandenburg |  |
+| | | | | |  | rank_in_germany |  |
+| | | | | |  | enrollment |  |
+| | | | | |  | founded |  |
+| crime_statistics | Publisher: Berlin Police Department | no |  |   |   |  |  |
+| dental_offices | OSM |  |  |   |   |  |  |
+|  | Berlin Open Data Portal |  |  |   |   |  |  |
+| gym | OSM |  |  |   |   |  |  |
+| hospitals | deutsches-krankenhaus-verzeichnis.de | yes | amenity, hospital | partial | emergency (whether emergeny care is available): yes, no, designated | cases |  |
+|  |  |  |  |   |   |  |  |
+|  |  |  |  |   |   |  |  |
