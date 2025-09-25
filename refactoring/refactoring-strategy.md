@@ -47,7 +47,7 @@ Data columns (total 87 columns):
 ```
 geometry contains information about longitude and latitude of an object and is provided in the format: POINT (13.35074 52.42464)
 
-# 1 Rows of OSM to be used in all layers
+# 1 Columns of OSM to be used in all layers
 
 | Columns name | Description | OSM object name |  mapping instruction | example |
 | ----------- | ----------- | ----------- | ----------- | ----------- |
@@ -68,3 +68,17 @@ geometry contains information about longitude and latitude of an object and is p
 | wheelchair_toilets |toilets accessible for wheelchairs | toilets:wheelchair | 1:1 | yes/no |
 | opening_hours |opening hours of object in a standard machine-readable syntax| opening_hours | 1:1 | Mo-Su 08:00-20:00 |
 
+## 1.1: in addition district and district_id shouild be added to all layers
+
+# 2 Layer-by-Layer Review of Existing Data Sources
+All columns shown in the table above should be added to all layers, independently if they are available in the legacy database or not.
+In addition to these OSM or non-OSM columns have to be added according to legacy database.
+
+| Layer Name  | Current Data Source | Can OSM Replace? | Tag in OSM  | Replacement Scope (Full/Partial) | additional Columns in OSM | Columns Missing from OSM | Notes/Matching Stragegy |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |  ----------- |  ----------- |
+| banks | OSM  |  |  |   |  |   |  |
+| boundary / mileuschutz | gdi.berlin.de/ ../erhaltungsverordnungsgebiete | no well-established OSM tag/schema |  |  |   |   |  |
+| colleges | edurank.org | yes | amenity, university | partial replacement |  - university_id - rank_in_berlin_brandenburg - rank_in_germany - enrollment - founded - district - district_id |   |  |
+|  |  |  |  |   |   |  |
+|  |  |  |  |   |   |  |
+|  |  |  |  |   |   |  |
