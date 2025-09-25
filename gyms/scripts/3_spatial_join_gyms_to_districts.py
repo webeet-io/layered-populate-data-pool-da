@@ -39,6 +39,12 @@ if unwanted_columns:
     print(f"Removing columns: {unwanted_columns}")
     gyms_with_district = gyms_with_district.drop(columns=unwanted_columns)
 
+# ----- NEU: district_id sicher als String ohne ".0" -----
+gyms_with_district['district_id'] = (
+    gyms_with_district['district_id']
+    .apply(lambda x: str(int(x)) if pd.notnull(x) else None)
+)
+
 # 6. Export the result as CSV
 output_file = 'gyms/sources/gyms_with_district.csv'
 cols = list(gyms_df.columns) + ['district_id', 'district']

@@ -23,5 +23,3 @@
 - Spatial join with official districts (using GeoPandas)
 - Export as `gyms_with_district.csv` for DB import
 
-## Next Step
-- Import `gyms_with_district.csv` into PostgreSQL using the Python script in `scripts/`

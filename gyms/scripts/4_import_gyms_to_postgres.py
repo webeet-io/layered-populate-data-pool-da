@@ -1,5 +1,3 @@
-# import_gyms_to_postgres.py
-
 """
 Import cleaned gyms data into PostgreSQL using SQLAlchemy.
 - Reads gyms_with_district.csv
@@ -23,12 +21,16 @@ TABLE_NAME = "gyms"
 conn_str = f"postgresql+psycopg2://{DB_USER}:{DB_PASS}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
 engine = create_engine(conn_str)
 
-# --- 1. Read CSV ---
+# --- 1. Read CSV and DROP all duplicate .1 columns ---
 df = pd.read_csv(CSV_PATH)
+df = df.drop(columns=[col for col in df.columns if ".1" in col], errors="ignore")
 
 # --- 2. Insert Data (replace or append as needed) ---
 with engine.connect() as conn:
-    # Optional: Create table if not exists
+    # Delete duplicate columns, if exists
+    conn.execute(text('ALTER TABLE gyms DROP COLUMN IF EXISTS "district_id.1";'))
+
+    # Create table if not exists
     create_table_sql = """
     CREATE TABLE IF NOT EXISTS gyms (
         id SERIAL PRIMARY KEY,
@@ -45,12 +47,17 @@ with engine.connect() as conn:
         osm_id TEXT,
         osm_type TEXT,
         source TEXT,
-        district_id VARCHAR(20),
-        district TEXT
+        district_id VARCHAR,
+        district VARCHAR
     );
     """
     conn.execute(text(create_table_sql))
     print("Table 'gyms' checked/created.")
+
+    # *** Delete Table before import ***
+    truncate_sql = f"TRUNCATE {TABLE_NAME};"
+    conn.execute(text(truncate_sql))
+    print(f"Table '{TABLE_NAME}' was emptied (TRUNCATE).")
 
     # --- Insert data ---
     df.to_sql(TABLE_NAME, engine, if_exists="append", index=False)
@@ -76,3 +83,4 @@ with engine.connect() as conn:
 
 # --- Done! ---
 print("Done importing gyms.")
+# --- End of Script ---

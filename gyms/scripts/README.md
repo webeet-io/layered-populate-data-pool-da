@@ -15,6 +15,10 @@ This folder contains the main scripts to fetch, process, and import gym data for
 | **3_spatial_join_gyms_to_districts.py** | Spatial join: assign each gym to its Berlin district using GeoJSON borders.             |
 | **4_import_gyms_to_postgres.py**        | Import the enriched data into your Postgres/PostGIS database.                           |
 
+> **Warning:**  
+> The import script (`4_import_gyms_to_postgres.py`) will truncate (empty) the `gyms` table before importing.  
+> All previous data in this table will be deleted on each run!
+
 ## How to Run
 
 - **Always run from the project root directory for path consistency.**
