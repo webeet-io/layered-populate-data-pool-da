@@ -63,6 +63,7 @@ geometry contains information about longitude and latitude of an object and is p
 | postcode | postcode of city and street where object is located | addr:postcode | rename | 10117 | 
 | neighborhood | neighborhood of object | addr:suburb | rename | Mitte | 
 | phone | contact: phone number | contact:phone or phone | rename or 1:1 | +493045040 | 
+| email | contact: email | contact:email or email | rename or 1:1 | |
 | website | contact: website | contact:website or website| rename or 1:1 | | 
 | wheelchair |accessibility for wheelchair | wheelchair | 1:1 | yes/no/limited |
 | wheelchair_toilets |toilets accessible for wheelchairs | toilets:wheelchair | 1:1 | yes/no |
@@ -113,9 +114,33 @@ In addition to these OSM or non-OSM columns have to be added according to legacy
 | | | | |  |   | | primaryKeyPF | |
 | | | | |  |   | | pfAccessibilitytypes | |
 | | | | |  |   | | pfClosureperiods | |
-
-
-
-
-
-
+| public_transport | vbb.de, gtfs.de, bvg.de, openstreetmap.org, daten.berlin.de| | |  |   | | | seems, that OSM is used already|
+| real_estate_statistics | IBB Wohnungsmarktbericht 2024, FIS-Broker Berlin, Immobilienmarktberichte - berlin.de| no | |  |   | | ID| check, if locality = neighborhood|
+| recreational_zone | Berlin Open Data - Parks Layer (?) | yes | parks:| full | green_area_type --> surface=* and grass=* | access (public, private, etc.) | area_sqm | |
+| | Berlin Open Data - Playgrounds Layer (?) | | leisure=park → general green/park areas |  |   | playground = climbingframe| planning_area_name | |
+| | | | leisure=garden → smaller gardens or landscaped areas |  |   | age (recommended age) | source | |
+| | | | landuse=recreation_ground → larger recreation areas |  |   | playground = swing | created_at | |
+| | | | leisure=nature_reserve → protected natural areas |  |   | playground = slide | updated_at | |
+| | | | boundary=national_park (not common inside Berlin) |  |   | surface=* → ground type (sand, rubber, grass) | | |
+| | | | Playgrounds: |  |   |access=* → public vs private (e.g. playgrounds in housing complexes) | | |
+| | | | leisure=playground → main tag for children’s play areas) |  |   | | | |
+| | | | boundary=national_park (not common inside Berlin) |  |   | | | |
+| s-bahn | berlin open data portal | |  |  |   | | | I think e.g. railway stations,stops,etc. can be mapped from OSM --> further investigation required to find out how|
+| schools| ? | yes | amenity=school |  |   | isced:level=* → education level (1=primary, 2=lower secondary, 3=upper secondary, etc.) | | not sure what is planned for schools |
+| | | | amenity=college |  |   | school:gender=* → male, female, or mixed | ? | |
+| tram_bus | public API of the BVG| |   |  |   |   |   | see s-bahn |
+| venues | Overpass API | yes | amenity=cafe |  |   | cuisine=* (e.g. cuisine=coffee_shop, cuisine=italian) |   | |
+| | | | amenity=restaurant |  |   | outdoor_seating=yes/no |   | |
+| | | | amenity=bar |  |   | smoking=yes/no/separated |   | |
+| | | | amenity=pub |  |   | wifi=yes/no/free |   | |
+| | | | amenity=beer_garden |  |   | diet:vegetarian=yes |   | |
+| | | |   |  |   | diet:vegan=yes |   | |
+| | | |  |  |   | diet:halal=yes |   | |
+| | | |  |  |   | diet:gluten_free=yes |   | |
+| | | |   |  |   | delivery=yes/no (sometimes included) |   | |
+| | | |   |  |   | drink:cocktail=yes |   | |
+| | | |   |  |   | drink:beer=yes |   | |
+| | | |   |  |   | drink:wine=yes |   | |
+| vet_clinics | OSM | |   |  |   |   |   | |
+| short_term_listing | inside Airbnb | |   |  |   |  |   | |
+| | | |   |  |   |  |   | |
