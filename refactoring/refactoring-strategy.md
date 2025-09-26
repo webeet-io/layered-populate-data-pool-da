@@ -126,9 +126,20 @@ In addition to these OSM or non-OSM columns have to be added according to legacy
 | | | | leisure=playground → main tag for children’s play areas) |  |   | | | |
 | | | | boundary=national_park (not common inside Berlin) |  |   | | | |
 | s-bahn | berlin open data portal | |  |  |   | | | I think e.g. railway stations,stops,etc. can be mapped from OSM --> further investigation required to find out how|
-| schools| ? | yes | amenity=school |  |   | isced:level=* → education level (1=primary, 2=lower secondary, 3=upper secondary, etc.) | | not sure what is planned for schools |
-| | | | amenity=college |  |   | school:gender=* → male, female, or mixed | ? | |
-| tram_bus | public API of the BVG| |   |  |   |   |   | see s-bahn |
+| schools| ? | yes | amenity=school | part |   | isced:level=* → education level (1=primary, 2=lower secondary, 3=upper secondary, etc.) | school_type_de | quarter is neighborhood in OSM |
+| | | | amenity=college |  |   | school:gender=* → male, female, or mixed | ownership_en | |
+| | | | |  |   | | school_category_de | |
+| | | | |  |   | | school_category_en | |
+| | | | |  |   | | school_year | |
+| | | | |  |   | | students_total | |
+| | | | |  |   | | students_f | |
+| | | | |  |   | | students_m | |
+| | | | |  |   | | teachers_total | |
+| | | | |  |   | | teachers_f | |
+| | | | |  |   | | teachers_m | |
+| | | | |  |   | | startchancen_flag | |
+| tram_bus | public API of the BVG | yes | railway=tram_stop | full |   |   | stop_id |   |
+| | |  | highway=bus_stop |  |   |   |   |   |
 | venues | Overpass API | yes | amenity=cafe |  |   | cuisine=* (e.g. cuisine=coffee_shop, cuisine=italian) |   | |
 | | | | amenity=restaurant |  |   | outdoor_seating=yes/no |   | |
 | | | | amenity=bar |  |   | smoking=yes/no/separated |   | |
@@ -163,3 +174,7 @@ In addition to these OSM or non-OSM columns have to be added according to legacy
 | | | |  |  |   |  | review_scores_value | |
 | | | |  |  |   |  | review_scores_communication | |
 | | | |  |  |   |  | reviews_per_month | |
+|ubahn | Wikidata via SPARQL | yes | railway=station | full | line --> ref=*(The line reference, e.g. "U1", "U2") | platform --> railway=platform + public_transport=platform |   |mapping might not that easy as many tags have to be used |
+| | | | station=subway |  | station --> railway=subway_entrance  | Layer--> railway=platform + public_transport=platform |   | |
+| | | | type=route + route=subway |  |   | level --> railway=platform + public_transport=platform |   | |
+| | | |  |  |   |  |  | |
