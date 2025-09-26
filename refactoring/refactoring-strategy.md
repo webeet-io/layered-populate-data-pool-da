@@ -142,5 +142,24 @@ In addition to these OSM or non-OSM columns have to be added according to legacy
 | | | |   |  |   | drink:beer=yes |   | |
 | | | |   |  |   | drink:wine=yes |   | |
 | vet_clinics | OSM | |   |  |   |   |   | |
-| short_term_listing | inside Airbnb | |   |  |   |  |   | |
-| | | |   |  |   |  |   | |
+| short_term_listing | inside Airbnb | yes | tourism=apartment | partial | beds=* → number of beds |  | ID | not sure if it makes sense to switch to OSM |
+| | | | tourism=guest_house |  |    |  | host_ID | |
+| | | | tourism=hotel |  |   |  | property_type | |
+| | | | tourism=hostel |  |   |  | room_type | |
+| | | | tourism=chalet |  |   |  | accomodates | |
+| | | | tourism=camp_site |  |   |  | bedrooms | |
+| | | | caravan_site |  |   |  | is_shared | |
+| | | | tourism=motel |  |   |  | amenities  | |
+| | | |   |  |   |  | price | |
+| | | |  |  |   |  | minimum_nights | |
+| | | |  |  |   |  | maximimum_nights | |
+| | | |  |  |   |  | number_of_reviews | |
+| | | |  |  |   |  | review_scores_rating | |
+| | | |  |  |   |  | review_scores_accuracy | |
+| | | |  |  |   |  | review_scores_cleanliness | |
+| | | |  |  |   |  | review_scores_checkin | |
+| | | |  |  |   |  | review_scores_communication | |
+| | | |  |  |   |  | review_scores_location | |
+| | | |  |  |   |  | review_scores_value | |
+| | | |  |  |   |  | review_scores_communication | |
+| | | |  |  |   |  | reviews_per_month | |
