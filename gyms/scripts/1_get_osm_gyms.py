@@ -67,6 +67,6 @@ df = pd.DataFrame(gyms)
 
 today = datetime.date.today().isoformat()
 
-csv_file = f"../sources/gyms_osm_berlin_{today}.csv"
+csv_file = f"gyms/sources/gyms_osm_berlin_{today}.csv"
 df.to_csv(csv_file, index=False)
 print(f"Exported {len(df)} gyms to {csv_file}")
