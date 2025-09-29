@@ -5,10 +5,10 @@ This document lists potential data sources for the bike lanes in Berline, as wel
 ## 1.1 Data Source Discovery
 ### Main Source - OpenStreetMap (OSM)
 
-- **Origin**: OSM - Overpass Turbo
+- **Origin**: OSM - Overpass Turbo (https://overpass-turbo.eu/)
 - **Update Frequency**: Continuous/Dynamic based on community updates.
 - **Data Type**:
-   - Dynamic data types through API queries (ie. Overpass Turbo).
+   - Dynamic data types through API queries (ie. `cycleway=*`, `highway=cycleway`, `highway=path + bicycle=designated`, etc.).
    - There is the possibility of static files, however these have not been included for this specific project.
 - **Relevant Fields**:
   - `street name`
