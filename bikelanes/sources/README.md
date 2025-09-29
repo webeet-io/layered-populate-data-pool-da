@@ -1,4 +1,4 @@
-# Sources for bikelanes Data Modelling
+# Sources for Bike Lanes Data Modelling
 
 This document lists potential data sources for the bike lanes in Berline, as well as the initial steps for extracting and transforming the data. 
 
