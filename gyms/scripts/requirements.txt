@@ -1,0 +1,13 @@
+# Core data handling
+pandas>=2.0
+
+# OSM-API requests
+requests>=2.30
+
+# Geospatial (for spatial join)
+geopandas>=0.14
+shapely>=2.0
+
+# PostgreSQL DB Import
+sqlalchemy>=2.0
+psycopg2-binary>=2.9
