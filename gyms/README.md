@@ -1,21 +1,38 @@
-# Layer: Gyms (Fitness Studios, Yoga and Fitness Centers) in Berlin
+# 🏋️ Berlin Gyms Data Pipeline
 
-## Purpose
-Integration and mapping of fitness studios, yoga studios, and fitness centers in Berlin as a new data layer within our existing database structure.
+This folder contains all scripts and sources to extract, clean, enrich, and import Berlin gyms data for the [layered-populate-data-pool-da](../) project.
 
-## Motivation
-By adding the "gyms" layer, we can analyze and visualize fitness offerings in Berlin and connect this data with other city Points of Interest (POIs).
+## Workflow Steps
 
-## Layer Structure
-- gyms/
-  - sources/      # Storage and documentation of raw data sources
-  - scripts/      # Scripts for data collection, transformation and database import
+1. **Extract gyms from OpenStreetMap using Overpass API**
+2. **Transform and clean raw OSM data for database import**
+3. **Spatial join: Assign each gym to a Berlin district**
+4. **Import cleaned gyms with district info into the Postgres/PostGIS database**
 
-## Data Update Strategy
-- Data is collected using the [OpenStreetMap Overpass API](https://overpass-api.de/api/interpreter).
-- The script `gyms/scripts/get_osm_gyms.py` can be run at any time to fetch and export the latest gym data as CSV.
-- We recommend regular updates (e.g., monthly) to keep the data fresh. Automation (e.g., via cron or CI) is possible for production use.
+See [scripts/README.md](./scripts/README.md) for details and running instructions.
 
-## Status
-Research and data acquisition phase completed – initial data export and documentation in place.
-Next step: data transformation and mapping to the database schema.
+---
+
+## Directory Structure
+
+- `scripts/` – All processing scripts, numbered by workflow order
+- `sources/` – Input and output files (CSV, GeoJSON, etc.)
+- `requirements.txt` – All Python dependencies for this workflow
+
+---
+
+## Quick Start
+
+```bash
+# Optional: Create a virtual environment
+python3 -m venv venv
+source venv/bin/activate
+
+# Install dependencies
+pip install -r gyms/scripts/requirements.txt
+
+# Run scripts in order (from project root)
+python gyms/scripts/1_get_osm_gyms.py
+python gyms/scripts/2_transform_osm_gyms.py
+python gyms/scripts/3_spatial_join_gyms_to_districts.py
+python gyms/scripts/4_import_gyms_to_postgres.py
