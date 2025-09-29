@@ -10,6 +10,8 @@
 #   A CSV file (named with today's date) in ../sources/
 
 import requests
+import json
+import os
 import pandas as pd
 import datetime
 
@@ -33,8 +35,9 @@ out center tags;
 url = "https://overpass-api.de/api/interpreter"
 print("Requesting data from Overpass API...")
 response = requests.post(url, data=overpass_query)
-response.raise_for_status()  # If there is a problem, this will stop the script
+response.raise_for_status()
 
+# --- Parse response as JSON (GeoJSON) ---
 data = response.json()
 
 # --- Step 3: Extract relevant fields for each gym ---
