@@ -9,7 +9,6 @@ This document lists potential data sources for the bike lanes in Berline, as wel
 - **Update Frequency**: Continuous/Dynamic based on community updates.
 - **Data Type**:
    - Dynamic data types through API queries (ie. `cycleway=*`, `highway=cycleway`, `highway=path + bicycle=designated`, etc.).
-   - There is the possibility of static files, however these have not been included for this specific project.
 - **Reason for Selection**:
   - The data is dynamic and continuously maintained by a vast community which helps to ensure the near real-time information on the cycling infrastructure of Berlin.
   - Using the API system allows for more flexible filtering of the data by attributes and locations which makes it easier to tailor the data extraction process for the Berlin dataset.
@@ -20,6 +19,12 @@ This document lists potential data sources for the bike lanes in Berline, as wel
 - **Update Frequency**: Not planned.
 - **Data Type**: Static dataset that is downloadable in formats like GeoJSON.
 - **Reason for possible usage**:
-     - As this is an official/authoritative dataset collected and compiled by the city, ensuring the accuracy and the alignment with the Berlin transport authorities (ie. Radverkehrsnetz).
+     - As this is an official/authoritative dataset collected and compiled by the city, it will help with ensuring the accuracy and alignment with the Berlin transport authorities (ie. Radverkehrsnetz).
      - This data is available in GIS-friendly formats (ie. GeoJSON, WFS, etc.) making it a more reliable source for spatial analysis and integration into the data pipeline.   
 
+## 1.2 Initial Steps for Transformation
+1. Fetch OSM cycleways via Overpass Turbo API
+2. Standardise column names, data types
+3. Convert geospatial data to a format that is compatible with our pipeline
+4. Connect to `districts` with a spatial join via `district_id`
+5. Export as `berlin_bikelanes.csv` for DB export
