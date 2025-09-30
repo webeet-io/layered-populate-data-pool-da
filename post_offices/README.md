@@ -46,6 +46,7 @@ This script handles the initial processing of the raw JSON data to transform it 
     * **Feature Extraction:** Key information is extracted from complex string-based columns (e.g., parsing `pfTimeinfos` to create an `opening_hours` string and `geoPosition` to create `latitude` and `longitude` columns).
     * **Filtering by Location Type:** Irrelevant location types (e.g., `Poststation`) are removed.
     * **Column Cleanup & Renaming:** Unnecessary columns are dropped, and existing columns are renamed to a standard `snake_case` format.
+    * **Adjusting Data Types:** The data types for the `zip_code` and `id` columns were explicitly converted to `object` (string). This ensures that these fields are treated as textual labels rather than numerical values, preventing potential errors from unintended mathematical operations.
 * **Final Output:** The resulting clean DataFrame is saved to `clean/deutschepost_clean.csv`, ready for the enrichment stage.
 
 ### Stage 2: Data Enrichment
